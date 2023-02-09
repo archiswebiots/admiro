@@ -1,0 +1,13 @@
+//- mixin breadcrumb(items,pagetitle)
+//-     .row.page-title
+//-         .col-sm-6
+//-           h2.ff-mono= pagetitle
+//-         .col-sm-6
+//-           nav
+//-             ol.breadcrumb.justify-content-end
+//-               li.breadcrumb-item
+//-                 a(href='index.html') 
+//-                   svg.svg-color
+//-                     use(href=`../assets/svg/iconly-sprite.svg#Home`) 
+//-               each pagename, index in items
+//-                 li.breadcrumb-item(class=`${(index === items.length - 1 ?'active':'')}`)= pagename

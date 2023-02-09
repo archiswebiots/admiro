@@ -1,0 +1,15 @@
+-var sidebar = true;
+include ../../components/mixin
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    main.page-wrapper
+        include ../../components/header/header
+        .page-body-wrapper
+          include ../../components/sidebar                
+          .page-body
+            .container-fluid
+              //- +breadcrumb(['Dashboard','Default'],'Default dashboard')
+          include ../../components/footer
+    include ../../components/footer-files         

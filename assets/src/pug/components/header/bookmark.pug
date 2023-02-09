@@ -1,0 +1,52 @@
+//-// Bookmark menu
+-
+    var BOOKMARK_ITEM =[
+        {
+            url: 'cube',
+            title: 'Dashboard',
+            altContent: 'Dashboard',
+            bgClass: 'btn-activity-primary',
+            iconClass: 'svg-color'
+        },
+        {
+            url: 'check',
+            title: 'To-do',
+            altContent: 'To-do',
+            bgClass: 'btn-activity-secondary',
+            iconClass: 'svg-color'
+        },
+        {
+            url: 'pie',
+            title: 'Chart',
+            altContent: 'Chart',
+            bgClass: 'btn-activity-danger',
+            iconClass: 'svg-color'
+        }
+    ]
+
+//-// Bookmark mixin
+mixin BookmarkContent(items)
+
+    each item in items 
+        li.d-flex.align-items-center
+            .flex-shrink-0.me-2(class=item.bgClass)
+                a(href="#")
+                    +IconlySprite(item.url, item.iconClass)
+            .d-flex.justify-content-between.align-items-center.w-100
+                a(href="#")=item.title
+                +IconlySprite('star', 'svg-color icon-star')
+
+// Bookmark menu
+li.custom-dropdown
+    a(href="javascript:void(0)")
+        i.iconly-Bookmark.icli
+    .custom-menu.bookmark-dropdown.py-0.overflow-hidden
+        h5.title.bg-primary-light Bookmark
+        ul 
+            li 
+                form.mb-0
+                    .input-group
+                        input.form-control(type='text' placeholder='Search Bookmark...')
+                        span.input-group-text.ps-0
+                            +IconlySprite('Search', 'svg-color')
+            +BookmarkContent(BOOKMARK_ITEM)

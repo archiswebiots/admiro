@@ -1,0 +1,17 @@
+/**=====================
+     39. Table  CSS Start
+==========================**/
+
+table{
+    tbody{
+        tr{
+            border: transparent;    
+        }
+    }
+    thead{
+        tr{
+            border-color: $card-border;
+        }
+        
+    }
+}

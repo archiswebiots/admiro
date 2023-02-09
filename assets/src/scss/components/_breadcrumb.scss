@@ -1,0 +1,26 @@
+/**=====================
+    Breadcrumb css start
+==========================**/
+.breadcrumb {
+    --bs-breadcrumb-margin-bottom: 0;
+    &-item {
+        .svg-color {
+            padding: 5px;
+            width: 26px;
+            height: 26px;
+            border: 1px solid var(--shape-border);
+            border-radius: $breadcrumb-icon-radius;
+            box-shadow: $breadcrumb-icon-shadow;
+        }
+    }
+}
+.page-title {
+    align-items: center;
+    padding: $title-spacing;
+    h2 {
+        font-weight: 500;
+    }
+}
+/**=====================
+    Breadcrumb css end
+==========================**/

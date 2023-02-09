@@ -1,0 +1,25 @@
+/**=====================
+    03.  Card CSS Start
+==========================**/
+//Card css
+.card{
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: unset;
+    height: 100%;
+    .sub-title{
+        padding-bottom: 0.75rem;
+        font-size: 1.125rem;
+    }
+    code{
+        font-size: 0.875em;
+        color: $secondary-color;
+        word-wrap: break-word;
+    }
+}
+.card-header {
+    background-color: $card-header-bg-color;
+    padding: $card-padding;
+    border-bottom: $card-border;
+    position: relative;
+}
