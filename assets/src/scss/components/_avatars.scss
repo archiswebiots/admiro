@@ -23,7 +23,7 @@
             height: 12%;
             width: 12%;
             border-radius: 100%;
-            bottom: 12%;
+            top: 12%;
             right: 4%;
         }  
     }
@@ -137,51 +137,27 @@
         }
     }
     .avatar-intial{
-        background-color: $border-color;
         border-radius: 50%;
         padding: 11px 18px;
-        &:nth-child(3){
-            padding: 10px 13px;
-        }
-        &:nth-child(4){
-            padding: 9px 17px;
-        }
-        &:nth-child(5){
-            padding: 8px 13px;
-        }
-        &:last-child{
-            padding: 6px 11px;
-        }
-        h1,h2,h3,h4{
-            font-weight: 500;
-        }
     }
     .ping{
-        background: #fff;
-        border-radius: 50%;
-        border: 3px solid #222;
-        width: 0px;
-        height: 0px;
         animation: load 1.5s ease-out infinite;
-        position: absolute;
-        top: 9px;
-        right: 13px;
     }
     @keyframes load {
         0% {
-            background: transparent;
-            border: 3px solid transparent;
+            background-color: rgb(54, 155, 54);
+            border: 0px solid rgb(54, 155, 54);
        }
-        40% {
-            background: rgb(204, 38, 38);
-            border: 3px solid rgb(204, 38, 38);
+        50% {
+            background-color: white;
+            border: 3px solid white;
        }
         100% {
-            background: rgb(204, 38, 38);
-            border: 3px solid rgb(204, 38, 38);
+            background-color: rgb(112, 199, 112);
+            border: 0px solid rgb(112, 199, 112);
        }
    }
-   .avtar-icons{
+    .avtar-icons{
         background-color: $primary-color;
         border-radius: 50%;
         padding: 15px;
@@ -215,6 +191,18 @@
 .avtar-xs{
     width: 40px;
     height: 40px;
+}
+.bg-light-primary{
+    background-color: #EDF6F0;
+    color: $primary-color;
+}
+.bg-light-secondary{
+    background-color: #FDF5E7;
+    color: $secondary-color;
+}
+.bg-light-danger{
+   background-color: #FFECE8; 
+   color: $danger-color;
 }
 
 /**=====================

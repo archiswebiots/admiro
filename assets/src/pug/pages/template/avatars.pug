@@ -60,12 +60,13 @@ html(lang='en')
                       .avatars
                         div.avatar
                           img.img-100.rounded-circle(src='../assets/images/user/1.jpg', alt='#')
+                          div.status.status-online
                         div.avatar
                           img.img-90.rounded-circle(src='../assets/images/avtar/16.jpg', alt='#')
+                          div.status.status-dnd
                         div.avatar
                           img.img-80.rounded-circle(src='../assets/images/avtar/7.jpg', alt='#')
-                        div.avatar
-                          img.img-70.rounded-circle(src='../assets/images/avtar/3.jpg', alt='#')
+                          div.status.status-offline
                 .col-xl-4.col-md-6
                   .card
                     .card-header
@@ -145,26 +146,21 @@ html(lang='en')
                 .col-md-4.g-4.mb-4
                   .card
                     .card-header
-                      h4 Ratio
-                      p.mb-0.mt-1
-                        | Using
-                        code .ratio
-                        |  and 
-                        code  img-* (50/70/80/90/100)
-                        |  class.
+                      h4 Avatar Initial
+                      p.mb-0.mt-1 You can use initial letter as a avatar.
                     .card-body.avatar-showcase
                       .avatars
-                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-xxl
+                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-xxl.bg-light-primary
                           span.fs-1 A
-                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-xl
+                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-xl.bg-light-secondary
                           span.fs-2 D
-                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-lg
+                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-lg.bg-light-danger
                           span.fs-3 M
-                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-md
+                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-md.bg-light-primary
                           span.fs-4 I
-                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-sm
+                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-sm.bg-light-secondary
                           span.fs-5 R
-                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-xs
+                        div.avatar-intial.d-flex.justify-content-center.align-items-center.avtar-xs.bg-light-danger
                           span.fs-6 O
                 .col-md-4.g-4.mb-4 
                   .card 
@@ -178,38 +174,30 @@ html(lang='en')
                       .avatars
                         div.avatar
                           img.b-r-8.img-100.rounded-circle(src='../assets/images/avtar/11.jpg', alt='#') 
-                          div.ping
+                          div.ping.status-offline.status
                         div.avatar
                           img.b-r-8.img-90.rounded-circle(src='../assets/images/avtar/4.jpg', alt='#') 
-                          div.ping
+                          div.ping.status-online.status
                         div.avatar
                           img.b-r-8.img-80.rounded-circle(src='../assets/images/user/1.jpg', alt='#') 
-                          div.ping
+                          div.ping.status-dnd.status
                         div.avatar
                           img.b-r-8.img-70.rounded-circle(src='../assets/images/avtar/3.jpg', alt='#') 
-                          div.ping
+                          div.ping.status-offline.status
                 .col-md-4.g-4.mb-4
                   .card 
                     .card-header
-                      h4 Avatar icon
-                      p  Using icon You can make icon avatars.
+                      h4 Avatar profile
+                      p.mb-0.mt-1  Using icon You can make icon avatars.
                     .card-body.avatar-showcase
                       .avatars
-                        ul
-                          li.avtar-icons
-                            a(href="javascript:void(0)")
-                              i.iconly-Heart.icli.d-flex
-                          li.avtar-icons
-                            a(href="javascript:void(0)")
-                              i.iconly-Star.icli.d-flex
-                          li.avtar-icons
-                            a(href="javascript:void(0)")
-                              i.iconly-Tick-Square.icli.d-flex
-                          li.avtar-icons
-                            a(href="javascript:void(0)")
-                              i.iconly-Message.icli.d-flex
-                          li.avtar-icons
-                            a(href="javascript:void(0)")
-                              i.iconly-Notification.icli.d-flex
+                        .user-img
+                          img(src="../assets/images/profile.png" alt="user") 
+                          .setting-icon
+                              i.iconly-Setting.icli  
+                        .user-img
+                          img(src="../assets/images/profile.png" alt="user") 
+                          .setting-icon
+                              i.iconly-Edit.icli     
         include ../../components/footer      
                           

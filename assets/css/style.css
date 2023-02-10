@@ -11583,29 +11583,6 @@ ul li {
   margin-top: -1.786rem;
   padding: 0 1.25rem;
 }
-.user-wrap .user-img {
-  display: inline-block;
-  position: relative;
-}
-.user-wrap .user-img img {
-  border-radius: 50%;
-  padding: 8px 10px 0;
-  background-color: #F39159;
-}
-.user-wrap .user-img .setting-icon {
-  line-height: 0;
-  position: absolute;
-  top: 75%;
-  right: 0;
-}
-.user-wrap .user-img .setting-icon i {
-  padding: 5px;
-  background-color: #308E87;
-  border-radius: 50%;
-  color: var(--white);
-  border: 1px solid var(--white);
-  font-size: 12px;
-}
 .user-wrap .user-content {
   padding: 16px 0;
   border-bottom: 1px solid #EBEBEB;
@@ -11616,6 +11593,30 @@ ul li {
 .user-wrap .user-content h6, .user-wrap .user-content .h6 {
   color: #AAA3A0;
   font-weight: 400;
+}
+
+.user-img {
+  display: inline-block;
+  position: relative;
+}
+.user-img img {
+  border-radius: 50%;
+  padding: 8px 10px 0;
+  background-color: #F39159;
+}
+.user-img .setting-icon {
+  line-height: 0;
+  position: absolute;
+  top: 75%;
+  right: 0;
+}
+.user-img .setting-icon i {
+  padding: 5px;
+  background-color: #308E87;
+  border-radius: 50%;
+  color: var(--white);
+  border: 1px solid var(--white);
+  font-size: 12px;
 }
 
 /**=====================
@@ -11680,7 +11681,7 @@ table thead tr {
   height: 12%;
   width: 12%;
   border-radius: 100%;
-  bottom: 12%;
+  top: 12%;
   right: 4%;
 }
 .avatars .b-r-8 {
@@ -11772,48 +11773,24 @@ table thead tr {
   left: unset;
 }
 .avatar-showcase .avatar-intial {
-  background-color: #EBEBEB;
   border-radius: 50%;
   padding: 11px 18px;
 }
-.avatar-showcase .avatar-intial:nth-child(3) {
-  padding: 10px 13px;
-}
-.avatar-showcase .avatar-intial:nth-child(4) {
-  padding: 9px 17px;
-}
-.avatar-showcase .avatar-intial:nth-child(5) {
-  padding: 8px 13px;
-}
-.avatar-showcase .avatar-intial:last-child {
-  padding: 6px 11px;
-}
-.avatar-showcase .avatar-intial h1, .avatar-showcase .avatar-intial .h1, .avatar-showcase .avatar-intial h2, .avatar-showcase .avatar-intial .h2, .avatar-showcase .avatar-intial h3, .avatar-showcase .avatar-intial .h3, .avatar-showcase .avatar-intial h4, .avatar-showcase .avatar-intial .h4 {
-  font-weight: 500;
-}
 .avatar-showcase .ping {
-  background: #fff;
-  border-radius: 50%;
-  border: 3px solid #222;
-  width: 0px;
-  height: 0px;
   animation: load 1.5s ease-out infinite;
-  position: absolute;
-  top: 9px;
-  right: 13px;
 }
 @keyframes load {
   0% {
-    background: transparent;
-    border: 3px solid transparent;
+    background-color: rgb(54, 155, 54);
+    border: 0px solid rgb(54, 155, 54);
   }
-  40% {
-    background: rgb(204, 38, 38);
-    border: 3px solid rgb(204, 38, 38);
+  50% {
+    background-color: white;
+    border: 3px solid white;
   }
   100% {
-    background: rgb(204, 38, 38);
-    border: 3px solid rgb(204, 38, 38);
+    background-color: rgb(112, 199, 112);
+    border: 0px solid rgb(112, 199, 112);
   }
 }
 .avatar-showcase .avtar-icons {
@@ -11855,6 +11832,21 @@ table thead tr {
 .avtar-xs {
   width: 40px;
   height: 40px;
+}
+
+.bg-light-primary {
+  background-color: #EDF6F0;
+  color: #308E87;
+}
+
+.bg-light-secondary {
+  background-color: #FDF5E7;
+  color: #F39159;
+}
+
+.bg-light-danger {
+  background-color: #FFECE8;
+  color: #E74B2B;
 }
 
 /**=====================
