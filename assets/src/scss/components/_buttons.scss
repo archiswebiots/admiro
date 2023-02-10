@@ -1,0 +1,42 @@
+/**=====================
+     buttons css start
+==========================**/
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+}
+$colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  info: $info-color, 
+  success: $success-color, 
+  danger: $danger-color,
+  light: $light-color
+);
+@each $key, $val in $colors {
+    .btn-#{$key} {
+      background-color: $val;
+      border: 1px solid var(--shape-border);
+      border-radius: 30px;
+      &:hover, &:focus, &:active:focus {
+        background-color: $val;
+        border-color: $val;
+      }
+    }
+}
+@each $key, $val in $colors {
+    .btn-outline-#{$key} {
+      background-color: $white;
+      border: 1px solid $val;
+      border-radius: 30px;
+      color: $val;
+      &:hover, &:focus, &:active:focus {
+        background-color: $val;
+        border-color: $val;
+        color: $white;
+      }
+    }
+}
+/**=====================
+     buttons css end
+==========================**/

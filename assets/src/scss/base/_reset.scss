@@ -1,0 +1,35 @@
+/**=====================
+     Reset css start
+==========================**/
+/*====== Font-weight css starts ======*/
+$i: 100, 300, 500, 400, 600, 700, 900;
+@each $val in $i {
+  .f-w-#{$val} {
+    font-weight: $val;
+  }
+}
+/*====== Font-weight css ends ======*/
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--scrollbar-color) var(--white);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--white);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 10px;
+  }
+
+/**=====================
+     Reset css end
+==========================**/

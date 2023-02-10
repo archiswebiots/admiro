@@ -1,0 +1,32 @@
+// Page header start 
+header.page-header
+    .header-left
+        form.search-form.mb-0
+            .input-group
+                input.form-control(type='search' placeholder='Type to Search...')
+                span.input-group-text.ps-0
+                    i.iconly-Search.icli 
+                //- a.search-icon.d-sm-none(href="javascript:void(0)")
+                //-     +IconlySprite('Search', 'search-bg svg-color')
+    .nav-right
+        ul.header-right
+            include language
+            li.custom-dropdown
+                a.dark-mode(href="javascript:void(0)")
+                    i.iconly-Star.icli
+            include cart
+            include notification
+            li
+                a.full-screen(href="javascript:void(0)")
+                    i.iconly-Scan.icli
+            include bookmark
+            div.weather-menu.d-lg-block.d-none
+                button.btn.btn-primary 
+                    +IconlySprite('Weather--cloud', 'svg-color')
+                    span.ms-1 15
+                        sup 
+                            +IconlySprite('circle', 'svg-color svg-white')
+                button.btn.btn-light
+                    span Medan, IDN
+
+// Page header end

@@ -1,0 +1,60 @@
+//-// Cart items 
+-
+    var CART_ITEMS =[
+        {
+            spanTag: 'Special Offer',
+            tagClass: 'font-primary',
+            productname: 'Watch multicolor',
+            price: '$26.00',
+            delPrice: '$32.00',
+            url: '../assets/images/dashboard2/1.png',
+            altContent: 'Watch',
+            bgClass: 'bg-light-primary'
+        },
+        {
+            spanTag: 'Mega sale',
+            tagClass: 'font-secondary',
+            productname: 'Airpods',
+            price: '$30.45',
+            delPrice: '$50.00',
+            url: '../assets/images/dashboard2/2.png',
+            altContent: 'Airpods',
+            bgClass: 'bg-light-secondary'
+        },
+    ]
+//-// Mixin
+mixin CartContent(items)
+
+    each item in items
+        li.d-flex.gap-3
+            .flex-shrink-0(class=item.bgClass)
+                img(src=item.url alt=item.altContent)
+            .flex-grow-1
+                span(class=item.tagClass)=item.spanTag
+                a(href="#") 
+                    h5= item.productname 
+                h6.mt-1= item.price
+                    del=item.delPrice
+                .input-group 
+                    span.input-group-text 
+                        +IconlySprite('minus', 'svg-color')
+                    input.form-control(type="text" value="1" class=item.bgClass)
+                    span.input-group-text 
+                        +IconlySprite('plus', 'svg-color')
+            a.btn.btn-close
+// Cart menu
+li.custom-dropdown
+    a(href="javascript:void(0)")
+        i.iconly-Bag.icli
+    .custom-menu.cart-dropdown.py-0.overflow-hidden
+        h5.title.bg-primary-light Cart
+            span.badge.bg-primary 60%
+        ul
+            +CartContent(CART_ITEMS)
+        .bg-primary-light.cart-total
+            div.d-flex.align-items-center.justify-content-between
+                h6.f-light Total 
+                h6 $56.00
+            div.button-group
+                a.btn.btn-outline-primary(href="#") View Cart
+                a.btn.btn-primary.float-end(href="#") Checkout

@@ -1,0 +1,34 @@
+//-// Language items                                                   
+-
+  var LANGUAGE_ITEMS = [
+    { 
+      title: 'ENGLISH',
+      icon: 'us',
+    },
+    {
+      title: 'FRENCH',
+      icon: 'fr',
+    },
+    {
+      title: 'ARABIC',
+      icon: 'ae',
+    },
+  ]
+
+//-// Mixin
+mixin LanguageContent(items)
+
+  each item, index in items
+    li.d-block
+        a(href="#")
+            i.flag-icon(class=`flag-icon-${item.icon}`)
+            = item.title
+
+// Language dropdown start
+li.custom-dropdown.d-sm-block.d-none
+    a(href="javascript:void(0)")
+        h6.f-w-700 ENG
+          +IconlySprite('Arrow--Down', 'svg-color')
+    ul.custom-menu.profile-menu.language-menu.py-0
+        +LanguageContent(LANGUAGE_ITEMS)
+// Language dropdown end

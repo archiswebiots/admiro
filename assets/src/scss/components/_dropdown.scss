@@ -1,0 +1,36 @@
+/**=====================
+     Dropdown css start
+==========================**/
+.custom {
+    &-dropdown {
+        position: relative;
+    }
+    &-menu {
+        position: absolute;
+        border-radius: 20px;
+        background: var(--white);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        right: 0;
+        top: 28px;
+        [dir="rtl"] & {
+            right: unset;
+            left: 16px;
+        }
+        &.show {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.5s;
+        }
+    }
+}
+.dropdown, .custom {
+    &-menu {
+        margin-top: 20px  !important;
+        box-shadow: $card-box-shadow;
+    }
+}
+/**=====================
+     Dropdown css end
+==========================**/
