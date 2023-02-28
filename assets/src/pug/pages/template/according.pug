@@ -1,0 +1,55 @@
+-var sidebar    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                        | According
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')     
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Ui Kits
+                                        li.breadcrumb-item.active According
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                            .col-sm-12.col-xl-6
+                                .card 
+                                    .card-header
+                                        h4 Simple Accordion
+                                        p.f-m-light.mt-1.mb-0
+                                            | Click the accordions below to expand/collapse the accordion content.
+                                            | Use the 
+                                            code .accordion 
+                                            | .
+                                    .card-body  
+                                        #accordionExample.accordion.dark-accordion
+                                            .accordion-item
+                                                h2#headingOne.accordion-header
+                                                    button.accordion-button.collapsed.accordion-light-primary.txt-primary.active(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                                                        | What do web designers do?
+                                                        i.svg-color(data-feather='chevron-down')
+                                                #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#accordionExample')    
+                                                    .accordion-body
+                                                        p
+                                                            | Web design
+                                                            em.txt-danger  identifies the goals
+                                                            |  of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images across a series of pages and integrating applications and other interactive elements.
+                                            .accordion-item            
+            include ../../components/footer
+        include ../../components/footer-files                        

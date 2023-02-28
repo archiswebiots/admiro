@@ -16,16 +16,15 @@ html(lang='en')
                     .page-title
                         .row
                             .col-6
-                                h2
-                                    | Avatars
+                                h3
+                                    | Helper-classes 
                             .col-6
                                 ol.breadcrumb
-                                    //- li.breadcrumb-item
-                                    //-   a(href='index.html')     
-                                    //-     svg.stroke-icon
-                                    //-       use(href='../assets/svg/icon-sprite.svg#stroke-home')
-                                    //- li.breadcrumb-item Ui Kits
-                                    //- li.breadcrumb-item.active Avatars
+                                    li.breadcrumb-item
+                                      a(href='index.html')     
+                                        i.iconly-Home.icli
+                                    li.breadcrumb-item Ui Kits
+                                    li.breadcrumb-item.active Helper-classes
                 // Container-fluid starts      
                 .container-fluid
                     .row.g-4
@@ -370,7 +369,7 @@ html(lang='en')
                                             .helper-box.border-end.border-info.fill-wrapper
                                             | .border-end
                         .col-xl-6
-                            .card.height-equal
+                            .card
                                 .card-header
                                     h4 Images Sizes
                                     p.f-m-light.mt-1.mb-0 
@@ -392,7 +391,7 @@ html(lang='en')
                                         img.img-90.img-h-90(src='../assets/images/avatars/1.jpg', alt='img-size-90')
                                         img.img-100.img-h-100(src='../assets/images/avatars/1.jpg', alt='img-size-100')
                         .col-xl-6
-                            .card.height-equal
+                            .card
                                 .card-header
                                     h4 Font-Style
                                     p.f-m-light.mt-1.mb-0
@@ -411,7 +410,7 @@ html(lang='en')
                                     p.f-s-inherit
                                         | This is a .f-s-inherit font-style
                         .col-xl-6
-                            .card.height-equal
+                            .card
                                 .card-header
                                     h4 Font Weight 
                                     p.f-m-light.mt-1.mb-0
@@ -437,7 +436,7 @@ html(lang='en')
                                         .f-w-900
                                             | You can set bold font weight heading .f-w-900
                         .col-xl-6
-                            .card.height-equal
+                            .card
                                 .card-header
                                     h4 Text Colors
                                     p.f-m-light.mt-1.mb-0
@@ -494,4 +493,5 @@ html(lang='en')
                                         .font-wrapper.border
                                             .fs-1
                                                 | Font-size .fs-1
-        include ../../components/footer   
+            include ../../components/footer
+        include ../../components/footer-files 

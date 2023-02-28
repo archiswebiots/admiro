@@ -16,16 +16,15 @@ html(lang='en')
                         .page-title
                             .row
                                 .col-6
-                                    h2
-                                    | Avatars
+                                    h3
+                                        | tag-pills
                                 .col-6
                                     ol.breadcrumb
-                                    //- li.breadcrumb-item
-                                    //-   a(href='index.html')     
-                                    //-     svg.stroke-icon
-                                    //-       use(href='../assets/svg/icon-sprite.svg#stroke-home')
-                                    //- li.breadcrumb-item Ui Kits
-                                    //- li.breadcrumb-item.active Avatars
+                                        li.breadcrumb-item
+                                            a(href='index.html')     
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Ui Kits
+                                        li.breadcrumb-item.active tag-pills
                     // Container-fluid starts
                     .container-fluid
                         .row
@@ -39,4 +38,6 @@ html(lang='en')
                                         | utility class to make more badges.
                                     .card-body
                                         .badge-spacing
-                                            span.badge.text-bg-primary Primary            
+                                            span.badge.text-bg-primary Primary        
+            include ../../components/footer
+        include ../../components/footer-files     

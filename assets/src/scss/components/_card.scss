@@ -4,7 +4,6 @@
 //Card css
 .card{
     border-radius: 1.5rem;
-    overflow: hidden;
     border: unset;
     height: 100%;
     .sub-title{
@@ -22,14 +21,17 @@
     padding: $card-padding;
     border-bottom: $card-border;
     position: relative;
+    p{
+        color: rgba(var(--font-color),1);
+    }
 }
 .card-footer {
     background-color: rgba(var(--white),1);
     border-top: 1px solid rgba(var(--card-border-color),1);
-    padding: 30px;
+    padding: $card-padding;
 }
 .card-body {
-    padding: 30px;
+    padding: $card-padding;
     background-color: transparent;
 
     p {

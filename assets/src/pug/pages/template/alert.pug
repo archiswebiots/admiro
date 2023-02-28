@@ -16,16 +16,15 @@ html(lang='en')
                         .page-title
                             .row
                                 .col-6
-                                    h2
-                                        | Avatars
+                                    h3
+                                        | Alert
                                 .col-6
                                     ol.breadcrumb
-                                        //- li.breadcrumb-item
-                                        //-   a(href='index.html')     
-                                        //-     svg.stroke-icon
-                                        //-       use(href='../assets/svg/icon-sprite.svg#stroke-home')
-                                        //- li.breadcrumb-item Ui Kits
-                                        //- li.breadcrumb-item.active Avatars
+                                        li.breadcrumb-item
+                                          a(href='index.html')     
+                                            i.iconly-Home.icli
+                                        li.breadcrumb-item Ui Kits
+                                        li.breadcrumb-item.active Alert
                     // Container-fluid starts
                     .container-fluid
                         .row
@@ -46,3 +45,5 @@ html(lang='en')
                                                         | This is a   
                                                         a.alert-link.text-white(href='#') primary alert
                                                         |  with an example link.Check it out.
+            include ../../components/footer
+        include ../../components/footer-files 

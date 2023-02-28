@@ -28,12 +28,18 @@ $colors: (
       background-color: $white;
       border: 1px solid $val;
       color: $val;
+      
       &:hover, &:focus, &:active:focus {
         background-color: $val;
         border-color: $val;
         color: $white;
       }
     }
+}
+.button-group{
+  .btn-outline-primary, .btn-primary{
+    border-radius: 30px;
+  }
 }
 /**=====================
      buttons css end

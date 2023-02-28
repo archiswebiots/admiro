@@ -10785,7 +10785,7 @@ textarea.form-control-lg {
   --light-color: 170, 163, 160;
   --footer-icon: 244, 0, 0;
   --active-bg-color: 217, 232, 229;
-  --font-color: 98, 98, 98;
+  --font-color: 170, 163, 160;
   --border-color: 235, 235, 235;
   --light-gray: 236, 243, 250;
   --light-semi-gray: 239, 239, 239;
@@ -10798,6 +10798,7 @@ textarea.form-control-lg {
   --light-text: 153, 153, 153;
   --light-chartist-grid-color: 246, 249, 253;
   --gray-60: 204, 204, 204;
+  --dropdown-menu: 43, 43, 43;
   --ping-success: 54, 155, 54;
   --ping-light-success: 112, 199, 112;
   --bg-light-primary: 237, 246, 240;
@@ -10810,7 +10811,7 @@ textarea.form-control-lg {
   --white: 255, 255, 255;
   --black: #000;
   --body-font-color: 41, 41, 41;
-  --font-color: #AAA3A0;
+  --font-color: rgb(170, 163, 160);
   --shape-border: #E5E5E5;
   --scrollbar-color: #eee;
   --light-border: #DCEEE6;
@@ -10930,6 +10931,11 @@ ul li {
   font-weight: 500;
 }
 
+.common-flex {
+  display: flex;
+  gap: 12px;
+}
+
 /**=====================
      typography css end
 ==========================**/
@@ -11046,9 +11052,10 @@ ul li {
   position: relative;
 }
 .custom-menu {
+  margin-top: 20px;
   position: absolute;
   border-radius: 20px;
-  background: var(--white);
+  background: rgba(var(--white), 1);
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
@@ -11066,7 +11073,6 @@ ul li {
 }
 
 .dropdown-menu, .custom-menu {
-  margin-top: 20px !important;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.03);
 }
 
@@ -11143,7 +11149,7 @@ ul li {
   padding: 10px;
 }
 .dropdown-basic button {
-  max-height: 43px;
+  max-height: 41px;
 }
 .dropdown-basic .dropdown {
   position: relative;
@@ -11227,6 +11233,9 @@ ul li {
   background-color: rgba(var(--gray-60), 1) !important;
 }
 
+.dropdown-menu {
+  padding: 0;
+}
 .dropdown-menu .input-group {
   background-color: unset;
   padding: 6px 12px;
@@ -11240,6 +11249,17 @@ ul li {
 .dropdown-menu .input-group .input-group-text {
   background-color: unset;
   border: none;
+}
+.dropdown-menu li {
+  width: 100%;
+}
+.dropdown-menu li a {
+  color: rgba(var(--dropdown-menu), 1);
+  opacity: 0.6;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-top: 1px solid rgba(var(--light-semi-gray), 1);
+  background: rgba(var(--white), 1);
 }
 
 .dropdown-toggle::after {
@@ -11321,43 +11341,51 @@ ul li {
   z-index: 2;
 }
 
-.btn {
+.common-flex .btn {
   padding: 0.375rem 1.75rem;
 }
 
-[dir=rtl] .rtl-dropdown .dropdown-menu li .dropdown-item {
-  text-align: right;
+.btn.btn-outline-primary:hover {
+  background-color: rgba(var(--primary-color), 0.9);
 }
-[dir=rtl] .rtl-dropdown .btn-group .dropdown-menu {
-  text-align: right;
-}
-
-.btn-outline-primary:hover {
-  background-color: rgba(var(--primary-color), 0.9) !important;
-}
-
-.btn-outline-secondary:hover {
+.btn.btn-outline-secondary:hover {
   background-color: rgba(var(--secondary-color), 0.9) !important;
 }
-
-.btn-outline-success:hover {
+.btn.btn-outline-success:hover {
   background-color: rgba(var(--success-color), 0.9) !important;
 }
-
-.btn-outline-info:hover {
+.btn.btn-outline-info:hover {
   background-color: rgba(var(--info-color), 0.9) !important;
 }
-
-.btn-outline-warning:hover {
+.btn.btn-outline-warning:hover {
   background-color: rgba(var(--warning-color), 0.9) !important;
 }
-
-.btn-outline-danger:hover {
+.btn.btn-outline-danger:hover {
   background-color: rgba(var(--danger-color), 0.9) !important;
 }
 
 .btn-group .btn:hover {
   color: rgba(var(--white), 1);
+}
+
+.btn:focus {
+  box-shadow: unset;
+}
+.btn:active {
+  color: rgba(var(--white), 1);
+  background-color: rgba(var(--primary-color), 1);
+  border-color: rgba(var(--primary-color), 1);
+}
+.btn:active:focus {
+  box-shadow: unset;
+}
+.btn.show:focus {
+  box-shadow: unset;
+}
+.btn.show:active {
+  color: rgba(var(--white), 1);
+  background-color: rgba(var(--primary-color), 1);
+  border-color: rgba(var(--primary-color), 1);
 }
 
 /**=====================
@@ -11854,6 +11882,10 @@ ul li {
   color: #fff;
 }
 
+.button-group .btn-outline-primary, .button-group .btn-primary {
+  border-radius: 30px;
+}
+
 /**=====================
      buttons css end
 ==========================**/
@@ -11862,6 +11894,9 @@ ul li {
 ==========================**/
 .breadcrumb {
   --bs-breadcrumb-margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 .breadcrumb-item .svg-color {
   padding: 5px;
@@ -11929,7 +11964,6 @@ ul li {
 ==========================**/
 .card {
   border-radius: 1.5rem;
-  overflow: hidden;
   border: unset;
   height: 100%;
 }
@@ -11949,15 +11983,18 @@ ul li {
   border-bottom: 1px solid rgba(var(--light-gray), 1);
   position: relative;
 }
+.card-header p {
+  color: rgba(var(--font-color), 1);
+}
 
 .card-footer {
   background-color: rgba(var(--white), 1);
   border-top: 1px solid rgba(var(--card-border-color), 1);
-  padding: 30px;
+  padding: 17px;
 }
 
 .card-body {
-  padding: 30px;
+  padding: 17px;
   background-color: transparent;
 }
 .card-body p:last-child {
@@ -12926,6 +12963,9 @@ header ul[class*=header-] .weather-menu {
 [dir=rtl] header ul[class*=header-] .weather-menu {
   margin-left: unset;
   margin-right: 14px;
+}
+header ul[class*=header-] .weather-menu .btn {
+  border-radius: 30px;
 }
 header ul[class*=header-] .weather-menu .btn span {
   text-transform: uppercase;

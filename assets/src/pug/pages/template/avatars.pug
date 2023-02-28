@@ -16,22 +16,21 @@ html(lang='en')
             .page-title
                 .row
                   .col-6
-                    h4
+                    h3
                       | Avatars
                   .col-6
                     ol.breadcrumb
-                      //- li.breadcrumb-item
-                      //-   a(href='index.html')     
-                      //-     svg.stroke-icon
-                      //-       use(href='../assets/svg/icon-sprite.svg#stroke-home')
-                      //- li.breadcrumb-item Ui Kits
-                      //- li.breadcrumb-item.active Avatars
+                      li.breadcrumb-item
+                        a(href='index.html')     
+                          i.iconly-Home.icli
+                      li.breadcrumb-item Ui Kits
+                      li.breadcrumb-item.active Avatars
           // Container-fluid starts
           .container-fluid
             .user-profile
               .row
                 .col-xl-4.col-md-6
-                  .card.height-equal            
+                  .card           
                     .card-header
                       h4.mb-0 Sizes
                       p.mb-0.mt-1
@@ -86,7 +85,7 @@ html(lang='en')
                         div.avatar
                           img.img-70.rounded-circle(src='../assets/images/avtar/11.jpg', alt='avatar')
                 .col-md-6.g-4
-                  .card.height-equal
+                  .card
                     .card-header
                       h4 Ratio
                       p.mb-0.mt-1
@@ -199,5 +198,6 @@ html(lang='en')
                           img(src="../assets/images/profile.png" alt="user") 
                           .setting-icon
                               i.iconly-Edit.icli     
-        include ../../components/footer      
+        include ../../components/footer    
+      include ../../components/footer-files  
                           

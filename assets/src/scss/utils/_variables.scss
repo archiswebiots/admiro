@@ -17,7 +17,7 @@
     --light-color: 170, 163, 160;
     --footer-icon: 244, 0, 0;
     --active-bg-color: 217, 232, 229;
-    --font-color: 98, 98, 98;
+    --font-color: 170, 163, 160;
     --border-color: 235, 235, 235;
     --light-gray: 236, 243, 250;
     --light-semi-gray : 239, 239, 239;
@@ -30,6 +30,7 @@
     --light-text: 153, 153, 153;
     --light-chartist-grid-color: 246, 249, 253;
     --gray-60 : 204, 204, 204;
+    --dropdown-menu: 43, 43, 43;
     //ping color 
     --ping-success: 54, 155, 54;
     --ping-light-success: 112, 199, 112;
@@ -43,7 +44,7 @@
     --white: 255, 255, 255;
     --black: #000;
     --body-font-color: 41, 41, 41;
-    --font-color: #AAA3A0;
+    --font-color: rgb(170, 163, 160);
     --shape-border: #E5E5E5;
     --scrollbar-color: #eee;
     --light-border: #DCEEE6;
@@ -117,3 +118,11 @@ $alert-hover-color : rgba(var(--dark),1);
 $alert-border-radious :0.15rem;
 $alert-padding :15px;
 $alert-msg-icon-size :16px;
+
+//According setting
+$according-card-top-margin : 10px;
+$according-btn-weight : 500;
+$according-btn-color : rgba(var( --body-font-color),1);
+$according-card-header-padding : 0.75rem 1.25rem;
+$according-open-icon : "\eb73";
+$according-close-icon : "\eb7a";
