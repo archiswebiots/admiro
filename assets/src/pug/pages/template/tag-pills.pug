@@ -1,0 +1,42 @@
+-var sidebar    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en') 
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                    | Avatars
+                                .col-6
+                                    ol.breadcrumb
+                                    //- li.breadcrumb-item
+                                    //-   a(href='index.html')     
+                                    //-     svg.stroke-icon
+                                    //-       use(href='../assets/svg/icon-sprite.svg#stroke-home')
+                                    //- li.breadcrumb-item Ui Kits
+                                    //- li.breadcrumb-item.active Avatars
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                            .col-sm-12.col-xl-6
+                                .card
+                                    .card-header
+                                        h4 Badges Contextual Variations
+                                        p.f-m-light.mt-1.mt-1.mb-0
+                                        | Use the
+                                        code .badge 
+                                        | utility class to make more badges.
+                                    .card-body
+                                        .badge-spacing
+                                            span.badge.text-bg-primary Primary            

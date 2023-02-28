@@ -28,13 +28,19 @@
 @import './components/user';
 @import './components/card';
 @import './components/table';
+@import './components/grid';
 @import './components/avatars';
 @import './components/helpers';
+@import './components/badge';
+@import './components/alert';
 
 // *** layout ***
 @import './layout/sidebar';
 @import './layout/header';
 @import './layout/footer';
+
+// *** pages ***
+@import './pages/progress';
 
 // *** Themes *** 
 @import './themes/rtl';

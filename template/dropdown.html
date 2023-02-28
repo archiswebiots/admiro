@@ -284,7 +284,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Avatars</h4>
+                  <h2>Avatars</h2>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb"></ol>
@@ -294,168 +294,299 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="user-profile">
-              <div class="row">
-                <div class="col-xl-4 col-md-6">
-                  <div class="card height-equal">           
-                    <div class="card-header">
-                      <h4 class="mb-0">Sizes</h4>
-                      <p class="mb-0 mt-1">You can change the size of avatar using <code>.img- * (70/80/90/100)</code> class.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar"><img class="img-100 rounded-circle" src="../assets/images/avtar/3.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-90 rounded-circle" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-80 rounded-circle" src="../assets/images/avtar/7.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-70 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
+            <div class="row g-3">
+              <div class="col-xl-6">
+                <div class="card height-equal">
+                  <div class="card-header">
+                    <h4>Basic Dropdown</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>When the<code>.show </code>class starts, dropdown appears. And <code>.btn-*</code> to change button dark background colors.
+                  </div>
+                  <div class="card-body rtl-dropdown">
+                    <div class="common-flex"> 
+                      <div class="btn-group">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</button>
+                        <ul class="dropdown-menu dropdown-block"> 
+                          <li><a class="dropdown-item" href="#">Project</a></li>
+                          <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+                          <li><a class="dropdown-item" href="#">Crypto</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Ecommerce</button>
+                        <ul class="dropdown-menu dropdown-block">
+                          <li><a class="dropdown-item" href="#">Product</a></li>
+                          <li><a class="dropdown-item" href="#">Product details</a></li>
+                          <li><a class="dropdown-item" href="#">Cart</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-warning text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ui kits</button>
+                        <ul class="dropdown-menu dropdown-block">
+                          <li><a class="dropdown-item" href="#">Typography</a></li>
+                          <li><a class="dropdown-item" href="#">Avatars</a></li>
+                          <li><a class="dropdown-item" href="#">Grid</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Error page</button>
+                        <ul class="dropdown-menu dropdown-block">
+                          <li><a class="dropdown-item" href="#">Error 400</a></li>
+                          <li><a class="dropdown-item" href="#">Error 403</a></li>
+                          <li><a class="dropdown-item" href="#">Error 500</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h4 class="mb-0">Status Indicator</h4>
-                      <p class="mb-0 mt-1">Using <code> .status-* (online/offline/dnd)</code> class you can set the status of avatar.         </p>
+              </div>
+              <div class="col-xl-6">
+                <div class="card height-equal">
+                  <div class="card-header">
+                    <h4>Rounded Dropdown</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>When the<code>.show </code>class starts, dropdown appears. And <code>.rounded-pill</code> to change rounded dropdowns.        
+                  </div>
+                  <div class="card-body rtl-dropdown">
+                    <div class="common-flex">
+                      <div class="btn-group">
+                        <button class="btn btn-primary rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Primary</button>
+                        <ul class="dropdown-menu dropdown-block">
+                          <li> <a class="dropdown-item" href="#">Dark</a></li>
+                          <li><a class="dropdown-item" href="#">Light</a></li>
+                          <li><a class="dropdown-item" href="#">Lighter</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-success rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Success </button>
+                        <ul class="dropdown-menu dropdown-block"> 
+                          <li> <a class="dropdown-item" href="#">Dark</a></li>
+                          <li><a class="dropdown-item" href="#">Light</a></li>
+                          <li> <a class="dropdown-item" href="#">Lighter         </a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-info text-white rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Info</button>
+                        <ul class="dropdown-menu dropdown-block">
+                          <li><a class="dropdown-item" href="#">Dark</a></li>
+                          <li><a class="dropdown-item" href="#">Light </a></li>
+                          <li><a class="dropdown-item" href="#">Lighter </a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-warning text-white rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Warning</button>
+                        <ul class="dropdown-menu dropdown-block">
+                          <li><a class="dropdown-item" href="#">Dark</a></li>
+                          <li><a class="dropdown-item" href="#">Light</a></li>
+                          <li><a class="dropdown-item" href="#">Lighter </a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-danger rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Danger </button>
+                        <ul class="dropdown-menu dropdown-block">
+                          <li><a class="dropdown-item" href="#">Dark</a></li>
+                          <li><a class="dropdown-item" href="#">Light </a></li>
+                          <li><a class="dropdown-item" href="#">Lighter  </a></li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar"><img class="img-100 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar">
-                          <div class="status status-online"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xl-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4> Split Dropdown</h4>
+                    <p class="f-m-light mt-1 mb-0">When the<code>.show </code>class starts, dropdown appears. And 
+                      split the dropdown <code>.dropdown-toggle-split   </code>
+                    </p>
+                  </div>
+                  <div class="card-body dropdown-basic me-0">
+                    <div class="common-flex">
+                      <div class="btn-group">
+                        <button class="btn btn-outline-primary" type="button">Widgets</button>
+                        <div class="dropdown separated-btn">
+                          <button class="btn btn-primary" type="button"><i class="iconly-Arrow-Down icli"></i></button>
+                          <div class="dropdown-content"><a href="#">General</a><a href="#">Chart</a></div>
                         </div>
-                        <div class="avatar"><img class="img-90 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar">
-                          <div class="status status-dnd"></div>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-outline-secondary" type="button">Animations</button>
+                        <div class="dropdown separated-btn">
+                          <button class="btn btn-secondary" type="button"><i class="iconly-Arrow-Down icli"></i></button>
+                          <div class="dropdown-content"><a href="#">Animate</a><a href="#">AOS animations</a></div>
                         </div>
-                        <div class="avatar"><img class="img-80 rounded-circle" src="../assets/images/avtar/7.jpg" alt="avatar">
-                          <div class="status status-offline"></div>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-outline-success" type="button">Charts</button>
+                        <div class="dropdown separated-btn">
+                          <button class="btn btn-success" type="button"><i class="iconly-Arrow-Down icli"></i></button>
+                          <div class="dropdown-content"><a href="#">Animate</a><a href="#">AOS animations</a></div>
+                        </div>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-outline-info" type="button">Email</button>
+                        <div class="dropdown separated-btn">
+                          <button class="btn btn-info text-white" type="button"><i class="iconly-Arrow-Down icli"></i></button>
+                          <div class="dropdown-content"><a href="#">Email app</a><a href="#">Email compose</a></div>
+                        </div>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-outline-warning" type="button">Icons</button>
+                        <div class="dropdown separated-btn">
+                          <button class="btn btn-warning text-white" type="button"><i class="iconly-Arrow-Down icli"></i></button>
+                          <div class="dropdown-content"><a href="#">Flag icons      </a><a href="#">Fontawesome icons</a><a href="#">Ico icons</a><a href="#">Feather icons</a></div>
+                        </div>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-outline-danger" type="button">Learning</button>
+                        <div class="dropdown separated-btn">
+                          <button class="btn btn-danger" type="button"><i class="iconly-Arrow-Down icli"></i></button>
+                          <div class="dropdown-content">  <a href="#">Learning List</a><a href="#">Detailed Course</a></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h4>Shapes</h4>
-                      <p class="mb-0 mt-1">Using the<code>.b-r-* (8/30/35/25)</code> class you can set the shapes of avatar.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar"><img class="img-100 b-r-8" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-90 b-r-30" src="../assets/images/avtar/16.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-80 b-r-35" src="../assets/images/avtar/3.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-70 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
-                      </div>
-                    </div>
+              </div>
+              <div class="col-xl-4 col-sm-6">
+                <div class="card height-equal">
+                  <div class="card-header">
+                    <h4> Heading Dropdown</h4>
+                    <p class="f-m-light mt-1"></p>Main heading and any sub-content in dropdown.   
                   </div>
-                </div>
-                <div class="col-md-6 g-4">
-                  <div class="card height-equal">
-                    <div class="card-header">
-                      <h4>Ratio</h4>
-                      <p class="mb-0 mt-1">Give the shape to avatar using <code>.ratio</code> and <code> img-* (50/70/80/90/100)</code> class.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar ratio"><img class="b-r-8 img-100" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
-                        <div class="avatar ratio"><img class="b-r-8 img-90" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
-                        <div class="avatar ratio"><img class="b-r-8 img-80" src="../assets/images/user/1.jpg" alt="avatar"></div>
-                        <div class="avatar ratio"><img class="b-r-8 img-70" src="../assets/images/avtar/16.jpg" alt="avatar"></div>
-                        <div class="avatar ratio"><img class="b-r-8 img-50" src="../assets/images/avtar/7.jpg" alt="avatar"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 g-4">
-                  <div class="card">   
-                    <div class="card-header">
-                      <h4>Grouping  </h4>
-                      <p class="mb-0 mt-1">
-                         You can set the group of avatars like <code>.img-* (40/50/60/80/100) </code>and <code>.b-r-* (8/30/35)</code>.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="customers d-inline-block avatar-group">
+                  <div class="card-body rtl-dropdown">
+                    <div class="common-flex">
+                      <div class="btn-group">
+                        <button class="btn btn-success rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Party</button>
+                        <ul class="dropdown-menu dropdown-block">
+                          <li class="border-bottom border-2"><a class="dropdown-item fw-bold fs-6 bg-light" href="#">Party List</a></li>
                           <ul>
-                            <li class="d-inline-block"><img class="img-100 b-r-8" src="../assets/images/avtar/4.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="img-80" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"></li><img class="img-50 b-r-35" src="../assets/images/avtar/3.jpg" alt="avatar">
+                            <li><a class="dropdown-item" href="#">Balloons</a></li>
+                            <li><a class="dropdown-item" href="#">Cake   </a></li>
                           </ul>
-                        </div>
-                        <div class="customers d-inline-block avatar-group">
-                          <ul>
-                            <li class="d-inline-block"><img class="img-60 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="b-r-8 img-80" src="../assets/images/user/1.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="img-60 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
-                          </ul>
-                        </div>
-                        <div class="customers d-inline-block avatar-group">
-                          <ul>
-                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/3.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/5.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar"></li>
-                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-6">
+                <div class="card height-equal">
+                  <div class="card-header">
+                    <h4> With Input Type</h4>
+                    <p class="f-m-light mt-1"></p>Use the checkbox using dropdown.<code>(type='checkbox'/'radio')</code>.         
+                  </div>
+                  <div class="card-body">
+                    <div class="common-flex">
+                      <btn-group> 
+                        <button class="btn btn-warning text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">Inputs </button>
+                        <ul class="dropdown-menu dropdown-block dropdown-wrapper dark-input-type">
+                          <li> 
+                            <div class="input-group rounded-0 border-0 shadow-none">
+                              <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                              </div><span>Default checkbox</span>
+                            </div>
+                            <div class="input-group rounded-0 border-0 shadow-none">
+                              <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                              </div><span>Default radio       </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </btn-group>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-6">
+                <div class="card height-equal">
+                  <div class="card-header">
+                    <h4> Dark Dropdown</h4>
+                    <p class="f-m-light mt-1">   </p><code>.dropdown-menu-dark </code>class through make dark mode.                                         
+                  </div>
+                  <div class="card-body dropdown-basic m-0 rtl-dropdown">
+                    <div class="common-flex dark-dropdown">
+                      <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dark Night</button>
+                      <ul class="dropdown-menu dropdown-menu-dark dropdown-block">
+                        <li><a class="dropdown-item active" href="#">Dark moon</a></li>
+                        <li><a class="dropdown-item" href="#">Dark owl</a></li>
+                        <li><a class="dropdown-item" href="#">Nightfall</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">  
+                <div class="card">  
+                  <div class="card-header">
+                    <h4>Unique Dropdown</h4>
+                    <p class="f-m-light mt-1"></p>Unique way to represent form dropdown and text dropdown.
+                  </div>
+                  <div class="card-body rtl-dropdown">
+                    <div class="common-flex">
+                      <div class="btn-group">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Dropdown form</button>
+                        <form class="dropdown-menu p-4 form-wrapper dark-form">
+                          <div class="mb-3">
+                            <label class="form-label" for="exampleDropdownFormEmail2">Email address</label>
+                            <input class="form-control" id="exampleDropdownFormEmail2" type="email" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label" for="exampleDropdownFormPassword2">Password</label>
+                            <input class="form-control" id="exampleDropdownFormPassword2" type="password" placeholder="Password">
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" id="dropdownCheck2" type="checkbox">
+                              <label class="form-check-label" for="dropdownCheck2">Remember me   </label>
+                            </div>
+                          </div>
+                          <button class="btn btn-dark" type="submit">Sign in   </button>
+                        </form>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Text </button>
+                        <div class="dropdown-menu p-4 text-muted form-wrapper">
+                          <p>Some example text that&apos;s free-flowing within the dropdown menu.</p>
+                          <p class="mb-0">And this is more example text.</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 g-4 mb-4">
-                  <div class="card">
-                    <div class="card-header">
-                      <h4>Avatar Initial</h4>
-                      <p class="mb-0 mt-1">You can use initial letter as a avatar.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-xxl bg-light-primary"><span class="fs-1">A</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-xl bg-light-secondary"><span class="fs-2">D</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-lg bg-light-danger"><span class="fs-3">M</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-md bg-light-primary"><span class="fs-4">I</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-sm bg-light-secondary"><span class="fs-5">R</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-xs bg-light-danger"><span class="fs-6">O</span></div>
-                      </div>
-                    </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4> Justify Contents</h4>
+                    <p class="f-m-light mt-1"></p>Use the <code>(text-start/text-center/text-end)</code> to change dropdown texts.   
                   </div>
-                </div>
-                <div class="col-md-4 g-4 mb-4"> 
-                  <div class="card"> 
-                    <div class="card-header">
-                      <h4>Avatar Ping</h4>
-                      <p class="mb-0 mt-1">Using<code> .ping </code> class you can indicate important message.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar"><img class="b-r-8 img-100 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar">
-                          <div class="ping status-offline status"></div>
-                        </div>
-                        <div class="avatar"><img class="b-r-8 img-90 rounded-circle" src="../assets/images/avtar/4.jpg" alt="avatar">
-                          <div class="ping status-online status"></div>
-                        </div>
-                        <div class="avatar"><img class="b-r-8 img-80 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar">
-                          <div class="ping status-dnd status"></div>
-                        </div>
-                        <div class="avatar"><img class="b-r-8 img-70 rounded-circle" src="../assets/images/avtar/3.jpg" alt="avatar">
-                          <div class="ping status-offline status"></div>
-                        </div>
+                  <div class="card-body dropdown-basic m-0">
+                    <div class="common-flex">
+                      <div class="btn-group">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Text-left   </button>
+                        <ul class="dropdown-menu dropdown-block text-start">
+                          <li> <a class="dropdown-item" href="#">Hello..</a></li>
+                          <li> <a class="dropdown-item" href="#">How are you?</a></li>
+                          <li><a class="dropdown-item" href="#">What are you doing?  </a></li>
+                        </ul>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 g-4 mb-4">
-                  <div class="card"> 
-                    <div class="card-header">
-                      <h4>Avatar profile</h4>
-                      <p class="mb-0 mt-1"> Using icon You can make icon avatars.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="user-img"><img src="../assets/images/profile.png" alt="user">
-                          <div class="setting-icon"><i class="iconly-Setting icli"> </i></div>
-                        </div>
-                        <div class="user-img"><img src="../assets/images/profile.png" alt="user">
-                          <div class="setting-icon"><i class="iconly-Edit icli">    </i></div>
-                        </div>
+                      <div class="btn-group">
+                        <button class="btn btn-info dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">Text-center</button>
+                        <ul class="dropdown-menu dropdown-block text-center">
+                          <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                          <li> <a class="dropdown-item" href="#">Ice-cream</a></li>
+                          <li><a class="dropdown-item" href="#">Trophy</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Text-right </button>
+                        <ul class="dropdown-menu dropdown-block text-end">
+                          <li><a class="dropdown-item" href="#">I'm fine.</a></li>
+                          <li><a class="dropdown-item" href="#">ohh wow!!</a></li>
+                          <li><a class="dropdown-item" href="#">That's the good news!     </a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -464,23 +595,28 @@
             </div>
           </div>
         </div>
-        <footer class="footer"> 
-          <div class="container-fluid">
-            <div class="row"> 
-              <div class="col-md-6 footer-copyright">
-                <p class="mb-0">Copyright 2023 © Admiro theme by pixelstrap.</p>
-              </div>
-              <div class="col-md-6">
-                <p class="float-end mb-0">Hand crafted &amp; made with
-                  <svg class="svg-color footer-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#heart"></use>
-                  </svg>
-                </p>
-              </div>
+      </div>
+      <footer class="footer"> 
+        <div class="container-fluid">
+          <div class="row"> 
+            <div class="col-md-6 footer-copyright">
+              <p class="mb-0">Copyright 2023 © Admiro theme by pixelstrap.</p>
+            </div>
+            <div class="col-md-6">
+              <p class="float-end mb-0">Hand crafted &amp; made with
+                <svg class="svg-color footer-icon">
+                  <use href="../assets/svg/iconly-sprite.svg#heart"></use>
+                </svg>
+              </p>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
+    <!-- bootstrap js-->
+    <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <!-- custom script -->
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>

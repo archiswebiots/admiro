@@ -52,7 +52,7 @@ a {
     color: var(--body-font-color);
     transition: 0.5s all;
     &:hover {
-        color: $primary-color;
+        color: rgba(var(--primary-color),1);
         transition: 0.5s all;
     }
     &:focus-visible {
@@ -86,6 +86,11 @@ ul {
         }
     }
 }
+// common flex property
+// .common-flex {
+//     display: flex;
+//     gap: 12px;
+// }
 /**=====================
      typography css end
 ==========================**/
