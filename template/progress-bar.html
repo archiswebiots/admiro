@@ -284,13 +284,13 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Avatars</h3>
+                  <h3>progress-bar</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">    <i class="iconly-Home icli"></i></a></li>
                     <li class="breadcrumb-item">Ui Kits</li>
-                    <li class="breadcrumb-item active">Avatars</li>
+                    <li class="breadcrumb-item active">progress-bar</li>
                   </ol>
                 </div>
               </div>
@@ -298,175 +298,237 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="user-profile">
-              <div class="row">
-                <div class="col-xl-4 col-md-6">
-                  <div class="card">          
-                    <div class="card-header">
-                      <h4 class="mb-0">Sizes</h4>
-                      <p class="mb-0 mt-1">You can change the size of avatar using <code>.img- * (70/80/90/100)</code> class.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar"><img class="img-100 rounded-circle" src="../assets/images/avtar/3.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-90 rounded-circle" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-80 rounded-circle" src="../assets/images/avtar/7.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-70 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
-                      </div>
-                    </div>
+            <div class="row">
+              <div class="col-sm-12 mb-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Basic Progress Bars</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.
+                    We use the <code>.progress </code>as a wrapper to indicate the max value of the progress bar. The <code>.progress-bar </code>requires an inline style, utility class, or custom CSS to set their width.
                   </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h4 class="mb-0">Status Indicator</h4>
-                      <p class="mb-0 mt-1">Using <code> .status-* (online/offline/dnd)</code> class you can set the status of avatar.         </p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar"><img class="img-100 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar">
-                          <div class="status status-online"></div>
-                        </div>
-                        <div class="avatar"><img class="img-90 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar">
-                          <div class="status status-dnd"></div>
-                        </div>
-                        <div class="avatar"><img class="img-80 rounded-circle" src="../assets/images/avtar/7.jpg" alt="avatar">
-                          <div class="status status-offline"></div>
-                        </div>
+                  <div class="card-body progress-showcase row">
+                    <div class="col">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"> </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h4>Shapes</h4>
-                      <p class="mb-0 mt-1">Using the<code>.b-r-* (8/30/35/25)</code> class you can set the shapes of avatar.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar"><img class="img-100 b-r-8" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-90 b-r-30" src="../assets/images/avtar/16.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-80 b-r-35" src="../assets/images/avtar/3.jpg" alt="avatar"></div>
-                        <div class="avatar"><img class="img-70 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 g-4">
-                  <div class="card">
-                    <div class="card-header">
-                      <h4>Ratio</h4>
-                      <p class="mb-0 mt-1">Give the shape to avatar using <code>.ratio</code> and <code> img-* (50/70/80/90/100)</code> class.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar ratio"><img class="b-r-8 img-100" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
-                        <div class="avatar ratio"><img class="b-r-8 img-90" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
-                        <div class="avatar ratio"><img class="b-r-8 img-80" src="../assets/images/user/1.jpg" alt="avatar"></div>
-                        <div class="avatar ratio"><img class="b-r-8 img-70" src="../assets/images/avtar/16.jpg" alt="avatar"></div>
-                        <div class="avatar ratio"><img class="b-r-8 img-50" src="../assets/images/avtar/7.jpg" alt="avatar"></div>
+                      <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 g-4">
-                  <div class="card">   
-                    <div class="card-header">
-                      <h4>Grouping  </h4>
-                      <p class="mb-0 mt-1">
-                         You can set the group of avatars like <code>.img-* (40/50/60/80/100) </code>and <code>.b-r-* (8/30/35)</code>.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="customers d-inline-block avatar-group">
-                          <ul>
-                            <li class="d-inline-block"><img class="img-100 b-r-8" src="../assets/images/avtar/4.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="img-80" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"></li><img class="img-50 b-r-35" src="../assets/images/avtar/3.jpg" alt="avatar">
-                          </ul>
-                        </div>
-                        <div class="customers d-inline-block avatar-group">
-                          <ul>
-                            <li class="d-inline-block"><img class="img-60 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="b-r-8 img-80" src="../assets/images/user/1.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="img-60 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
-                          </ul>
-                        </div>
-                        <div class="customers d-inline-block avatar-group">
-                          <ul>
-                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/3.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/5.jpg" alt="avatar"></li>
-                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar"></li>
-                          </ul>
-                        </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 g-4 mb-4">
-                  <div class="card">
-                    <div class="card-header">
-                      <h4>Avatar Initial</h4>
-                      <p class="mb-0 mt-1">You can use initial letter as a avatar.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-xxl bg-light-primary"><span class="fs-1">A</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-xl bg-light-secondary"><span class="fs-2">D</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-lg bg-light-danger"><span class="fs-3">M</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-md bg-light-primary"><span class="fs-4">I</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-sm bg-light-secondary"><span class="fs-5">R</span></div>
-                        <div class="avatar-intial d-flex justify-content-center align-items-center avtar-xs bg-light-danger"><span class="fs-6">O</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 g-4 mb-4"> 
-                  <div class="card"> 
-                    <div class="card-header">
-                      <h4>Avatar Ping</h4>
-                      <p class="mb-0 mt-1">Using<code> .ping </code> class you can indicate important message.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="avatar"><img class="b-r-8 img-100 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar">
-                          <div class="ping status-offline status"></div>
-                        </div>
-                        <div class="avatar"><img class="b-r-8 img-90 rounded-circle" src="../assets/images/avtar/4.jpg" alt="avatar">
-                          <div class="ping status-online status"></div>
-                        </div>
-                        <div class="avatar"><img class="b-r-8 img-80 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar">
-                          <div class="ping status-dnd status"></div>
-                        </div>
-                        <div class="avatar"><img class="b-r-8 img-70 rounded-circle" src="../assets/images/avtar/3.jpg" alt="avatar">
-                          <div class="ping status-offline status"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 g-4 mb-4">
-                  <div class="card"> 
-                    <div class="card-header">
-                      <h4>Avatar profile</h4>
-                      <p class="mb-0 mt-1"> Using icon You can make icon avatars.</p>
-                    </div>
-                    <div class="card-body avatar-showcase">
-                      <div class="avatars">
-                        <div class="user-img"><img src="../assets/images/profile.png" alt="user">
-                          <div class="setting-icon"><i class="iconly-Setting icli"> </i></div>
-                        </div>
-                        <div class="user-img"><img src="../assets/images/profile.png" alt="user">
-                          <div class="setting-icon"><i class="iconly-Edit icli">    </i></div>
-                        </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="row">   
+              <div class="col-xl-6 mb-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Progress Bars Striped</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>Add<code>.progress-bar-striped</code> to any<code>.progress-bar</code> to apply a stripe via CSS gradient over the progress bar's background color Using CSS Effects.
+                  </div>
+                  <div class="card-body progress-showcase row"> 
+                    <div class="col">
+                      <div class="progress">
+                        <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Progress Bars animated</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>The striped gradient can also be animated. Add<code>.progress-bar-animated</code> to<code>.progress-bar</code> to animate the stripes right to left via CSS3 animations.
+                  </div>
+                  <div class="card-body progress-showcase row">
+                    <div class="col">
+                      <div class="progress">
+                        <div class="progress-bar-animated bg-primary progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar-animated progress-bar-striped bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar-animated progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 mb-4">
+                <div class="card">
+                  <div class="card-header">   
+                    <h4>Multiple bars</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>Include multiple progress bars in a progress component if you need.
+                  </div>
+                  <div class="card-body progress-showcase row">
+                    <div class="col">
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">                       </div>
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 10%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-light" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Progress With Number Steps</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>Use the <code>.position-absolute </code>to set progress numbers steps.    
+                  </div>
+                  <div class="card-body"> 
+                    <div class="position-relative m-4">
+                      <div class="progress progress-wrapper">
+                        <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <button class="position-absolute top-0 start-0 translate-middle btn-sm btn-primary rounded-circle text-light" type="button" style="width: 2rem; height:2rem;">1</button>
+                      <button class="position-absolute top-0 start-50 translate-middle btn-sm btn-primary rounded-circle text-light" type="button" style="width: 2rem; height:2rem;">2</button>
+                      <button class="progress-btn position-absolute top-0 start-100 translate-middle btn-sm rounded-circle" type="button" style="width: 2rem; height:2rem;">3</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-header">
+                <h4>Custom Progress Bars</h4>
+                <p class="f-m-light mt-1 mb-0"></p>Use the <code>.progress-bar-animated </code>and <code>.progress-bar-striped</code>to animate the stripes right to left.
+              </div>
+              <div class="card-body progress-showcase row">
+                <div class="col">
+                  <h6 class="mb-2">0% Getting Started</h6>
+                  <div class="progress mb-4">
+                    <div class="progress-bar-animated progress-bar-striped text-center" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h6 class="mb-2">30% Getting Uploading...</h6>
+                  <div class="progress mb-4">
+                    <div class="progress-bar-animated progress-bar-striped bg-primary text-center" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                  </div>
+                  <h6 class="mb-2">60% Getting Pause...</h6>
+                  <div class="progress mb-4">
+                    <div class="progress-bar-animated progress-bar-striped bg-secondary text-center" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                  </div>
+                  <h6 class="mb-2">70% Getting Uploading...</h6>
+                  <div class="progress mb-4">
+                    <div class="progress-bar-animated progress-bar-striped bg-success text-center" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                  </div>
+                  <h6 class="mb-2">100% Completed</h6>
+                  <div class="progress">
+                    <div class="progress-bar-animated progress-bar-striped bg-dark text-center text-light" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">   
+              <div class="col-xl-6 mb-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Small Progress Bars</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>Use<code> .sm-progress-bar</code>  class to change progress size to small:
+                  </div>
+                  <div class="card-body progress-showcase row progress-b-space">
+                    <div class="col">
+                      <div class="progress sm-progress-bar overflow-visible mt-4">
+                        <div class="progress-bar-animated small-progressbar bg-primary rounded-pill progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="text-primary progress-label">30 MB Data</span><span class="animate-circle"></span></div>
+                      </div>
+                      <div class="progress sm-progress-bar overflow-visible">
+                        <div class="progress-bar-animated small-progressbar bg-primary rounded-pill progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="text-primary progress-label">50 MB Data</span><span class="animate-circle"></span></div>
+                      </div>
+                      <div class="progress sm-progress-bar overflow-visible">
+                        <div class="progress-bar-animated small-progressbar bg-primary rounded-pill progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="text-primary progress-label">75 MB Data</span><span class="animate-circle"></span></div>
+                      </div>
+                      <div class="progress sm-progress-bar overflow-visible">
+                        <div class="progress-bar-animated small-progressbar bg-primary rounded-pill progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span class="text-primary progress-label">100 MB Data</span><span class="animate-circle"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Large Progress Bars</h4>
+                    <p class="f-m-light mt-1 mb-0"></p>Use<code> .lg-progress-bar</code>  class to change progress size to large:
+                  </div>
+                  <div class="card-body progress-showcase row">
+                    <div class="col">
+                      <div class="progress lg-progress-bar">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                      </div>
+                      <div class="progress lg-progress-bar">
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                      </div>
+                      <div class="progress lg-progress-bar">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                      </div>
+                      <div class="progress lg-progress-bar">  
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-header">
+                <h4>Custom Height Progress Bars</h4>
+                <p class="f-m-light mt-1 mb-0">  </p>Set a height value on the<code>.progress-bar</code>, so if you change that value the outer<code>.progress</code> will automatically resize accordingly.
+              </div>
+              <div class="card-body progress-showcase row">
+                <div class="col">
+                  <div class="progress" style="height: 1px;">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress" style="height: 11px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress" style="height: 19px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- Container-fluid Ends  -->
         </div>
         <footer class="footer"> 
           <div class="container-fluid">

@@ -4,7 +4,14 @@
 
 .border-wrapper {
     padding: 20px;
+    h6{
+        font-weight: 600;
+    }
+    &.border{
+        border: 1px solid rgba(var(--light-gray), 1) !important   ;
+    }
 }
+
 
 .helper-box {
     width: 40px;
@@ -25,8 +32,40 @@
 }
 
 .fill-wrapper {
-    background-color: $light-color;
+    background-color: rgba(var(--light-fill),1);
 }
+.bg-light{
+    background-color: rgba(var(--bg-light),1) !important;
+    color: rgba(var(--white),1);
+}
+.alert-light-light{
+    background-color: rgba(var(--alert-light-light),1);
+}
+.alert-light-primary{
+    background-color: rgba(var(--primary-color),0.3);
+}
+.alert-light-secondary{
+    background-color: rgba(var(--secondary-color),0.3);
+}
+.alert-light-success{
+    background-color: rgba(var(--success-color),0.3);
+}
+.alert-light-danger{
+    background-color: rgba(var(--danger-color),0.3);
+}
+.alert-light-warning{
+    background-color: rgba(var(--warning-color),0.3);
+}
+.alert-light-info{
+    background-color: rgba(var(--info-color),0.5);
+}
+.alert-light-dark{  
+    background-color: rgba(var(--dark),0.3);
+}
+.light-card, .light-background{
+    background-color: rgba(var(--light-background),0.7);
+}
+
 
 .gradient-border {
     display: flex;
@@ -40,13 +79,92 @@
 }
 
 .radius-wrapper {
-    background-color: $light-semi-gray;
+    background-color: #efefef;
 }
 
 .font-wrapper {
     display: flex;
     align-items: center;
     padding: 12px 20px;
+}
+.img-10 {
+    width: 10px !important;
+}
+  
+.img-h-10 {
+    height: 10px !important;
+}
+
+.img-20 {
+    width: 20px !important;
+}
+
+.img-h-20 {
+    height: 20px !important;
+}
+
+.img-30 {
+    width: 30px !important;
+}
+  
+.img-h-30 {
+    height: 30px !important;
+}
+  
+.img-40 {
+    width: 40px !important;
+}
+  
+.img-h-40 {
+    height: 40px !important;
+}
+  
+.img-50 {
+    width: 50px !important;
+}
+  
+.img-h-50 {
+    height: 50px !important;
+}
+  
+.img-60 {
+    width: 60px !important;
+}
+  
+.img-h-60 {
+    height: 60px !important;
+}
+  
+.img-70 {
+    width: 70px !important;
+}
+  
+.img-h-70 {
+    height: 70px !important;
+}
+  
+.img-80 {
+    width: 80px !important;
+}
+  
+.img-h-80 {
+    height: 80px !important;
+}
+  
+.img-90 {
+    width: 90px !important;
+}
+  
+.img-h-90 {
+    height: 90px !important;
+}
+  
+.img-100 {
+    width: 100px !important;
+}
+  
+.img-h-100 {
+    height: 100px !important;
 }
 
 /**=====================

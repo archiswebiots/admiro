@@ -13,7 +13,7 @@ $i: 100, 300, 500, 400, 600, 700, 900;
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: var(--scrollbar-color) var(--white);
+    scrollbar-color: var(--scrollbar-color) rgba(var(--white),1);
   }
 
   /* Chrome, Edge, and Safari */
@@ -22,7 +22,7 @@ $i: 100, 300, 500, 400, 600, 700, 900;
   }
 
   *::-webkit-scrollbar-track {
-    background: var(--white);
+    background: rgbavar(--white);
   }
 
   *::-webkit-scrollbar-thumb {
@@ -30,6 +30,9 @@ $i: 100, 300, 500, 400, 600, 700, 900;
     border-radius: 10px;
   }
 
+.text-primary{
+  color: rgba(var(--primary-color),1) !important;
+}
 /**=====================
      Reset css end
 ==========================**/

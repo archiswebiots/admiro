@@ -1,13 +1,13 @@
 /**=====================
      color css start
 ==========================**/
-// circle dot 
-@each $circle-name, $circle-color in (primary, $primary-color),
-  (secondary, $secondary-color), (success, $success-color),
-  (danger, $danger-color), (info, $info-color), (light, $light-color),(dark, var(--body-font-color))
+// circle dot   
+@each $circle-name, $circle-color in (primary, rgba(var(--primary-color),1)),
+  (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+  (danger, rgba(var(--danger-color),1)), (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1)),(dark, rgba(var(--body-font-color),1))
 {
   .circle-dot-#{$circle-name} {
-    background-color: rgba($circle-color, 0.25);
+    // background-color: rgba($circle-color, 0.25);
     border-radius: 100%;
     padding: 3px;
     font-size: 5px;
@@ -21,22 +21,25 @@
   }
 }
 // font-color
-@each $font-name, $font-color in (primary, $primary-color),
-  (secondary, $secondary-color), (success, $success-color),
-  (danger, $danger-color), (info, $info-color), (light, $light-color),(dark, var(--body-font-color))
+@each $font-name, $font-color in (primary, rgba(var(--primary-color),1)),
+  (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+  (danger, rgba(var(--danger-color),1)), (warning, rgba(var(--warning-color),1)),
+  (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1)),(dark, rgba(var(--body-font-color),1))
 {
   .font-#{$font-name} {
     color: $font-color;
   }
 }
 // button activity color
-@each $btn-activity-name, $btn-activity-color in (primary, $primary-color),
-  (secondary, $secondary-color), (success, $success-color),
-  (danger, $danger-color), (info, $info-color), (light, $light-color)
+@each $btn-activity-name, $btn-activity-color in (primary, rgba(var(--primary-color),1)),
+  (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+  (danger, rgba(var(--danger-color),1)), (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1))
   {
     .btn-activity-#{$btn-activity-name} {
-      background-color: rgba($btn-activity-color, 0.1);
-      border: 1px solid rgba($btn-activity-color, 0.2);
+      // background-color: rgba($btn-activity-color, 0.1);
+      // border: 1px solid rgba($btn-activity-color, 0.2);
+      background-color: #{$btn-activity-color};
+      border: 1px solid #{$btn-activity-color};
       border-radius: 30px;
       width: 32px;
       height: 32px;
@@ -51,16 +54,16 @@
     }
   }
 // background css
-@each $bg-name, $bg-color in (primary, $primary-color),
-  (secondary, $secondary-color), (success, $success-color),
-  (danger, $danger-color), (info, $info-color), (light, $light-color)
+@each $bg-name, $bg-color in (primary, rgba(var(--primary-color),1)),
+  (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+  (danger, rgba(var(--danger-color),1)), (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1))
   {
     .bg-#{$bg-name}{
       background-color: $bg-color !important;
       color: $white;
     }
     .bg-light-#{$bg-name} {
-      background-color: rgba($bg-color, 0.1);
+      background-color: $bg-color;
       &:hover,
       &:focus,
       &:active:focus {

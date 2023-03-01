@@ -1,37 +1,54 @@
 :root {
-    --white: #fff;
-    --black: #000;
-    --body-font-color: #292929;
-    --font-color: #AAA3A0;
-    --shape-border: #E5E5E5;
-    --scrollbar-color: #eee;
-    --light-border: #DCEEE6;
+    --white: 255, 255, 255;
+    --black: 0, 0, 0;
+    --body-font-color: 41, 41, 41;
+    --font-color: 170, 163, 160;
+    --shape-border: 229, 229, 229;
+    --scrollbar-color: 238, 238, 238;
+    --light-border: 220, 238, 230;
+    //color css
+    --body-color: 249, 247, 246;
+    --primary-color: 48, 142, 135;
+    --secondary-color: 243, 145, 89;
+    --success-color: 62, 185, 95;
+    --info-color: 234, 146, 0;
+    --warning-color: 255, 170, 5;
+    --danger-color: 231, 75, 43;
+    --light-color: 170, 163, 160;
+    --footer-icon: 244, 0, 0;
+    --active-bg-color: 217, 232, 229;
+    --font-color: 170, 163, 160;
+    --border-color: 235, 235, 235;
+    --light-gray: 236, 243, 250;
+    --light-semi-gray : 239, 239, 239;
+    --alert-light-light: 249, 249, 251;
+    --bg-light: 244, 244, 244;
+    --light-fill: 244, 244, 244;
+    --dark:33, 37, 41;
+    --light-background:242, 243, 247;
+    --theme-body-font-color : 47, 47, 59;
+    --light-text: 153, 153, 153;
+    --light-chartist-grid-color: 246, 249, 253;
+    --gray-60 : 204, 204, 204;
+    --dropdown-menu: 43, 43, 43;
+    //ping color 
+    --ping-success: 54, 155, 54;
+    --ping-light-success: 112, 199, 112;
+    //avtar intial
+    --bg-light-primary: 237, 246, 240;
+    --bg-light-secondary: 253, 245, 231;
+    --bg-light-danger: 255, 236, 232;
+    --card-border-color: 236, 243, 250;
 }
 .dark-only{
-    --white: #fff;
+    --white: 255, 255, 255;
     --black: #000;
-    --body-font-color: #292929;
-    --font-color: #AAA3A0;
+    --body-font-color: 41, 41, 41;
+    --font-color: rgb(170, 163, 160);
     --shape-border: #E5E5E5;
     --scrollbar-color: #eee;
     --light-border: #DCEEE6;
 }
-//color css
-$body-color: #F9F7F6;
-$primary-color: #308E87;
-$secondary-color: #F39159;
-$success-color: #308E87;
-$info-color: #EA9200;
-$warning-color: #FFAA05;
-$danger-color: #E74B2B;
-$light-color: #AAA3A0;
-$primary-light: #EDF6F0;
-$footer-icon: #F40000;
-$active-bg-color: #D9E8E5;
-$font-color: #626262;
-$border-color: #EBEBEB;
-$light-gray:#ecf3fa;
-// typography variables
 $body-font: 'Nunito Sans', sans-serif;
 $heading_1: 30px;
 $heading_2: 24px;
@@ -58,19 +75,54 @@ $input-font-size: 14px;
 $input-padding: 14px 20px;
 
 // button variables
-$btn-hover-shadow: 3px 3px 3px var(--shape-border);
+$btn-hover-shadow: 3px 3px 3px rgba(var(--shape-border),1);
 
 // card settings
 $card-box-shadow: 0 0 50px rgba(0, 0, 0, 0.03);
 $card-header-bg-color : $white;
 $card-padding :17px;
-$card-border: 1px solid $light-gray;
+$card-border: 1px solid rgba(var(--light-gray),1);
 // page title
 $title-spacing: 30px 18px;
-$breadcrumb-icon-shadow: 1px 1px 0px var(--shape-border);
+$breadcrumb-icon-shadow: 1px 1px 0px rgba(var(--shape-border),1);
 $breadcrumb-icon-radius: 5px;
 $page-body-padding : 0 15px 0 15px;
 $header-size: 136px;
 
-//avtar color
 
+// Tables settings
+$table-b-margin: 0px;
+$table-heading-color: rgba(var(--theme-body-font-color),1);
+$table-row-color: rgba(var(--theme-body-font-color),1);
+$table-footer-font-weight: bold;
+$table-inverse-color: $white;
+$table-hover-color: $light;
+$table-padding: 0.75rem;
+$table-xl-padding: 1.25rem 2rem;
+$table-xl-font: 120%;
+$table-lg-padding: .9rem 2rem;
+$table-lg-font: 110%;
+$table-de-padding: .75rem 2rem;
+$table-de-font: 100%;
+$table-sm-padding: .5rem 2rem;
+$table-sm-font: 90%;
+$table-xs-padding: 0.2rem 2rem;
+$table-xs-font: 80%;
+$horizontal-border-color: #f2f4ff;
+$horizontal-padding: .75rem 2rem;
+$table-inverse-bg-color: #292b2c;
+
+
+//Alert settings
+$alert-hover-color : rgba(var(--dark),1);
+$alert-border-radious :0.15rem;
+$alert-padding :15px;
+$alert-msg-icon-size :16px;
+
+//According setting
+$according-card-top-margin : 10px;
+$according-btn-weight : 500;
+$according-btn-color : rgba(var( --body-font-color),1);
+$according-card-header-padding : 0.75rem 1.25rem;
+$according-open-icon : "\eb73";
+$according-close-icon : "\eb7a";

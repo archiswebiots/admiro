@@ -75,15 +75,15 @@
 }
 
 .status-offline {
-    background-color: $danger-color;
+    background-color: rgba(var(--danger-color),1);
 }
 
 .status-online {
-    background-color: $success-color ;
+    background-color: rgba(var(--success-color),1) ;
 }
 
 .status-dnd {
-    background-color: $warning-color ;
+    background-color: rgba(var(--warning-color),1) ;
 }
 
 .customers {
@@ -145,26 +145,26 @@
     }
     @keyframes load {
         0% {
-            background-color: rgb(54, 155, 54);
-            border: 0px solid rgb(54, 155, 54);
+            background-color: rgba(var(--ping-success),1);
+            border: 0px solid rgba(var(--ping-success),1);
        }
         50% {
-            background-color: white;
-            border: 3px solid white;
+            background-color: var(--white);
+            border: 3px solid var(--white);
        }
         100% {
-            background-color: rgb(112, 199, 112);
-            border: 0px solid rgb(112, 199, 112);
+            background-color: rgba(var(--ping-light-success),1);
+            border: 0px solid rgba(var(--ping-light-success),1);
        }
    }
     .avtar-icons{
-        background-color: $primary-color;
+        background-color: rgba(var(--primary-color),1);
         border-radius: 50%;
         padding: 15px;
         margin-right: 10px;
         i{
             font-size: 35px;
-            color: #fff;
+            color: var(--white);
         }
     }
 }
@@ -193,16 +193,16 @@
     height: 40px;
 }
 .bg-light-primary{
-    background-color: #EDF6F0;
-    color: $primary-color;
+    background-color: rgba(var(--bg-light),1);
+    color: rgba(var(--primary-color),1);
 }
 .bg-light-secondary{
-    background-color: #FDF5E7;
-    color: $secondary-color;
+    background-color: rgba(var(--bg-light),1);
+    color: rgba(var(--secondary-color),1);
 }
 .bg-light-danger{
-   background-color: #FFECE8; 
-   color: $danger-color;
+   background-color: rgba(var(--bg-light),1); 
+   color: rgba(var(--danger-color),1);
 }
 
 /**=====================
