@@ -1,7 +1,7 @@
-(function () {
+    (function () {
     const body = document.querySelector('body');
     const wrapper = document.querySelector(".page-wrapper");
-    
+
     // active menu js
     let slideUp = (target, duration = 500) => {
         if (target) {
@@ -26,33 +26,33 @@
 
     let slideDown = (target, duration = 500) => {
         if (target) {
-        target.style.removeProperty('display');
-        let display = window.getComputedStyle(target).display;
+            target.style.removeProperty('display');
+            let display = window.getComputedStyle(target).display;
 
-        if (display === 'none')
-            display = 'flex';
+            if (display === 'none')
+                display = 'flex';
 
-        target.style.display = display;
-        let height = target.offsetHeight;
-        target.style.overflow = 'hidden';
-        target.style.height = 0;
-        target.style.paddingTop = 0;
-        target.offsetHeight;
-        target.style.boxSizing = 'border-box';
-        target.style.transitionProperty = "height, padding";
-        target.style.transitionDuration = duration + 'ms';
-        target.style.height = height + 'px';
-        target.style.removeProperty('padding-top');
-        window.setTimeout(() => {
-            target.style.removeProperty('height');
-            target.style.removeProperty('overflow');
-            target.style.removeProperty('transition-duration');
-            target.style.removeProperty('transition-property');
-        }, duration);
+            target.style.display = display;
+            let height = target.offsetHeight;
+            target.style.overflow = 'hidden';
+            target.style.height = 0;
+            target.style.paddingTop = 0;
+            target.offsetHeight;
+            target.style.boxSizing = 'border-box';
+            target.style.transitionProperty = "height, padding";
+            target.style.transitionDuration = duration + 'ms';
+            target.style.height = height + 'px';
+            target.style.removeProperty('padding-top');
+            window.setTimeout(() => {
+                target.style.removeProperty('height');
+                target.style.removeProperty('overflow');
+                target.style.removeProperty('transition-duration');
+                target.style.removeProperty('transition-property');
+            }, duration);
+        }
     }
-    }
 
-    var url = window.location.href;
+    var url = window.location.href.split("#")[0];
     const allList = document.querySelectorAll('.sidebar-list');
     const submenuLinks = document.querySelectorAll('.sidebar-menu a');
 
@@ -84,46 +84,61 @@
 
     // for overlay
     const sidebarScreen = window.matchMedia("(max-width: 991px)");
+    const temp = window.innerWidth
+    console.log("sidebarScreen ,,,,, temp", sidebarScreen
+        , temp);
     const Overlay = document.querySelector(".overlay");
-    const overlayShow =()=> {
-        if (sidebarScreen.matches) {
-            Overlay.classList.add("active");
-            
-        } else {
-            Overlay.classList.remove("active");
-        }
-    }
-    overlayShow()
-    addEventListener('resize', (event) => {
-        overlayShow()
-    });
-    if (Overlay.classList.contains("active")) {
-        Overlay.addEventListener("click", function () {
-            wrapper.classList.add('sidebar-close');
-            this.classList.remove("active");
-        })
-    }
+    // const overlayShow =()=> {
+    //     if (sidebarScreen.matches && true) {
+    //         Overlay.classList.add("active");
+
+    //     } else {
+    //         Overlay.classList.remove("active");
+    //     }
+    // }
+    // overlayShow()
+    // addEventListener('resize', (event) => {
+    //     overlayShow()
+    // });
+    // if (Overlay.classList.contains("active")) {
+    Overlay.addEventListener("click", function () {
+        wrapper.classList.remove('sidebar-open');
+        this.classList.remove("active");
+    })
+    // }
 
     // sidebar close js
     const sidebarClose = document.querySelector(".sidebar-close");
-    if(sidebarClose){
+    if (sidebarClose) {
         sidebarClose.addEventListener("click", function () {
             console.log('done');
-            wrapper.classList.add('sidebar-close');
+            wrapper.classList.remove('sidebar-open');
             Overlay.classList.remove("active");
         })
     }
-    
+    let temp1
+    const responsiveSidebar = () => {
+        if (sidebarScreen.matches) {
+            wrapper.classList.remove('sidebar-open');
+            Overlay.classList.remove("active");
+        } else {
+            wrapper.classList.add('sidebar-open');
+        }
+    }
+    responsiveSidebar()
+    addEventListener("resize", (event) => {
+        responsiveSidebar()
+    });
 
     // sidebar toggle js
     const sidebarToggle = document.querySelector(".toggle-sidebar");
     sidebarToggle.addEventListener("click", function () {
-        wrapper.classList.toggle('sidebar-close');
-        const wrapperClose = wrapper.classList.contains("sidebar-close");
-        if (sidebarScreen.matches && !wrapperClose) {
+        wrapper.classList.toggle('sidebar-open');
+        const wrapperClose = wrapper.classList.contains("sidebar-open");
+        console.log("temp1temp1", temp1);
+        if (sidebarScreen.matches && wrapperClose) {
             Overlay.classList.add("active");
         }
-        
     })
 
 })();

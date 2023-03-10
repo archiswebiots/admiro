@@ -8,18 +8,29 @@
             padding: 5px;
             width: 26px;
             height: 26px;
-            border: 1px solid var(--shape-border);
+            border: 1px solid rgba(var(--shape-border),1);
             border-radius: $breadcrumb-icon-radius;
             box-shadow: $breadcrumb-icon-shadow;
         }
     }
     display: flex;
-    align-items: center;
+    align-items: center;  
     justify-content: end;
 }
 .page-title {
     align-items: center;
     padding: $title-spacing;
+    @include media-breakpoint-up(lg){
+        padding: 25px 0;
+    }
+    @include media-breakpoint-down(sm){
+        padding: 18px 0;
+    }
+    h3{
+        @include media-breakpoint-down(sm){
+            font-size: 18px;
+        } 
+    }
 }
 /**=====================
     Breadcrumb css end

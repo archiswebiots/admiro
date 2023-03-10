@@ -30,15 +30,18 @@
     --light-text: 153, 153, 153;
     --light-chartist-grid-color: 246, 249, 253;
     --gray-60 : 204, 204, 204;
+    --span-color: 242, 243, 247;
+    // dropdown color
     --dropdown-menu: 43, 43, 43;
+    --dropdown-bg-color:249, 249, 249;
+    --dropdown-content-color:242, 242, 242;
+    --dropdown-toggle: 115, 102, 255;
+    // table color 
+    --table-hover-color:246, 246, 246;
+    --table-double-color: 222, 226, 230;
     //ping color 
     --ping-success: 54, 155, 54;
     --ping-light-success: 112, 199, 112;
-    //avtar intial
-    --bg-light-primary: 237, 246, 240;
-    --bg-light-secondary: 253, 245, 231;
-    --bg-light-danger: 255, 236, 232;
-    --card-border-color: 236, 243, 250;
 }
 .dark-only{
     --white: 255, 255, 255;
@@ -79,11 +82,11 @@ $btn-hover-shadow: 3px 3px 3px rgba(var(--shape-border),1);
 
 // card settings
 $card-box-shadow: 0 0 50px rgba(0, 0, 0, 0.03);
-$card-header-bg-color : $white;
+$card-header-bg-color : rgba(var(--white),1);
 $card-padding :17px;
 $card-border: 1px solid rgba(var(--light-gray),1);
 // page title
-$title-spacing: 30px 18px;
+$title-spacing: 30px 0;
 $breadcrumb-icon-shadow: 1px 1px 0px rgba(var(--shape-border),1);
 $breadcrumb-icon-radius: 5px;
 $page-body-padding : 0 15px 0 15px;
@@ -94,35 +97,4 @@ $header-size: 136px;
 $table-b-margin: 0px;
 $table-heading-color: rgba(var(--theme-body-font-color),1);
 $table-row-color: rgba(var(--theme-body-font-color),1);
-$table-footer-font-weight: bold;
-$table-inverse-color: $white;
-$table-hover-color: $light;
 $table-padding: 0.75rem;
-$table-xl-padding: 1.25rem 2rem;
-$table-xl-font: 120%;
-$table-lg-padding: .9rem 2rem;
-$table-lg-font: 110%;
-$table-de-padding: .75rem 2rem;
-$table-de-font: 100%;
-$table-sm-padding: .5rem 2rem;
-$table-sm-font: 90%;
-$table-xs-padding: 0.2rem 2rem;
-$table-xs-font: 80%;
-$horizontal-border-color: #f2f4ff;
-$horizontal-padding: .75rem 2rem;
-$table-inverse-bg-color: #292b2c;
-
-
-//Alert settings
-$alert-hover-color : rgba(var(--dark),1);
-$alert-border-radious :0.15rem;
-$alert-padding :15px;
-$alert-msg-icon-size :16px;
-
-//According setting
-$according-card-top-margin : 10px;
-$according-btn-weight : 500;
-$according-btn-color : rgba(var( --body-font-color),1);
-$according-card-header-padding : 0.75rem 1.25rem;
-$according-open-icon : "\eb73";
-$according-close-icon : "\eb7a";

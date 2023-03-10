@@ -30,7 +30,7 @@
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page header start -->
       <header class="page-header">
-        <div class="header-left">
+        <div class="header-left"><a class="toggle-sidebar" href="#"><i class="iconly-Filter icli"></i></a>
           <form class="search-form mb-0">
             <div class="input-group">
               <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0"><i class="iconly-Search icli"> </i></span>
@@ -230,7 +230,7 @@
         <!-- Page sidebar start-->
         <div class="overlay"></div>
         <aside class="page-sidebar">
-          <div class="logo-wrapper d-flex align-items-center"> <a href="index.html"><img src="../assets/images/logo/logo1.png" alt="logo"></a><a class="close-btn toggle-sidebar" href="javascript:void(0)">
+          <div class="logo-wrapper d-flex align-items-center"> <a href="index.html"><img src="../assets/images/logo/logo1.png" alt="logo"></a><a class="close-btn sidebar-close d-lg-none" href="javascript:void(0)">
               <svg class="svg-color svg-white">
                 <use href="../assets/svg/iconly-sprite.svg#Arrow---Left-2"></use>
               </svg></a></div>
@@ -243,7 +243,7 @@
               <h6>Product Designer</h6>
             </div>
           </div>
-          <ul class="sidebaar-menu">
+          <ul class="sidebar-menu">
             <li class="sidebar-block">  
               <h5 class="sidebar-title">General</h5>
               <ul> 
@@ -256,7 +256,7 @@
               </ul>
             </li>
           </ul>
-          <ul class="sidebaar-menu">
+          <ul class="sidebar-menu">
             <li class="sidebar-block">
               <h5 class="sidebar-title">Components</h5>
               <ul> 
@@ -282,9 +282,9 @@
         <div class="page-body">
           <div class="container-fluid">
             <div class="page-title">
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-6">
-                  <h3>Helper-classes </h3>
+                  <h3>Helper classes </h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
@@ -298,7 +298,7 @@
           </div>
           <!-- Container-fluid starts      -->
           <div class="container-fluid">
-            <div class="row g-4">
+            <div class="row g-xl-4 g-3">
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
@@ -306,8 +306,8 @@
                     <p class="f-m-light mt-1 mb-0">Use border utilities to add or remove an element's borders.</p>
                   </div>
                   <div class="card-body">
-                    <div class="row g-4">
-                      <div class="col-xl-4 col-sm-6">
+                    <div class="row g-xl-4 g-3">
+                      <div class="col-md-4 col-sm-6">
                         <div class="border-wrapper h-100 border">
                           <h6 class="mb-3">Additive Border</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
@@ -319,12 +319,12 @@
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box bg-light border-bottom"></div>.border-bottom
                           </div>
-                          <div class="d-flex align-items-center mb-2 gap-2">
+                          <div class="d-flex align-items-center gap-2">
                             <div class="helper-box bg-light border-end"></div>.border-end
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-4 col-sm-6">
+                      <div class="col-md-4 col-sm-6">
                         <div class="border-wrapper h-100 border"> 
                           <h6 class="mb-3">Subtractive Border</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
@@ -339,12 +339,12 @@
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box bg-light border border-bottom-0"></div>.border-bottom-0
                           </div>
-                          <div class="d-flex align-items-center mb-2 gap-2">
+                          <div class="d-flex align-items-center gap-2">
                             <div class="helper-box bg-light border border-start-0"></div>.border-start-0
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-4 col-sm-12">
+                      <div class="col-md-4 col-sm-12">
                         <div class="border-wrapper h-100 border">
                           <h6 class="mb-3">Additive Radius</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
@@ -365,7 +365,7 @@
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-radius radius-wrapper rounded-pill"></div>.rounded-pill
                           </div>
-                          <div class="d-flex align-items-center mb-2 gap-2">
+                          <div class="d-flex align-items-center gap-2">
                             <div class="helper-radius radius-wrapper rounded-circle"></div>.rounded-circle 
                           </div>
                         </div>
@@ -381,7 +381,7 @@
                     <p class="f-m-light mt-1 mb-0">Use the different styles of borders like:<code>border radius/border-color/border-width</code>. Use of any components.</p>
                   </div>
                   <div class="card-body">
-                    <div class="row g-4">
+                    <div class="row g-xl-4 g-3">
                       <div class="col-xxl-3 col-sm-6">
                         <div class="border-wrapper h-100 alert-light-light dark-helper">
                           <h6 class="mb-3">Custom Border-radius Class</h6>
@@ -426,7 +426,7 @@
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box border-info border"></div><span>.border-info</span>
                           </div>
-                          <div class="d-flex align-items-center mb-2 gap-2">
+                          <div class="d-flex align-items-center gap-2">
                             <div class="helper-box border-dark border"></div><span>.border-dark</span>
                           </div>
                         </div>
@@ -475,7 +475,7 @@
                           <div class="d-flex align-items-center mb-2 gap-2"> 
                             <div class="helper-box helper-text border text-dark">A </div><span>.text-dark</span>
                           </div>
-                          <div class="d-flex align-items-center mb-2 gap-2">
+                          <div class="d-flex align-items-center gap-2">
                             <div class="helper-box helper-text border text-light bg-dark">A </div><span>.text-light</span>
                           </div>
                         </div>
@@ -491,8 +491,8 @@
                     <p class="f-m-light mt-1 mb-0">Use the <code>.bg-* </code>and <code>.alert-light-*</code>colors in cuba theme.Use of any components.   </p>
                   </div>
                   <div class="card-body"> 
-                    <div class="row g-4">
-                      <div class="col-xl-4 col-sm-6">
+                    <div class="row g-xl-4 g-3">
+                      <div class="col-md-4 col-sm-6">
                         <div class="border-wrapper h-100 border">
                           <h6 class="mb-3">Dark Background</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
@@ -516,12 +516,12 @@
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box bg-dark"></div>.bg-dark
                           </div>
-                          <div class="d-flex align-items-center mb-2 gap-2">
+                          <div class="d-flex align-items-center gap-2">
                             <div class="helper-box bg-light"></div>.bg-light
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-4 col-sm-6">
+                      <div class="col-md-4 col-sm-6">
                         <div class="border-wrapper h-100 border">
                           <h6 class="mb-3">Light Backgrounds</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
@@ -545,18 +545,18 @@
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box alert-light-dark"></div>.alert-light-dark
                           </div>
-                          <div class="d-flex align-items-center mb-2 gap-2">
+                          <div class="d-flex align-items-center gap-2">
                             <div class="helper-box alert-light-light"></div>.alert-light-light
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-4 col-sm-12"> 
+                      <div class="col-md-4 col-sm-12"> 
                         <div class="border-wrapper h-100 border">
                           <h6 class="mb-3">Extended Background Colors</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box light-card"></div>.light-card
                           </div>
-                          <div class="d-flex align-items-center mb-2 gap-2">
+                          <div class="d-flex align-items-center gap-2">
                             <div class="helper-box light-background border"></div>.light-background
                           </div>
                         </div>
@@ -573,94 +573,94 @@
                   </div>
                   <div class="card-body">
                     <div class="gradient-border">
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-primary border fill-wrapper"></div>.border-primary
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-top border-primary fill-wrapper"></div>.border-top
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-bottom border-primary fill-wrapper"></div>.border-bottom
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">  
+                      <div class="d-flex align-items-center gap-2">  
                         <div class="helper-box border-start border-primary fill-wrapper"></div>.border-start  
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-end border-primary fill-wrapper"> </div>.border-end           
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">         
+                      <div class="d-flex align-items-center gap-2">         
                         <div class="helper-box border-secondary border fill-wrapper"></div>.border-secondary
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2"> 
+                      <div class="d-flex align-items-center gap-2"> 
                         <div class="helper-box border-top border-secondary fill-wrapper"></div>.border-top
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-bottom border-secondary fill-wrapper"></div>.border-bottom
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-start border-secondary fill-wrapper"></div>.border-start
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-end border-secondary fill-wrapper"></div>.border-end
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-success border fill-wrapper"></div>.border-success
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-top border-success fill-wrapper"></div>.border-top
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-bottom border-success fill-wrapper"></div>.border-bottom
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-start border-success fill-wrapper"></div>.border-start
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-end border-success fill-wrapper"></div>.border-end
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-danger border fill-wrapper"></div>.border-danger
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-top border-danger fill-wrapper"></div>.border-top
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-bottom border-danger fill-wrapper"></div>.border-bottom
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-start border-danger fill-wrapper"></div>.border-start
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-end border-danger fill-wrapper"></div>.border-start
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-warning border fill-wrapper"></div>.border-warning
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-top border-warning fill-wrapper"></div>.border-top
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-bottom border-warning fill-wrapper"></div>.border-bottom
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-start border-warning fill-wrapper"></div>.border-start
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-end border-warning fill-wrapper"></div>.border-end 
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-info border fill-wrapper"></div>.border-info 
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-top border-info fill-wrapper"></div>.border-top
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-bottom border-info fill-wrapper"></div>.border-bottom
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-start border-info fill-wrapper"></div>.border-start
                       </div>
-                      <div class="d-flex align-items-center mb-2 gap-2">
+                      <div class="d-flex align-items-center gap-2">
                         <div class="helper-box border-end border-info fill-wrapper"></div>.border-end
                       </div>
                     </div>
@@ -675,7 +675,7 @@
                        Use the width and height of images class like:<code>.img-*</code>and<code>.img-h-*</code>.</p>
                   </div>
                   <div class="card-body">
-                    <div class="gradient-border gap-3"><img class="img-10 img-h-10" src="../assets/images/avatars/1.jpg" alt="img-size-10"><img class="img-20 img-h-20" src="../assets/images/avatars/1.jpg" alt="img-size-20"><img class="img-30 img-h-30" src="../assets/images/avatars/1.jpg" alt="img-size-30"><img class="img-40 img-h-40" src="../assets/images/avatars/1.jpg" alt="img-size-40"><img class="img-50 img-h-50" src="../assets/images/avatars/1.jpg" alt="img-size-50"><img class="img-60 img-h-60" src="../assets/images/avatars/1.jpg" alt="img-size-60"><img class="img-70 img-h-70" src="../assets/images/avatars/1.jpg" alt="img-size-70"><img class="img-80 img-h-80" src="../assets/images/avatars/1.jpg" alt="img-size-80"><img class="img-90 img-h-90" src="../assets/images/avatars/1.jpg" alt="img-size-90"><img class="img-100 img-h-100" src="../assets/images/avatars/1.jpg" alt="img-size-100"></div>
+                    <div class="gradient-border gap-3"><img class="img-30 img-h-30" src="../assets/images/avatars/1.jpg" alt="img-size-30"><img class="img-40 img-h-40" src="../assets/images/avatars/1.jpg" alt="img-size-40"><img class="img-50 img-h-50" src="../assets/images/avatars/1.jpg" alt="img-size-50"><img class="img-60 img-h-60" src="../assets/images/avatars/1.jpg" alt="img-size-60"><img class="img-70 img-h-70" src="../assets/images/avatars/1.jpg" alt="img-size-70"><img class="img-80 img-h-80" src="../assets/images/avatars/1.jpg" alt="img-size-80"><img class="img-90 img-h-90" src="../assets/images/avatars/1.jpg" alt="img-size-90"><img class="img-100 img-h-100" src="../assets/images/avatars/1.jpg" alt="img-size-100"></div>
                   </div>
                 </div>
               </div>
@@ -694,7 +694,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6">
+              <div class="col-md-6">
                 <div class="card">
                   <div class="card-header">
                     <h4>Font Weight </h4>
@@ -716,13 +716,13 @@
                     <div class="d-flex align-items-center mb-2 gap-2">
                       <div class="f-w-700">You can set bold font weight heading .f-w-700</div>
                     </div>
-                    <div class="d-flex align-items-center mb-2 gap-2">
+                    <div class="d-flex align-items-center gap-2">
                       <div class="f-w-900">You can set bold font weight heading .f-w-900</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6">
+              <div class="col-md-6">
                 <div class="card">
                   <div class="card-header">
                     <h4>Text Colors</h4>
@@ -747,7 +747,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 mb-4">
+              <div class="col-12 mb-md-4 mb-3">
                 <div class="card">
                   <div class="card-header">
                     <h4>Font Sizes</h4>

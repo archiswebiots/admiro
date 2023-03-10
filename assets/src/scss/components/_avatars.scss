@@ -8,9 +8,6 @@
     gap: 15px;
     .avatar {
         position: relative;
-        &:last-child {
-            margin-right: 0;
-        }
         &.ratio {
             width: unset;
             img {
@@ -38,29 +35,22 @@
         border-radius: 35px;
     }
 
-    .b-r-25 {
-        border-radius: 25px;
-    }
-
-    .b-r-15 {
-        border-radius: 15px;
-    }
     .img-100 {
-        width: calc(75px + (100 - 75) * ((100vw - 320px) / (1920 - 320))) !important;
+        width: calc(75px + (100 - 75) * ((100vw - 320px) / (1920 - 320)));
         height: calc(75px + (100 - 75) * ((100vw - 320px) / (1920 - 320)));
     }
     .img-90 {
-        width: calc(65px + (90 - 65) * ((100vw - 320px) / (1920 - 320))) !important;
+        width: calc(65px + (90 - 65) * ((100vw - 320px) / (1920 - 320)));
         height: calc(65px + (90 - 65) * ((100vw - 320px) / (1920 - 320)));
     }
 
     .img-80 {
-        width: calc(55px + (80 - 55) * ((100vw - 320px) / (1920 - 320))) !important;
+        width: calc(55px + (80 - 55) * ((100vw - 320px) / (1920 - 320)));
         height: calc(55px + (80 - 55) * ((100vw - 320px) / (1920 - 320)));
     }
 
     .img-70 {
-        width: calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320))) !important;
+        width: calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320)));
         height: calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320)));
     }
     .img-50{
@@ -92,7 +82,7 @@
 
         li {
             img {
-                border: 2px solid $white;
+                border: 2px solid rgba(var(--white),1);
                 transition: 0.5s;
 
                 &:hover {
@@ -117,18 +107,6 @@
 }
 
 .avatar-showcase {
-    margin-bottom: -10px;
-
-    .avatars {
-        .avatar {
-            margin-bottom: 10px;
-        }
-    }
-
-    .avatar-group {
-        margin-bottom: 10px;
-    }
-
     .ratio {
         >* {
             position: relative;
@@ -137,6 +115,9 @@
         }
     }
     .avatar-intial{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 50%;
         padding: 11px 18px;
     }
@@ -149,24 +130,14 @@
             border: 0px solid rgba(var(--ping-success),1);
        }
         50% {
-            background-color: var(--white);
-            border: 3px solid var(--white);
+            background-color: rgba(var(--white),1);
+            border: 3px solid rgba(var(--white),1);
        }
         100% {
             background-color: rgba(var(--ping-light-success),1);
             border: 0px solid rgba(var(--ping-light-success),1);
        }
    }
-    .avtar-icons{
-        background-color: rgba(var(--primary-color),1);
-        border-radius: 50%;
-        padding: 15px;
-        margin-right: 10px;
-        i{
-            font-size: 35px;
-            color: var(--white);
-        }
-    }
 }
 .avtar-xxl{
     width: 90px;
@@ -192,18 +163,7 @@
     width: 40px;
     height: 40px;
 }
-.bg-light-primary{
-    background-color: rgba(var(--bg-light),1);
-    color: rgba(var(--primary-color),1);
-}
-.bg-light-secondary{
-    background-color: rgba(var(--bg-light),1);
-    color: rgba(var(--secondary-color),1);
-}
-.bg-light-danger{
-   background-color: rgba(var(--bg-light),1); 
-   color: rgba(var(--danger-color),1);
-}
+
 
 /**=====================
     avatars CSS Ends

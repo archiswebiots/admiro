@@ -16,7 +16,7 @@ $colors: (
 @each $key, $val in $colors {
     .btn-#{$key} {
       background-color: $val;
-      border: 1px solid var(--shape-border);
+      border: 1px solid $val;
       &:hover, &:focus, &:active:focus {
         background-color: $val;
         border-color: $val;
@@ -25,14 +25,13 @@ $colors: (
 }
 @each $key, $val in $colors {
     .btn-outline-#{$key} {
-      background-color: $white;
+      background-color: rgba(var(--white),1);
       border: 1px solid $val;
       color: $val;
-      
       &:hover, &:focus, &:active:focus {
         background-color: $val;
         border-color: $val;
-        color: $white;
+        color: rgba(var(--white),1);
       }
     }
 }
@@ -40,6 +39,12 @@ $colors: (
   .btn-outline-primary, .btn-primary{
     border-radius: 30px;
   }
+}
+.btn-sm {
+  font-size: 12px;
+}
+.btn-lg{
+  font-size: 18px;
 }
 /**=====================
      buttons css end
