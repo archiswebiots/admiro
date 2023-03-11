@@ -11,6 +11,9 @@
                     padding: $page-body-padding;
                     position: relative;
                     transition: 0.5s;
+                    @include media-breakpoint-down(xl){
+                        padding: 0;
+                    }
                 }
             }
         }
@@ -33,7 +36,7 @@
     }
 }
 header {
-    background-color: $white;
+    background-color: rgba(var(--white),1);
     padding: $header-spacing;
     position: sticky;
     top: 0;
@@ -41,8 +44,11 @@ header {
     @include media-breakpoint-down(md) {
         padding: 20px;
     }
+    @include media-breakpoint-up(md){
+        padding: 15px;
+    }
     @include media-breakpoint-down(sm) {
-        padding: 16px;
+        padding: 12px;
     }
     ul[class*="header-"] {
         display: flex;
@@ -57,7 +63,7 @@ header {
             &:nth-child(n+2){
                 width: 40px;
                 height: 40px;
-                border: 1px solid var(--shape-border);
+                border: 1px solid rgba(var(--shape-border),1);
                 background-color: rgba(var(--body-color),1);
                 border-radius: 30px;
                 padding: 0;
@@ -73,6 +79,16 @@ header {
                         margin-left: unset;
                         margin-right: 8px;
                     }
+                }
+                @include media-breakpoint-down(sm){
+                    width: 35px;
+                    height: 35px;   
+                    margin-left: 10px;
+                }
+                @include media-breakpoint-down(md){
+                    width: 37px;
+                    height: 37px;   
+                    margin-left: 6px;
                 }
             }
             > a, .search-icon {
@@ -116,7 +132,7 @@ header {
                 }
                 &:last-child{
                     background-color: rgba(var(--body-color),1);
-                    border: 1px solid var(--shape-border);
+                    border: 1px solid rgba(var(--shape-border),1);
                 }
               }
               .btn{
@@ -147,18 +163,23 @@ header {
             }
         }
     }
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }   
     .search-form {
         position: relative;
         .input-group {
             width: 817px;
-            border: 1px solid var(--shape-border);
+            border: 1px solid rgba(var(--shape-border),1);
             position: relative;
             input{
                 background-color: rgba(var(--body-color),1);
                 border: none;
                 border-radius: 30px;
                 &::placeholder{
-                    color: var(--body-font-color);
+                    color: rgba(var(--body-font-color),1);
                 }
                 [dir="rtl"] & {
                     border-radius: 0 30px 30px 0 !important;
@@ -173,6 +194,12 @@ header {
                     padding-right: 0 !important;
                 }
             }
+            // @include media-breakpoint-between(sm) {
+            //     width: 230px;
+            // }
+            @include media-breakpoint-up(xxl){
+                width: 530px;
+            }
             @include media-breakpoint-down(xxl) {
                 width: 350px;
             }
@@ -180,7 +207,10 @@ header {
                 width: 172px;
             }
             @include media-breakpoint-down(lg) {
-                width: 190px;
+                width: 250px;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 206px;
             }
             @include media-breakpoint-down(sm) {
                 position: absolute;
@@ -196,7 +226,7 @@ header {
                     left: unset;
                     right: 0;
                 }
-                 &.show {
+                 &.show {   
                     visibility: visible;
                     opacity: 1;
                     transition: 0.5s all;
@@ -212,8 +242,8 @@ header {
         }
     }
     .profile-box {
-        background: var(--white);
-        border: 1px solid var(--shape-border);
+        background: rgba(var(--white),1);
+        border: 1px solid rgba(var(--shape-border),1);
         border-radius: $input-radius;
         padding: 6px 12px;
         align-items: center;
@@ -259,7 +289,7 @@ header {
         min-width: 90px;
         li{
             &:nth-child(n+2){
-                border-top: 1px solid var(--shape-border);
+                border-top: 1px solid rgba(var(--shape-border),1);
             }
         }
     }
@@ -271,7 +301,7 @@ header {
         }
         &-dropdown{
             h5.title{
-                border-bottom: 1px solid var(--shape-border);
+                border-bottom: 1px solid rgba(var(--shape-border),1);
             }
         }
     }
@@ -304,7 +334,7 @@ header {
                      }
                 }
                 .input-group{
-                    border: 1px dashed $black;
+                    border: 1px dashed rgba(var(--black),1);
                     border-radius: 3px;
                     width: 80px;
                     margin-top: 8px;
@@ -314,8 +344,8 @@ header {
                     input{
                         padding: 0;
                         text-align: center;
-                        border-right: 1px dashed $black;
-                        border-left: 1px dashed $black;
+                        border-right: 1px dashed rgba(var(--black),1);
+                        border-left: 1px dashed rgba(var(--black),1);
                     }
                     .svg-color{
                         width: 10px;
@@ -339,7 +369,7 @@ header {
             }
         }
         .cart-total {
-            border-top: 1px solid var(--shape-border);
+            border-top: 1px solid rgba(var(--shape-border),1);
             .button-group {
                 margin-top: 15px;
             }
@@ -362,7 +392,7 @@ header {
                         position: absolute;
                         top: 20px;
                         height: 72%;
-                        border-left: 1px dashed var(--font-color);
+                        border-left: 1px dashed rgba(var(--font-color),1);
                         margin: 0 auto;
                         left: 26px;
                         z-index: 1;
@@ -373,7 +403,7 @@ header {
                         h6{
                             span{
                                 margin-left: 5px;
-                                color: var(--body-font-color);
+                                color: rgba(var(--body-font-color),1);
                                 [dir="rtl"] &{
                                     margin-left: unset;
                                     margin-right: 5px;
@@ -385,7 +415,7 @@ header {
                             margin-top: 6px;
                         }
                         p {
-                            color: var(--body-font-color);
+                            color: rgba(var(--body-font-color),1);
                             opacity: 0.6;
                             font-size: 12px;
                             margin-top: 3px;
@@ -410,13 +440,13 @@ header {
         .input-group{
             border: none;
             .form-control{
-                border: 1px solid var(--shape-border);
+                border: 1px solid rgba(var(--shape-border),1);
                 border-right: none;
                 border-radius: 30px;
                 
             }
             .input-group-text{
-                border: 1px solid var(--shape-border);
+                border: 1px solid rgba(var(--shape-border),1);
                 border-radius: 30px;
             }
         }
@@ -486,14 +516,82 @@ header {
             font-size: 20px;
             line-height: 1.5;
         }
-        // .custom-dropdown{
-        //     a{
-        //         h6{
-        //             color: rgba(var(--font-color),1);
-        //         }
-        //     }
-        // }
+        @include media-breakpoint-down(sm) {
+            font-size: 15px !important;
+        }
     }
+    .btn-activity-primary{
+        background-color: rgba(var(--primary-color),0.1);
+        border: 1px solid rgba(var(--primary-color),0.1);
+        border-radius: 30px;
+        width: 32px;
+        height: 32px;
+        .svg-color {
+            stroke: rgba(var(--primary-color),1);
+        }
+        &:hover{
+        .svg-color {
+                stroke: rgba(var(--primary-color),1);
+        }
+        }
+    }
+    .btn-activity-secondary{
+        background-color: rgba(var(--secondary-color),0.1);
+        border: 1px solid rgba(var(--secondary-color),0.1);
+        border-radius: 30px;
+        width: 32px;
+        height: 32px;
+        .svg-color {
+            stroke: rgba(var(--secondary-color),1);
+        }
+        &:hover{
+        .svg-color {
+                stroke: rgba(var(--secondary-color),1);
+        }
+        }
+    }
+    .btn-activity-danger{
+        background-color: rgba(var(--danger-color),0.1);
+        border: 1px solid rgba(var(--danger-color),0.1);
+        border-radius: 30px;
+        width: 32px;
+        height: 32px;
+        .svg-color {
+            stroke: rgba(var(--danger-color),1);
+        }
+        &:hover{
+        .svg-color {
+                stroke: rgba(var(--danger-color),1);
+        }
+        }
+    }
+    .circle-dot-primary{
+        background-color: rgba(var(--primary-color),0.1);
+        border-radius: 100%;
+        padding: 3px;
+        font-size: 5px;
+        color: rgba(var(--primary-color),1);
+        .circle-color{
+            width: 8px;
+            height: 8px;
+            background-color: rgba(var(--primary-color),1);
+            border-radius: 30px;
+        }
+    }   
+    .circle-dot-secondary{
+        background-color: rgba(var(--secondary-color),0.1);
+        border-radius: 100%;
+        padding: 3px;
+        font-size: 5px;
+        color: rgba(var(--secondary-color),1);
+        .circle-color{
+            width: 8px;
+            height: 8px;
+            background-color: rgba(var(--secondary-color),1);
+            border-radius: 30px;
+        }
+    }
+
 }
 /**=====================
      header css end

@@ -4,7 +4,7 @@
 .form-control {
     font-family: $body-font;
     font-size: $input-font-size;
-    color: var(--body-font-color);
+    color: rgba(var(--body-font-color),1);
     font-weight: 600;
     border-radius: $input-radius;
     line-height: 17px;
@@ -17,14 +17,14 @@
     }
 }
 .input-group {
-    border: 1px solid var(--shape-border);
+    border: 1px solid rgba(var(--shape-border),1);
     border-radius: $input-radius;
     .form-control {
         border: none;
         border-radius: 8px;
     }
     &-text {
-        background: var(--white);
+        background: rgba(var(--white),1);
         border: none;
         border-radius: 8px;
     }
@@ -32,7 +32,7 @@
         border: 1px solid rgba(var(--primary-color),1);
     }
 }
-.search-form{
+.search-form {
     .input-group{
         .form-control{
             &::placeholder {

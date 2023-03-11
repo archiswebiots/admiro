@@ -4,7 +4,7 @@
 body {
     font-family: $body-font;
     font-size: 14px;
-    color: var(--body-font-color);
+    color: rgba(var(--body-font-color),1);
 }
 html, body {
     height: 100%;
@@ -49,7 +49,7 @@ h6 {
 a {
     font-size: 14px;
     text-decoration: none;
-    color: var(--body-font-color);
+    color: rgba(var(--body-font-color),1);
     transition: 0.5s all;
     &:hover {
         color: rgba(var(--primary-color),1);
@@ -59,13 +59,35 @@ a {
         outline: none;
     }
 }
+// p{
+//     margin-bottom: unset;
+// }
+blockquote {
+    border-left: 4px solid rgba(var(--primary-color),1);
+    padding: 18px;
+}
+.figure {
+    &.text-center {
+        blockquote {
+            border: none !important;
+        }
+
+    }
+
+    &.text-end {
+        blockquote {
+            border-left: none !important;
+            border-right: 4px solid rgba(var(--primary-color),1);
+        }
+    }
+}
 .svg-color {
     width: 24px;
     height: 24px;
-    stroke: var(--body-font-color);
+    stroke: rgba(var(--body-font-color),1);
 }
 .svg-white{
-    stroke: $white;
+    stroke: rgba(var(--white),1);
 }
 span {
     display: inline-block;
@@ -73,9 +95,8 @@ span {
 ul {
     margin: 0;
     padding: 0;
-    li {
-        display: inline-block;
-    }
+    list-style-type: none;
+
 }
 .card-wrapper {
     padding: 14px;
@@ -89,8 +110,10 @@ ul {
 // common flex property
 .common-flex {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
 }
+
 /**=====================
      typography css end
 ==========================**/

@@ -24,19 +24,30 @@
     p{
         color: rgba(var(--font-color),1);
     }
+    &:first-child{
+        border-radius: 1.5rem 1.5rem 0 0; 
+    }
 }
 .card-footer {
     background-color: rgba(var(--white),1);
-    border-top: 1px solid rgba(var(--card-border-color),1);
+    border-top: $card-border;
     padding: $card-padding;
+    &:last-child{
+        border-radius: 0 0 1.5rem 1.5rem; 
+    }
+    @include media-breakpoint-down(md) {
+        padding: 10px;
+    }
 }
 .card-body {
     padding: $card-padding;
     background-color: transparent;
-
     p {
       &:last-child {
         margin-bottom: 0;
       }
     }
-  }
+}
+/**=====================
+    03.  Card CSS end
+==========================**/

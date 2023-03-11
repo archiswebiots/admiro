@@ -13,7 +13,7 @@ $i: 100, 300, 500, 400, 600, 700, 900;
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: var(--scrollbar-color) rgba(var(--white),1);
+    scrollbar-color: rgba(var(--scrollbar-color),1) rgba(var(--white),1);
   }
 
   /* Chrome, Edge, and Safari */
@@ -22,11 +22,11 @@ $i: 100, 300, 500, 400, 600, 700, 900;
   }
 
   *::-webkit-scrollbar-track {
-    background: rgbavar(--white);
+    background: rgba(var(--white),1);
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-color);
+    background-color: rgba(var(--scrollbar-color),1);
     border-radius: 10px;
   }
 
