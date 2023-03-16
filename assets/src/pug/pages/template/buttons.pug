@@ -1,0 +1,110 @@
+-var sidebar    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body 
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3  
+                                        | Default Style
+                                .col-6
+                                    ol.breadcrumb 
+                                        li.breadcrumb-item   
+                                            a(href='index.html')        
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Buttons 
+                                        li.breadcrumb-item.active Default Style
+                    // Container-fluid starts   
+                    .container-fluid
+                        .row.g-3
+                            .col-sm-12
+                                #default.card
+                                    .card-header
+                                        h4.mb-1 Default buttons
+                                        span Bootstrap state buttons
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-primary') Primary Button
+                                        button.btn.btn-secondary.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-secondary') secondary Button
+                                        button.btn.btn-info.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-info') info Button
+                                        button.btn.btn-success.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-success') success Button
+                                        button.btn.btn-warning.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-warning') warning Button
+                                        button.btn.btn-danger.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-danger') danger Button
+                                        button.btn.btn-light.text-dark(type='button' data-bs-toggle='tooltip' title='btn btn-light') light Button
+                            .col-sm-12
+                                #large-btn.card.large-button
+                                    .card-header
+                                        h4 Large buttons
+                                        span
+                                            | Add
+                                            code .btn-lg
+                                            |  class for large size buttons
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-primary btn-lg') Primary Button
+                                        button.btn.btn-secondary.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-secondary btn-lg') secondary Button
+                                        button.btn.btn-info.btn-lg.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-info btn-lg') info Button
+                                        button.btn.btn-success.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-success btn-lg') success Button
+                                        button.btn.btn-warning.btn-lg.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-warning btn-lg') warning Button
+                                        button.btn.btn-danger.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-danger btn-lg') danger Button
+                                        button.btn.btn-light.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-light btn-lg') light Button
+                            .col-sm-12
+                                #small-btn.card
+                                    .card-header
+                                        h4 Small buttons        
+                                        span
+                                            | Add
+                                            code .btn-sm
+                                            |  class for small size buttons
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.btn-sm(type='button' title='btn btn-primary btn-sm') Primary Button
+                                        button.btn.btn-secondary.btn-sm(type='button' title='btn btn-secondary btn-sm') Secondary Button
+                                        button.btn.btn-success.btn-sm(type='button' title='btn btn-success btn-sm') Success Button
+                                        button.btn.btn-info.btn-sm.text-light(type='button' title='btn btn-info btn-sm') Info Button
+                                        button.btn.btn-warning.btn-sm.text-light(type='button' title='btn btn-warning btn-sm') Warning Button
+                                        button.btn.btn-danger.btn-sm(type='button' title='btn btn-danger btn-sm') Danger Button
+                                        button.btn.btn-light.btn-sm(type='button' title='btn btn-light btn-sm') Light Button
+                            //- .col-sm-12
+                            //-     #ex-small-btn.card
+                            //-         .card-header
+                            //-             h4 Extra Small buttons
+                            //-             span    
+                            //-                 | Add 
+                            //-                 code .btn-xs
+                            //-                 |  class for extra small size buttons
+                            //-         .card-body.btn-showcase
+                            //-             button.btn.btn-primary.btn-xs(type='button' title='btn btn-primary btn-xs') Primary Button
+                            //-             button.btn.btn-secondary.btn-xs(type='button' title='btn btn-secondary btn-xs') Secondary Button
+                            //-             button.btn.btn-success.btn-xs(type='button' title='btn btn-success btn-xs') Success Button
+                            //-             button.btn.btn-info.btn-xs(type='button' title='btn btn-info btn-xs') Info Button
+                            //-             button.btn.btn-warning.btn-xs(type='button' title='btn btn-warning btn-xs') Warning Button
+                            //-             button.btn.btn-danger.btn-xs(type='button' title='btn btn-danger btn-xs') Danger Button
+                            //-             button.btn.btn-light.btn-xs(type='button' title='btn btn-light btn-xs') Light Button
+                            .col-sm-12
+                                #active-btn.card
+                                    .card-header
+                                        h4 Active Buttons
+                                        span    
+                                            | Add
+                                            code .active
+                                            |  class for active state
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.active(type='button' title='btn btn-primary active') Active
+                                        button.btn.btn-secondary.active(type='button' title='btn btn-secondary active') Active
+                                        button.btn.btn-success.active(type='button' title='btn btn-success active') Active
+                                        button.btn.btn-info.active.text-light(type='button' title='btn btn-info active') Active
+                                        button.btn.btn-warning.active.txt-dark(type='button' title='btn btn-warning active') Active
+                                        button.btn.btn-danger.active.text-light(type='button' title='btn btn-danger active') Active
+                                        button.btn.btn-light.active.txt-dark(type='button' title='btn btn-light active') Active
+
+                include ../../components/footer
+            include ../../components/footer-files

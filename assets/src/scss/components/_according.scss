@@ -1,0 +1,114 @@
+/**=====================
+    According CSS start
+==========================**/
+
+.default-according {
+    .avatar-showcase {
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 0;
+        box-shadow: none;
+
+        &+.card {
+            margin-top: $according-card-top-margin;
+        }
+
+        .card-header {
+            padding: $according-card-header-padding;
+            border: rgba(var(--border-color),1);
+
+            i {
+                position: absolute;
+                left: 18px;
+                font-size: 20px;
+                top: 20px;
+            }
+
+            h5 {
+                margin-top: 2px;
+            }
+        }
+
+        .card-body {
+            border: rgba(var(--border-color),1);
+            border-top: none;
+        }
+    }
+}
+.accordion-button{
+    &:not(.collapsed){
+        &::after {
+            background-image: unset;
+        }
+    }
+    &::after {
+        background-image: unset;
+    }
+
+    &:focus{
+        border-color: unset;
+        box-shadow: unset;
+        z-index: 0;
+    }
+    i{
+        margin-left: auto;
+    }
+    &::after{
+        content: none;
+    }
+}
+.simple-according{
+    .accordion-button{
+        background-color: rgba(var(--primary-color),0.2);
+    }
+}
+.accordion-border {
+    .accordion-item {
+        border: 0;
+    }
+}
+.accordion-header {
+    margin-bottom: 0;
+}
+
+.according-icon{
+    margin-left: unset !important;
+}
+.accordion-wrapper {
+    &:active {
+        border: 1px solid rgba(var(--primary-color),1);
+        border-top: 1px solid rgba(var(--primary-color),1) !important;
+    }
+}
+    
+  
+@each $according-name, $according-color in (primary, rgba(var(--primary-color),0.2)),
+(secondary, rgba(var(--secondary-color),0.2)), (success, rgba(var(--success-color),0.2)),
+(danger, rgba(var(--danger-color),0.2)), (info, rgba(var(--info-color),0.2)), (light, rgba(var(--light-color),0.2))
+{
+    .accordion-button {
+        &.accordion-light-#{$according-name} {
+            &:not(.collapsed) {
+                background-color:$according-color !important;
+                color: rgba(var(--dark),1);
+            }
+    
+                &:active,
+                &.active {
+                    background-color:$according-color;
+                    color: rgba(var(--dark),1);
+                }
+        }
+    }
+    .multi-collapse {
+        &.show {
+            .collapse-wrapper {
+                &.accordion-light-#{$according-name} {
+                    background-color: $according-color !important;
+                }
+            }
+        }
+    }
+}

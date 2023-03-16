@@ -18,22 +18,22 @@ h1 {
 }
 h2 {
     font-size: $heading_2;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: $common_letter_spacing;
 }
 h3 {
     font-size: $heading_3;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: $common_letter_spacing;
 }
 h4 {
     font-size: $heading_4;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 h5 {
    font-size: $heading_5;
-   font-weight: 400;
+   font-weight: 500;
    line-height: 1.4;
    letter-spacing: $common_letter_spacing; 
    @include media-breakpoint-down(sm) {
@@ -42,7 +42,7 @@ h5 {
 }
 h6 {
    font-size: $heading_6;
-   font-weight: 500;
+   font-weight: 300;
    line-height: 1;
    letter-spacing: $common_letter_spacing; 
 }

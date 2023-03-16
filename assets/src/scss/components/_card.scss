@@ -6,6 +6,8 @@
     border-radius: 1.5rem;
     border: unset;
     height: 100%;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
     .sub-title{
         padding-bottom: 0.75rem;
         font-size: 1.125rem;
@@ -21,6 +23,9 @@
     padding: $card-padding;
     border-bottom: $card-border;
     position: relative;
+    @include media-breakpoint-down (sm){
+        padding: 15px;
+    }
     p{
         color: rgba(var(--font-color),1);
     }
@@ -46,6 +51,9 @@
       &:last-child {
         margin-bottom: 0;
       }
+    }
+    @include media-breakpoint-down (sm){
+        padding: 12px;
     }
 }
 /**=====================

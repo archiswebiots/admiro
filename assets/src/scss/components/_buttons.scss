@@ -12,12 +12,12 @@ $colors: (
   success: rgba(var(--success-color),1), 
   danger: rgba(var(--danger-color),1),
   light: rgba(var(--light-color),1)
-);
+); 
 @each $key, $val in $colors {
     .btn-#{$key} {
       background-color: $val;
       border: 1px solid $val;
-      &:hover, &:focus, &:active:focus {
+      &:hover, &:focus, &:active:focus, &.show {
         background-color: $val;
         border-color: $val;
       }
@@ -28,7 +28,7 @@ $colors: (
       background-color: rgba(var(--white),1);
       border: 1px solid $val;
       color: $val;
-      &:hover, &:focus, &:active:focus {
+      &:hover, &:focus, &:active:focus, &.show {
         background-color: $val;
         border-color: $val;
         color: rgba(var(--white),1);
@@ -45,6 +45,18 @@ $colors: (
 }
 .btn-lg{
   font-size: 18px;
+}
+
+.btn-showcase {
+  .btn {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  margin-bottom:-10px;
+}
+.large-button{
+  height: unset !important;
 }
 /**=====================
      buttons css end
