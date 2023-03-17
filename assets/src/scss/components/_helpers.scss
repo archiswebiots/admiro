@@ -7,11 +7,15 @@
     @include media-breakpoint-down(xl){
         padding: 15px;
     }
+    @include media-breakpoint-down(sm){
+        padding: 12px;
+    }
     h6{
         font-weight: 600;
     }
     &.border{
         border: 1px solid rgba(var(--light-gray), 1) !important;
+        border-radius: 1.5rem;
     }
 }
 

@@ -14,7 +14,7 @@
                     @include media-breakpoint-down(xl){
                         padding: 0;
                     }
-                }
+                } 
             }
         }
         @include media-breakpoint-up(lg) {
@@ -35,6 +35,7 @@
         }
     }
 }
+
 header {
     background-color: rgba(var(--white),1);
     padding: $header-spacing;
@@ -301,7 +302,7 @@ header {
         }
         &-dropdown{
             h5.title{
-                border-bottom: 1px solid rgba(var(--shape-border),1);
+                border-bottom: 1px solid rgba(var(--light-semi-gray),1);
             }
         }
     }
@@ -369,7 +370,7 @@ header {
             }
         }
         .cart-total {
-            border-top: 1px solid rgba(var(--shape-border),1);
+            border-top: 1px solid rgba(var(--light-semi-gray),1);
             .button-group {
                 margin-top: 15px;
             }

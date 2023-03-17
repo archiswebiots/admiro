@@ -10,11 +10,11 @@
     --body-color: 249, 247, 246;
     --primary-color: 48, 142, 135;
     --secondary-color: 243, 145, 89;
-    --success-color: 62, 185, 95;
-    --info-color: 234, 146, 0;
-    --warning-color: 255, 170, 5;
-    --danger-color: 231, 75, 43;
-    --light-color: 170, 163, 160;
+    --success-color: 88, 179, 104;
+    --info-color: 84, 210, 210;
+    --warning-color: 255, 203, 0;
+    --danger-color: 255, 97, 80;
+    --light-color: 245, 245, 245;
     --footer-icon: 244, 0, 0;
     --active-bg-color: 217, 232, 229;
     --font-color: 170, 163, 160;
@@ -31,6 +31,8 @@
     --light-chartist-grid-color: 246, 249, 253;
     --gray-60 : 204, 204, 204;
     --span-color: 242, 243, 247;
+    --light-gray-color:170, 163, 160;
+
     // dropdown color
     --dropdown-menu: 43, 43, 43;
     --dropdown-bg-color:249, 249, 249;
@@ -45,7 +47,7 @@
 }
 .dark-only{
     --white: 255, 255, 255;
-    --black: #000;
+    --black: 0, 0, 0;
     --body-font-color: 41, 41, 41;
     --font-color: rgb(170, 163, 160);
     --shape-border: #E5E5E5;
@@ -98,3 +100,11 @@ $table-b-margin: 0px;
 $table-heading-color: rgba(var(--theme-body-font-color),1);
 $table-row-color: rgba(var(--theme-body-font-color),1);
 $table-padding: 0.75rem;
+
+//According setting
+$according-card-top-margin : 10px;
+$according-btn-weight : 500;
+$according-btn-color : rgba(var(--body-font-color),1);
+$according-card-header-padding : 0.75rem 1.25rem;
+$according-open-icon : "\eb73";
+$according-close-icon : "\eb7a";

@@ -1,15 +1,15 @@
--var sidebar    = true;
+-var sidebar = true;
 include ../../components/mixin
 doctype html
 html(lang='en') 
   include ../../components/header-files
   body
-    main.page-wrapper
+    main.page-wrapper.sidebar-open
         include ../../components/header/header
-        .page-body-wrapper  
-          include ../../components/sidebar                      
-          .page-body 
-            .container-fluid                    
+        .page-body-wrapper
+          include ../../components/sidebar                          
+          .page-body
+            .container-fluid               
                 .page-title
                     .row
                         .col-6
@@ -206,9 +206,9 @@ html(lang='en')
                         .card-wrapper.border.rounded-3.h-100
                           h6.sub-title.fw-bold Order list
                           ol
-                            li UI Kits
+                            li UI Kits 
                             li Bonus Ui
-                            li Animations
+                            li Animations 
                             li
                               ol
                                 li Typography
@@ -322,11 +322,12 @@ html(lang='en')
                           p.mb-0.txt-dark
                             | In this life we cannot do great things. We can only do small things with great love.
                           figcaption.blockquote-footer.pt-3
-                            | Mother Teresa
+                            | Mother Teresa   
                       .figure.text-end.d-block
                         blockquote.blockquote.mb-0.light-card.mb-2
                           p.mb-0.txt-dark
                             | Live in the sunshine, swim the sea, drink the wild air.
                           figcaption.blockquote-footer.pt-3
                             | Ralph Waldo Emerson
-          include ../../components/footer                                               
+          include ../../components/footer   
+  include ../../components/footer-files                                              
