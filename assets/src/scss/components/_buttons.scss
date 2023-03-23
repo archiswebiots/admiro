@@ -17,7 +17,7 @@ $colors: (
     .btn-#{$key} {
       background-color: $val;
       border: 1px solid $val;
-      &:hover, &:focus, &:active:focus, &.show {
+      &:hover, &:focus,&.active ,&:active:focus, &.show {
         background-color: $val;
         border-color: $val;
       }
@@ -28,7 +28,7 @@ $colors: (
       background-color: rgba(var(--white),1);
       border: 1px solid $val;
       color: $val;
-      &:hover, &:focus, &:active:focus, &.show {
+      &:hover, &:focus,&.active , &:active:focus, &.show {
         background-color: $val;
         border-color: $val;
         color: rgba(var(--white),1);
@@ -48,16 +48,70 @@ $colors: (
 }
 
 .btn-showcase {
-  .btn {
-    margin-bottom: 10px;
-    margin-right: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.text-dark{
+  .btn{
+    &:active{
+      color: rgba(var(--dark),1);
+    }
   }
+}
+.btn-warning,.btn-outline-warning{
+  &.btn{
+    &:active{
+      background-color: rgba(var(--warning-color),1);
+      border-color: rgba(var(--warning-color),2);
+    }
+    &:hover{
+      color: rgba(var(--light-color),1)
+    }
+  }
+}
+.btn-primary{
+  &.btn{
+    &.disabled{
+      background-color: rgba(var(--primary-color),1);
+      border-color: rgba(var(--primary-color),1);
+    }
+  }
+}
+.btn-secondary{
+  &.btn{
+    &.disabled{
+      background-color: rgba(var(--secondary-color),1);
+      border-color: rgba(var(--secondary-color),1);
+    }
+  }
+}
+.btn-light{
+  &.btn{
+    &.disabled{
+      background-color: rgba(var(--light-color),1);
+      border-color: rgba(var(--light-color),1);
+    }
+  }
+}
+.btn-outline-primary{
+  &.btn{
+    &.disabled{
+      color: rgba(var(--primary-color),1);
+      border-color: rgba(var(--primary-color),1);
+    }
+  }
+}
+.btn-outline-secondary{
+  &.btn{
+    &.disabled{
+      color: rgba(var(--secondary-color),1);
+      border-color: rgba(var(--secondary-color),1);
+    }
+  }
+}
 
-  margin-bottom:-10px;
-}
-.large-button{
-  height: unset !important;
-}
+
 /**=====================
      buttons css end
 ==========================**/

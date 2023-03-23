@@ -1,0 +1,15 @@
+@include media-breakpoint-down(sm){
+    .nav-pills {
+        text-align: center;
+    }
+    .nav-pills {
+        li {
+          width: 100%;
+        }
+    }
+    .border-tab {
+        &.nav-tabs {
+          display: block;
+        }
+      }
+}

@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="../assets/css/bulk-style.css">
   </head>
   <body>
-    <main class="page-wrapper sidebar-open">
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page header start -->
       <header class="page-header">
         <div class="header-left"><a class="toggle-sidebar" href="#"><i class="iconly-Filter icli"></i></a>
@@ -224,6 +225,7 @@
         </div>
       </header>
       <!-- Page header end-->
+      <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page sidebar start-->
         <div class="overlay"></div>
@@ -298,7 +300,157 @@
         </aside>
         <!-- Page sidebar end-->
         <div class="page-body">
-          <div class="container-fluid"> </div>
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  <h3>tag-pills</h3>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"> <i class="iconly-Home icli"></i></a></li>
+                    <li class="breadcrumb-item">Ui Kits</li>
+                    <li class="breadcrumb-item active">tag-pills</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row g-3">
+              <div class="col-sm-12 col-xl-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Simple tabs</h4>
+                    <p class="mt-1 f-m-light">Use the<code>.nav-link</code> with <code>.show</code>class to jump particular tabs.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="simple-wrapper nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item"><a class="nav-link text-primary" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li>
+                      <li class="nav-item"><a class="nav-link active text-primary" id="profile-tabs" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li>
+                      <li class="nav-item"><a class="nav-link text-primary" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a></li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <p class="pt-3">Tabs have long been used to show alternative views of the same group of information tabs in software. Known as<em class="text-danger"> “module tabs”</em>, these are still used today in web sites. For instance, airline companies such as Ryanair, easyJet and AirMalta use module tabs to enable the user to switch between bookings for flights, hotels and car hire.</p>
+                      </div>
+                      <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <p class="pt-3 mb-0">
+                          <div class="flex-space flex-wrap align-items-center"><img class="tab-img" src="../assets/images/avtar/3.jpg" alt="profile">
+                            <p><strong>Visit Us: </strong>	2600 Hollywood Blvd,Florida, United States-	33020<br><strong>Mail Us:</strong>contact@us@gmail.com<br><strong>Contact Number: </strong>(954) 357-7760</p>
+                          </div>
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <p class="pt-3">Us Technology offers web & mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them.<br><strong>Visit Us:</strong>	2600 Hollywood Blvd,Florida, United States-	33020<br><strong>Mail Us: </strong>contact@us@gmail.com<br><strong>Contact Number:</strong>(954) 357-7760</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xl-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Icons With Tabs</h4>
+                    <p class="mt-1 f-m-light">Use the <code>.nav-link</code>with feather icons. And<code>.show</code> class to tabs change.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="nav nav-tabs" id="icon-tab" role="tablist">
+                      <li class="nav-item"><a class="nav-link active text-secondary" id="icon-home-tab" data-bs-toggle="tab" href="#icon-home" role="tab" aria-controls="icon-home" aria-selected="true"><i class="iconly-Home icli me-0"> </i>Home</a></li>
+                      <li class="nav-item"><a class="nav-link text-secondary" id="profile-icon-tabs" data-bs-toggle="tab" href="#profile-icon" role="tab" aria-controls="profile-icon" aria-selected="false"><i class="iconly-Profile icli"></i>Profile</a></li>
+                      <li class="nav-item"><a class="nav-link text-secondary" id="contact-icon-tab" data-bs-toggle="tab" href="#contact-icon" role="tab" aria-controls="contact-icon" aria-selected="false"><i class="iconly-Call icli"></i>Contact</a></li>
+                    </ul>
+                    <div class="tab-content" id="icon-tabContent">
+                      <div class="tab-pane fade show active" id="icon-home" role="tabpanel" aria-labelledby="icon-home-tab">
+                        <p class="pt-3"> Not limited to any states, boundaries. All over India providing cutting-edge design and website development services for over 12 years. We provide end to end digital solutions, right from designing your website/application development: Domain, Web Hosting, Email Hosting Registration, Search Engine Optimization and other Internet Marketing, Renewal of Services timely and effectively.</p>
+                      </div>
+                      <div class="tab-pane fade" id="profile-icon" role="tabpanel" aria-labelledby="profile-icon-tab">
+                        <p class="pt-3 mb-0">
+                          <div class="flex-space flex-wrap align-items-center"><img class="tab-img" src="../assets/images/avtar/7.jpg" alt="profile">
+                            <p><strong>Visit Us: </strong>	278 Green Avenue Oakland, CA 94612<br><strong>Mail Us:</strong>MichaelMMcGowan@teleworm.us<br><strong>Contact Number:</strong>510-767-002</p>
+                          </div>
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="contact-icon" role="tabpanel" aria-labelledby="contact-icon-tab">
+                        <p class="pt-3">
+                           Us Technology offers web & mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them. </p>
+                        <div class="pt-3">
+                          <label class="form-label" for="exampleFormControlInput1">Email address</label>
+                          <input class="form-control" id="exampleFormControlInput1" type="email" placeholder="youremail@gmail.com">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xxl-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Vertical Tabs</h4>
+                    <p class="mt-1 f-m-light">Use the <code>#var-pills-tab</code> id thorough change vertical tabs.</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-4 col-xs-12">
+                        <div class="nav flex-column nav-pills nav-success" id="ver-pills-tab" role="tablist" aria-orientation="vertical"><a class="nav-link" id="ver-pills-home-tab" data-bs-toggle="pill" href="#ver-pills-home" role="tab" aria-controls="ver-pills-home" aria-selected="true">Home</a><a class="nav-link active" id="ver-pills-components-tab" data-bs-toggle="pill" href="#ver-pills-components" role="tab" aria-controls="ver-pills-components" aria-selected="false">Components</a><a class="nav-link" id="ver-pills-pages-tab" data-bs-toggle="pill" href="#ver-pills-pages" role="tab" aria-controls="ver-pills-pages" aria-selected="false">Pages</a><a class="nav-link" id="ver-pills-settings-tab" data-bs-toggle="pill" href="#ver-pills-settings" role="tab" aria-controls="ver-pills-settings" aria-selected="false">Settings</a></div>
+                      </div>
+                      <div class="col-md-8 col-xs-12">
+                        <div class="tab-content" id="ver-pills-tabContent">
+                          <div class="tab-pane fade" id="ver-pills-home" role="tabpanel" aria-labelledby="ver-pills-home-tab">
+                            <p>It was an easy decision.an affordable expense! Absolutely! we got peace of mind. Now, my time is spent on the<em class="txt-danger">“Sale”</em> and not on technology. Create product Builder tool is also pre-bundled in this template so that you can let the audience configure the product by themselves before placing the order.We are a small yet highly-skilled group of creative brains with a vast experience. Our team of web designers, online marketing experts, content writers, graphic professionals have completed numerous projects.</p>
+                          </div>
+                          <div class="tab-pane fade show active" id="ver-pills-components" role="tabpanel" aria-labelledby="ver-pills-components-tab">
+                            <p>If you are a business owner, your website is absolutely one of the most important tools you have in your arsenal to get more - and better - clients and customers or a good one from a great one? Here are 10 qualities that a great website will need. Whether or not you end up retaining makespace based web designers, you should find them helpful:<br>--> Navigation<br>--> Visual Design<br>--> Web Friendly<br>--> Conversion</p>
+                          </div>
+                          <div class="tab-pane fade" id="ver-pills-pages" role="tabpanel" aria-labelledby="ver-pills-pages-tab">
+                            <p>Available pages in Theme:<br><strong> Typography:</strong><br>Typography is the art of arranging letters and text in a way that makes the copy legible, clear, and visually appealing to the reader.<br><strong> Tooltip:</strong><br>A tooltip is a brief, informative message that appears when a user interacts with an element in a graphical user interface (GUI). </p>
+                          </div>
+                          <div class="tab-pane fade" id="ver-pills-settings" role="tabpanel" aria-labelledby="ver-pills-settings-tab">
+                            <p class="p-sm-0 pt-2"><strong> Site purpose</strong><br>Like a mission statement, a website's purpose gives the primary reason for the site's existence in the world. Whether for education, advocacy, service provision, community organizing, etc.<br><strong> Features</strong><br>It's important to figure out as many of these in advance as you can for the sake of a more coherent design. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xxl-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Pills tabs</h4>
+                    <p class="mt-1 f-m-light">Use the<code>data-bs-toggle="pill"</code> to tabs pill shape. And mandatory for<code>.active</code> class.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="nav nav-pills nav-primary" id="pills-tab" role="tablist">
+                      <li class="nav-item"><a class="nav-link" id="pills-aboutus-tab" data-bs-toggle="pill" href="#pills-aboutus" role="tab" aria-controls="pills-aboutus" aria-selected="true">About us</a></li>
+                      <li class="nav-item"><a class="nav-link" id="pills-contactus-tab" data-bs-toggle="pill" href="#pills-contactus" role="tab" aria-controls="pills-contactus" aria-selected="false">Contact us</a></li>
+                      <li class="nav-item"><a class="nav-link active" id="pills-blog-tab" data-bs-toggle="pill" href="#pills-blog" role="tab" aria-controls="pills-blog" aria-selected="false">Blog </a></li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade" id="pills-aboutus" role="tabpanel" aria-labelledby="pills-aboutus-tab">
+                        <p class="pt-3">The ultimate goal of every web design is to create a site that will reach its audience and be useful to them. In order to achieve that, it is necessary to befriend Google's mechanisms and algorithms. There is no use of a pretty website, if it's displayed on a 10th page of search results, because this way no one will ever find it. That brings us to the topic of Google's Website Ranking.Generally speaking, it's a list of pages and their keywords, sorted in the order of search results. The higher your place in the ranking is, the more people are likely to see your page.</p>
+                      </div>
+                      <div class="tab-pane fade" id="pills-contactus" role="tabpanel" aria-labelledby="pills-contactus-tab">
+                        <p class="pt-3">Create professional web page design. Responsive, fully customizable with easy Drag-n-Drop Nicepage editor. Adjust colors, fonts, header and footer, layout and other design elements, as well as content and images.<br><strong>Visit Us:</strong>4 Marigold Close, Glenmore Park, New South Wales, 2745 Australia- 2745<br><strong>Mail Us:</strong>SamuelMario@armyspy.com<br><strong>Contact Number:</strong>(02) 4733 6337</p>
+                      </div>
+                      <div class="tab-pane fade show active" id="pills-blog" role="tabpanel" aria-labelledby="pills-blog-tab">
+                        <div class="pt-3 d-flex align-items-center gap-3 pills-blogger"> 
+                          <div class="blog-wrapper"><img class="blog-img" src="../assets/images/dashboard2/3.png" alt="headphone"></div>
+                          <div class="blog-content">
+                            <p></p><em class="text-danger fw-bold">Smart headphones</em>  — also called smart earbuds or hearable — are high-tech in-ear devices that do more than transmit audio. These headphones are usually wireless, and they can sync up with your phone, tablet, computer or other Bluetooth-enabled device. The main appeal of hearables is convenience, as they allow you to complete common tasks without directly accessing your phone or computer. Smart wireless headphones sync up to other devices using Bluetooth technology, and many of their features rely on data from your smartphone or computer.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-6">
+                        <div class="card">                           </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <footer class="footer"> 
           <div class="container-fluid">
@@ -317,7 +469,7 @@
           </div>
         </footer>
       </div>
-    </main>
+    </div>
     <!-- bootstrap js-->
     <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/sidebar.js"></script>

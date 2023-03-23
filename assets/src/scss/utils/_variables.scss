@@ -32,7 +32,9 @@
     --gray-60 : 204, 204, 204;
     --span-color: 242, 243, 247;
     --light-gray-color:170, 163, 160;
-
+    --gray-200: 233, 236, 239;
+    --gray-700: 73, 80, 87;
+    
     // dropdown color
     --dropdown-menu: 43, 43, 43;
     --dropdown-bg-color:249, 249, 249;
@@ -108,3 +110,12 @@ $according-btn-color : rgba(var(--body-font-color),1);
 $according-card-header-padding : 0.75rem 1.25rem;
 $according-open-icon : "\eb73";
 $according-close-icon : "\eb7a";
+
+// tabs
+$nav-tabs-border-color:             rgba(var(--table-double-color),1) !default;
+$nav-tabs-border-width:             $border-width !default;
+$nav-tabs-border-radius:            $border-radius !default;
+$nav-tabs-link-hover-border-color:  rgba(var(--gray-200),1) rgba(var(--gray-200),1) $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        rgba(var(--gray-700),1) !default;
+$nav-tabs-link-active-bg:           rgba(var(--white),1) !default;
+$nav-tabs-link-active-border-color: rgba(var(--table-double-color),1) rgba(var(--table-double-color),1) $nav-tabs-link-active-bg !default;
