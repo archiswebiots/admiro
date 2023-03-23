@@ -5,6 +5,7 @@
 .list-group-item.active {
 	background-color: rgba(var(--primary-color),1);
 	border-color: rgba(var(--primary-color),1);
+	z-index: unset;
 }
 
 @each $list-name, $list-light-color in (primary, rgba(var(--primary-color),0.2)),
@@ -44,11 +45,11 @@
 	gap: 12px;
 	flex-wrap: wrap;
 
-	@include media-breakpoint-up(sm){
+	@include media-breakpoint-down(sm){
 		display: block;
 	}
 
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-down(sm) {
 		padding-bottom: 8px;
 	}
 
@@ -121,4 +122,58 @@
 		width: 40px;
 		margin-right: 10px;
 	}
+}
+
+
+.list-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-wrap: wrap;
+
+	@media (max-width: 414px) {
+		display: block;
+	}
+
+	@media (max-width: 366px) {
+		padding-bottom: 8px;
+	}
+
+	.list-img {
+		width: calc(40px + (55 - 40) * ((100vw - 320px) / (1920 - 320)));
+		height: calc(40px + (55 - 40) * ((100vw - 320px) / (1920 - 320)));
+		margin-bottom: 10px;
+		border-radius: 50%;
+	}
+
+	.list-content {
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+.scrollbar-wrapper {
+	max-height: 270px;
+	overflow: auto;
+}
+
+@include media-breakpoint-down(sm){
+    .nav-pills {
+        text-align: center;
+    }
+    .nav-pills {
+        li {
+          width: 100%;
+        }
+    }
+    .border-tab {
+        &.nav-tabs {
+          display: block;
+        }
+    }
+    .nav {
+      display: inherit;
+      text-align: center;
+      border-bottom: none;
+    }
 }

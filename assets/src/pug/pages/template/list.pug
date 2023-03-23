@@ -32,7 +32,7 @@ html(lang='en')
                                 .card
                                     .card-header
                                        h4 Default Lists
-                                       p.f-m-light.mt-1 
+                                       p.mt-1.f-m-light.mb-0
                                         | Use the           
                                         code .list-group 
                                         | define the list of items. and used 
@@ -56,7 +56,7 @@ html(lang='en')
                                 .card
                                     .card-header
                                         h4 Active Lists
-                                        p.f-m-light.mt-1
+                                        p.mt-1.f-m-light.mb-0
                                             | Use
                                             code .active
                                             | to a
@@ -80,7 +80,7 @@ html(lang='en')
                                 .card
                                     .card-header
                                         h4 Flush Lists
-                                        p.f-m-light.mt-1 
+                                        p.mt-1.f-m-light.mb-0 
                                             | Use
                                             code  .list-group-flush
                                             |  to remove some borders and rounded corners to render list group items.
@@ -102,7 +102,7 @@ html(lang='en')
                                 .card
                                     .card-header    
                                         h4 Contextual classes
-                                        p.f-m-light.mt-1
+                                        p.mt-1.f-m-light.mb-0
                                             | Use contextual classes to style list items with a stateful background and color.
                                             code .list-light-*
                                             |  and
@@ -138,7 +138,7 @@ html(lang='en')
                                 .card
                                     .card-header
                                         h4 Horizontal Lists
-                                        p.f-m-light.mt-1
+                                        p.mt-1.f-m-light.mb-0
                                             | Use
                                             code .list-group-horizontal
                                             | to change the layout of list group items from vertical to horizontal across all breakpoints.
@@ -178,7 +178,7 @@ html(lang='en')
                                 .card
                                     .card-header
                                         h4 Custom Content Lists
-                                        p.f-m-light.mt-1        
+                                        p.mt-1.f-m-light.mb-0      
                                             | Use the
                                             code .list-group-item
                                             |  through make custom design of all lists.
@@ -218,7 +218,7 @@ html(lang='en')
                                 .card
                                     .card-header
                                         h4 Lists With Checkbox
-                                        p.f-m-light.mt-1
+                                        p.mt-1.f-m-light.mb-0
                                             | Use the
                                             code .form-check-input 
                                             | to check your checkbox.
@@ -240,7 +240,7 @@ html(lang='en')
                                 .card
                                     .card-header
                                         h4 Lists With Radios
-                                        p.f-m-light.mt-1
+                                        p.mt-1.f-m-light.mb-0
                                             | Use the
                                             code .form-check-input
                                             | to check your radio buttons.
@@ -262,7 +262,7 @@ html(lang='en')
                                 .card
                                     .card-header
                                         h4 Lists With Numbers
-                                        p.f-m-light.mt-1
+                                        p.mt-1.f-m-light.mb-0
                                             | Use the
                                             code .list-group-numbered
                                             | to ordered wise print numbers.
@@ -276,14 +276,14 @@ html(lang='en')
                                 .card
                                     .card-header
                                         h4 JavaScript Behavior
-                                        p.f-m-light.mt-1
+                                        p.mt-1.f-m-light.mb-0
                                             | Use the tab JavaScript plugin—include it individually or through the compiled
                                             code  bootstrap.js
                                             | file to extend our list group to create table panes of local content.
                                     .card-body
                                         .row
-                                            .col-sm-4
-                                                #list-tab.list-group(role='tablist')
+                                            .col-sm-4 
+                                                #list-tab.list-group(role='tablist') 
                                                     a#list-home-list.list-group-item.list-group-item-action.bg-primary.active(data-bs-toggle='list', href='#list-home', role='tab', aria-controls='list-home') Home
                                                     a#list-profile-list.list-group-item.list-group-item-action.list-hover-primary(data-bs-toggle='list', href='#list-profile', role='tab', aria-controls='list-profile') Profile
                                                     a#list-messages-list.list-group-item.list-group-item-action.list-hover-primary(data-bs-toggle='list', href='#list-messages', role='tab', aria-controls='list-messages') Contact Us
@@ -293,7 +293,7 @@ html(lang='en')
                                                     #list-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='list-home-list')
                                                         .d-flex.mb-xl-4.list-behavior-1
                                                             .flex-shrink-0
-                                                                img.tab-img.img-fluid(src="../assets/images/user/img.png", alt="home")
+                                                                img.tab-image.img-fluid(src="../assets/images/user/img.png", alt="home")
                                                             .flex-grow-1
                                                                 p.mb-xl-0.mb-sm-4
                                                                     | We provide end to end digital solutions, right from designing your website/application development: Domain, Web Hosting, Email Hosting Registration, Search Engine Optimization and other Internet Marketing, Renewal of Services timely and effectively.
@@ -301,12 +301,12 @@ html(lang='en')
                                                             .flex-grow-1
                                                                 p.mb-0
                                                                     | When someone visits your homepage, your design should inspire them to stay. Therefore, your value proposition should be established on the homepage for visitors to select to stay on your website.Building trust, expressing value, and guiding visitors to the next step all depend on a page's design.
-                                                            .flex-shrink-0 
-                                                                img.tab-img.img-fluid(src="../assets/images/user/img.png", alt="home")  
+                                                            .flex-shrink-0
+                                                                img.tab-image.img-fluid(src="../assets/images/user/img.png", alt="home")  
                                                     #list-profile.tab-pane.fade.dark-list(role='tabpanel', aria-labelledby='list-profile-list')
                                                         p.mb-0
                                                             .flex-space.flex-wrap.align-items-center.list-light-dark
-                                                                img.tab-img(src="../assets/images/avtar/3.jpg", alt="profile") 
+                                                                img.tab-image(src="../assets/images/avtar/3.jpg", alt="profile") 
                                                                 p
                                                                     strong Visit Us:
                                                                     | 	2600 Hollywood Blvd,Florida, United States-	33020
@@ -339,11 +339,11 @@ html(lang='en')
                                                             | --> Tooltip:
                                                             br
                                                             | A tooltip is a brief, informative message that appears when a user interacts with an element in a graphical user interface (GUI).  
-                            .col-xxl-4.col-md-6
+                            .col-xxl-4.col-md-6.mb-3
                                 .card   
                                     .card-header
                                         h4 Numbered & Badge Lists
-                                        p.f-m-light.mt-1
+                                        p.mt-1.f-m-light.mb-0
                                             | Use the
                                             code  .list-group-numbered
                                             |  modifier class to  numbered list group items.Numbers are generated via CSS for better placement inside list group items.
@@ -365,11 +365,11 @@ html(lang='en')
                                                 .ms-2.me-auto   
                                                     | Graciela W. McClaran
                                                 span.badge.bg-danger.text-white.rounded-pill.p-2 Issue
-                            .col-xxl-4.col-md-6
+                            .col-xxl-4.col-md-6.mb-3
                                 .card
                                     .card-header
                                         h4 Disabled Lists 
-                                        p.f-m-light.mt-1 
+                                        p.mt-1.f-m-light.mb-0
                                             | Use
                                             code  .disabled 
                                             | to a 
@@ -389,5 +389,57 @@ html(lang='en')
                                             a.list-group-item.list-group-item-action.disabled(href='javascript:void(0)')
                                                 img.rounded-circle(src='../assets/images/user/5.jpg', alt='user')
                                                 | Bryan A. Owens
+                            .col-xxl-4.mb-3
+                                .card
+                                    .card-header
+                                        h4 Scrollable Lists
+                                        p.mt-1.f-m-light.mb-0
+                                            | Use the property
+                                            code overflow:auto
+                                            | through scrollable lists.
+                                    .card-body 
+                                        .list-group.main-lists-content.scrollbar-wrapper    
+                                            a.list-group-item.list-group-item-action.active.list-hover-primary(href='#' aria-current='true')
+                                                .list-wrapper.gap-0.pb-0
+                                                    img.list-img(src="../assets/images/user/9.jpg", alt="profile")
+                                                    .list-content
+                                                        h6 Molly Boake   
+                                                        p MollyBoake@rhyta.com
+                                                        small 5 days ago
+                                            a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                .list-wrapper.gap-0.pb-0
+                                                    img.list-img(src="../assets/images/user/10.jpg", alt="profile")
+                                                    .list-content
+                                                        h6 Gabrielle Fahey
+                                                        p GabrielleFahey@dayrep.com
+                                                        small.text-muted 10 days ago
+                                            a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                .list-wrapper.gap-0.pb-0
+                                                    img.list-img(src="../assets/images/user/2.jpg", alt="profile")
+                                                    .list-content
+                                                        h6 Lucinda Moseley 
+                                                        p LucindaMoseley@teleworm.us
+                                                        small.text-muted 3 days ago
+                                            a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                .list-wrapper.gap-0.pb-0
+                                                    img.list-img(src="../assets/images/user/12.png", alt="profile")
+                                                    .list-content
+                                                        h6 Francis K. Henriques
+                                                        p FrancisKHenriques@teleworm.us
+                                                        small.text-muted 2 days ago
+                                            a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                .list-wrapper.gap-0.pb-0
+                                                    img.list-img(src="../assets/images/user/14.png", alt="profile")
+                                                    .list-content 
+                                                        h6 Jose A. Seay
+                                                        p JoseASeay@rhyta.com
+                                                        small.text-muted 15 days ago
+                                            a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                .list-wrapper.gap-0.pb-0
+                                                    img.list-img(src="../assets/images/user/3.jpg", alt="profile")
+                                                    .list-content 
+                                                        h6 Phil F. Cunningham
+                                                        p PhilFCunningham@dayrep.com
+                                                        small.text-muted 6 days ago    
                 include ../../components/footer
         include ../../components/footer-files

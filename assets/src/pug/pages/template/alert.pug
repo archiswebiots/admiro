@@ -5,7 +5,7 @@ doctype html
 html(lang='en')
     include ../../components/header-files
     body
-        // page-wrapper Start
+        // page-wrapper Start 
         #pageWrapper.page-wrapper.compact-wrapper
             include ../../components/header/header
             // Page Body Start
@@ -45,5 +45,11 @@ html(lang='en')
                                                         | This is a   
                                                         a.alert-link.text-white(href='#') primary alert
                                                         |  with an example link.Check it out.
+                                                p.mb-0 Secondary Alert
+                                                .alert.alert-secondary.dark(role='alert')
+                                                    p
+                                                        | This is a
+                                                        a.alert-link.text-white(href='#') secondary alert
+                                                        |   with an example link. Check it out.
             include ../../components/footer
         include ../../components/footer-files 

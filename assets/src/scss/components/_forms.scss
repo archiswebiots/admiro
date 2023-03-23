@@ -36,7 +36,7 @@
     .input-group{
         .form-control{
             &::placeholder {
-                color: rgba(var(--light-color),1); 
+                color: rgba(var(--light-text),1); 
             }
         }
     }
