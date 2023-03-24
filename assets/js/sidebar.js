@@ -24,6 +24,8 @@
             }
         }
 
+     
+
         let slideDown = (target, duration = 500) => {
             console.log(target,'target');
             if (target) {               
@@ -146,7 +148,6 @@
                 Overlay.classList.add("active");
             }
         })
-
     })();
 // Sidebar pin-drops
 const pinTitle = document.querySelector(".pin-title");
@@ -226,3 +227,5 @@ pinIcon.forEach((item, index) => {
   };
 });
 togglePinnedName();
+
+    })();
