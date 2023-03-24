@@ -1,0 +1,179 @@
+/**=====================
+    List CSS Start
+==========================**/
+
+.list-group-item.active {
+	background-color: rgba(var(--primary-color),1);
+	border-color: rgba(var(--primary-color),1);
+	z-index: unset;
+}
+
+@each $list-name, $list-light-color in (primary, rgba(var(--primary-color),0.2)),
+  (secondary, rgba(var(--secondary-color),0.2)), (success, rgba(var(--success-color),0.2)),
+  (danger, rgba(var(--danger-color),0.2)), (warning, rgba(var(--warning-color),0.2)),
+  (info, rgba(var(--info-color),0.2)), (light, rgba(var(--light-color),0.2)),(dark, rgba(var(--body-font-color),0.2))
+
+
+{
+
+	.list-light-#{$list-name} {
+		background-color: $list-light-color;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $list-light-color;
+		}
+	}
+
+	.list-hover-#{$list-name} {
+		background-color: unset;
+
+		&:hover,
+		&:active,
+		&.active,
+		&:focus {
+			background-color: $list-light-color;
+			color: rgba(var(--dark),1);
+			z-index: 0;
+		}
+	}
+}
+.list-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-wrap: wrap;
+
+	@include media-breakpoint-down(sm){
+		display: block;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 8px;
+	}
+
+	.list-img {
+		width: calc(40px + (55 - 40) * ((100vw - 320px) / (1920 - 320)));
+		height: calc(40px + (55 - 40) * ((100vw - 320px) / (1920 - 320)));
+		margin-bottom: 10px;
+		border-radius: 50%;
+	}
+
+	.list-content {
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.list-group {
+	.list-group-item {
+		padding: 11px 16px;
+
+		.form-check-input {
+			&:focus {
+				box-shadow: unset !important;
+			}
+		}
+
+		i {
+			[dir="rtl"] & {
+				margin-left: 10px;
+				margin-right: unset;
+			}
+		}
+	}
+}
+
+.list-behavior-1 {
+	@include media-breakpoint-down(xl) {
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.flex-grow-1 {
+		margin-left: 16px;
+
+		[dir="rtl"] & {
+			margin-right: 16px;
+			margin-left: unset;
+		}
+	}
+}
+.list-behavior-2 {
+	@include media-breakpoint-down(xl) {
+		display: none;
+	}
+
+	.flex-grow-1 {
+		margin-right: 16px;
+
+		[dir="rtl"] & {
+			margin-left: 16px;
+			margin-right: unset;
+		}
+	}
+}
+.list-group {
+	
+	img {
+		height: 40px;
+		width: 40px;
+		margin-right: 10px;
+	}
+}
+
+
+.list-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-wrap: wrap;
+
+	@media (max-width: 414px) {
+		display: block;
+	}
+
+	@media (max-width: 366px) {
+		padding-bottom: 8px;
+	}
+
+	.list-img {
+		width: calc(40px + (55 - 40) * ((100vw - 320px) / (1920 - 320)));
+		height: calc(40px + (55 - 40) * ((100vw - 320px) / (1920 - 320)));
+		margin-bottom: 10px;
+		border-radius: 50%;
+	}
+
+	.list-content {
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+.scrollbar-wrapper {
+	max-height: 270px;
+	overflow: auto;
+}
+
+@include media-breakpoint-down(sm){
+    .nav-pills {
+        text-align: center;
+    }
+    .nav-pills {
+        li {
+          width: 100%;
+        }
+    }
+    .border-tab {
+        &.nav-tabs {
+          display: block;
+        }
+    }
+    .nav {
+      display: inherit;
+      text-align: center;
+      border-bottom: none;
+    }
+}

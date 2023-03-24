@@ -1,0 +1,43 @@
+
+@each $alert-name, $alert-color in (primary, rgba(var(--primary-color),1)),
+  (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+  (danger, rgba(var(--danger-color),1)), (warning, rgba(var(--warning-color),1)),
+  (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1)),(dark, rgba(var(--body-font-color),1))
+
+{
+
+  .list-group-horizontal {
+
+    &-sm,
+    &-md,
+    &-lg,
+    &-xl,
+    &-xxl {
+      .list-group-item {
+        &.border-left-#{$alert-name} {
+          border-left: 4px solid $alert-color;
+        }
+      }
+    }
+  }
+  .list-group {
+
+        .form-check-input:checked[type=checkbox],
+        [type=radio] {
+        &.checkbox-#{$alert-name} {
+            background-color: unset;
+            border-color: $alert-color;
+            outline: 0;
+            background-color: unset;
+
+            &:focus,
+            &:active,
+            &.active {
+            border-color: $alert-color;
+            outline: 0;
+            background-color: $alert-color;
+            }
+        }
+        }
+    }
+}

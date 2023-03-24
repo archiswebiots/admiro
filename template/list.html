@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <title>Admiro - best javascript admin</title>
+    <!-- Favicon icon-->
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <!-- Iconly icon css-->
+    <link rel="icon" href="../assets/svg/iconly-sprite.svg">
+    <!-- Flag icon css -->
+    <link rel="stylesheet" href="../assets/css/vendors/flag-icon.css">
+    <!-- App css-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- iconly-icon-->
+    <link rel="stylesheet" href="../assets/css/iconly-icon.css">
+    <link rel="stylesheet" href="../assets/css/bulk-style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
+  </head>
+  <body>
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page header start -->
+      <header class="page-header">
+        <div class="header-left"><a class="toggle-sidebar" href="#"><i class="iconly-Filter icli"></i></a>
+          <form class="search-form mb-0">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0"><i class="iconly-Search icli"> </i></span>
+            </div>
+          </form>
+        </div>
+        <div class="nav-right">
+          <ul class="header-right">
+            <!-- Language dropdown start-->
+            <li class="custom-dropdown d-sm-block d-none"><a href="javascript:void(0)">
+                <h6 class="f-w-700">ENG
+                  <svg class="svg-color">
+                    <use href="../assets/svg/iconly-sprite.svg#Arrow--Down"></use>
+                  </svg>
+                </h6></a>
+              <ul class="custom-menu profile-menu language-menu py-0">
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-us"></i>ENGLISH</a></li>
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-fr"></i>FRENCH</a></li>
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-ae"></i>ARABIC</a></li>
+              </ul>
+            </li>
+            <!-- Language dropdown end-->
+            <li class="custom-dropdown"><a class="dark-mode" href="javascript:void(0)"><i class="iconly-Star icli"></i></a></li>
+            <!-- Cart menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bag icli"></i></a>
+              <div class="custom-menu cart-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Cart</h5>
+                <ul>
+                              <li class="d-flex gap-3">
+                                <div class="flex-shrink-0 bg-light-primary"><img src="../assets/images/dashboard2/1.png" alt="Watch"></div>
+                                <div class="flex-grow-1"><span class="font-primary">Special Offer</span><a href="#"> 
+                                    <h5>Watch multicolor</h5></a>
+                                  <h6 class="mt-1">$26.00
+                                    <del>$32.00</del>
+                                  </h6>
+                                  <div class="input-group"> <span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#minus"></use>
+                                      </svg></span>
+                                    <input class="form-control bg-light-primary" type="text" value="1"><span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#plus"></use>
+                                      </svg></span>
+                                  </div>
+                                </div><a class="btn btn-close"></a>
+                              </li>
+                              <li class="d-flex gap-3">
+                                <div class="flex-shrink-0 bg-light-secondary"><img src="../assets/images/dashboard2/2.png" alt="Airpods"></div>
+                                <div class="flex-grow-1"><span class="font-secondary">Mega sale</span><a href="#"> 
+                                    <h5>Airpods</h5></a>
+                                  <h6 class="mt-1">$30.45
+                                    <del>$50.00</del>
+                                  </h6>
+                                  <div class="input-group"> <span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#minus"></use>
+                                      </svg></span>
+                                    <input class="form-control bg-light-secondary" type="text" value="1"><span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#plus"></use>
+                                      </svg></span>
+                                  </div>
+                                </div><a class="btn btn-close"></a>
+                              </li>
+                </ul>
+                <div class="bg-primary-light cart-total">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h6 class="f-light">Total </h6>
+                    <h6>$56.00</h6>
+                  </div>
+                  <div class="button-group"><a class="btn btn-outline-primary" href="#">View Cart</a><a class="btn btn-primary float-end" href="#">Checkout</a></div>
+                </div>
+              </div>
+            </li>
+            <!-- Notification menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Notification icli"></i></a>
+              <div class="custom-menu notification-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Notification <span class="font-primary">View all</span></h5>
+                <ul class="activity-timeline">
+                  <li class="d-flex align-items-start">
+                    <div class="activity-line"></div>
+                    <div class="activity-dot-primary"></div>
+                    <div class="flex-grow-1">
+                      <h6 class="f-w-600 font-primary">30-04-2023<span>Today</span><span class="circle-dot-primary float-end">
+                          <svg class="circle-color">
+                            <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                          </svg></span></h6>
+                      <h5>Alice Goodwin</h5>
+                      <p class="mb-0">Fashion should be fun. It shouldn't be labelled intellectual.</p>
+                    </div>
+                  </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-secondary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-secondary">28-06-2023<span>1 hour ago</span><span class="float-end circle-dot-secondary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Herry Venter</h5>
+                                  <p>I am convinced that there can be luxury in simplicity.</p>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-primary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-primary">04-08-2023<span>Today</span><span class="float-end circle-dot-primary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Loain Deo</h5>
+                                  <p>I feel that things happen for open new opportunities.</p>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-secondary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-secondary">12-11-2023<span>Yesterday</span><span class="float-end circle-dot-secondary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Fenter Jessy</h5>
+                                  <p>Sometimes the simplest things are the most profound.</p>
+                                </div>
+                              </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="full-screen" href="javascript:void(0)"><i class="iconly-Scan icli"></i></a></li>
+            <!-- Bookmark menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bookmark icli"></i></a>
+              <div class="custom-menu bookmark-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Bookmark</h5>
+                <ul> 
+                  <li> 
+                    <form class="mb-0">
+                      <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search Bookmark..."><span class="input-group-text ps-0">
+                          <svg class="svg-color">
+                            <use href="../assets/svg/iconly-sprite.svg#Search"></use>
+                          </svg></span>
+                      </div>
+                    </form>
+                  </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-primary"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#cube"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">Dashboard</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-secondary"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#check"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">To-do</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-danger"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#pie"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">Chart</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                </ul>
+              </div>
+            </li>
+            <div class="weather-menu d-lg-block d-none">
+              <button class="btn btn-primary"> 
+                <svg class="svg-color">
+                  <use href="../assets/svg/iconly-sprite.svg#Weather--cloud"></use>
+                </svg><span class="ms-1">15<sup> 
+                    <svg class="svg-color svg-white">
+                      <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                    </svg></sup></span>
+              </button>
+              <button class="btn btn-light"><span>Medan, IDN</span></button>
+            </div>
+          </ul>
+        </div>
+      </header>
+      <!-- Page header end-->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page sidebar start-->
+        <div class="overlay"></div>
+        <aside class="page-sidebar">
+          <div class="logo-wrapper d-flex align-items-center"> <a href="index.html"><img src="../assets/images/logo/logo1.png" alt="logo"></a><a class="close-btn sidebar-close d-lg-none" href="javascript:void(0)">
+              <svg class="svg-color svg-white">
+                <use href="../assets/svg/iconly-sprite.svg#Arrow---Left-2"></use>
+              </svg></a></div>
+          <div class="user-wrap">
+            <div class="user-img"><img src="../assets/images/profile.png" alt="user">
+              <div class="setting-icon"><i class="iconly-Setting icli">  </i></div>
+            </div>
+            <div class="user-content">
+              <h5>Amirreza Baqian</h5>
+              <h6>Product Designer</h6>
+            </div>
+          </div>
+          <div class="main-sidebar">
+            <ul class="sidebar-menu">
+              <li class="pin-title sidebar-main-title">
+                <div> 
+                  <h6>Pinned</h6>
+                </div>
+              </li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h6 class="sidebar-title">General</h6>
+                </div>
+              </li>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"> <i class="iconly-Home icli"></i>
+                  <h6>Dashboards</h6><span class="badge">2</span><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="index.html">Default</a></li>
+                  <li><a href="javascript:void(0)">Ecommerce </a></li>
+                  <li> <a href="alert.html">Default</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Graph icli"></i>
+                  <h6>Widgets </h6></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Paper icli"></i>
+                  <h6>Page layout</h6></a></li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h6 class="sidebar-title">Components </h6>
+                </div>
+              </li>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
+                    <h6>Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
+                  <ul class="sidebar-submenu">
+                    <li> <a href="typography.html">Typography</a></li>
+                    <li><a href="avatars.html">Avatars</a></li>
+                    <li> <a href="helper-classes.html">Helper-classes</a></li>
+                    <li> <a href="grid.html">Grid</a></li>
+                    <li> <a href="according.html">According</a></li>
+                  </ul></i></li>
+              <li class="sidebar-list"><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
+                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
+                  <h6>Builders</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
+                  <h6>Animation </h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Activity icli"> </i>
+                  <h6>Icon</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-More-Square icli"> </i>
+                  <h6>Buttons</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="buttons.html">buttons    </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Chart icli"></i>
+                  <h6>Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+            </ul>
+          </div>
+        </aside>
+        <!-- Page sidebar end-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title"> 
+              <div class="row">
+                <div class="col-6">
+                  <h3>Lists</h3>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"> <i class="iconly-Home icli"></i></a></li>
+                    <li class="breadcrumb-item">Ui Kits</li>
+                    <li class="breadcrumb-item active">Lists</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row g-3">
+              <div class="col-xxl-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Default Lists</h4>
+                    <p class="mt-1 f-m-light mb-0">Use the           <code>.list-group </code>define the list of items. and used <code>.list-group-item </code>to indicate the current content.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><i class="iconly-Arrow-Right-3 icli">    </i>Logo Design</li>
+                      <li class="list-group-item"> <i class="iconly-Arrow-Right-3 icli"> </i>Web Design & Development</li>
+                      <li class="list-group-item"> <i class="iconly-Arrow-Right-3 icli"> </i>E-Commerce</li>
+                      <li class="list-group-item"> <i class="iconly-Arrow-Right-3 icli"> </i>SEO</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Active Lists</h4>
+                    <p class="mt-1 f-m-light mb-0">Use<code>.active</code>to a<code>.list-group-item</code> to indicate the current active.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item active bg-warning-light" aria-current="true"><i class="iconly-Arrow-Right-3 icli"> </i>UI Kits  </li>
+                      <li class="list-group-item"><i class="iconly-Arrow-Right-3 icli">   </i>Wow Animations</li>
+                      <li class="list-group-item"> <i class="iconly-Arrow-Right-3 icli">  </i>Apex Charts</li>
+                      <li class="list-group-item"><i class="iconly-Arrow-Right-3 icli"> </i>Starter Kits</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Flush Lists</h4>
+                    <p class="mt-1 f-m-light mb-0">
+                       Use<code> .list-group-flush</code> to remove some borders and rounded corners to render list group items.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><i class="iconly-Arrow-Right-3 icli">  </i>PRODUCT</li>
+                      <li class="list-group-item"><i class="iconly-Arrow-Right-3 icli"> </i>PRODUCT DETAILS </li>
+                      <li class="list-group-item"><i class="iconly-Arrow-Right-3 icli"> </i>CART</li>
+                      <li class="list-group-item"><i class="iconly-Arrow-Right-3 icli"> </i>CHECKOUT</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-6 col-sm-12 box-col-12">
+                <div class="card">
+                  <div class="card-header">   
+                    <h4>Contextual classes</h4>
+                    <p class="mt-1 f-m-light mb-0">Use contextual classes to style list items with a stateful background and color.<code>.list-light-*</code> and<code>text-*</code>.</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="list-group"><a class="list-group-item list-group-item-action list-light-primary" href="#">This is Primary bg you can use <em class="text-primary fw-bold">.list-light-primary</em>  class.</a><a class="list-group-item list-group-item-action list-light-secondary" href="#">This is Secondary bg you can use <em class="text-secondary fw-bold">.list-light-secondary</em>  class.</a><a class="list-group-item list-group-item-action list-light-success" href="#">This is Success bg you can use    <em class="text-success fw-bold">.list-light-success</em>  class.</a><a class="list-group-item list-group-item-action list-light-danger" href="#">This is Danger bg you can use<em class="text-danger fw-bold">.list-light-danger</em>  class. </a><a class="list-group-item list-group-item-action list-light-warning" href="#">This is Warning bg you can use <em class="text-warning fw-bold">.list-light-warning</em>  class.</a><a class="list-group-item list-group-item-action list-light-info" href="#">This is Info bg you can use <em class="text-info fw-bold">.list-light-info    </em>  class.</a><a class="list-group-item list-group-item-action list-light-white" href="#">This is White bg you can use<em class="txt-white fw-bold">.list-light-white</em>  class.</a><a class="list-group-item list-group-item-action list-light-dark" href="#">This is White bg you can use<em class="txt-white fw-bold">.list-light-dark</em>  class.</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-6 col-12 box-col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Horizontal Lists</h4>
+                    <p class="mt-1 f-m-light mb-0">Use<code>.list-group-horizontal</code>to change the layout of list group items from vertical to horizontal across all breakpoints.<code>.list-group-horizontal-[sm/md/lg/xl/xxl]</code>.</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="horizontal-list-wrapper">
+                      <ul class="fw-bold list-group list-group-horizontal-sm pb-2">        
+                        <li class="list-group-item border-left-primary">Product      </li>
+                        <li class="list-group-item">Product details</li>
+                        <li class="list-group-item">Pricing</li>
+                        <li class="list-group-item">Payment details</li>
+                        <li class="list-group-item">Checkout </li>
+                        <li class="list-group-item">Mega options </li>
+                      </ul>
+                      <ul class="fw-bold list-group list-group-horizontal-md pb-2">
+                        <li class="list-group-item border-left-secondary">Basic table</li>
+                        <li class="list-group-item">Sizing table</li>
+                        <li class="list-group-item">Border table</li>
+                        <li class="list-group-item">Basic inputs</li>
+                        <li class="list-group-item">Form validations</li>
+                      </ul>
+                      <ul class="fw-bold list-group list-group-horizontal-lg pb-2">
+                        <li class="list-group-item border-left-warning">Flat style </li>
+                        <li class="list-group-item">Edge style</li>
+                        <li class="list-group-item">Button group</li>
+                        <li class="list-group-item">Rating</li>
+                        <li class="list-group-item">Crypto</li>
+                      </ul>
+                      <ul class="fw-bold list-group list-group-horizontal-xl pb-2">
+                        <li class="list-group-item border-left-success">Blog</li>
+                        <li class="list-group-item">Blog details </li>
+                        <li class="list-group-item">Blog single</li>
+                        <li class="list-group-item">Order history</li>
+                      </ul>
+                      <ul class="fw-bold list-group list-group-horizontal-xxl">
+                        <li class="list-group-item border-left-info">Gallery grid</li>
+                        <li class="list-group-item">Gallery desc</li>
+                        <li class="list-group-item">Masonry Desc</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">  
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Custom Content Lists</h4>
+                    <p class="mt-1 f-m-light mb-0">
+                           Use the<code>.list-group-item</code> through make custom design of all lists.</p>
+                  </div>
+                  <div class="card-body"> 
+                    <div class="list-group main-lists-content"><a class="list-group-item list-group-item-action active bg-primary" href="#" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <div class="list-wrapper"><img class="list-img" src="../assets/images/user/1.jpg" alt="profile">
+                            <div class="list-content">
+                              <h6>Molly Boake</h6>
+                              <p>MollyBoake@rhyta.com</p>
+                            </div>
+                          </div><small>5 days ago    </small>
+                        </div>
+                        <p class="mb-1">Next step is to choose a tone of voice for your content type. From casual to convincing, pick one from 20+ tones in the dropdown.Why did we say “snag eyeballs” instead of “get attention?” Why do we say “brick-and-mortar words” instead of “concrete words?” Because, in your email subject lines, it’s better to use words that people can picture.</p><small class="text-white">20K Followers</small></a><a class="list-group-item list-group-item-action list-hover-primary" href="#">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <div class="list-wrapper"><img class="list-img" src="../assets/images/user/3.png" alt="profile">
+                            <div class="list-content">
+                              <h6>Gabrielle Fahey</h6>
+                              <p>GabrielleFahey@dayrep.com</p>
+                            </div>
+                          </div><small class="text-muted">10 days ago</small>
+                        </div>
+                        <p class="mb-1">Your aim with this blog is to advertise yourself and your services in blog design. That means it's vital to create content about just that: blog design. Anything else on your page may act as a distraction to your potential customers, and you don't want that!</p><small class="text-muted">100 Followers</small></a><a class="list-group-item list-group-item-action list-hover-primary" href="#">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <div class="list-wrapper"><img class="list-img" src="../assets/images/user/2.jpg" alt="profile">
+                            <div class="list-content">
+                              <h6>Lucinda Moseley</h6>
+                              <p>LucindaMoseley@teleworm.us</p>
+                            </div>
+                          </div><small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">People who are looking to hire a web designer may not know what to look out for. This will give you a chance to prove your trustworthiness by providing potential customers with advice and will let you sell your services by highlighting their best qualities.</p><small class="text-muted">23M Followers</small></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Lists With Checkbox</h4>
+                    <p class="mt-1 f-m-light mb-0">Use the<code>.form-check-input </code>to check your checkbox.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1 checkbox-primary active" id="firstCheckbox" type="checkbox" value="">
+                        <label class="form-check-label text-primary mb-0" for="firstCheckbox">Auto Start     </label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1 checkbox-secondary" id="secondCheckbox" type="checkbox" value="">
+                        <label class="form-check-label text-secondary mb-0" for="secondCheckbox">Auto Update</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1 checkbox-info" id="thirdCheckbox" type="checkbox" value="">
+                        <label class="form-check- text-info mb-0" for="thirdCheckbox">Don't check auth key</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1 checkbox-warning" id="thirdCheckbox" type="checkbox" value="">
+                        <label class="form-check-label text-warning mb-0" for="thirdCheckbox">Success all    </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Lists With Radios</h4>
+                    <p class="mt-1 f-m-light mb-0">Use the<code>.form-check-input</code>to check your radio buttons.</p>
+                  </div>
+                  <div class="card-body"> 
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1 active checkbox-danger" id="firstRadio" type="radio" name="listGroupRadio" value="" checked="">
+                        <label class="form-check-label mb-0" for="firstRadio">Meditations</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1 checkbox-primary" id="secondRadio" type="radio" name="listGroupRadio" value="">
+                        <label class="form-check-label mb-0" for="secondRadio">Read a book</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1 checkbox-success" id="thirdRadio" type="radio" name="listGroupRadio" value="">
+                        <label class="form-check-label mb-0" for="thirdRadio">Learn to code </label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1 checkbox-info" id="thirdRadio" type="radio" name="listGroupRadio" value="">
+                        <label class="form-check-label mb-0" for="FourRadio">Drink more water</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Lists With Numbers</h4>
+                    <p class="mt-1 f-m-light mb-0">Use the<code>.list-group-numbered</code>to ordered wise print numbers.</p>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item text-primary fw-bold">known for delivery of useful and usable solutions</li>
+                      <li class="list-group-item text-danger fw-bold">Solve your problem with us</li>
+                      <li class="list-group-item text-success fw-bold">Certified Professionals</li>
+                      <li class="list-group-item text-warning fw-bold">Growth-Driven</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xl-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>JavaScript Behavior</h4>
+                    <p class="mt-1 f-m-light mb-0">Use the tab JavaScript plugin—include it individually or through the compiled<code> bootstrap.js</code>file to extend our list group to create table panes of local content.</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-4"> 
+                        <div class="list-group" id="list-tab" role="tablist"> <a class="list-group-item list-group-item-action bg-primary active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a><a class="list-group-item list-group-item-action list-hover-primary" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a><a class="list-group-item list-group-item-action list-hover-primary" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Contact Us</a><a class="list-group-item list-group-item-action list-hover-primary" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a></div>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <div class="d-flex mb-xl-4 list-behavior-1">
+                              <div class="flex-shrink-0"><img class="tab-image img-fluid" src="../assets/images/user/img.png" alt="home"></div>
+                              <div class="flex-grow-1">
+                                <p class="mb-xl-0 mb-sm-4">We provide end to end digital solutions, right from designing your website/application development: Domain, Web Hosting, Email Hosting Registration, Search Engine Optimization and other Internet Marketing, Renewal of Services timely and effectively.</p>
+                              </div>
+                            </div>
+                            <div class="d-xl-flex list-behavior-2">
+                              <div class="flex-grow-1">
+                                <p class="mb-0">When someone visits your homepage, your design should inspire them to stay. Therefore, your value proposition should be established on the homepage for visitors to select to stay on your website.Building trust, expressing value, and guiding visitors to the next step all depend on a page's design.</p>
+                              </div>
+                              <div class="flex-shrink-0"><img class="tab-image img-fluid" src="../assets/images/user/img.png" alt="home"></div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade dark-list" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                            <p class="mb-0">
+                              <div class="flex-space flex-wrap align-items-center list-light-dark"><img class="tab-image" src="../assets/images/avtar/3.jpg" alt="profile">
+                                <p><strong>Visit Us:</strong>	2600 Hollywood Blvd,Florida, United States-	33020<br><strong>Mail Us:</strong>contact@us@gmail.com<br><strong>Contact Number:   </strong>(954) 357-7760</p>
+                              </div>
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                            <p class="pt-3">Us Technology offers web & mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them.<br><strong>Visit Us:</strong>	2600 Hollywood Blvd,Florida, United States-	33020<br><strong>Mail Us:</strong>contact@us@gmail.com<br><strong>Contact Number:</strong>(954) 357-7760</p>
+                          </div>
+                          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                            <p><strong>Available pages in Theme:</strong><br>--> Typography:<br>Typography is the art of arranging letters and text in a way that makes the copy legible, clear, and visually appealing to the reader.<br>--> Tooltip:<br>A tooltip is a brief, informative message that appears when a user interacts with an element in a graphical user interface (GUI).  </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-md-6 mb-3">
+                <div class="card">  
+                  <div class="card-header">
+                    <h4>Numbered & Badge Lists</h4>
+                    <p class="mt-1 f-m-light mb-0">Use the<code> .list-group-numbered</code> modifier class to  numbered list group items.Numbers are generated via CSS for better placement inside list group items.</p>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+                        <div class="ms-2 me-auto">Stella Nowland</div><span class="badge bg-warning rounded-pill p-2">Freelance</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+                        <div class="ms-2 me-auto">Lola Stanford</div><span class="badge bg-danger text-white rounded-pill p-2">Issue</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+                        <div class="ms-2 me-auto">Caitlin Coungeau</div><span class="badge bg-primary text-white rounded-pill p-2">Social</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+                        <div class="ms-2 me-auto">
+                            Graciela W. McClaran</div><span class="badge bg-danger text-white rounded-pill p-2">Issue</span>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Disabled Lists </h4>
+                    <p class="mt-1 f-m-light mb-0">Use<code> .disabled </code>to a <code>.list-group-item</code> to make it appear disabled.</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="list-group"><a class="list-group-item list-group-item-action list-hover-primary active" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/1.jpg" alt="user">Teresa J. Mosteller</a><a class="list-group-item list-group-item-action list-hover-secondary" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/3.png" alt="user">Gloria D. Acheson</a><a class="list-group-item list-group-item-action disabled" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/2.jpg" alt="user">Sharon C. Obrien</a><a class="list-group-item list-group-item-action disabled" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/5.jpg" alt="user">Bryan A. Owens</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 mb-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Scrollable Lists</h4>
+                    <p class="mt-1 f-m-light mb-0">Use the property<code>overflow:auto</code>through scrollable lists.</p>
+                  </div>
+                  <div class="card-body"> 
+                    <div class="list-group main-lists-content scrollbar-wrapper">   <a class="list-group-item list-group-item-action active list-hover-primary" href="#" aria-current="true">
+                        <div class="list-wrapper gap-0 pb-0"><img class="list-img" src="../assets/images/user/9.jpg" alt="profile">
+                          <div class="list-content">
+                            <h6>Molly Boake   </h6>
+                            <p>MollyBoake@rhyta.com</p><small>5 days ago</small>
+                          </div>
+                        </div></a><a class="list-group-item list-group-item-action list-hover-primary" href="#">
+                        <div class="list-wrapper gap-0 pb-0"><img class="list-img" src="../assets/images/user/10.jpg" alt="profile">
+                          <div class="list-content">
+                            <h6>Gabrielle Fahey</h6>
+                            <p>GabrielleFahey@dayrep.com</p><small class="text-muted">10 days ago</small>
+                          </div>
+                        </div></a><a class="list-group-item list-group-item-action list-hover-primary" href="#">
+                        <div class="list-wrapper gap-0 pb-0"><img class="list-img" src="../assets/images/user/2.jpg" alt="profile">
+                          <div class="list-content">
+                            <h6>Lucinda Moseley </h6>
+                            <p>LucindaMoseley@teleworm.us</p><small class="text-muted">3 days ago</small>
+                          </div>
+                        </div></a><a class="list-group-item list-group-item-action list-hover-primary" href="#">
+                        <div class="list-wrapper gap-0 pb-0"><img class="list-img" src="../assets/images/user/12.png" alt="profile">
+                          <div class="list-content">
+                            <h6>Francis K. Henriques</h6>
+                            <p>FrancisKHenriques@teleworm.us</p><small class="text-muted">2 days ago</small>
+                          </div>
+                        </div></a><a class="list-group-item list-group-item-action list-hover-primary" href="#">
+                        <div class="list-wrapper gap-0 pb-0"><img class="list-img" src="../assets/images/user/14.png" alt="profile">
+                          <div class="list-content"> 
+                            <h6>Jose A. Seay</h6>
+                            <p>JoseASeay@rhyta.com</p><small class="text-muted">15 days ago</small>
+                          </div>
+                        </div></a><a class="list-group-item list-group-item-action list-hover-primary" href="#">
+                        <div class="list-wrapper gap-0 pb-0"><img class="list-img" src="../assets/images/user/3.jpg" alt="profile">
+                          <div class="list-content"> 
+                            <h6>Phil F. Cunningham</h6>
+                            <p>PhilFCunningham@dayrep.com</p><small class="text-muted">6 days ago    </small>
+                          </div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer"> 
+          <div class="container-fluid">
+            <div class="row"> 
+              <div class="col-md-6 footer-copyright">
+                <p class="mb-0">Copyright 2023 © Admiro theme by pixelstrap.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="float-end mb-0">Hand crafted &amp; made with
+                  <svg class="svg-color footer-icon">
+                    <use href="../assets/svg/iconly-sprite.svg#heart"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- bootstrap js-->
+    <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <!-- custom script -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
