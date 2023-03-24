@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <title>Admiro - best javascript admin</title>
+    <!-- Favicon icon-->
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <!-- Iconly icon css-->
+    <link rel="icon" href="../assets/svg/iconly-sprite.svg">
+    <!-- Flag icon css -->
+    <link rel="stylesheet" href="../assets/css/vendors/flag-icon.css">
+    <!-- App css-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- iconly-icon-->
+    <link rel="stylesheet" href="../assets/css/iconly-icon.css">
+    <link rel="stylesheet" href="../assets/css/bulk-style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
+  </head>
+  <body>
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page header start -->
+      <header class="page-header">
+        <div class="header-left"><a class="toggle-sidebar" href="#"><i class="iconly-Filter icli"></i></a>
+          <form class="search-form mb-0">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0"><i class="iconly-Search icli"> </i></span>
+            </div>
+          </form>
+        </div>
+        <div class="nav-right">
+          <ul class="header-right">
+            <!-- Language dropdown start-->
+            <li class="custom-dropdown d-sm-block d-none"><a href="javascript:void(0)">
+                <h6 class="f-w-700">ENG
+                  <svg class="svg-color">
+                    <use href="../assets/svg/iconly-sprite.svg#Arrow--Down"></use>
+                  </svg>
+                </h6></a>
+              <ul class="custom-menu profile-menu language-menu py-0">
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-us"></i>ENGLISH</a></li>
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-fr"></i>FRENCH</a></li>
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-ae"></i>ARABIC</a></li>
+              </ul>
+            </li>
+            <!-- Language dropdown end-->
+            <li class="custom-dropdown"><a class="dark-mode" href="javascript:void(0)"><i class="iconly-Star icli"></i></a></li>
+            <!-- Cart menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bag icli"></i></a>
+              <div class="custom-menu cart-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Cart</h5>
+                <ul>
+                              <li class="d-flex gap-3">
+                                <div class="flex-shrink-0 bg-light-primary"><img src="../assets/images/dashboard2/1.png" alt="Watch"></div>
+                                <div class="flex-grow-1"><span class="font-primary">Special Offer</span><a href="#"> 
+                                    <h5>Watch multicolor</h5></a>
+                                  <h6 class="mt-1">$26.00
+                                    <del>$32.00</del>
+                                  </h6>
+                                  <div class="input-group"> <span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#minus"></use>
+                                      </svg></span>
+                                    <input class="form-control bg-light-primary" type="text" value="1"><span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#plus"></use>
+                                      </svg></span>
+                                  </div>
+                                </div><a class="btn btn-close"></a>
+                              </li>
+                              <li class="d-flex gap-3">
+                                <div class="flex-shrink-0 bg-light-secondary"><img src="../assets/images/dashboard2/2.png" alt="Airpods"></div>
+                                <div class="flex-grow-1"><span class="font-secondary">Mega sale</span><a href="#"> 
+                                    <h5>Airpods</h5></a>
+                                  <h6 class="mt-1">$30.45
+                                    <del>$50.00</del>
+                                  </h6>
+                                  <div class="input-group"> <span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#minus"></use>
+                                      </svg></span>
+                                    <input class="form-control bg-light-secondary" type="text" value="1"><span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#plus"></use>
+                                      </svg></span>
+                                  </div>
+                                </div><a class="btn btn-close"></a>
+                              </li>
+                </ul>
+                <div class="bg-primary-light cart-total">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h6 class="f-light">Total </h6>
+                    <h6>$56.00</h6>
+                  </div>
+                  <div class="button-group"><a class="btn btn-outline-primary" href="#">View Cart</a><a class="btn btn-primary float-end" href="#">Checkout</a></div>
+                </div>
+              </div>
+            </li>
+            <!-- Notification menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Notification icli"></i></a>
+              <div class="custom-menu notification-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Notification <span class="font-primary">View all</span></h5>
+                <ul class="activity-timeline">
+                  <li class="d-flex align-items-start">
+                    <div class="activity-line"></div>
+                    <div class="activity-dot-primary"></div>
+                    <div class="flex-grow-1">
+                      <h6 class="f-w-600 font-primary">30-04-2023<span>Today</span><span class="circle-dot-primary float-end">
+                          <svg class="circle-color">
+                            <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                          </svg></span></h6>
+                      <h5>Alice Goodwin</h5>
+                      <p class="mb-0">Fashion should be fun. It shouldn't be labelled intellectual.</p>
+                    </div>
+                  </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-secondary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-secondary">28-06-2023<span>1 hour ago</span><span class="float-end circle-dot-secondary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Herry Venter</h5>
+                                  <p>I am convinced that there can be luxury in simplicity.</p>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-primary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-primary">04-08-2023<span>Today</span><span class="float-end circle-dot-primary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Loain Deo</h5>
+                                  <p>I feel that things happen for open new opportunities.</p>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-secondary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-secondary">12-11-2023<span>Yesterday</span><span class="float-end circle-dot-secondary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Fenter Jessy</h5>
+                                  <p>Sometimes the simplest things are the most profound.</p>
+                                </div>
+                              </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="full-screen" href="javascript:void(0)"><i class="iconly-Scan icli"></i></a></li>
+            <!-- Bookmark menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bookmark icli"></i></a>
+              <div class="custom-menu bookmark-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Bookmark</h5>
+                <ul> 
+                  <li> 
+                    <form class="mb-0">
+                      <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search Bookmark..."><span class="input-group-text ps-0">
+                          <svg class="svg-color">
+                            <use href="../assets/svg/iconly-sprite.svg#Search"></use>
+                          </svg></span>
+                      </div>
+                    </form>
+                  </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-primary"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#cube"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">Dashboard</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-secondary"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#check"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">To-do</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-danger"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#pie"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">Chart</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                </ul>
+              </div>
+            </li>
+            <div class="weather-menu d-lg-block d-none">
+              <button class="btn btn-primary"> 
+                <svg class="svg-color">
+                  <use href="../assets/svg/iconly-sprite.svg#Weather--cloud"></use>
+                </svg><span class="ms-1">15<sup> 
+                    <svg class="svg-color svg-white">
+                      <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                    </svg></sup></span>
+              </button>
+              <button class="btn btn-light"><span>Medan, IDN</span></button>
+            </div>
+          </ul>
+        </div>
+      </header>
+      <!-- Page header end-->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page sidebar start-->
+        <div class="overlay"></div>
+        <aside class="page-sidebar">
+          <div class="logo-wrapper d-flex align-items-center"> <a href="index.html"><img src="../assets/images/logo/logo1.png" alt="logo"></a><a class="close-btn sidebar-close d-lg-none" href="javascript:void(0)">
+              <svg class="svg-color svg-white">
+                <use href="../assets/svg/iconly-sprite.svg#Arrow---Left-2"></use>
+              </svg></a></div>
+          <div class="user-wrap">
+            <div class="user-img"><img src="../assets/images/profile.png" alt="user">
+              <div class="setting-icon"><i class="iconly-Setting icli">  </i></div>
+            </div>
+            <div class="user-content">
+              <h5>Amirreza Baqian</h5>
+              <h6>Product Designer</h6>
+            </div>
+          </div>
+          <div class="main-sidebar">
+            <ul class="sidebar-menu">
+              <li class="pin-title sidebar-main-title">
+                <div> 
+                  <h6>Pinned</h6>
+                </div>
+              </li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h6 class="sidebar-title">General</h6>
+                </div>
+              </li>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"> <i class="iconly-Home icli"></i>
+                  <h6>Dashboards</h6><span class="badge">2</span><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="index.html">Default</a></li>
+                  <li><a href="javascript:void(0)">Ecommerce </a></li>
+                  <li> <a href="alert.html">Default</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Graph icli"></i>
+                  <h6>Widgets </h6></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Paper icli"></i>
+                  <h6>Page layout</h6></a></li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h6 class="sidebar-title">Components </h6>
+                </div>
+              </li>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
+                    <h6>Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
+                  <ul class="sidebar-submenu">
+                    <li> <a href="typography.html">Typography</a></li>
+                    <li><a href="avatars.html">Avatars</a></li>
+                    <li> <a href="helper-classes.html">Helper-classes</a></li>
+                    <li> <a href="grid.html">Grid</a></li>
+                    <li> <a href="according.html">According</a></li>
+                  </ul></i></li>
+              <li class="sidebar-list"><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
+                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
+                  <h6>Builders</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
+                  <h6>Animation </h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Activity icli"> </i>
+                  <h6>Icon</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-More-Square icli"> </i>
+                  <h6>Buttons</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="buttons.html">buttons    </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Chart icli"></i>
+                  <h6>Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+            </ul>
+          </div>
+        </aside>
+        <!-- Page sidebar end-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  <h3>Avatars</h3>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">    <i class="iconly-Home icli"></i></a></li>
+                    <li class="breadcrumb-item">Ui Kits</li>
+                    <li class="breadcrumb-item active">Avatars</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="user-profile">
+              <div class="row g-md-4 g-3">
+                <div class="col-xl-4 col-sm-6">
+                  <div class="card">          
+                    <div class="card-header">
+                      <h4 class="mb-0">Sizes</h4>
+                      <p class="mb-0 mt-1">You can change the size of avatar using <code>.img- * (70/80/90/100)</code> class.</p>
+                    </div>
+                    <div class="card-body avatar-showcase">
+                      <div class="avatars">
+                        <div class="avatar"><img class="img-100 rounded-circle" src="../assets/images/avtar/3.jpg" alt="avatar"></div>
+                        <div class="avatar"><img class="img-90 rounded-circle" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
+                        <div class="avatar"><img class="img-80 rounded-circle" src="../assets/images/avtar/7.jpg" alt="avatar"></div>
+                        <div class="avatar"><img class="img-70 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="mb-0">Status Indicator</h4>
+                      <p class="mb-0 mt-1">Using <code> .status-* (online/offline/dnd)</code> class you can set the status of avatar.         </p>
+                    </div>
+                    <div class="card-body avatar-showcase">
+                      <div class="avatars">
+                        <div class="avatar"><img class="img-100 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar">
+                          <div class="status status-online"></div>
+                        </div>
+                        <div class="avatar"><img class="img-90 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar">
+                          <div class="status status-dnd"></div>
+                        </div>
+                        <div class="avatar"><img class="img-80 rounded-circle" src="../assets/images/avtar/7.jpg" alt="avatar">
+                          <div class="status status-offline"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Shapes</h4>
+                      <p class="mb-0 mt-1">Using the<code>.b-r-* (8/30/35/25)</code> class you can set the shapes of avatar.</p>
+                    </div>
+                    <div class="card-body avatar-showcase">
+                      <div class="avatars">
+                        <div class="avatar"><img class="img-100 b-r-8" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
+                        <div class="avatar"><img class="img-90 b-r-30" src="../assets/images/avtar/16.jpg" alt="avatar"></div>
+                        <div class="avatar"><img class="img-80 b-r-35" src="../assets/images/avtar/3.jpg" alt="avatar"></div>
+                        <div class="avatar"><img class="img-70 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 g-4">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Ratio</h4>
+                      <p class="mb-0 mt-1">Give the shape to avatar using <code>.ratio</code> and <code> img-* (50/70/80/90/100)</code> class.</p>
+                    </div>
+                    <div class="card-body avatar-showcase">
+                      <div class="avatars">
+                        <div class="avatar ratio"><img class="b-r-8 img-100" src="../assets/images/avtar/11.jpg" alt="avatar"></div>
+                        <div class="avatar ratio"><img class="b-r-8 img-90" src="../assets/images/avtar/4.jpg" alt="avatar"></div>
+                        <div class="avatar ratio"><img class="b-r-8 img-80" src="../assets/images/user/1.jpg" alt="avatar"></div>
+                        <div class="avatar ratio"><img class="b-r-8 img-70" src="../assets/images/avtar/16.jpg" alt="avatar"></div>
+                        <div class="avatar ratio"><img class="b-r-8 img-50" src="../assets/images/avtar/7.jpg" alt="avatar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 g-4">
+                  <div class="card">   
+                    <div class="card-header">
+                      <h4>Grouping  </h4>
+                      <p class="mb-0 mt-1">
+                         You can set the group of avatars like <code>.img-* (40/50/60/80/100) </code>and <code>.b-r-* (8/30/35)</code>.</p>
+                    </div>
+                    <div class="card-body avatar-showcase">
+                      <div class="avatars">
+                        <div class="customers d-inline-block avatar-group">
+                          <ul>
+                            <li class="d-inline-block"><img class="img-100 b-r-8" src="../assets/images/avtar/4.jpg" alt="avatar"></li>
+                            <li class="d-inline-block"><img class="img-80" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
+                            <li class="d-inline-block"></li><img class="img-50 b-r-35" src="../assets/images/avtar/3.jpg" alt="avatar">
+                          </ul>
+                        </div>
+                        <div class="customers d-inline-block avatar-group">
+                          <ul>
+                            <li class="d-inline-block"><img class="img-60 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
+                            <li class="d-inline-block"><img class="b-r-8 img-80" src="../assets/images/user/1.jpg" alt="avatar"></li>
+                            <li class="d-inline-block"><img class="img-60 rounded-circle" src="../assets/images/avtar/16.jpg" alt="avatar"></li>
+                          </ul>
+                        </div>
+                        <div class="customers d-inline-block avatar-group">
+                          <ul>
+                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/3.jpg" alt="avatar"></li>
+                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/5.jpg" alt="avatar"></li>
+                            <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-12 mb-xl-4 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Avatar Initial</h4>
+                      <p class="mb-0 mt-1">You can use initial letter as a avatar.</p>
+                    </div>
+                    <div class="card-body avatar-showcase">
+                      <div class="avatars">
+                        <div class="avatar-intial avtar-xxl bg-light-primary"><span class="fs-1">A</span></div>
+                        <div class="avatar-intial avtar-xl bg-light-secondary"><span class="fs-2">D</span></div>
+                        <div class="avatar-intial avtar-lg bg-light-danger"><span class="fs-3">M</span></div>
+                        <div class="avatar-intial avtar-md bg-light-primary"><span class="fs-4">I</span></div>
+                        <div class="avatar-intial avtar-sm bg-light-secondary"><span class="fs-5">R</span></div>
+                        <div class="avatar-intial avtar-xs bg-light-danger"><span class="fs-6">O</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 mt-xl-4 mt-0 mb-xl-4 mb-3">
+                  <div class="card"> 
+                    <div class="card-header">
+                      <h4>Avatar Ping</h4>
+                      <p class="mb-0 mt-1">Using<code> .ping </code> class you can indicate important message.</p>
+                    </div>
+                    <div class="card-body avatar-showcase">
+                      <div class="avatars">
+                        <div class="avatar"><img class="b-r-8 img-100 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar">
+                          <div class="ping status-offline status"></div>
+                        </div>
+                        <div class="avatar"><img class="b-r-8 img-90 rounded-circle" src="../assets/images/avtar/4.jpg" alt="avatar">
+                          <div class="ping status-online status"></div>
+                        </div>
+                        <div class="avatar"><img class="b-r-8 img-80 rounded-circle" src="../assets/images/user/1.jpg" alt="avatar">
+                          <div class="ping status-dnd status"></div>
+                        </div>
+                        <div class="avatar"><img class="b-r-8 img-70 rounded-circle" src="../assets/images/avtar/3.jpg" alt="avatar">
+                          <div class="ping status-offline status"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 mt-xl-4 mt-0 mb-xl-4 mb-3">
+                  <div class="card"> 
+                    <div class="card-header">
+                      <h4>Avatar profile</h4>
+                      <p class="mb-0 mt-1"> Using icon You can make icon avatars.</p>
+                    </div>
+                    <div class="card-body avatar-showcase">
+                      <div class="avatars">
+                        <div class="user-img"><img src="../assets/images/profile.png" alt="user">
+                          <div class="setting-icon"><i class="iconly-Setting icli"> </i></div>
+                        </div>
+                        <div class="user-img"><img src="../assets/images/profile.png" alt="user">
+                          <div class="setting-icon"><i class="iconly-Edit icli">    </i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer"> 
+          <div class="container-fluid">
+            <div class="row"> 
+              <div class="col-md-6 footer-copyright">
+                <p class="mb-0">Copyright 2023 © Admiro theme by pixelstrap.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="float-end mb-0">Hand crafted &amp; made with
+                  <svg class="svg-color footer-icon">
+                    <use href="../assets/svg/iconly-sprite.svg#heart"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- bootstrap js-->
+      <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js"></script>
+      <script src="../assets/js/sidebar.js"></script>
+      <!-- custom script -->
+      <script src="../assets/js/script.js"></script>
+      <!-- popover -->
+    </div>
+  </body>
+</html>
