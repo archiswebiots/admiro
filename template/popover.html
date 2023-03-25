@@ -249,7 +249,7 @@
             <ul class="sidebar-menu">
               <li class="pin-title sidebar-main-title">
                 <div> 
-                  <h6>Pinned</h6>
+                  <h6 class="sidebar-title">Pinned</h6>
                 </div>
               </li>
               <li class="sidebar-main-title">
@@ -274,30 +274,31 @@
                   <h6 class="sidebar-title">Components </h6>
                 </div>
               </li>
-              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
-                    <h6>Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
-                  <ul class="sidebar-submenu">
-                    <li> <a href="typography.html">Typography</a></li>
-                    <li><a href="avatars.html">Avatars</a></li>
-                    <li> <a href="helper-classes.html">Helper-classes</a></li>
-                    <li> <a href="grid.html">Grid</a></li>
-                    <li> <a href="according.html">According</a></li>
-                  </ul></i></li>
-              <li class="sidebar-list"><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
+                  <h6>Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="typography.html">Typography</a></li>
+                  <li><a href="avatars.html">Avatars</a></li>
+                  <li> <a href="helper-classes.html">Helper-classes</a></li>
+                  <li> <a href="grid.html">Grid</a></li>
+                  <li> <a href="according.html">According</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
                   <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
-              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
                   <h6>Builders</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
-              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
                   <h6>Animation </h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
-              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Activity icli"> </i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Activity icli"> </i>
                   <h6>Icon</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
-              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-More-Square icli"> </i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-More-Square icli"> </i>
                   <h6>Buttons</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
                   <li><a href="buttons.html">buttons    </a></li>
                 </ul>
               </li>
-              <li class="sidebar-list"> <a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Chart icli"></i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Chart icli"></i>
                   <h6>Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
             </ul>
           </div>
@@ -340,7 +341,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h4>Popover Direction</h4>
-                    <p class="f-m-light mt-1">Use the<code> data-bs-toggle='popover'</code>through popover directions above buttons.</p>
+                    <p class="f-m-light mt-1">Use the   <code> data-bs-toggle='popover'</code>through popover directions above buttons.</p>
                   </div>
                   <div class="card-body common-flex">
                     <button class="example-popover btn btn-warning mb-0 me-0 text-light" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="top" title="Popover On Top" data-bs-content="Popovers need the tooltip plugin considering that a dependency.">Popover on top</button>
@@ -351,7 +352,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 mb-3">    
+              <div class="col-sm-12 mb-3">                        
                 <div class="card">
                   <div class="card-header">
                     <h4>Popover Offset </h4>
@@ -360,7 +361,7 @@
                   </div>
                   <div class="card-body common-flex">
                     <button class="btn btn-secondary mb-0 me-0" type="button" data-bs-offset="50,0" data-bs-toggle="popover" data-bs-delay-show="5000" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-kt-initialized="1">Popover offset 50</button>
-                    <button class="example-popover btn btn-dark mb-0 me-0" type="button" data-bs-offset="-50,0" data-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Popover On Left" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself.">Popover offset -50</button>
+                    <button class="example-popover btn btn-dark mb-0 me-0" type="button" data-bs-offset="-50,0" data-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Popover On Left" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself.">Popover offset -50   </button>
                   </div>
                 </div>
               </div>
@@ -393,5 +394,6 @@
     <script src="../assets/js/script.js"></script>
     <!-- popover -->
     <script src="../assets/js/popover.js"></script>
+    <!-- tooltip-->
   </body>
 </html>
