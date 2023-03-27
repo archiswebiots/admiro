@@ -207,7 +207,8 @@
           display: none;
 
           &.show {
-            display: none;
+            display: block;
+            order: -1;
           }
         }
     }

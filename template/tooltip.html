@@ -309,13 +309,13 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>progress-bar</h3>
+                  <h3>Tooltip</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">    <i class="iconly-Home icli"></i></a></li>
+                    <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli"></i></a></li>
                     <li class="breadcrumb-item">Ui Kits</li>
-                    <li class="breadcrumb-item active">progress-bar</li>
+                    <li class="breadcrumb-item active">Tooltip</li>
                   </ol>
                 </div>
               </div>
@@ -323,237 +323,91 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-12 mb-4">
+            <div class="row g-3">
+              <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Basic Progress Bars</h4>
-                    <p class="f-m-light mt-1 mb-0"></p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.
-                    We use the <code>.progress </code>as a wrapper to indicate the max value of the progress bar. The <code>.progress-bar </code>requires an inline style, utility class, or custom CSS to set their width.
+                    <h4>Basic Tooltip</h4>
+                    <p class="f-m-light mt-1 mb-0">Use the <code>data-bs-title</code> to change tooltip title and <code>data-bs-toggle</code> to add tooltip attribute.</p>
                   </div>
-                  <div class="card-body progress-showcase row">
-                    <div class="col">
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"> </div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                      </div>
-                    </div>
+                  <div class="card-body">
+                    <button class="example-popover btn btn-primary mb-0 me-0" type="button" data-container="body" data-bs-toggle="tooltip" data-bs-placement="top" title="Surprise!!! Thank you for hovering...">It's magic please hover me... </button>
+                    <h5 class="mb-1 py-4 pb-0">Inline Tooltip Content</h5>
+                    <p>Here, is some content about tooltips that you can set the<a class="text-primary fw-bold" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="tooltip" data-bs-original-title="popover text">  tooltip                </a>  inside the content with help of tooltip and also you can add
+                      <button class="btn btn-success text-white border-0 px-3 py-1 me-0 mb-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="button">button </button> .Tooltips helps you to add more and more content. A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">   
-              <div class="col-xl-6 mb-4">
+              <div class="col-md-6">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Progress Bars Striped</h4>
-                    <p class="f-m-light mt-1 mb-0"></p>Add<code>.progress-bar-striped</code> to any<code>.progress-bar</code> to apply a stripe via CSS gradient over the progress bar's background color Using CSS Effects.
-                  </div>
-                  <div class="card-body progress-showcase row"> 
-                    <div class="col">
-                      <div class="progress">
-                        <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 mb-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Progress Bars animated</h4>
-                    <p class="f-m-light mt-1 mb-0"></p>The striped gradient can also be animated. Add<code>.progress-bar-animated</code> to<code>.progress-bar</code> to animate the stripes right to left via CSS3 animations.
-                  </div>
-                  <div class="card-body progress-showcase row">
-                    <div class="col">
-                      <div class="progress">
-                        <div class="progress-bar-animated bg-primary progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar-animated progress-bar-striped bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar-animated progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 mb-4">
-                <div class="card">
-                  <div class="card-header">   
-                    <h4>Multiple bars</h4>
-                    <p class="f-m-light mt-1 mb-0"></p>Include multiple progress bars in a progress component if you need.
-                  </div>
-                  <div class="card-body progress-showcase row">
-                    <div class="col">
-                      <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">                       </div>
-                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 10%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-light" role="progressbar" style="width: 10%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Progress With Number Steps</h4>
-                    <p class="f-m-light mt-1 mb-0"></p>Use the <code>.position-absolute </code>to set progress numbers steps.    
+                    <h4>Colored Tooltip </h4>
+                    <p class="f-m-light mt-1 mb-0">Use the<code>btn- *</code> to change dark background color and<code>data-bs-placement='*'</code>to tooltip positions change.</p>
                   </div>
                   <div class="card-body"> 
-                    <div class="position-relative m-4">
-                      <div class="progress progress-wrapper">
-                        <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <button class="position-absolute top-0 start-0 translate-middle btn-sm btn-primary rounded-circle text-light" type="button" style="width: 2rem; height:2rem;">1</button>
-                      <button class="position-absolute top-0 start-50 translate-middle btn-sm btn-primary rounded-circle text-light" type="button" style="width: 2rem; height:2rem;">2</button>
-                      <button class="progress-btn position-absolute top-0 start-100 translate-middle btn-sm rounded-circle" type="button" style="width: 2rem; height:2rem;">3</button>
+                    <div class="common-flex">
+                      <button class="mb-0 me-0 btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Primary">Primary</button>
+                      <button class="mb-0 me-0 btn btn-secondary" type=" button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Secondary">Secondary</button>
+                      <button class="mb-0 me-0 btn btn-success" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Success">Success</button>
+                      <button class="mb-0 me-0 btn btn-warning text-white" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Warning">Warning</button>
+                      <button class="mb-0 me-0 btn btn-danger" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Danger">Danger</button>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card mb-4">
-              <div class="card-header">
-                <h4>Custom Progress Bars</h4>
-                <p class="f-m-light mt-1 mb-0"></p>Use the <code>.progress-bar-animated </code>and <code>.progress-bar-striped</code>to animate the stripes right to left.
-              </div>
-              <div class="card-body progress-showcase row">
-                <div class="col">
-                  <h6 class="mb-2">0% Getting Started</h6>
-                  <div class="progress mb-4">
-                    <div class="progress-bar-animated progress-bar-striped text-center" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="col-md-6">
+                <div class="card"> 
+                  <div class="card-header">
+                    <h4>Tooltip  Directions</h4>
+                    <p class="f-m-light mt-1 mb-0">
+                       Use the<code>btn-*</code> to change dark background color and                            <code> data-bs-placement='*'</code>[top/right/bottom/left] to tooltip direction change.</p>
                   </div>
-                  <h6 class="mb-2">30% Getting Uploading...</h6>
-                  <div class="progress mb-4">
-                    <div class="progress-bar-animated progress-bar-striped bg-primary text-center" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-                  </div>
-                  <h6 class="mb-2">60% Getting Pause...</h6>
-                  <div class="progress mb-4">
-                    <div class="progress-bar-animated progress-bar-striped bg-secondary text-center" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                  </div>
-                  <h6 class="mb-2">70% Getting Uploading...</h6>
-                  <div class="progress mb-4">
-                    <div class="progress-bar-animated progress-bar-striped bg-success text-center" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                  </div>
-                  <h6 class="mb-2">100% Completed</h6>
-                  <div class="progress">
-                    <div class="progress-bar-animated progress-bar-striped bg-dark text-center text-light" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                  <div class="card-body">
+                    <div class="common-flex">
+                      <button class="btn btn-primary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top</button>
+                      <button class="btn btn-secondary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">Tooltip on right</button>
+                      <button class="btn btn-success mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+                      <button class="btn btn-warning mb-0 me-0 text-white" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">Tooltip on left</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">   
-              <div class="col-md-6 mb-4">
+              <div class="col-md-6 mb-3">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Small Progress Bars</h4>
-                    <p class="f-m-light mt-1 mb-0"></p>Use<code> .sm-progress-bar</code>  class to change progress size to small:
+                    <h4>HTML Elements With Hover Effect</h4>
+                    <p class="f-m-light mt-1 mb-0">Use the <code>bg-*-light</code> to change light background color and<code>data-bs-title</code> to the content under the HTML tag.</p>
                   </div>
-                  <div class="card-body progress-showcase row progress-b-space">
-                    <div class="col">
-                      <div class="progress sm-progress-bar overflow-visible mt-4">
-                        <div class="progress-bar-animated small-progressbar bg-primary rounded-pill progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><span class="text-primary progress-label">30 MB Data</span><span class="animate-circle"></span></div>
-                      </div>
-                      <div class="progress sm-progress-bar overflow-visible">
-                        <div class="progress-bar-animated small-progressbar bg-primary rounded-pill progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="text-primary progress-label">50 MB Data</span><span class="animate-circle"></span></div>
-                      </div>
-                      <div class="progress sm-progress-bar overflow-visible">
-                        <div class="progress-bar-animated small-progressbar bg-primary rounded-pill progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="text-primary progress-label">75 MB Data</span><span class="animate-circle"></span></div>
-                      </div>
-                      <div class="progress sm-progress-bar overflow-visible">
-                        <div class="progress-bar-animated small-progressbar bg-primary rounded-pill progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span class="text-primary progress-label">100 MB Data</span><span class="animate-circle"></span></div>
-                      </div>
+                  <div class="card-body">
+                    <div class="common-flex">
+                      <button class="btn bg-primary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="&lt;em&gt;Thank&lt;/em&gt; &lt;u&gt;you&lt;/u&gt;">
+                                       Notifications Received</button>
+                      <button class="btn bg-warning mb-0 me-0 text-white" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt;b&gt;Thank&lt;/b&gt; &lt;em&gt;you&lt;/em&gt;">Last Warning</button>
+                      <button class="btn bg-danger mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt;em&gt;Thank&lt;/em&gt; &lt;u&gt;you&lt;/u&gt;">It's Danger</button>
+                      <button class="btn bg-info mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt;b&gt;Thank&lt;/b&gt; &lt;em&gt;you&lt;/em&gt;">Coming soon</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 mb-4">
+              <div class="col-md-6 mb-3">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Large Progress Bars</h4>
-                    <p class="f-m-light mt-1 mb-0"></p>Use<code> .lg-progress-bar</code>  class to change progress size to large:
+                    <h4>Filled Tooltip</h4>
+                    <p class="f-m-light mt-1 mb-0">Tooltip in hover effect through fill dark color.<code>[.btn-outline-*]</code>. and<code>data-bs-title </code></p>
                   </div>
-                  <div class="card-body progress-showcase row">
-                    <div class="col">
-                      <div class="progress lg-progress-bar">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                      </div>
-                      <div class="progress lg-progress-bar">
-                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                      </div>
-                      <div class="progress lg-progress-bar">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                      </div>
-                      <div class="progress lg-progress-bar">  
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                      </div>
+                  <div class="card-body fill-tooltip">
+                    <div class="common-flex">
+                      <button class="btn btn-outline-primary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" data-bs-title="Tooltip Primary">Tooltip Primary</button>
+                      <button class="btn btn-outline-secondary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Tooltip Secondary">Tooltip Secondary</button>
+                      <button class="btn btn-outline-success mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Tooltip Success">Tooltip Success</button>
+                      <button class="btn btn-outline-info mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Tooltip Info">Tooltip Info</button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-4">
-              <div class="card-header">
-                <h4>Custom Height Progress Bars</h4>
-                <p class="f-m-light mt-1 mb-0">  </p>Set a height value on the<code>.progress-bar</code>, so if you change that value the outer<code>.progress</code> will automatically resize accordingly.
-              </div>
-              <div class="card-body progress-showcase row">
-                <div class="col">
-                  <div class="progress" style="height: 1px;">
-                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress" style="height: 5px;">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress" style="height: 11px;">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress" style="height: 19px;">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Container-fluid Ends  -->
         </div>
         <footer class="footer"> 
           <div class="container-fluid">
@@ -572,14 +426,15 @@
           </div>
         </footer>
       </div>
-      <!-- bootstrap js-->
-      <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js"></script>
-      <script src="../assets/js/sidebar.js"></script>
-      <!-- custom script -->
-      <script src="../assets/js/script.js"></script>
-      <!-- popover -->
-      <!-- tooltip-->
     </div>
+    <!-- bootstrap js-->
+    <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <!-- custom script -->
+    <script src="../assets/js/script.js"></script>
+    <!-- popover -->
+    <!-- tooltip-->
+    <script src="../assets/js/tooltip.js"></script>
   </body>
 </html>

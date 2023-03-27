@@ -1,0 +1,135 @@
+-var sidebar    = true;
+-var tooltip    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                        | Tooltip
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Ui Kits
+                                        li.breadcrumb-item.active Tooltip
+                    // Container-fluid starts
+                    .container-fluid
+                        .row.g-3
+                            .col-sm-12
+                                .card
+                                    .card-header
+                                        h4 Basic Tooltip
+                                        p.f-m-light.mt-1.mb-0
+                                            | Use the 
+                                            code data-bs-title
+                                            |  to change tooltip title and 
+                                            code data-bs-toggle
+                                            |  to add tooltip attribute.
+                                    .card-body
+                                        button.example-popover.btn.btn-primary.mb-0.me-0(type='button', data-container='body', data-bs-toggle='tooltip', data-bs-placement='top', title='Surprise!!! Thank you for hovering...')
+                                            | It's magic please hover me... 
+                                        h5.mb-1.py-4.pb-0 Inline Tooltip Content
+                                        p
+                                            | Here, is some content about tooltips that you can set the
+                                            a.text-primary.fw-bold(data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='tooltip' data-bs-original-title='popover text')   tooltip                
+                                            |   inside the content with help of tooltip and also you can add
+                                            button.btn.btn-success.text-white.border-0.px-3.py-1.me-0.mb-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='button')
+                                                | button 
+                                            |  .Tooltips helps you to add more and more content. A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element
+                            .col-md-6
+                                .card
+                                    .card-header
+                                        h4 Colored Tooltip 
+                                        p.f-m-light.mt-1.mb-0
+                                            | Use the
+                                            code btn- *
+                                            |  to change dark background color and
+                                            code data-bs-placement='*'
+                                            | to tooltip positions change.
+                                    .card-body 
+                                        .common-flex
+                                            button.mb-0.me-0.btn.btn-primary(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Primary')
+                                                | Primary
+                                            button.mb-0.me-0.btn.btn-secondary(type=' button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Secondary')
+                                                | Secondary
+                                            button.mb-0.me-0.btn.btn-success(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Success')
+                                                | Success
+                                            button.mb-0.me-0.btn.btn-warning.text-white(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Warning')
+                                                | Warning
+                                            button.mb-0.me-0.btn.btn-danger(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Danger')
+                                                | Danger
+                            .col-md-6
+                                .card 
+                                    .card-header
+                                        h4 Tooltip  Directions
+                                        p.f-m-light.mt-1.mb-0 
+                                            | Use the
+                                            code btn-*
+                                            |  to change dark background color and                            
+                                            code  data-bs-placement='*'
+                                            | [top/right/bottom/left] to tooltip direction change.
+                                    .card-body
+                                        .common-flex
+                                            button.btn.btn-primary.mb-0.me-0(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
+                                                | Tooltip on top
+                                            button.btn.btn-secondary.mb-0.me-0(type='button', data-bs-toggle='tooltip', data-bs-placement='right', title='Tooltip on right')
+                                                | Tooltip on right
+                                            button.btn.btn-success.mb-0.me-0(type='button', data-bs-toggle='tooltip', data-bs-placement='bottom', title='Tooltip on bottom')
+                                                | Tooltip on bottom
+                                            button.btn.btn-warning.mb-0.me-0.text-white(type='button', data-bs-toggle='tooltip', data-bs-placement='left', title='Tooltip on left')
+                                                | Tooltip on left
+                            .col-md-6.mb-3
+                                .card
+                                    .card-header
+                                        h4 HTML Elements With Hover Effect
+                                        p.f-m-light.mt-1.mb-0
+                                            | Use the 
+                                            code bg-*-light
+                                            |  to change light background color and
+                                            code data-bs-title
+                                            |  to the content under the HTML tag.
+                                    .card-body
+                                        .common-flex
+                                            button.btn.bg-primary.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-html='true' data-bs-placement='top' data-bs-title='<em>Thank</em> <u>you</u>')                
+                                                | Notifications Received
+                                            button.btn.bg-warning.mb-0.me-0.text-white(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='<b>Thank</b> <em>you</em>')
+                                                | Last Warning
+                                            button.btn.bg-danger.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='<em>Thank</em> <u>you</u>')
+                                                | It's Danger
+                                            button.btn.bg-info.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='<b>Thank</b> <em>you</em>')
+                                                | Coming soon
+                            .col-md-6.mb-3
+                                .card
+                                    .card-header
+                                        h4 Filled Tooltip
+                                        p.f-m-light.mt-1.mb-0
+                                            | Tooltip in hover effect through fill dark color.
+                                            code [.btn-outline-*]
+                                            |. and
+                                            code data-bs-title 
+                                    .card-body.fill-tooltip
+                                        .common-flex
+                                            button.btn.btn-outline-primary.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-html='true' data-bs-placement='top' data-bs-title='Tooltip Primary')
+                                                | Tooltip Primary
+                                            button.btn.btn-outline-secondary.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='Tooltip Secondary')
+                                                | Tooltip Secondary
+                                            button.btn.btn-outline-success.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='Tooltip Success')
+                                                | Tooltip Success
+                                            button.btn.btn-outline-info.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='Tooltip Info')
+                                                | Tooltip Info
+                include ../../components/footer
+        include ../../components/footer-files

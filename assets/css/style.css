@@ -11747,6 +11747,15 @@ ul {
   border-color: rgba(var(--success-color), 1);
 }
 
+.btn-warning {
+  background-color: rgba(var(--warning-color), 1);
+  border: 1px solid rgba(var(--warning-color), 1);
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning.active, .btn-warning:active:focus, .btn-warning.show {
+  background-color: rgba(var(--warning-color), 1);
+  border-color: rgba(var(--warning-color), 1);
+}
+
 .btn-danger {
   background-color: rgba(var(--danger-color), 1);
   border: 1px solid rgba(var(--danger-color), 1);
@@ -11763,6 +11772,15 @@ ul {
 .btn-light:hover, .btn-light:focus, .btn-light.active, .btn-light:active:focus, .btn-light.show {
   background-color: rgba(var(--light-color), 1);
   border-color: rgba(var(--light-color), 1);
+}
+
+.btn-dark {
+  background-color: rgba(var(--dark), 1);
+  border: 1px solid rgba(var(--dark), 1);
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark.active, .btn-dark:active:focus, .btn-dark.show {
+  background-color: rgba(var(--dark), 1);
+  border-color: rgba(var(--dark), 1);
 }
 
 .btn-outline-primary {
@@ -11809,6 +11827,17 @@ ul {
   color: rgba(var(--white), 1);
 }
 
+.btn-outline-warning {
+  background-color: rgba(var(--white), 1);
+  border: 1px solid rgba(var(--warning-color), 1);
+  color: rgba(var(--warning-color), 1);
+}
+.btn-outline-warning:hover, .btn-outline-warning:focus, .btn-outline-warning.active, .btn-outline-warning:active:focus, .btn-outline-warning.show {
+  background-color: rgba(var(--warning-color), 1);
+  border-color: rgba(var(--warning-color), 1);
+  color: rgba(var(--white), 1);
+}
+
 .btn-outline-danger {
   background-color: rgba(var(--white), 1);
   border: 1px solid rgba(var(--danger-color), 1);
@@ -11828,6 +11857,17 @@ ul {
 .btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light.active, .btn-outline-light:active:focus, .btn-outline-light.show {
   background-color: rgba(var(--light-color), 1);
   border-color: rgba(var(--light-color), 1);
+  color: rgba(var(--white), 1);
+}
+
+.btn-outline-dark {
+  background-color: rgba(var(--white), 1);
+  border: 1px solid rgba(var(--dark), 1);
+  color: rgba(var(--dark), 1);
+}
+.btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark.active, .btn-outline-dark:active:focus, .btn-outline-dark.show {
+  background-color: rgba(var(--dark), 1);
+  border-color: rgba(var(--dark), 1);
   color: rgba(var(--white), 1);
 }
 
@@ -11884,6 +11924,10 @@ ul {
 .btn-outline-secondary.btn.disabled {
   color: rgba(var(--secondary-color), 1);
   border-color: rgba(var(--secondary-color), 1);
+}
+
+.common-flex .btn:hover, .common-flex .btn:focus-visible, .common-flex .btn:active {
+  border: unset;
 }
 
 /**=====================
@@ -12473,6 +12517,116 @@ th {
 
 /**=====================
      15. Helper CSS end
+==========================**/
+/**=====================
+     Badge CSS start
+==========================**/
+.badge-spacing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.badge-spacing .badge {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+.badge-spacing .badge.badge svg {
+  padding-top: 0px;
+}
+.badge-spacing .badge.rounded-circle {
+  padding: 10px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badge-spacing .badge.badge-p-space {
+  padding: 10px 13px;
+}
+.badge-spacing .badge + .badge {
+  margin-left: 0px;
+}
+.badge-spacing .badge.btn-p-space {
+  padding: 8px 10px;
+}
+
+a.badge:hover {
+  color: inherit;
+}
+a.badge:hover.badge-dark:hover {
+  color: rgba(var(--white), 1);
+}
+
+.badge {
+  padding: 0.44em 0.7em;
+  font-weight: 500;
+}
+.badge + .badge {
+  margin-left: 5px;
+}
+.badge svg {
+  width: 16px;
+  height: 16px;
+  padding-top: 3px;
+}
+
+.pill-badge-primary {
+  background-color: rgba(var(--primary-color), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0;
+}
+
+.pill-badge-secondary {
+  background-color: rgba(var(--secondary-color), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0;
+}
+
+.pill-badge-success {
+  background-color: rgba(var(--success-color), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0;
+}
+
+.pill-badge-danger {
+  background-color: rgba(var(--danger-color), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0;
+}
+
+.pill-badge-warning {
+  background-color: rgba(var(--warning-color), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0;
+}
+
+.pill-badge-info {
+  background-color: rgba(var(--info-color), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0;
+}
+
+.pill-badge-light {
+  background-color: rgba(var(--light-color), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0;
+}
+
+.pill-badge-dark {
+  background-color: rgba(var(--body-font-color), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 0;
+}
+
+.pill-badge-primary {
+  background-color: rgba(var(--primary-color), 1);
+}
+
+.pill-badge-secondary {
+  background-color: var(--theme-secondary);
+}
+
+/**=====================
+    Badge CSS Ends
 ==========================**/
 .list-group-horizontal-sm .list-group-item.border-left-primary, .list-group-horizontal-md .list-group-item.border-left-primary, .list-group-horizontal-lg .list-group-item.border-left-primary, .list-group-horizontal-xl .list-group-item.border-left-primary, .list-group-horizontal-xxl .list-group-item.border-left-primary {
   border-left: 4px solid rgba(var(--primary-color), 1);
@@ -13631,7 +13785,8 @@ th {
   display: none;
 }
 .main-sidebar .sidebar-main-title.pin-title.show {
-  display: none;
+  display: block;
+  order: -1;
 }
 .main-sidebar li {
   display: block;
