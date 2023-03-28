@@ -12617,14 +12617,6 @@ a.badge:hover.badge-dark:hover {
   border-radius: 0;
 }
 
-.pill-badge-primary {
-  background-color: rgba(var(--primary-color), 1);
-}
-
-.pill-badge-secondary {
-  background-color: var(--theme-secondary);
-}
-
 /**=====================
     Badge CSS Ends
 ==========================**/
@@ -12786,6 +12778,54 @@ a.badge:hover.badge-dark:hover {
   border-color: rgba(var(--body-font-color), 1);
   outline: 0;
   background-color: rgba(var(--body-font-color), 1);
+}
+
+.alert-primary {
+  background-color: rgba(var(--primary-color), 1);
+  border-color: rgba(var(--primary-color), 1);
+  color: rgba(var(--white), 1);
+}
+
+.alert-secondary {
+  background-color: rgba(var(--secondary-color), 1);
+  border-color: rgba(var(--secondary-color), 1);
+  color: rgba(var(--white), 1);
+}
+
+.alert-success {
+  background-color: rgba(var(--success-color), 1);
+  border-color: rgba(var(--success-color), 1);
+  color: rgba(var(--white), 1);
+}
+
+.alert-danger {
+  background-color: rgba(var(--danger-color), 1);
+  border-color: rgba(var(--danger-color), 1);
+  color: rgba(var(--white), 1);
+}
+
+.alert-warning {
+  background-color: rgba(var(--warning-color), 1);
+  border-color: rgba(var(--warning-color), 1);
+  color: rgba(var(--white), 1);
+}
+
+.alert-info {
+  background-color: rgba(var(--info-color), 1);
+  border-color: rgba(var(--info-color), 1);
+  color: rgba(var(--white), 1);
+}
+
+.alert-light {
+  background-color: rgba(var(--light-color), 1);
+  border-color: rgba(var(--light-color), 1);
+  color: rgba(var(--white), 1);
+}
+
+.alert-dark {
+  background-color: rgba(var(--body-font-color), 1);
+  border-color: rgba(var(--body-font-color), 1);
+  color: rgba(var(--white), 1);
 }
 
 .nav-tabs .nav-link.active {
@@ -13621,6 +13661,56 @@ a.badge:hover.badge-dark:hover {
     border-bottom: none;
   }
 }
+.modal-toggle-wrapper {
+  padding: 40px;
+}
+@media (max-width: 768px) {
+  .modal-toggle-wrapper {
+    padding: calc(14px + 26 * (100vw - 320px) / 448);
+  }
+}
+.modal-toggle-wrapper .form-control::placeholder {
+  font-size: 13px;
+}
+.modal-toggle-wrapper .modal-img {
+  display: flex;
+  justify-content: center;
+}
+.modal-toggle-wrapper .modal-img img {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 992px) {
+  .modal-toggle-wrapper .modal-img img {
+    width: calc(136px + 64 * (100vw - 320px) / 672);
+    height: calc(136px + 64 * (100vw - 320px) / 672);
+  }
+}
+.modal-toggle-wrapper .modal-img li img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .modal-toggle-wrapper .modal-img li img {
+    width: calc(75px + 25 * (100vw - 320px) / 672);
+    height: calc(75px + 25 * (100vw - 320px) / 672);
+  }
+}
+.modal-toggle-wrapper .modal-img li + li {
+  margin-left: -39px;
+}
+.modal-toggle-wrapper button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.large-modal-header,
+.large-modal-body {
+  display: flex;
+  align-items: center;
+  color: rgba(var(--dark), 1);
+}
+
 /**=====================
      sidebar css start
 ==========================**/
