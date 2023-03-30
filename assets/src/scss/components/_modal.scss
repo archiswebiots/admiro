@@ -41,13 +41,6 @@
             margin-left: -39px;
         }
     }
-
-    button {
-        svg {
-            width: 16px;
-            height: 16px;
-        }
-    }
 }
 .large-modal-header,
 .large-modal-body {
@@ -55,4 +48,23 @@
     align-items: center;
     color: rgba(var(--dark),1);
 
+}
+.modal-content{
+    h6{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+.modal-padding-space {
+    padding-left: 20px;
+}
+
+.modal-body{
+    .form-control{
+        border-radius: 0.25rem;
+    }
+}
+
+.modal-footer {
+    flex-wrap: wrap;
 }
