@@ -119,6 +119,28 @@ $colors: (
     }
   }
 }
+@each $btn-name, $btn-color in (primary, rgba(var(--primary-color),1)),
+(secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+(danger, rgba(var(--danger-color),1)), (warning, rgba(var(--warning-color),1)),
+(info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1)),(dark, rgba(var(--body-font-color),1))
+{
+  .btn-outline-#{$btn-name}-2x {
+    border-width: 2px;
+    border-color: $btn-color;
+    color: $btn-color;
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: rgba(var(--white),1);
+      background-color: $btn-color !important;
+      border-color: $btn-color !important;
+      box-shadow: none;
+    }
+  }
+}
 
 /**=====================
      buttons css end
