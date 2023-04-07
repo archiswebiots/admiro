@@ -16,7 +16,7 @@ html(lang='en')
                     .page-title
                         .row.align-items-center
                             .col-6
-                                h3
+                                h2
                                     | Helper classes 
                             .col-6
                                 ol.breadcrumb
@@ -24,7 +24,7 @@ html(lang='en')
                                       a(href='index.html')     
                                         i.iconly-Home.icli
                                     li.breadcrumb-item Ui Kits
-                                    li.breadcrumb-item.active Helper-classes
+                                    li.breadcrumb-item.active Helper classes
                 // Container-fluid starts      
                 .container-fluid
                     .row.g-xl-4.g-3
@@ -98,13 +98,13 @@ html(lang='en')
                                 .card-header
                                     h3 Styles In Borders
                                     p.f-m-light.mt-1.mb-0
-                                        | Use the different styles of borders like:
-                                        code border radius/border-color/border-width
-                                        | . Use of any components.
+                                        | Use of any component to give the different styles of border using  
+                                        code border-*radius/border-color/border-width  
+                                        | class.
                                 .card-body
                                     .row.g-xl-4.g-3
                                         .col-xxl-3.col-sm-6
-                                            .border-wrapper.h-100.alert-light-light.dark-helper
+                                            .border-wrapper.h-100.helper-bg.dark-helper
                                                 h6.mb-3 Custom Border-radius Class
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.rounded-0.bg-light.border
@@ -125,7 +125,7 @@ html(lang='en')
                                                     .helper-box.rounded-5.bg-light.border
                                                     span .rounded-5
                                         .col-xxl-3.col-sm-6
-                                            .border-wrapper.h-100.alert-light-light.dark-helper
+                                            .border-wrapper.h-100.helper-bg.dark-helper
                                                 h6.mb-3 Border Color 
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.border-primary.border
@@ -149,7 +149,7 @@ html(lang='en')
                                                     .helper-box.border-dark.border
                                                     span .border-dark
                                         .col-xxl-3.col-sm-6
-                                            .border-wrapper.h-100.alert-light-light.dark-helper
+                                            .border-wrapper.h-100.helper-bg.dark-helper
                                                 h6.mb-3 Border-Width
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.border-1.border 
@@ -167,7 +167,7 @@ html(lang='en')
                                                     .helper-box.border-5.border
                                                     span .border-
                                         .col-xxl-3.col-sm-6     
-                                            .border-wrapper.alert-light-light.h-100.dark-helper
+                                            .border-wrapper.helper-bg.h-100.dark-helper
                                                 h6.mb-3 Text Colors 
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.helper-text.border.text-primary A
@@ -196,13 +196,13 @@ html(lang='en')
                         .col-12
                             .card
                                 .card-header
-                                    h4 Background Colors 
+                                    h3 Background Colors 
                                     p.f-m-light.mt-1.mb-0
-                                        | Use the 
+                                        | Using any component to add background color using 
                                         code .bg-* 
-                                        | and 
-                                        code .alert-light-*
-                                        | colors in cuba theme.Use of any components.   
+                                        | &  
+                                        code .alert-light-* 
+                                        | class   
                                 .card-body 
                                     .row.g-xl-4.g-3
                                         .col-md-4.col-sm-6
@@ -257,8 +257,8 @@ html(lang='en')
                                                     .helper-box.alert-light-dark
                                                     | .alert-light-dark
                                                 .d-flex.align-items-center.gap-2
-                                                    .helper-box.alert-light-light
-                                                    | .alert-light-light
+                                                    .helper-box.helper-bg
+                                                    | .helper-bg
                                         .col-md-4.col-sm-12  
                                             .border-wrapper.h-100.border
                                                 h6.mb-3 Extended Background Colors
@@ -271,11 +271,11 @@ html(lang='en')
                         .col-12 
                             .card
                                 .card-header
-                                    h4 Border Color
+                                    h3 Border Color
                                     p.f-m-light.mt-1.mb-0
-                                        | Use the 
-                                        code .b-*/.b-t-*/.b-b-*/.b-l-*/.b-r-*
-                                        | class for borders.
+                                        | Using   
+                                        code .b-*/.b-t-*/.b-b-*/.b-l-*/.b-r-* 
+                                        | class add the borders.
                                 .card-body
                                     .gradient-border
                                         .d-flex.align-items-center.gap-2
@@ -371,16 +371,15 @@ html(lang='en')
                         .col-xl-6
                             .card
                                 .card-header
-                                    h4 Images Sizes
+                                    h3 Images Sizes
                                     p.f-m-light.mt-1.mb-0 
-                                        | Use the width and height of images class like:
-                                        code .img-*
-                                        | and
-                                        code .img-h-*
-                                        | .
+                                        | Set different type of height & width using  
+                                        code .img-* 
+                                        | &  
+                                        code .img-h-* 
+                                        | class.
                                 .card-body
                                     .gradient-border.gap-md-3.gap-2
-                                        img.img-30.img-h-30(src='../assets/images/avatars/1.jpg', alt='img-size-30') 
                                         img.img-40.img-h-40(src='../assets/images/avatars/1.jpg', alt='img-size-40')
                                         img.img-50.img-h-50(src='../assets/images/avatars/1.jpg', alt='img-size-50') 
                                         img.img-60.img-h-60(src='../assets/images/avatars/1.jpg', alt='img-size-60')
@@ -391,29 +390,40 @@ html(lang='en')
                         .col-xl-6
                             .card
                                 .card-header
-                                    h4 Font-Style
+                                    h3 Font-Style
                                     p.f-m-light.mt-1.mb-0
-                                    | Use the font-style like: 
-                                    code  .f-s-* [normal/italic/oblique/initial/inherit]
-                                    | .
-                                .card-body
+                                    | To set different font-style use  
+                                    code  .f-s-* [normal/italic/oblique/initial/inherit]  
+                                    | class.
+                                .card-body.helper-font
                                     p.fw-normal.mb-lg-3.mb-2
-                                        | This is a .f-s-normal font-style
+                                        | This is a  
+                                        span.text-primary  .f-s-normal    
+                                        |  font-style 
                                     p.fst-italic.mb-lg-3.mb-2
-                                        | This is a .f-s-italic font-style
+                                        | This is a 
+                                        span.text-secondary .f-s-italic 
+                                        |  font-style
                                     p.f-s-oblique.mb-lg-3.mb-2
-                                        | This is a .f-s-oblique font-style
+                                        | This is a  
+                                        span.text-success .f-s-oblique 
+                                        |  font-style
                                     p.f-s-initial.mb-lg-3.mb-2
-                                        | This is a .f-s-initial font-style
+                                        | This is a  
+                                        span.text-danger .f-s-initial 
+                                        |  font-style
                                     p.f-s-inherit
-                                        | This is a .f-s-inherit font-style
+                                        | This is a 
+                                        span.text-info .f-s-inherit 
+                                        |  font-style
                         .col-md-6
                             .card
                                 .card-header
-                                    h4 Font Weight 
+                                    h3 Font Weight 
                                     p.f-m-light.mt-1.mb-0
-                                        | Use the font-weight classes like:
-                                        code .f-w-* [100/300/400/600/700/900]
+                                        | Using  
+                                        code .f-w-* [100/300/400/600/700/900]  
+                                        | class set different font-weight.
                                 .card-body  
                                     .d-flex.align-items-center.mb-2.gap-2   
                                         .f-w-100
@@ -436,9 +446,9 @@ html(lang='en')
                         .col-md-6
                             .card
                                 .card-header
-                                    h4 Text Colors
+                                    h3 Text Colors
                                     p.f-m-light.mt-1.mb-0
-                                        | Use the text color for            
+                                        | Give the text color using             
                                         code .font-*
                                         |  class.
                                 .card-body
@@ -466,11 +476,11 @@ html(lang='en')
                         .col-12.mb-md-4.mb-3
                             .card
                                 .card-header
-                                    h4 Font Sizes
+                                    h3 Font Sizes
                                     p.f-m-light.mt-1.mb-0
-                                        | Use the font-size for
-                                        code .f-* [14/16/18/20/22/24/26/28/30/32/34/36/38/40]
-                                        | .
+                                        | Use 
+                                        code .f-* [14/16/18/20/22/24/26/28/30/32/34/36/38/40]  
+                                        | class to add font-sizes.
                                 .card-body
                                     .gradient-border
                                         .font-wrapper.border

@@ -65,6 +65,9 @@ a {
 blockquote {
     border-left: 4px solid rgba(var(--primary-color),1);
     padding: 18px;
+    p, .blockquote-footer{
+        font-size: 16px;
+    }
 }
 .figure {
     &.text-center {
@@ -113,7 +116,21 @@ ul {
     flex-wrap: wrap;
     gap: 12px;
 }
+.text-gray2{
+    color: rgba(var(--gray2),1);
+}
 
+
+@each $text-name, $text-color in (primary, rgba(var(--primary-color),1)),
+  (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+  (danger, rgba(var(--danger-color),1)), (warning, rgba(var(--warning-color),1)),
+  (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1)),(dark, rgba(var(--body-font-color),1))
+
+{
+    .text-#{$text-name}{
+        color: $text-color !important;
+    }
+}
 /**=====================
      typography css end
 ==========================**/

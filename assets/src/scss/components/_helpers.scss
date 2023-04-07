@@ -17,6 +17,9 @@
         border: 1px solid rgba(var(--light-gray), 1) !important;
         border-radius: 1.5rem;
     }
+    &.helper-bg{
+        border-radius: 1.5rem;
+    }
 }
 
 
@@ -45,8 +48,8 @@
     background-color: rgba(var(--bg-light),1) !important;
     color: rgba(var(--white),1);
 }
-.alert-light-light{
-    background-color: rgba(var(--alert-light-light),1);
+.helper-bg{
+    background-color: rgba(var(--helper-bg), 0.439);
 }
 .alert-light-primary{
     background-color: rgba(var(--primary-color),0.3);
@@ -158,6 +161,7 @@
 .img-h-100 {
     height: 100px;
 }
+// 
 
 /**=====================
      15. Helper CSS end

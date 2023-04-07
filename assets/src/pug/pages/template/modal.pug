@@ -1,5 +1,4 @@
 -var sidebar    = true;
--var modal      = true;
 -var tooltip    = true;
 -var popover    = true;
 -var validation_modal      = true;
@@ -21,7 +20,7 @@ html(lang='en')
                         .page-title
                             .row
                                 .col-6
-                                    h3
+                                    h2
                                         | Modal
                                 .col-6
                                     ol.breadcrumb
@@ -36,7 +35,7 @@ html(lang='en')
                             .col-lg-6
                                 .card
                                     .card-header
-                                        h4 Basic Modal
+                                        h3 Basic Modal
                                         p.mt-1.f-m-light.mb-0
                                             | Different types of basic modals using like 
                                             code simple/scrolling/tooltips/grid/varying modal  
@@ -49,12 +48,12 @@ html(lang='en')
                                                 .modal-content
                                                     .modal-body
                                                         .modal-toggle-wrapper
-                                                            h4
+                                                            h3
                                                                 | Up to
-                                                                strong.text-danger 85% OFF
+                                                                strong.text-danger   85% OFF
                                                                 | , Hurry Up Online Shopping
                                                             .modal-img
-                                                                img(src="../assets/images/user/3.jpg", alt="modal-img")
+                                                                img(src="../assets/gif/online-shopping.gif", alt="online-shopping")
                                                             p.text-sm-center Our difficulty in finding regular clothes that was of great quality, comfortable, and didn't impact the environment given way to Creatures of Habit.
                                                             button.btn.bg-primary.d-flex.align-items-center.gap-2.text-light.ms-auto(type='button', data-bs-dismiss='modal') Explore More
                                                                 i.fa-solid.fa-angles-right 
@@ -65,11 +64,11 @@ html(lang='en')
                                             .modal-dialog(role='document')
                                                 .modal-content  
                                                     .modal-header
-                                                        h5#exampleModalLongTitle.modal-title Scrolling Modal
+                                                        h3#exampleModalLongTitle.modal-title Scrolling Modal
                                                         button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
                                                     .modal-body
                                                         h6 Wed Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -91,28 +90,28 @@ html(lang='en')
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
-                                                                p.pb-4
+                                                                p.pb-2
                                                                     | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
                                                         h6 UX Designer 
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | Create solutions that will be helpful for the issues and situations that exist right now, not for those that will. With the right materials, assist people in organizing their time, completing things more quickly, and optimizing it.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | Based on the data received from users, improve them. Adapt existing solutions to the requirements, hopes, difficulties, and expectations of users.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -134,7 +133,7 @@ html(lang='en')
                                                         h4 Popover in a modal   
                                                         p.mt-2
                                                             | This 
-                                                            a.btn.btn-success.popover-test(href='#', role='button', title='this is amazing content', data-bs-toggle="popover") button
+                                                            a.btn.btn-success.popover-test(href='#', role='button', title='This is amazing content', data-bs-toggle="popover") button
                                                             |  triggers a popover on click.
                                                         hr
                                                         h4 Tooltips in a modal
@@ -169,123 +168,123 @@ html(lang='en')
                                                                     .mb-3
                                                                         label.form-label(for='exampleFormControlInput1') Email address
                                                                         input#exampleFormControlInput1.form-control(type='email' placeholder='cubatheme@gmail.com')
-                                                                .col-md-12 
+                                                                .col-md-12.mt-0
                                                                     .form-check.mb-3
                                                                         input#flexCheckDefault.form-check-input(type='checkbox' value='')
                                                                         label.form-check-label(for='flexCheckDefault')
                                                                             | You accept our Terms and Privacy Policy by clicking Submit below.
-                                                                    button.btn.btn-primary(type='submit') Sign Up   
+                                                                    button.btn.btn-primary(type='submit' data-bs-dismiss='modal') Sign Up   
                             .col-lg-6
                                 .card
                                     .card-header
-                                        h4 Sizes Modal
+                                        h3 Sizes Modal
                                         p.mt-1.f-m-light.mb-0
                                             | Modals have three optional sizes, available via modifier classes to be placed on a 
                                             code .modal-dialog 
-                                    .card-body
+                                    .card-body.badge-spacing
                                         //full screen modal
                                         .btn.btn-secondary(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-fullscreen') Full Screen Modal
                                         .modal.fade.bd-example-modal-fullscreen(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
                                             .modal-dialog.modal-fullscreen
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
-                                                        h4#myLargeModalLabel.modal-title Extra Large modal  
+                                                        h4#myLargeModalLabel.modal-title Full screen modal  
                                                         button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
                                                     .modal-body
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right 
-                                                            h6 Web Design 
-                                                        p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.              
-                                                        .large-modal-header 
+                                                            span Web Design 
+                                                        p We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.              
+                                                        h6 
                                                             i.fa-solid.fa-angles-right
-                                                            h6 Content Marketing 
-                                                        p.modal-padding-space Through better opportunities and knowledgeable marketing strategies, we aid business funnel. We won't only hit the target; instead, we'll aim higher and surpass the objectives.
-                                                        .large-modal-header
+                                                            span Content Marketing 
+                                                        p Through better opportunities and knowledgeable marketing strategies, we aid business funnel. We won't only hit the target; instead, we'll aim higher and surpass the objectives.
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 PPC
-                                                        p.modal-padding-space Customized advertising to increase visitors and improve conversion. To increase retention, identify the correct audience and remarket to them.
-                                                        .large-modal-header
+                                                            span PPC
+                                                        p Customized advertising to increase visitors and improve conversion. To increase retention, identify the correct audience and remarket to them.
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 UX Designer  
-                                                        p.modal-padding-space The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.      
+                                                            span UX Designer  
+                                                        p The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.      
                                         //Extra large modal
                                         .btn.btn-info.text-white(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-xl') Extra large Modal
                                         .modal.fade.bd-example-modal-xl(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
                                             .modal-dialog.modal-xl
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
                                                         h4#myLargeModalLabel.modal-title Extra Large modal
                                                         button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
                                                     .modal-body
-                                                        .large-modal-header    
+                                                        h6  
                                                             i.fa-solid.fa-angles-right
-                                                            h6 Web Design
-                                                        p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
-                                                        .large-modal-header  
+                                                            span Web Design
+                                                        p We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 Content Marketing 
-                                                        p.modal-padding-space Through better opportunities and knowledgeable marketing strategies, we aid business funnel. We won't only hit the target; instead, we'll aim higher and surpass the objectives.
-                                                        .large-modal-header
+                                                            span Content Marketing 
+                                                        p Through better opportunities and knowledgeable marketing strategies, we aid business funnel. We won't only hit the target; instead, we'll aim higher and surpass the objectives.
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 PPC
-                                                        p.modal-padding-space Customized advertising to increase visitors and improve conversion. To increase retention, identify the correct audience and remarket to them.
-                                                        .large-modal-header
+                                                            span PPC
+                                                        p Customized advertising to increase visitors and improve conversion. To increase retention, identify the correct audience and remarket to them.
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 UX Designer 
-                                                        p.modal-padding-space The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.
+                                                            span UX Designer 
+                                                        p The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.
                                         // Large modal
                                         button.btn.btn-success(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-lg') Large Modal
                                         .modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
                                             .modal-dialog.modal-lg   
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
                                                         h2#myLargeModalLabel.modal-title Large modal
                                                         button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
                                                     .modal-body
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h4 Start with your goals    
-                                                        p.modal-padding-space.mb-0 No matter how talented you are as a content writer or creator, you will always fail if you don't have a clear set of goals.
-                                                        p.modal-padding-space.mb-0 First of all, without goals, there is no way to determine your success. Additionally, you lack direction.
-                                                        p.modal-padding-space.mb-0 Together with your team, respond to the following questions to make sure they are:
-                                                        .large-modal-body   
-                                                            i.fa-solid.fa-angles-right
-                                                            p.ps-1 What must you achieve, and by when?
-                                                        .large-modal-body
-                                                            i.fa-solid.fa-angles-right
-                                                            p.ps-1 How will you evaluate your level of success?
-                                                        .large-modal-body
-                                                            i.fa-solid.fa-angles-right
-                                                            p.ps-1 Can you accomplish it with the available resources?
-                                                        .large-modal-body
-                                                            i.fa-solid.fa-angles-right
-                                                            p.ps-1 Does it advance your core business aims? 
+                                                            span Start with your goals    
+                                                        p.mb-0 No matter how talented you are as a content writer or creator, you will always fail if you don't have a clear set of goals.
+                                                        p.mb-0 First of all, without goals, there is no way to determine your success. Additionally, you lack direction.
+                                                        p.mb-0 Together with your team, respond to the following questions to make sure they are:
+                                                        p.ps-1.mb-0
+                                                            i.fa-solid.fa-share
+                                                            |   What must you achieve, and by when?
+                                                        p.ps-1.mb-0
+                                                            i.fa-solid.fa-share
+                                                            |   How will you evaluate your level of success?
+                                                        p.ps-1.mb-0
+                                                            i.fa-solid.fa-share
+                                                            |   Can you accomplish it with the available resources?
+                                                        p.ps-1.mb-0
+                                                            i.fa-solid.fa-share
+                                                            |   Does it advance your core business aims? 
                                         // Small modal
                                         button.btn.btn-primary(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-sm') Small Modal    
                                         .modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel', aria-hidden='true')
                                             .modal-dialog.modal-sm
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
                                                         h4#mySmallModalLabel.modal-title Small modal
                                                         button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
                                                     .modal-body.dark-modal
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 Web Design
+                                                            span Web Design
                                                         p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 Content Marketing 
+                                                            span Content Marketing 
                                                         p.modal-padding-space Through better opportunities and knowledgeable marketing strategies, we aid business funnel. We won't only hit the target; instead, we'll aim higher and surpass the objectives.
-                                                        .large-modal-header 
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 PPC 
+                                                            span PPC 
                                                         p.modal-padding-space Customized advertising to increase visitors and improve conversion. To increase retention, identify the correct audience and remarket to them.
                             .col-xl-12
                                 .card
                                     .card-header
-                                        h4 Fullscreen Modal
-                                        p.f-m-light.mt-1    
+                                        h3 Fullscreen Modal
+                                        p.f-m-light.mt-1.mb-0
                                             | Another override is the option to pop up a modal that covers the user viewport, available via modifier classes that are placed on a
                                             code  .modal-dialog
                                             | .
@@ -295,17 +294,17 @@ html(lang='en')
                                         // Full Screen Modal
                                         #exampleModalfullscreen.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
                                             .modal-dialog.modal-fullscreen
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header 
                                                         h1#exampleModalLabel.modal-title.fs-5 Full Screen Modal    
                                                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                                     .modal-body
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 Web Design 
+                                                            span Web Design 
                                                         p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
                                                         h6 Wed Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0  
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -327,28 +326,28 @@ html(lang='en')
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
-                                                                p.pb-4 
+                                                                p.pb-2 
                                                                     | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
                                                         h6 UX Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | Create solutions that will be helpful for the issues and situations that exist right now, not for those that will. With the right materials, assist people in organizing their time, completing things more quickly, and optimizing it.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | Based on the data received from users, improve them. Adapt existing solutions to the requirements, hopes, difficulties, and expectations of users.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -362,17 +361,17 @@ html(lang='en')
                                         // Full screen below sm
                                         #exampleModalfullscreensm.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')           
                                             .modal-dialog.modal-fullscreen-sm-down
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
                                                         h1#exampleModalLabel.modal-title.fs-5 Full Screen Below sm
                                                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                                     .modal-body
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right 
-                                                            h6 Web Design 
+                                                            span Web Design 
                                                         p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
                                                         h6 Wed Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2   
@@ -382,16 +381,16 @@ html(lang='en')
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
-                                                                p.pb-4
+                                                                p.pb-2
                                                                     | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
                                                         h6 UX Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -405,17 +404,17 @@ html(lang='en')
                                         // Full screen below md
                                         #exampleModalfullscreen-md.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
                                             .modal-dialog.modal-fullscreen-md-down
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
                                                         h1#exampleModalLabel.modal-title.fs-5 Full Screen Below md      
                                                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')              
                                                     .modal-body
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right 
-                                                            h6 Web Design 
+                                                            span Web Design 
                                                         p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
                                                         h6 Wed Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -425,16 +424,16 @@ html(lang='en')
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
-                                                                p.pb-4
+                                                                p.pb-2
                                                                     | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
                                                         h6 UX Designer  
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -448,17 +447,17 @@ html(lang='en')
                                         // Full screen below lg
                                         #exampleModalfullscreen-lg.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
                                             .modal-dialog.modal-fullscreen-lg-down
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
                                                         h1#exampleModalLabel.modal-title.fs-5 Full Screen Below lg
                                                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                                     .modal-body 
-                                                        .large-modal-header                     
+                                                        h6                  
                                                             i.fa-solid.fa-angles-right 
-                                                            h6 Web Design
+                                                            span Web Design
                                                         p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
                                                         h6 Wed Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -468,16 +467,16 @@ html(lang='en')
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
-                                                                p.pb-4
+                                                                p.pb-2
                                                                     | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
                                                         h6 UX Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
-                                                        .d-flex.mt-3    
+                                                        .d-flex.mt-2    
                                                             .flex-shrink-0                                                                                
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -491,17 +490,17 @@ html(lang='en')
                                         // Full screen below xl
                                         #exampleModalfullscreen-xl.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
                                             .modal-dialog.modal-fullscreen-xl-down
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
                                                         h1#exampleModalLabel.modal-title.fs-5 Full Screen Below xl
                                                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                                     .modal-body
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 Web Design           
+                                                            span Web Design           
                                                         p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
                                                         h6 Wed Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0   
                                                                 i.fa-solid.fa-circle-arrow-right 
                                                             .flex-grow-1.ms-2
@@ -511,16 +510,16 @@ html(lang='en')
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
-                                                                p.pb-4
+                                                                p.pb-2
                                                                     | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
                                                         h6 UX Designer 
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -534,17 +533,17 @@ html(lang='en')
                                         // Full screen below xxl
                                         #exampleModalfullscreen-xxl.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
                                             .modal-dialog.modal-fullscreen-xxl-down
-                                                .modal-content
+                                                .modal-content.modal-details
                                                     .modal-header
                                                         h1#exampleModalLabel.modal-title.fs-5 Full Screen Below xxl
                                                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                                     .modal-body
-                                                        .large-modal-header
+                                                        h6
                                                             i.fa-solid.fa-angles-right
-                                                            h6 Web Design 
+                                                            span Web Design 
                                                         p.modal-padding-space We build specialised websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
                                                         h6 Wed Designer
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -554,16 +553,16 @@ html(lang='en')
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
-                                                                p.pb-4
+                                                                p.pb-2
                                                                     | Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals. Since designers now have access to a wider variety of fonts, firms may more easily and precisely communicate their brands through typography.
                                                         h6 UX Designer 
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
                                                                 p
                                                                     | User research, persona creation, building wireframes and interactive prototypes, and testing ideas are among the common tasks of a UX designer. These duties can differ greatly between organizations.
-                                                        .d-flex.mt-3
+                                                        .d-flex.mt-2
                                                             .flex-shrink-0
                                                                 i.fa-solid.fa-circle-arrow-right
                                                             .flex-grow-1.ms-2
@@ -575,14 +574,14 @@ html(lang='en')
                             .col-xl-4.mb-3
                                 .card
                                     .card-header              
-                                        h4 Centered Modal 
+                                        h3 Centered Modal 
                                         p.f-m-light.mt-1.mb-0
                                             | Use the
-                                            code .modal-dialog-centered
+                                            code .modal-dialog-centered 
                                             | through centered modal. and set 
                                             code data-bs-target 
                                             |.
-                                    .card-body.badge-spacing 
+                                    .card-body
                                         //Centered modal
                                         button.btn.btn-success(type='button', data-bs-toggle='modal', data-bs-target='#exampleModalCenter1')
                                             | Vertically centered
@@ -594,18 +593,18 @@ html(lang='en')
                                                             ul.modal-img
                                                                 li
                                                                     img(src="../assets/gif/danger.gif", alt="error")
-                                                            h4.text-center.pb-2 Ohh! Something went wrong! 
+                                                            h4.text-center.pb-2.mt-3 Ohh! Something went wrong! 
                                                             p.text-center
                                                                 | Attackers on malicious activity may trick you into doing something dangrous like installing software or revealing your personal informations.
                                                             button.btn.btn-secondary.d-flex.m-auto(type='button', data-bs-dismiss='modal') Close
                             .col-xl-4.mb-3
                                 .card
                                     .card-header
-                                        h4 Toggle Between Modals 
+                                        h3 Toggle Between Modals 
                                         p.f-m-light.mt-1.mb-0
-                                            | Toggle between multiple modals with some clever placement of the 
+                                            | Toggle between multiple modals with some clever placement of the   
                                             code data-bs-target 
-                                            | and
+                                            | and     
                                             code data-bs-toggle
                                             |  attributes.
                                     .card-body
@@ -614,7 +613,7 @@ html(lang='en')
                                                 .modal-content
                                                     .modal-body
                                                         .modal-toggle-wrapper
-                                                            ul.modal-img
+                                                            ul.modal-img.mb-3
                                                                 li
                                                                     img(src="../assets/gif/whatapp.gif", alt="whatsapp")
                                                                 li
@@ -623,7 +622,7 @@ html(lang='en')
                                                                     img(src="../assets/gif/facebook.gif", alt="facebook")
                                                             h6 Remove your complete account from your phone or tablet to sign out of the Gmail app.
                                                             button.btn.btn-dark.rounded-pill.w-100.mt-4(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal') Connect new account
-                                                            button.btn.rounded-pill.w-100.dark-toggle-btn(type='button', data-bs-dismiss='modal') Cancel
+                                                            button.btn.rounded-pill.w-100.dark-toggle-btn.modal-between(type='button', data-bs-dismiss='modal') Cancel
                                         #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
                                             .modal-dialog.modal-dialog-centered
                                                 .modal-content
@@ -633,15 +632,15 @@ html(lang='en')
                                                                 li
                                                                     img(src="../assets/gif/logout.gif", alt="logout")                    
                                                             h4.pt-3.text-center Already leaving??
-                                                            p.text-center Are you sure want to logout this dashboard?
-                                                            span.d-block.text-center.mb-4  Not a member?
+                                                            p.text-center.mb-2 Are you sure want to logout this dashboard?
+                                                            span.d-block.text-center.mb-2  Not a member?
                                                                 a.ms-1(href="dashboard-02.html") Register
                                                             button.btn.btn-dark.d-flex.m-auto(type='button', data-bs-dismiss='modal') Yes, Log out
                                         a.btn.btn-dark(data-bs-toggle='modal' href='#exampleModalToggle' role='button') Open first modal
                             .col-xl-4.mb-3
                                 .card
                                     .card-header
-                                        h4 Static Backdrop Modal
+                                        h3 Static Backdrop Modal
                                         p.f-m-light.mt-1.mb-0 
                                             | When backdrop is set to static, the modal will not close when clicking outside of it. Click the button below to try it.
                                     .card-body 
@@ -668,30 +667,8 @@ html(lang='en')
                                                                         input#gridCheck.form-check-input(type='checkbox')
                                                                         label.form-check-label(for='gridCheck')
                                                                             | Check me out
-                                                                .col-12
+                                                                .col-12.mt-2
                                                                     button.btn.btn-primary(type='submit' data-bs-dismiss='modal') Sign in
-                            //- .col-12
-                            //-     .card 
-                            //-         .card-header
-                            //-             h4 Cuba Custom Modals 
-                            //-             p.f-m-light.mt-1.mb-0 
-                            //-                 | Custom Modal make by cuba.
-                            //-         .card-body
-                            //-             .row.g-3
-                            //-                 .col-xl-4.col-md-6.custom-alert.text-center  
-                            //-                     .card-wrapper.border.rounded-3.h-100
-                            //-                         .cuba-demo-img
-                            //-                             ul.dot-group.pb-3.pt-0
-                            //-                                 li
-                            //-                                 li
-                            //-                                 li
-                            //-                             .title-wrapper.pb-3.modal-heading
-                            //-                                 h5.theme-name.mb-0
-                            //-                                     span Modal 1 -
-                            //-                                     | Profile Modal
-                            //-                                 p Example of cuba dashboard profile card.
-                            //-                             .overflow-hidden
-                            //-                                 img.img-fluid(src='../assets/images/alert/social.png' alt='social')
 
                 include ../../components/footer             
         include ../../components/footer-files                                                

@@ -54,5 +54,8 @@
     color: rgba(var(--white),1);
 
   }
+  .border-#{$alert-name} {
+    border-color: $alert-color !important;
+  }
 }
 

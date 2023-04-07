@@ -80,16 +80,16 @@ th {
 }
 
 
-.table-striped {
-	tbody {
-		tr {
-			&:nth-of-type(odd) {
-				background-color: rgba(var(--light-background),1);
-				--bs-table-accent-bg: unset;
-			}
-		}
-	}
-}
+// .table-striped {
+// 	tbody {
+// 		tr {
+// 			&:nth-of-type(odd) {
+// 				background-color: rgba(var(--light-background),1);
+// 				--bs-table-accent-bg: unset;
+// 			}
+// 		}
+// 	}
+// }
 
 .table-bordered {
 
@@ -100,6 +100,11 @@ th {
 	td,
 	th {
 		border-color: rgba(var(--light-text),0.3);
+	}
+}
+.user-content{
+	td, th{
+		border-color:rgba(var(--light-gray), 1);
 	}
 }
 

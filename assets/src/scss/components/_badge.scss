@@ -18,10 +18,11 @@
       }
   
       &.rounded-circle {
-        padding: 10px 14px;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 33px;
+        width: 33px;
       }
   
       &.badge-p-space {
@@ -34,18 +35,6 @@
   
       &.btn-p-space {
         padding: 8px 10px;
-      }
-    }
-  }
-  
-  a.badge {
-    &:hover {
-      color: inherit;
-  
-      &.badge-dark {
-        &:hover {
-          color: rgba(var(--white),1);
-        }
       }
     }
   }
@@ -76,6 +65,22 @@
       color: rgba(var(--white),1);
       border-radius: 0;
     }
+} 
+@each $badge-name, $badge-color in (primary, rgba(var(--primary-color),1)),
+(secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+(danger, rgba(var(--danger-color),1)), (warning, rgba(var(--warning-color),1)),
+(info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1)),(dark, rgba(var(--body-font-color),1))
+{
+    .badge-#{$badge-name} {
+      background-color: $badge-color;
+      color: rgba(var(--white),1);
+      border-color: $badge-color;
+      &:hover{
+        background-color: $badge-color;
+        color: rgba(var(--white),1);
+      }   
+    }
+    
 } 
   
 /**=====================
