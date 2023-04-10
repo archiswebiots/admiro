@@ -36,6 +36,9 @@ $i: 100, 300, 500, 400, 600, 700, 900;
 .text-secondary {
   color: rgba(var(--secondary-color),1) !important;
 }
+.badge-primary{
+  background-color: rgba(var(--primary-color),1);
+}
 /**=====================
      Reset css end
 ==========================**/

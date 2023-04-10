@@ -11,11 +11,12 @@
                     padding: $page-body-padding;
                     position: relative;
                     transition: 0.5s;
-                    @include media-breakpoint-down(xl){
+                    @include media-breakpoint-down(lg){
                         padding: 0;
                     }
                 } 
             }
+
         }
         @include media-breakpoint-up(lg) {
             margin-left: $sidebar-width;
@@ -34,6 +35,9 @@
             height: 20px;
         }
     }
+}
+.page-header{
+    align-items: center;
 }
 
 header {
@@ -389,6 +393,7 @@ header {
                 position: relative;
                 padding: 10px 0;
                 .d-flex {
+                    align-items: center;
                     .activity-line {
                         position: absolute;
                         top: 20px;

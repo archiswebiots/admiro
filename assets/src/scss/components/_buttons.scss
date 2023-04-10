@@ -112,13 +112,7 @@ $colors: (
     }
   }
 }
-.common-flex{
-  .btn{
-    &:hover, &:focus-visible, &:active {
-      border: unset;
-    }
-  }
-}
+
 @each $btn-name, $btn-color in (primary, rgba(var(--primary-color),1)),
 (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
 (danger, rgba(var(--danger-color),1)), (warning, rgba(var(--warning-color),1)),

@@ -175,7 +175,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid rgba(var(--light-text),1);
+      border-bottom: 1px solid rgba(var(--light-gray),1);
       padding-bottom: 8px;
   
       .header-left-inbox {
@@ -208,6 +208,7 @@
         display: flex;
         padding-bottom: 6px;
         border-bottom: 1px solid rgba(var(--light-color),1);
+        align-items: center;
       }
     }
 }

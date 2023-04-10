@@ -9,7 +9,7 @@ span {
         padding: 10px;
         margin-bottom: 10px;
         text-align: center;
-        background-color: rgba(var(--span-color),0.7);
+        background-color: rgba(var(--bg-light), 1);
     }
 }
   
@@ -26,6 +26,25 @@ span {
     padding: 10px;
     color: rgba(var(--black),1);
 }
+.table-striped{
+    > tbody{
+        > tr:nth-of-type(odd){  
+            
+            background-color: rgba(var(--bg-light), 1);
+            > *{
+                --bs-table-accent-bg: unset !important;
+            }
+        }
+    }
+    
+}  
+.table-bordered{
+    &.table-striped{
+        td, th, tr{
+            border-color: rgba(var(--span-color), 0.7);
+        } 
+    }
+} 
 /**=====================
   GRID CSS end
 ==========================**/
