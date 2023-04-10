@@ -34,11 +34,9 @@ html(lang='en')
                                     .card-header
                                         h3 Basic Tooltip
                                         p.f-m-light.mt-1.mb-0
-                                            | Use the 
-                                            code data-bs-title
-                                            |  to change tooltip title and 
-                                            code data-bs-toggle
-                                            |  to add tooltip attribute.
+                                            | Use 
+                                            code data-bs-toggle="tooltip"
+                                            |  to set the tooltip.
                                     .card-body
                                         button.example-popover.btn.btn-primary.mb-0.me-0(type='button', data-container='body', data-bs-toggle='tooltip', data-bs-placement='top', title='Surprise!!! Thank you for hovering...')
                                             | It's magic please hover me... 
@@ -55,11 +53,9 @@ html(lang='en')
                                     .card-header
                                         h3 Colored Tooltip 
                                         p.f-m-light.mt-1.mb-0
-                                            | Use the
+                                            | Add 
                                             code btn- *
-                                            |  to change dark background color and  
-                                            code data-bs-placement='*'  
-                                            | to tooltip positions change.  
+                                            |  class to set the colored tooltip.
                                     .card-body 
                                         .common-flex
                                             button.mb-0.me-0.btn.btn-primary(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-title='Primary')
@@ -77,31 +73,25 @@ html(lang='en')
                                     .card-header
                                         h3 Tooltip  Directions
                                         p.f-m-light.mt-1.mb-0 
-                                            | Use the
-                                            code btn-*
-                                            |  to change dark background color and                            
-                                            code  data-bs-placement='*'
-                                            | [top/right/bottom/left] to tooltip direction change.
+                                            | To set different direction use
+                                            code data-bs-placement="top/right/bottom/left".
                                     .card-body
                                         .common-flex
                                             button.btn.btn-primary.mb-0.me-0(type='button', data-bs-toggle='tooltip', data-bs-placement='top', title='Tooltip on top')
-                                                | Tooltip on top
+                                                | Top Tooltip
                                             button.btn.btn-secondary.mb-0.me-0(type='button', data-bs-toggle='tooltip', data-bs-placement='right', title='Tooltip on right')
-                                                | Tooltip on right
+                                                | Right Tooltip
                                             button.btn.btn-success.mb-0.me-0(type='button', data-bs-toggle='tooltip', data-bs-placement='bottom', title='Tooltip on bottom')
-                                                | Tooltip on bottom
+                                                | Bottom Tooltip
                                             button.btn.btn-warning.mb-0.me-0.text-white(type='button', data-bs-toggle='tooltip', data-bs-placement='left', title='Tooltip on left')
-                                                | Tooltip on left
+                                                | Left Tooltip
                             .col-md-6.mb-3
                                 .card
                                     .card-header
                                         h3 HTML Elements With Hover Effect
                                         p.f-m-light.mt-1.mb-0
-                                            | Use the 
-                                            code bg-*-light
-                                            |  to change light background color and
-                                            code data-bs-title
-                                            |  to the content under the HTML tag.
+                                            | Use html element with the help of 
+                                            code data-bs-title="".
                                     .card-body
                                         .common-flex.tooltip-effect
                                             button.btn.bg-primary.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-html='true' data-bs-placement='top' data-bs-title='<em>Thank</em> <u>you</u>')                
@@ -117,10 +107,9 @@ html(lang='en')
                                     .card-header
                                         h3 Filled Tooltip
                                         p.f-m-light.mt-1.mb-0
-                                            | Tooltip in hover effect through fill dark color.
-                                            code [.btn-outline-*]
-                                            |. and
-                                            code data-bs-title 
+                                            | Fill the btn on the hover effect with the help of 
+                                            code .btn-outline 
+                                            | class
                                     .card-body.fill-tooltip
                                         .common-flex
                                             button.btn.btn-outline-primary.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-html='true' data-bs-placement='top' data-bs-title='Tooltip Primary')
@@ -131,5 +120,6 @@ html(lang='en')
                                                 | Tooltip Success
                                             button.btn.btn-outline-info.mb-0.me-0(type='button' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' data-bs-title='Tooltip Info')
                                                 | Tooltip Info
+                                                
                 include ../../components/footer
         include ../../components/footer-files

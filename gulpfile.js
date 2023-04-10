@@ -15,6 +15,7 @@ const paths = {
     dest: './template',
   },
 };
+
 /// vendors css ///
 // gulp.task('vendors', function () {
 //   return gulp.src(

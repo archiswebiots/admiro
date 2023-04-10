@@ -25,7 +25,7 @@ html(lang='en')
                                             i.iconly-Home.icli
                                         li.breadcrumb-item Ui Kits
                                         li.breadcrumb-item.active Alert
-                    // Container-fluid starts
+                    // Container-fluid starts 
                     .container-fluid
                         .row
                             .col-xl-12
@@ -51,5 +51,43 @@ html(lang='en')
                                                         | This is a
                                                         a.alert-link.text-white(href='#') secondary alert
                                                         |   with an example link. Check it out.
+                                                p.mb-0 Info Alert
+                                                .alert.alert-info.dark(role='alert')
+                                                    p 
+                                                       | This is a 
+                                                       a.alert-link.text-white(href='#') info alert
+                                                       |   with an example link. Check it out.
+                                                p.mb-0 Success Alert
+                                                .alert.alert-success.dark(role="alert")
+                                                    p 
+                                                        | This is a
+                                                        a.alert-link.text-white(href='#') success alert 
+                                                        |   with an example link. Check it out.    
+                                            .col-xl-6  
+                                                p.mb-0 Warning Alert
+                                                .alert.alert-warning.dark(role="alert")
+                                                    p 
+                                                        |  This is a 
+                                                        a.alert-link.text-white(href='#') warning alert 
+                                                        |   with an example link. Check it out.    
+                                                p.mb-0 Danger Alert
+                                                .alert.alert-danger.dark(role="alert")
+                                                    p 
+                                                        | This is a 
+                                                        a.alert-link.text-white(href="#") danger alert 
+                                                        |   with an example link. click it out.
+                                                p.mb-0 Light Alert
+                                                .alert.alert-light.dark.text-dark(role="alert")
+                                                    p 
+                                                        |  This is a 
+                                                        a.alert-link.text-dark(href="#") light alert 
+                                                        |   with an example link. click it out.  
+                                                p.mb-0 Dark Alert 
+                                                .alert.alert-dark.dark(role="alert")
+                                                    p 
+                                                        | This is a  
+                                                        a.alert-link.text-white(href="#") dark alert
+                                                        |   with an example link. click it out.
+                                                        
             include ../../components/footer
         include ../../components/footer-files 

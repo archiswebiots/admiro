@@ -241,13 +241,13 @@
               <div class="setting-icon"><i class="iconly-Setting icli">  </i></div>
             </div>
             <div class="user-content">
-              <h5>Amirreza Baqian</h5>
+              <h5 class="pb-1">Amirreza Baqian</h5>
               <h6>Product Designer</h6>
             </div>
           </div>
           <div class="main-sidebar">
             <ul class="sidebar-menu">
-              <li class="pin-title sidebar-main-title">
+              <li class="pin-title sidebar-main-title">   
                 <div> 
                   <h6 class="sidebar-title">Pinned</h6>
                 </div>
@@ -257,7 +257,7 @@
                   <h6 class="sidebar-title">General</h6>
                 </div>
               </li>
-              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"> <i class="iconly-Home icli"></i>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"> <i class="iconly-Home icli">  </i>
                   <h6>Dashboards</h6><span class="badge">2</span><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="index.html">Default</a></li>
@@ -271,23 +271,25 @@
                   <h6>Page layout</h6><i class="iconly-Arrow-Right-2 icli">                                               </i></a></li>
               <li class="sidebar-main-title">
                 <div>
-                  <h6 class="sidebar-title">Components </h6>
+                  <h6 class="sidebar-title pt-3">Components</h6>
                 </div>
               </li>
-              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
                   <h6>Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="typography.html">Typography</a></li>
                   <li><a href="avatars.html">Avatars</a></li>
                   <li> <a href="helper-classes.html">Helper classes</a></li>
                   <li> <a href="grid.html">Grid</a></li>
-                  <li> <a href="according.html">According</a></li>
+                  <li> <a href="accordion.html">Accordion</a></li>
                   <li> <a href="tag-pills.html">Tag pills</a></li>
                   <li> <a href="modal.html">Modal </a></li>
                   <li> <a href="popover.html">Popover </a></li>
                   <li> <a href="progress-bar.html">Progress bar</a></li>
                   <li> <a href="tab-bootstrap.html">Tab bootstrap</a></li>
                   <li> <a href="tooltip.html">Tooltip</a></li>
+                  <li> <a href="dropdown.html"> Dropdown</a></li>
+                  <li> <a href="list.html">List</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
@@ -334,7 +336,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Basic Tooltip</h3>
-                    <p class="f-m-light mt-1 mb-0">Use the <code>data-bs-title</code> to change tooltip title and <code>data-bs-toggle</code> to add tooltip attribute.</p>
+                    <p class="f-m-light mt-1 mb-0">Use <code>data-bs-toggle="tooltip"</code> to set the tooltip.</p>
                   </div>
                   <div class="card-body">
                     <button class="example-popover btn btn-primary mb-0 me-0" type="button" data-container="body" data-bs-toggle="tooltip" data-bs-placement="top" title="Surprise!!! Thank you for hovering...">It's magic please hover me... </button>
@@ -349,7 +351,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Colored Tooltip </h3>
-                    <p class="f-m-light mt-1 mb-0">Use the<code>btn- *</code> to change dark background color and  <code>data-bs-placement='*'  </code>to tooltip positions change.  </p>
+                    <p class="f-m-light mt-1 mb-0">Add <code>btn- *</code> class to set the colored tooltip.</p>
                   </div>
                   <div class="card-body"> 
                     <div class="common-flex">
@@ -367,14 +369,14 @@
                   <div class="card-header">
                     <h3>Tooltip  Directions</h3>
                     <p class="f-m-light mt-1 mb-0">
-                       Use the<code>btn-*</code> to change dark background color and                            <code> data-bs-placement='*'</code>[top/right/bottom/left] to tooltip direction change.</p>
+                       To set different direction use<code>data-bs-placement="top/right/bottom/left".</code></p>
                   </div>
                   <div class="card-body">
                     <div class="common-flex">
-                      <button class="btn btn-primary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top</button>
-                      <button class="btn btn-secondary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">Tooltip on right</button>
-                      <button class="btn btn-success mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-                      <button class="btn btn-warning mb-0 me-0 text-white" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">Tooltip on left</button>
+                      <button class="btn btn-primary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Top Tooltip</button>
+                      <button class="btn btn-secondary mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">Right Tooltip</button>
+                      <button class="btn btn-success mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Bottom Tooltip</button>
+                      <button class="btn btn-warning mb-0 me-0 text-white" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">Left Tooltip</button>
                     </div>
                   </div>
                 </div>
@@ -383,7 +385,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>HTML Elements With Hover Effect</h3>
-                    <p class="f-m-light mt-1 mb-0">Use the <code>bg-*-light</code> to change light background color and<code>data-bs-title</code> to the content under the HTML tag.</p>
+                    <p class="f-m-light mt-1 mb-0">Use html element with the help of <code>data-bs-title="".</code></p>
                   </div>
                   <div class="card-body">
                     <div class="common-flex tooltip-effect">
@@ -400,7 +402,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Filled Tooltip</h3>
-                    <p class="f-m-light mt-1 mb-0">Tooltip in hover effect through fill dark color.<code>[.btn-outline-*]</code>. and<code>data-bs-title </code></p>
+                    <p class="f-m-light mt-1 mb-0">Fill the btn on the hover effect with the help of <code>.btn-outline </code>class</p>
                   </div>
                   <div class="card-body fill-tooltip">
                     <div class="common-flex">
