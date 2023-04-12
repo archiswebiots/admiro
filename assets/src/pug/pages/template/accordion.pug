@@ -33,18 +33,17 @@ html(lang='en')
                                     .card-header
                                         h3 Simple Accordion
                                         p.f-m-light.mt-1.mb-0.mb-0
-                                            | Click the accordions below to expand/collapse the accordion content.
-                                            | Use the 
-                                            code .accordion 
-                                            | .
+                                            | Using the 
+                                            code .accordion   
+                                            | class to expand/collapse to accordion content.
                                     .card-body  
-                                        #accordionExample.accordion.dark-accordion
+                                        #simpleaccordion.accordion.dark-accordion
                                             .accordion-item
                                                 h2#headingOne.accordion-header
                                                     button.accordion-button.collapsed.accordion-light-primary.text-primary.active(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
                                                         | What do web designers do?
                                                         i.iconly-Arrow-Down-2.icli.ms-auto
-                                                #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#accordionExample')    
+                                                #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#simpleaccordion')    
                                                     .accordion-body
                                                         p
                                                             | Web design
@@ -52,10 +51,10 @@ html(lang='en')
                                                             |  of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images across a series of pages and integrating applications and other interactive elements.    
                                             .accordion-item.accordion-wrapper
                                                 h2#headingTwo.accordion-header
-                                                    button.accordion-button.collapsed.accordion-light-primary.text-primary(type='button' data-bs-toggle='collapse' data-bs-target='#left-collapseTwo' aria-expanded='false' aria-controls='left-collapseTwo')
+                                                    button.accordion-button.collapsed.accordion-light-primary.text-primary(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='left-collapseTwo')
                                                         | What is the use of web design?   
                                                         i.iconly-Arrow-Down-2.icli.ms-auto
-                                                #left-collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
+                                                #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#simpleaccordion')
                                                     .accordion-body
                                                         p
                                                             strong  Search engine optimization:
@@ -70,10 +69,10 @@ html(lang='en')
                                                             | Increasing the number of items sold or acquiring more active customers are objectives of a compelling website. As web design reaches targeted customers and search engines, it helps the business make conversions on their site and improve its sales.
                                             .accordion-item.accordion-wrapper
                                                 h2#headingThree.accordion-header
-                                                    button.accordion-button.collapsed.accordion-light-primary.text-primary(type='button' data-bs-toggle='collapse' data-bs-target='#left-collapseThree' aria-expanded='false' aria-controls='left-collapseThree')
+                                                    button.accordion-button.collapsed.accordion-light-primary.text-primary(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='left-collapseThree')
                                                         | What are the elements of web design?
                                                         i.iconly-Arrow-Down-2.icli.ms-auto 
-                                                #left-collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+                                                #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#simpleaccordion')
                                                     .accordion-body
                                                         p
                                                             | The web design process allows designers to adjust to any preferences and provide effective solutions. There are many standard components of every web design, including:
@@ -98,11 +97,9 @@ html(lang='en')
                                     .card-header
                                         h3 Flush Accordion  
                                         p.f-m-light.mt-1.mb-0
-                                            | Add
+                                            | Add  
                                             code .accordion-flush
-                                            |  to remove the default
-                                            code  background-color
-                                            |  , some borders, and some rounded corners to render accordions edge-to-edge with their parent container.
+                                            |  to remove the default background-color, border, etc.
                                     .card-body 
                                         #accordionFlushExample.accordion.accordion-flush.dark-accordion
                                             .accordion-item
@@ -146,11 +143,11 @@ html(lang='en')
                                     .card-header
                                         h3 Multiple Collapse Accordion
                                         p.f-m-light.mt-1.mb-0
-                                            | A
-                                            code  &lt;button&gt;
-                                            |   or  
-                                            code   &lt;a&gt;
-                                            |  can show and hide multiple elements by referencing them with a selector in its href or data-bs-target attribute. 
+                                            | Use 
+                                            code  href 
+                                            |   on  
+                                            code data-bs-toggle attribute
+                                            |  to show and hide multiple elements.
                                     .card-body 
                                         .common-flex
                                             a.btn.btn-primary(data-bs-toggle='collapse' href='#multiCollapseExample1' role='button' aria-expanded='false' aria-controls='multiCollapseExample1') Toggle first element
@@ -170,11 +167,11 @@ html(lang='en')
                                     .card-header
                                         h3 With Icons Accordion      
                                         p.f-m-light.mt-1.mb-0 
-                                            | Use the 
-                                            code .accordion 
-                                            | & 
-                                            code feather icons  
-                                            |  through change look icons accordion.
+                                            | Use 
+                                            code icons 
+                                            | with 
+                                            code .accordion  
+                                            |  to give better look.
                                     .card-body.accordion-border
                                         #accordionPanelsStayOpenExample.accordion
                                             .accordion-item
@@ -230,28 +227,28 @@ html(lang='en')
                                     .card-header
                                         h3 Left Side Bordered Accordion 
                                         p.f-m-light.mt-1.mb-0   
-                                            | make custom 
+                                            | Set border outline with accordion using 
                                             code .accordion-wrapper
-                                            |  class use to bring border-left side.
+                                            |  class.
                                     .card-body 
-                                        #accordionExample.accordion
+                                        #outlineaccordion.accordion.dark-accordion
                                             .accordion-item.accordion-wrapper.accordion-left-border   
-                                                h2#headingOne.accordion-header
+                                                h2#outlineaccordionone.accordion-header
                                                     button.accordion-button.collapsed.accordion-light-primary.text-primary(type='button' data-bs-toggle='collapse' data-bs-target='#left-collapseOne' aria-expanded='true' aria-controls='left-collapseOne')
                                                         | What do web designers do?
                                                         i.iconly-Arrow-Down-2.icli.ms-auto
-                                                #left-collapseOne.accordion-collapse.collapse(aria-labelledby='headingOne' data-bs-parent='#accordionExample')
+                                                #left-collapseOne.accordion-collapse.collapse(aria-labelledby='outlineaccordionone' data-bs-parent='#outlineaccordion')
                                                     .accordion-body
                                                         p
                                                             | Web design
                                                             em.text-danger  identifies the goals
                                                             |  of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images across a series of pages and integrating applications and other interactive elements.
-                                            .accordion-item.accordion-wrapper.accordion-border
-                                                h2#headingTwo.accordion-header
+                                            .accordion-item.accordion-wrapper.accordion-left-border
+                                                h2#outlineaccordiontwo.accordion-header
                                                     button.accordion-button.collapsed.accordion-light-primary.text-primary(type='button' data-bs-toggle='collapse' data-bs-target='#left-collapseTwo' aria-expanded='false' aria-controls='left-collapseTwo')
                                                         | What is the use of web design?
                                                         i.iconly-Arrow-Down-2.icli.ms-auto
-                                                #left-collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
+                                                #left-collapseTwo.accordion-collapse.collapse(aria-labelledby='outlineaccordiontwo' data-bs-parent='#outlineaccordion')
                                                     .accordion-body     
                                                         p
                                                             strong  Search engine optimization: 
@@ -264,12 +261,12 @@ html(lang='en')
                                                             br
                                                             strong  Improved sales:
                                                             | Increasing the number of items sold or acquiring more active customers are objectives of a compelling website. As web design reaches targeted customers and search engines, it helps the business make conversions on their site and improve its sales.
-                                            .accordion-item.accordion-wrapper.accordion-border
-                                                h2#headingThree.accordion-header
+                                            .accordion-item.accordion-wrapper.accordion-left-border
+                                                h2#outlineaccordionthree.accordion-header
                                                     button.accordion-button.collapsed.accordion-light-primary.text-primary(type='button' data-bs-toggle='collapse' data-bs-target='#left-collapseThree' aria-expanded='false' aria-controls='left-collapseThree')
                                                         | What are the elements of web design?
                                                         i.iconly-Arrow-Down-2.icli.ms-auto  
-                                                #left-collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+                                                #left-collapseThree.accordion-collapse.collapse(aria-labelledby='outlineaccordionthree' data-bs-parent='#outlineaccordion')
                                                     .accordion-body
                                                         p   
                                                             | The web design process allows designers to adjust to any preferences and provide effective solutions. There are many standard components of every web design, including:
@@ -311,7 +308,7 @@ html(lang='en')
                                     .card-header
                                         h3 Collapse Accordion  
                                         p.f-m-light.mt-1.mb-0 
-                                            | you can also use a link with the href attribute  
+                                            | Use a link with the href attribute  
                                             code (and a role="button"). 
                                             | In both cases, the 
                                             code data-bs-toggle="collapse"  

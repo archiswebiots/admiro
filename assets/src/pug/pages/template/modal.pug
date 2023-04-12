@@ -31,16 +31,16 @@ html(lang='en')
                                         li.breadcrumb-item.active Modal
                     // Container-fluid starts
                     .container-fluid
-                        .row.g-3
+                        .row.g-lg-3.g-2
                             .col-lg-6
                                 .card
                                     .card-header
                                         h3 Basic Modal
                                         p.mt-1.f-m-light.mb-0
-                                            | Different types of basic modals using like 
-                                            code simple/scrolling/tooltips/grid/varying modal  
-                                            | .
-                                    .card-body.badge-spacing
+                                            | Add different types of modal with the help of  
+                                            code data-bs-target  
+                                            | attribute.
+                                    .card-body.badge-spacing  
                                         // Simple demo
                                         button.btn.btn-secondary(type='button', data-bs-toggle='modal', data-original-title='test', data-bs-target='#exampleModal') Simple
                                         #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
@@ -179,8 +179,8 @@ html(lang='en')
                                     .card-header
                                         h3 Sizes Modal
                                         p.mt-1.f-m-light.mb-0
-                                            | Modals have three optional sizes, available via modifier classes to be placed on a 
-                                            code .modal-dialog 
+                                            | Set the different size of modal using 
+                                            code .bd-example-modal-(xl,lg,sm,fullscreen).          
                                     .card-body.badge-spacing
                                         //full screen modal
                                         .btn.btn-secondary(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-fullscreen') Full Screen Modal
@@ -206,7 +206,7 @@ html(lang='en')
                                                         h6
                                                             i.fa-solid.fa-angles-right
                                                             span UX Designer  
-                                                        p The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.      
+                                                        p The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a throught understanding of the end consumers.      
                                         //Extra large modal
                                         .btn.btn-info.text-white(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-xl') Extra large Modal
                                         .modal.fade.bd-example-modal-xl(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
@@ -231,7 +231,7 @@ html(lang='en')
                                                         h6
                                                             i.fa-solid.fa-angles-right
                                                             span UX Designer 
-                                                        p The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.
+                                                        p The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritised by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a throught understanding of the end consumers.
                                         // Large modal
                                         button.btn.btn-success(type='button', data-bs-toggle='modal', data-bs-target='.bd-example-modal-lg') Large Modal
                                         .modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
@@ -571,16 +571,14 @@ html(lang='en')
                                                     .modal-footer
                                                         button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
                                                         button.btn.btn-primary(type='button') Save changes
-                            .col-xl-4.mb-3
+                            .col-xl-4.mb-lg-3
                                 .card
                                     .card-header              
                                         h3 Centered Modal 
                                         p.f-m-light.mt-1.mb-0
-                                            | Use the
+                                            | Use 
                                             code .modal-dialog-centered 
-                                            | through centered modal. and set 
-                                            code data-bs-target 
-                                            |.
+                                            | to set the centered modal. 
                                     .card-body
                                         //Centered modal
                                         button.btn.btn-success(type='button', data-bs-toggle='modal', data-bs-target='#exampleModalCenter1')
@@ -597,16 +595,13 @@ html(lang='en')
                                                             p.text-center
                                                                 | Attackers on malicious activity may trick you into doing something dangrous like installing software or revealing your personal informations.
                                                             button.btn.btn-secondary.d-flex.m-auto(type='button', data-bs-dismiss='modal') Close
-                            .col-xl-4.mb-3
+                            .col-xl-4.mb-lg-3
                                 .card
                                     .card-header
                                         h3 Toggle Between Modals 
                                         p.f-m-light.mt-1.mb-0
-                                            | Toggle between multiple modals with some clever placement of the   
-                                            code data-bs-target 
-                                            | and     
-                                            code data-bs-toggle
-                                            |  attributes.
+                                            | To set the nested modal use the    
+                                            code exampleTogglelabel.
                                     .card-body
                                         #exampleModalToggle.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
                                             .modal-dialog.modal-dialog-centered
@@ -642,7 +637,9 @@ html(lang='en')
                                     .card-header
                                         h3 Static Backdrop Modal
                                         p.f-m-light.mt-1.mb-0 
-                                            | When backdrop is set to static, the modal will not close when clicking outside of it. Click the button below to try it.
+                                            | To set static backdrop , use 
+                                            code staticBackdrop 
+                                            | attributes.
                                     .card-body 
                                         button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop')
                                             | Static backdrop modal

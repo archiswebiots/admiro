@@ -241,13 +241,13 @@
               <div class="setting-icon"><i class="iconly-Setting icli">  </i></div>
             </div>
             <div class="user-content">
-              <h5>Amirreza Baqian</h5>
+              <h5 class="pb-1">Amirreza Baqian</h5>
               <h6>Product Designer</h6>
             </div>
           </div>
           <div class="main-sidebar">
             <ul class="sidebar-menu">
-              <li class="pin-title sidebar-main-title">
+              <li class="pin-title sidebar-main-title">   
                 <div> 
                   <h6 class="sidebar-title">Pinned</h6>
                 </div>
@@ -257,7 +257,7 @@
                   <h6 class="sidebar-title">General</h6>
                 </div>
               </li>
-              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"> <i class="iconly-Home icli"></i>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"> <i class="iconly-Home icli">  </i>
                   <h6>Dashboards</h6><span class="badge">2</span><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="index.html">Default</a></li>
@@ -271,23 +271,25 @@
                   <h6>Page layout</h6><i class="iconly-Arrow-Right-2 icli">                                               </i></a></li>
               <li class="sidebar-main-title">
                 <div>
-                  <h6 class="sidebar-title">Components </h6>
+                  <h6 class="sidebar-title pt-3">Components</h6>
                 </div>
               </li>
-              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
                   <h6>Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="typography.html">Typography</a></li>
                   <li><a href="avatars.html">Avatars</a></li>
                   <li> <a href="helper-classes.html">Helper classes</a></li>
                   <li> <a href="grid.html">Grid</a></li>
-                  <li> <a href="according.html">According</a></li>
+                  <li> <a href="accordion.html">Accordion</a></li>
                   <li> <a href="tag-pills.html">Tag pills</a></li>
                   <li> <a href="modal.html">Modal </a></li>
                   <li> <a href="popover.html">Popover </a></li>
                   <li> <a href="progress-bar.html">Progress bar</a></li>
                   <li> <a href="tab-bootstrap.html">Tab bootstrap</a></li>
                   <li> <a href="tooltip.html">Tooltip</a></li>
+                  <li> <a href="dropdown.html"> Dropdown</a></li>
+                  <li> <a href="list.html">List</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
@@ -414,7 +416,7 @@
                   <div class="card-body">
                     <div class="row g-xl-4 g-3">
                       <div class="col-xxl-3 col-sm-6">
-                        <div class="border-wrapper h-100 helper-bg dark-helper">
+                        <div class="border-wrapper h-100 alert-light-light dark-helper">
                           <h6 class="mb-3">Custom Border-radius Class</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box rounded-0 bg-light border"></div><span>.rounded-0 </span>
@@ -437,7 +439,7 @@
                         </div>
                       </div>
                       <div class="col-xxl-3 col-sm-6">
-                        <div class="border-wrapper h-100 helper-bg dark-helper">
+                        <div class="border-wrapper h-100 alert-light-light dark-helper">
                           <h6 class="mb-3">Border Color </h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box border-primary border"></div><span>.border-primary</span>
@@ -463,7 +465,7 @@
                         </div>
                       </div>
                       <div class="col-xxl-3 col-sm-6">
-                        <div class="border-wrapper h-100 helper-bg dark-helper">
+                        <div class="border-wrapper h-100 alert-light-light dark-helper">
                           <h6 class="mb-3">Border-Width</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box border-1 border"> </div><span>.border-1</span>
@@ -483,7 +485,7 @@
                         </div>
                       </div>
                       <div class="col-xxl-3 col-sm-6">    
-                        <div class="border-wrapper helper-bg h-100 dark-helper">
+                        <div class="border-wrapper alert-light-light h-100 dark-helper">
                           <h6 class="mb-3">Text Colors </h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box helper-text border text-primary">A</div><span>.text-primary</span>
@@ -717,11 +719,10 @@
                     <p class="f-m-light mt-1 mb-0"></p>To set different font-style use  <code> .f-s-* [normal/italic/oblique/initial/inherit]  </code>class.
                   </div>
                   <div class="card-body helper-font">
-                    <p class="fw-normal mb-lg-3 mb-2">This is a  <span class="text-primary"> .f-s-normal    </span> font-style </p>
-                    <p class="fst-italic mb-lg-3 mb-2">This is a <span class="text-secondary">.f-s-italic </span> font-style</p>
-                    <p class="f-s-oblique mb-lg-3 mb-2">This is a  <span class="text-success">.f-s-oblique </span> font-style</p>
-                    <p class="f-s-initial mb-lg-3 mb-2">This is a  <span class="text-danger">.f-s-initial </span> font-style</p>
-                    <p class="f-s-inherit">This is a <span class="text-info">.f-s-inherit </span> font-style</p>
+                    <p class="fw-normal mb-2">This is a  <b>.f-s-normal    </b> font-style </p>
+                    <p class="fst-italic mb-2">This is a <b>.f-s-italic </b> font-style</p>
+                    <p class="f-s-oblique mb-2">This is a   <b>.f-s-oblique </b> font-style</p>
+                    <p class="f-s-inherit">This is a <b>.f-s-inherit </b> font-style</p>
                   </div>
                 </div>
               </div>
@@ -761,25 +762,25 @@
                   </div>
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2 gap-2">
-                      <div class="font-primary">This is a font-primary text used class as .font-primary</div>
+                      <div class="font-primary">This is a <b>font-primary </b>text used class as .font-primary</div>
                     </div>
                     <div class="d-flex align-items-center mb-2 gap-2">
-                      <div class="font-secondary">This is a font-secondary text used class as .font-secondary</div>
+                      <div class="font-secondary">This is a <b>font-secondary </b>text used class as .font-secondary</div>
                     </div>
                     <div class="d-flex align-items-center mb-2 gap-2">
-                      <div class="font-success">This is a font-success text used class as .font-success</div>
+                      <div class="font-success">This is a <b>font-success </b>text used class as .font-success</div>
                     </div>
                     <div class="d-flex align-items-center mb-2 gap-2">
-                      <div class="font-warning">This is a font-warning text used class as .font-warning</div>
+                      <div class="font-warning">This is a <b>font-warning </b>text used class as .font-warning</div>
                     </div>
                     <div class="d-flex align-items-center mb-2 gap-2">
-                      <div class="font-danger">This is a font-danger text used class as .font-danger</div>
+                      <div class="font-danger">This is a <b>font-danger </b>text used class as .font-danger</div>
                     </div>
                     <div class="d-flex align-items-center mb-2 gap-2">
-                      <div class="font-info">This is a font-info text used class as .font-info</div>
+                      <div class="font-info">This is a <b>font-info </b>text used class as .font-info</div>
                     </div>
                     <div class="d-flex align-items-center gap-2">
-                      <div class="font-dark">This is a font-dark text used class as .font-dark</div>
+                      <div class="font-dark">This is a <b>font-dark </b>text used class as .font-dark</div>
                     </div>
                   </div>
                 </div>

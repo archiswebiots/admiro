@@ -10803,7 +10803,7 @@ textarea.form-control-lg {
   --gray-700: 73, 80, 87;
   --gray2: 211, 211, 211;
   --table-border:228, 228, 228;
-  --helper-bg: 241, 239, 238;
+  --alert-light-light: 241, 239, 238;
   --dropdown-menu: 43, 43, 43;
   --dropdown-bg-color:249, 249, 249;
   --dropdown-content-color:242, 242, 242;
@@ -12195,7 +12195,6 @@ ul {
 .card {
   border-radius: 1.5rem;
   border: unset;
-  height: 100%;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
 }
@@ -12374,7 +12373,7 @@ th {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
 }
 .avatars .avatar {
   position: relative;
@@ -12403,20 +12402,20 @@ th {
   border-radius: 35px;
 }
 .avatars .img-100 {
-  width: calc(75px + 25 * (100vw - 320px) / 1600);
-  height: calc(75px + 25 * (100vw - 320px) / 1600);
+  width: calc(65px + 35 * (100vw - 320px) / 1600);
+  height: calc(65px + 35 * (100vw - 320px) / 1600);
 }
 .avatars .img-90 {
-  width: calc(65px + 25 * (100vw - 320px) / 1600);
-  height: calc(65px + 25 * (100vw - 320px) / 1600);
+  width: calc(55px + 35 * (100vw - 320px) / 1600);
+  height: calc(55px + 35 * (100vw - 320px) / 1600);
 }
 .avatars .img-80 {
-  width: calc(55px + 25 * (100vw - 320px) / 1600);
-  height: calc(55px + 25 * (100vw - 320px) / 1600);
+  width: calc(45px + 35 * (100vw - 320px) / 1600);
+  height: calc(45px + 35 * (100vw - 320px) / 1600);
 }
 .avatars .img-70 {
-  width: calc(45px + 25 * (100vw - 320px) / 1600);
-  height: calc(45px + 25 * (100vw - 320px) / 1600);
+  width: calc(35px + 35 * (100vw - 320px) / 1600);
+  height: calc(35px + 35 * (100vw - 320px) / 1600);
 }
 .avatars .img-50 {
   width: 50px !important;
@@ -12492,8 +12491,8 @@ th {
 }
 
 .avtar-xxl {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
 }
 
 .avtar-xl {
@@ -12507,18 +12506,18 @@ th {
 }
 
 .avtar-md {
-  width: 58px;
-  height: 58px;
+  width: 55px;
+  height: 55px;
 }
 
 .avtar-sm {
-  width: 49px;
-  height: 49px;
+  width: 45px;
+  height: 45px;
 }
 
 .avtar-xs {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 /**=====================
@@ -12577,8 +12576,8 @@ th {
   color: rgba(var(--white), 1);
 }
 
-.helper-bg {
-  background-color: rgba(var(--helper-bg), 0.439);
+.alert-light-light {
+  background-color: rgba(var(--alert-light-light), 0.439);
 }
 
 .alert-light-primary {
@@ -12723,9 +12722,6 @@ th {
   align-items: center;
   height: 33px;
   width: 33px;
-}
-.badge-spacing .badge.badge-p-space {
-  padding: 10px 13px;
 }
 .badge-spacing .badge + .badge {
   margin-left: 0px;

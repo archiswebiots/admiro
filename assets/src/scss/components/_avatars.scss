@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;    
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
     .avatar {
         position: relative;
         &.ratio {
@@ -36,22 +36,22 @@
     }
 
     .img-100 {
-        width: calc(75px + (100 - 75) * ((100vw - 320px) / (1920 - 320)));
-        height: calc(75px + (100 - 75) * ((100vw - 320px) / (1920 - 320)));
+        width: calc(65px + (100 - 65) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(65px + (100 - 65) * ((100vw - 320px) / (1920 - 320)));
     }
     .img-90 {
-        width: calc(65px + (90 - 65) * ((100vw - 320px) / (1920 - 320)));
-        height: calc(65px + (90 - 65) * ((100vw - 320px) / (1920 - 320)));
+        width: calc(55px + (90 - 55) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(55px + (90 - 55) * ((100vw - 320px) / (1920 - 320)));
     }
 
     .img-80 {
-        width: calc(55px + (80 - 55) * ((100vw - 320px) / (1920 - 320)));
-        height: calc(55px + (80 - 55) * ((100vw - 320px) / (1920 - 320)));
+        width: calc(45px + (80 - 45) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(45px + (80 - 45) * ((100vw - 320px) / (1920 - 320)));
     }
 
     .img-70 {
-        width: calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320)));
-        height: calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320)));
+        width: calc(35px + (70 - 35) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(35px + (70 - 35) * ((100vw - 320px) / (1920 - 320)));
     }
     .img-50{
         width: 50px !important;
@@ -140,8 +140,8 @@
    }
 }
 .avtar-xxl{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 .avtar-xl{
     width: 75px;
@@ -152,16 +152,16 @@
     height: 65px;
 }
 .avtar-md{
-    width: 58px;
-    height: 58px;
+    width: 55px;
+    height: 55px;
 }
 .avtar-sm{
-    width: 49px;
-    height: 49px;
+    width: 45px;
+    height: 45px;
 }
 .avtar-xs{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 
