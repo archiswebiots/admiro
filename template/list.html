@@ -293,7 +293,12 @@
                 </ul>
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
-                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li><a href="scrollable.html">Scrollable</a></li>
+                  <li> <a href="breadcrumb.html">Breadcrumb</a></li>
+                </ul>
+              </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
                   <h6>Builders</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
@@ -388,7 +393,7 @@
                     <p class="mt-1 f-m-light mb-0">Use contextual classes to style list items with a stateful background and color.<code>.list-light-*</code> and<code>text-*</code>.</p>
                   </div>
                   <div class="card-body">
-                    <div class="list-group"><a class="list-group-item list-group-item-action list-light-primary" href="#">This is Primary bg you can use <em class="text-primary fw-bold">.list-light-primary</em>  class.</a><a class="list-group-item list-group-item-action list-light-secondary" href="#">This is Secondary bg you can use <em class="text-secondary fw-bold">.list-light-secondary</em>  class.</a><a class="list-group-item list-group-item-action list-light-success" href="#">This is Success bg you can use    <em class="text-success fw-bold">.list-light-success</em>  class.</a><a class="list-group-item list-group-item-action list-light-danger" href="#">This is Danger bg you can use<em class="text-danger fw-bold">.list-light-danger</em>  class. </a><a class="list-group-item list-group-item-action list-light-warning" href="#">This is Warning bg you can use <em class="text-warning fw-bold">.list-light-warning</em>  class.</a><a class="list-group-item list-group-item-action list-light-info" href="#">This is Info bg you can use <em class="text-info fw-bold">.list-light-info    </em>  class.</a><a class="list-group-item list-group-item-action list-light-white" href="#">This is White bg you can use<em class="text-white fw-bold">.list-light-white</em>  class.</a><a class="list-group-item list-group-item-action list-light-dark" href="#">This is White bg you can use<em class="text-white fw-bold">.list-light-dark</em>  class.</a></div>
+                    <div class="list-group"><a class="list-group-item list-group-item-action list-light-primary" href="#">This is Primary bg you can use    <em class="text-primary fw-bold">.list-light-primary</em>  class.</a><a class="list-group-item list-group-item-action list-light-secondary" href="#">This is Secondary bg you can use   <em class="text-secondary fw-bold">.list-light-secondary</em>  class.</a><a class="list-group-item list-group-item-action list-light-success" href="#">This is Success bg you can use     <em class="text-success fw-bold">.list-light-success</em>  class.</a><a class="list-group-item list-group-item-action list-light-danger" href="#">This is Danger bg you can use   <em class="text-danger fw-bold">.list-light-danger</em>  class. </a><a class="list-group-item list-group-item-action list-light-warning" href="#">This is Warning bg you can use   <em class="text-warning fw-bold">.list-light-warning</em>  class.</a><a class="list-group-item list-group-item-action list-light-info" href="#">This is Info bg you can use   <em class="text-info fw-bold">.list-light-info    </em>  class.</a></div>
                   </div>
                 </div>
               </div>
@@ -479,7 +484,7 @@
               <div class="col-xxl-4 col-md-6">
                 <div class="card">
                   <div class="card-header">
-                    <h3>Lists With Checkbox</h3>
+                    <h3>Lists With Checkboxs</h3>
                     <p class="mt-1 f-m-light mb-0">Use the<code>.form-check-input </code>to check your checkbox.</p>
                   </div>
                   <div class="card-body">
@@ -508,7 +513,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Lists With Radios</h3>
-                    <p class="mt-1 f-m-light mb-0">Use the<code>.form-check-input</code>to check your radio buttons.</p>
+                    <p class="mt-1 f-m-light mb-0">Use the  <code>.form-check-input   </code>to check your radio buttons.</p>
                   </div>
                   <div class="card-body"> 
                     <ul class="list-group">
@@ -536,7 +541,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Lists With Numbers</h3>
-                    <p class="mt-1 f-m-light mb-0">Use the<code>.list-group-numbered</code>to ordered wise print numbers.</p>
+                    <p class="mt-1 f-m-light mb-0">Use the  <code>.list-group-numbered  </code>to ordered wise print numbers.</p>
                   </div>
                   <div class="card-body">
                     <ol class="list-group list-group-numbered">
@@ -552,7 +557,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>JavaScript Behavior</h3>
-                    <p class="mt-1 f-m-light mb-0">Use the tab JavaScript plugin—include it individually or through the compiled<code> bootstrap.js</code>file to extend our list group to create table panes of local content.</p>
+                    <p class="mt-1 f-m-light mb-0">Use the tab JavaScript plugin—include it individually or through the compiled<code> bootstrap.js  </code>file to extend our list group to create table panes of local content.</p>
                   </div>
                   <div class="card-body">
                     <div class="row">
@@ -578,15 +583,34 @@
                           <div class="tab-pane fade dark-list" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
                             <p class="mb-0">
                               <div class="flex-space flex-wrap align-items-center list-light-dark"><img class="tab-image" src="../assets/images/avtar/3.jpg" alt="profile">
-                                <p><strong>Visit Us:</strong>	2600 Hollywood Blvd,Florida, United States-	33020<br><strong>Mail Us:</strong>contact@us@gmail.com<br><strong>Contact Number:   </strong>(954) 357-7760</p>
+                                <ul class="d-flex flex-column gap-2">
+                                  <li><strong>Visit Us:</strong>	2600 Hollywood Blvd,Florida, United States-	33020</li>
+                                  <li><strong>Mail Us:</strong>contact@us@gmail.com</li>
+                                  <li> <strong>Contact Number:   </strong>(954) 357-7760</li>
+                                </ul>
                               </div>
                             </p>
                           </div>
                           <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                            <p class="pt-3">Us Technology offers web & mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them.<br><strong>Visit Us:</strong>	2600 Hollywood Blvd,Florida, United States-	33020<br><strong>Mail Us:</strong>contact@us@gmail.com<br><strong>Contact Number:</strong>(954) 357-7760</p>
+                            <ul class="d-flex flex-column gap-1">
+                              <li>Us Technology offers web & mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them.</li>
+                              <li> <strong>Visit Us:</strong>	2600 Hollywood Blvd,Florida, United States-	33020</li>
+                              <li> <strong>Mail Us:</strong>contact@us@gmail.com</li>
+                              <li><strong>Contact Number:</strong>(954) 357-7760</li>
+                            </ul>
                           </div>
                           <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                            <p><strong>Available pages in Theme:</strong><br>--> Typography:<br>Typography is the art of arranging letters and text in a way that makes the copy legible, clear, and visually appealing to the reader.<br>--> Tooltip:<br>A tooltip is a brief, informative message that appears when a user interacts with an element in a graphical user interface (GUI).  </p>
+                            <ul class="d-flex flex-column gap-2">
+                              <li><strong>Available pages in Theme:</strong></li>
+                              <li>
+                                --> Typography:
+                                Typography is the art of arranging letters and text in a way that makes the copy legible, clear, and visually appealing to the reader.
+                              </li>
+                              <li>
+                                --> Tooltip:
+                                A tooltip is a brief, informative message that appears when a user interacts with an element in a graphical user interface (GUI).  
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -626,7 +650,7 @@
                     <p class="mt-1 f-m-light mb-0">Use<code> .disabled </code>to a <code>.list-group-item</code> to make it appear disabled.</p>
                   </div>
                   <div class="card-body">
-                    <div class="list-group"><a class="list-group-item list-group-item-action list-hover-primary active" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/1.jpg" alt="user">Teresa J. Mosteller</a><a class="list-group-item list-group-item-action list-hover-secondary" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/3.png" alt="user">Gloria D. Acheson</a><a class="list-group-item list-group-item-action disabled" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/2.jpg" alt="user">Sharon C. Obrien</a><a class="list-group-item list-group-item-action disabled" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/5.jpg" alt="user">Bryan A. Owens</a></div>
+                    <div class="list-group"><a class="list-group-item list-group-item-action list-hover-primary active" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/1.jpg" alt="user">Teresa J. Mosteller</a><a class="list-group-item list-group-item-action list-hover-primary" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/3.png" alt="user">Gloria D. Acheson</a><a class="list-group-item list-group-item-action disabled" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/2.jpg" alt="user">Sharon C. Obrien</a><a class="list-group-item list-group-item-action disabled" href="javascript:void(0)"><img class="rounded-circle" src="../assets/images/user/5.jpg" alt="user">Bryan A. Owens</a></div>
                   </div>
                 </div>
               </div>
@@ -634,7 +658,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Scrollable Lists </h3>
-                    <p class="mt-1 f-m-light mb-0">Use the property<code>overflow:auto</code>through scrollable lists.</p>
+                    <p class="mt-1 f-m-light mb-0">Use the property<code>overflow:auto   </code>through scrollable lists.</p>
                   </div>
                   <div class="card-body"> 
                     <div class="list-group main-lists-content scrollbar-wrapper">   <a class="list-group-item list-group-item-action active list-hover-primary" href="#" aria-current="true">
@@ -708,5 +732,6 @@
     <!-- tooltip-->
     <!-- modal validation-->
     <!-- modal -->
+    <!-- alert-->
   </body>
 </html>

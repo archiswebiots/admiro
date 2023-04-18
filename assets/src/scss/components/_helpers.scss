@@ -40,7 +40,11 @@
     width: 60px;
     height: 30px;
 }
-
+.dark-helper{
+    &.border{
+        border: transparent !important;
+    }
+}
 .fill-wrapper {
     background-color: rgba(var(--bg-light),1);
 }
@@ -70,7 +74,7 @@
     background-color: rgba(var(--info-color),0.5);
 }
 .alert-light-dark{  
-    background-color: rgba(var(--dark),0.3);
+    background-color: rgba(var(--dark),0.1);
 }
 .light-card, .light-background{
     background-color: rgba(var(--light-background),0.7);

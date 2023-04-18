@@ -31,7 +31,7 @@ html(lang='en')
                         .col-12
                             .card
                                 .card-header
-                                    h3 Borders And Displays
+                                    h3 Borders
                                     p.f-m-light.mt-1.mb-0
                                         | Use border utilities to add or remove an element's borders.
                                 .card-body
@@ -96,7 +96,7 @@ html(lang='en')
                         .col-12 
                             .card   
                                 .card-header
-                                    h3 Styles In Borders
+                                    h3 Borders Style
                                     p.f-m-light.mt-1.mb-0
                                         | Use of any component to give the different styles of border using  
                                         code border-*radius/border-color/border-width  
@@ -104,7 +104,7 @@ html(lang='en')
                                 .card-body
                                     .row.g-xl-4.g-3
                                         .col-xxl-3.col-sm-6
-                                            .border-wrapper.h-100.alert-light-light.dark-helper
+                                            .border-wrapper.h-100.alert-light-light.dark-helper.border
                                                 h6.mb-3 Custom Border-radius Class
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.rounded-0.bg-light.border
@@ -125,8 +125,8 @@ html(lang='en')
                                                     .helper-box.rounded-5.bg-light.border
                                                     span .rounded-5
                                         .col-xxl-3.col-sm-6
-                                            .border-wrapper.h-100.alert-light-light.dark-helper
-                                                h6.mb-3 Border Color 
+                                            .border-wrapper.h-100.alert-light-light.dark-helper.border
+                                                h6.mb-3 Border Colors
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.border-primary.border
                                                     span .border-primary
@@ -149,7 +149,7 @@ html(lang='en')
                                                     .helper-box.border-dark.border
                                                     span .border-dark
                                         .col-xxl-3.col-sm-6
-                                            .border-wrapper.h-100.alert-light-light.dark-helper
+                                            .border-wrapper.h-100.alert-light-light.dark-helper.border
                                                 h6.mb-3 Border-Width
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.border-1.border 
@@ -167,7 +167,7 @@ html(lang='en')
                                                     .helper-box.border-5.border
                                                     span .border-
                                         .col-xxl-3.col-sm-6     
-                                            .border-wrapper.alert-light-light.h-100.dark-helper
+                                            .border-wrapper.alert-light-light.h-100.dark-helper.border
                                                 h6.mb-3 Text Colors 
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.helper-text.border.text-primary A
@@ -202,10 +202,10 @@ html(lang='en')
                                         code .bg-* 
                                         | &  
                                         code .alert-light-* 
-                                        | class   
+                                        | class.
                                 .card-body 
                                     .row.g-xl-4.g-3
-                                        .col-md-4.col-sm-6
+                                        .col-sm-6.col-xl-4
                                             .border-wrapper.h-100.border
                                                 h6.mb-3 Dark Background
                                                 .d-flex.align-items-center.mb-2.gap-2
@@ -232,7 +232,7 @@ html(lang='en')
                                                 .d-flex.align-items-center.gap-2
                                                     .helper-box.bg-light
                                                     | .bg-light
-                                        .col-md-4.col-sm-6
+                                        .col-sm-6.col-xl-4
                                             .border-wrapper.h-100.border
                                                 h6.mb-3 Light Backgrounds
                                                 .d-flex.align-items-center.mb-2.gap-2
@@ -259,7 +259,7 @@ html(lang='en')
                                                 .d-flex.align-items-center.gap-2
                                                     .helper-box.helper-bg
                                                     | .helper-bg
-                                        .col-md-4.col-sm-12  
+                                        .col-sm-12.col-xl-4
                                             .border-wrapper.h-100.border
                                                 h6.mb-3 Extended Background Colors
                                                 .d-flex.align-items-center.mb-2.gap-2
@@ -392,9 +392,9 @@ html(lang='en')
                                 .card-header
                                     h3 Font-Style
                                     p.f-m-light.mt-1.mb-0
-                                    | To set different font-style use  
-                                    code  .f-s-* [normal/italic/oblique/initial/inherit]  
-                                    | class.
+                                        | To set different font-style use  
+                                        code  .f-s-*[normal/italic/oblique/initial/inherit]  
+                                        | class.
                                 .card-body.helper-font
                                     p.fw-normal.mb-2
                                         | This is a  
@@ -418,7 +418,7 @@ html(lang='en')
                                     h3 Font Weight 
                                     p.f-m-light.mt-1.mb-0
                                         | Using  
-                                        code .f-w-* [100/300/400/600/700/900]  
+                                        code .f-w-*[100/300/400/600/700/900]  
                                         | class set different font-weight.
                                 .card-body  
                                     .d-flex.align-items-center.mb-2.gap-2   
@@ -478,18 +478,13 @@ html(lang='en')
                                             | This is a 
                                             b font-info 
                                             | text used class as .font-info
-                                    .d-flex.align-items-center.gap-2
-                                        .font-dark
-                                            | This is a 
-                                            b font-dark 
-                                            | text used class as .font-dark
                         .col-12.mb-md-4.mb-3
                             .card
                                 .card-header
                                     h3 Font Sizes
                                     p.f-m-light.mt-1.mb-0
                                         | Use 
-                                        code .f-* [14/16/18/20/22/24/26/28/30/32/34/36/38/40]  
+                                        code .f-*[14/16/18..etc]  
                                         | class to add font-sizes.
                                 .card-body
                                     .gradient-border

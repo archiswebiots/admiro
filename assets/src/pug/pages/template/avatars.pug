@@ -35,7 +35,7 @@ html(lang='en')
                       h3.mb-0 Sizes
                       p.mb-0.mt-1
                         | Set the size of avatars using 
-                        code .img- *(70/80/90/100)
+                        code .img-*(70/80/90/100)
                         |  class.
                     .card-body.avatar-showcase
                       .avatars
@@ -53,7 +53,7 @@ html(lang='en')
                       h3.mb-0 Status Indicator
                       p.mb-0.mt-1
                         | Add 
-                        code  .status-* (online/offline/dnd)
+                        code  .status-*(online/offline/dnd)
                         |  class to set the status.         
                     .card-body.avatar-showcase
                       .avatars
@@ -72,7 +72,7 @@ html(lang='en')
                       h3 Shapes
                       p.mb-0.mt-1
                         | Use 
-                        code .b-r-* (8/30/35/25)
+                        code .b-r-*(8/30/35/25)
                         |  class shapes of avatar.
                     .card-body.avatar-showcase
                       .avatars
@@ -92,7 +92,7 @@ html(lang='en')
                         | Give the shape to avatar using 
                         code .ratio
                         |  and 
-                        code  img-* (50/70/80/90/100)
+                        code  img-*(50/70/80/90/100)
                         |  class.
                     .card-body.avatar-showcase
                       .avatars
@@ -114,7 +114,7 @@ html(lang='en')
                         | Use set the group of avatars using    
                         code .img-*(40/50/60/80/100) 
                         | & 
-                        code .b-r-* (8/30/35) 
+                        code .b-r-*(8/30/35) 
                         | class.
                     .card-body.avatar-showcase
                       .avatars
@@ -149,17 +149,17 @@ html(lang='en')
                       p.mb-0.mt-1 Use initial letter to set avatars.
                     .card-body.avatar-showcase
                       .avatars
-                        div.avatar-intial.avtar-xxl.bg-light-primary
+                        div.avatar-intial.img-80.bg-light-primary
                           span.fs-1 A
-                        div.avatar-intial.avtar-xl.bg-light-secondary
+                        div.avatar-intial.img-70.bg-light-secondary
                           span.fs-2 D
-                        div.avatar-intial.avtar-lg.bg-light-danger
+                        div.avatar-intial.img-60.bg-light-danger
                           span.fs-3 M
-                        div.avatar-intial.avtar-md.bg-light-primary
+                        div.avatar-intial.img-50.bg-light-primary
                           span.fs-4 I
-                        div.avatar-intial.avtar-sm.bg-light-secondary
+                        div.avatar-intial.img-40.bg-light-secondary
                           span.fs-5 R
-                        div.avatar-intial.avtar-xs.bg-light-danger
+                        div.avatar-intial.img-30.bg-light-danger
                           span.fs-6 O
                 .col-xl-4.col-sm-6.mt-xl-4.mt-0.mb-xl-4.mb-3  
                   .card 
@@ -172,16 +172,16 @@ html(lang='en')
                     .card-body.avatar-showcase
                       .avatars
                         div.avatar
-                          img.avtar-xxl.rounded-circle(src='../assets/images/avtar/11.jpg', alt='avatar') 
+                          img.img-80.rounded-circle(src='../assets/images/avtar/11.jpg', alt='avatar') 
                           div.ping.status-offline.status  
                         div.avatar  
-                          img.avtar-xl.rounded-circle(src='../assets/images/avtar/4.jpg', alt='avatar') 
+                          img.img-70.rounded-circle(src='../assets/images/avtar/4.jpg', alt='avatar') 
                           div.ping.status-online.status
                         div.avatar
-                          img.avtar-lg.rounded-circle(src='../assets/images/user/1.jpg', alt='avatar')     
+                          img.img-60.rounded-circle(src='../assets/images/user/1.jpg', alt='avatar')     
                           div.ping.status-dnd.status 
                         div.avatar
-                          img.avtar-md.rounded-circle(src='../assets/images/avtar/3.jpg', alt='avatar') 
+                          img.img-50.rounded-circle(src='../assets/images/avtar/3.jpg', alt='avatar') 
                           div.ping.status-offline.status
                 .col-xl-4.col-sm-6.mt-xl-4.mt-0.mb-xl-4.mb-3        
                   .card   
@@ -194,10 +194,8 @@ html(lang='en')
                           img(src="../assets/images/profile.png" alt="user")     
                           .setting-icon   
                               i.iconly-Setting.icli                  
-                        .user-img
-                          img(src="../assets/images/profile.png" alt="user") 
-                          .setting-icon    
-                              i.iconly-Edit.icli               
+                        div.avatar-intial.img-60.bg-light-primary.avatar-profile
+                          img(src="../assets/images/users/6.png" alt="users")
         include ../../components/footer    
       include ../../components/footer-files  
                           

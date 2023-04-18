@@ -291,7 +291,12 @@
                 </ul>
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
-                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li><a href="scrollable.html">Scrollable</a></li>
+                  <li> <a href="breadcrumb.html">Breadcrumb</a></li>
+                </ul>
+              </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
                   <h6>Builders</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
@@ -483,12 +488,12 @@
                 <div class="card">
                   <div class="card-header">
                     <h3 class="mb-0">Listing Typography</h3>
-                    <p class="f-m-light mt-1 mb-0">All typography list:- <code>&lt;ul&gt; </code>, <code>&lt;ol&gt; </code> &amp; <code>&lt;dl&gt; </code></p>
+                    <p class="f-m-light mt-1 mb-0">All typography list:- <code>&lt;ul&gt; </code>, <code>&lt;ol&gt; </code> &amp; <code>&lt;dl&gt;</code>.</p>
                   </div>
                   <div class="card-body">
                     <div class="row g-3">
                       <div class="col-md-6 col-xl-4">
-                        <div class="card-wrapper border rounded-3">
+                        <div class="card-wrapper border rounded-3 list-section">
                           <h6 class="sub-title fw-bold">Unorder list</h6>
                           <ul>
                             <li>One who looks on the bright side of things</li>
@@ -507,7 +512,7 @@
                       <div class="col-md-6 col-xl-4">
                         <div class="card-wrapper border rounded-3 h-100">
                           <h6 class="sub-title fw-bold">Order list</h6>
-                          <ol>
+                          <ol class="ps-3">
                             <li>UI Kits </li>
                             <li>Bonus Ui</li>
                             <li>Animations </li>
@@ -531,15 +536,15 @@
                           <h6 class="sub-title fw-bold">Order list</h6>
                           <dl>
                             <dt>The way to get started is to quit talking and begin doing.</dt>
-                            <dd>-Walt Disney</dd>
+                            <dd class="ms-4">-Walt Disney</dd>
                             <dt>Life is what happens when you're busy making other plans.</dt>
-                            <dd>-John Lennon</dd>
+                            <dd class="ms-4">-John Lennon</dd>
                             <dt>Whoever is happy will make others happy too. </dt>
-                            <dd>-Anne Frank</dd>
+                            <dd class="ms-4">-Anne Frank</dd>
                             <dt>Life is either a daring adventure or nothing at all.</dt>
-                            <dd>-Helen Keller</dd>
+                            <dd class="ms-4">-Helen Keller</dd>
                             <dt>The purpose of our lives is to be happy.</dt>
-                            <dd class="mb-0">-Dalai Lama</dd>
+                            <dd class="mb-0 ms-4">-Dalai Lama</dd>
                           </dl>
                         </div>
                       </div>
@@ -550,7 +555,7 @@
               <div class="col-sm-12 col-xl-6">
                 <div class="card">
                   <div class="card-header">
-                    <h3>Inline text elements</h3>
+                    <h3>Inline Text Elements</h3>
                     <p class="f-m-light mt-1 mb-0">Styling for common inline HTML5 elements.</p>
                   </div>
                   <div class="card-body">
@@ -564,9 +569,6 @@
                       <p class="mb-0">
                         <s>This line of text is meant to be treated as no longer accurate.</s>
                       </p>
-                      <p class="mb-0"><ins>
-                          This line of text is meant to be treated as an addition to the
-                          document.</ins></p>
                       <p class="mb-0">
                         <u>This line of text will render as underlined</u>
                       </p>
@@ -581,18 +583,17 @@
                 <div class="card">
                   <div class="card-header">
                     <h3 class="mb-0">Text Color</h3>
-                    <p class="f-m-light mt-1 mb-0">You can Give text color by using <code>txt-*</code> class</p>
+                    <p class="f-m-light mt-1 mb-0">You can Give text color by using <code>txt-*</code> class.</p>
                   </div>
                   <div class="card-body">
                     <div class="d-flex flex-column gap-2">
-                      <p class="text-primary mb-0">This is Primary text You can archive this adding<code>.text-primary</code> class</p>
-                      <p class="text-secondary mb-0">This is Secondary text You can archive this adding<code>.text-secondary</code> class</p>
-                      <p class="text-success mb-0">This is Success text You can archive this adding<code>.text-success</code> class</p>
-                      <p class="text-info mb-0">This is Info text You can archive this adding<code>.text-info</code> class</p>
-                      <p class="text-warning mb-0">This is Warning text You can archive this adding<code>.text-warning</code> class</p>
-                      <p class="text-danger mb-0">This is Danger text You can archive this adding<code>.text-danger</code> class</p>
-                      <p class="text-dark mb-0">This is Dark text You can archive this adding<code>.text-dark</code> class</p>
-                      <p class="text-gray2 mb-0">This is light text You can archive this adding<code>.text-light</code> class</p>
+                      <p class="text-primary mb-0">This is Primary text You can archive this adding<code>.text-primary</code> class.</p>
+                      <p class="text-secondary mb-0">This is Secondary text You can archive this adding<code>.text-secondary</code> class.</p>
+                      <p class="text-success mb-0">This is Success text You can archive this adding<code>.text-success</code> class.</p>
+                      <p class="text-info mb-0">This is Info text You can archive this adding<code>.text-info</code> class.</p>
+                      <p class="text-warning mb-0">This is Warning text You can archive this adding<code>.text-warning</code> class.</p>
+                      <p class="text-danger mb-0">This is Danger text You can archive this adding<code>.text-danger</code> class.</p>
+                      <p class="text-dark mb-0">This is Dark text You can archive this adding<code>.text-dark</code> class.</p>
                     </div>
                   </div>
                 </div>
@@ -657,4 +658,5 @@
   <!-- tooltip-->
   <!-- modal validation-->
   <!-- modal -->
+  <!-- alert-->
 </html>

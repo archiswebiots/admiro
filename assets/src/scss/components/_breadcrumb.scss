@@ -1,22 +1,7 @@
 /**=====================
     Breadcrumb css start
 ==========================**/
-.breadcrumb {
-    --bs-breadcrumb-margin-bottom: 0;
-    &-item {
-        .svg-color {
-            padding: 5px;
-            width: 26px;
-            height: 26px;
-            border: 1px solid rgba(var(--shape-border),1);
-            border-radius: $breadcrumb-icon-radius;
-            box-shadow: $breadcrumb-icon-shadow;
-        }
-    }
-    display: flex;
-    align-items: center;  
-    justify-content: end;
-}
+
 .page-title {
     align-items: center;
     padding: $title-spacing;
@@ -32,9 +17,92 @@
             font-size: 18px;
         } 
     }
-
-
+    .breadcrumb {
+        --bs-breadcrumb-margin-bottom: 0;
+        &-item {
+            .svg-color {
+                padding: 5px;
+                width: 26px;
+                height: 26px;
+                border: 1px solid rgba(var(--shape-border),1);
+                border-radius: $breadcrumb-icon-radius;
+                box-shadow: $breadcrumb-icon-shadow;
+            }
+        }
+        display: flex;
+        align-items: center;  
+        justify-content: end;
+    }    
+    .row{
+        align-items: center;
+    }   
 }
+.breadcrumb-item{
+    &.active{
+        color: rgba(var(--primary-color),1)
+    }
+}
+.breadcrumb-style2{
+    .breadcrumb-item +{
+        .breadcrumb-item{
+            &::before{
+                content: ">";
+                width: 16px;
+                text-align: center; 
+            }
+        }
+    } 
+}
+.breadcrumb-style3{
+        li{
+            span{
+                font-size: 40px;
+                &::before{
+                    content: ".";
+                    position: absolute;
+                    top: -30px;
+                    left: 4px;
+                    height: 0.5rem;
+                    width: 0.5rem;
+                    border-radius: 9999px;
+                    background-color: rgba(var(--secondary),1);
+                }
+            }
+            
+        }
+    li{
+        position: relative;
+    }
+}
+@each $breadcrumb-name, $breadcrumb-color in (primary, rgba(var(--primary-color),1)),
+  (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+  (danger, rgba(var(--danger-color),1)), (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1))
+  {
+    .breadcrumb-#{$breadcrumb-name}{
+      color: $breadcrumb-color;
+      .breadcrumb-item{
+        + .breadcrumb-item{
+            &::before{
+                color: $breadcrumb-color;
+            }
+        }
+      } 
+    }
+}
+.color-breadcrumb{
+    .breadcrumb{
+        padding: 5px 10px;
+        border-radius: 5px;
+        .breadcrumb-item{
+            + .breadcrumb-item{
+                &::before{
+                    color: rgba(var(--white),1);
+                }
+            }
+          } 
+    }
+}
+
 /**=====================
     Breadcrumb css end
 ==========================**/
