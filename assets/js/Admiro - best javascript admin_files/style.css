@@ -10766,7 +10766,6 @@ textarea.form-control-lg {
   --table-border:228, 228, 228;
   --alert-light-light: 241, 239, 238;
   --border-light-color:243, 243, 243;
-  --form-select:206, 212, 218;
   --dropdown-menu: 43, 43, 43;
   --dropdown-bg-color:249, 249, 249;
   --dropdown-content-color:242, 242, 242;
@@ -11241,12 +11240,6 @@ ul {
 
 .search-form .input-group .form-control::placeholder {
   color: rgba(var(--light-text), 1);
-}
-
-.form-select:focus {
-  border-color: rgba(var(--form-select), 1);
-  outline: 0;
-  box-shadow: unset;
 }
 
 /**=====================
@@ -14184,8 +14177,7 @@ th {
   min-height: 200px;
 }
 .placement-toast .bd-example-toasts .toast:not(.showing):not(.show) {
-  opacity: 1;
-  display: block;
+  opacity: 1 !important;
 }
 
 /**=====================

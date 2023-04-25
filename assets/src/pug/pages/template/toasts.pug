@@ -1,0 +1,131 @@
+-var sidebar    = true;
+-var toasts     = true; 
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper  
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper  
+                include ../../components/sidebar 
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | Toasts 
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Bonus Ui
+                                        li.breadcrumb-item.active Toasts
+                    // Container-fluid starts
+                    .container-fluid
+                        .row.g-3
+                            .col-md-6
+                                .card.toasts-section.h-100
+                                    .card-header
+                                        h4 Live Toast
+                                        p.f-m-light.mt-1.mb-0
+                                            | Use the
+                                            code .hide 
+                                            | &
+                                            code .show 
+                                            | class.
+                                    .card-body.position-relative 
+                                        button#basicToastBtn.btn.btn-danger(type='button') Show live toast
+                                        .toast-container.position-fixed.bottom-0.end-0.p-3
+                                            #basicToast.toast(role='alert' aria-live='assertive' aria-atomic='true')
+                                                .toast-header.toasts-sec
+                                                    strong.me-auto emay walker
+                                                    small 11 mins ago
+                                                    button.btn-close(type="button" data-bs-dismiss="toast" aria-label="Close")
+                                                .toast-body 
+                                                    span Hello, world! This is a toast message.
+                            .col-md-6
+                                .card.h-100
+                                    .card-header
+                                        h4 Color Schemes
+                                        p.f-m-light.mt-1.mb-0
+                                            | Use the 
+                                            code .hide
+                                            | class through hide toast and 
+                                            code .show
+                                            | class through visible toast. 
+                                    .card-body.position-relative
+                                        .toast.defaul-show-toast.align-items-center.show.text-white.bg-primary.position-relative( aria-live="assertive"  , data-bs-autohide="false", aria-atomic="false")
+                                            .toast-body
+                                                | Hello, world! This is a toast message.   
+                                                button.btn-close.btn-close-white.position-absolute.top-50.end-0.translate-middle(type="button" data-bs-dismiss="toast" aria-label="Close")
+                            .col-md-6
+                                .card.h-100
+                                    .card-header
+                                        h4 Custom content
+                                        p.f-m-light.mt-1.mb-0
+                                            | Use the 
+                                            code .hide  
+                                            | class through hide toast and 
+                                            code .show  
+                                            | class through visible toast.  
+                                    .card-body
+                                        .toast.defaul-show-toast.show( aria-live='assertive'  , data-bs-autohide='false', aria-atomic='false')
+                                                .toast-header
+                                                    strong.me-auto emay walker
+                                                    small 11 mins ago
+                                                    button.btn-close(type="button" data-bs-dismiss="toast" aria-label="Close")
+                                                .toast-body 
+                                                    span Hello, world! This is a toast message.
+                            .col-md-6
+                                .card.h-100
+                                    .card-header
+                                        h4 Custom Content
+                                        p.f-m-light.mt-1.mb-0
+                                            | Use the 
+                                            code .hide  
+                                            | class through hide toast and 
+                                            code .show  
+                                            | class through visible toast.  
+                                    .card-body
+                                        .toast.defaul-show-toast.show( aria-live="assertive"  , data-bs-autohide="false", aria-atomic="false")
+                                                .toast-header
+                                                    span Hello, world! This is a toast message.
+                                                .toast-body
+                                                    button.btn.btn-primary Take action
+                                                    button.btn.btn-light.ms-2(type="button" data-bs-dismiss="toast" aria-label="Close") Close
+
+                            .col-sm-12.mb-3
+                                .card.placement-toast
+                                    .card-header
+                                        h4 Toast Placement
+                                    .card-body  
+                                        form
+                                            div.mb-3
+                                                select.form-select.changeoption#selectToastPlacement
+                                                    option(value=""  selected) Select a position...
+                                                    option(value="top-0 start-0" ) Top left
+                                                    option(value="top-0 start-50 translate-middle-x") Top center
+                                                    option(value="top-0 end-0") Top right
+                                                    option(value="top-50 start-0 translate-middle-y") Middle left
+                                                    option(value="top-50 start-50 translate-middle") Middle center
+                                                    option(value="top-50 end-0 translate-middle-y") Middle right    
+                                                    option(value="bottom-0 start-0") Bottom left
+                                                    option(value="bottom-0 start-50 translate-middle-x") Bottom center
+                                                    option(value="bottom-0 end-0") Bottom right
+                                        .position-relative.bd-example-toasts(aria-live="polite" aria-atomic="true")
+                                            .toast-container.position-absolute.custom-toast-placement#toastPlacement
+                                                .toast
+                                                    .toast-header
+                                                        strong.me-auto emay walker
+                                                        small 11 mins ago  
+                                                    .toast-body 
+                                                        span  Hello, world! This is a toast message.
+                                                           
+            include ../../components/footer
+        include ../../components/footer-files

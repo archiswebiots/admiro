@@ -1,0 +1,115 @@
+@each $page-name, $page-color in (primary, rgba(var(--primary-color),1)),
+  (secondary, rgba(var(--secondary-color),1)), (warning, rgba(var(--warning-color),1)),(success, rgba(var(--success-color),1)),
+  (danger, rgba(var(--danger-color),1)), (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1))
+  {
+    .pagination-#{$page-name} {
+        .page-item {
+          .page-link {
+            color: $page-color !important;
+            &:hover{
+                background-color: $page-color !important;
+                border-color: $page-color  !important;
+                color: rgba(var(--white),1) !important;
+            }
+            &:focus{
+                box-shadow: none !important;
+            }
+          }
+    
+          &.active {
+            .page-link {
+              color: rgba(var(--white),1) !important;
+              background-color: $page-color!important;
+              border-color: $page-color;
+            }
+          }
+        }
+    }
+}
+// @each $pagination-name, $pagination-color in (primary, rgba(var(--primary-color),1)),
+//   (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+//   (danger, rgba(var(--danger-color),1)), (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1))
+//   {
+//     .outline-pagination-#{$pagination-name} {
+//       .page-item{
+//         &.active,&:hover{
+//             .page-link {
+//                 border-color: $pagination-color;
+//                 background-color: unset;
+//                 color: unset;
+//             }
+//         }
+//       }
+//     }
+//   }
+
+.outline-pagination{
+  .page-item{
+      &.active,&:hover{
+          .page-link {
+              border-color: rgba(var(--primary-color),1); 
+              background-color: unset;
+
+          }
+      }
+      .page-link{
+        color: rgba(var(--primary-color),1);
+      }
+      
+  }
+}
+
+
+.pagination-secondary{
+    .page-item{ 
+        &.disabled{
+            .page-link{
+                background-color: rgba(var(--light-color),1);
+            }   
+        }
+    }
+}
+.pagination-danger{
+  .disabled{
+    .page-link{
+      color: rgba(var(--danger-color),0.5) !important;
+    }
+  }
+}
+.pagination{
+  --bs-pagination-border-color: rgba(var(--border-light-color),1);
+  .page-item{
+    .page-link{
+      &.rounded-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+      }
+    }
+    &.disabled{
+      .page-link{
+        border-color: rgba(var(--border-light-color),1);
+      }
+    }
+    &.active{
+      z-index: 1;
+    }
+  }
+  &.pagination-lg{
+    @media (max-width: 572px) {
+      .page-link{
+        padding: 10px 17px;
+        font-size: 16px;
+      }
+      
+    }
+  }
+  &.justify-content-end, &.justify-content-start{
+    @media (max-width: 572px) {
+        justify-content: center !important;
+      
+    }
+  }
+}

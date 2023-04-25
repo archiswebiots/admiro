@@ -53,29 +53,16 @@
         }
     } 
 }
-.breadcrumb-style3{
-        li{
-            span{
-                font-size: 40px;
-                &::before{
-                    content: ".";
-                    position: absolute;
-                    top: -30px;
-                    left: 4px;
-                    height: 0.5rem;
-                    width: 0.5rem;
-                    border-radius: 9999px;
-                    background-color: rgba(var(--secondary),1);
-                }
-            }
-            
+.breadcrumb-style4{
+    .breadcrumb-item{
+        i{
+            padding: 5px 6px;
+            background-color: rgba(var(--light-gray),1);
         }
-    li{
-        position: relative;
     }
 }
 @each $breadcrumb-name, $breadcrumb-color in (primary, rgba(var(--primary-color),1)),
-  (secondary, rgba(var(--secondary-color),1)), (success, rgba(var(--success-color),1)),
+  (secondary, rgba(var(--secondary-color),1)),(warning, rgba(var(--warning-color),1)), (success, rgba(var(--success-color),1)),
   (danger, rgba(var(--danger-color),1)), (info, rgba(var(--info-color),1)), (light, rgba(var(--light-color),1))
   {
     .breadcrumb-#{$breadcrumb-name}{

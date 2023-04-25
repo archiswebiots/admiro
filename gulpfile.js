@@ -16,16 +16,16 @@ const paths = {
   },
 };
 
-/// vendors css ///
-// gulp.task('vendors', function () {
-//   return gulp.src(
-//     [
-//       // './node_modules/bootstrap/dist/css/bootstrap.min.css',
-//     ], { base: 'node_modules' })
-//      .pipe(sass({
-//       }).on('error', sass.logError))
-//     .pipe(gulp.dest('./assets/css/vendors/'));
-// });
+/ vendors css ///
+gulp.task('vendors', function () {
+  return gulp.src(
+    [
+      // './node_modules/bootstrap/dist/css/bootstrap.min.css',
+    ], { base: 'node_modules' })
+     .pipe(sass({
+      }).on('error', sass.logError))
+    .pipe(gulp.dest('./assets/css/vendors/'));
+});
 
 /// vendors js ///
 gulp.task('js_file', function () {
