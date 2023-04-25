@@ -185,11 +185,12 @@ html(lang='en')
                           | , 
                           code &lt;ol&gt; 
                           |  &amp; 
-                          code &lt;dl&gt; 
+                          code &lt;dl&gt;
+                          | .
                     .card-body
                       .row.g-3
                         .col-md-6.col-xl-4
-                          .card-wrapper.border.rounded-3
+                          .card-wrapper.border.rounded-3.list-section
                             h6.sub-title.fw-bold Unorder list
                             ul
                               li One who looks on the bright side of things
@@ -205,7 +206,7 @@ html(lang='en')
                         .col-md-6.col-xl-4
                           .card-wrapper.border.rounded-3.h-100
                             h6.sub-title.fw-bold Order list
-                            ol
+                            ol.ps-3
                               li UI Kits 
                               li Bonus Ui
                               li Animations 
@@ -224,19 +225,19 @@ html(lang='en')
                             h6.sub-title.fw-bold Order list
                             dl
                               dt The way to get started is to quit talking and begin doing.
-                              dd -Walt Disney
+                              dd.ms-4 -Walt Disney
                               dt Life is what happens when you're busy making other plans.
-                              dd -John Lennon
+                              dd.ms-4 -John Lennon
                               dt Whoever is happy will make others happy too. 
-                              dd -Anne Frank
+                              dd.ms-4 -Anne Frank
                               dt Life is either a daring adventure or nothing at all.
-                              dd -Helen Keller
+                              dd.ms-4 -Helen Keller
                               dt The purpose of our lives is to be happy.
-                              dd.mb-0 -Dalai Lama
+                              dd.mb-0.ms-4 -Dalai Lama
                 .col-sm-12.col-xl-6
                   .card
                     .card-header
-                      h3 Inline text elements
+                      h3 Inline Text Elements
                       p.f-m-light.mt-1.mb-0 Styling for common inline HTML5 elements.
                     .card-body
                         .d-flex.flex-column.gap-2
@@ -248,10 +249,6 @@ html(lang='en')
                             del This line of text is meant to be treated as deleted text.
                           p.mb-0
                             s This line of text is meant to be treated as no longer accurate.
-                          p.mb-0
-                            ins
-                              | This line of text is meant to be treated as an addition to the
-                              | document.
                           p.mb-0
                             u This line of text will render as underlined
                           p.mb-0
@@ -267,41 +264,37 @@ html(lang='en')
                       p.f-m-light.mt-1.mb-0
                         | You can Give text color by using 
                         code txt-*
-                        |  class
+                        |  class.
                     .card-body
                         .d-flex.flex-column.gap-2
                           p.text-primary.mb-0
                             | This is Primary text You can archive this adding
                             code .text-primary
-                            |  class
+                            |  class.
                           p.text-secondary.mb-0
                             | This is Secondary text You can archive this adding
                             code .text-secondary
-                            |  class
+                            |  class.
                           p.text-success.mb-0
                             | This is Success text You can archive this adding
                             code .text-success
-                            |  class
+                            |  class.
                           p.text-info.mb-0
                             | This is Info text You can archive this adding
                             code .text-info
-                            |  class
+                            |  class.
                           p.text-warning.mb-0
                             | This is Warning text You can archive this adding
                             code .text-warning
-                            |  class
+                            |  class.
                           p.text-danger.mb-0
                             | This is Danger text You can archive this adding
                             code .text-danger
-                            |  class
+                            |  class.
                           p.text-dark.mb-0
                             | This is Dark text You can archive this adding
                             code .text-dark
-                            |  class
-                          p.text-gray2.mb-0
-                            | This is light text You can archive this adding
-                            code .text-light
-                            |  class
+                            |  class.
                 .col-sm-12.mb-4
                   .card.overflow-hidden
                     .card-header

@@ -293,7 +293,12 @@
                 </ul>
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
-                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li><a href="scrollable.html">Scrollable</a></li>
+                  <li> <a href="breadcrumb.html">Breadcrumb</a></li>
+                </ul>
+              </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
                   <h6>Builders</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
@@ -335,7 +340,7 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3>Borders And Displays</h3>
+                    <h3>Borders</h3>
                     <p class="f-m-light mt-1 mb-0">Use border utilities to add or remove an element's borders.</p>
                   </div>
                   <div class="card-body">
@@ -410,13 +415,13 @@
               <div class="col-12"> 
                 <div class="card">  
                   <div class="card-header">
-                    <h3>Styles In Borders</h3>
+                    <h3>Borders Style</h3>
                     <p class="f-m-light mt-1 mb-0">Use of any component to give the different styles of border using  <code>border-*radius/border-color/border-width  </code>class.</p>
                   </div>
                   <div class="card-body">
                     <div class="row g-xl-4 g-3">
                       <div class="col-xxl-3 col-sm-6">
-                        <div class="border-wrapper h-100 alert-light-light dark-helper">
+                        <div class="border-wrapper h-100 alert-light-light dark-helper border">
                           <h6 class="mb-3">Custom Border-radius Class</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box rounded-0 bg-light border"></div><span>.rounded-0 </span>
@@ -439,8 +444,8 @@
                         </div>
                       </div>
                       <div class="col-xxl-3 col-sm-6">
-                        <div class="border-wrapper h-100 alert-light-light dark-helper">
-                          <h6 class="mb-3">Border Color </h6>
+                        <div class="border-wrapper h-100 alert-light-light dark-helper border">
+                          <h6 class="mb-3">Border Colors</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box border-primary border"></div><span>.border-primary</span>
                           </div>
@@ -465,7 +470,7 @@
                         </div>
                       </div>
                       <div class="col-xxl-3 col-sm-6">
-                        <div class="border-wrapper h-100 alert-light-light dark-helper">
+                        <div class="border-wrapper h-100 alert-light-light dark-helper border">
                           <h6 class="mb-3">Border-Width</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box border-1 border"> </div><span>.border-1</span>
@@ -485,7 +490,7 @@
                         </div>
                       </div>
                       <div class="col-xxl-3 col-sm-6">    
-                        <div class="border-wrapper alert-light-light h-100 dark-helper">
+                        <div class="border-wrapper alert-light-light h-100 dark-helper border">
                           <h6 class="mb-3">Text Colors </h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box helper-text border text-primary">A</div><span>.text-primary</span>
@@ -521,11 +526,11 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Background Colors </h3>
-                    <p class="f-m-light mt-1 mb-0">Using any component to add background color using <code>.bg-* </code>&  <code>.alert-light-* </code>class   </p>
+                    <p class="f-m-light mt-1 mb-0">Using any component to add background color using <code>.bg-* </code>&  <code>.alert-light-* </code>class.</p>
                   </div>
                   <div class="card-body"> 
                     <div class="row g-xl-4 g-3">
-                      <div class="col-md-4 col-sm-6">
+                      <div class="col-sm-6 col-xl-4">
                         <div class="border-wrapper h-100 border">
                           <h6 class="mb-3">Dark Background</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
@@ -554,7 +559,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4 col-sm-6">
+                      <div class="col-sm-6 col-xl-4">
                         <div class="border-wrapper h-100 border">
                           <h6 class="mb-3">Light Backgrounds</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
@@ -583,7 +588,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4 col-sm-12"> 
+                      <div class="col-sm-12 col-xl-4">
                         <div class="border-wrapper h-100 border">
                           <h6 class="mb-3">Extended Background Colors</h6>
                           <div class="d-flex align-items-center mb-2 gap-2">
@@ -716,7 +721,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Font-Style</h3>
-                    <p class="f-m-light mt-1 mb-0"></p>To set different font-style use  <code> .f-s-* [normal/italic/oblique/initial/inherit]  </code>class.
+                    <p class="f-m-light mt-1 mb-0">To set different font-style use  <code> .f-s-*[normal/italic/oblique/initial/inherit]  </code>class.</p>
                   </div>
                   <div class="card-body helper-font">
                     <p class="fw-normal mb-2">This is a  <b>.f-s-normal    </b> font-style </p>
@@ -730,7 +735,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Font Weight </h3>
-                    <p class="f-m-light mt-1 mb-0">Using  <code>.f-w-* [100/300/400/600/700/900]  </code>class set different font-weight.</p>
+                    <p class="f-m-light mt-1 mb-0">Using  <code>.f-w-*[100/300/400/600/700/900]  </code>class set different font-weight.</p>
                   </div>
                   <div class="card-body"> 
                     <div class="d-flex align-items-center mb-2 gap-2">  
@@ -779,9 +784,6 @@
                     <div class="d-flex align-items-center mb-2 gap-2">
                       <div class="font-info">This is a <b>font-info </b>text used class as .font-info</div>
                     </div>
-                    <div class="d-flex align-items-center gap-2">
-                      <div class="font-dark">This is a <b>font-dark </b>text used class as .font-dark</div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -789,7 +791,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h3>Font Sizes</h3>
-                    <p class="f-m-light mt-1 mb-0">Use <code>.f-* [14/16/18/20/22/24/26/28/30/32/34/36/38/40]  </code>class to add font-sizes.</p>
+                    <p class="f-m-light mt-1 mb-0">Use <code>.f-*[14/16/18..etc]  </code>class to add font-sizes.</p>
                   </div>
                   <div class="card-body">
                     <div class="gradient-border">
@@ -845,6 +847,7 @@
       <!-- tooltip-->
       <!-- modal validation-->
       <!-- modal -->
+      <!-- alert-->
     </div>
   </body>
 </html>

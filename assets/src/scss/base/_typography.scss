@@ -110,6 +110,12 @@ ul {
         }
     }
 }
+.list-section{
+    ul{
+        list-style: disc;
+        margin-left: 15px;
+    }
+}
 // common flex property
 .common-flex {
     display: flex;

@@ -76,6 +76,14 @@ th {
 				border-bottom: none;
 			}
 		}
+		td{
+			&:first-child{
+				min-width: 100px;
+			}
+			&:last-child{
+				min-width: 300px;
+			}
+		}
 	}
 }
 

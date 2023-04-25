@@ -1,0 +1,47 @@
+-var sidebar    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper 
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | scrollable 
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Bonus Ui
+                                        li.breadcrumb-item.active Scrollable
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                            .col-xl-6
+                                .card
+                                    .card-header
+                                        h3.mb-0 Custom Scrollbar 
+                                        p.f-m-light.mt-1.mb-0
+                                            | Used  
+                                            code .vertical-scroll  
+                                            | and   
+                                            code .scroll-demo  
+                                            | through design scrollbar.    
+                                    .card-body
+                                        .vertical-scroll.scroll-demo    
+                                            h5.pb-2 Custom Scrollbar 
+                                         
+
+            include ../../components/footer  
+        include ../../components/footer-files

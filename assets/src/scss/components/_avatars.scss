@@ -53,14 +53,22 @@
         width: calc(35px + (70 - 35) * ((100vw - 320px) / (1920 - 320)));
         height: calc(35px + (70 - 35) * ((100vw - 320px) / (1920 - 320)));
     }
+
     .img-50{
         width: 50px !important;
+        height: 50px !important;
     }
     .img-60 {
         width: 60px !important;
+        height: 60px !important;
     }
     .img-40 {
         width: 40px !important;
+        height: 40px !important;
+    }
+    .img-30 {
+        width: 35px !important;
+        height: 35px !important;
     }
 }
 
@@ -139,29 +147,13 @@
        }
    }
 }
-.avtar-xxl{
-    width: 80px;
-    height: 80px;
-}
-.avtar-xl{
-    width: 75px;
-    height: 75px;
-}
-.avtar-lg{
-    width: 65px;
-    height: 65px;
-}
-.avtar-md{
-    width: 55px;
-    height: 55px;
-}
-.avtar-sm{
-    width: 45px;
-    height: 45px;
-}
-.avtar-xs{
-    width: 35px;
-    height: 35px;
+.avatar-profile{
+    &.bg-light-primary{
+        &:hover{
+            background-color: rgba(var(--primary-color), 0.1);
+            color: rgba(var(--primary-color), 1);
+        }
+    }
 }
 
 
