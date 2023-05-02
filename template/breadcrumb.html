@@ -297,6 +297,7 @@
                 <ul class="sidebar-submenu"> 
                   <li><a href="scrollable.html">Scrollable</a></li>
                   <li> <a href="breadcrumb.html">Breadcrumb</a></li>
+                  <li><a href="pagination.html">Pagination</a></li>
                 </ul>
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
@@ -394,13 +395,13 @@
                     <p class="f-m-light mb-0">You can set icons breadcrumb using <code>.breadcrumb </code>class.</p>
                   </div>
                   <div class="card-body"> 
-                    <nav class="breadcrumb-icon mb-2" aria-label="breadcrumb">
+                    <nav class="breadcrumb-icon mb-3" aria-label="breadcrumb">
                       <ol class="breadcrumb bg-white p-l-0 mb-0">
                         <li class="breadcrumb-item"><a href="javascript:void(0)"><i class="iconly-Home icli"></i></a></li>
                         <li class="breadcrumb-item active">Ui Kits</li>
                       </ol>
                     </nav>
-                    <nav class="breadcrumb-icon mb-0" aria-label="breadcrumb">
+                    <nav class="breadcrumb-icon breadcrumb-style4 mb-0" aria-label="breadcrumb">
                       <ol class="breadcrumb bg-white m-b-0 p-b-0 p-l-0 mb-1">
                         <li class="breadcrumb-item"><a href="javascript:void(0)"><i class="iconly-Home icli"></i></a></li>
                         <li class="breadcrumb-item">Ui Kits</li>
@@ -410,7 +411,33 @@
                   </div>
                 </div>
               </div>
-              <!-- Nav breadcrumb start-->
+              <!--simple breadcrumb-->
+              <div class="col-sm-6 mb-3">
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <h4>Simple breadcrumb </h4>
+                    <p class="f-m-light mt-1 mb-0">
+                       Breadcrumb with page name </p>
+                  </div>
+                  <div class="card-body"> 
+                    <nav class="mb-0" aria-label="breadcrumb">
+                      <ol class="breadcrumb mb-1"> 
+                        <li class="breadcrumb-item"><a href="javascript:void(0)"><i class="iconly-Home icli pe-1"> </i></a>  Home</li>
+                        <li class="breadcrumb-item">Bonus Ui </li>
+                        <li class="breadcrumb-item">Reting</li>
+                      </ol>
+                    </nav>
+                    <nav class="mb-0" aria-label="breadcrumb">
+                      <ol class="breadcrumb breadcrumb-style3 mb-1"> 
+                        <li class="breadcrumb-item"><a href="javascript:void(0)"><i class="iconly-Home icli pe-1"> </i></a>  Home</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)"><i class="iconly-Folder icli"></i></a>  Tables</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)"><i class="iconly-Paper icli"></i></a>  Simple</li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <!-- breadcrumb alignment-->
               <div class="col-sm-6">  
                 <div class="card"> 
                   <div class="card-header">   
@@ -418,15 +445,22 @@
                     <p class="f-m-light mt-1 mb-0">Breadcrumb alignment <code>.justify-content-*   </code>class.</p>
                   </div>
                   <div class="card-body"> 
+                    <nav class="mb-0" arial-label="breadcrumb">
+                      <ol class="breadcrumb justify-content-start breadcrumb-primary mb-1"> 
+                        <li class="breadcrumb-item">Home </li>
+                        <li class="breadcrumb-item">Ui Kits </li>
+                        <li class="breadcrumb-item">Grid </li>
+                      </ol>
+                    </nav>
                     <nav class="mb-0" aria-label="breadcrumb">
-                      <ol class="breadcrumb justify-content-center breadcrumb-success mb-1"> 
+                      <ol class="breadcrumb justify-content-center breadcrumb-warning mb-1"> 
                         <li class="breadcrumb-item">Home</li>
                         <li class="breadcrumb-item">Ui Kits </li>
                         <li class="breadcrumb-item">Grid  </li>
                       </ol>
                     </nav>
                     <nav class="mb-0" aria-label="breadcrumb">
-                      <ol class="breadcrumb justify-content-end breadcrumb-danger mb-1"> 
+                      <ol class="breadcrumb justify-content-end breadcrumb-secondary mb-1"> 
                         <li class="breadcrumb-item">Home </li>
                         <li class="breadcrumb-item">Ui Kits</li>
                         <li class="breadcrumb-item">Grid </li>
@@ -456,41 +490,6 @@
                         <li class="breadcrumb-item">Home </li>
                         <li class="breadcrumb-item">Ui Kits </li>
                         <li class="breadcrumb-item">Dropdown</li>
-                      </ol>
-                    </nav>
-                    <nav class="mb-0" aria-label="breadcrumb">
-                      <ol class="breadcrumb bg-success mb-1"> 
-                        <li class="breadcrumb-item">Home </li>
-                        <li class="breadcrumb-item">Ui Kits </li>
-                        <li class="breadcrumb-item">List </li>
-                      </ol>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-              <!--simple breadcrumb-->
-              <div class="col-sm-6 mb-3">
-                <div class="card"> 
-                  <div class="card-header"> 
-                    <h4>Simple breadcrumb </h4>
-                    <p class="f-m-light mt-1 mb-0">
-                       Breadcrumb with page name </p>
-                  </div>
-                  <div class="card-body"> 
-                    <nav class="mb-0" aria-label="breadcrumb">
-                      <ol class="breadcrumb mb-1"> 
-                        <li class="breadcrumb-item"><a href="javascript:void(0)"><i class="iconly-Home icli pe-1"> </i></a>  Home</li>
-                        <li class="breadcrumb-item">Bonus Ui </li>
-                        <li class="breadcrumb-item">Reting</li>
-                      </ol>
-                    </nav>
-                    <nav class="mb-0" aria-label="breadcrumb">
-                      <ol class="breadcrumb breadcrumb-style3 mb-1"> 
-                        <li class="breadcrumb-item">Home </li>
-                        <li class="px-2"><span></span></li>
-                        <li class="breadcrumb-item">Ui Kits</li>
-                        <li class="px-2"><span> </span></li>
-                        <li class="breadcrumb-item">Popover </li>
                       </ol>
                     </nav>
                   </div>

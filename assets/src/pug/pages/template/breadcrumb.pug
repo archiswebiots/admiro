@@ -7,7 +7,7 @@ html(lang='en')
     body
         // page-wrapper Start
         #pageWrapper.page-wrapper.compact-wrapper
-            include ../../components/header/header
+            include ../../components/header/header 
             // Page Body Start
             .page-body-wrapper
                 include ../../components/sidebar
@@ -77,20 +77,50 @@ html(lang='en')
                                             code .breadcrumb 
                                             | class.
                                     .card-body  
-                                        nav(aria-label="breadcrumb").breadcrumb-icon.mb-2
+                                        nav(aria-label="breadcrumb").breadcrumb-icon.mb-3
                                             ol.breadcrumb.bg-white.p-l-0.mb-0
                                                 li.breadcrumb-item
                                                     a(href='javascript:void(0)')
                                                         i.iconly-Home.icli
                                                 li.breadcrumb-item.active Ui Kits
-                                        nav(aria-label="breadcrumb").breadcrumb-icon.mb-0
+                                        nav(aria-label="breadcrumb").breadcrumb-icon.breadcrumb-style4.mb-0
                                             ol.breadcrumb.bg-white.m-b-0.p-b-0.p-l-0.mb-1
                                                 li.breadcrumb-item
                                                     a(href='javascript:void(0)')
                                                         i.iconly-Home.icli
                                                 li.breadcrumb-item Ui Kits
                                                 li.breadcrumb-item.active Avatars
-                            // Nav breadcrumb start
+                            //simple breadcrumb
+                            .col-sm-6.mb-3
+                                .card 
+                                    .card-header 
+                                        h4 Simple breadcrumb 
+                                        p.f-m-light.mt-1.mb-0 
+                                            | Breadcrumb with page name 
+                                    .card-body 
+                                        nav(aria-label="breadcrumb").mb-0
+                                            ol.breadcrumb.mb-1 
+                                                li.breadcrumb-item
+                                                    a(href="javascript:void(0)")
+                                                        i.iconly-Home.icli.pe-1 
+                                                    |   Home
+                                                li.breadcrumb-item Bonus Ui 
+                                                li.breadcrumb-item Reting
+                                        nav(aria-label="breadcrumb").mb-0
+                                            ol.breadcrumb.breadcrumb-style3.mb-1 
+                                                li.breadcrumb-item
+                                                    a(href="javascript:void(0)")
+                                                        i.iconly-Home.icli.pe-1 
+                                                    |   Home
+                                                li.breadcrumb-item
+                                                    a(href="javascript:void(0)")
+                                                        i.iconly-Folder.icli
+                                                    |   Tables
+                                                li.breadcrumb-item
+                                                    a(href="javascript:void(0)")
+                                                        i.iconly-Paper.icli
+                                                    |   Simple
+                            // breadcrumb alignment
                             .col-sm-6   
                                 .card 
                                     .card-header    
@@ -100,13 +130,18 @@ html(lang='en')
                                             code .justify-content-*   
                                             | class.
                                     .card-body 
+                                        nav(arial-label="breadcrumb").mb-0
+                                            ol.breadcrumb.justify-content-start.breadcrumb-primary.mb-1 
+                                                li.breadcrumb-item Home 
+                                                li.breadcrumb-item Ui Kits 
+                                                li.breadcrumb-item Grid 
                                         nav(aria-label="breadcrumb").mb-0
-                                            ol.breadcrumb.justify-content-center.breadcrumb-success.mb-1 
+                                            ol.breadcrumb.justify-content-center.breadcrumb-warning.mb-1 
                                                 li.breadcrumb-item Home
                                                 li.breadcrumb-item Ui Kits 
                                                 li.breadcrumb-item Grid  
                                         nav(aria-label="breadcrumb").mb-0
-                                            ol.breadcrumb.justify-content-end.breadcrumb-danger.mb-1 
+                                            ol.breadcrumb.justify-content-end.breadcrumb-secondary.mb-1 
                                                 li.breadcrumb-item Home 
                                                 li.breadcrumb-item Ui Kits
                                                 li.breadcrumb-item Grid 
@@ -130,37 +165,5 @@ html(lang='en')
                                                 li.breadcrumb-item Home 
                                                 li.breadcrumb-item Ui Kits 
                                                 li.breadcrumb-item Dropdown
-                                        nav(aria-label="breadcrumb").mb-0
-                                            ol.breadcrumb.bg-success.mb-1 
-                                                li.breadcrumb-item Home 
-                                                li.breadcrumb-item Ui Kits 
-                                                li.breadcrumb-item List 
-                                                
-
-                            //simple breadcrumb
-                            .col-sm-6.mb-3
-                                .card 
-                                    .card-header 
-                                        h4 Simple breadcrumb 
-                                        p.f-m-light.mt-1.mb-0 
-                                            | Breadcrumb with page name 
-                                    .card-body 
-                                        nav(aria-label="breadcrumb").mb-0
-                                            ol.breadcrumb.mb-1 
-                                                li.breadcrumb-item
-                                                    a(href="javascript:void(0)")
-                                                        i.iconly-Home.icli.pe-1 
-                                                    |   Home
-                                                li.breadcrumb-item Bonus Ui 
-                                                li.breadcrumb-item Reting
-                                        nav(aria-label="breadcrumb").mb-0
-                                            ol.breadcrumb.breadcrumb-style3.mb-1 
-                                                li.breadcrumb-item Home 
-                                                li.px-2
-                                                    span
-                                                li.breadcrumb-item Ui Kits
-                                                li.px-2
-                                                    span 
-                                                li.breadcrumb-item Popover 
             include ../../components/footer 
         include ../../components/footer-files

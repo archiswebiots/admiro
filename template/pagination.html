@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
   </head>
   <body>
-    <main class="page-wrapper sidebar-open">
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page header start -->
       <header class="page-header">
         <div class="header-left"><a class="toggle-sidebar" href="#"><i class="iconly-Filter icli"></i></a>
@@ -226,6 +227,7 @@
         </div>
       </header>
       <!-- Page header end-->
+      <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page sidebar start-->
         <div class="overlay"></div>
@@ -317,347 +319,258 @@
         </aside>
         <!-- Page sidebar end-->
         <div class="page-body">
-          <div class="container-fluid">              
+          <div class="container-fluid">
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h2>Typography</h2>
+                  <h2>Pagination </h2>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">                                       <i class="iconly-Home icli"></i></a></li>
-                    <li class="breadcrumb-item">Ui Kits</li>
-                    <li class="breadcrumb-item active">Typography</li>
+                    <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli"></i></a></li>
+                    <li class="breadcrumb-item">Bonus Ui</li>
+                    <li class="breadcrumb-item active">Pagination</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
           <div class="container-fluid"> 
-            <div class="row g-4">
-              <div class="col-xl-6 mt-4">
+            <div class="row g-3">  
+              <!-- simple pagination-->
+              <div class="col-xl-4 col-md-6">
                 <div class="card">
-                  <div class="card-header">
-                    <h3 class="mb-0">Headings</h3>
-                    <p class="f-m-light mt-1 mb-0">All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+                  <div class="card-header">   
+                    <h4>Default Pagination</h4>
+                    <p class="f-m-light mt-1 mb-0">Change color using <code>.pagination-*(primary)</code></p>
                   </div>
                   <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table mb-0 typography-table">
-                        <thead>
-                          <tr>
-                            <th class="pt-0">Code</th>
-                            <th class="pt-0">Font-Size</th>
-                            <th class="pt-0">Heading</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
-                            <td>
-                              <h1 class="mb-0">2.5rem</h1>
-                            </td>
-                            <td>
-                              <h1><span> Heading 1 (MEGA)</span></h1>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
-                            <td>
-                              <h2 class="mb-0">2rem</h2>
-                            </td>
-                            <td>
-                              <h2><span> Heading 2 (XL)</span></h2>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
-                            <td>
-                              <h3 class="mb-0">1.75rem</h3>
-                            </td>
-                            <td>
-                              <h3><span> Heading 3 (LARGE)</span></h3>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
-                            <td>
-                              <h5 class="mb-0">1.5rem</h5>
-                            </td>
-                            <td>
-                              <h4><span> Heading 4 (MEDIUM)</span></h4>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
-                            <td>
-                              <h5 class="mb-0">1.25rem</h5>
-                            </td>
-                            <td>
-                              <h5><span> Heading 5 (SMALL)</span></h5>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="pb-0"><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
-                            <td class="pb-0">
-                              <h6 class="mb-0">1rem</h6>
-                            </td>
-                            <td class="pb-0">
-                              <h5><span> Heading 6 </span></h5>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-primary">
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">Previous </a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">Next</a></li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6">
+              <!-- Disabled-->
+              <div class="col-xl-4 col-md-6">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="mb-0">Colored Headings</h3>
-                    <p class="f-m-light mt-1 mb-0">All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+                    <h4>With  Disabled</h4>
+                    <p class="f-m-light mt-1 mb-0">
+                       You can set disabled page with <code>.disabled </code>class.</p>
                   </div>
                   <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table mb-0 typography-table">
-                        <thead>
-                          <tr>
-                            <th class="pt-0">Code</th>
-                            <th class="pt-0">Heading</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
-                            <td>
-                              <h1><span class="text-primary"> Heading 1</span> Sub Heading</h1>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
-                            <td>
-                              <h2><span class="text-secondary"> Heading 2</span> Sub Heading</h2>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
-                            <td>
-                              <h3><span class="text-success"> Heading 3</span> Sub Heading</h3>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
-                            <td>
-                              <h4><span class="text-info"> Heading 4</span> Sub Heading</h4>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
-                            <td>
-                              <h5><span class="text-warning"> Heading 5</span> Sub Heading</h5>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="pb-0"><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
-                            <td class="pb-0">
-                              <h5><span class="text-danger"> Heading 6</span> Sub Heading</h5>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-secondary">
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">2    </a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="ture">... </a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">9</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">10   </a></li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
-              <div class="col-12">
+              <!-- icons-->
+              <div class="col-xl-4 col-md-6">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="mb-0">Font Weight</h3>
-                    <p class="f-m-light mt-1 mb-0">Using <code>f-w-*</code> class, you can change the font weight.</p>
+                    <h4>With  Icons    </h4>
+                    <p class="f-m-light mt-1 mb-0">Add icons inside the pagination</p>
                   </div>
-                  <div class="card-body d-flex flex-column gap-3">
-                    <h1 class="f-w-700">You can set bolder font weight Heading 1 using<code> f-w-700</code></h1>
-                    <h2 class="f-w-600">You can set bold font weight Heading 2 using<code> f-w-600</code></h2>
-                    <h3 class="f-w-500">You can set medium font weight Heading 3 using<code> f-w-500</code></h3>
-                    <h4 class="f-w-400">You can set normal font weight Heading 4 using<code> f-w-400</code></h4>
-                    <h5 class="f-w-300">You can set light font weight Heading 5 using<code> f-w-300</code></h5>
+                  <div class="card-body">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-success"> 
+                        <li class="page-item active"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        <li class="page-item">   <a class="page-link" href="#">1</a></li>
+                        <li class="page-item"> <a class="page-link" href="#">2</a></li>
+                        <li class="page-item"> <a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 listing">
-                <div class="card">
-                  <div class="card-header">
-                    <h3 class="mb-0">Listing Typography</h3>
-                    <p class="f-m-light mt-1 mb-0">All typography list:- <code>&lt;ul&gt; </code>, <code>&lt;ol&gt; </code> &amp; <code>&lt;dl&gt;</code>.</p>
+              <!-- pagination with active and disable-->
+              <div class="col-xl-4 col-md-6">
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <h4>pagination With active and disable </h4>
+                    <p class="f-m-light mt-1 mb-0">Use<code>.disabled</code>for links that appear un-clickable and<code> .active</code> to indicate the current page.</p>
                   </div>
                   <div class="card-body">
-                    <div class="row g-3">
-                      <div class="col-md-6 col-xl-4">
-                        <div class="card-wrapper border rounded-3 list-section">
-                          <h6 class="sub-title fw-bold">Unorder list</h6>
-                          <ul>
-                            <li>One who looks on the bright side of things</li>
-                            <li>One who does something not professionally but for pleasure</li>
-                            <li>A person who knows everything</li>
-                            <li>A handwriting that cannot be read</li>
-                            <li>One who looks on the bright side of things</li>
-                            <li>A sound that cannot be heard</li>
-                            <li>The study of ancient writing and scriptures</li>
-                            <li>The study of rocks and soil</li>
-                            <li>creates more sophisticated capabilities for a web page to use coding language.</li>
-                            <li>Maintaining contact and communicating clearly are also essential. possess abilities for a designer</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-xl-4">
-                        <div class="card-wrapper border rounded-3 h-100">
-                          <h6 class="sub-title fw-bold">Order list</h6>
-                          <ol class="ps-3">
-                            <li>UI Kits </li>
-                            <li>Bonus Ui</li>
-                            <li>Animations </li>
-                            <li>
-                              <ol>
-                                <li>Typography</li>
-                                <li>Avatars</li>
-                                <li>Grid</li>
-                                <li>Tag & pills</li>
-                                <li>Alert</li>
-                              </ol>
-                            </li>
-                            <li>Dropdown</li>
-                            <li>Tabs</li>
-                            <li>Accordion</li>
-                          </ol>
-                        </div>
-                      </div>
-                      <div class="col-md-12 col-xl-4">
-                        <div class="card-wrapper border rounded-3">
-                          <h6 class="sub-title fw-bold">Order list</h6>
-                          <dl>
-                            <dt>The way to get started is to quit talking and begin doing.</dt>
-                            <dd class="ms-4">-Walt Disney</dd>
-                            <dt>Life is what happens when you're busy making other plans.</dt>
-                            <dd class="ms-4">-John Lennon</dd>
-                            <dt>Whoever is happy will make others happy too. </dt>
-                            <dd class="ms-4">-Anne Frank</dd>
-                            <dt>Life is either a daring adventure or nothing at all.</dt>
-                            <dd class="ms-4">-Helen Keller</dd>
-                            <dt>The purpose of our lives is to be happy.</dt>
-                            <dd class="mb-0 ms-4">-Dalai Lama</dd>
-                          </dl>
-                        </div>
-                      </div>
-                    </div>
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-danger">
+                        <li class="page-item disabled">   <a class="page-link" href="javascript:void(0)" tabindex="-1">Previous</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascriptL:void(0)">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">3</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">Next</a></li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h3>Inline Text Elements</h3>
-                    <p class="f-m-light mt-1 mb-0">Styling for common inline HTML5 elements.</p>
+              <!-- Outline-->
+              <div class="col-xl-4 col-md-6">
+                <div class="card">  
+                  <div class="card-header"> 
+                    <h4>With Outline</h4>
+                    <p class="f-m-light mt-1 mb-0">you can use to pagination <code>pagination- </code>class.</p>
                   </div>
-                  <div class="card-body">
-                    <div class="d-flex flex-column gap-2">
-                      <p class="mb-0">You can use the mark tag to 
-                        <mark>highlight</mark> text.
-                      </p>
-                      <p class="mb-0">
-                        <del>This line of text is meant to be treated as deleted text.</del>
-                      </p>
-                      <p class="mb-0">
-                        <s>This line of text is meant to be treated as no longer accurate.</s>
-                      </p>
-                      <p class="mb-0">
-                        <u>This line of text will render as underlined</u>
-                      </p>
-                      <p class="mb-0"><small>This line of text is meant to be treated as fine print.</small></p>
-                      <p class="mb-0"><strong>This line rendered as bold text.</strong></p>
-                      <p class="mb-0"><em>This line rendered as italicized text.</em></p>
-                    </div>
+                  <div class="card-body"> 
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination outline-pagination text-primary">
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">4  </a></li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-xl-6">
-                <div class="card">
+              <!-- Rounded pagination    -->
+              <div class="col-xl-4 col-md-6">
+                <div class="card"> 
                   <div class="card-header">
-                    <h3 class="mb-0">Text Color</h3>
-                    <p class="f-m-light mt-1 mb-0">You can Give text color by using <code>txt-*</code> class.</p>
+                    <h4> Rounded pagination </h4>
+                    <p class="fm-light mt-1 mb-0">
+                         Used in rounded pagination<code>.rounded-circle</code>class.</p>
                   </div>
-                  <div class="card-body">
-                    <div class="d-flex flex-column gap-2">
-                      <p class="text-primary mb-0">This is Primary text You can archive this adding<code>.text-primary</code> class.</p>
-                      <p class="text-secondary mb-0">This is Secondary text You can archive this adding<code>.text-secondary</code> class.</p>
-                      <p class="text-success mb-0">This is Success text You can archive this adding<code>.text-success</code> class.</p>
-                      <p class="text-info mb-0">This is Info text You can archive this adding<code>.text-info</code> class.</p>
-                      <p class="text-warning mb-0">This is Warning text You can archive this adding<code>.text-warning</code> class.</p>
-                      <p class="text-danger mb-0">This is Danger text You can archive this adding<code>.text-danger</code> class.</p>
-                      <p class="text-dark mb-0">This is Dark text You can archive this adding<code>.text-dark</code> class.</p>
-                    </div>
+                  <div class="card-body"> 
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-secondary gap-2">
+                        <li class="page-item"><a class="page-link rounded-circle" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        <li class="page-item"> <a class="page-link rounded-circle" href="javascript:void(0)">1</a></li>
+                        <li class="page-item"> <a class="page-link rounded-circle" href="javascript:void(0)">2</a></li>
+                        <li class="page-item active"><a class="page-link rounded-circle" href="javascript:void(0)"> ...</a></li>
+                        <li class="page-item"> <a class="page-link rounded-circle" href="javascript:void(0)">20</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 mb-4">
-                <div class="card overflow-hidden">
-                  <div class="card-header">
-                    <h3 class="mb-0">Blockquotes</h3>
-                    <p class="f-m-light mt-1 mb-0">The <code>&lt;blockquote&gt;</code> tag specifies a section that is quoted from another source.</p>
+              <!-- pagination alignment -->
+              <div class="col-xxl-6 mb-lg-3">
+                <div class="card">  
+                  <div class="card-header"> 
+                    <h4>Pagination alignment </h4>
+                    <p class="fm-light mt-1 mb-0">
+                       Change the alignment of pagination<code>.justify-content-center:</code>class.</p>
                   </div>
-                  <div class="card-body">
-                    <div class="figure d-block">
-                      <blockquote class="blockquote light-card mb-2">
-                        <p class="mb-0 text-dark">The only impossible journey is the one you never begin.</p>
-                        <figcaption class="blockquote-footer pt-3">Tony Robbins</figcaption>
-                      </blockquote>
-                    </div>
-                    <div class="figure text-center d-block">
-                      <blockquote class="blockquote light-card mb-2">
-                        <p class="mb-0 text-dark">In this life we cannot do great things. We can only do small things with great love.</p>
-                        <figcaption class="blockquote-footer pt-3">Mother Teresa   </figcaption>
-                      </blockquote>
-                    </div>
-                    <div class="figure text-end d-block">
-                      <blockquote class="blockquote mb-0 light-card mb-2">
-                        <p class="mb-0 text-dark">Live in the sunshine, swim the sea, drink the wild air.  </p>
-                        <figcaption class="blockquote-footer pt-3">Ralph Waldo Emerson</figcaption>
-                      </blockquote>
-                    </div>
+                  <div class="card-body"> 
+                    <!-- left aligned pagination-->
+                    <nav class="mb-3" aria-label="Page navigation example">
+                      <ul class="pagination pagination-primary justify-content-start">
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">Previous</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">Next</a></li>
+                      </ul>
+                    </nav>
+                    <!-- center aligned pagination -->
+                    <nav class="mb-3" aria-label="Page navigation example">
+                      <ul class="pagination pagination-secondary justify-content-center">
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)"> Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">3</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)"> Next</a></li>
+                      </ul>
+                    </nav>
+                    <!-- end aliged pagination-->
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-success justify-content-end"> 
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)"> Previous</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">3</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">Next</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <!--Pagination Size-->
+              <div class="col-xxl-6 mb-3">
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <h4>Pagination Size </h4>
+                    <p class="fm-light mt-1 mb-0">
+                       Pagination size using <code>.pagination-* </code>class.</p>
+                  </div>
+                  <div class="card-body"> 
+                    <!--pagination ig-->
+                    <nav class="mb-3" aria-label="Page navigation example">
+                      <ul class="pagination pagination-lg pagination-primary">
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">Next </a></li>
+                      </ul>
+                    </nav>
+                    <!-- pagination md-->
+                    <nav class="mb-3" aria-label="Page navigation example">
+                      <ul class="pagination pagination-md pagination-danger">
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)"> Previous</a></li>
+                        <li class="page-item active"> <a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">Next</a></li>
+                      </ul>
+                    </nav>
+                    <!--  pagination sm-->
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-sm pagination-success"> 
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item active"> <a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"> <a class="page-link" href="javascript:void(0)">Next                                   </a></li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <footer class="footer"> 
-          <div class="container-fluid">
-            <div class="row"> 
-              <div class="col-md-6 footer-copyright">
-                <p class="mb-0">Copyright 2023 © Admiro theme by pixelstrap.</p>
-              </div>
-              <div class="col-md-6">
-                <p class="float-end mb-0">Hand crafted &amp; made with
-                  <svg class="svg-color footer-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#heart"></use>
-                  </svg>
-                </p>
-              </div>
+      </div>
+      <footer class="footer"> 
+        <div class="container-fluid">
+          <div class="row"> 
+            <div class="col-md-6 footer-copyright">
+              <p class="mb-0">Copyright 2023 © Admiro theme by pixelstrap.</p>
+            </div>
+            <div class="col-md-6">
+              <p class="float-end mb-0">Hand crafted &amp; made with
+                <svg class="svg-color footer-icon">
+                  <use href="../assets/svg/iconly-sprite.svg#heart"></use>
+                </svg>
+              </p>
             </div>
           </div>
-        </footer>
-      </div>
-    </main>
+        </div>
+      </footer>
+    </div>
+    <!-- bootstrap js-->
+    <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <!-- custom script -->
+    <script src="../assets/js/script.js"></script>
+    <!-- popover -->
+    <!-- tooltip-->
+    <!-- modal validation-->
+    <!-- modal -->
+    <!-- alert-->
   </body>
-  <!-- bootstrap js-->
-  <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js"></script>
-  <script src="../assets/js/sidebar.js"></script>
-  <!-- custom script -->
-  <script src="../assets/js/script.js"></script>
-  <!-- popover -->
-  <!-- tooltip-->
-  <!-- modal validation-->
-  <!-- modal -->
-  <!-- alert-->
 </html>
