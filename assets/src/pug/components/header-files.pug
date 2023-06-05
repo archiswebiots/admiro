@@ -17,10 +17,32 @@ head
     link(rel="icon" href='../assets/svg/iconly-sprite.svg') 
     // Flag icon css 
     link(rel='stylesheet' href='../assets/css/vendors/flag-icon.css')
-    // App css
-    link(rel='stylesheet' href='../assets/css/style.css') 
+    // Timeline css 
+    link(rel='stylesheet' href='../assets/css/vendors/timeline/timeline.css')
     // iconly-icon
     link(rel="stylesheet" href='../assets/css/iconly-icon.css')
     link(rel="stylesheet" href='../assets/css/bulk-style.css')
     //fontawesome
     link(rel="stylesheet", href="../assets/css/fontawesome-min.css")
+    if sweetalert2
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/sweetalert2.css')
+    if dropzone
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/dropzone.css')
+    if filepond
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/filepond.css')
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/filepond-plugin-image-preview.css')
+    if range
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/range.css')
+    if scrollbar        
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/scrollbar.css') 
+    if scrollable
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/scrollable.css')
+    if tree
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/tree.css')
+    if flatpickr 
+        link(rel="stylesheet",  type='text/css' href='../assets/css/vendors/flatpickr/flatpickr.min.css')
+    if select2_options 
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/intltelinput.min.css')
+        link(rel='stylesheet', type='text/css', href='../assets/css/vendors/tagify.css')
+    // App css
+    link(rel='stylesheet' href='../assets/css/style.css') 

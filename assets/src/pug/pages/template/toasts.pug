@@ -33,14 +33,14 @@ html(lang='en')
                                 .card.toasts-section.h-100
                                     .card-header
                                         h4 Live Toast
-                                        p.f-m-light.mt-1.mb-0
-                                            | Use the
+                                        p.mt-1.mb-0
+                                            | Use the  
                                             code .hide 
-                                            | &
+                                            | &  
                                             code .show 
                                             | class.
                                     .card-body.position-relative 
-                                        button#basicToastBtn.btn.btn-danger(type='button') Show live toast
+                                        button#basicToastBtn.btn.btn-secondary(type='button') Show live toast
                                         .toast-container.position-fixed.bottom-0.end-0.p-3
                                             #basicToast.toast(role='alert' aria-live='assertive' aria-atomic='true')
                                                 .toast-header.toasts-sec
@@ -49,26 +49,27 @@ html(lang='en')
                                                     button.btn-close(type="button" data-bs-dismiss="toast" aria-label="Close")
                                                 .toast-body 
                                                     span Hello, world! This is a toast message.
+                                        
                             .col-md-6
                                 .card.h-100
                                     .card-header
                                         h4 Color Schemes
-                                        p.f-m-light.mt-1.mb-0
+                                        p.mt-1.mb-0
                                             | Use the 
-                                            code .hide
+                                            code .hide 
                                             | class through hide toast and 
-                                            code .show
+                                            code .show 
                                             | class through visible toast. 
                                     .card-body.position-relative
                                         .toast.defaul-show-toast.align-items-center.show.text-white.bg-primary.position-relative( aria-live="assertive"  , data-bs-autohide="false", aria-atomic="false")
                                             .toast-body
                                                 | Hello, world! This is a toast message.   
-                                                button.btn-close.btn-close-white.position-absolute.top-50.end-0.translate-middle(type="button" data-bs-dismiss="toast" aria-label="Close")
+                                                button.btn-close.btn-close-white.position-absolute.top-50.end-0.translate-middle.me-2(type="button" data-bs-dismiss="toast" aria-label="Close")
                             .col-md-6
                                 .card.h-100
                                     .card-header
-                                        h4 Custom content
-                                        p.f-m-light.mt-1.mb-0
+                                        h4 Custom Content
+                                        p.mt-1.mb-0
                                             | Use the 
                                             code .hide  
                                             | class through hide toast and 
@@ -86,7 +87,7 @@ html(lang='en')
                                 .card.h-100
                                     .card-header
                                         h4 Custom Content
-                                        p.f-m-light.mt-1.mb-0
+                                        p.mt-1.mb-0
                                             | Use the 
                                             code .hide  
                                             | class through hide toast and 

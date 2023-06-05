@@ -1,0 +1,59 @@
+.twitter-typeahead{
+    display: block !important;
+}
+.typehead-form{
+    .theme-form{
+        input[type=text]{
+            color: rgba(var(--gray-60),1);
+        }
+    } 
+    .form-control{
+        &:focus{
+            border-color: rgba(var(--primary-color),1);
+        }
+    }
+}
+.twitter-typeahead{
+    .tt-suggestion{
+        color: rgba(var(--dark),1);
+        opacity: 0.6;
+        font-size: 13px;
+        padding: 6px 12px;
+        border-top: 1px solid #efefef; 
+        background: rgba(var(--white),1);
+        cursor: pointer;
+    }
+    .tt-menu{
+        float: left;
+        width: 100%;
+        min-width: 10rem;
+        margin: 0.125rem 0 0;
+        font-size: 1rem;
+        color: rgba(var(--dark),1);
+        text-align: left;
+        list-style: none;
+        background-color: rgba(var(--white),1);
+        background-clip: padding-box;
+        border-radius: 0.25rem;
+    }
+    .league-name{
+        font-size: 16px;
+        padding: 6px 10px 0;
+    }
+}
+#scrollable-dropdown-menu{
+    .twitter-typeahead{
+        .tt-menu{
+            .tt-dataset{
+                max-height: 100px;
+                overflow-y: auto;
+            }
+        }     
+    }
+}       
+.clipboaard-container{
+    h6{
+        line-height: 1.6;
+        font-size: 14px;
+    }
+} 

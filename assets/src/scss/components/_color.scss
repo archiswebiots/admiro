@@ -30,17 +30,6 @@
         color: rgba(var(--white),1);
       }
     }
-    .activity-dot-#{$bg-name} {
-      width: 14px;
-      height: 14px;
-      background-color: rgba(var(--white),1);
-      border-radius: 100%;
-      border: 3px solid $bg-color;
-      position: relative;
-      z-index: 1;
-      min-width: 14px;
-      min-height: 14px;
-    }
   }
 .bg-light-primary{
   background-color: rgba(var(--primary-color),0.1);

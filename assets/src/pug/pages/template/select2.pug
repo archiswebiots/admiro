@@ -1,0 +1,53 @@
+-var sidebar    = true;
+- var page_select2          = true;
+- var select2_options       = true; 
+
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+   
+    include ../../components/header-files
+    body
+        #pageWrapper.page-wrapper.compact-wrapper 
+            include ../../components/header/header
+            .page-body-wrapper
+                include ../../components/sidebar  
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | Datepicker
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Form Widgets
+                                        li.breadcrumb-item.active Datepicker
+                    // Container-fluid starts
+                    .container-fluid   
+                        .select2-drpdwn
+                            .row
+                                // Tagify select2 start
+                                .col-md-12
+                                    .card 
+                                        .card-header
+                                            h4 Single-value select
+                                            p.mt-1.mb-0 
+                                                | Use the tagify plugin for drag and sort options available.
+                                        .card-body 
+                                            .card-body 
+                                                form.row.g-3
+                                                    .col-xl-3.col-sm-6
+                                                        input.selectMode.alert-light-primary(name='tags-select-mode' placeholder='Please select')
+                                                    .col-xl-3.col-sm-6
+                                                        input.selectMode.alert-light-secondary(name='tags-select-value-mode' placeholder='Please select')
+                                                    .col-xl-3.col-sm-6
+                                                        input.selectMode.alert-light-info(name='tags-select-v-mode' placeholder='Please select')
+                                                    .col-xl-3.col-sm-6
+                                                        input.selectMode.alert-light-warning(name='tags-s-value-mode' placeholder='Please select')
+                include ../../components/footer
+        include ../../components/footer-files
