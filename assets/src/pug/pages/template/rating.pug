@@ -1,0 +1,120 @@
+-var sidebar    = true;
+-var rating     = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body 
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper 
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper 
+                include ../../components/sidebar 
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | Rating 
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Bonus Ui
+                                        li.breadcrumb-item.active Toasts
+                    // Container-fluid starts
+                    .container-fluid
+                        .row.g-3
+                            .col-xl-4.col-sm-6
+                                .card
+                                    .card-header  
+                                        h4 Basic Star Rater
+                                    .card-body 
+                                        div#rater
+                            .col-xl-4.col-sm-6
+                                .card
+                                    .card-header
+                                        h4 Star Rater With Step
+                                    .card-body 
+                                        div#rater-step
+                            .col-xl-4.col-sm-6
+                                .card   
+                                    .card-header  
+                                        h4 Custom Messages
+                                    .card-body 
+                                        div#rater2
+                            .col-md-6
+                                .card 
+                                    .card-header 
+                                        h4 You Can Have Unlimited Number Of Stars
+                                    .card-body 
+                                        div#rater3
+                            .col-md-6 
+                                .card
+                                    .card-header
+                                        h4 Animated Rating Bar
+                                    .card-body
+                                        .rating-container
+                                            ul.feedback
+                                                li.angry.me-0
+                                                    div
+                                                        svg.eye.left
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#eye')
+                                                        svg.eye.right
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#eye')
+                                                        svg.mouth
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#mouth')
+                                                li.sad.me-0
+                                                    div
+                                                        svg.eye.left
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#eye')
+                                                        svg.eye.right
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#eye')
+                                                        svg.mouth
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#mouth')
+                                                li.ok.me-0
+                                                    div
+                                                li.good.active.me-0
+                                                    div
+                                                        svg.eye.left
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#eye')
+                                                        svg.eye.right
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#eye')
+                                                        svg.mouth
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#mouth')
+                                                li.happy.me-0
+                                                    div
+                                                        svg.eye.left
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#eye')
+                                                        svg.eye.right
+                                                            use(xlink:href='../assets/svg/icon-sprite.svg#eye')
+                            .col-md-4 
+                                .card 
+                                    .card-header 
+                                        h4 On Hover Event 
+                                    .card-body.d-flex.align-items-center 
+                                        div#rater5
+                                        span.live-rating.ms-2
+                            .col-md-4.mb-3
+                                .card
+                                    .card-header 
+                                        h4 Clear/Reset  Rater
+                                    .card-body.d-flex.align-items-center.justify-content-between
+                                        div#rater6
+                                        span.clear-rating
+                                        button#rater6-button Reset 
+                            .col-md-4.mb-3
+                                .card 
+                                    .card-header 
+                                        h4 Right To Left Support
+                                    .card-body 
+                                        div#rater7
+
+
+
+            include ../../components/footer
+        include ../../components/footer-files

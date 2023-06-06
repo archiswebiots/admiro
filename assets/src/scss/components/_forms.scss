@@ -6,7 +6,6 @@
     font-size: $input-font-size;
     color: rgba(var(--body-font-color),1);
     font-weight: 600;
-    border-radius: $input-radius;
     line-height: 17px;
     padding: $input-padding;
     &:focus {
@@ -15,18 +14,27 @@
     @include media-breakpoint-down(sm) {
         padding: 12px;
     }
+    &.form-control-sm{
+        min-height: calc(1.5em + 0.5rem + 2px) !important;
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.875rem !important;
+        border-radius: 0.25rem !important;
+    }
+    &.form-control-lg{
+        min-height: calc(1.5em + 1rem + 2px) !important;
+        padding: 0.5rem 1rem !important;
+        font-size: 1.25rem !important;
+        border-radius: 0.5rem !important;
+    }
 }
 .input-group {
-    border: 1px solid rgba(var(--shape-border),1);
     border-radius: $input-radius;
     .form-control {
         border: none;
         border-radius: 8px;
     }
     &-text {
-        background: rgba(var(--white),1);
         border: none;
-        border-radius: 8px;
     }
     &:focus {
         border: 1px solid rgba(var(--primary-color),1);
@@ -58,6 +66,79 @@
         border-color: rgba(var(--form-select),1);
         outline: 0;
         box-shadow: unset;
+    }
+}
+.has-validation, .input-florting{
+    .form-floating {
+        flex: none;
+        width: unset;
+        min-width: unset;
+    }
+}
+
+.basic-form{
+    position: relative;
+    i{
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+    }
+    hr{
+        color: rgba(var(--gray-60),1);
+    }
+}
+.default-layout{
+    .checkbox{
+        input[type=checkbox]{
+            &:checked{
+                +{
+                    label{
+                        &::before{
+                            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+                            text-align: center;
+                            line-height: 1.2;
+                            display: inline-block;
+                            position: absolute;
+                            width: 19px;
+                            height: 19px;
+                            left: 18px;
+                            margin-left: -16px;
+                            border: 1px solid #efefef;
+                            border-radius: 3px;
+                            background-color: rgba(var(--white),1);
+                        }
+                    }
+                }
+            }  
+        }
+        input{
+            display: none;
+        }
+        label{
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            margin-top: 10px;
+            padding-left: 30px;
+            &::before{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 19px;
+                height: 19px;
+                left: 18px;
+                margin-left: -16px;
+                border: 1px solid #efefef;
+                border-radius: 3px;
+                background-color: #fff;
+            }
+        }
+    } 
+}
+.Horizontal-layout{
+    .form-control{
+        padding: 10px 12px;
     }
 }
 /**=====================

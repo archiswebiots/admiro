@@ -19,13 +19,15 @@
     <link rel="icon" href="../assets/svg/iconly-sprite.svg">
     <!-- Flag icon css -->
     <link rel="stylesheet" href="../assets/css/vendors/flag-icon.css">
-    <!-- App css-->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Timeline css -->
+    <link rel="stylesheet" href="../assets/css/vendors/timeline/timeline.css">
     <!-- iconly-icon-->
     <link rel="stylesheet" href="../assets/css/iconly-icon.css">
     <link rel="stylesheet" href="../assets/css/bulk-style.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
+    <!-- App css-->
+    <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
     <!-- page-wrapper Start-->
@@ -55,7 +57,7 @@
               </ul>
             </li>
             <!-- Language dropdown end-->
-            <li class="custom-dropdown"><a class="dark-mode" href="javascript:void(0)"><i class="iconly-Star icli"></i></a></li>
+            <li class="custom-dropdown"><a class="dark-mode" href="javascript:void(0)"><i class="iconly-Star icli"> </i></a></li>
             <!-- Cart menu-->
             <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bag icli"></i></a>
               <div class="custom-menu cart-dropdown py-0 overflow-hidden">
@@ -160,7 +162,7 @@
                 </ul>
               </div>
             </li>
-            <li><a class="full-screen" href="javascript:void(0)"><i class="iconly-Scan icli"></i></a></li>
+            <li><a class="full-screen" href="javascript:void(0)"> <i class="iconly-Scan icli">  </i></a></li>
             <!-- Bookmark menu-->
             <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bookmark icli"></i></a>
               <div class="custom-menu bookmark-dropdown py-0 overflow-hidden">
@@ -221,7 +223,7 @@
                       <use href="../assets/svg/iconly-sprite.svg#circle"></use>
                     </svg></sup></span>
               </button>
-              <button class="btn btn-light"><span>Medan, IDN</span></button>
+              <button class="btn btn-light"> <span>Medan, IDN  </span></button>
             </div>
           </ul>
         </div>
@@ -298,10 +300,11 @@
                   <li><a href="scrollable.html">Scrollable</a></li>
                   <li> <a href="breadcrumb.html">Breadcrumb</a></li>
                   <li><a href="pagination.html">Pagination</a></li>
+                  <li><a href="toasts.html">Toasts </a></li>
+                  <li> <a href="ribbons.html">Ribbons </a></li>
+                  <li> <a href="rating.html">Rating</a></li>
                 </ul>
               </li>
-              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Edit-Square icli"></i>
-                  <h6>Builders</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
                   <h6>Animation </h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Activity icli"> </i>
@@ -342,10 +345,10 @@
                 <div class="card toasts-section h-100">
                   <div class="card-header">
                     <h4>Live Toast</h4>
-                    <p class="f-m-light mt-1 mb-0">Use the<code>.hide </code>&<code>.show </code>class.</p>
+                    <p class="mt-1 mb-0">Use the  <code>.hide </code>&  <code>.show </code>class.</p>
                   </div>
                   <div class="card-body position-relative"> 
-                    <button class="btn btn-danger" id="basicToastBtn" type="button">Show live toast</button>
+                    <button class="btn btn-secondary" id="basicToastBtn" type="button">Show live toast</button>
                     <div class="toast-container position-fixed bottom-0 end-0 p-3">
                       <div class="toast" id="basicToast" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header toasts-sec"><strong class="me-auto">emay walker</strong><small>11 mins ago</small>
@@ -361,12 +364,12 @@
                 <div class="card h-100">
                   <div class="card-header">
                     <h4>Color Schemes</h4>
-                    <p class="f-m-light mt-1 mb-0">Use the <code>.hide</code>class through hide toast and <code>.show</code>class through visible toast. </p>
+                    <p class="mt-1 mb-0">Use the <code>.hide </code>class through hide toast and <code>.show </code>class through visible toast. </p>
                   </div>
                   <div class="card-body position-relative">
                     <div class="toast defaul-show-toast align-items-center show text-white bg-primary position-relative" aria-live="assertive" data-bs-autohide="false" aria-atomic="false">
                       <div class="toast-body">Hello, world! This is a toast message.   
-                        <button class="btn-close btn-close-white position-absolute top-50 end-0 translate-middle" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+                        <button class="btn-close btn-close-white position-absolute top-50 end-0 translate-middle me-2" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
                       </div>
                     </div>
                   </div>
@@ -375,8 +378,8 @@
               <div class="col-md-6">
                 <div class="card h-100">
                   <div class="card-header">
-                    <h4>Custom content</h4>
-                    <p class="f-m-light mt-1 mb-0">Use the <code>.hide  </code>class through hide toast and <code>.show  </code>class through visible toast.  </p>
+                    <h4>Custom Content</h4>
+                    <p class="mt-1 mb-0">Use the <code>.hide  </code>class through hide toast and <code>.show  </code>class through visible toast.  </p>
                   </div>
                   <div class="card-body">
                     <div class="toast defaul-show-toast show" aria-live="assertive" data-bs-autohide="false" aria-atomic="false">
@@ -392,7 +395,7 @@
                 <div class="card h-100">
                   <div class="card-header">
                     <h4>Custom Content</h4>
-                    <p class="f-m-light mt-1 mb-0">Use the <code>.hide  </code>class through hide toast and <code>.show  </code>class through visible toast.  </p>
+                    <p class="mt-1 mb-0">Use the <code>.hide  </code>class through hide toast and <code>.show  </code>class through visible toast.  </p>
                   </div>
                   <div class="card-body">
                     <div class="toast defaul-show-toast show" aria-live="assertive" data-bs-autohide="false" aria-atomic="false">
@@ -471,5 +474,6 @@
     <!-- modal -->
     <!-- alert-->
     <script src="../assets/js/toasts-custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
   </body>
 </html>

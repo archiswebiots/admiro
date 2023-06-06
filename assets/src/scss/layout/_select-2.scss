@@ -1,0 +1,78 @@
+.filepond--drop-label {
+    .filepond--label-action {
+      color: rgba(var(--danger-color),1);
+      text-decoration: none;
+    }
+  }
+  
+  .filepond--list {
+    .filepond--file {
+      background-color: rgba(var(--primary-color),1);
+    }
+}
+.dropzone {
+    background: unset;
+    border: 2px dashed rgba(var(--primary-color),1);
+  
+    &.dropzone-secondary {
+      border: 2px dashed rgba(var(--secondary-color),1);
+  
+      i {
+        color: rgba(var(--secondary-color),1);
+      }
+    }
+    i{
+        color: rgba(var(--primary-color),1);
+    }
+  
+    .note {
+      @media (max-width:360px) {
+        min-width: unset !important;
+      }
+    }
+  
+    .dz-preview {
+      margin: 28px 18px !important;
+      box-shadow: unset;
+  
+      .dz-details {
+        top: unset;
+        bottom: -6px;
+        position: relative;
+        padding-bottom: 6px;
+        background-color: unset;
+  
+        [dir="rtl"] & {
+          left: unset;
+          right: 32px;
+        }
+      }
+  
+      &:hover {
+        .dz-error-message {
+          display: none !important;
+        }
+      }
+    }
+  
+    .dz-error-mark {
+      .dz-remove {
+        position: relative;
+  
+      }
+    }
+}   
+  
+.dz-preview {
+    .dz-remove {
+    cursor: pointer;
+    }
+}
+  
+.dropzone-secondary {
+    .dz-preview {
+        .dz-remove {
+        color: rgba(var(--secondary-color),1);
+        }
+    }
+}

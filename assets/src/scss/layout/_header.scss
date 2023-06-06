@@ -45,7 +45,7 @@ header {
     padding: $header-spacing;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     @include media-breakpoint-down(md) {
         padding: 20px;
     }

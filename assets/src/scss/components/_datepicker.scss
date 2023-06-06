@@ -1,0 +1,90 @@
+.main-inline-calender{
+    &.input-group{
+        .flatpickr-calendar{
+            &.inline{
+                width: 100%;
+            }
+        }
+        .flatpickr-rContainer{
+            display: block;
+            .flatpickr-days{
+                width: 100%;
+                .dayContainer{
+                    width: 100%;
+                    max-width: none;
+                    min-width: unset;  
+                }  
+                .dayContainer{
+                    .flatpickr-day{
+                        border-radius: 5px;
+                        width: 100%;
+                        max-width: unset;
+                    }
+                }    
+                .flatpickr-day{
+                    &.selected{
+                        background-color: rgba(var(--primary-color),1);
+                        border-color: rgba(var(--primary-color),1);
+                    }
+                    &.today{
+                        border-color: rgba(var(--primary-color),1);
+                        &:hover{
+                                border-color: rgba(var(--primary-color),1);
+                                background: rgba(var(--primary-color),1);
+                                color: rgba(var(--white),1);
+                            }
+                        }
+                        &:hover{
+                            background: rgba(var(--primary-color),1);
+                            border-color: rgba(var(--primary-color),1);
+                            color: rgba(var(--white),1);
+                        }
+                    }
+                } 
+            }
+            .flatpickr-weekdays{
+                width: 100%;
+            }
+        }  
+        .flatpickr-innerContainer{
+            display: block;
+        }
+        .form-control{
+            width: 100%;
+        }
+        .form-control[readonly]{
+            background-color: #e9ecef;
+            opacity: 1;
+        }
+} 
+.flatpicker-calender{
+    &.input-group{
+        .form-control{
+            border: 1px solid rgba(var(--light-gray),1);
+            padding: 8px 10px;
+        }
+    } 
+}
+.timepicker-wrapper{
+    .row{
+        margin-bottom: 16px;    
+    }
+    .input-group{
+        .form-control{
+            border: 1px solid rgba(var(--light-gray),1);
+            padding: 8px 10px;
+        }
+    }
+    .row{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+} 
+.bootstarp-calender{
+    .row{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

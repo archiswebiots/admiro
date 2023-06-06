@@ -1,0 +1,152 @@
+-var sidebar    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+
+    include ../../components/header-files
+    body
+        #pageWrapper.page-wrapper.compact-wrapper 
+            include ../../components/header/header
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | Form Wizard 2
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')    
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Form Layout
+                                        li.breadcrumb-item.active Form Wizard 2
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                            .col-sm-12
+                                .card
+                                    .card-header
+                                        h3 Custom horizontal wizard
+                                    .card-body
+                                        .horizontal-wizard-wrapper
+                                            .row.g-3
+                                                .col-12.main-horizontal-header
+                                                    #horizontal-wizard-tab.nav.nav-pills.horizontal-options(role='tablist' aria-orientation='vertical')
+                                                        a#wizard-info-tab.nav-link.active(data-bs-toggle='pill' href='#wizard-info' role='tab' aria-controls='wizard-info' aria-selected='true')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    i.fa-solid.fa-user
+                                                                .horizontal-wizard-content
+                                                                    h5 Personal info
+                                                        a#bank-wizard-tab.nav-link(data-bs-toggle='pill' href='#bank-wizard' role='tab' aria-controls='bank-wizard' aria-selected='false') 
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard 
+                                                                    i.fa-solid.fa-link-slash
+                                                                .horizontal-wizard-content
+                                                                    h6 Connect bank account
+                                                        a#inquiry-wizard-tab.nav-link(data-bs-toggle='pill' href='#inquiry-wizard' role='tab' aria-controls='inquiry-wizard' aria-selected='false') 
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    i.fa-solid.fa-users
+                                                                .horizontal-wizard-content
+                                                                    h6 Inquiries
+                                                        a#successful-wizard-tab.nav-link(data-bs-toggle='pill' href='#successful-wizard' role='tab' aria-controls='successful-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    i.fa-solid.fa-users
+                                                                .horizontal-wizard-content
+                                                                    h6 Completed 
+                                                .col-12 
+                                                    #horizontal-wizard-tabContent.tab-content.dark-field
+                                                        #wizard-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='wizard-info-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='')
+                                                                .col-xl-4.col-sm-6
+                                                                    label.form-label(for='customFirstname') First Name
+                                                                        span.text-danger *
+                                                                    input#customFirstname.form-control(type='text' placeholder="Enter first name" required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-xl-4.col-sm-6
+                                                                    label.form-label(for='customLastname') Last Name
+                                                                        span.text-danger *
+                                                                    input#customLastname.form-control(type='text' placeholder='Enter last name' required='')
+                                                                    .valid-feedback 
+                                                                        | Looks good!
+                                                                .col-xl-4.col-12
+                                                                    label.form-label(for='customEmail') Email
+                                                                        span.text-danger *
+                                                                    input#customEmail.form-control(type='email' required='' placeholder='cuba@example.com')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-xl-5.col-sm-4
+                                                                    label.form-label(for='customState-wizard') State
+                                                                    select#customState-wizard.form-select(required='')
+                                                                        option(selected='' disabled='' value='') Choose...
+                                                                        option USA      
+                                                                        option U.K 
+                                                                        option U.S
+                                                                    .invalid-feedback
+                                                                        | Please select a valid state.
+                                                                .col-lg-3.col-md-6
+                                                                    label.form-label(for='wizard-zipcode') Zip Code
+                                                                    input#wizard-zipcode.form-control(type='text' required='')
+                                                                    .invalid-feedback
+                                                                        | Please provide a valid zip.
+                                                                .col-lg-4.col-md-6
+                                                                    label.form-label(for='contact-wizard') Contact Number
+                                                                    input#contact-wizard.form-control(type='number' placeholder='Enter number' required='') 
+                                                                    .valid-feedback
+                                                                        | Looks good!   
+                                                                .col-12
+                                                                    .form-check
+                                                                        input#validation-check-wizard.form-check-input(type='checkbox' value='' required='')
+                                                                        label.form-check-label.mb-0.d-block(for='validation-check-wizard')
+                                                                            | Agree to terms and conditions
+                                                                        .invalid-feedback
+                                                                            | You must agree before submitting.
+                                                                .col-12.text-end
+                                                                    button.btn.btn-primary Continue
+                                                        #bank-v-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='bank-v-wizard-tab')
+                                                            form.row.g-3.needs-validation(novalidate='')
+                                                                .col-md-6.bank-search
+                                                                    label.form-label(for='aadhar-number-wizard1') Aadhaar Number
+                                                                        span.txt-danger *
+                                                                    input#aadhar-number-wizard1.form-control(type='Search' placeholder="xxxx xxxx xxxx xxxx" required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-md-6.bank-search
+                                                                    label.form-label(for='pan-wizard-1') PAN
+                                                                        span.txt-danger *
+                                                                    input#pan-wizard-1.form-control(type='Search' placeholder="xxxxxxxxxx" required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-12 
+                                                                    h6 Choose from these popular banks
+                                                                        .bank-selection
+                                                                            .form-check.radio.radio-primary.ps-0
+                                                                                ul.radio-wrapper
+                                                                                    li 
+                                                                                        input#abc-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='abc-bank')
+                                                                                            img(src="../assets/images/forms/hdfc.png", alt="HDFC")
+                                                                                            p ABC BANK
+                                                                                    li
+                                                                                        input#xyz-bank.form-check-input(type='radio', name='radio2', value='option2' checked='')
+                                                                                        label.form-check-label(for='xyz-bank')
+                                                                                            img(src="../assets/images/forms/Bank-of-Baroda.png", alt="Bank-of-Baroda")
+                                                                                            p XYZ BANK
+                                                                                    li 
+                                                                                        input#pqr-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='pqr-bank')
+                                                                                            img(src="../assets/images/forms/idbi.png", alt="IDBI")
+                                                                                            p PQR BANK
+                                                                                    li
+                                                                                                    
+
+
+                include ../../components/footer
+        include ../../components/footer-files   

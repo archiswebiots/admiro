@@ -2,6 +2,52 @@
     Scrollbar Css Start
 ==========================**/
 
-.scroll-demo{
-    
+.scroll-demo {
+    border: none !important;
+    padding: 0 !important;
+    &.scroll-b-none {
+        padding: 0;
+        border: none;
+    }
+
+    .scroll-rtl {
+        .list-group-item {
+            span {
+                [dir="rtl"] & {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    .list-group-item{
+        border: 1px solid rgba(var(--light-gray),1);
+        border-top-width: 0;
+    }
+}
+.scrollbar-images {
+    margin-bottom: 12px;
+}   
+
+.horizontal-scroll{
+    .horz-scroll-content{
+        .horizontal-img{
+            height: 100%;
+            max-width: 240px;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}   
+.visible-wrapper{
+    img{
+        width: calc(230px + 100 * (100vw - 320px) / 1600) !important;
+        height: calc(230px + 100 * (100vw - 320px) / 1600); 
+    }
+} 
+.vertical-scroll{
+    .list-wrapper{
+        display: flex;
+    }
 }

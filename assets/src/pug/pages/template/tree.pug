@@ -1,0 +1,50 @@
+- var tree           = true;
+-var sidebar    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper 
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | Tree View   
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Bonus Ui
+                                        li.breadcrumb-item.active Tree View     
+                    // Container-fluid starts  
+                    .container-fluid
+                        .row.g-3 
+                            .col-sm-6
+                                .card
+                                    .card-header
+                                        h4 Basic Tree
+                                        p.mt-1.mb-0 
+                                            | Use the dynamic tree view with checkboxes.  
+                                    .card-body
+                                        .tree-container
+                            .col-sm-6.mb-3
+                                .card
+                                    .card-header
+                                        h4 Disabled Tree
+                                        p.mt-1.mb-0 
+                                            | Use the dynamic tree view with checkboxes.
+                                    .card-body
+                                        .disabled-container 
+            include ../../components/footer   
+        include ../../components/footer-files   
+

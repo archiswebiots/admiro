@@ -137,6 +137,16 @@ ul {
         color: $text-color !important;
     }
 }
+.swal-button{
+    background-color: rgba(var(--primary-color),1);
+    &:active{
+        background-color: rgba(var(--primary-color),1);
+    }
+}
+.swal-button--cancel {
+    background-color: #EFEFEE !important;
+}
+
 /**=====================
      typography css end
 ==========================**/
