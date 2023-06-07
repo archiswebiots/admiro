@@ -229,19 +229,22 @@
         }
     }
 }
-.needs-validation{
-    .form-check{
-        .form-check-input{
-            &:valid{
-                ~{
-                    .form-check-label{
-                        color: rgba(var(--success-color),1);
+.validation-forms{
+    .needs-validation{
+        .form-check{
+            .form-check-input{
+                &:valid{
+                    ~{
+                        .form-check-label{
+                            color: rgba(var(--success-color),1);
+                        }
                     }
-                }
-            }  
+                }  
+            }
         }
     }
 }
+
 
 
 input{
