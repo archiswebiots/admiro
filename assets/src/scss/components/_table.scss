@@ -115,6 +115,102 @@ th {
 		border-color:rgba(var(--light-gray), 1);
 	}
 }
+table thead .border-bottom-primary th,
+table tbody .border-bottom-primary th,
+table tbody .border-bottom-primary td {
+	border-bottom: 1px solid rgba(var(--primary-color),1) !important;
+}   
+table thead .border-bottom-secondary th,
+table tbody .border-bottom-secondary th,
+table tbody .border-bottom-secondary td {
+	border-bottom: 1px solid rgba(var(--secondary-color),1) !important;
+} 
+table thead .border-bottom-success th,
+table tbody .border-bottom-success th,
+table tbody .border-bottom-success td {
+	border-bottom: 1px solid rgba(var(--success-color),1) !important;
+} 
+table thead .border-bottom-danger th,
+table tbody .border-bottom-danger th,
+table tbody .border-bottom-danger td {
+	border-bottom: 1px solid rgba(var(--danger-color),1) !important;
+} 
+table thead .border-bottom-info th,
+table tbody .border-bottom-info th,
+table tbody .border-bottom-info td {
+	border-bottom: 1px solid rgba(var(--info-color),1) !important;
+} 
+
+table thead .border-bottom-warning th,
+table tbody .border-bottom-warning th,
+table tbody .border-bottom-warning td {
+	border-bottom: 1px solid rgba(var(--warning-color),1) !important;
+} 
+table thead .border-bottom-light th,
+table tbody .border-bottom-light th,
+table tbody .border-bottom-light td {
+	border-bottom: 1px solid rgba(var(--white),1) !important;
+} 
+.basic-table{
+	tr{
+		&:last-child{
+			border-bottom: unset;
+		}
+	}
+	
+}
+.table-inverse{
+	color: rgba(var(--white),1);
+    background-color: rgba(var(--dark),1);
+	th, td{
+		color: rgba(var(--white),1);
+	}	
+}
+.signal-table{
+	.table-hover{
+		tbody{
+			tr{	
+				td{
+					i{
+						width: 26px;
+						height: 26px;
+						padding: 6px;
+						border-radius: 4px;
+					}
+				}
+			} 
+		}
+	}
+}
+.card-block{
+	.table-responsive{
+		.table{
+			caption{
+				padding-left: 10px;
+			}	
+		} 
+	}
+}  
+.table-dark{
+	th{
+		color: rgba(var(--white),1);
+	}
+}
+.table{
+	tr{
+		&:last-child{
+			border-bottom:rgba(var(--white),1)
+		}
+	}
+	
+}
+
+
+
+
+
+
+
 
 /**=====================
      39.Table CSS Ends

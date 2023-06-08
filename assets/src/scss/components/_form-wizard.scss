@@ -929,9 +929,14 @@
 			}
 		}
 	}
+	.form-check-input{
+		&:checked[type=radio]{
+			background-image: unset;
+		}
+	}
 }
 
-.main-qr-code {
+.main-qr-code {  
 	.modal-toggle-wrapper {
 		.modal-img {
 			flex-direction: column;
@@ -992,7 +997,11 @@
 	img {
 		height: calc(200px + (420 - 200) * ((100vw - 320px) / (1920 - 320)));
 	}
-
+	.modal-toggle-wrapper{
+		@media(max-width: 768px){
+			padding: unset; 
+		}
+	}
 }
 
 
@@ -1364,6 +1373,17 @@
 			border-bottom-left-radius: 0;
 		}
 	}
+	.input-group{
+		.form-control{
+			border: 1px solid rgba(var(--light-gray),1);
+			width: unset;
+			@media (max-width:420px) {
+				width: 1%;			
+			}
+		}
+		
+	}
+	
 }
 
 .authenticate {
