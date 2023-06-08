@@ -26,7 +26,7 @@ html(lang='en')
                                         li.breadcrumb-item.active Form Wizard 2
                     // Container-fluid starts
                     .container-fluid
-                        .row
+                        .row.g-3
                             .col-sm-12
                                 .card
                                     .card-header
@@ -110,8 +110,8 @@ html(lang='en')
                                                                             | You must agree before submitting.
                                                                 .col-12.text-end
                                                                     button.btn.btn-primary Continue
-                                                        #bank-v-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='bank-v-wizard-tab')
-                                                            form.row.g-3.needs-validation(novalidate='')
+                                                        #bank-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='bank-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='')
                                                                 .col-md-6.bank-search
                                                                     label.form-label(for='aadhar-number-wizard1') Aadhaar Number
                                                                         span.txt-danger *
@@ -125,7 +125,7 @@ html(lang='en')
                                                                     .valid-feedback
                                                                         | Looks good!
                                                                 .col-12 
-                                                                    h6 Choose from these popular banks
+                                                                    h6.f-w-600 Choose from these popular banks
                                                                         .bank-selection
                                                                             .form-check.radio.radio-primary.ps-0
                                                                                 ul.radio-wrapper
@@ -145,8 +145,670 @@ html(lang='en')
                                                                                             img(src="../assets/images/forms/idbi.png", alt="IDBI")
                                                                                             p PQR BANK
                                                                                     li
-                                                                                                    
-
-
+                                                                                        input#def-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='def-bank')
+                                                                                            img(src="../assets/images/forms/rbl.png", alt="RBL")
+                                                                                            p DEF BANK
+                                                                                    li
+                                                                                        input#mno-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='mno-bank')
+                                                                                            img(src="../assets/images/forms/us-bank.png", alt="US")
+                                                                                            p MNO BANK
+                                                                                    li
+                                                                                        input#wxy-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='wxy-bank')
+                                                                                            img(src="../assets/images/forms/axis.png", alt="Axis")
+                                                                                            p WXY BANK
+                                                                                    li
+                                                                                        input#std-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='std-bank')
+                                                                                            img(src="../assets/images/forms/SCB.png", alt="SCB")
+                                                                                            p STD BANK    
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue        
+                                                        #inquiry-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='inquiry-wizard-tab')
+                                                            form.row.g-3.needs-validation(novalidate='')
+                                                                .col-12.inquiries-form
+                                                                    .row
+                                                                        .col-md-6
+                                                                            p.f-w-500 Select the option how you want to receive important notifications.
+                                                                            .choose-option
+                                                                                .form-check.form-check-inline
+                                                                                    input#radioSelect1.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option1')
+                                                                                    label.form-check-label(for='radioSelect1') Featured Items
+                                                                                .form-check.form-check-inline
+                                                                                    input#radioSelect2.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option2')
+                                                                                    label.form-check-label(for='radioSelect2') Newsletters
+                                                                                .form-check.form-check-inline
+                                                                                    input#radioSelect3.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option3')
+                                                                                    label.form-check-label(for='radioSelect3') Notifications
+                                                                                .form-check.form-check-inline
+                                                                                    input#radioSelect4.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option3')
+                                                                                    label.form-check-label(for='radioSelect4') Blogs
+                                                                        .col-md-6 
+                                                                            .row.g-3.basic-form
+                                                                                .col-12
+                                                                                    label.form-label Email
+                                                                                        span.text-danger *
+                                                                                    input.form-control(type='text', placeholder='org@support.com', required='required')
+                                                                                .col-12
+                                                                                    label.form-label(for='customContact') Contact Number
+                                                                                    input#customContact.form-control(type='number' placeholder='Enter number' required='')
+                                                                                    .valid-feedback
+                                                                                        | Looks good!
+                                                                .col-12 
+                                                                    label.form-label.f-w-500(for='formControlTextareaWizard') If no, could you please describe?
+                                                                    textarea#formControlTextareaWizard.form-control(rows='3')
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue        
+                                                        #successful-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='successful-wizard-tab')
+                                                            .form-completed
+                                                                img(src="../assets/images/gif/success/successful.gif", alt="successful")
+                                                                h5 Successfully Completed
+                            .col-sm-12
+                                .card
+                                    .card-header
+                                        h3 Business vertical wizard
+                                    .card-body
+                                        .horizontal-wizard-wrapper.vertical-options.vertical-variations
+                                            .row.g-3
+                                                .col-xl-3.main-horizontal-header
+                                                    #vertical-n-wizard-tab.nav.nav-pills.horizontal-options(role='tablist' aria-orientation='vertical')
+                                                        a#wizard-n-info-tab.nav-link.active(data-bs-toggle='pill' href='#wizard-n-info' role='tab' aria-controls='wizard-n-info' aria-selected='true')
+                                                            .horizontal-wizard  
+                                                                .stroke-icon-wizard
+                                                                    span 1
+                                                                .horizontal-wizard-content 
+                                                                    h5.f-w-600 Choose account
+                                                        a#bank-n-wizard-tab.nav-link(data-bs-toggle='pill' href='#bank-n-wizard' role='tab' aria-controls='bank-n-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    span 2
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Business settings
+                                                        a#inquiry-n-wizard-tab.nav-link(data-bs-toggle='pill' href='#inquiry-n-wizard' role='tab' aria-controls='inquiry-n-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    span 3
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Contact details
+                                                        a#pay-n-wizard-tab.nav-link(data-bs-toggle='pill' href='#pay-n-wizard' role='tab' aria-controls='pay-n-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    span 4
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Pay details
+                                                        a#successful-n-wizard-tab.nav-link(data-bs-toggle='pill' href='#successful-n-wizard' role='tab' aria-controls='successful-n-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    span 5
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Completed
+                                                .col-xl-9
+                                                    #vertical-n-wizard-tabContent.tab-content.dark-field
+                                                        #wizard-n-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='wizard-n-info-tab')
+                                                            form.row.g-3.needs-validation(novalidate='')
+                                                                .col-12
+                                                                    h5.f-w-600 Select the type of account
+                                                                    p It has long been known that distracting information on a page will lose a reader's attention.
+                                                                .col-12 
+                                                                    .form-check.radio.radio-primary.ps-0.select-account
+                                                                        ul.radio-wrapper
+                                                                            li 
+                                                                                input#radioOptionWizard1.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                label.form-check-label.mb-0(for='radioOptionWizard1')
+                                                                                    i.fa-solid.fa-building-columns
+                                                                                    .d-flex.flex-column 
+                                                                                        h5.f-w-600 Business 
+                                                                                        p Search your business information please check it
+                                                                            li
+                                                                                input#radioOptionWizard2.form-check-input(type='radio', name='radio2', value='option2' checked='')
+                                                                                label.form-check-label.mb-0(for='radioOptionWizard2')
+                                                                                    i.fa-solid.fa-user
+                                                                                    .d-flex.flex-column 
+                                                                                        h5.f-w-600 Personal 
+                                                                                        p Search your personal information please check it
+                                                                .col-12.text-end
+                                                                    button.btn.btn-primary Continue
+                                                        #bank-n-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='bank-n-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form.business-horizontal(novalidate='')
+                                                                .col-md-6
+                                                                    label.form-label(for='AccountName') Account Name
+                                                                        span.text-danger *
+                                                                    input#AccountName.form-control(type='text' required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-md-6   
+                                                                    label.form-label Email
+                                                                        span.text-danger *
+                                                                    input.form-control(type='text', placeholder='org@superrito.com', required='required')
+                                                                .col-12 
+                                                                    label.form-label(for='example-description') Select a project and write a description for it
+                                                                    textarea#example-description.form-control(rows='3')
+                                                                .col-12 
+                                                                    section.main-upgrade
+                                                                        i.fa-solid.fa-rocket
+                                                                        h5.mb-2
+                                                                            | Select team size with
+                                                                            span.text-primary projects
+                                                                        p.text-muted.mb-2 Agile teams are cross-functional and made up of 5-11 on a regular basis team member.
+                                                                        .variation-box
+                                                                            .selection-box
+                                                                                input#feature1(type='checkbox')
+                                                                                div.custom--mega-checkbox
+                                                                                    ul.d-flex.flex-column
+                                                                                        li Tivo 
+                                                                                        li.text-danger 2-3 Members
+                                                                            .selection-box
+                                                                                input#feature2(type='checkbox')
+                                                                                div.custom--mega-checkbox 
+                                                                                    ul.d-flex.flex-column
+                                                                                        li Cuba
+                                                                                        li.text-danger 4-5 Members
+                                                                            .selection-box
+                                                                                input#feature3(type='checkbox')
+                                                                                div.custom--mega-checkbox   
+                                                                                    ul.d-flex.flex-column
+                                                                                        li Multikart
+                                                                                        li.text-danger 2 Members
+                                                                            .selection-box
+                                                                                input#feature4(type='checkbox' checked='')
+                                                                                div.custom--mega-checkbox   
+                                                                                    ul.d-flex.flex-column
+                                                                                        li Roxo
+                                                                                        li.text-danger 1 Members
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Continue           
+                                                        #inquiry-n-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='inquiry-n-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='') 
+                                                                .col-12
+                                                                    h5.f-w-600 Contact details
+                                                                    p Please visit the documentation page if you require further information.
+                                                                .col-sm-6
+                                                                    label.form-label.mb-1(for='validationCustom-select') Organization Name
+                                                                        span.text-danger *
+                                                                    input#validationCustom-select.form-control(type='text' placeholder='Gekko & Co.' required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-sm-6
+                                                                    label.form-label.mb-1 Email
+                                                                        span.text-danger *
+                                                                    input.form-control(type='text', placeholder='org@support.com', required='required')
+                                                                .col-12
+                                                                    label.form-label.mb-1(for='validationCustom-select') Join organization type
+                                                                        span.text-danger *
+                                                                    select.form-select.f-w-400.f-14.text-gray(aria-label='Default select example')
+                                                                        option(selected='' disabled) Join organization type
+                                                                        option(value='1') Technology
+                                                                        option(value='2') Culture
+                                                                        option(value='3') NGO 
+                                                                        option(value='3') Environment
+                                                                        option(value='3') Life cycle
+                                                                .col-12 
+                                                                    label.form-label.mb-1(for='organizationDescription') Organization description
+                                                                    textarea#organizationDescription.form-control(placeholder='Share your problems and another issues' required='')
+                                                                    .invalid-feedback
+                                                                        | Please enter a message in the box.
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue
+                                                        #pay-n-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='pay-n-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='')
+                                                                .col-md-6
+                                                                    label.form-label(for='cardHolder') Card Holder
+                                                                    input#cardHolder.form-control(type='text' required='')
+                                                                    .invalid-feedback
+                                                                        | Please enter your valid name
+                                                                    .valid-feedback
+                                                                        | Looks's Good!
+                                                                .col-md-6
+                                                                    label.form-label(for='cardNumber') Card Number
+                                                                    input#cardNumber.form-control(type='text' required='' placeholder='xxxx xxxx xxxx xxxx')
+                                                                    .invalid-feedback
+                                                                        | Please enter your valid number
+                                                                    .valid-feedback 
+                                                                        | Looks's Good!
+                                                                .col-12 
+                                                                    .row.g-3
+                                                                        .col-md-6
+                                                                            label.form-label(for='expiration') Expiration(MM/YY)
+                                                                            .row.g-3
+                                                                                .col-md-6
+                                                                                    input#expiration.form-control(type='number' required='' placeholder='xx/xx')
+                                                                                    .invalid-feedback
+                                                                                        | Please enter your valid number
+                                                                                    .valid-feedback 
+                                                                                        | Looks's Good!
+                                                                                .col-md-6
+                                                                                    select.form-select.f-w-400.f-14.text-gray(aria-label='Default select example')
+                                                                                        option(selected='' disabled) Year
+                                                                                        option(value='1') 2023
+                                                                                        option(value='2') 2024
+                                                                                        option(value='3') 2025
+                                                                                        option(value='3') 2026
+                                                                                        option(value='3') 2027
+                                                                                        option(value='3') 2028
+                                                                                        option(value='3') 2029
+                                                                                        option(value='3') 2030
+                                                                                        option(value='3') 2031
+                                                                                        option(value='3') 2032
+                                                                                        option(value='3') 2033
+                                                                                        option(value='3') 2034
+                                                                                        option(value='3') 2035
+                                                                        .col-md-6
+                                                                            label.form-label(for='cvvnumber') CVV Number
+                                                                            input#cvvnumber.form-control(type='text' required='')
+                                                                            .invalid-feedback
+                                                                                | Please enter your valid number            
+                                                                            .valid-feedback 
+                                                                                | Looks's Good!
+                                                                .col-12
+                                                                    .form-check.mb-0
+                                                                        input#invalidCheckboxWizard.form-check-input(type='checkbox' value='' required='')
+                                                                        label.form-check-label.mb-0(for='invalidCheckboxWizard')
+                                                                            | Agree to terms and conditions
+                                                                        .invalid-feedback
+                                                                            | You must agree before submitting.
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue                
+                                                        #successful-n-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='successful-n-wizard-tab')       
+                                                            .form-completed
+                                                                img(src="../assets/images/gif/success/successful.gif", alt="successful")
+                                                                h5 Successfully Completed       
+                            .col-sm-12 
+                                .card
+                                    .card-header
+                                        h3 Custom vertical wizard
+                                    .card-body
+                                        .horizontal-wizard-wrapper.vertical-options
+                                            .row.g-3
+                                                .col-md-3.main-horizontal-header
+                                                    #vertical-wizard-tab.nav.nav-pills.horizontal-options(role='tablist' aria-orientation='vertical')
+                                                        a#wizard-v-info-tab.nav-link.active(data-bs-toggle='pill' href='#wizard-v-info' role='tab' aria-controls='wizard-v-info' aria-selected='true')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    i.fa-solid.fa-user
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Personal info
+                                                        a#bank-v-wizard-tab.nav-link(data-bs-toggle='pill' href='#bank-v-wizard' role='tab' aria-controls='bank-v-wizard' aria-selected='false')
+                                                            .horizontal-wizard  
+                                                                .stroke-icon-wizard
+                                                                    i.fa-solid.fa-link-slash
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Connect bank account
+                                                        a#inquiry-v-wizard-tab.nav-link(data-bs-toggle='pill' href='#inquiry-v-wizard' role='tab' aria-controls='inquiry-v-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    i.fa-solid.fa-users
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Inquiries
+                                                        a#successful-v-wizard-tab.nav-link(data-bs-toggle='pill' href='#successful-v-wizard' role='tab' aria-controls='successful-v-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    i.fa-solid.fa-users
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Completed
+                                                .col-md-9
+                                                    #vertical-wizard-tabContent.tab-content.dark-field
+                                                        #wizard-v-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='wizard-v-info-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='')
+                                                                .col-lg-4.col-sm-6
+                                                                    label.form-label.mb-1(for='validation-firstname-wizard') First name
+                                                                        span.text-danger *
+                                                                    input#validation-firstname-wizard.form-control(type='text' placeholder="Enter first name" required='')
+                                                                    .valid-feedback 
+                                                                        | Looks good!
+                                                                .col-lg-4.col-sm-6
+                                                                    label.form-label.mb-1(for='validation-lastname-wizard') Last name
+                                                                        span.text-danger *
+                                                                    input#validation-lastname-wizard.form-control(type='text' placeholder='Enter last name' required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-lg-4.col-md-6
+                                                                    label.form-label.mb-1(for='validation-email-wizard') Email
+                                                                        span.text-danger *
+                                                                    input#validation-email-wizard.form-control(type='email' required='' placeholder='cuba@example.com')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-lg-5.col-md-6
+                                                                    label.form-label.mb-1(for='validation-states') State
+                                                                    select#validation-states.form-select(required='')
+                                                                        option(selected='' disabled='' value='') Choose...
+                                                                        option USA 
+                                                                        option U.K 
+                                                                        option U.S
+                                                                    .invalid-feedback
+                                                                        | Please select a valid state.
+                                                                .col-lg-3.col-md-6
+                                                                    label.form-label.mb-1(for='wizard-zipcode') Zip Code
+                                                                    input#wizard-zipcode.form-control(type='text' required='')
+                                                                    .invalid-feedback
+                                                                        | Please provide a valid zip.
+                                                                .col-lg-4.col-md-6
+                                                                    label.form-label.mb-1(for='contact-wizard') Contact Number
+                                                                    input#contact-wizard.form-control(type='number' placeholder='Enter number' required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-12
+                                                                    .form-check
+                                                                        input#validation-check-wizard.form-check-input(type='checkbox' value='' required='')
+                                                                        label.form-check-label.mb-0.d-block(for='validation-check-wizard')
+                                                                            | Agree to terms and conditions
+                                                                        .invalid-feedback
+                                                                            | You must agree before submitting.
+                                                                .col-12.text-end
+                                                                    button.btn.btn-primary Continue
+                                                        #bank-v-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='bank-v-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='')
+                                                                .col-md-6.bank-search
+                                                                    label.form-label(for='aadhar-number-wizard1') Aadhaar Number
+                                                                        span.txt-danger *
+                                                                    input#aadhar-number-wizard1.form-control(type='Search' placeholder="xxxx xxxx xxxx xxxx" required='')            
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-md-6.bank-search
+                                                                    label.form-label(for='pan-wizard-1') PAN
+                                                                        span.text-danger *
+                                                                    input#pan-wizard-1.form-control(type='Search' placeholder="xxxxxxxxxx" required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-12
+                                                                    h6.f-w-600 Choose from these popular banks
+                                                                        .bank-selection
+                                                                            .form-check.radio.radio-primary.ps-0
+                                                                                ul.radio-wrapper
+                                                                                    li
+                                                                                        input#abc-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='abc-bank')
+                                                                                            img(src="../assets/images/forms/hdfc.png", alt="HDFC")
+                                                                                            p ABC BANK
+                                                                                    li
+                                                                                        input#xyz-bank.form-check-input(type='radio', name='radio2', value='option2' checked='')
+                                                                                        label.form-check-label(for='xyz-bank')
+                                                                                            img(src="../assets/images/forms/Bank-of-Baroda.png", alt="Bank-of-Baroda")
+                                                                                            p XYZ BANK
+                                                                                    li
+                                                                                        input#pqr-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='pqr-bank')  
+                                                                                            img(src="../assets/images/forms/idbi.png", alt="IDBI")
+                                                                                            p PQR BANK
+                                                                                    li
+                                                                                        input#def-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='def-bank')
+                                                                                            img(src="../assets/images/forms/rbl.png", alt="RBL")
+                                                                                            p DEF BANK
+                                                                                    li
+                                                                                        input#mno-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='mno-bank')
+                                                                                            img(src="../assets/images/forms/us-bank.png", alt="US")
+                                                                                            p MNO BANK
+                                                                                    li
+                                                                                        input#wxy-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='wxy-bank')
+                                                                                            img(src="../assets/images/forms/axis.png", alt="Axis")
+                                                                                            p WXY BANK
+                                                                                    li
+                                                                                        input#std-bank.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                        label.form-check-label(for='std-bank')
+                                                                                            img(src="../assets/images/forms/SCB.png", alt="SCB")
+                                                                                            p STD BANK
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue
+                                                        #inquiry-v-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='inquiry-v-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='')
+                                                                .col-12.inquiries-form
+                                                                    .row 
+                                                                        .col-md-6
+                                                                            p.f-w-600 Select the option how you want to receive important notifications.
+                                                                            .choose-option
+                                                                                .form-check.form-check-inline
+                                                                                    input#radioSelect1.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option1')
+                                                                                    label.form-check-label(for='radioSelect1') Featured Items                                        
+                                                                                .form-check.form-check-inline
+                                                                                    input#radioSelect2.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option2')
+                                                                                    label.form-check-label(for='radioSelect2') Newsletters
+                                                                                .form-check.form-check-inline
+                                                                                    input#radioSelect3.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option3')
+                                                                                    label.form-check-label(for='radioSelect3') Notifications
+                                                                                .form-check.form-check-inline
+                                                                                    input#radioSelect4.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option3')
+                                                                                    label.form-check-label(for='radioSelect4') Blogs
+                                                                        .col-md-6   
+                                                                            .row.g-3
+                                                                                .col-12
+                                                                                    label.form-label Email
+                                                                                        span.txt-danger *
+                                                                                    input.form-control(type='text', placeholder='org@support.com', required='required')
+                                                                                .col-12
+                                                                                    label.form-label(for='customContact') Contact Number
+                                                                                    input#customContact.form-control(type='number' placeholder='Enter number' required='')
+                                                                                    .valid-feedback
+                                                                                        | Looks good!
+                                                                .col-12
+                                                                    label.form-label.f-w-600(for='formControlTextareaWizard') If no, could you please describe?
+                                                                    textarea#formControlTextareaWizard.form-control(rows='3')
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue                        
+                                                        #successful-v-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='successful-v-wizard-tab')
+                                                            .form-completed
+                                                                img(src="../assets/images/gif/success/successful.gif", alt="successful")
+                                                                h5 Successfully Completed      
+                            .col-sm-12.mb-3 
+                                .card
+                                    .card-header
+                                        h3 Business horizontal wizard
+                                    .card-body
+                                        .horizontal-wizard-wrapper.vertical-variations
+                                            .row.g-3
+                                                .col-12.main-horizontal-header
+                                                    #business-n-wizard-tab.nav.nav-pills.horizontal-options(role='tablist' aria-orientation='vertical')
+                                                        a#business-n-info-tab.nav-link.active(data-bs-toggle='pill' href='#business-n-info' role='tab' aria-controls='business-n-info' aria-selected='true')
+                                                            .horizontal-wizard  
+                                                                .stroke-icon-wizard
+                                                                    span 1
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Choose account
+                                                        a#business-bank-wizard-tab.nav-link(data-bs-toggle='pill' href='#business-bank-wizard' role='tab' aria-controls='business-bank-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    span 2
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Business settings
+                                                        a#business-inquiry-wizard-tab.nav-link(data-bs-toggle='pill' href='#business-inquiry-wizard' role='tab' aria-controls='business-inquiry-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    span 3
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Contact details
+                                                        a#business-pay-wizard-tab.nav-link(data-bs-toggle='pill' href='#business-pay-wizard' role='tab' aria-controls='business-pay-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    span 4
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Pay details
+                                                        a#business-successful-wizard-tab.nav-link(data-bs-toggle='pill' href='#business-successful-wizard' role='tab' aria-controls='business-successful-wizard' aria-selected='false')
+                                                            .horizontal-wizard
+                                                                .stroke-icon-wizard
+                                                                    span 5
+                                                                .horizontal-wizard-content
+                                                                    h5.f-w-600 Completed
+                                                .col-12
+                                                    #business-n-wizard-tabContent.tab-content.dark-field    
+                                                        #business-n-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='business-n-info-tab')
+                                                            form.row.g-3.needs-validation(novalidate='')
+                                                                .col-12
+                                                                    h5.f-w-600 Select the type of account
+                                                                    p It has long been known that distracting information on a page will lose a reader's attention.
+                                                                .col-12 
+                                                                    .form-check.radio.radio-primary.ps-0.select-account
+                                                                        ul.radio-wrapper
+                                                                            li 
+                                                                                input#radio-icon.form-check-input(type='radio', name='radio2', value='option2')
+                                                                                label.form-check-label.mb-0(for='radio-icon')
+                                                                                    i.fa-solid.fa-building-columns        
+                                                                                    .d-flex.flex-column
+                                                                                        h5.f-w-600 Business 
+                                                                                        p Search your business information please check it
+                                                                            li
+                                                                                input#radio-icon4.form-check-input(type='radio', name='radio2', value='option2' checked='')
+                                                                                label.form-check-label.mb-0(for='radio-icon4')
+                                                                                    i.fa-solid.fa-user
+                                                                                    .d-flex.flex-column
+                                                                                        h5.f-w-600 Personal 
+                                                                                        p Search your personal information please check it
+                                                                .col-12.text-end
+                                                                    button.btn.btn-primary Continue
+                                                        #business-bank-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='business-bank-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form.business-horizontal(novalidate='')
+                                                                .col-md-6   
+                                                                    label.form-label(for='validationAccountName') Account Name                                    
+                                                                        span.text-danger *
+                                                                    input#validationAccountName.form-control(type='text' required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-md-6
+                                                                    label.form-label Email
+                                                                        span.text-danger *
+                                                                    input.form-control(type='text', placeholder='org@superrito.com', required='required')
+                                                                .col-12 
+                                                                    label.form-label(for='exampleFormControlTextarea1') Select a project and write a description for it
+                                                                    textarea#exampleFormControlTextarea1.form-control(rows='3')
+                                                                .col-12 
+                                                                    section.main-upgrade
+                                                                        i.fa-solid.fa-rocket
+                                                                        h6.mb-2
+                                                                            | Select team size with
+                                                                            span.text-primary projects
+                                                                        p.text-muted.mb-2 Agile teams are cross-functional and made up of 5-11 on a regular basis team member.
+                                                                        .variation-box
+                                                                            .selection-box
+                                                                                input#feature1(type='checkbox')
+                                                                                div.custom--mega-checkbox
+                                                                                    ul.d-flex.flex-column
+                                                                                        li Tivo 
+                                                                                        li.text-danger 2-3 Members
+                                                                            .selection-box
+                                                                                input#feature2(type='checkbox')
+                                                                                div.custom--mega-checkbox
+                                                                                    ul.d-flex.flex-column
+                                                                                        li Cuba
+                                                                                        li.text-danger 4-5 Members 
+                                                                            .selection-box
+                                                                                input#feature3(type='checkbox')
+                                                                                div.custom--mega-checkbox
+                                                                                    ul.d-flex.flex-column
+                                                                                        li Multikart
+                                                                                        li.text-danger 2 Members
+                                                                            .selection-box
+                                                                                input#feature4(type='checkbox' checked='')
+                                                                                div.custom--mega-checkbox
+                                                                                    ul.d-flex.flex-column
+                                                                                        li Roxo
+                                                                                        li.text-danger 1 Members
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue
+                                                        #business-inquiry-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='business-inquiry-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='')
+                                                                .col-12 
+                                                                    h5.f-w-600 Contact details
+                                                                    p Please visit the documentation page if you require further information.
+                                                                .col-sm-6
+                                                                    label.form-label(for='OrganizationName') Organization Name
+                                                                        span.text-danger *
+                                                                    input#OrganizationName.form-control(type='text' placeholder='Gekko & Co.' required='')
+                                                                    .valid-feedback
+                                                                        | Looks good!
+                                                                .col-sm-6
+                                                                    label.form-label Email
+                                                                        span.text-danger *
+                                                                    input.form-control(type='text', placeholder='org@support.com', required='required')
+                                                                .col-12
+                                                                    label.form-label(for='validationCustom-select') Join organization type
+                                                                        span.text-danger *
+                                                                    select.form-select.f-w-400.f-14.text-gray(aria-label='Default select example')
+                                                                        option(selected='' disabled) Join organization type
+                                                                        option(value='1') Technology
+                                                                        option(value='2') Culture
+                                                                        option(value='3') NGO
+                                                                        option(value='3') Environment
+                                                                        option(value='3') Life cycle
+                                                                .col-12 
+                                                                    label.form-label(for='validationTextarea') Organization description
+                                                                    textarea#validationTextarea.form-control(placeholder='Share your problems and another issues' required='')
+                                                                    .invalid-feedback
+                                                                        | Please enter a message in the box.
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue
+                                                        #business-pay-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='business-pay-wizard-tab')
+                                                            form.row.g-3.needs-validation.basic-form(novalidate='')
+                                                                .col-sm-6
+                                                                    label.form-label(for='txtCardNumber1') Card Holder
+                                                                    input#txtCardNumber1.form-control(type='text' required='')
+                                                                    .invalid-feedback   
+                                                                        | Please enter your valid name
+                                                                    .valid-feedback 
+                                                                        | Looks's Good!
+                                                                .col-sm-6
+                                                                    label.form-label(for='txtCardNumber1') Card Number
+                                                                    input#txtCardNumber1.form-control(type='text' required='' placeholder='xxxx xxxx xxxx xxxx')
+                                                                    .invalid-feedback
+                                                                        | Please enter your valid number
+                                                                    .valid-feedback 
+                                                                        | Looks's Good!
+                                                                .col-12 
+                                                                    .row.g-3
+                                                                        .col-md-6
+                                                                            label.form-label(for='validationCustom-d') Expiration(MM/YY)
+                                                                            .row.g-3
+                                                                                .col-md-6
+                                                                                    input#validationCustom-d.form-control(type='number' required='' placeholder='xx/xx')
+                                                                                    .invalid-feedback
+                                                                                        | Please enter your valid number
+                                                                                    .valid-feedback 
+                                                                                        | Looks's Good!
+                                                                                .col-md-6
+                                                                                    select.form-select.f-w-400.f-14.text-gray(aria-label='Default select example')
+                                                                                        option(selected='' disabled) Year
+                                                                                        option(value='1') 2023
+                                                                                        option(value='2') 2024
+                                                                                        option(value='3') 2025
+                                                                                        option(value='3') 2026
+                                                                                        option(value='3') 2027
+                                                                                        option(value='3') 2028
+                                                                                        option(value='3') 2029
+                                                                                        option(value='3') 2030
+                                                                                        option(value='3') 2031
+                                                                                        option(value='3') 2032
+                                                                                        option(value='3') 2033
+                                                                                        option(value='3') 2034
+                                                                                        option(value='3') 2035
+                                                                        .col-md-6
+                                                                            label.form-label(for='cvvnumber') CVV Number
+                                                                            input#cvvnumber.form-control(type='text' required='')
+                                                                            .invalid-feedback
+                                                                                | Please enter your valid number
+                                                                            .valid-feedback 
+                                                                                | Looks's Good!
+                                                                .col-12
+                                                                    .form-check.mb-0
+                                                                        input#invalidCheck67.form-check-input(type='checkbox' value='' required='')
+                                                                        label.form-check-label.mb-0(for='invalidCheck67')
+                                                                            | Agree to terms and conditions
+                                                                        .invalid-feedback
+                                                                            | You must agree before submitting.
+                                                                .col-12.text-end 
+                                                                    button.btn.btn-primary Previous
+                                                                    button.btn.btn-primary Continue 
+                                                        #business-successful-wizard.tab-pane.fade(role='tabpanel' aria-labelledby='business-successful-wizard-tab')
+                                                            .form-completed
+                                                                img(src="../assets/images/gif/success/successful.gif", alt="successful")
+                                                                h5 Successfully Completed                                            
                 include ../../components/footer
         include ../../components/footer-files   
