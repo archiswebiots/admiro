@@ -12407,9 +12407,7 @@ th {
   border-color: rgba(var(--light-gray), 1);
 }
 
-table thead .border-bottom-primary th,
-table tbody .border-bottom-primary th,
-table tbody .border-bottom-primary td {
+.border-bottom-primary th, .border-bottom-primary td {
   border-bottom: 1px solid rgba(var(--primary-color), 1) !important;
 }
 
@@ -12476,8 +12474,111 @@ table tbody .border-bottom-light td {
   color: rgba(var(--white), 1);
 }
 
-.table tr:last-child {
+.bootstrap-table .table tbody tr:last-child {
   border-bottom: rgba(var(--white), 1);
+}
+.bootstrap-table .table-dashed {
+  border-left: 2px dashed rgba(var(--light-gray), 1);
+  border-right: 2px dashed rgba(var(--light-gray), 1);
+}
+.bootstrap-table .table-dashed thead, .bootstrap-table .table-dashed tbody, .bootstrap-table .table-dashed tfoot, .bootstrap-table .table-dashed tr, .bootstrap-table .table-dashed td, .bootstrap-table .table-dashed th {
+  border-style: dashed !important;
+  border-width: 2px;
+  border-right: 0;
+  border-left: 0;
+}
+
+.ui-components.card-block .table-responsive .table-bordered td {
+  vertical-align: middle;
+}
+.ui-components .fa-spinner {
+  animation: fa-spin 2s infinite linear;
+}
+.ui-components p {
+  margin-bottom: 0;
+}
+.ui-components .alert-primary .alert-link {
+  color: rgba(var(--white), 1);
+}
+.ui-components .alert-primary .btn-close {
+  filter: brightness(1) invert(1);
+}
+
+.checkbox-solid-primary.checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.checkbox-solid-primary.checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: -2px;
+  margin-left: -16px;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.checkbox-solid-primary.checkbox input[type=checkbox]:checked + label::before {
+  background-color: rgba(var(--primary-color), 1);
+  border-color: rgba(var(--primary-color), 1);
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  text-align: center;
+  line-height: 1.2;
+}
+.checkbox-solid-primary.checkbox input[type=checkbox]:disabled + label::before {
+  background-color: rgba(var(--light-gray), 1);
+  cursor: not-allowed;
+}
+.checkbox-solid-primary.checkbox label:before {
+  background-color: rgba(var(--primary-color), 1);
+  border-color: rgba(var(--primary-color), 1);
+  color: #fff;
+}
+
+.m-checkbox-inline .checkbox {
+  display: inline-block;
+}
+.m-checkbox-inline .checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.m-checkbox-inline label {
+  margin-right: 20px;
+}
+.m-checkbox-inline .checkbox-primary input[type=checkbox]:checked + label::before {
+  border-color: rgba(var(--primary-color), 1);
+  color: rgba(var(--primary-color), 1);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  text-align: center;
+  line-height: 1.2;
+}
+.m-checkbox-inline .checkbox-primary label::before {
+  border-color: rgba(var(--primary-color), 1);
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 0;
+  margin-left: -16px;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
 /**=====================
@@ -14246,7 +14347,7 @@ table tbody .border-bottom-light td {
 }
 
 .modal-content h6, .modal-content .h6 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1rem;
 }
 

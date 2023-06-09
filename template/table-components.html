@@ -324,13 +324,13 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h2>Form Wizard 3</h2>
+                  <h2>Bootstrap basic table</h2>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli"></i></a></li>
-                    <li class="breadcrumb-item">Form Layout</li>
-                    <li class="breadcrumb-item active">Form Wizard 2</li>
+                    <li class="breadcrumb-item">Tables</li>
+                    <li class="breadcrumb-item active">Bootstrap basic table</li>
                   </ol>
                 </div>
               </div>
@@ -338,131 +338,354 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
+            <!-- Table Row Starts-->
             <div class="row g-3">
               <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-body authentication-body">
-                    <div class="authentication-wrapper">
-                      <h2>Two-factor authentication</h2>
-                      <p>Click on the authentication button below and scan the QR code</p><img src="../assets/images/forms/qr-scan.png" alt="qr-scan">
-                    </div>
-                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggle" tabindex="-1">
-                      <div class="modal-dialog modal-dialog-centered"> 
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h3 class="modal-title" id="exampleModalLongTitle">Two-Factor Authentication</h3>
-                            <button class="btn-close py-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="modal-toggle-wrapper">
-                              <p>
-                                To log into your account, you'll also need to enter your username, password, and a code that was sent to you through SMS or an app.</p>
-                              <div class="authentication-options">
-                                <div class="form-check radio radio-primary ps-0">
-                                  <ul class="radio-wrapper">
-                                    <li> 
-                                      <input class="form-check-input" id="radioOptionWizard1" type="radio" name="radio2" value="option2">
-                                      <label class="form-check-label mb-0" for="radioOptionWizard1"><i class="fa-solid fa-gear"></i>
-                                        <div class="d-flex flex-column">
-                                          <h6>2FA Authenticator</h6>
-                                          <p>Obtain codes from a authy/google authenticator/ios 15 etc.    </p>
-                                        </div>
-                                      </label>
-                                    </li>
-                                    <li> 
-                                      <input class="form-check-input" id="radioOptionWizard2" type="radio" name="radio2" value="option2" checked="">
-                                      <label class="form-check-label mb-0" for="radioOptionWizard2"><i class="fa-solid fa-comment"></i>
-                                        <div class="d-flex flex-column">
-                                          <h6>SMS</h6>
-                                          <p>The backup login method will be sent to you via SMS if you require it.</p>
-                                        </div>
-                                      </label>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <button class="btn btn-dark rounded-pill w-100 mt-3" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
-                              <button class="btn rounded-pill w-100 pb-0 dark-toggle-btn" type="button" data-bs-dismiss="modal">Cancel</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggle2" tabindex="-1">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Scan QR code</h5>
-                            <button class="btn-close py-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body main-qr-code">
-                            <div class="modal-toggle-wrapper">
-                              <p>
-                                Scan the QR code using an authenticator app and website such as abc            authenticator, OTP xyz, or pqr authenticator. You must input the six-digit code it generates below.</p>
-                              <div class="modal-img"> 
-                                <div class="qr-img"><img src="../assets/images/forms/qr-code.png" alt="qr-code"></div>
-                                <div class="qr-content">
-                                  <div class="alert alert-light-dark light alert-dismissible fade show text-dark border-left-wrapper mb-0" role="alert"><i class="fa-solid fa-triangle-exclamation"></i>
-                                    <div><span>If your qr code is not working then enter this code in your input field.</span><span class="f-w-500">TYU78DE29OLAAWCVNTYFGESWQ31098QW</span></div>
-                                    <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                  <div class="card-header">
+                    <h3>UI Components</h3>
+                  </div>
+                  <div>
+                    <div class="card-block row ui-components">
+                      <div class="col-sm-12">
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <tbody>
+                              <tr>
+                                <td>Button</td>
+                                <td class="w-50">
+                                  <button class="btn btn-primary">Default Button</button>
+                                </td>
+                                <td><span>
+                                     Bootstrap includes six predefined button styles, each serving its own semantic purpose.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Round Buttons</td>
+                                <td>
+                                  <button class="btn btn-pill btn-primary">Default Button</button>
+                                </td>
+                                <td><span>Use<code>.btn-pill</code> class to button for Round Buttons.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Button dropdowns</td>
+                                <td>
+                                  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+                                  <div class="dropdown-menu">
+                                    <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                   </div>
-                                </div>
-                              </div>
-                              <form class="needs-validation" novalidate="">
-                                <input class="form-control" id="AccountName" type="text" required="" placeholder="Enter QR Code">
-                                <div class="valid-feedback">Looks good!</div>
-                              </form>
-                              <button class="btn btn-primary">Submit</button>
-                            </div>
-                          </div>
+                                </td>
+                                <td><span>Use<code>.dropdown-toggle</code> class to button for Dropdown-toggle.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Basic Button group</td>
+                                <td>
+                                  <div class="btn-group">
+                                    <button class="btn btn-primary">Primary</button>
+                                    <button class="btn btn-secondary">Secondary</button>
+                                    <button class="btn btn-success">Success</button>
+                                  </div>
+                                </td>
+                                <td><span>Use<code>btn-group</code> class to button for</span></td>
+                              </tr>
+                              <tr>
+                                <td>Buttons with Icon</td>
+                                <td>
+                                  <button class="btn btn-primary"><i class="fa-solid fa-circle-info"></i> Primary</button>
+                                </td>
+                                <td><span>Bootstrap includes six predefined button styles, each serving its own semantic purpose.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Icon Button</td>
+                                <td>
+                                  <button class="btn btn-primary"><i class="fa-solid fa-camera"></i></button>
+                                </td>
+                                <td><span>Simple Icon Button</span></td>
+                              </tr>
+                              <tr>
+                                <td>Loading Buttons</td>
+                                <td>
+                                  <button class="btn btn-primary"><i class="fa-solid fa-spinner me-2"> </i>Expand UP</button>
+                                </td>
+                                <td><span>Expand Animation Buttons   </span></td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
-                    </div><a class="btn btn-primary mt-4" data-bs-toggle="modal" href="#exampleModalToggle" role="button">2 factor authentication    </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 mb-3">
+              <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-body email-verify">
-                    <div class="row g-3">
-                      <div class="col-md-6">
-                        <div class="card-wrapper border rounded-3 h-100">
-                          <div class="row g-1"> 
-                            <div class="col-xxl-4 box-col-5">
-                              <div class="authenticate"><img src="../assets/images/forms/email.png" alt=""></div>
-                            </div>
-                            <div class="col-xxl-8 box-col-7">
-                              <h2>Email verification</h2>
-                              <p>A verification code has been sent to your email. This code will be valid for 15 minutes.</p>
-                              <div class="input-group mb-2 basic-form">
-                                <input class="form-control" type="text" placeholder="Please enter the code here" aria-label="basic-addon2" aria-describedby="basic-addon2"><span class="input-group-text bg-primary" id="basic-addon2">Verify</span>
-                              </div>
-                            </div>
-                          </div>
+                  <div class="card-header">
+                    <h3>Alerts</h3>
+                  </div>
+                  <div>
+                    <div class="card-block row ui-components">
+                      <div class="col-sm-12 col-lg-12 col-xl-12">
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <tbody>  
+                              <tr> 
+                                <td>Basic Alert</td>
+                                <td class="w-50">
+                                  <div class="alert alert-primary">
+                                    <p><strong>Success!</strong> Indicates a successful or positive action.</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <p><span>Alerts are available for any length of text, as well as an optional dismiss button. Add<code> alert alert-primary</code>,<code> alert alert-secondary</code>,<code> alert alert-success</code>,<code> alert alert-info</code> classes for alert with all theme colors.</span></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Alerts with Links</td>
+                                <td>
+                                  <div class="alert alert-primary">
+                                    <p><strong>Success!                                        </strong> You should <a class="alert-link" href="#">read this message</a>.</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <p><span>Alerts are available for any length of text, as well as an optional dismiss button. Add<code> alert alert- primary*</code>,        <code> alert alert-secondary</code>,<code> alert alert-success</code>,<code> alert alert-info</code> classes for alert with all theme colors.</span></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Dismissible Alerts</td>
+                                <td>
+                                  <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                    <p><strong>Holy !</strong> You can check in on some of those fields below.</p>
+                                    <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                  </div>
+                                </td>
+                                <td><span>Add a dismiss button and the<code> alert alert-dismissable</code>class, which adds extra padding to the right of the alert and positions the<code>close</code>a link On the dismiss button, add the data-bs-dismiss="alert" attribute, which triggers the JavaScript functionality. Be sure to use the<code>a</code>element with it for proper behavior across all devices. To animate alerts when dismissing them, be sure to add the .fade and .in classes.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Alerts with icons</td>
+                                <td>
+                                  <div class="alert alert-primary inverse alert-dismissible fade show" role="alert"><i class="fa-solid fa-heart"></i>
+                                    <p>Good Morning! Start your day with some alerts.</p>
+                                    <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                  </div>
+                                </td>
+                                <td><span>Add a dismiss button and the<code> alert alert-dismissable</code>class, which adds extra padding to the right of the alert and positions the   <code>close</code>a link On the dismiss button, add the data-bs-dismiss="alert" attribute, which triggers the JavaScript functionality. Be sure to use the<code>
+                                      aelement with it for proper behavior across all devices. To animate alerts when dismissing them, be sure to add the .fade and .in classes.</code></span></td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="card-wrapper border rounded-3 h-100">
-                          <div class="authenticate">
-                            <h2>Verification code</h2><img src="../assets/images/forms/authenticate.png" alt="authenticate"><span>We've sent a verification code to</span><span>+91********70</span>
-                            <form class="row">   
-                              <div class="col"> 
-                                <h5>Your OTP Code here: </h5>
-                              </div>
-                              <div class="col otp-generate">
-                                <input class="form-control code-input" type="number" maxlength="1" pattern="[0-9]" required>
-                                <input class="form-control code-input" type="number" maxlength="1" pattern="[0-9]" required>
-                                <input class="form-control code-input" type="number" maxlength="1" pattern="[0-9]" required>
-                                <input class="form-control code-input" type="number" maxlength="1" pattern="[0-9]" required>
-                                <input class="form-control code-input" type="number" maxlength="1" pattern="[0-9]" required>
-                                <input class="form-control code-input" type="number" maxlength="1" pattern="[0-9]" required>
-                              </div>
-                              <div class="col">
-                                <button class="btn btn-primary w-100" type="submit">Verify</button>
-                              </div>
-                              <div> <span class="mt-0">Not received your code?</span><span><a class="text-primary" href="javascript:void(0)">Resend   </a>OR <a class="text-primary" href="javascript:void(0)">Call</a></span></div>
-                            </form>
-                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Progressbar</h3>
+                  </div>
+                  <div>
+                    <div class="card-block row">
+                      <div class="col-sm-12 col-lg-12 col-xl-12">
+                        <div class="table-responsive">
+                          <table class="table table-bordered checkbox-td-width">
+                            <tbody>
+                              <tr>  
+                                <td>Default Progress</td>
+                                <td class="w-50">
+                                  <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </td>
+                                <td><span>Uses a progress bar with class<code>progress-bar</code> and background color<code>bg-primary, bg-secondary</code>also change</span></td>
+                              </tr>
+                              <tr>
+                                <td>Striped Progress</td>
+                                <td>
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </td>
+                                <td><span>Uses a gradient to create a striped effect class.<code>progress-bar-striped</code></span></td>
+                              </tr>
+                              <tr>
+                                <td>Progress Sizes</td>
+                                <td> 
+                                  <div class="progress lg-progress-bar">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </td>
+                                <td><span>Different sized progress. For Default progress, class need<code>lg-progress-bar</code>on div.</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CHECKBOXES Row Starts-->
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Checkbox</h3>
+                  </div>
+                  <div>
+                    <div class="card-block row">
+                      <div class="col-sm-12 col-lg-12 col-xl-12">
+                        <div class="table-responsive">
+                          <table class="table table-bordered checkbox-td-width">
+                            <tbody>
+                              <tr>
+                                <td>Basic Checkbox</td>
+                                <td class="w-50">
+                                  <input id="checkbox1" type="checkbox">
+                                  <label for="checkbox1">Default</label>
+                                </td>
+                                <td><span>Basic Checkbox</span></td>
+                              </tr>
+                              <tr>
+                                <td>Default Checkbox Squar</td>
+                                <td>
+                                  <div class="checkbox m-squar">
+                                    <input id="checkbox3" type="checkbox">
+                                    <label for="checkbox3">Default</label>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use<code>.m-squar</code> checkbox.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Basic Skin Check</td>
+                                <td>
+                                  <div class="checkbox checkbox-dark">
+                                    <input id="checkbox-state-dark" type="checkbox">
+                                    <label for="checkbox-state-dark">Brand state</label>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use<code>checkbox-dark</code>for this style of checkbox.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Flat Skin Check</td>
+                                <td>
+                                  <div class="checkbox checkbox-solid-primary">
+                                    <input id="solid6" type="checkbox" checked="">
+                                    <label for="solid6">checked</label>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use<code>checkbox-solid-*</code>,<code>primary, secondary, success, info, warning, danger</code>for this style of checkbox.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Disable Check</td>
+                                <td>
+                                  <div class="checkbox checkbox-solid-primary">
+                                    <input id="solid2" type="checkbox" disabled="">
+                                    <label for="solid2">Disabled </label>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use<code>disabled   </code>,<code>primary, secondary, success, info, warning, danger</code>for this style of checkbox disable.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Inline  Checkbox</td>
+                                <td>
+                                  <div class="form-group m-b-0 m-checkbox-inline">
+                                    <div class="checkbox checkbox-primary">
+                                      <input id="inline-1" type="checkbox">
+                                      <label for="inline-1">Option 1</label>
+                                    </div>
+                                    <div class="checkbox checkbox-secondary">
+                                      <input id="inline-2" type="checkbox">
+                                      <label for="inline-2">Option 1</label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                      <input id="inline-3" type="checkbox">
+                                      <label for="inline-3">Option 1</label>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use<code>disabled</code>,<code>primary, secondary, success, info, warning, danger</code>for this style of checkbox disable.     </span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CHECKBOXES Row Ends-->
+              <!-- Radio Row Starts-->
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Radio Buttons</h3>
+                  </div>
+                  <div>
+                    <div class="card-block row">
+                      <div class="col-sm-12">
+                        <div class="table-responsive">
+                          <table class="table table-bordered radio-first-col-width">
+                            <tbody>
+                              <tr>
+                                <td>Basic Radio Buttons</td>
+                                <td class="w-50">
+                                  <input id="radio" type="radio">
+                                  <label for="radio">Default radio</label>
+                                </td>
+                                <td><span>Basic Radio Buttons</span></td>
+                              </tr>
+                              <tr>
+                                <td>Default Radio</td>
+                                <td>
+                                  <div class="radio radio-primary">
+                                    <input id="radio1" type="radio" name="radio1" value="option1">
+                                    <label for="radio1">Option 1</label>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use <code>.radio-*</code> and color <code>.radio-*</code><code>primary , secondary , success , info</code> on Radio.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Checked Radio</td>
+                                <td>
+                                  <div class="radio radio-primary">
+                                    <input id="radio44" type="radio" name="radio1" value="option1" checked="">
+                                    <label for="radio44">Checked</label>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use<code>checkbox-dark</code>for this style of checkbox.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Flat Skin Check</td>
+                                <td>
+                                  <div class="radio radio-primary">
+                                    <input id="radio33" type="radio" name="radio1" value="option1" disabled="">
+                                    <label for="radio33">Disabled</label>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use<code>checkbox-solid-*</code>,<code>primary, secondary, success, info, warning, danger</code>for this style of checkbox.</span></td>
+                              </tr>
+                              <tr>
+                                <td>Inline  Checkbox</td>
+                                <td>
+                                  <div class="form-group m-b-0 m-checkbox-inline">
+                                    <div class="radio radio-primary">
+                                      <input id="radioinline1" type="radio" name="radio1" value="option1">
+                                      <label for="radioinline1">Option 1</label>
+                                    </div>
+                                    <div class="radio radio-secondary">
+                                      <input id="radioinline2" type="radio" name="radio1" value="option1">
+                                      <label for="radioinline2">Option 1</label>
+                                    </div>
+                                    <div class="radio radio-success">
+                                      <input id="radioinline3" type="radio" name="radio1" value="option1">
+                                      <label for="radioinline3">Option 1</label>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td><span>Wrap with use<code>disabled</code>,<code>primary, secondary, success, info, warning, danger, light, dark</code>for this style of checkbox disable.</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -502,6 +725,5 @@
     <!-- modal -->
     <!-- alert-->
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <script src="../assets/js/form-wizard/verification.js"></script>
   </body>
 </html>

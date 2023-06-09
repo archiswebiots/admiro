@@ -28,7 +28,7 @@ html(lang='en')
                     .container-fluid
                         .row.g-3
                             .col-sm-12
-                                .card
+                                .card.bootstrap-table
                                     .card-header
                                         h4 Basic Table With Border Bottom Color
                                         p.mt-1.mb-0 
@@ -123,7 +123,7 @@ html(lang='en')
                                                         span.badge.badge-light-success Vue
                                                     td IRN
                             .col-sm-12
-                                .card
+                                .card.bootstrap-table
                                     .card-header
                                         h3 Inverse Table
                                         span
@@ -189,7 +189,7 @@ html(lang='en')
                                                     td 23/07/2022   
                                                     td 28	
                             .col-sm-12
-                                .card
+                                .card.bootstrap-table
                                     .card-header 
                                         h3 Hoverable Rows With Horizontal Border
                                         p.mb-0.mt-1
@@ -268,7 +268,7 @@ html(lang='en')
                                                     td 5.33		
                                                     td Diane Okuma
                             .col-sm-12
-                                .card
+                                .card.bootstrap-table
                                     .card-header
                                         h3 Inverse Table with Primary background
                                         p.mb-0.mt-1
@@ -343,7 +343,7 @@ html(lang='en')
                                                     td Developer
                                                     td IRN
                             .col-sm-12
-                                .card
+                                .card.bootstrap-table
                                     .card-header
                                         h3 Caption
                                         p.mb-0.mt-1 
@@ -390,7 +390,7 @@ html(lang='en')
                                                             td +91 8794562135		
                                                             td 24
                             .col-sm-6
-                                .card
+                                .card.bootstrap-table
                                     .card-header 
                                         h3 Table head options
                                         p.mb-0.mt-1 
@@ -425,7 +425,7 @@ html(lang='en')
                                                             td the Bird
                                                             td @twitter
                             .col-sm-6
-                                .card
+                                .card.bootstrap-table
                                     .card-header
                                         h2 Striped Row with Inverse Table
                                         P.mb-0.mt-1 
@@ -463,7 +463,7 @@ html(lang='en')
                                                             td 16
                                                             td 10
                             .col-sm-12  
-                                .card
+                                .card.bootstrap-table
                                     .card-header
                                         h2 Breckpoint Specific
                                         p.mb-0.mt-1 
@@ -497,56 +497,218 @@ html(lang='en')
                                                             td $120 
                                                             td 2
                                                             td $250
-                                                        tr
+                                                        tr.border-bottom-light
                                                             th(scope='row') 3
                                                             td Apple Airpods
                                                             td B54213
                                                             td $210	
                                                             td 1
                                                             td $210
+                            .col-sm-12
+                                .card.bootstrap-table
+                                    .card-header
+                                        h3 Responsive Tables With Light Background
+                                        p.mb-0.mt-1 
+                                            | A     
+                                            code .table-responsive ,.light-card
+                                            |  inside table element.
+                                    .card-block.row
                                         .col-sm-12
-                                            .card
-                                                .card-header
-                                                    h3 Responsive Tables With Light Background
-                                                    p.mb-0.mt-1 
-                                                        | A     
-                                                        code .table-responsive ,.light-card
-                                                        |  inside table element.
-                                                .card-block.row
-                                                    .col-sm-12
-                                                        .table-responsive
-                                                            table.table.light-card
-                                                                thead
-                                                                    tr
-                                                                        th(scope='col') Id
-                                                                        th(scope='col') Task
-                                                                        th(scope='col') Email
-                                                                        th(scope='col') Phone
-                                                                        th(scope='col') Assign
-                                                                        th(scope='col') Date
-                                                                        th(scope='col') Price
-                                                                        th(scope='col') Status
-                                                                        th(scope='col') Progress
-                                                                tbody
-                                                                    tr
-                                                                        th(scope='row') 1
-                                                                        td Web Development
-                                                                        td Pixel@efo.com	
-                                                                        td +91 7874226671	
-                                                                        td Mark Jecno	
-                                                                        td 12/07/2022	    
-                                                                        td $2315.00	
-                                                                        td.font-danger Pending
-                                                                        td 75%
-                                                                    tr
-                                                                        th(scope='row') 2
-                                                                        td Graphic Design
-                                                                        td Strap@google.com
-                                                                        td +91 8347855785	
-                                                                        td Elana John	
-                                                                        td 23/08/2022	
-                                                                        td $4125.00	
-                                                                        td.font-danger Pending	
-                                                                        td 45%      
+                                            .table-responsive
+                                                table.table.light-card
+                                                    thead
+                                                        tr
+                                                            th(scope='col') Id
+                                                            th(scope='col') Task
+                                                            th(scope='col') Email
+                                                            th(scope='col') Phone
+                                                            th(scope='col') Assign
+                                                            th(scope='col') Date
+                                                            th(scope='col') Price
+                                                            th(scope='col') Status
+                                                            th(scope='col') Progress
+                                                    tbody
+                                                        tr
+                                                            th(scope='row') 1
+                                                            td Web Development
+                                                            td Pixel@efo.com	
+                                                            td +91 7874226671	
+                                                            td Mark Jecno	
+                                                            td 12/07/2022	    
+                                                            td $2315.00	
+                                                            td.font-danger Pending
+                                                            td 75%
+                                                        tr
+                                                            th(scope='row') 2
+                                                            td Graphic Design
+                                                            td Strap@google.com
+                                                            td +91 8347855785	
+                                                            td Elana John	
+                                                            td 23/08/2022	
+                                                            td $4125.00	
+                                                            td.font-danger Pending	
+                                                            td 45%
+                                                        tr.border-bottom-light
+                                                            th(scope='row') 3
+                                                            td WordPress 
+                                                            td Pixelstrap@gmail.com	     
+                                                            td +91 635609347
+                                                            td John Deo
+                                                            td 15/04/2022
+                                                            td $6123.00	
+                                                            td.font-success Done
+                                                            td 100%
+                            .col-sm-12
+                                .card.bootstrap-table
+                                    .card-header
+                                        h3 Sizing Tables
+                                        p.mb-0.mt-0
+                                            | Example of Extra large table, Add
+                                            code .table-xl
+                                            |  class to the
+                                    .card-block.row
+                                        .col-sm-12
+                                            .table-responsive
+                                                table.table.table-lg
+                                                    thead
+                                                        tr
+                                                            th(scope='col') Id
+                                                            th(scope='col') Employee Name
+                                                            th(scope='col') Date
+                                                            th(scope='col') Status
+                                                            th(scope='col') Hours
+                                                            th(scope='col') Performance
+                                                    tbody
+                                                        tr
+                                                            th(scope='row') 1
+                                                            td Mark Jecno	
+                                                            td 22/08/2022	
+                                                            td.font-danger On leave
+                                                            td 0
+                                                            td 29/30
+                                                        tr
+                                                            th(scope='row') 2
+                                                            td Elana Robbert
+                                                            td 21/08/2022	
+                                                            td.font-success Present
+                                                            td 10
+                                                            td 30/30
+                                                        tr.border-bottom-light
+                                                            th(scope='row') 3
+                                                            td John Deo	
+                                                            td 18/08/2022
+                                                            td.font-danger On leave
+                                                            td 8
+                                                            td 28/30
+                            .col-sm-12  
+                                .card.bootstrap-table
+                                    .card-header
+                                        h3 Custom Table Color With Hover And Stripped
+                                        p.mb-0.mt-1 
+                                            | Use class 
+                                            code table-hover, table-striped table-*table-info,table-success,table-success,table-info,table-danger,table-primary,table-secondary,table-light,table-active
+                                            |   inside table element.
+                                    .table-responsive
+                                        table.table.table-striped.bg-primary.hover
+                                            thead.tbl-strip-thad-bdr
+                                                tr
+                                                    th(scope='col') Id
+                                                    th(scope='col') Film Title
+                                                    th(scope='col') Released
+                                                    th(scope='col') Studio
+                                                    th(scope='col') Budget      
+                                                    th(scope='col') Domestic Gross
+                                            tbody
+                                                tr
+                                                    th(scope='row') 1
+                                                    td Frozen	
+                                                    td 2013	
+                                                    td Disney
+                                                    td $150,000,000
+                                                    td $400,953,009
+                                                tr
+                                                    th(scope='row') 2
+                                                    td Minions	
+                                                    td 2015	
+                                                    td Universal
+                                                    td $74,000,000
+                                                    td $336,045,770
+                                                tr
+                                                    th(scope='row') 3
+                                                    td Zootopia	
+                                                    td 2016	
+                                                    td Disney
+                                                    td $150,000,000
+                                                    td $341,268,248
+                                                tr
+                                                    th(scope='row') 4
+                                                    td Finding Dory	
+                                                    td 2016
+                                                    td Disney Pixar
+                                                    td $175,000,000
+                                                    td 	$486,295,561
+                                                tr
+                                                    th(scope='row') 5
+                                                    td Toy Story 3	
+                                                    td 2010
+                                                    td Disney	Pixar
+                                                    td $200,000,000
+                                                    td $415,004,880
+                            .col-sm-12.mb-3
+                                .card.bootstrap-table
+                                    .card-header
+                                        h3 Dashed Border
+                                        p.mb-0.mt-1 
+                                            | Dashed border use class
+                                            code .table-dashed
+                                            |  , for Dotted border use class
+                                            code .table-dotted
+                                    .card-block.row
+                                        .table-responsive
+                                            table.table.table-dashed
+                                                thead
+                                                    tr
+                                                        th(scope='col') Id
+                                                        th(scope='col') Classname
+                                                        th(scope='col') Type
+                                                        th(scope='col') Hours
+                                                        th(scope='col') Trainer
+                                                        th(scope='col') Spots
+                                                tbody
+                                                    tr
+                                                        th(scope='row') 1
+                                                        td Crit Cardio  
+                                                        td Gym
+                                                        td 9:00 AM - 11:00 AM
+                                                        td Aaron Chapman	
+                                                        td 10
+                                                    tr
+                                                        th(scope='row') 2
+                                                        td Zumba Dance
+                                                        td Dance
+                                                        td 8:00 AM - 9:00 AM
+                                                        td Donna Wilson	
+                                                        td 12
+                                                    tr
+                                                        th(scope='row') 3
+                                                        td Like a butterfly
+                                                        td Boxing
+                                                        td 9:00 AM - 10:00 AM
+                                                        td Randy Porter		
+                                                        td 13
+                                                    tr
+                                                        th(scope='row') 4
+                                                        td Pilates Reformer
+                                                        td Gym
+                                                        td 7:00 AM - 8:30 AM		
+                                                        td Aaron Chapman	
+                                                        td 15
+                                                    tr
+                                                        th(scope='row') 5
+                                                        td Mind & Body	
+                                                        td Yoga
+                                                        td 8:00 AM - 9:00 AM
+                                                        td Adam Stewart	
+                                                        td 20              
                 include ../../components/footer
         include ../../components/footer-files 
