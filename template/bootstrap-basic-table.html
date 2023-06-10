@@ -340,7 +340,7 @@
           <div class="container-fluid">
             <div class="row g-3">
               <div class="col-sm-12">
-                <div class="card">
+                <div class="card bootstrap-table">
                   <div class="card-header">
                     <h4>Basic Table With Border Bottom Color</h4>
                     <p class="mt-1 mb-0">
@@ -427,7 +427,7 @@
                 </div>
               </div>
               <div class="col-sm-12">
-                <div class="card">
+                <div class="card bootstrap-table">
                   <div class="card-header">
                     <h3>Inverse Table</h3><span>Use a class<code>table-inverse</code> inside table element.</span>
                   </div>
@@ -502,7 +502,7 @@
                 </div>
               </div>
               <div class="col-sm-12">
-                <div class="card">
+                <div class="card bootstrap-table">
                   <div class="card-header"> 
                     <h3>Hoverable Rows With Horizontal Border</h3>
                     <p class="mb-0 mt-1">Hoverable row use a class<code>table-hover</code> and for Horizontal border use a class<code>.table-border-horizontal</code> , Solid border Use a class<code>.border-solid .table</code>class.</p>
@@ -582,7 +582,7 @@
                 </div>
               </div>
               <div class="col-sm-12">
-                <div class="card">
+                <div class="card bootstrap-table">
                   <div class="card-header">
                     <h3>Inverse Table with Primary background</h3>
                     <p class="mb-0 mt-1">Use a class<code>.bg-info, .bg-success, .bg-warning and .bg-danger classes.</code> with light text on dark backgrounds inside table element.</p>
@@ -668,7 +668,7 @@
                 </div>
               </div>
               <div class="col-sm-12">
-                <div class="card">
+                <div class="card bootstrap-table">
                   <div class="card-header">
                     <h3>Caption</h3>
                     <p class="mb-0 mt-1">
@@ -726,7 +726,7 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="card">
+                <div class="card bootstrap-table">
                   <div class="card-header"> 
                     <h3>Table head options</h3>
                     <p class="mb-0 mt-1">
@@ -771,7 +771,7 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="card">
+                <div class="card bootstrap-table">
                   <div class="card-header">
                     <h2>Striped Row with Inverse Table</h2>
                     <P class="mb-0 mt-1">
@@ -820,7 +820,7 @@
                 </div>
               </div>
               <div class="col-sm-12"> 
-                <div class="card">
+                <div class="card bootstrap-table">
                   <div class="card-header">
                     <h2>Breckpoint Specific</h2>
                     <p class="mb-0 mt-1">
@@ -857,7 +857,7 @@
                               <td>2</td>
                               <td>$250</td>
                             </tr>
-                            <tr>
+                            <tr class="border-bottom-light">
                               <th scope="row">3</th>
                               <td>Apple Airpods</td>
                               <td>B54213</td>
@@ -869,59 +869,254 @@
                         </table>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="card bootstrap-table">
+                  <div class="card-header">
+                    <h3>Responsive Tables With Light Background</h3>
+                    <p class="mb-0 mt-1">
+                       A     <code>.table-responsive ,.light-card</code> inside table element.</p>
+                  </div>
+                  <div class="card-block row">
                     <div class="col-sm-12">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>Responsive Tables With Light Background</h3>
-                          <p class="mb-0 mt-1">
-                             A     <code>.table-responsive ,.light-card</code> inside table element.</p>
-                        </div>
-                        <div class="card-block row">
-                          <div class="col-sm-12">
-                            <div class="table-responsive">
-                              <table class="table light-card">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Id</th>
-                                    <th scope="col">Task</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Assign</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Progress</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>Web Development</td>
-                                    <td>Pixel@efo.com	</td>
-                                    <td>+91 7874226671	</td>
-                                    <td>Mark Jecno	</td>
-                                    <td>12/07/2022	    </td>
-                                    <td>$2315.00	</td>
-                                    <td class="font-danger">Pending</td>
-                                    <td>75%</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">2</th>
-                                    <td>Graphic Design</td>
-                                    <td>Strap@google.com</td>
-                                    <td>+91 8347855785	</td>
-                                    <td>Elana John	</td>
-                                    <td>23/08/2022	</td>
-                                    <td>$4125.00	</td>
-                                    <td class="font-danger">Pending	</td>
-                                    <td>45%      </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="table-responsive">
+                        <table class="table light-card">
+                          <thead>
+                            <tr>
+                              <th scope="col">Id</th>
+                              <th scope="col">Task</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Phone</th>
+                              <th scope="col">Assign</th>
+                              <th scope="col">Date</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Progress</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Web Development</td>
+                              <td>Pixel@efo.com	</td>
+                              <td>+91 7874226671	</td>
+                              <td>Mark Jecno	</td>
+                              <td>12/07/2022	    </td>
+                              <td>$2315.00	</td>
+                              <td class="font-danger">Pending</td>
+                              <td>75%</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Graphic Design</td>
+                              <td>Strap@google.com</td>
+                              <td>+91 8347855785	</td>
+                              <td>Elana John	</td>
+                              <td>23/08/2022	</td>
+                              <td>$4125.00	</td>
+                              <td class="font-danger">Pending	</td>
+                              <td>45%</td>
+                            </tr>
+                            <tr class="border-bottom-light">
+                              <th scope="row">3</th>
+                              <td>WordPress </td>
+                              <td>Pixelstrap@gmail.com	     </td>
+                              <td>+91 635609347</td>
+                              <td>John Deo</td>
+                              <td>15/04/2022</td>
+                              <td>$6123.00	</td>
+                              <td class="font-success">Done</td>
+                              <td>100%</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="card bootstrap-table">
+                  <div class="card-header">
+                    <h3>Sizing Tables</h3>
+                    <p class="mb-0 mt-0">Example of Extra large table, Add<code>.table-xl</code> class to the</p>
+                  </div>
+                  <div class="card-block row">
+                    <div class="col-sm-12">
+                      <div class="table-responsive">
+                        <table class="table table-lg">
+                          <thead>
+                            <tr>
+                              <th scope="col">Id</th>
+                              <th scope="col">Employee Name</th>
+                              <th scope="col">Date</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Hours</th>
+                              <th scope="col">Performance</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark Jecno	</td>
+                              <td>22/08/2022	</td>
+                              <td class="font-danger">On leave</td>
+                              <td>0</td>
+                              <td>29/30</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Elana Robbert</td>
+                              <td>21/08/2022	</td>
+                              <td class="font-success">Present</td>
+                              <td>10</td>
+                              <td>30/30</td>
+                            </tr>
+                            <tr class="border-bottom-light">
+                              <th scope="row">3</th>
+                              <td>John Deo	</td>
+                              <td>18/08/2022</td>
+                              <td class="font-danger">On leave</td>
+                              <td>8</td>
+                              <td>28/30</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12"> 
+                <div class="card bootstrap-table">
+                  <div class="card-header">
+                    <h3>Custom Table Color With Hover And Stripped</h3>
+                    <p class="mb-0 mt-1">
+                       Use class <code>table-hover, table-striped table-*table-info,table-success,table-success,table-info,table-danger,table-primary,table-secondary,table-light,table-active</code>  inside table element.</p>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-striped bg-primary hover">
+                      <thead class="tbl-strip-thad-bdr">
+                        <tr>
+                          <th scope="col">Id</th>
+                          <th scope="col">Film Title</th>
+                          <th scope="col">Released</th>
+                          <th scope="col">Studio</th>
+                          <th scope="col">Budget      </th>
+                          <th scope="col">Domestic Gross</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Frozen	</td>
+                          <td>2013	</td>
+                          <td>Disney</td>
+                          <td>$150,000,000</td>
+                          <td>$400,953,009</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Minions	</td>
+                          <td>2015	</td>
+                          <td>Universal</td>
+                          <td>$74,000,000</td>
+                          <td>$336,045,770</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Zootopia	</td>
+                          <td>2016	</td>
+                          <td>Disney</td>
+                          <td>$150,000,000</td>
+                          <td>$341,268,248</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Finding Dory	</td>
+                          <td>2016</td>
+                          <td>Disney Pixar</td>
+                          <td>$175,000,000</td>
+                          <td>	$486,295,561</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Toy Story 3	</td>
+                          <td>2010</td>
+                          <td>Disney	Pixar</td>
+                          <td>$200,000,000</td>
+                          <td>$415,004,880</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 mb-3">
+                <div class="card bootstrap-table">
+                  <div class="card-header">
+                    <h3>Dashed Border</h3>
+                    <p class="mb-0 mt-1">
+                       Dashed border use class<code>.table-dashed</code> , for Dotted border use class<code>.table-dotted</code></p>
+                  </div>
+                  <div class="card-block row">
+                    <div class="table-responsive">
+                      <table class="table table-dashed">
+                        <thead>
+                          <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Classname</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Hours</th>
+                            <th scope="col">Trainer</th>
+                            <th scope="col">Spots</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Crit Cardio  </td>
+                            <td>Gym</td>
+                            <td>9:00 AM - 11:00 AM</td>
+                            <td>Aaron Chapman	</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Zumba Dance</td>
+                            <td>Dance</td>
+                            <td>8:00 AM - 9:00 AM</td>
+                            <td>Donna Wilson	</td>
+                            <td>12</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Like a butterfly</td>
+                            <td>Boxing</td>
+                            <td>9:00 AM - 10:00 AM</td>
+                            <td>Randy Porter		</td>
+                            <td>13</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Pilates Reformer</td>
+                            <td>Gym</td>
+                            <td>7:00 AM - 8:30 AM		</td>
+                            <td>Aaron Chapman	</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Mind & Body	</td>
+                            <td>Yoga</td>
+                            <td>8:00 AM - 9:00 AM</td>
+                            <td>Adam Stewart	</td>
+                            <td>20              </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
