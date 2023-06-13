@@ -121,44 +121,45 @@ th {
 	}
 }
 
-table thead .border-bottom-secondary th,
-table tbody .border-bottom-secondary th,
-table tbody .border-bottom-secondary td {
-	border-bottom: 1px solid rgba(var(--secondary-color),1) !important;
-} 
-table thead .border-bottom-success th,
-table tbody .border-bottom-success th,
-table tbody .border-bottom-success td {
-	border-bottom: 1px solid rgba(var(--success-color),1) !important;
-} 
-table thead .border-bottom-danger th,
-table tbody .border-bottom-danger th,
-table tbody .border-bottom-danger td {
-	border-bottom: 1px solid rgba(var(--danger-color),1) !important;
-} 
-table thead .border-bottom-info th,
-table tbody .border-bottom-info th,
-table tbody .border-bottom-info td {
-	border-bottom: 1px solid rgba(var(--info-color),1) !important;
-} 
+.border-bottom-secondary{
+	th, td{
+		border-bottom: 1px solid rgba(var(--secondary-color),1) !important;
+	}
+}
+.border-bottom-success{
+	th, td{
+		border-bottom: 1px solid rgba(var(--success-color),1) !important;
+	}
+}
+.border-bottom-danger{
+	th, td{
+		border-bottom: 1px solid rgba(var(--danger-color),1) !important;	
+	}
+}
+.border-bottom-info{
+	th, td{
+		border-bottom: 1px solid rgba(var(--info-color),1) !important;
+	}
+}
 
-table thead .border-bottom-warning th,
-table tbody .border-bottom-warning th,
-table tbody .border-bottom-warning td {
-	border-bottom: 1px solid rgba(var(--warning-color),1) !important;
-} 
-table thead .border-bottom-light th,
-table tbody .border-bottom-light th,
-table tbody .border-bottom-light td {
-	border-bottom: 1px solid rgba(var(--white),1) !important;
-} 
+.border-bottom-warning{
+	th, td{
+		border-bottom: 1px solid rgba(var(--warning-color),1) !important;
+	}
+}
+
+.border-bottom-light{
+	th, td{
+		border-bottom: 1px solid rgba(var(--white),1) !important;
+	}
+}
+ 
 .basic-table{
 	tr{
 		&:last-child{
 			border-bottom: unset;
 		}
 	}
-	
 }
 .table-inverse{
 	color: rgba(var(--white),1);
@@ -318,7 +319,21 @@ table tbody .border-bottom-light td {
 			cursor: pointer;
 			margin-top: 10px;
 			margin-bottom: 10px;
+			&::before{
+				content: "";
+				display: inline-block;
+				position: absolute;
+				width: 19px;
+				height: 19px;
+				left: -3px;
+				margin-left: -16px;
+				border: 1px solid rgba(var(--light-gray),1);
+				border-radius: 3px;
+				background-color: rgba(var(--white),1);
+				transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+			}
 		}
+
 	}
 	label{
 		margin-right: 20px;
@@ -343,6 +358,138 @@ table tbody .border-bottom-light td {
 		label{
 			&::before{
 				border-color: rgba(var(--primary-color),1);
+			}
+		}
+	}  
+	.checkbox-primary{
+		input[type=checkbox]{
+			&:checked{
+				+{
+					label{
+						&::before{  
+							border-color: rgba(var(--primary-color),1);
+							color: rgba(var(--primary-color),1);
+							font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+							text-align: center;
+							line-height: 1.2;
+							
+						}
+					}
+				} 
+			}
+		}
+		label{
+			&::before{
+				border-color: rgba(var(--primary-color),1);
+			}
+		}
+	}  
+	.checkbox-secondary{
+		input[type=checkbox]{
+			&:checked{
+				+{
+					label{
+						&::before{  
+							border-color: rgba(var(--secondary-color),1);
+							color: rgba(var(--secondary-color),1);
+							font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+							text-align: center;
+							line-height: 1.2;
+							
+						}
+					}
+				} 
+			}
+		}
+		label{
+			&::before{
+				border-color: rgba(var(--secondary-color),1);
+			}
+		}
+	}
+	.checkbox-success{
+		input[type=checkbox]{
+			&:checked{
+				+{
+					label{
+						&::before{  
+							border-color: rgba(var(--success-color),1);
+							color: rgba(var(--success-color),1);
+							font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+							text-align: center;
+							line-height: 1.2;
+							
+						}
+					}
+				} 
+			}
+		}
+		label{
+			&::before{
+				border-color: rgba(var(--success-color),1);
+			}
+		}
+	}    
+	
+} 
+.checkbox-dark{
+	&.checkbox{
+		display: inline-block;
+		label{
+			display: inline-block;
+			position: relative;
+			padding-left: 16px;
+			cursor: pointer;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			&::before{
+				content: "";
+				display: inline-block;
+				position: absolute;
+				width: 19px;
+				height: 19px;
+				left: -3px;
+				margin-left: -16px;
+				border: 1px solid rgba(var(--dark),1);
+				border-radius: 3px;
+				background-color: rgba(var(--white),1);
+				transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+			}
+		}
+
+	}
+	input[type=checkbox]{
+		&:checked{
+			+{
+				label{
+					&::before{
+						border-color: rgba(var(--dark),1);
+						color: rgba(var(--dark),1);
+						font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+						text-align: center;
+						line-height: 1.2;
+					}
+				}
+			} 
+		} 
+	}
+	label{
+		&::before{
+			border-color: rgba(var(--dark),1);
+		}
+	}
+}
+.m-squar{
+	&.checkbox{
+		label{
+			display: inline-block;
+			position: relative;
+			padding-left: 16px;
+			cursor: pointer;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			&::before{
+				content: "";
 				display: inline-block;
 				position: absolute;
 				width: 19px;
@@ -350,13 +497,62 @@ table tbody .border-bottom-light td {
 				left: 0;
 				margin-left: -16px;
 				border: 1px solid #efefef;
-				border-radius: 3px;
 				background-color: #fff;
 				transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 			}
 		}
-	}  
+		input[type=checkbox]{
+			opacity: 0;
+		}
+	} 
+	input[type=checkbox]{
+		&:checked{
+			+{
+				label{
+					&::before{
+						color: rgba(var(--dark),1);
+						font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+						text-align: center;
+						line-height: 1.2;
+					}
+				}
+			} 
+		} 
+	}
+	label{
+		&::before{
+			border-radius: 0;
+		}
+	}
+}
+.table-bordered{
+	td, th, tr{
+		border-color: rgba(var(--light-gray), 1)	;
+	}
 } 
+.pills-component{
+	width: 20%;
+}
+.badge-table{
+	.badge{
+		display: inline-block;
+		padding: 0.44em 0.7em;
+		font-size: 0.75em;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 0.25rem;
+		font-family: Roboto, sans-serif;
+	}
+}
+.label-square{
+	span{
+		font-size: 14px;
+	}
+}
 
 
 

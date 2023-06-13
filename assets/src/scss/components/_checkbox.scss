@@ -864,3 +864,103 @@
         }
     }    
 }
+.radio-first-col-width{
+    .custom-radio{
+        .radio{
+            &.radio-primary{
+                input[type=radio]{
+                    +{
+                        label{
+                            &::before{
+                                border-color: rgba(var(--primary-color),1);
+                            }
+                        } 
+                    }
+                }   
+            }
+            input[type=radio]{
+                &:disabled{
+                    +{
+                        label{
+                            opacity: 0.65;
+                            &::before{
+                                cursor: not-allowed;
+                            }
+                        }
+                    }
+                }
+            } 
+            &.radio-primary{
+                input[type=radio]{
+                    &:checked{  
+                        +{
+                            label{
+                                &::after{
+                                    background-color: rgba(var(--primary-color),1);
+                                }
+                            }
+                        } 
+                    }
+                } 
+            }
+        } 
+    }
+    
+    .m-checkbox-inline{
+        .radio{
+            display: inline-block;
+        }
+    } 
+}
+
+.select-components{
+    .form-control{
+        padding: 0.375rem 0.75rem;
+    }
+    select{
+        border-color: rgba(var(--light-gray),1);
+    }      
+}
+.card-block{  
+    .table-responsive{
+        .table-bordered{
+            td{
+                vertical-align: middle;
+            }
+        }
+        @media (max-width: 767px) {
+            .table{
+                tbody{
+                    tr{
+                        td{
+                            span{
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                max-width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+            .checkbox-td-width{
+                tbody{
+                    tr{
+                        td{
+                            min-width: 200px !important;
+                        }
+                    }
+                }
+            }  
+            .radio-first-col-width{
+                tbody{
+                    tr{
+                        td{
+                            min-width: 200px !important;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}

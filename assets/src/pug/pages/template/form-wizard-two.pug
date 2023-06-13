@@ -26,7 +26,7 @@ html(lang='en')
                                         li.breadcrumb-item.active Form Wizard 2
                     // Container-fluid starts
                     .container-fluid
-                        .row.g-3
+                        .row
                             .col-sm-12
                                 .card
                                     .card-header
@@ -47,19 +47,19 @@ html(lang='en')
                                                                 .stroke-icon-wizard 
                                                                     i.fa-solid.fa-link-slash
                                                                 .horizontal-wizard-content
-                                                                    h6 Connect bank account
+                                                                    h5 Connect bank account
                                                         a#inquiry-wizard-tab.nav-link(data-bs-toggle='pill' href='#inquiry-wizard' role='tab' aria-controls='inquiry-wizard' aria-selected='false') 
                                                             .horizontal-wizard
                                                                 .stroke-icon-wizard
                                                                     i.fa-solid.fa-users
                                                                 .horizontal-wizard-content
-                                                                    h6 Inquiries
+                                                                    h5 Inquiries
                                                         a#successful-wizard-tab.nav-link(data-bs-toggle='pill' href='#successful-wizard' role='tab' aria-controls='successful-wizard' aria-selected='false')
                                                             .horizontal-wizard
                                                                 .stroke-icon-wizard
                                                                     i.fa-solid.fa-users
                                                                 .horizontal-wizard-content
-                                                                    h6 Completed 
+                                                                    h5 Completed 
                                                 .col-12 
                                                     #horizontal-wizard-tabContent.tab-content.dark-field
                                                         #wizard-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='wizard-info-tab')
@@ -251,7 +251,7 @@ html(lang='en')
                                                         #wizard-n-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='wizard-n-info-tab')
                                                             form.row.g-3.needs-validation(novalidate='')
                                                                 .col-12
-                                                                    h5.f-w-600 Select the type of account
+                                                                    h5.f-w-700 Select the type of account
                                                                     p It has long been known that distracting information on a page will lose a reader's attention.
                                                                 .col-12 
                                                                     .form-check.radio.radio-primary.ps-0.select-account
@@ -371,7 +371,7 @@ html(lang='en')
                                                                     .valid-feedback 
                                                                         | Looks's Good!
                                                                 .col-12 
-                                                                    .row.g-3
+                                                                    .row
                                                                         .col-md-6
                                                                             label.form-label(for='expiration') Expiration(MM/YY)
                                                                             .row.g-3
@@ -578,7 +578,7 @@ html(lang='en')
                                                                                     input#radioSelect4.form-check-input.me-2(type='radio' name='inlineRadioOptions' value='option3')
                                                                                     label.form-check-label(for='radioSelect4') Blogs
                                                                         .col-md-6   
-                                                                            .row.g-3
+                                                                            .row
                                                                                 .col-12
                                                                                     label.form-label Email
                                                                                         span.txt-danger *
@@ -598,7 +598,7 @@ html(lang='en')
                                                             .form-completed
                                                                 img(src="../assets/images/gif/success/successful.gif", alt="successful")
                                                                 h5 Successfully Completed      
-                            .col-sm-12.mb-3 
+                            .col-sm-12
                                 .card
                                     .card-header
                                         h3 Business horizontal wizard
@@ -642,7 +642,7 @@ html(lang='en')
                                                         #business-n-info.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='business-n-info-tab')
                                                             form.row.g-3.needs-validation(novalidate='')
                                                                 .col-12
-                                                                    h5.f-w-600 Select the type of account
+                                                                    h5.f-w-700 Select the type of account
                                                                     p It has long been known that distracting information on a page will lose a reader's attention.
                                                                 .col-12 
                                                                     .form-check.radio.radio-primary.ps-0.select-account
@@ -763,7 +763,7 @@ html(lang='en')
                                                                     .valid-feedback 
                                                                         | Looks's Good!
                                                                 .col-12 
-                                                                    .row.g-3
+                                                                    .row
                                                                         .col-md-6
                                                                             label.form-label(for='validationCustom-d') Expiration(MM/YY)
                                                                             .row.g-3
