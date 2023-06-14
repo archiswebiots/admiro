@@ -338,7 +338,7 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="row g-3">
+            <div class="row">
               <div class="col-xl-6">
                 <div class="card">
                   <div class="card-header">
@@ -436,9 +436,9 @@
                         <div class="invalid-feedback">Invalid form file selected</div>
                       </div>
                       <div class="col-12">
-                        <div class="form-check">
+                        <div class="form-check validation-vertical-wizard">
                           <input class="form-check-input" id="invalidCheck-a" type="checkbox" value="" required="">
-                          <label class="form-check-label text-danger" for="invalidCheck-a">All the above information is correct</label>
+                          <label class="form-check-label" for="invalidCheck-a">All the above information is correct</label>
                           <div class="invalid-feedback">You must agree before submitting.</div>
                         </div>
                       </div>
@@ -508,7 +508,7 @@
                       <div class="tab">
                         <div class="row g-3">
                           <div class="col-sm-6">
-                            <label for="name">Name  </label>
+                            <label class="form-label" for="name">Name  </label>
                             <input class="form-control" id="name" type="text" placeholder="Enter your name" required="required">
                           </div>
                           <div class="col-sm-6">
@@ -685,7 +685,7 @@
                               </form>
                             </div>
                             <div class="tab-pane fade" id="wizard-cart" role="tabpanel" aria-labelledby="wizard-cart-tab">
-                              <form class="row g-3 needs-validation custom-input" novalidate="">
+                              <form class="row g-3 needs-validation custom-input validation-vertical-wizard" novalidate="">
                                 <div class="col-xxl-6">
                                   <div class="card-wrapper border rounded-3 checkbox-checked">
                                     <h6 class="sub-title fw-bold">Select your payment method</h6>
@@ -749,7 +749,7 @@
                                 <div class="col-12">
                                   <div class="form-check mb-0">
                                     <input class="form-check-input" id="invalidCheck-a" type="checkbox" value="" required="">
-                                    <label class="form-check-label text-danger" for="invalidCheck-a">All the above information is correct</label>
+                                    <label class="form-check-label" for="invalidCheck-a">All the above information is correct</label>
                                     <div class="invalid-feedback">You must agree before submitting.</div>
                                   </div>
                                 </div>
@@ -760,17 +760,17 @@
                               </form>
                             </div>
                             <div class="tab-pane fade" id="wizard-banking" role="tabpanel" aria-labelledby="wizard-banking-tab">
-                              <form class="row g-3 mb-3 needs-validation custom-input" novalidate="">
+                              <form class="row g-3 mb-3 needs-validation custom-input vartical-validation validation-vertical-wizard" novalidate="">
                                 <div class="col-md-12"> 
                                   <div class="accordion dark-accordion" id="accordionExample-a">
                                     <div class="accordion-item">
                                       <h2 class="accordion-header" id="headingOne-a">
-                                        <button class="accordion-button collapsed accordion-light-primary txt-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-a" aria-expanded="true" aria-controls="collapseOne-a">
+                                        <button class="accordion-button collapsed accordion-light-primary text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-a" aria-expanded="true" aria-controls="collapseOne-a">
                                            NET BANKING<i class="fa-solid fa-chevron-down"></i></button>
                                       </h2>
                                       <div class="accordion-collapse collapse" id="collapseOne-a" aria-labelledby="headingOne-a" data-bs-parent="#accordionExample-a">
-                                        <div class="accordion-body">
-                                          <h6 class="sub-title fw-bold">SELECT YOUR BANK</h6>
+                                        <div class="accordion-body weight-title">
+                                          <h6 class="sub-title">SELECT YOUR BANK</h6>
                                           <div class="row">
                                             <div class="col-sm-6">
                                               <div class="form-check radio radio-primary">
@@ -806,17 +806,15 @@
                                     </div>
                                   </div>
                                 </div>
-                              </form>
-                              <form class="row g-3 needs-validation" novalidate="">
                                 <div class="col-12"> 
                                   <textarea class="form-control" id="validationTextarea24" placeholder="Your Feedback" required=""></textarea>
                                   <div class="invalid-feedback">Please enter a message in the textarea.                                        </div>
-                                  <div class="col-12">
-                                    <div class="form-check mb-0">
-                                      <input class="form-check-input" id="invalidCheck67" type="checkbox" value="" required="">
-                                      <label class="form-check-label mb-0" for="invalidCheck67">Agree to terms and conditions</label>
-                                      <div class="invalid-feedback">You must agree before submitting.</div>
-                                    </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check mb-0">
+                                    <input class="form-check-input" id="invalidCheck67" type="checkbox" value="" required="">
+                                    <label class="form-check-label mb-0" for="invalidCheck67">Agree to terms and conditions</label>
+                                    <div class="invalid-feedback">You must agree before submitting.</div>
                                   </div>
                                   <div class="col-12 text-end"> 
                                     <button class="btn btn-success">Finish</button>
@@ -831,7 +829,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 mb-3">
+              <div class="col-md-12">
                 <div class="card">
                   <div class="card-header">
                     <h3>Shipping form</h3>
@@ -848,25 +846,25 @@
                                     <div class="cart-options">
                                       <div class="stroke-icon-wizard"><i class="fa-solid fa-user"></i></div>
                                       <div class="cart-options-content">
-                                        <h6>Billing</h6>
+                                        <h6 class="f-w-700">Billing</h6>
                                       </div>
                                     </div></a><a class="nav-link" id="ship-wizard-tab" data-bs-toggle="pill" href="#ship-wizard" role="tab" aria-controls="ship-wizard" aria-selected="false">
                                     <div class="cart-options">
                                       <div class="stroke-icon-wizard"><i class="fa-solid fa-truck"></i></div>
                                       <div class="cart-options-content">
-                                        <h6>Shipping</h6>
+                                        <h6 class="f-w-700">Shipping</h6>
                                       </div>
                                     </div></a><a class="nav-link" id="payment-wizard-tab" data-bs-toggle="pill" href="#payment-wizard" role="tab" aria-controls="payment-wizard" aria-selected="false">
                                     <div class="cart-options">
                                       <div class="stroke-icon-wizard"><i class="fa-solid fa-money-bill"></i></div>
                                       <div class="cart-options-content">
-                                        <h6>Payment</h6>
+                                        <h6 class="f-w-700">Payment</h6>
                                       </div>
                                     </div></a><a class="nav-link" id="finish-wizard-tab" data-bs-toggle="pill" href="#finish-wizard" role="tab" aria-controls="finish-wizard" aria-selected="false">
                                     <div class="cart-options">
                                       <div class="stroke-icon-wizard"><i class="fa-solid fa-square-check"></i></div>
                                       <div class="cart-options-content"> 
-                                        <h6>Finish</h6>
+                                        <h6 class="f-w-700">Finish</h6>
                                       </div>
                                     </div></a></div>
                               </div>
@@ -1136,7 +1134,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="tab-pane fade shipping-wizard" id="finish-wizard" role="tabpanel" aria-labelledby="finish-wizard-tab">
+                                  <div class="tab-pane fade shipping-wizard finish-wizard1" id="finish-wizard" role="tabpanel" aria-labelledby="finish-wizard-tab">
                                     <div class="order-confirm"><img src="../assets/images/gif/success/successful.gif" alt="popper">
                                       <h5>Thank you! Your order is confirmed.</h5>
                                       <p class="mb-0">An email with your order's specifics will be sent to you as order confirmation.</p>
@@ -1149,7 +1147,7 @@
                           </div>
                           <div class="col-xl-4"> 
                             <div class="shipping-info">
-                              <h5>Current Cart </h5>
+                              <h4 class="f-w-700">Current Cart </h4>
                               <div class="overflow-auto">
                                 <table class="table table-striped">
                                   <thead>
@@ -1164,7 +1162,7 @@
                                       <td> <img src="../assets/images/product/13.png" alt="t-shirt"></td>
                                       <td>
                                         <div>
-                                          <h6>T-shirt </h6><span>$98 * 2</span>
+                                          <h5>T-shirt </h5><span>$98 * 2</span>
                                         </div>
                                       </td>
                                       <td>
@@ -1175,7 +1173,7 @@
                                       <td><img src="../assets/images/product-1/2.png" alt="headphone"></td>
                                       <td> 
                                         <div>
-                                          <h6>Headphone</h6><span>$4*2</span>
+                                          <h5>Headphone</h5><span>$4*2</span>
                                         </div>
                                       </td>
                                       <td> 
@@ -1185,7 +1183,7 @@
                                     <tr>
                                       <td><img src="../assets/images/product/2.png" alt="headphone"></td>
                                       <td>
-                                        <h6>T-shirt</h6><span>$10 * 2</span>
+                                        <h5>T-shirt</h5><span>$10 * 2</span>
                                       </td>
                                       <td>
                                         <p>$234</p>
@@ -1195,7 +1193,7 @@
                                       <td><img src="../assets/images/product-1/4.png" alt="headphone"></td>
                                       <td> 
                                         <div>
-                                          <h6>Chairs</h6><span>$98 * 2</span>
+                                          <h5>Chairs</h5><span>$98 * 2</span>
                                         </div>
                                       </td>
                                       <td> 
@@ -1205,8 +1203,8 @@
                                   </tbody>
                                   <tfoot>
                                     <tr> 
-                                      <td>Sub Total :</td>
-                                      <td colspan="2">$1284.00</td>
+                                      <td class="f-w-700">Sub Total :</td>
+                                      <td class="f-w-700" colspan="2">$1284.00</td>
                                     </tr>
                                     <tr> 
                                       <td>Discount :</td>
@@ -1221,8 +1219,8 @@
                                       <td colspan="2">$205.34</td>
                                     </tr>
                                     <tr>            
-                                      <td>Total (USD) :</td>
-                                      <td colspan="2">$1569.7</td>
+                                      <td class="f-w-700">Total (USD) :</td>
+                                      <td class="f-w-700" colspan="2">$1569.7</td>
                                     </tr>
                                   </tfoot>
                                 </table>

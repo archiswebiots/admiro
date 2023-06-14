@@ -28,7 +28,7 @@ html(lang='en')
                                         li.breadcrumb-item.active Form Wizard 1
                     // Container-fluid starts
                     .container-fluid
-                        .row.g-3
+                        .row
                             .col-xl-6
                                 .card
                                     .card-header
@@ -126,9 +126,9 @@ html(lang='en')
                                                 input#formFile3.form-control(type='file' aria-label='file example' required='')
                                                 .invalid-feedback Invalid form file selected
                                             .col-12
-                                                .form-check
+                                                .form-check.validation-vertical-wizard
                                                     input#invalidCheck-a.form-check-input(type='checkbox' value='' required='')
-                                                    label.form-check-label.text-danger(for='invalidCheck-a')
+                                                    label.form-check-label(for='invalidCheck-a')
                                                         | All the above information is correct
                                                     .invalid-feedback
                                                         | You must agree before submitting.
@@ -191,7 +191,7 @@ html(lang='en')
                                             .tab
                                                 .row.g-3
                                                     .col-sm-6
-                                                        label(for='name') Name  
+                                                        label.form-label(for='name') Name  
                                                         input#name.form-control(type='text', placeholder='Enter your name', required='required')
                                                     .col-sm-6
                                                         label.form-label(for='email-basic-wizard') Email    
@@ -346,7 +346,7 @@ html(lang='en')
                                                                     button.btn.btn-primary Previous
                                                                     button.btn.btn-primary Next
                                                         #wizard-cart.tab-pane.fade(role='tabpanel' aria-labelledby='wizard-cart-tab')
-                                                            form.row.g-3.needs-validation.custom-input(novalidate='')
+                                                            form.row.g-3.needs-validation.custom-input.validation-vertical-wizard(novalidate='')
                                                                 .col-xxl-6
                                                                     .card-wrapper.border.rounded-3.checkbox-checked
                                                                         h6.sub-title.fw-bold Select your payment method
@@ -401,7 +401,7 @@ html(lang='en')
                                                                 .col-12
                                                                     .form-check.mb-0
                                                                         input#invalidCheck-a.form-check-input(type='checkbox' value='' required='')
-                                                                        label.form-check-label.text-danger(for='invalidCheck-a')
+                                                                        label.form-check-label(for='invalidCheck-a')
                                                                             | All the above information is correct
                                                                         .invalid-feedback
                                                                             | You must agree before submitting.
@@ -409,17 +409,17 @@ html(lang='en')
                                                                     button.btn.btn-primary Previous
                                                                     button.btn.btn-primary Next
                                                         #wizard-banking.tab-pane.fade(role='tabpanel' aria-labelledby='wizard-banking-tab')
-                                                            form.row.g-3.mb-3.needs-validation.custom-input(novalidate='')
+                                                            form.row.g-3.mb-3.needs-validation.custom-input.vartical-validation.validation-vertical-wizard(novalidate='')
                                                                 .col-md-12 
                                                                     #accordionExample-a.accordion.dark-accordion
                                                                         .accordion-item
                                                                             h2#headingOne-a.accordion-header
-                                                                                button.accordion-button.collapsed.accordion-light-primary.txt-primary(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne-a' aria-expanded='true' aria-controls='collapseOne-a') 
+                                                                                button.accordion-button.collapsed.accordion-light-primary.text-primary(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne-a' aria-expanded='true' aria-controls='collapseOne-a') 
                                                                                     | NET BANKING
                                                                                     i.fa-solid.fa-chevron-down
                                                                             #collapseOne-a.accordion-collapse.collapse(aria-labelledby='headingOne-a' data-bs-parent='#accordionExample-a')
-                                                                                .accordion-body
-                                                                                    h6.sub-title.fw-bold SELECT YOUR BANK
+                                                                                .accordion-body.weight-title
+                                                                                    h6.sub-title SELECT YOUR BANK
                                                                                     .row
                                                                                         .col-sm-6
                                                                                             .form-check.radio.radio-primary
@@ -447,21 +447,21 @@ html(lang='en')
                                                                                                 input#flexRadioDefault-u.form-check-input(type='radio' name='flexRadioDefault-v')
                                                                                                 label.form-check-label(for='flexRadioDefault-u')
                                                                                                     | HDFC Bank
-                                                            form.row.g-3.needs-validation(novalidate='')
                                                                 .col-12 
                                                                     textarea#validationTextarea24.form-control(placeholder='Your Feedback' required='')
                                                                     .invalid-feedback
                                                                         | Please enter a message in the textarea.                                        
-                                                                    .col-12
-                                                                        .form-check.mb-0
-                                                                            input#invalidCheck67.form-check-input(type='checkbox' value='' required='')
-                                                                            label.form-check-label.mb-0(for='invalidCheck67')
-                                                                                | Agree to terms and conditions
-                                                                            .invalid-feedback
-                                                                                | You must agree before submitting.
+                                                                .col-12
+                                                                    .form-check.mb-0
+                                                                        input#invalidCheck67.form-check-input(type='checkbox' value='' required='')
+                                                                        label.form-check-label.mb-0(for='invalidCheck67')
+                                                                            | Agree to terms and conditions
+                                                                        .invalid-feedback
+                                                                            | You must agree before submitting.
                                                                     .col-12.text-end 
                                                                         button.btn.btn-success Finish
-                            .col-md-12.mb-3
+                                                                
+                            .col-md-12
                                 .card
                                     .card-header
                                         h3 Shipping form
@@ -480,25 +480,25 @@ html(lang='en')
                                                                             .stroke-icon-wizard
                                                                                 i.fa-solid.fa-user
                                                                             .cart-options-content
-                                                                                h6 Billing
+                                                                                h6.f-w-700 Billing
                                                                     a#ship-wizard-tab.nav-link(data-bs-toggle='pill' href='#ship-wizard' role='tab' aria-controls='ship-wizard' aria-selected='false')
                                                                         .cart-options
                                                                             .stroke-icon-wizard
                                                                                 i.fa-solid.fa-truck
                                                                             .cart-options-content
-                                                                                h6 Shipping
+                                                                                h6.f-w-700 Shipping
                                                                     a#payment-wizard-tab.nav-link(data-bs-toggle='pill' href='#payment-wizard' role='tab' aria-controls='payment-wizard' aria-selected='false')
                                                                         .cart-options
                                                                             .stroke-icon-wizard
                                                                                 i.fa-solid.fa-money-bill
                                                                             .cart-options-content
-                                                                                h6 Payment
+                                                                                h6.f-w-700 Payment
                                                                     a#finish-wizard-tab.nav-link(data-bs-toggle='pill' href='#finish-wizard' role='tab' aria-controls='finish-wizard' aria-selected='false')
                                                                         .cart-options
                                                                             .stroke-icon-wizard
                                                                                 i.fa-solid.fa-square-check
                                                                             .cart-options-content 
-                                                                                h6 Finish
+                                                                                h6.f-w-700 Finish
                                                             .col-12 
                                                                 #cart-options-tabContent.tab-content.dark-field.shipping-content
                                                                     #bill-wizard.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='bill-wizard-tab')
@@ -732,7 +732,7 @@ html(lang='en')
                                                                                 .col-12.text-end
                                                                                     button.btn.btn-primary Proceed to Next
                                                                                         i.fa-solid.fa-truck.proceed-next.pe-2
-                                                                    #finish-wizard.tab-pane.fade.shipping-wizard(role='tabpanel' aria-labelledby='finish-wizard-tab')
+                                                                    #finish-wizard.tab-pane.fade.shipping-wizard.finish-wizard1(role='tabpanel' aria-labelledby='finish-wizard-tab')
                                                                         .order-confirm
                                                                             img(src="../assets/images/gif/success/successful.gif", alt="popper")
                                                                             h5 Thank you! Your order is confirmed.
@@ -741,7 +741,7 @@ html(lang='en')
                                                                                 a.text-decoration-underline(href="p.mb-0 An email with your order's specifics will be sent to you as order confirmation.javascript:void(0)") GE34598 
                                                     .col-xl-4 
                                                         .shipping-info
-                                                            h5 Current Cart 
+                                                            h4.f-w-700 Current Cart 
                                                             .overflow-auto
                                                                 table.table.table-striped
                                                                     thead
@@ -755,7 +755,7 @@ html(lang='en')
                                                                                 img(src="../assets/images/product/13.png", alt="t-shirt")
                                                                             td
                                                                                 div
-                                                                                    h6 T-shirt 
+                                                                                    h5 T-shirt 
                                                                                     span $98 * 2
                                                                             td
                                                                                 p $400
@@ -764,7 +764,7 @@ html(lang='en')
                                                                                 img(src="../assets/images/product-1/2.png", alt="headphone")
                                                                             td 
                                                                                 div
-                                                                                    h6 Headphone
+                                                                                    h5 Headphone
                                                                                     span $4*2
                                                                             td 
                                                                                 p $450
@@ -772,7 +772,7 @@ html(lang='en')
                                                                             td
                                                                                 img(src="../assets/images/product/2.png", alt="headphone")
                                                                             td
-                                                                                h6 T-shirt
+                                                                                h5 T-shirt
                                                                                 span $10 * 2
                                                                             td
                                                                                 p $234
@@ -781,14 +781,14 @@ html(lang='en')
                                                                                 img(src="../assets/images/product-1/4.png", alt="headphone")
                                                                             td 
                                                                                 div
-                                                                                    h6 Chairs
+                                                                                    h5 Chairs
                                                                                     span $98 * 2
                                                                             td  
                                                                                 p $200
                                                                     tfoot
                                                                         tr 
-                                                                            td Sub Total :
-                                                                            td(colspan='2') $1284.00
+                                                                            td.f-w-700 Sub Total :
+                                                                            td.f-w-700(colspan='2') $1284.00
                                                                         tr 
                                                                             td Discount :
                                                                             td(colspan='2') $20.00
@@ -799,8 +799,8 @@ html(lang='en')
                                                                             td Tax :
                                                                             td(colspan='2') $205.34
                                                                         tr             
-                                                                            td Total (USD) :
-                                                                            td(colspan='2') $1569.7
+                                                                            td.f-w-700 Total (USD) :
+                                                                            td.f-w-700(colspan='2') $1569.7
         
 
 

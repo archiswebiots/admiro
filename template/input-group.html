@@ -338,7 +338,7 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="row g-3">
+            <div class="row">
               <div class="col-md-6">
                 <div class="card">
                   <div class="card-header">
@@ -653,68 +653,68 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 mb-3">
-                <div class="card">
-                  <div class="card-header">
-                    <h3>Variation of addons</h3>
-                    <p class="mt-1 mb-0">
-                       Place one add-on or button on either side of an input. You may also place one on both sides of an input.<code>&lt;label&gt;  </code>outside the input group.</p>
-                  </div>
-                  <div class="card-body card-wrapper input-radius variation-input">
-                    <div class="row">
-                      <div class="col">
-                        <form>
-                          <div class="mb-3 m-form__group">
-                            <label class="form-label">Left Addon</label>
-                            <div class="input-group"><span class="input-group-text list-light-primary"><i class="fa-solid fa-pencil text-primary"></i></span>
-                              <input class="form-control" type="text" placeholder="Email">
-                            </div>
-                          </div>
-                          <div class="mb-3">
-                            <label class="form-label">Right Addon</label>
-                            <div class="input-group">
-                              <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username"><span class="input-group-text list-light-danger"><i class="fa-solid fa-phone text-danger"></i></span>
-                            </div>
-                          </div>
-                          <div class="mb-3">
-                            <label class="form-label">Joint Addon</label>
-                            <div class="input-group"><span class="input-group-text list-light-primary"><i class="fa-solid fa-link-slash text-primary"></i></span><span class="input-group-text">0.00</span>
-                              <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)">
-                            </div>
-                          </div>
-                          <div class="mb-3">
-                            <label class="form-label">Left & Right Addon</label>
-                            <div class="input-group mb-3"><span class="input-group-text list-light-danger"><i class="fa-solid fa-magnifying-glass-minus text-danger"></i></span>
-                              <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)"><span class="input-group-text list-light-danger"><i class="fa-solid fa-magnifying-glass-plus text-danger"></i></span>
-                            </div>
-                          </div>
-                          <div class="mb-3 input-group-square">
-                            <label class="form-label">Flat style</label>
-                            <div class="input-group"><span class="input-group-text list-light-danger"><i class="fa-solid fa-credit-card text-danger"></i></span>
-                              <input class="form-control" type="text" placeholder="">
-                            </div>
-                          </div>
-                          <div class="mb-3 input-group-square">
-                            <label class="form-label">Raise style</label>
-                            <div class="input-group"><span class="input-group-text list-light-primary"><i class="fa-solid fa-download text-primary"></i></span>
-                              <input class="form-control input-group-air" type="text" placeholder="https://www.example.com">
-                            </div>
-                          </div>
-                          <div>
-                            <label class="form-label">Left & Right Addon</label>
-                            <div class="input-group pill-input-group"><span class="input-group-text list-light-danger"><i class="fa-solid fa-copy text-danger"></i></span>
-                              <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)"><span class="input-group-text list-light-danger"><i class="fa-solid fa-magnifying-glass text-danger"></i></span>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-primary m-r-15" type="submit">Submit</button>
-                    <button class="btn btn-light" type="submit">Cancel    </button>
-                  </div>
-                </div>
+              <div class="col-xl-6">
+                .card
+                    .card-header
+                        h3 Variation of addons
+                        p.mt-1.mb-0 
+                            | Place one add-on or button on either side of an input. You may also place one on both sides of an input.
+                            code &lt;label&gt;  
+                            | outside the input group.
+                    .card-body.card-wrapper.input-radius.variation-input
+                        .row
+                            .col
+                                form
+                                    .mb-3.m-form__group
+                                        label.form-label Left Addon
+                                        .input-group
+                                            span.input-group-text.list-light-primary
+                                                i.fa-solid.fa-pencil.text-primary
+                                            input.form-control(type='text', placeholder='Email')
+                                    .mb-3
+                                        label.form-label Right Addon
+                                        .input-group
+                                            input.form-control(type='text', placeholder="Recipient's username", aria-label="Recipient's username")
+                                            span.input-group-text.list-light-danger
+                                                i.fa-solid.fa-phone.text-danger
+                                    .mb-3
+                                        label.form-label Joint Addon
+                                        .input-group
+                                            span.input-group-text.list-light-primary
+                                                i.fa-solid.fa-link-slash.text-primary
+                                            span.input-group-text 0.00
+                                            input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                    .mb-3
+                                        label.form-label Left & Right Addon
+                                        .input-group.mb-3
+                                            span.input-group-text.list-light-danger
+                                                i.fa-solid.fa-magnifying-glass-minus.text-danger
+                                            input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                            span.input-group-text.list-light-danger
+                                                i.fa-solid.fa-magnifying-glass-plus.text-danger
+                                    .mb-3.input-group-square
+                                        label.form-label Flat style
+                                        .input-group
+                                            span.input-group-text.list-light-danger
+                                                i.fa-solid.fa-credit-card.text-danger
+                                            input.form-control(type='text', placeholder='')
+                                    .mb-3.input-group-square
+                                        label.form-label Raise style
+                                        .input-group
+                                            span.input-group-text.list-light-primary
+                                                i.fa-solid.fa-download.text-primary
+                                            input.form-control.input-group-air(type='text', placeholder='https://www.example.com')
+                                    div
+                                        label.form-label Left & Right Addon
+                                        .input-group.pill-input-group
+                                            span.input-group-text.list-light-danger
+                                                i.fa-solid.fa-copy.text-danger
+                                            input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                            span.input-group-text.list-light-danger
+                                                i.fa-solid.fa-magnifying-glass.text-danger
+                    .card-footer
+                        button.btn.btn-primary(type='submit').m-r-15 Submit
+                        button.btn.btn-light(type='submit') Cancel    
               </div>
             </div>
           </div>
