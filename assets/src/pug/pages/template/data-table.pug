@@ -1,0 +1,66 @@
+-var sidebar    = true;
+-var datatables             = true;
+-var dashboard_default      = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+
+    include ../../components/header-files
+    body
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            .page-body-wrapper  
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | Table Components 
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Tables
+                                        li.breadcrumb-item.active Table Components 
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                            .col-xl-6 
+                                .card.invoice-card
+                                    .card-header
+                                        h4 Project Overview
+                                             
+                                    .card-body.pt-0.relative
+                                        .table-responsive.custom-scroll
+                                            table#simple.table.mb-0 
+                                                thead
+                                                    tr
+                                                        th
+                                                            b N
+                                                            | ame
+                                                        th Ext.
+                                                        th City
+                                                        th(data-type='date' data-format='YYYY/DD/MM') Start Date
+                                                        th Completion
+                                                tbody
+                                                    tr
+                                                        td Unity Pugh
+                                                        td 9958
+                                                        td Curic&oacute;
+                                                        td 2005/02/11
+                                                        td 37%
+                                                    tr
+                                                        td Theodore Duran
+                                                        td 8971
+                                                        td Dhanbad
+                                                        td 1999/04/07
+                                                        td 97%
+                    
+                
+                include ../../components/footer
+        include ../../components/footer-files 
+
