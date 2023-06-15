@@ -39,6 +39,22 @@ $i: 100, 300, 500, 400, 600, 700, 900;
 .badge-primary{
   background-color: rgba(var(--primary-color),1);
 }
+.custom-scroll {
+  &::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgb(172, 166, 166);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 3px;
+    border: 1px solid rgb(200, 193, 193);
+    // height: 5px;
+    // width: 5px; 
+  }
+}
 /**=====================
      Reset css end
 ==========================**/
