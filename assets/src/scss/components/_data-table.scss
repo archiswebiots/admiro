@@ -13,13 +13,18 @@
                 .datatable-table{
                     margin-top: 70px;
                 }
+                button{
+                    &.bg-light-primary{
+                        border: 1px solid rgba(var(--light-color),1);
+                        width: 120px;
+                    }
+                }
             }
         }
     }
 }
 #simple{
     &.datatable-table{
-
             thead{
                 tr{
                     th{
@@ -32,10 +37,13 @@
                         &:nth-child(2){
                             min-width: 110px;
                         }
+                        &:nth-child(6){
+                            min-width: 110px;
+                        }
                         &:first-child{
                             min-width: 50px;
                         }
-                    }
+                    }  
                 }
             }
     }
