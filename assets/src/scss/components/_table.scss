@@ -456,7 +456,6 @@ th {
 				transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 			}
 		}
-
 	}
 	input[type=checkbox]{
 		&:checked{
@@ -549,11 +548,18 @@ th {
 	}
 }
 .label-square{
+	i{
+		margin-right: 7px;
+	}
 	span{
 		font-size: 14px;
 	}
 }
-
+.card-no-border{
+	&.card-header{
+		border-bottom: none;
+	}
+}
 
 
 

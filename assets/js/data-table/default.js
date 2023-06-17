@@ -8,7 +8,7 @@ fetch("../assets/js/data-table/datatable.json").then(
           paging: false,
           tabIndex: 1,
           data: {
-              headings: [`<input type="checkbox">`].concat(Object.keys(data[0])),
+              headings: [`<img src="../assets/images/user/6.png">`].concat(Object.keys(data[0])),
               data: data.map(item => [false].concat(Object.values(item)))
           },
           rowRender: (rowValue, tr, _index) => {
@@ -21,11 +21,15 @@ fetch("../assets/js/data-table/datatable.json").then(
           columns: [
               {
                   select: 0,
-                  render: (value, _td, _rowIndex, _cellIndex) => `<input type="checkbox" ${value=== "true" ? "checked": ""}>`
+                  "data": "imageUrl",
+                  "render": function(data, type, row) {
+                      return '<img src="'+data+'" />';
+                  }
+                //   render: (value, _td, _rowIndex, _cellIndex) => `<img src=` + value + `>`
               },
               {
                 select: 6,
-                render: (value, _td, _rowIndex, _cellIndex) => `<button class="btn btn-light-primary rounded-pill">` + value + `</button>`
+                render: (value, _td, _rowIndex, _cellIndex) => `<button class="btn bg-light-primary text-primary">` + value + `</button>`
               }
           ]
       })
