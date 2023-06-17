@@ -116,7 +116,7 @@ html(lang='en')
                                                     | Looks's Good!
                                             .col-md-4
                                                 label.form-label(for='cvvnumber') CVV Number
-                                                input#cvvnumber.form-control(type='text' required='')
+                                                input#cvvnumber.form-control(type='number' required='')
                                                 .invalid-feedback
                                                     | Please enter your valid number
                                                 .valid-feedback 
@@ -327,7 +327,7 @@ html(lang='en')
                                                                         | Please select a valid state.
                                                                 .col-md-3.col-sm-6
                                                                     label.form-label(for='validationCustom05') Zip Code
-                                                                    input#validationCustom05.form-control(type='text' required='')
+                                                                    input#validationCustom05.form-control(type='number' required='')
                                                                     .invalid-feedback
                                                                         | Please provide a valid zip.
                                                                 .col-md-4.col-sm-6
@@ -389,7 +389,7 @@ html(lang='en')
                                                                         | Looks's Good!
                                                                 .col-md-4.col-sm-6
                                                                     label.form-label(for='cvvnumber') CVV
-                                                                    input#cvvnumber.form-control(type='text' required='')
+                                                                    input#cvvnumber.form-control(type='number' required='')
                                                                     .invalid-feedback
                                                                         | Please enter your valid number
                                                                     .valid-feedback 
@@ -549,7 +549,7 @@ html(lang='en')
                                                                                 input#customLastname.form-control(type='text' placeholder='Enter state' required='')
                                                                             .col-sm-4
                                                                                 label.form-label(for='custom-zipcode') Zip Code
-                                                                                input#custom-zipcode.form-control(type='text' required='')
+                                                                                input#custom-zipcode.form-control(type='number' required='')
                                                                                 .invalid-feedback
                                                                                     | Please provide a valid zip.
                                                                             .col-12
@@ -703,7 +703,7 @@ html(lang='en')
                                                                                                         | Looks's Good!
                                                                                                 .col-md-4
                                                                                                     label.form-label(for='cvvnumber') CVV
-                                                                                                    input#cvvnumber.form-control(type='text' required='')
+                                                                                                    input#cvvnumber.form-control(type='number' required='')
                                                                                                     .invalid-feedback
                                                                                                         | Please enter your valid number
                                                                                                     .valid-feedback 
@@ -735,10 +735,10 @@ html(lang='en')
                                                                     #finish-wizard.tab-pane.fade.shipping-wizard.finish-wizard1(role='tabpanel' aria-labelledby='finish-wizard-tab')
                                                                         .order-confirm
                                                                             img(src="../assets/images/gif/success/successful.gif", alt="popper")
-                                                                            h5 Thank you! Your order is confirmed.
+                                                                            h4.f-w-600 Thank you! Your order is confirmed.
                                                                             p.mb-0 An email with your order's specifics will be sent to you as order confirmation.
-                                                                            p.text-center.f-w-500.mt-2 Order ID:
-                                                                                a.text-decoration-underline(href="p.mb-0 An email with your order's specifics will be sent to you as order confirmation.javascript:void(0)") GE34598 
+                                                                            p.text-center.f-w-500.mt-2 Order ID :  
+                                                                                a.text-decoration-underline.text-primary(href="javascript:void(0)") GE34598 
                                                     .col-xl-4 
                                                         .shipping-info
                                                             h4.f-w-700 Current Cart 
@@ -755,7 +755,7 @@ html(lang='en')
                                                                                 img(src="../assets/images/product/13.png", alt="t-shirt")
                                                                             td
                                                                                 div
-                                                                                    h5 T-shirt 
+                                                                                    h5.f-w-600 T-shirt 
                                                                                     span $98 * 2
                                                                             td
                                                                                 p $400
@@ -764,7 +764,7 @@ html(lang='en')
                                                                                 img(src="../assets/images/product-1/2.png", alt="headphone")
                                                                             td 
                                                                                 div
-                                                                                    h5 Headphone
+                                                                                    h5.f-w-600 Headphone
                                                                                     span $4*2
                                                                             td 
                                                                                 p $450
@@ -772,7 +772,7 @@ html(lang='en')
                                                                             td
                                                                                 img(src="../assets/images/product/2.png", alt="headphone")
                                                                             td
-                                                                                h5 T-shirt
+                                                                                h5.f-w-600 T-shirt
                                                                                 span $10 * 2
                                                                             td
                                                                                 p $234
@@ -781,7 +781,7 @@ html(lang='en')
                                                                                 img(src="../assets/images/product-1/4.png", alt="headphone")
                                                                             td 
                                                                                 div
-                                                                                    h5 Chairs
+                                                                                    h5.f-w-600 Chairs
                                                                                     span $98 * 2
                                                                             td  
                                                                                 p $200

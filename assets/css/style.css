@@ -12305,7 +12305,7 @@ ul {
 
 .card-header {
   background-color: rgba(var(--white), 1);
-  padding: 17px;
+  padding: 20px;
   border-bottom: 1px solid rgba(var(--light-gray), 1);
   position: relative;
 }
@@ -12324,7 +12324,7 @@ ul {
 .card-footer {
   background-color: rgba(var(--white), 1);
   border-top: 1px solid rgba(var(--light-gray), 1);
-  padding: 17px;
+  padding: 20px;
 }
 .card-footer:last-child {
   border-radius: 0 0 1.5rem 1.5rem;
@@ -12336,7 +12336,7 @@ ul {
 }
 
 .card-body {
-  padding: 17px;
+  padding: 20px;
   background-color: transparent;
 }
 .card-body p:last-child {
@@ -18305,7 +18305,8 @@ input::-webkit-inner-spin-button {
 .horizontal-wizard-wrapper.vertical-variations .main-horizontal-header .horizontal-options .nav-link .horizontal-wizard .stroke-icon-wizard {
   width: 30px;
   height: 30px;
-  background-color: rgba(var(--primary-color), 0.4);
+  background-color: rgba(var(--primary-color), 0.2);
+  color: rgba(var(--primary-color), 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18558,6 +18559,9 @@ input::-webkit-inner-spin-button {
 .shopping-wizard .shipping-form .shipping-info .table thead th:last-child {
   text-align: end;
 }
+.shopping-wizard .shipping-form .shipping-info .table tbody tr td {
+  vertical-align: middle;
+}
 .shopping-wizard .shipping-form .shipping-info .table tbody tr td img {
   height: 50px;
 }
@@ -18566,9 +18570,6 @@ input::-webkit-inner-spin-button {
 }
 .shopping-wizard .shipping-form .shipping-info .table tbody tr td span {
   color: rgba(var(--timline-dot-line), 1);
-}
-.shopping-wizard .shipping-form .shipping-info .table tbody tr td h5, .shopping-wizard .shipping-form .shipping-info .table tbody tr td .h5 {
-  font-weight: 600;
 }
 .shopping-wizard .shipping-form .shipping-info .table tbody tr:last-child td {
   border: 0;
@@ -18668,7 +18669,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 .shopping-wizard .shipping-form .order-confirm img {
-  height: calc(95px + 45 * (100vw - 320px) / 1600);
+  height: calc(58px + 34 * (100vw - 320px) / 1600);
 }
 .shopping-wizard .shipping-form .shipping-content > .active.finish-wizard1 {
   display: flex;
