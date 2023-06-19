@@ -32,7 +32,7 @@ window.onload = function () {
   Macy.init({
     container: ".masonryComponent",
     trueOrder: true,
-    margin: 10,
+    margin: 20,
     columns: 4,
     breakAt: {
       1400: 3,

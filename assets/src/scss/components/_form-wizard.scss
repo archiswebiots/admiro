@@ -755,7 +755,8 @@
 						.stroke-icon-wizard {
 							width: 30px;
 							height: 30px;
-							background-color: rgba(var(--primary-color),0.4);
+							background-color: rgba(var(--primary-color),0.2);
+							color: rgba(var(--primary-color),1);
 							display: flex;
 							justify-content: center;
 							align-items: center;
@@ -1125,6 +1126,7 @@
 				tbody {
 					tr {
 						td {
+							vertical-align: middle;
 							img {
 								height: 50px;
 							}
@@ -1135,9 +1137,6 @@
 
 							span {
 								color: rgba(var(--timline-dot-line),1);
-							}
-							h5{
-								font-weight: 600;
 							}
 						}
 
@@ -1281,7 +1280,7 @@
 		.order-confirm{
 			text-align: center;
 			img{
-				    height: calc(95px + 45 * (100vw - 320px) / 1600);
+				    height: calc(58px + 34 * (100vw - 320px) / 1600);
 			}
 		}
 		.shipping-content{

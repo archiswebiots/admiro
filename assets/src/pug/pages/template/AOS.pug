@@ -3,11 +3,11 @@
 - var macy               = true;
 - var photo_swipe      = true;
 - var sidebar               = true; 
-include ../../components/mixin
+include ../../components/mixin  
 
 doctype html
 html(lang='en')
-
+  
     include ../../components/header-files
     body
         #pageWrapper.page-wrapper.compact-wrapper
@@ -212,35 +212,35 @@ html(lang='en')
                                                 tr
                                                     td
                                                         em
-                                                            code data-aos-offset
+                                                            code.text-primary  data-aos-offset
                                                     td Change offset to trigger animations sooner or later (px)
                                                     td 200
                                                     td 120
                                                 tr
                                                     td
                                                         em
-                                                            code data-aos-duration
+                                                            code.text-primary data-aos-duration
                                                     td *Duration of animation (ms)
                                                     td 600
                                                     td 400
                                                 tr
                                                     td
                                                         em  
-                                                            code data-aos-easing
+                                                            code.text-primary data-aos-easing
                                                     td Choose timing function to ease elements in different ways
                                                     td ease-in-sine
                                                     td ease
                                                 tr
                                                     td
                                                         em
-                                                            code data-aos-delay
+                                                            code.text-primary data-aos-delay
                                                     td Delay animation (ms)
                                                     td 300
                                                     td 0
                                                 tr
                                                     td
                                                         em
-                                                            code data-aos-anchor
+                                                            code.text-primary data-aos-anchor
                                                     td
                                                         | Anchor element, whose offset will be counted to trigger animation instead of actual elements offset
                                                     td #selector
@@ -248,7 +248,7 @@ html(lang='en')
                                                 tr
                                                     td
                                                         em
-                                                            code data-aos-anchor-placement
+                                                            code.text-primary data-aos-anchor-placement
                                                     td
                                                         | Anchor placement - which one position of element on the screen should trigger animation
                                                     td top-center
@@ -256,96 +256,214 @@ html(lang='en')
                                                 tr
                                                     td
                                                         em
-                                                            code data-aos-once
+                                                            code.text-primary data-aos-once
                                                     td
                                                         | Choose wheter animation should fire once, or every time you scroll up/down to element
                                                     td true
                                                     td false
+                            
+                            .col-sm-4 
+                                    .card
+                                        .card-header
+                                            h3  Easing functions:
+                                        .card-body
+                                            ul.ps-4.list-circle.line
+                                                li linear
+                                                li ease
+                                                li ease-in
+                                                li ease-out
+                                                li ease-in-out
+                                                li ease-in-back
+                                                li ease-out-back
+                                                li ease-in-out-back
+                                                li ease-in-sine
+                                                li ease-out-sine
+                                                li ease-in-out-sine
+                                                li ease-in-quad
+                                                li ease-out-quad
+                                                li ease-in-out-quad
+                                                li ease-in-cubic
+                                                li ease-out-cubic
+                                                li ease-in-out-cubic
+                                                li ease-in-quart
+                                                li ease-out-quart
+                                                li ease-in-out-quart 
+                            .col-sm-8
                                 .card
                                     .card-header
                                         h3  Animation
                                         p.mb-0.mt-1 
-                                            |  There are serveral predefined animations you can use already:
+                                            |  There are serveral predefined animations.
                                     .card-body
-                                        ul.line
-                                            li
-                                                h3 Fade animations:
-                                                ul.ps-4.mb-4.list-circle
-                                                    li fade
-                                                    li fade-up
-                                                    li fade-down
-                                                    li fade-left
-                                                    li fade-right
-                                                    li fade-up-right
-                                                    li fade-up-left
-                                                    li fade-down-right
-                                                    li fade-down-left
-                                            li
-                                                h3 Flip animations:
-                                                ul.ps-4.mb-4.list-circle
-                                                    li flip-up
-                                                    li flip-down
-                                                    li flip-left
-                                                    li flip-right
-                                            li
-                                                h3 Slide animations:    
-                                                ul.ps-4.mb-4.list-circle    
-                                                    li slide-up
-                                                    li slide-down
-                                                    li slide-left
-                                                    li slide-right        
-                                            li
-                                                h3 Zoom animations:
-                                                ul.ps-4.list-circle        
-                                                    li zoom-in
-                                                    li zoom-in-up   
-                                                    li zoom-in-down
-                                                    li zoom-in-left
-                                                    li zoom-in-right
-                                                    li zoom-out
-                                                    li zoom-out-up
-                                                    li zoom-out-down
-                                                    li zoom-out-left
-                                                    li zoom-out-right
-                                .card
-                                    .card-header
-                                        h3  Anchor placement:
-                                    .card-body
-                                        ul.ps-4.list-circle.line
-                                            li top-bottom
-                                            li top-center
-                                            li top-top
-                                            li center-bottom
-                                            li center-center
-                                            li center-top
-                                            li bottom-bottom
-                                            li bottom-center
-                                            li bottom-top
-                                .card
-                                    .card-header
-                                        h3  Easing functions:
-                                    .card-body
-                                        ul.ps-4.list-circle.line
-                                            li linear
-                                            li ease
-                                            li ease-in
-                                            li ease-out
-                                            li ease-in-out
-                                            li ease-in-back
-                                            li ease-out-back
-                                            li ease-in-out-back
-                                            li ease-in-sine
-                                            li ease-out-sine
-                                            li ease-in-out-sine
-                                            li ease-in-quad
-                                            li ease-out-quad
-                                            li ease-in-out-quad
-                                            li ease-in-cubic
-                                            li ease-out-cubic
-                                            li ease-in-out-cubic
-                                            li ease-in-quart
-                                            li ease-out-quart
-                                            li ease-in-out-quart                
+                                        .row
+                                            .col-sm-6
+                                                ul.line
+                                                    h3 Fade Animation
+                                                    li
+                                                        ul.ps-4.list-circle.mb-4
+                                                            li fade
+                                                            li fade-up
+                                                            li fade-down
+                                                            li fade-left
+                                                            li fade-right
+                                                            li fade-up-right
+                                                            li fade-up-left
+                                                            li fade-down-right
+                                                            li fade-down-left
+                                                ul.line 
+                                                    h3 Flip Animation
+                                                    li
+                                                        ul.ps-4.mb-4.list-circle
+                                                            li flip-up
+                                                            li flip-down
+                                                            li flip-left
+                                                            li flip-right
+                                            .col-sm-6 
+                                                ul.line 
+                                                    h3 Slide Animation
+                                                    li  
+                                                        ul.ps-4.mb-4.list-circle    
+                                                            li slide-up
+                                                            li slide-down
+                                                            li slide-left
+                                                            li slide-right
+                                                ul.line 
+                                                    h3 Zoom Animation
+                                                    li
+                                                        ul.ps-4.list-circle.mb-4      
+                                                            li zoom-in
+                                                            li zoom-in-up   
+                                                            li zoom-in-down
+                                                            li zoom-in-left
+                                                            li zoom-in-right
+                                                            li zoom-out
+                                                            li zoom-out-up
+                                                            li zoom-out-down
+                                                            li zoom-out-left
+                                                            li zoom-out-right
+                                                    
+
+
+                                                
+
+                            //- .col-sm-4
+                            //-     .card
+                            //-         .card-header
+                            //-             h3 Animation
+                            //-             p.mb-0.mt-1 
+                            //-                 |  There are serveral predefined animations.
+                            //-         .card-body
+                                        
+
+                            //- .col-sm-3.animation-height
+                            //-     .card
+                            //-         .card-header
+                            //-             h3  Fade Animation
+                            //-             p.mb-0.mt-1 
+                            //-                 |  There are serveral predefined animations.
+                            //-         .card-body
+                            //-             ul.line
+                            //-                 li
+                            //-                     ul.ps-4.list-circle.mb-0
+                            //-                         li fade
+                            //-                         li fade-up
+                            //-                         li fade-down
+                            //-                         li fade-left
+                            //-                         li fade-right
+                            //-                         li fade-up-right
+                            //-                         li fade-up-left
+                            //-                         li fade-down-right
+                            //-                         li fade-down-left
+                            //- .col-sm-3.animation-height
+                            //-     .card 
+                            //-         .card-header 
+                            //-             h3 Flip Animation
+                            //-             p.mb-0.mt-1 
+                            //-                 |  There are serveral predefined animations.
+                            //-         .card-body
+                            //-             ul.line 
+                            //-                 li
+                            //-                     ul.ps-4.mb-4.list-circle
+                            //-                         li flip-up
+                            //-                         li flip-down
+                            //-                         li flip-left
+                            //-                         li flip-right
+                            //- .col-sm-3.animation-height
+                            //-     .card 
+                            //-         .card-header 
+                            //-             h3 Slide Animation 
+                            //-             p.mb-0.mt-1 
+                            //-                 |  There are serveral predefined animations.
+                            //-         .card-body 
+                            //-             ul.line 
+                            //-                 li  
+                            //-                     ul.ps-4.mb-4.list-circle    
+                            //-                         li slide-up
+                            //-                         li slide-down
+                            //-                         li slide-left
+                            //-                         li slide-right  
+                            //- .col-sm-3.animation-height
+                            //-     .card 
+                            //-         .card-header 
+                            //-             h3 Zoom Anmation 
+                            //-             p.mb-0.mt-1 
+                            //-                 |  There are serveral predefined animations.
+                            //-         .card-body 
+                            //-             ul.line    
+                            //-                 li
+                            //-                     ul.ps-4.list-circle        
+                            //-                         li zoom-in
+                            //-                         li zoom-in-up   
+                            //-                         li zoom-in-down
+                            //-                         li zoom-in-left
+                            //-                         li zoom-in-right
+                            //-                         li zoom-out
+                            //-                         li zoom-out-up
+                            //-                         li zoom-out-down
+                            //-                         li zoom-out-left
+                            //-                         li zoom-out-right
+                            //- .col-sm-6
+                            //-     .card
+                            //-         .card-header
+                            //-             h3  Easing functions:
+                            //-         .card-body
+                            //-             ul.ps-4.list-circle.line
+                            //-                 li linear
+                            //-                 li ease
+                            //-                 li ease-in
+                            //-                 li ease-out
+                            //-                 li ease-in-out
+                            //-                 li ease-in-back
+                            //-                 li ease-out-back
+                            //-                 li ease-in-out-back
+                            //-                 li ease-in-sine
+                            //-                 li ease-out-sine
+                            //-                 li ease-in-out-sine
+                            //-                 li ease-in-quad
+                            //-                 li ease-out-quad
+                            //-                 li ease-in-out-quad
+                            //-                 li ease-in-cubic
+                            //-                 li ease-out-cubic
+                            //-                 li ease-in-out-cubic
+                            //-                 li ease-in-quart
+                            //-                 li ease-out-quart
+                            //-                 li ease-in-out-quart 
+                            //- .col-sm-6.placement-height
+                            //-     .card
+                            //-         .card-header
+                            //-             h3  Anchor placement:
+                            //-         .card-body
+                            //-             ul.ps-4.list-circle.line
+                            //-                 li top-bottom
+                            //-                 li top-center
+                            //-                 li top-top
+                            //-                 li center-bottom
+                            //-                 li center-center
+                            //-                 li center-top
+                            //-                 li bottom-bottom
+                            //-                 li bottom-center
+                            //-                 li bottom-top
+                                           
 
 
                 include ../../components/footer
