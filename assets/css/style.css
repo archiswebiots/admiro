@@ -11766,12 +11766,20 @@ ul {
 .bg-light-primary i {
   color: rgba(var(--primary-color), 1);
 }
+.bg-light-primary:hover {
+  background-color: rgba(var(--primary-color), 0.1);
+  color: rgba(var(--primary-color), 1);
+}
 
 .bg-light-secondary {
   background-color: rgba(var(--secondary-color), 0.1);
   color: rgba(var(--secondary-color), 1);
 }
 .bg-light-secondary i {
+  color: rgba(var(--secondary-color), 1);
+}
+.bg-light-secondary:hover {
+  background-color: rgba(var(--secondary-color), 0.1);
   color: rgba(var(--secondary-color), 1);
 }
 
@@ -11782,12 +11790,20 @@ ul {
 .bg-light-danger i {
   color: rgba(var(--danger-color), 1);
 }
+.bg-light-danger:hover {
+  background-color: rgba(var(--danger-color), 0.1);
+  color: rgba(var(--danger-color), 1);
+}
 
 .bg-light-success {
   background-color: rgba(var(--success-color), 0.1);
   color: rgba(var(--success-color), 1);
 }
 .bg-light-success i {
+  color: rgba(var(--success-color), 1);
+}
+.bg-light-success:hover {
+  background-color: rgba(var(--success-color), 0.1);
   color: rgba(var(--success-color), 1);
 }
 
@@ -12366,6 +12382,9 @@ th {
 .table {
   margin-bottom: 0px;
 }
+.table tbody tr th, .table tbody tr td {
+  border-bottom: 1px solid rgba(var(--light-gray), 1);
+}
 .table > :not(:last-child) > :last-child > * {
   border-bottom-color: rgba(var(--light-gray), 1);
 }
@@ -12453,6 +12472,9 @@ th {
   border-bottom: 1px solid rgba(var(--white), 1) !important;
 }
 
+.basic-table tr {
+  vertical-align: middle;
+}
 .basic-table tr:last-child {
   border-bottom: unset;
 }
@@ -12556,7 +12578,7 @@ th {
 .m-checkbox-inline .checkbox label {
   display: inline-block;
   position: relative;
-  padding-left: 16px;
+  padding-left: 10px;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -18214,9 +18236,6 @@ input::-webkit-inner-spin-button {
   margin-top: 24px;
 }
 
-.horizontal-wizard-wrapper .main-horizontal-header {
-  padding: 0 0 20px 0;
-}
 .horizontal-wizard-wrapper .main-horizontal-header .horizontal-options {
   display: flex;
   justify-content: space-around;
@@ -18389,7 +18408,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 .main-upgrade .variation-box .selection-box input[type=checkbox]:checked ~ div {
-  background-color: rgba(var(--primary-color), 0.4);
+  background-color: rgba(var(--primary-color), 0.2);
 }
 
 .horizontal-wizard-wrapper.vertical-options .main-horizontal-header {
@@ -18426,6 +18445,15 @@ input::-webkit-inner-spin-button {
 }
 .authentication-options .form-check-input:checked[type=radio] {
   background-image: unset;
+}
+.authentication-options .form-check-label span > span {
+  font-size: 16px;
+  color: rgba(var(--dark), 1);
+  font-weight: 500;
+}
+.authentication-options .form-check-label span > span + span {
+  color: rgba(var(--gray-700), 1);
+  font-size: 14px;
 }
 
 .main-qr-code .modal-toggle-wrapper .modal-img {

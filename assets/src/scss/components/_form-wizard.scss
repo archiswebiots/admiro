@@ -637,7 +637,6 @@
 // Horizontal wrapper
 .horizontal-wizard-wrapper {
 	.main-horizontal-header {
-		padding: 0 0 20px 0;
 
 		.horizontal-options {
 			display: flex;
@@ -863,7 +862,7 @@
 				cursor: pointer;
 
 				&[type=checkbox]:checked~div {
-					background-color: rgba(var(--primary-color),0.4);
+					background-color: rgba(var(--primary-color),0.2);
 				}
 			}
 		}
@@ -939,6 +938,20 @@
 	.form-check-input{
 		&:checked[type=radio]{
 			background-image: unset;
+		}
+	}
+	.form-check-label{
+		span {
+			>span {
+				font-size: 16px;
+				color: rgba(var(--dark),1);
+				font-weight: 500;
+
+				+span {
+					color: rgba(var(--gray-700),1);
+					font-size: 14px;
+				}
+			}
 		}
 	}
 }

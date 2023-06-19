@@ -12,6 +12,13 @@ th {
 }
 
 .table {
+	tbody{
+		tr{
+			th,td{
+				border-bottom: 1px solid rgba(var(--light-gray), 1);
+			}
+		}
+	}
 	margin-bottom: $table-b-margin;
 
 	> :not(:last-child) {
@@ -156,6 +163,7 @@ th {
  
 .basic-table{
 	tr{
+		vertical-align: middle;
 		&:last-child{
 			border-bottom: unset;
 		}
@@ -315,7 +323,7 @@ th {
 		label{
 			display: inline-block;
 			position: relative;
-			padding-left: 16px;
+			padding-left: 10px;
 			cursor: pointer;
 			margin-top: 10px;
 			margin-bottom: 10px;
