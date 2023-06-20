@@ -1,4 +1,4 @@
 function show(){
-	new WOW().init();
+	new WOW().init();  
 }
 show();

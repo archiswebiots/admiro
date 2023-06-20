@@ -37,6 +37,10 @@
   i {
     color: rgba(var(--primary-color),1);
   }
+  &:hover{
+    background-color: rgba(var(--primary-color),0.1);
+    color: rgba(var(--primary-color),1);
+  }
 }
 .bg-light-secondary{
   background-color: rgba(var(--secondary-color),0.1);
@@ -44,18 +48,30 @@
   i {
     color: rgba(var(--secondary-color),1);
   }
+  &:hover{
+    background-color: rgba(var(--secondary-color),0.1);
+    color: rgba(var(--secondary-color),1);
+  }
 }
 .bg-light-danger{
    background-color: rgba(var(--danger-color),0.1); 
    color: rgba(var(--danger-color),1);
-   i {
+  i {
+  color: rgba(var(--danger-color),1);
+  }
+  &:hover{
+    background-color: rgba(var(--danger-color),0.1);
     color: rgba(var(--danger-color),1);
-   }
+  }
 }
 .bg-light-success{
   background-color: rgba(var(--success-color),0.1);
   color: rgba(var(--success-color),1);
   i {
+    color: rgba(var(--success-color),1);
+  }
+  &:hover{
+    background-color: rgba(var(--success-color),0.1);
     color: rgba(var(--success-color),1);
   }
 }

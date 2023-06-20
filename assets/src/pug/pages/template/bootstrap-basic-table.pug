@@ -28,15 +28,15 @@ html(lang='en')
                     .container-fluid
                         .row
                             .col-sm-12
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
                                         h4 Basic Table With Border Bottom Color
                                         p.mt-1.mb-0 
-                                            | Use a class
-                                            code table
-                                            |  to any table, and
-                                            code .border-bottom-*
-                                            | class for Border bottom color
+                                            | Use a class  
+                                            code table  
+                                            |  to any table, and  
+                                            code .border-bottom-*  
+                                            | class for Border bottom color  
                                     .table-responsive
                                         table.table.basic-table
                                             thead
@@ -60,7 +60,7 @@ html(lang='en')
                                                     td Developer
                                                     td Apple Inc.
                                                     td 
-                                                        span.badge.badge-light-danger Php
+                                                        span.badge.bg-light-danger.text-danger Php
                                                     td IND
                                                 tr.border-bottom-success
                                                     th(scope='row') 2
@@ -72,7 +72,7 @@ html(lang='en')
                                                     td Designer
                                                     td Hewlett packard
                                                     td 
-                                                        span.badge.badge-light-primary Html
+                                                        span.badge.bg-light-primary.text-primary Html
                                                     td US
                                                 tr.border-bottom-info 
                                                     th(scope='row') 3
@@ -84,7 +84,7 @@ html(lang='en')
                                                     td Designer
                                                     td Microsoft
                                                     td 
-                                                        span.badge.badge-light-danger Pug
+                                                        span.badge.bg-light-danger.text-danger Pug
                                                     td UK
                                                 tr.border-bottom-warning
                                                     th(scope='row') 4
@@ -96,7 +96,7 @@ html(lang='en')
                                                     td Developer
                                                     td Tata Ltd.
                                                     td 
-                                                        span.badge.badge-light-success React
+                                                        span.badge.bg-light-success.text-success React
                                                     td IDN
                                                 tr.border-bottom-danger
                                                     th(scope='row') 5
@@ -108,7 +108,7 @@ html(lang='en')
                                                     td Developer
                                                     td Wipro Ltd.
                                                     td 
-                                                        span.badge.badge-light-primary Vue
+                                                        span.badge.bg-light-primary.text-primary Vue
                                                     td IRN
                                                 tr.border-bottom-light
                                                     th(scope='row') 6
@@ -120,16 +120,16 @@ html(lang='en')
                                                     td Developer
                                                     td Info Ltd.
                                                     td      
-                                                        span.badge.badge-light-success Vue
+                                                        span.badge.bg-light-success.text-success Vue
                                                     td IRN
                             .col-sm-12
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
                                         h3 Inverse Table
                                         span
-                                            | Use a class
-                                            code table-inverse
-                                            |  inside table element.
+                                            | Use a class  
+                                            code table-inverse  
+                                            |  inside table element.  
                                     .table-responsive
                                         table.table.table-inverse
                                             thead
@@ -189,17 +189,17 @@ html(lang='en')
                                                     td 23/07/2022   
                                                     td 28	
                             .col-sm-12
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header 
                                         h3 Hoverable Rows With Horizontal Border
                                         p.mb-0.mt-1
-                                            | Hoverable row use a class
-                                            code table-hover
-                                            |  and for Horizontal border use a class
-                                            code .table-border-horizontal
-                                            |  , Solid border Use a class
-                                            code .border-solid .table
-                                            | class.
+                                            | Hoverable row use a class   
+                                            code table-hover   
+                                            |  and for Horizontal border use a class   
+                                            code .table-border-horizontal  
+                                            |  , Solid border Use a class  
+                                            code .border-solid .table   
+                                            | class.  
                                     .table-responsive.signal-table
                                         table.table.table-hover
                                             thead
@@ -214,10 +214,11 @@ html(lang='en')
                                             tbody
                                                 tr
                                                     th(scope='row') 1
-                                                    td.d-flex.align-items-center
-                                                        .bg-light-success.me-2
-                                                            i.fa-solid.fa-triangle-exclamation
-                                                        span.font-success No Signal
+                                                    td
+                                                        .d-flex.align-items-center
+                                                            .bg-light-success.me-2
+                                                                i.fa-solid.fa-triangle-exclamation
+                                                            span.font-success No Signal
                                                     td Astrid: NE Shared managed
                                                     td Medium
                                                     td Triaged
@@ -225,10 +226,11 @@ html(lang='en')
                                                     td Chase Nguyen
                                                 tr
                                                     th(scope='row') 2
-                                                    td.d-flex.align-items-center
-                                                        .bg-light-danger.me-2
-                                                            i.fa-solid.fa-triangle-exclamation
-                                                        span.font-danger Offline
+                                                    td  
+                                                        .d-flex.align-items-center
+                                                            .bg-light-danger.me-2
+                                                                i.fa-solid.fa-triangle-exclamation
+                                                            span.font-danger Offline
                                                     td Cosmo: prod shared ares	
                                                     td Huge
                                                     td Triaged
@@ -236,10 +238,11 @@ html(lang='en')
                                                     td Brie Furman
                                                 tr
                                                     th(scope='row') 3
-                                                    td.d-flex.align-items-center
-                                                        .bg-light-primary.me-2
-                                                            i.fa-solid.fa-circle-info
-                                                        span.font-primary Online
+                                                    td
+                                                        .d-flex.align-items-center
+                                                            .bg-light-primary.me-2
+                                                                i.fa-solid.fa-circle-info
+                                                            span.font-primary Online
                                                     td Phoenix: prod shared lyra-lists
                                                     td Minor
                                                     td No Triaged
@@ -247,10 +250,11 @@ html(lang='en')
                                                     td Jeremy Lake
                                                 tr
                                                     th(scope='row') 4
-                                                    td.d-flex.align-items-center
-                                                        .bg-light-success.me-2
-                                                            i.fa-solid.fa-circle-check
-                                                        span.font-success No Signal
+                                                    td  
+                                                        .d-flex.align-items-center
+                                                            .bg-light-success.me-2
+                                                                i.fa-solid.fa-circle-check
+                                                            span.font-success No Signal
                                                     td Astrid: NE Shared managed
                                                     td Negligible
                                                     td Triaged
@@ -258,23 +262,24 @@ html(lang='en')
                                                     td Angelica Howards
                                                 tr.border-bottom-light
                                                     th(scope='row') 5
-                                                    td.d-flex.align-items-center 
-                                                        .bg-light-danger.me-2
-                                                            i.fa-solid.fa-circle-check
-                                                        span.font-danger Online
+                                                    td
+                                                        .d-flex.align-items-center 
+                                                            .bg-light-danger.me-2
+                                                                i.fa-solid.fa-circle-check
+                                                            span.font-danger Online
                                                     td Astrid: NE Shared managed
                                                     td Medium
                                                     td No Triaged
                                                     td 5.33		
                                                     td Diane Okuma
                             .col-sm-12
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
                                         h3 Inverse Table with Primary background
                                         p.mb-0.mt-1
-                                            | Use a class
-                                            code .bg-info, .bg-success, .bg-warning and .bg-danger classes.
-                                            |  with light text on dark backgrounds inside table element.
+                                            | Use a class   
+                                            code .bg-info, .bg-success, .bg-warning and .bg-danger classes.  
+                                            |  with light text on dark backgrounds inside table element.  
                                     .table-responsive
                                         table.table.table-striped.bg-primary
                                             thead.tbl-strip-thad-bdr
@@ -343,13 +348,13 @@ html(lang='en')
                                                     td Developer
                                                     td IRN
                             .col-sm-12
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
                                         h3 Caption
                                         p.mb-0.mt-1 
-                                            | A 
-                                            code &lt;caption&gt;
-                                            | function like a heading for a table.   
+                                            | A    
+                                            code &lt;caption&gt;  
+                                            | function like a heading for a table.     
                                     .card-block.row
                                         .col-sm-12
                                             .table-responsive
@@ -390,14 +395,14 @@ html(lang='en')
                                                             td +91 8794562135		
                                                             td 24
                             .col-sm-6
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header 
                                         h3 Table head options
                                         p.mb-0.mt-1 
-                                            | Similar to tables , use the modifier classes
-                                            code .table-[color]
-                                            |   to make 
-                                            code thead
+                                            | Similar to tables , use the modifier classes   
+                                            code .table-[color]  
+                                            |   to make   
+                                            code thead  
                                     .card-block.row
                                         .col-sm-12
                                             .table-responsive
@@ -425,13 +430,13 @@ html(lang='en')
                                                             td the Bird
                                                             td @twitter
                             .col-sm-6
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
-                                        h2 Striped Row with Inverse Table
+                                        h3 Striped Row with Inverse Table
                                         P.mb-0.mt-1 
-                                            | Use
-                                            code .table-striped
-                                            |  to add zebra-striping to any table row within the
+                                            | Use  
+                                            code .table-striped  
+                                            |  to add zebra-striping to any table row within the  
                                     .card-block.row
                                         .col-sm-12.col-lg-12.col-xl-12
                                             .table-responsive
@@ -463,13 +468,13 @@ html(lang='en')
                                                             td 16
                                                             td 10
                             .col-sm-12  
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
-                                        h2 Breckpoint Specific
+                                        h3 Breakpoint Specific
                                         p.mb-0.mt-1 
-                                            | Use
-                                            code .table-responsive"❴-sm|-md|-lg|-xl|-xxl❵"
-                                            |  functions like a heading for a table.
+                                            | Use  
+                                            code .table-responsive"❴-sm|-md|-lg|-xl|-xxl❵"  
+                                            |  functions like a heading for a table.  
                                     .card-block.row
                                         .col-sm-12
                                             .table-responsive                              
@@ -505,13 +510,13 @@ html(lang='en')
                                                             td 1
                                                             td $210
                             .col-sm-12
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
                                         h3 Responsive Tables With Light Background
                                         p.mb-0.mt-1 
-                                            | A     
-                                            code .table-responsive ,.light-card
-                                            |  inside table element.
+                                            | A      
+                                            code .table-responsive ,.light-card  
+                                            |  inside table element.  
                                     .card-block.row
                                         .col-sm-12
                                             .table-responsive
@@ -559,13 +564,13 @@ html(lang='en')
                                                             td.font-success Done
                                                             td 100%
                             .col-sm-12
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
                                         h3 Sizing Tables
                                         p.mb-0.mt-0
-                                            | Example of Extra large table, Add
-                                            code .table-xl
-                                            |  class to the
+                                            | Example of Extra large table, Add   
+                                            code .table-xl  
+                                            |  class to the   
                                     .card-block.row
                                         .col-sm-12
                                             .table-responsive
@@ -601,13 +606,13 @@ html(lang='en')
                                                             td 8
                                                             td 28/30
                             .col-sm-12  
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
                                         h3 Custom Table Color With Hover And Stripped
                                         p.mb-0.mt-1 
-                                            | Use class 
-                                            code table-hover, table-striped table-*table-info,table-success,table-success,table-info,table-danger,table-primary,table-secondary,table-light,table-active
-                                            |   inside table element.
+                                            | Use class   
+                                            code table-hover, table-striped table-*table-info,table-success,table-success,table-info,table-danger,table-primary,table-secondary,table-light,table-active    
+                                            |   inside table element.   
                                     .table-responsive
                                         table.table.table-striped.bg-primary.hover
                                             thead.tbl-strip-thad-bdr
@@ -655,14 +660,14 @@ html(lang='en')
                                                     td $200,000,000
                                                     td $415,004,880
                             .col-sm-12
-                                .card.bootstrap-table
+                                .card.bootstrap-table.overflow-hidden
                                     .card-header
                                         h3 Dashed Border
                                         p.mb-0.mt-1 
-                                            | Dashed border use class
-                                            code .table-dashed
-                                            |  , for Dotted border use class
-                                            code .table-dotted
+                                            | Dashed border use class  
+                                            code .table-dashed  
+                                            |  , for Dotted border use class   
+                                            code .table-dotted  
                                     .card-block.row
                                         .table-responsive
                                             table.table.table-dashed

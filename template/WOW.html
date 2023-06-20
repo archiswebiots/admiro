@@ -26,11 +26,13 @@
     <link rel="stylesheet" href="../assets/css/bulk-style.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
     <!-- App css -->
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
-    <div class="page-wrapper compact-wrapper" id="pageWrapper"> 
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page header start -->
       <header class="page-header">
         <div class="header-left"><a class="toggle-sidebar" href="#"><i class="iconly-Filter icli"></i></a>
@@ -337,13 +339,13 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h2>Datepicker</h2>
+                  <h2>WOW </h2>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli"></i></a></li>
-                    <li class="breadcrumb-item">Form Widgets</li>
-                    <li class="breadcrumb-item active">Datepicker</li>
+                    <li class="breadcrumb-item">Animation</li>
+                    <li class="breadcrumb-item active">WOW </li>
                   </ol>
                 </div>
               </div>
@@ -351,186 +353,85 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <!-- Custom TouchSpin Spinners start-->
-            <div class="bootstrap-touchspin">
-              <div class="row">
-                <div class="col-xl-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3>Default touchspin</h3>
-                      <p class="mt-1 mb-0">Use the  <code>.decrement-touchspin  </code>and  <code>.increment-touchspin </code>class.</p>
-                    </div>
-                    <div class="card-body common-flex">
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-primary"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-primary" type="number" value="0">
-                        <button class="increment-touchspin btn-touchspin touchspin-primary"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-secondary"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-secondary" type="number" value="2">
-                        <button class="increment-touchspin btn-touchspin touchspin-secondary"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-success"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-success" type="number" value="1">
-                        <button class="increment-touchspin btn-touchspin touchspin-success"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-danger"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-danger" type="number" value="8">
-                        <button class="increment-touchspin btn-touchspin touchspin-danger"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-warning"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-warning" type="number" value="3">
-                        <button class="increment-touchspin btn-touchspin touchspin-warning"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-info"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-info" type="number" value="9">
-                        <button class="increment-touchspin btn-touchspin touchspin-info"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-dark"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-dark" type="number" value="4">
-                        <button class="increment-touchspin btn-touchspin touchspin-dark"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                    </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>WOW Example animation  </h3>
                   </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3>Outlined touchspin</h3>
-                      <p class="mt-1 mb-0">
-                         Use the  <code>.decrement-touchspin  </code>and   <code>.increment-touchspin  </code>class.</p>
+                  <div class="card-body">
+                    <div class="row gallery grid my-gallery masonryComponent" id="aniimated-thumbnials"> 
+                      <figure class="col-4 grid-item masonryItem wow rollIn" data-wow-delay="0.5s"><a href="../assets/images/big-masonry/1.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/1.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounceInDown center" data-wow-delay="0.5s"><a href="../assets/images/big-masonry/2.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/2.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow lightSpeedIn" data-wow-delay="0.5s"><a href="../assets/images/big-masonry/3.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/3.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow rollIn center"><a href="../assets/images/big-masonry/4.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/4.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow pulse" data-wow-iteration="5" data-wow-duration="0.15s"><a href="../assets/images/big-masonry/5.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/5.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounceInRight center"><a href="../assets/images/big-masonry/6.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/6.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounceInLeft"><a href="../assets/images/big-masonry/7.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/7.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow flipInX center"><a href="../assets/images/big-masonry/8.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/8.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounceInRight"><a href="../assets/images/big-masonry/9.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/9.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow rollIn center"><a href="../assets/images/big-masonry/10.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/10.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow shake" data-wow-iteration="5" data-wow-duration="0.15s"><a href="../assets/images/big-masonry/11.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/11.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow swing center" data-wow-iteration="2"><a href="../assets/images/big-masonry/12.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/12.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow rollIn"><a href="../assets/images/big-masonry/13.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/13.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounceInUp center" data-wow-delay="0.5s">  <a href="../assets/images/big-masonry/14.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/14.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow lightSpeedIn" data-wow-delay="0.5s" data-wow-duration="0.15s"><a href="../assets/images/big-masonry/15.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/15.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow rollIn center"><a href="../assets/images/big-masonry/1.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/1.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow pulse" data-wow-iteration="5" data-wow-duration="0.25s"><a href="../assets/images/big-masonry/3.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/3.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow lightSpeedIn center"><a href="../assets/images/big-masonry/5.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/5.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounce" data-wow-iteration="5" data-wow-duration="0.15s"><a href="../assets/images/big-masonry/2.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/2.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounceInUp center"><a href="../assets/images/big-masonry/6.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/6.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounceInRight"><a href="../assets/images/big-masonry/9.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/9.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow rollIn center"><a href="../assets/images/big-masonry/10.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/10.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow flip" data-wow-iteration="5" data-wow-duration="0.15s"><a href="../assets/images/big-masonry/7.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/7.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounceInRight center"><a href="../assets/images/big-masonry/14.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/14.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow bounce" data-wow-iteration="5" data-wow-duration="0.15s"><a href="../assets/images/big-masonry/2.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/2.jpg"></a></figure>
+                      <figure class="col-4 grid-item masonryItem wow pulse" data-wow-iteration="5" data-wow-duration="0.25s"><a href="../assets/images/big-masonry/3.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/masonry/3.jpg"></a></figure>
                     </div>
-                    <div class="card-body common-flex">
-                      <div class="touchspin-wrapper"> 
-                        <button class="decrement-touchspin btn-touchspin spin-border-primary"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-primary" type="number" value="0">
-                        <button class="increment-touchspin btn-touchspin spin-border-primary"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin spin-border-secondary"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-secondary" type="number" value="2">
-                        <button class="increment-touchspin btn-touchspin spin-border-secondary"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin spin-border-success"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-success" type="number" value="1">
-                        <button class="increment-touchspin btn-touchspin spin-border-success"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin spin-border-danger"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-danger" type="number" value="8">
-                        <button class="increment-touchspin btn-touchspin spin-border-danger"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin spin-border-warning"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-warning" type="number" value="3">
-                        <button class="increment-touchspin btn-touchspin spin-border-warning"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin spin-border-info"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-info" type="number" value="9">
-                        <button class="increment-touchspin btn-touchspin spin-border-info"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin spin-border-dark"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-dark" type="number" value="4">
-                        <button class="increment-touchspin btn-touchspin spin-border-dark"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3>Icons with prefix and postfix</h3>
-                      <p class="mt-1 mb-0">
-                         Use the   <code>.decrement-touchspin    </code>and     <code>.increment-touchspin     </code>class.</p>
-                    </div>
-                    <div class="card-body common-flex pre-post-touchspin">
-                      <div class="input-group">
-                        <button class="decrement-touchspin btn-touchspin touchspin-primary"><i class="fa-solid fa-minus"></i></button><span class="input-group-text">$</span>
-                        <input class="input-touchspin spin-outline-primary" type="number" value="0">
-                        <button class="increment-touchspin btn-touchspin touchspin-primary"><i class="fa-solid fa-plus"> </i></button>
-                      </div>
-                      <div class="input-group">
-                        <button class="decrement-touchspin btn-touchspin touchspin-primary"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-primary" type="number" value="0"><span class="input-group-text">%</span>
-                        <button class="increment-touchspin btn-touchspin touchspin-primary"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3>Buttons with prefix and postfix</h3>
-                      <p class="mt-1 mb-0">
-                         Use the   <code>.decrement-touchspin  </code>and   <code>.increment-touchspin  </code>class.</p>
-                    </div>
-                    <div class="card-body common-flex pre-post-touchspin bg-touchspin">
-                      <div class="input-group">
-                        <button class="decrement-touchspin btn-touchspin touchspin-secondary"><i class="fa-solid fa-minus"></i></button>
-                        <button class="btn-outline-secondary" id="button-addon1" type="button">Pre</button>
-                        <input class="input-touchspin spin-outline-primary" type="number" value="0">
-                        <button class="increment-touchspin btn-touchspin touchspin-secondary"><i class="fa-solid fa-plus"></i></button>
-                      </div>
-                      <div class="input-group">
-                        <button class="decrement-touchspin btn-touchspin touchspin-secondary"><i class="fa-solid fa-minus"></i></button>
-                        <input class="input-touchspin spin-outline-primary" type="number" value="0">
-                        <button class="btn-outline-secondary" id="button-addon2" type="button">Post</button>
-                        <button class="increment-touchspin btn-touchspin touchspin-secondary"><i class="fa-solid fa-plus"> </i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-12">
-                  <div class="card">
-                    <div class="card-header">
-                      <h4>Rounded touchspin</h4>
-                      <p class="mt-1 mb-0">
-                         Use the   <code>.decrement-touchspin  </code>and   <code>.increment-touchspin   </code>class.</p>
-                    </div>
-                    <div class="card-body common-flex rounded-touchspin">
-                      <div class="touchspin-wrapper"> 
-                        <button class="decrement-touchspin btn-touchspin touchspin-primary"><i class="fa-solid fa-angle-left"></i></button>
-                        <input class="input-touchspin spin-outline-primary" type="number" value="0">
-                        <button class="increment-touchspin btn-touchspin touchspin-primary"><i class="fa-solid fa-angle-right"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-secondary"><i class="fa-solid fa-angle-left"></i></button>
-                        <input class="input-touchspin spin-outline-secondary" type="number" value="2">
-                        <button class="increment-touchspin btn-touchspin touchspin-secondary"><i class="fa-solid fa-angle-right"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-success"><i class="fa-solid fa-angle-left"></i></button>
-                        <input class="input-touchspin spin-outline-success" type="number" value="1">
-                        <button class="increment-touchspin btn-touchspin touchspin-success"><i class="fa-solid fa-angle-right"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-danger"><i class="fa-solid fa-angle-left"></i></button>
-                        <input class="input-touchspin spin-outline-danger" type="number" value="8">
-                        <button class="increment-touchspin btn-touchspin touchspin-danger"><i class="fa-solid fa-angle-right"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-warning"><i class="fa-solid fa-angle-left"> </i></button>
-                        <input class="input-touchspin spin-outline-warning" type="number" value="3">
-                        <button class="increment-touchspin btn-touchspin touchspin-warning"><i class="fa-solid fa-angle-right"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-info"><i class="fa-solid fa-angle-left"> </i></button>
-                        <input class="input-touchspin spin-outline-info" type="number" value="9">
-                        <button class="increment-touchspin btn-touchspin touchspin-info"><i class="fa-solid fa-angle-right"></i></button>
-                      </div>
-                      <div class="touchspin-wrapper">
-                        <button class="decrement-touchspin btn-touchspin touchspin-dark"><i class="fa-solid fa-angle-left"></i></button>
-                        <input class="input-touchspin spin-outline-dark" type="number" value="9">
-                        <button class="increment-touchspin btn-touchspin touchspin-dark"><i class="fa-solid fa-angle-right"></i></button>
+                    <!-- Root element of PhotoSwipe. Must have class pswp.-->
+                    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">  
+                      <!--
+                      Background of PhotoSwipe.
+                      It's a separate element, as animating opacity is faster than rgba().
+                      -->
+                      <div class="pswp__bg"></div>
+                      <!-- Slides wrapper with overflow:hidden.-->
+                      <div class="pswp__scroll-wrap">
+                        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.-->
+                        <!-- don't modify these 3 pswp__item elements, data is added later on.-->
+                        <div class="pswp__container">
+                          <div class="pswp__item"></div>
+                          <div class="pswp__item"></div>
+                          <div class="pswp__item"></div>
+                        </div>
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.-->
+                        <div class="pswp__ui pswp__ui--hidden">    
+                          <div class="pswp__top-bar">
+                            <!-- Controls are self-explanatory. Order can be changed.-->
+                            <div class="pswp__counter"></div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR-->
+                            <!-- element will get class pswp__preloader--active when preloader is running-->
+                            <div class="pswp__preloader">
+                              <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                  <div class="pswp__preloader__donut"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                          </div>
+                          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                          <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -582,7 +483,6 @@
     <!-- date picker-->
     <!-- flatpicker-->
     <!-- touchspin -->
-    <script src="../assets/js/touchspin_2/custom_touchspin.js"></script>
     <!-- select 2-->
     <!-- typehead-->
     <!-- clipboard-->
@@ -593,8 +493,15 @@
     <!-- dashboard default-->
     <!-- AOS-->
     <!-- Macy-->
+    <script src="../assets/js/animation/macy.min.js"></script>
+    <script src="../assets/js/animation/macy.js"></script>
     <!-- WOW-->
+    <script src="../assets/js/animation/wow/wow.min.js"></script>
+    <script src="../assets/js/animation/wow/wow-init.js"></script>
     <!-- photo swipe -->
+    <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
+    <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script src="../assets/js/photoswipe/photoswipe.js"></script>
     <!-- custom script -->
     <script src="../assets/js/script.js"></script>
     <!-- jquery-->

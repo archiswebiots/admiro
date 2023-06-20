@@ -1,0 +1,255 @@
+-var wow                = true;
+-var page_wow           = true;
+-var macy               = true;
+-var photo_swipe        = true;
+-var sidebar            = true;    
+
+include ../../components/mixin   
+
+doctype html
+html(lang='en')
+
+    include ../../components/header-files  
+    body
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | WOW 
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Animation
+                                        li.breadcrumb-item.active WOW 
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                            .col-sm-12
+                                .card
+                                    .card-header
+                                        h3 WOW Example animation  
+                                    .card-body
+                                        .row#aniimated-thumbnials.gallery.grid.my-gallery.masonryComponent 
+                                            figure.col-4.grid-item.masonryItem.wow.rollIn(data-wow-delay='0.5s')
+                                                a(href='../assets/images/big-masonry/1.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/1.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounceInDown.center(data-wow-delay='0.5s')
+                                                a(href='../assets/images/big-masonry/2.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/2.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.lightSpeedIn(data-wow-delay='0.5s')
+                                                a(href='../assets/images/big-masonry/3.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/3.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.rollIn.center
+                                                a(href='../assets/images/big-masonry/4.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/4.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.pulse(data-wow-iteration='5', data-wow-duration='0.15s')
+                                                a(href='../assets/images/big-masonry/5.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/5.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounceInRight.center
+                                                a(href='../assets/images/big-masonry/6.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/6.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounceInLeft
+                                                a(href='../assets/images/big-masonry/7.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/7.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.flipInX.center
+                                                a(href='../assets/images/big-masonry/8.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/8.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounceInRight
+                                                a(href='../assets/images/big-masonry/9.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/9.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.rollIn.center
+                                                a(href='../assets/images/big-masonry/10.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/10.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.shake(data-wow-iteration='5', data-wow-duration='0.15s')
+                                                a(href='../assets/images/big-masonry/11.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/11.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.swing.center(data-wow-iteration='2')
+                                                a(href='../assets/images/big-masonry/12.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/12.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.rollIn
+                                                a(href='../assets/images/big-masonry/13.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/13.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounceInUp.center(data-wow-delay='0.5s')   
+                                                a(href='../assets/images/big-masonry/14.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/14.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.lightSpeedIn(data-wow-delay='0.5s', data-wow-duration='0.15s')
+                                                a(href='../assets/images/big-masonry/15.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/15.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.rollIn.center
+                                                a(href='../assets/images/big-masonry/1.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/1.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.pulse(data-wow-iteration='5', data-wow-duration='0.25s')
+                                                a(href='../assets/images/big-masonry/3.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/3.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.lightSpeedIn.center
+                                                a(href='../assets/images/big-masonry/5.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/5.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounce(data-wow-iteration='5', data-wow-duration='0.15s')
+                                                a(href='../assets/images/big-masonry/2.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/2.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounceInUp.center
+                                                a(href='../assets/images/big-masonry/6.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/6.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounceInRight
+                                                a(href='../assets/images/big-masonry/9.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/9.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.rollIn.center
+                                                a(href='../assets/images/big-masonry/10.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/10.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.flip(data-wow-iteration='5', data-wow-duration='0.15s')
+                                                a(href='../assets/images/big-masonry/7.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/7.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounceInRight.center
+                                                a(href='../assets/images/big-masonry/14.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/14.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.bounce(data-wow-iteration='5', data-wow-duration='0.15s')
+                                                a(href='../assets/images/big-masonry/2.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/2.jpg')
+                                            figure.col-4.grid-item.masonryItem.wow.pulse(data-wow-iteration='5', data-wow-duration='0.25s')
+                                                a(href='../assets/images/big-masonry/3.jpg', itemprop='contentUrl', data-size='1600x950')
+                                                    img(src='../assets/images/masonry/3.jpg')
+                                        // Root element of PhotoSwipe. Must have class pswp.
+                                        .pswp(tabindex='-1', role='dialog', aria-hidden='true')   
+                                            //
+                                                Background of PhotoSwipe.
+                                                It's a separate element, as animating opacity is faster than rgba().
+                                            .pswp__bg
+                                            // Slides wrapper with overflow:hidden.
+                                            .pswp__scroll-wrap
+                                                // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+                                                // don't modify these 3 pswp__item elements, data is added later on.
+                                                .pswp__container
+                                                    .pswp__item
+                                                    .pswp__item
+                                                    .pswp__item
+                                                // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+                                                .pswp__ui.pswp__ui--hidden     
+                                                    .pswp__top-bar
+                                                        // Controls are self-explanatory. Order can be changed.
+                                                        .pswp__counter
+                                                        button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                                        button.pswp__button.pswp__button--share(title='Share')
+                                                        button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                                        button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                                        // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+                                                        // element will get class pswp__preloader--active when preloader is running
+                                                        .pswp__preloader
+                                                            .pswp__preloader__icn
+                                                                .pswp__preloader__cut
+                                                                    .pswp__preloader__donut
+                                                    .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                                        .pswp__share-tooltip
+                                                    button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                                    button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                                    .pswp__caption
+                                                        .pswp__caption__center
+
+                                        
+                                        //- #aniimated-thumbnials.row.gallery.grid.my-gallery.masonryComponent 
+                                        //-     figure.grid-item.col-sm-3.masonryItem.wow.rollIn(itemprop='associatedMedia', data-wow-delay='0.5s', itemscope='')
+                                        //-         a(href='../assets/images/big-masonry/1.jpg',  itemprop='contentUrl', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/1.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem.wow.bounceInDown(itemprop='associatedMedia', data-wow-delay='0.5s', itemscope='')
+                                        //-         a(href='../assets/images/big-masonry/2.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/2.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem.wow.lightSpeedIn(itemprop='associatedMedia', data-wow-delay='0.5s', itemscope='')
+                                        //-         a(href='../assets/images/big-masonry/3.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/3.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem.masonryItem.wow.rollIn(itemprop='associatedMedia', data-wow-delay='0.5s', itemscope='')
+                                        //-         a(href='../assets/images/big-masonry/4.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/4.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem.wow.pulse(itemprop='associatedMedia', data-wow-delay='0.5s', itemscope='')
+                                        //-         a(href='../assets/images/big-masonry/5.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/5.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem.wow.bounceInRight(itemprop='associatedMedia', data-wow-delay='0.5s', itemscope='')
+                                        //-         a(href='../assets/images/big-masonry/6.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/6.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/7.jpg', data-size='11600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/7.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/8.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/8.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="fade-up")
+                                        //-         a(href='../assets/images/big-masonry/9.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/9.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/10.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/10.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="fade-up")
+                                        //-         a(href='../assets/images/big-masonry/11.jpg', data-size='1600x950') 
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/11.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/12.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/12.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-left")
+                                        //-         a(href='../assets/images/big-masonry/14.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/14.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/15.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/15.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="zoom-out")
+                                        //-         a(href='../assets/images/big-masonry/13.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/13.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-right")
+                                        //-         a(href='../assets/images/big-masonry/4.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/4.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="zoom-out")
+                                        //-         a(href='../assets/images/big-masonry/5.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/5.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="zoom-out-up")
+                                        //-         a(href='../assets/images/big-masonry/6.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/6.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="zoom-out-down")
+                                        //-         a(href='../assets/images/big-masonry/7.jpg', data-size='11600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/7.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/8.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/8.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="slide-up")
+                                        //-         a(href='../assets/images/big-masonry/9.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/9.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/10.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/10.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="fade-up")
+                                        //-         a(href='../assets/images/big-masonry/9.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/9.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/10.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/10.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="fade-up")
+                                        //-         a(href='../assets/images/big-masonry/11.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/11.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/12.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/12.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-left")
+                                        //-         a(href='../assets/images/big-masonry/14.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/14.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-down")
+                                        //-         a(href='../assets/images/big-masonry/15.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/15.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="zoom-out")
+                                        //-         a(href='../assets/images/big-masonry/13.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/13.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="flip-right")
+                                        //-         a(href='../assets/images/big-masonry/4.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/4.jpg', alt='Image description')
+                                        //-     figure.grid-item.col-sm-3.masonryItem(data-aos="zoom-out")
+                                        //-         a(href='../assets/images/big-masonry/5.jpg', data-size='1600x950')
+                                        //-             img.img-thumbnail(src='../assets/images/masonry/5.jpg', alt='Image description') 
+                
+                
+                
+                
+                include ../../components/footer
+        include ../../components/footer-files 

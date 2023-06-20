@@ -1,61 +1,64 @@
 // bootstrap js
 script(src='../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js')
-script(src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js")
+script(src="../assets/js/vendors/font-awesome/fontawesome-min.js")
 if sidebar  
     script(src='../assets/js/sidebar.js')
-// custom script 
-script(src='../assets/js/script.js')
+
 // popover 
 if popover 
     script(src="../assets/js/popover.js")
 // tooltip
 if tooltip 
     script(src="../assets/js/tooltip.js")
-// modal validation
-if form_validation_custom
-  script(src='../assets/js/form-validation-custom.js') 
 // modal 
 if modal 
     script(src="../assets/js/modal.js")
 // alert
 if alert 
     script(src="../assets/js/alert.js")
+// toasts
 if toasts 
     script(src="../assets/js/toasts-custom.js")
+// rating
 if rating 
-    //- script(src="../assests/js/rating-js.js")
     script(src="../assets/js/rating-custom.js")
     script(src="../assets/js/Rating-Index.js")
-//- jquery
-script(src="https://code.jquery.com/jquery-3.6.4.js" )
-//- script(src="https://code.jquery.com/ui/1.13.2/jquery-ui.js")
+// sweetalert 2
 if sweetalert2
   script(src='../assets/js/sweet-alert/sweetalert.min.js')
 if page_sweetalert2
   script(src='../assets/js/sweet-alert/app.js')
+// dragable 
 if dragable
   script(src='../assets/js/dragable/sortable.js')
   script(src='../assets/js/dragable/sortable-custom.js')
+// jquery-ui
 if jquery_ui
   script(src='../assets/js/dragable/jquery-ui.min.js')
+// timeline 
 if timeLine
   script(src='../assets/js/timeline/timeline.js')
+// dropzone
 if dropzone
   script(src='../assets/js/dropzone/dropzone.js')
   script(src='../assets/js/dropzone/dropzone-script.js')
+// filepond 
 if filepond 
   script(src='../assets/js/filepond/filepond-plugin-image-preview.js')
   script(src='../assets/js/filepond/filepond-plugin-file-rename.js')
   script(src='../assets/js/filepond/filepond-plugin-image-transform.js')
   script(src='../assets/js/filepond/filepond.js')
   script(src='../assets/js/filepond/custom-filepond.js')
+// range
 if range 
   script(src='../assets/js/range/rangeslider.nostyle.umd.min.js')
   script(src='../assets/js/range/rangeslider.umd.min.js')
   script(src='../assets/js/range/range-custom.js')
+// scrollable 
 if scrollable
   script(src='../assets/js/scrollable/perfect-scrollbar.min.js')
   script(src='../assets/js/scrollable/scrollable-custom.js')
+// slick
 if slick 
   script(src='../assets/js/slick/slick.min.js')
   script(src='../assets/js/slick/slick.js')
@@ -66,24 +69,31 @@ if slick
 //- if scrollbar
 //-   script(src='../assets/js/scrollbar/simplebar.js')
 //-   script(src='../assets/js/scrollbar/custom.js')
+// tree
 if tree 
   script(src='../assets/js/tree/jstree.min.js')
   script(src='../assets/js/tree/tree.min.js')
   script(src='../assets/js/tree/tree.js')
+// form validation 
 if form_validation_custom
   script(src='../assets/js/form-validation-custom.js')
+// input mask 
 if input_mask 
   script(src='../assets/js/cleave/cleave.min.js')
   script(src='../assets/js/cleave/custom-cleave.js')
+// date picker
 if date_picker
   script(src='../assets/js/datepicker/date-picker/datepicker.js')
   script(src='../assets/js/datepicker/date-picker/datepicker.en.js')
   script(src='../assets/js/datepicker/date-picker/datepicker.custom.js')
+// flatpicker
 if flatpickr 
   script(src='../assets/js/flat-pickr/flatpickr.js')
   script(src='../assets/js/flat-pickr/custom-flatpickr.js')
+// touchspin 
 if touchspin_2 
   script(src='../assets/js/touchspin_2/custom_touchspin.js')
+// select 2
 if select2_options 
   script(src='../assets/js/select2/tagify.js')
   script(src='../assets/js/select2/tagify.polyfills.min.js')
@@ -92,34 +102,54 @@ if select2_options
   script(src='../assets/js/select2/custom-inputsearch.js')
 //- if page_select2
 //-   script(src='../assets/js/select2/select2-custom.js')
+// typehead
 if typeahead
   script(src='../assets/js/typeahead/handlebars.js')
   script(src='../assets/js/typeahead/typeahead.bundle.js')
   script(src='../assets/js/typeahead/typeahead.custom.js')
+// clipboard
 if clipboard
   script(src='../assets/js/clipboard/clipboard.min.js')
 if page_clipboard
   script(src='../assets/js/clipboard/clipboard-script.js')
+// form-wizard
 if form_wizard
   script(src='../assets/js/form-wizard/form-wizard-five.js')
   script(src='../assets/js/form-wizard/form-wizard.js')
+// image upload
 if image_upload 
   script(src='../assets/js/form-wizard/image-upload.js')
+// verification code
 if verification_code 
   script(src='../assets/js/form-wizard/verification.js')
+// datatables
 if datatables
   script(src='../assets/js/vendors/simple-datatables/dist/umd/simple-datatables.js')
+// dashboard default
 if dashboard_default
   script(src='../assets/js/data-table/default.js')
+// AOS
 if aos
   script(src='../assets/js/animation/aos/aos.js')
 if page_aos
   script(src='../assets/js/animation/aos/aos-init.js')
+// Macy
 if macy
   script(src='../assets/js/animation/macy.min.js')
   script(src='../assets/js/animation/macy.js')
-
+// WOW
+if wow
+  script(src='../assets/js/animation/wow/wow.min.js')
+if page_wow
+  script(src='../assets/js/animation/wow/wow-init.js')
+// photo swipe 
 if photo_swipe
   script(src='../assets/js/photoswipe/photoswipe.min.js')
   script(src='../assets/js/photoswipe/photoswipe-ui-default.min.js')
   script(src='../assets/js/photoswipe/photoswipe.js')
+
+// custom script 
+script(src='../assets/js/script.js')
+// jquery
+if jquery
+  script(src="../assets/js/vendors/jquery/jquery.js" )
