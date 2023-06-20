@@ -1,6 +1,6 @@
 // bootstrap js
 script(src='../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js')
-script(src="../assets/js/vendors/font-awesome/fontawesome-min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js")
 if sidebar  
     script(src='../assets/js/sidebar.js')
 
@@ -147,9 +147,17 @@ if photo_swipe
   script(src='../assets/js/photoswipe/photoswipe.min.js')
   script(src='../assets/js/photoswipe/photoswipe-ui-default.min.js')
   script(src='../assets/js/photoswipe/photoswipe.js')
+// icon
+if iconly_icon 
+  script(src="../assets/js/icon/iconly.js")
 
-// custom script 
-script(src='../assets/js/script.js')
+// iconCopy 
+if iconCopy
+script(src='../assets/js/icon-copy.js')
+
 // jquery
 if jquery
   script(src="../assets/js/vendors/jquery/jquery.js" )
+
+// custom script 
+script(src='../assets/js/script.js')

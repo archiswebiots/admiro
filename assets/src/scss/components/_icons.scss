@@ -1,0 +1,20 @@
+/**=====================
+    03.  Card CSS Start
+==========================**/
+
+.icon-main{
+    .media{
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        border: 1px solid rgba(var(--light-semi-gray),1);
+        padding: 20px;
+        border-radius: 4px;
+        .media-body{
+            padding-top: 10px;
+        }
+        i{
+            font-size: 25px;
+        }
+    }
+}

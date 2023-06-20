@@ -18907,6 +18907,29 @@ input::-webkit-inner-spin-button {
   font-size: italic;
 }
 
+.wow-animation .line p strong {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/**=====================
+    03.  Card CSS Start
+==========================**/
+.icon-main .media {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid rgba(var(--light-semi-gray), 1);
+  padding: 20px;
+  border-radius: 4px;
+}
+.icon-main .media .media-body {
+  padding-top: 10px;
+}
+.icon-main .media i {
+  font-size: 25px;
+}
+
 /**=====================
      sidebar css start
 ==========================**/
