@@ -18913,21 +18913,80 @@ input::-webkit-inner-spin-button {
 }
 
 /**=====================
-    03.  Card CSS Start
+    03.  Icons CSS Start
 ==========================**/
-.icon-main .media {
+.icon-main .icon-lists {
+  gap: 10px;
+  justify-content: center;
+}
+.icon-main .icons-item {
   display: block;
-  margin-bottom: 10px;
   text-align: center;
   border: 1px solid rgba(var(--light-semi-gray), 1);
   padding: 20px;
   border-radius: 4px;
+  width: calc(20% - 10px);
 }
-.icon-main .media .media-body {
+@media (max-width: 1399px) {
+  .icon-main .icons-item {
+    width: calc(25% - 10px);
+  }
+}
+@media (max-width: 1199px) {
+  .icon-main .icons-item {
+    width: calc(33% - 10px);
+  }
+}
+@media (max-width: 675px) {
+  .icon-main .icons-item {
+    width: calc(50% - 10px);
+    padding: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .icon-main .icons-item {
+    padding: 8px;
+  }
+}
+.icon-main .icons-item h5, .icon-main .icons-item .h5 {
   padding-top: 10px;
 }
-.icon-main .media i {
+.icon-main .icons-item i {
   font-size: 25px;
+}
+
+.icon-modal .modal-content .modal-body {
+  position: relative;
+  padding: 20px;
+}
+.icon-modal .modal-content .modal-body .btn-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 100%;
+  opacity: 1;
+  font-size: 10px;
+}
+.icon-modal .modal-content .modal-body .icon-hover-bottom {
+  text-align: center;
+}
+.icon-modal .modal-content .modal-body .form-inline {
+  padding-top: 20px;
+}
+.icon-modal .modal-content .modal-body .form-inline .form-group {
+  position: relative;
+}
+.icon-modal .modal-content .modal-body .form-inline .form-group i {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+}
+.icon-modal .modal-content .modal-body .form-inline .form-group .form-control {
+  background-color: rgba(var(--light-gray), 1);
+  border: none;
+  font-size: 16px;
 }
 
 /**=====================
