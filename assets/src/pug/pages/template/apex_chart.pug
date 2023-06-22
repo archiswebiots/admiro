@@ -1,0 +1,49 @@
+- var apex                  = true;
+- var page_apex             = true;
+- var config               = true; 
+- var sidebar               = true;   
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper
+                include ../../components/sidebar    
+                .page-body   
+                    .container-fluid
+                        .page-title   
+                            .row
+                                .col-6
+                                    h2   
+                                        | Apex chart 
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item 
+                                            a(href='index.html')   
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Charts 
+                                        li.breadcrumb-item.active Apex chart      
+                    // Container-fluid starts 
+                    .container-fluid
+                        .row
+                            .col-sm-12.col-xl-6.box-col-6
+                                .card
+                                    .card-header
+                                        h3
+                                            | Basic Area Chart 
+                                    .card-body  
+                                        #basic-apex  
+                            .col-sm-12.col-xl-6   
+                                .card 
+                                    .card-header 
+                                        h3 
+                                            | Funnel 
+                                    .card-body 
+                                        #chart  
+                include ../../components/footer
+        include ../../components/footer-files  

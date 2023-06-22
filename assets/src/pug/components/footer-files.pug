@@ -16,6 +16,18 @@ if modal
 // alert
 if alert 
     script(src="../assets/js/alert.js")
+// chart
+if config 
+  script(src='../assets/js/config.js')
+if apex_widget
+  script(src='../assets/js/chart/apex-chart/moment.min.js')
+if apex
+  script(src='../assets/js/chart/apex-chart/apexcharts.js')
+  script(src='../assets/js/chart/apex-chart/stock-prices.js')
+if apexmoment 
+  script(src='../assets/js/chart/apex-chart/moment.min.js')
+if page_apex
+  script(src='../assets/js/chart/apex-chart/chart-custom.js')
 // toasts
 if toasts 
     script(src="../assets/js/toasts-custom.js")
@@ -152,8 +164,21 @@ if iconly_icon
   script(src="../assets/js/icon/iconly.js")
 
 // iconCopy 
-if iconCopy
-script(src='../assets/js/icon-copy.js')
+//- if iconCopy
+//-   script(src='../assets/js/icon-copy.js')
+
+if echart 
+  script(src='../assets/js/chart/echart/esl.js')
+  script(src='../assets/js/chart/echart/config.js')
+
+if echart_pie
+  script(src='../assets/js/chart/echart/pie-chart/facePrint.js')
+  script(src='../assets/js/chart/echart/pie-chart/testHelper.js')
+  script(src='../assets/js/chart/echart/pie-chart/custom-transition-texture.js')
+  script(src='../assets/js/chart/echart/data/symbols.js')
+
+if page_echart
+  script(src='../assets/js/chart/echart/custom.js')
 
 // jquery
 if jquery
