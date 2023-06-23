@@ -1,0 +1,200 @@
+-var sidebar    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body 
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2  
+                                        | Default Style
+                                .col-6
+                                    ol.breadcrumb 
+                                        li.breadcrumb-item   
+                                            a(href='index.html')        
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Buttons 
+                                        li.breadcrumb-item.active Default Style
+                    // Container-fluid starts   
+                    .container-fluid
+                        .row.g-3
+                            .col-sm-12
+                                #default.card
+                                    .card-header
+                                        h3.mb-1 Default buttons
+                                        p.mb-0.mt-1 Bootstrap state buttons
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-primary') Primary Button
+                                        button.btn.btn-secondary.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-secondary') secondary Button
+                                        button.btn.btn-info.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-info') info Button
+                                        button.btn.btn-success.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-success') success Button
+                                        button.btn.btn-warning.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-warning') warning Button
+                                        button.btn.btn-danger.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-danger') danger Button
+                                        button.btn.btn-light.text-dark(type='button' data-bs-toggle='tooltip' title='btn btn-light') light Button
+                            .col-sm-12
+                                #large-btn.card.large-button
+                                    .card-header
+                                        h3 Large buttons
+                                        p.mb-0.mt-1
+                                            | Add
+                                            code .btn-lg
+                                            |  class for large size buttons
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-primary btn-lg') Primary Button
+                                        button.btn.btn-secondary.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-secondary btn-lg') secondary Button
+                                        button.btn.btn-info.btn-lg.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-info btn-lg') info Button
+                                        button.btn.btn-success.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-success btn-lg') success Button
+                                        button.btn.btn-warning.btn-lg.text-light(type='button' data-bs-toggle='tooltip' title='btn btn-warning btn-lg') warning Button
+                                        button.btn.btn-danger.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-danger btn-lg') danger Button
+                                        button.btn.btn-light.btn-lg(type='button' data-bs-toggle='tooltip' title='btn btn-light btn-lg') light Button
+                            .col-sm-12
+                                #small-btn.card
+                                    .card-header
+                                        h3 Small buttons        
+                                        p.mb-0.mt-1
+                                            | Add
+                                            code .btn-sm
+                                            |  class for small size buttons
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.btn-sm(type='button' title='btn btn-primary btn-sm') Primary Button
+                                        button.btn.btn-secondary.btn-sm(type='button' title='btn btn-secondary btn-sm') Secondary Button
+                                        button.btn.btn-success.btn-sm(type='button' title='btn btn-success btn-sm') Success Button
+                                        button.btn.btn-info.btn-sm.text-light(type='button' title='btn btn-info btn-sm') Info Button
+                                        button.btn.btn-warning.btn-sm.text-light(type='button' title='btn btn-warning btn-sm') Warning Button
+                                        button.btn.btn-danger.btn-sm(type='button' title='btn btn-danger btn-sm') Danger Button
+                                        button.btn.btn-light.btn-sm(type='button' title='btn btn-light btn-sm') Light Button
+                            .col-sm-12
+                                #active-btn.card
+                                    .card-header
+                                        h3 Active Buttons
+                                        p.mb-0.mt-1   
+                                            | Add
+                                            code .active
+                                            |  class for active state
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.active(type='button' title='btn btn-primary active') Active
+                                        button.btn.btn-secondary.active(type='button' title='btn btn-secondary active') Active
+                                        button.btn.btn-success.active(type='button' title='btn btn-success active') Active
+                                        button.btn.btn-info.active.text-light(type='button' title='btn btn-info active') Active
+                                        button.btn.btn-warning.active.text-light(type='button' title='btn btn-warning active') Active
+                                        button.btn.btn-danger.active.text-light(type='button' title='btn btn-danger active') Active
+                                        button.btn.btn-light.active.text-dark(type='button' title='btn btn-light active') Active
+                            .col-sm-12
+                                #disabled-btn.card
+                                    .card-header
+                                        h3 Disabled buttons
+                                        p.mb-0.mt-1
+                                            | Add
+                                            code .disabled
+                                            |  class or 
+                                            code disabled="disabled"
+                                            |  attribute for disabled button
+                                    .card-body.btn-showcase
+                                        button.btn.btn-primary.disabled(type='button') Disabled
+                                        button.btn.btn-secondary.disabled(type='button') Disabled
+                                        button.btn.btn-success.disabled(type='button') Disabled
+                                        button.btn.btn-info.disabled.text-light(type='button') Disabled
+                                        button.btn.btn-warning.disabled.text-light(type='button') Disabled
+                                        button.btn.btn-danger.disabled(type='button') Disabled
+                                        button.btn.btn-light.disabled(type='button') Disabled
+                            .col-sm-12
+                                #custom-state-button.card
+                                    .card-header
+                                        h3 Custom state buttons
+                                        p.mb-0.mt-1
+                                            | The 
+                                            code .btn
+                                            |  class used with 
+                                            code &lt;button&gt;
+                                            | ,
+                                            code &lt;a&gt;
+                                            |  and
+                                            code &lt;input&gt;
+                                            |  elements.
+                                    .card-body.btn-showcase
+                                        a.btn.btn-primary(href='#', data-toggle='tooltip', title='btn btn-primary', role='button') Link
+                                        input.btn.btn-secondary(type='button', value='Input', data-toggle='tooltip', title='btn btn-secondary')
+                                        input.btn.btn-success(type='submit', value='Submit', data-toggle='tooltip', title='btn btn-success')
+                                        button.btn.btn-info.text-light(type='submit', data-toggle='tooltip', title='btn btn-info') Button
+                            .col-sm-12
+                                #outline-button.card
+                                    .card-header
+                                        h3 outline buttons  
+                                        p.mb-0.mt-1
+                                            | Add 
+                                            code .btn-outline-*
+                                            |  class for border button
+                                    .card-body.btn-showcase
+                                        button.btn.btn-outline-primary(type='button' title='btn btn-outline-primary') Primary Button
+                                        button.btn.btn-outline-secondary(type='button' title='btn btn-outline-secondary') Secondary Button
+                                        button.btn.btn-outline-success(type='button' title='btn btn-outline-success') Success Button
+                                        button.btn.btn-outline-info(type='button' title='btn btn-outline-info') Info Button
+                                        button.btn.btn-outline-warning(type='button' title='btn btn-outline-warning') Warning Button
+                                        button.btn.btn-outline-danger(type='button' title='btn btn-outline-danger') Danger Button
+                                        button.btn.btn-outline-light.text-dark(type='button' title='btn btn-outline-light') Light Button
+                            .col-sm-12
+                                #outline-large-button.card
+                                    .card-header
+                                        h3 outline Large buttons
+                                        p.mb-0.mt-1
+                                            | Add
+                                            code .btn-outline-*  
+                                            |  class for outline and 
+                                            code .btn-lg
+                                            |  class for large button
+                                    .card-body.btn-showcase
+                                        button.btn.btn-outline-primary.btn-lg(type='button' title='btn btn-outline-primary btn-lg') Primary Button
+                                        button.btn.btn-outline-secondary.btn-lg(type='button' title='btn btn-outline-secondary btn-lg') Secondary Button
+                                        button.btn.btn-outline-success.btn-lg(type='button' title='btn btn-outline-success btn-lg') Success Button
+                                        button.btn.btn-outline-info.btn-lg(type='button' title='btn btn-outline-info btn-lg') Info Button
+                                        button.btn.btn-outline-warning.btn-lg(type='button' title='btn btn-outline-warning btn-lg') Warning Button
+                                        button.btn.btn-outline-danger.btn-lg(type='button' title='btn btn-outline-danger btn-lg') Danger Button
+                                        button.btn.btn-outline-light.text-dark.btn-lg(type='button' title='btn btn-outline-light btn-lg') Light Button
+                            .col-sm-12
+                                #outline-small-button.card
+                                    .card-header
+                                        h3 outline small buttons
+                                        p.mb-0.mt-1
+                                            | Add
+                                            code .btn-outline-*
+                                            |  class for outline and
+                                            code .btn-sm
+                                            |  class for small button
+                                    .card-body.btn-showcase   
+                                        button.btn.btn-outline-primary.btn-sm(type='button' title='btn btn-outline-primary btn-sm') Primary Button
+                                        button.btn.btn-outline-secondary.btn-sm(type='button' title='btn btn-outline-secondary btn-sm') Secondary Button
+                                        button.btn.btn-outline-success.btn-sm(type='button' title='btn btn-outline-success btn-sm') Success Button
+                                        button.btn.btn-outline-info.btn-sm(type='button' title='btn btn-outline-info btn-sm') Info Button
+                                        button.btn.btn-outline-warning.btn-sm(type='button' title='btn btn-outline-warning btn-sm') Warning Button
+                                        button.btn.btn-outline-danger.btn-sm(type='button' title='btn btn-outline-danger btn-sm') Danger Button
+                                        button.btn.btn-outline-light.btn-sm.text-dark(type='button' title='btn btn-outline-light btn-sm') Light Button
+                            .col-sm-12
+                                .card
+                                    .card-header
+                                        h3 Disabled outline buttons
+                                        span    
+                                            | Add
+                                            code .disabled
+                                            |  class or 
+                                            code disabled="disabled"
+                                            |  attribute for disabled state
+                                    .card-body.btn-showcase
+                                        button.btn.btn-outline-primary.disabled(type='button') Disabled
+                                        button.btn.btn-outline-secondary.disabled(type='button') Disabled
+                                        button.btn.btn-outline-success.disabled(type='button') Disabled
+                                        button.btn.btn-outline-info.disabled(type='button') Disabled
+                                        button.btn.btn-outline-warning.disabled(type='button') Disabled
+                                        button.btn.btn-outline-danger.disabled(type='button') Disabled
+                                        button.btn.btn-outline-light.text-dark.disabled(type='button') Disabled
+                include ../../components/footer
+        include ../../components/footer-files
