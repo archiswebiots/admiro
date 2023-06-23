@@ -1,7 +1,7 @@
-var primary = localStorage.getItem("primary") || '#7366ff';
-var secondary = localStorage.getItem("secondary") || '#f73164';
+var primary = localStorage.getItem("primary") || '#308e87';
+var secondary = localStorage.getItem("secondary") || '#f39159';
 
-window.AdmiroAdminConfig = {
+window.AdmiroAdminConfig = {  
 	// Theme Primary Color
 	primary: primary,
 	// theme secondary color
