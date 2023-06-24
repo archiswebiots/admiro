@@ -12372,6 +12372,7 @@ ul {
 }
 
 .card-body {
+  z-index: 1;
   padding: 20px;
   background-color: transparent;
 }
@@ -19007,6 +19008,42 @@ input::-webkit-inner-spin-button {
   background-color: rgba(var(--light-gray), 1);
   border: none;
   font-size: 16px;
+}
+
+.actions {
+  top: -10px;
+  position: relative;
+  z-index: 10;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.actions button {
+  color: rgba(var(--white), 1);
+  background: rgba(var(--primary-color), 1);
+  padding: 5px 10px;
+  margin: 2px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .actions {
+    margin-top: 0;
+    left: 0;
+  }
+}
+.chart-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.riskchart path {
+  stroke-width: 10px;
+  stroke-dasharray: 10, 20;
+  stroke-linecap: round;
 }
 
 /**=====================

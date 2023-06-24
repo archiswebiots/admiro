@@ -30,20 +30,82 @@ html(lang='en')
                                         li.breadcrumb-item.active Apex chart      
                     // Container-fluid starts 
                     .container-fluid
-                        .row
+                        .row 
                             .col-sm-12.col-xl-6.box-col-6
                                 .card
-                                    .card-header
-                                        h3
+                                    .card-header       
+                                        h3     
                                             | Basic Area Chart 
-                                    .card-body  
+                                    .card-body    
                                         #basic-apex  
-                            .col-sm-12.col-xl-6   
+                            .col-sm-12.col-xl-6     
+                                .card  
+                                    .card-header 
+                                        h3    
+                                            | Funnel  
+                                    .card-body 
+                                        #chart  
+                            .col-sm-12.col-xl-6 
                                 .card 
                                     .card-header 
                                         h3 
-                                            | Funnel 
+                                            |   Line chart 
                                     .card-body 
-                                        #chart  
+                                        #chart1        
+                            .col-sm-12.col-xl-6 
+                                .card 
+                                    .card-header 
+                                        h3 
+                                            | Basic Bar 
+                                    .card-body 
+                                        #chart2  
+                            .col-sm-12.col-xl-6 
+                                .card     
+                                    .card-header 
+                                        h3 
+                                            | Bubble chart 
+                                    .card-body 
+                                        #chart3
+                            .col-sm-12.col-xl-6 
+                                .card 
+                                    .card-header 
+                                        h3 
+                                            | Missing chart
+                                    .card-body 
+                                        #missing-chart
+                            .col-sm-12.col-xl-6 
+                                .card 
+                                    .card-header 
+                                        h3 
+                                            | Riskfactor chart 
+                                    .card-body 
+                                        #riskfactorchart(class="riskchart")
+                            .col-sm-12.col-xl-6 
+                                .card 
+                                    .card-header 
+                                        h3 
+                                            | Donut update 
+                                    .card-body 
+                                        .chart-wrap
+                                            #donut1
+                                        .actions  
+                                            button#add Add
+                                            button#remove Remove 
+                                            button#randomize Randomize
+                                            button#reset Reset
+                            .col-sm-12.col-xl-6 
+                                .card
+                                    .card-header 
+                                        h3 
+                                            | Candlestick chart 
+                                    .card-body 
+                                        #candlestick
+                            .col-sm-12.col-xl-6 
+                                .card 
+                                    .card-header 
+                                        h3 
+                                            | bixplot scatter 
+                                    .card-body 
+                                        #boxplot
                 include ../../components/footer
         include ../../components/footer-files  

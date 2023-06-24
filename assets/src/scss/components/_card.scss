@@ -53,8 +53,9 @@
     }
 }
 .card-body {
+    z-index: 1;
     padding: $card-padding;
-    background-color: transparent;
+    background-color: transparent; 
     p {
       &:last-child {
         margin-bottom: 0;
