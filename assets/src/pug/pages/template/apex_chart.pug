@@ -9,7 +9,7 @@ html(lang='en')
     include ../../components/header-files
     body
         // page-wrapper Start
-        #pageWrapper.page-wrapper.compact-wrapper
+        #pageWrapper.page-wrapper.compact-wrapper  
             include ../../components/header/header
             // Page Body Start
             .page-body-wrapper
@@ -17,7 +17,7 @@ html(lang='en')
                 .page-body   
                     .container-fluid
                         .page-title   
-                            .row
+                            .row 
                                 .col-6
                                     h2   
                                         | Apex chart 
@@ -71,31 +71,31 @@ html(lang='en')
                                     .card-header 
                                         h3 
                                             | Missing chart
-                                    .card-body 
+                                    .card-body  
                                         #missing-chart
-                            .col-sm-12.col-xl-6 
+                            .col-sm-12.col-md-6 
                                 .card 
                                     .card-header 
                                         h3 
                                             | Riskfactor chart 
                                     .card-body 
                                         #riskfactorchart(class="riskchart")
-                            .col-sm-12.col-xl-6 
+                            .col-sm-12.col-md-6 
                                 .card 
                                     .card-header 
                                         h3 
                                             | Donut update 
                                     .card-body 
                                         .chart-wrap
-                                            #donut1
-                                        .actions  
-                                            button#add Add
-                                            button#remove Remove 
-                                            button#randomize Randomize
-                                            button#reset Reset
-                            .col-sm-12.col-xl-6 
+                                            #donut1 
+                                        .actions.d-flex.gap-2.flex-wrap
+                                            button.btn.btn-primary#add Add
+                                            button.btn.btn-primary#remove Remove 
+                                            button.btn.btn-primary#randomize Randomize
+                                            button.btn.btn-primary#reset Reset  
+                            .col-sm-12.col-xl-6
                                 .card
-                                    .card-header 
+                                    .card-header  
                                         h3 
                                             | Candlestick chart 
                                     .card-body 
@@ -103,9 +103,9 @@ html(lang='en')
                             .col-sm-12.col-xl-6 
                                 .card 
                                     .card-header 
-                                        h3 
+                                        h3  
                                             | bixplot scatter 
                                     .card-body 
                                         #boxplot
                 include ../../components/footer
-        include ../../components/footer-files  
+        include ../../components/footer-files    

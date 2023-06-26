@@ -1735,7 +1735,16 @@ var options = {
   legend: {
     position: 'right',
     offsetY: 40
-  }
+  },
+  responsive: [{
+    breakpoint: 1700,
+    options: {
+      legend: {
+        offsetY: 5,
+        position: 'bottom',
+      }
+    }
+  }]
   };
 
   var chart = new ApexCharts(document.querySelector("#chart2"), options);
@@ -1790,6 +1799,9 @@ var options = {
     chart: {
       height: 350,
       type: 'bubble',
+      toolbar: {
+        show: false,
+    },
   },
   colors:['#308e87', '#f39159', '#58b368', '#ff6150'],
   dataLabels: {
@@ -1878,6 +1890,15 @@ var riskChart = {
   
     labels: ['Selling rate'],
     colors:  ["#308E87"],
+    
+    responsive: [{
+      breakpoint: 675,
+      options: {
+          chart: {
+              height: 280,
+          },
+      },
+    }],
   };
   var riskChartEl = new ApexCharts(document.querySelector("#riskfactorchart"),riskChart);
   
@@ -1993,81 +2014,79 @@ var options = {
 
 
 // donut-update 
-
 var options = {
-    series: [44, 55, 13, 33],
+  series: [44, 55, 13, 33],
+  chart: {
+  width: 380,
+  type: 'donut',
+},
+dataLabels: {
+  enabled: false
+},
+responsive: [{
+  breakpoint: 480,
+  options: {
     chart: {
-    width: 380,
-    type: 'donut',
-  },
-  dataLabels: {
-    enabled: false
-  },
-  responsive: [{
-    breakpoint: 480,
-    options: {
-      chart: {
-        width: 200
-      },
-      legend: {
-        show: false
-      }
+      width: 180,
+    },
+    legend: {
+      show: false
     }
-    
-  }],
-  legend: {
-    position: 'right',
-    offsetY: 0,
-    height: 230,
-  },
+  }
+}],
+legend: {
+  position: 'right',
+  offsetY: 0,
+  height: 230,
+},
   colors:['#308e87', '#f39159', '#58b368' , '#ff6150'],
-  };
+};
 
-  var chart = new ApexCharts(document.querySelector("#donut1"), options);
-  chart.render();
+var chart = new ApexCharts(document.querySelector("#donut1"), options);
+chart.render();
 
-
-  function appendData() {
-  var arr = chart.w.globals.series.slice()
-  arr.push(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
-  return arr;
+function appendData() {
+var arr = chart.w.globals.series.slice()
+arr.push(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
+return arr;
 }
 
 function removeData() {
-  var arr = chart.w.globals.series.slice()
-  arr.pop()
-  return arr;
+var arr = chart.w.globals.series.slice()
+arr.pop()
+return arr;
 }
 
 function randomize() {
-  return chart.w.globals.series.map(function() {
-      return Math.floor(Math.random() * (100 - 1 + 1)) + 1
-  })
+return chart.w.globals.series.map(function() {
+    return Math.floor(Math.random() * (100 - 1 + 1)) + 1
+})
 }
 
 function reset() {
-  return options.series
+return options.series
 }
 
 document.querySelector("#randomize").addEventListener("click", function() {
-  chart.updateSeries(randomize())
+chart.updateSeries(randomize())
 })
 
 document.querySelector("#add").addEventListener("click", function() {
-  chart.updateSeries(appendData())
+chart.updateSeries(appendData())
 })
 
 document.querySelector("#remove").addEventListener("click", function() {
-  chart.updateSeries(removeData())
+chart.updateSeries(removeData())
 })
 
 document.querySelector("#reset").addEventListener("click", function() {
-  chart.updateSeries(reset())
+chart.updateSeries(reset())
 })
+
 
 // candlestick
 
-var options = {
+var candlestick = {
     series: [{
     data: [{
         x: new Date(1538778600000),
@@ -2313,7 +2332,10 @@ var options = {
   }],
     chart: {
     type: 'candlestick',
-    height: 350
+    height: 350,
+    toolbar: {
+      show: false,
+    },
   },
   title: {
     text: 'CandleStick Chart',
@@ -2340,12 +2362,12 @@ var options = {
     }
   };
 
-  var chart = new ApexCharts(document.querySelector("#candlestick"), options);
-  chart.render();
+  var candlestickEl = new ApexCharts(document.querySelector("#candlestick"), candlestick);
+  candlestickEl.render();
 
 // boxplot chart
 
-var options = {
+var boxplot = {
     series: [
     {
       name: 'box',
@@ -2406,7 +2428,11 @@ var options = {
   ],
     chart: {
     type: 'boxPlot',
-    height: 350
+    height: 350,
+    offsetY: 10,
+    toolbar: {
+      show: false,
+    },
   },
   colors: ['#308e87', '#f39159'],
   title: {
@@ -2435,5 +2461,5 @@ var options = {
     }
   };
 
-  var chart = new ApexCharts(document.querySelector("#boxplot"), options);
-  chart.render();
+  var boxplotEl = new ApexCharts(document.querySelector("#boxplot"), boxplot);
+  boxplotEl.render();
