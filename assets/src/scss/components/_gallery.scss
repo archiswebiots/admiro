@@ -1,0 +1,24 @@
+.gallery-with-description {
+    a {
+      >div {
+        padding: 10px;
+        border: 1px solid rgba(var(--border-color),1);
+        margin-bottom: 30px;
+        border-radius: 0 0 5px 5px;
+      }
+  
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+  
+    h4 {
+      color: rgba(var(--dark),1);
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  
+    p {
+      color: rgba(var(--gray),1);
+    }
+}

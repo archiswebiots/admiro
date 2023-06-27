@@ -19042,6 +19042,24 @@ input::-webkit-inner-spin-button {
   stroke-linecap: round;
 }
 
+.gallery-with-description a > div {
+  padding: 10px;
+  border: 1px solid rgba(var(--border-color), 1);
+  margin-bottom: 30px;
+  border-radius: 0 0 5px 5px;
+}
+.gallery-with-description a:hover {
+  text-decoration: none !important;
+}
+.gallery-with-description h4, .gallery-with-description .h4 {
+  color: rgba(var(--dark), 1);
+  margin-top: 15px;
+  font-size: 18px;
+}
+.gallery-with-description p {
+  color: rgba(var(--gray), 1);
+}
+
 /**=====================
      sidebar css start
 ==========================**/
