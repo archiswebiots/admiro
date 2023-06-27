@@ -9,6 +9,9 @@
     // height: 100%;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+    }
     .sub-title{
         padding-bottom: 0.75rem;
         font-size: 1.125rem;

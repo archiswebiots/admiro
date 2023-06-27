@@ -12329,6 +12329,11 @@ ul {
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
 }
+@media (max-width: 767.98px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
 .card .sub-title {
   padding-bottom: 0.75rem;
   font-size: 1.125rem;
@@ -19017,15 +19022,6 @@ input::-webkit-inner-spin-button {
   max-width: 400px;
   margin: 0 auto;
 }
-.actions button {
-  color: rgba(var(--white), 1);
-  background: rgba(var(--primary-color), 1);
-  padding: 5px 10px;
-  margin: 2px;
-  font-weight: bold;
-  font-size: 13px;
-  border-radius: 5px;
-}
 
 @media only screen and (max-width: 480px) {
   .actions {
@@ -20572,6 +20568,10 @@ footer p .footer-icon {
 
 .small-donut2 ~ svg path:nth-child(odd) {
   fill: rgba(var(--secondary-color), 1);
+}
+
+.chart-wrapper {
+  height: 300px;
 }
 
 .small-donut3 ~ svg path:nth-child(odd) {
