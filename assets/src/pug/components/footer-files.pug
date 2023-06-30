@@ -1,6 +1,10 @@
 // bootstrap js
 script(src='../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js')
 script(src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js")
+
+if feather 
+  script(src='../assets/js/vendors/feather-icon/feather.min.js')
+  script(src='../assets/js/vendors/feather-icon/custom-script.js')
 if sidebar  
     script(src='../assets/js/sidebar.js')
 
@@ -208,6 +212,12 @@ if chartist
 
 if page_chartist
   script(src='../assets/js/chart/chartist/chartist-custom.js')
+
+if editors 
+  //- editor
+  script(src='../assets/js/editors/quill.js')
+if editors1 
+  script(src='../assets/js/editors/custom-quill.js')
 
 
 if jquery

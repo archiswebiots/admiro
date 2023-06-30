@@ -57,7 +57,9 @@
 @import './components/icons';
 @import './components/apexchart';
 @import './components/gallery';
-
+@import './components/blog';
+@import './components/add_post';
+  
 // *** layout ***
 @import './layout/sidebar';
 @import './layout/header';
@@ -69,6 +71,7 @@
 @import './pages/page';
 @import './pages/sweetalert';
 @import './pages/charts';
+@import './pages/faq' ;
 
 // *** Themes *** 
 @import './themes/rtl';

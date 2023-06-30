@@ -1,0 +1,71 @@
+.toolbar-box {
+    display: block;
+    padding: 0;
+    border: 1px solid rgba(var(--light-gray),1);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    .ql-toolbar {
+        &.ql-snow {
+            border: 0;
+        }
+    }
+
+    .ql-container {
+        &.ql-snow {
+            border: 0;
+            min-height: 100px;
+        }
+    }
+
+    .ql-editor {
+        [dir="rtl"] & {
+            text-align: right;
+        }
+
+        p {
+            &:nth-child(3) {
+                margin: 12px 0;
+            }
+
+            &:nth-child(8),
+            &:nth-child(9) {
+                margin: 12px 0;
+            }
+        }
+    }
+
+    .ql-bold,
+    .ql-italic,
+    .ql-underline,
+    .ql-list,
+    .ql-link,
+    .ql-image {
+        &:hover {
+            color: rgba(var(--primary-color),1);
+
+            svg {
+
+                .ql-stroke,
+                .ql-fill {
+                    stroke: rgba(var(--primary-color),1);
+                }
+            }
+        }
+
+        button {
+            &.ql-active {
+                .ql-stroke {
+                    stroke: rgba(var(--primary-color),1);
+                }
+            }
+        }
+
+    }
+}
+.add-post{
+    .btn-showcase{
+        margin-bottom: -10px;
+        justify-content: end;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,75 @@
+-var sidebar    = true;
+-var feather    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | FAQ
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')     
+                                                i.iconly-Home.icli 
+                                        li.breadcrumb-item.active FAQ
+                    // Container-fluid starts
+                    .container-fluid
+                        .faq-wrap
+                            .row
+                                .col-xl-4.box-col-6
+                                    .card.bg-primary
+                                        .card-body  
+                                            .media.faq-widgets
+                                                .media-body
+                                                    h3 Articles
+                                                    p
+                                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                                i(data-feather='file-text') 
+                                .col-xl-4.col-sm-6.box-col-6
+                                    .card.bg-primary
+                                        .card-body
+                                            .media.faq-widgets  
+                                                .media-body
+                                                    h3 Knowledgebase  
+                                                    p
+                                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                                i(data-feather='book-open')
+                                .col-xl-4.col-sm-6
+                                    .card.bg-primary
+                                        .card-body
+                                            .media.faq-widgets
+                                                .media-body
+                                                    h3 Support
+                                                    p
+                                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                                i(data-feather='aperture')
+                                .col-lg-12
+                                    .header-faq
+                                        h3.f-w-600.mb-3 Quick Questions are answered
+                                    #accordionoc.row.default-according.style-1.faq-accordion
+                                        .col-xl-8.xl-60.col-lg-6.col-md-7
+                                            .card
+                                                .card-header
+                                                    h5.mb-0
+                                                        button.btn.btn-link.collapsed.ps-0(data-bs-toggle='collapse', data-bs-target='#collapseicon', aria-expanded='false', aria-controls='collapseicon')
+                                                            i(data-feather='help-circle')
+                                                            |  Integrating WordPress with Your Website?
+                                                #collapseicon.collapse(aria-labelledby='collapseicon', data-bs-parent='#accordionoc')
+                                                    .card-body
+                                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                                        
+                include ../../components/footer
+        include ../../components/footer-files  
