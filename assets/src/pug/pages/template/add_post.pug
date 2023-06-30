@@ -1,0 +1,81 @@
+- var editors               = true;
+- var editors1              = true;
+- var dropzone              = true;
+-var sidebar    = true;
+include ../../components/mixin
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header/header
+            // Page Body Start
+            .page-body-wrapper
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h2
+                                        | According
+                                .col-6
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                            a(href='index.html')     
+                                                i.iconly-Home.icli
+                                        li.breadcrumb-item Ui Kits
+                                        li.breadcrumb-item.active According
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                            .col-sm-12
+                                .card
+                                    .card-header
+                                        h3 Post Edit
+                                    .card-body.add-post
+                                        form.row.needs-validation.basic-form(novalidate='')
+                                            .col-sm-12
+                                                .mb-3
+                                                    label.mb-2(for='validationCustom01') Title:
+                                                    input#validationCustom01.form-control(type='text', placeholder='Post Title', required='')
+                                                    .valid-feedback
+                                                        | Looks good!
+                                                .mb-3
+                                                    label.mb-2 Type:
+                                                    .m-checkbox-inline
+                                                        label(for='edo-ani')
+                                                            input#edo-ani.radio_animated(type='radio', name='rdo-ani', checked='')
+                                                            | Text
+                                                        label(for='edo-ani1')
+                                                            input#edo-ani1.radio_animated(type='radio', name='rdo-ani')
+                                                            | Image
+                                                        label(for='edo-ani2')
+                                                            input#edo-ani3.radio_animated(type='radio', name='rdo-ani')
+                                                            | Video
+                                                .mb-3
+                                                    .col-form-label.mb-2 Category:
+                                                        select.form-select.mt-2(aria-label='Default select example')
+                                                            option(value='AL') Lifestyle
+                                                            option(value='WY') Travel
+                                                .toolbar-box
+                                                    #toolbar
+                                                        button.ql-bold Bold 
+                                                        button.ql-italic Italic 
+                                                        button.ql-underline underline
+                                                        button.ql-list(value="ordered") List  
+                                                        button.ql-list(value="bullet") 
+                                                        button.ql-link
+                                                        button.ql-image
+                                                    #editor 
+                                        form#singleFileUpload.dropzone(action='/upload.php')
+                                            .m-0.dz-message.needsclick
+                                                i.icon-cloud-up
+                                                h6.mb-0 Drop files here or click to upload.    
+                                        .btn-showcase.text-end
+                                            button.btn.btn-primary(type='submit') Post
+                                            input.btn.btn-light(type='reset', value='Discard')
+                include ../../components/footer 
+        include ../../components/footer-files  

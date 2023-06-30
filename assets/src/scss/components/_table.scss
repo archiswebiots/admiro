@@ -94,17 +94,17 @@ th {
 	}
 }
 
-
-// .table-striped {
-// 	tbody {
-// 		tr {
-// 			&:nth-of-type(odd) {
-// 				background-color: rgba(var(--light-background),1);
-// 				--bs-table-accent-bg: unset;
-// 			}
-// 		}
-// 	}
-// }
+.table-striped{
+	thead{
+		tr{
+			th{
+				p{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
 
 .table-bordered {
 
