@@ -141,7 +141,7 @@
             &.bg-primary,
             &.bg-secondary {
                 .btn {
-                    // border-color: $transparent-color;
+                    border-color: transparent;
                 }
             }
 
@@ -167,7 +167,6 @@
                 width: 100%;
                 text-align: left;
                 letter-spacing: 0.7px;
-                font-family: Roboto;
                 border: 1px solid rgba(var(--light-semi-gray),1);
                 border-radius: 0;
                 border-top-left-radius: 5px;
@@ -192,6 +191,92 @@
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             color: rgba(var(--dark),1);
+        }
+    }
+    .avatar-showcase {
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 0;
+        box-shadow: none;
+
+        &+.card {
+            margin-top: $according-card-top-margin;
+        }
+
+        .btn-link {
+            font-weight: $according-btn-weight;
+            color: rgba(var(--body-font-color),1);
+            text-decoration: none;
+        }
+
+        .btn-link {
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .card-header {
+            padding: 0;
+            border: none;
+            border-radius: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+            i {
+                position: absolute;
+                left: 18px;
+                font-size: 20px;
+                top: 20px;
+            }
+
+            h5 {
+                margin-top: 0;
+            }
+
+        }
+
+        .card-body {
+
+            border-top: none;
+        }
+    }
+}
+
+.default-according.style-1 {
+    button {
+        width: 100%;
+        text-align: left;
+
+        &:before {
+            right: 20px;
+            position: absolute;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            font-size: 15px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+            @media (max-width: 575px) {
+                right: 15px;
+            }
+        }
+
+        &[aria-expanded="true"] {
+            &:before {
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f078"
+            }
+        }
+
+        &[aria-expanded="false"] {
+            &:before {
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content:"\f077"
+                
+            }
         }
     }
 }
