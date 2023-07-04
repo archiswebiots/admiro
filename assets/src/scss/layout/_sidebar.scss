@@ -328,6 +328,46 @@
         color: rgba(var(--light-gray-color), 1);
     }
 }
+.md-sidebar {
+    position: relative;
+  
+    .md-sidebar-toggle {
+      display: none;
+      width: fit-content;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 1199.98px){
+    .md-sidebar {
+        .md-sidebar-toggle {
+          display: block;
+        }
+        .md-sidebar-aside {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 3;
+            width: 280px;
+    
+            [dir="rtl"] & {
+            left: unset;
+            right: 0;
+            }
+    
+            &.open {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .job-sidebar{
+            background-color: rgba(var(--white),1);
+            padding: 20px;
+        }
+    }
+}
 
 
 

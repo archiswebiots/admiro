@@ -1,0 +1,77 @@
+.filter-cards-view {
+    .job-filter {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  
+    .checkbox-animated {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      label{
+          margin-bottom: 0.5rem;
+      }
+
+    }
+}
+.job-accordion{
+    &.default-according{
+        .card{
+            .btn-link{
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                border-bottom: 1px solid rgba(var(--light-gray),1);
+            }
+            + .card{
+                margin-top: 30px;
+            }
+        } 
+    }   
+}
+.location-checkbox{
+    span{
+        color: #999999;
+        padding-left: 33px;
+    }
+    label{
+        margin-bottom: 0.5rem;
+    }
+}
+.animate-chk{
+    label{
+        margin-bottom: 0.5rem;
+    }
+}
+.job-search{
+    .media{
+        align-items: flex-start;
+        p{
+            margin-top: 5px;
+        }
+        span{
+            margin-left: 5px;
+        }
+        .media-body{
+            p{
+                margin-top: 0;
+                color: rgba(var(--light-gray-color),1);
+            }
+        } 
+    }
+    p{
+        margin-top: 20px;
+        line-height: 1.7;
+    }
+}
+.m-r-20{
+    margin-right: 20px
+}
+.job-pagination{
+    margin-bottom: 30px;
+    nav{
+        ul{
+            justify-content: center;
+        }
+    } 
+}
