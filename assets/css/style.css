@@ -16661,7 +16661,7 @@ th {
 .ribbon-vertical-left {
   clear: none;
   padding: 0 5px;
-  height: 70px;
+  height: 60px;
   width: 30px;
   line-height: 70px;
   text-align: center;
@@ -20643,6 +20643,18 @@ input::-webkit-inner-spin-button {
 .job-accordion.default-according .card + .card {
   margin-top: 30px;
 }
+@media (max-width: 1199px) {
+  .job-accordion.default-according .card .btn-link {
+    border: 1px solid rgba(var(--light-semi-gray), 1);
+  }
+  .job-accordion.default-according .card .card-body {
+    border: 1px solid rgba(var(--light-semi-gray), 1);
+    border-top: none;
+  }
+}
+.job-accordion .card {
+  margin-bottom: 30px;
+}
 
 .location-checkbox span {
   color: #999999;
@@ -20659,6 +20671,20 @@ input::-webkit-inner-spin-button {
 .job-search .media {
   align-items: flex-start;
 }
+@media (max-width: 575px) {
+  .job-search .media {
+    display: block;
+    text-align: center;
+  }
+  .job-search .media img {
+    margin-bottom: 10px;
+  }
+  .job-search .media h5, .job-search .media .h5 {
+    display: unset;
+    align-content: unset;
+    justify-content: unset;
+  }
+}
 .job-search .media p {
   margin-top: 5px;
 }
@@ -20673,6 +20699,23 @@ input::-webkit-inner-spin-button {
   margin-top: 20px;
   line-height: 1.7;
 }
+.job-search h5, .job-search .h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .job-search p {
+    margin-top: 10px;
+  }
+}
+.job-search .job-description ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.job-search .job-description ul li {
+  margin-bottom: 10px;
+}
 
 .m-r-20 {
   margin-right: 20px;
@@ -20683,6 +20726,20 @@ input::-webkit-inner-spin-button {
 }
 .job-pagination nav ul {
   justify-content: center;
+}
+.job-pagination .pagination .disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.job-pagination .pagination .disabled a {
+  background-color: rgba(var(--light-semi-gray), 1);
+}
+
+.job-description {
+  margin-top: 30px;
+}
+.job-description h4, .job-description .h4 {
+  font-weight: 700;
 }
 
 /**=====================
@@ -20967,7 +21024,7 @@ input::-webkit-inner-spin-button {
     opacity: 0;
     visibility: hidden;
     z-index: 3;
-    width: 280px;
+    width: 300px;
   }
   [dir=rtl] .md-sidebar .md-sidebar-aside {
     left: unset;
@@ -21030,7 +21087,7 @@ header {
   padding: 15px 36px;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 5;
 }
 @media (max-width: 767.98px) {
   header {
@@ -22491,6 +22548,12 @@ p.data-attributes svg {
   top: 8px;
   width: 20px;
   height: 20px;
+}
+
+.job-filter .faq-form .search-icon {
+  top: 10px;
+  width: 16px;
+  height: 16px;
 }
 
 .navigation-option ul li {
