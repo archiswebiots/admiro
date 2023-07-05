@@ -20623,6 +20623,68 @@ input::-webkit-inner-spin-button {
   margin-top: 20px;
 }
 
+.filter-cards-view .job-filter:first-child {
+  margin-bottom: 30px;
+}
+.filter-cards-view .checkbox-animated {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.filter-cards-view .checkbox-animated label {
+  margin-bottom: 0.5rem;
+}
+
+.job-accordion.default-according .card .btn-link {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(var(--light-gray), 1);
+}
+.job-accordion.default-according .card + .card {
+  margin-top: 30px;
+}
+
+.location-checkbox span {
+  color: #999999;
+  padding-left: 33px;
+}
+.location-checkbox label {
+  margin-bottom: 0.5rem;
+}
+
+.animate-chk label {
+  margin-bottom: 0.5rem;
+}
+
+.job-search .media {
+  align-items: flex-start;
+}
+.job-search .media p {
+  margin-top: 5px;
+}
+.job-search .media span {
+  margin-left: 5px;
+}
+.job-search .media .media-body p {
+  margin-top: 0;
+  color: rgba(var(--light-gray-color), 1);
+}
+.job-search p {
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.job-pagination {
+  margin-bottom: 30px;
+}
+.job-pagination nav ul {
+  justify-content: center;
+}
+
 /**=====================
      sidebar css start
 ==========================**/
@@ -20884,6 +20946,42 @@ input::-webkit-inner-spin-button {
   color: rgba(var(--light-gray-color), 1);
 }
 
+.md-sidebar {
+  position: relative;
+}
+.md-sidebar .md-sidebar-toggle {
+  display: none;
+  width: fit-content;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .md-sidebar .md-sidebar-toggle {
+    display: block;
+  }
+  .md-sidebar .md-sidebar-aside {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+    width: 280px;
+  }
+  [dir=rtl] .md-sidebar .md-sidebar-aside {
+    left: unset;
+    right: 0;
+  }
+  .md-sidebar .md-sidebar-aside.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .md-sidebar .job-sidebar {
+    background-color: rgba(var(--white), 1);
+    padding: 20px;
+  }
+}
 /**=====================
      sidebar css end
 ==========================**/
@@ -22304,8 +22402,8 @@ p.data-attributes svg {
   text-overflow: ellipsis;
 }
 .faq-widgets svg {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 80px;
   opacity: 0.5;
 }
 
