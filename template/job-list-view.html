@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <title>Admiro - best javascript admin</title>
+    <!-- Favicon icon-->
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <!-- Flag icon css -->
+    <link rel="stylesheet" href="../assets/css/vendors/flag-icon.css">
+    <!-- Timeline css -->
+    <link rel="stylesheet" href="../assets/css/vendors/timeline/timeline.css">
+    <!-- iconly-icon-->
+    <link rel="stylesheet" href="../assets/css/iconly-icon.css">
+    <link rel="stylesheet" href="../assets/css/bulk-style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
+    <!-- App css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page header start -->
+      <header class="page-header">
+        <div class="header-left"><a class="toggle-sidebar" href="#"><i class="iconly-Filter icli"></i></a>
+          <form class="search-form mb-0">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0"><i class="iconly-Search icli"> </i></span>
+            </div>
+          </form>
+        </div>
+        <div class="nav-right">
+          <ul class="header-right">
+            <!-- Language dropdown start-->
+            <li class="custom-dropdown d-sm-block d-none"><a href="javascript:void(0)">
+                <h6 class="f-w-700">ENG
+                  <svg class="svg-color">
+                    <use href="../assets/svg/iconly-sprite.svg#Arrow--Down"></use>
+                  </svg>
+                </h6></a>
+              <ul class="custom-menu profile-menu language-menu py-0">
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-us"></i>ENGLISH</a></li>
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-fr"></i>FRENCH</a></li>
+                            <li class="d-block"><a href="#"><i class="flag-icon flag-icon-ae"></i>ARABIC</a></li>
+              </ul>
+            </li>
+            <!-- Language dropdown end-->
+            <li>  <a class="dark-mode" href="javascript:void(0)"><i class="iconly-Star icli"> </i></a></li>
+            <!-- Cart menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bag icli"></i></a>
+              <div class="custom-menu cart-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Cart</h5>
+                <ul>
+                              <li class="d-flex gap-3">
+                                <div class="flex-shrink-0 bg-light-primary"><img src="../assets/images/dashboard2/1.png" alt="Watch"></div>
+                                <div class="flex-grow-1"><span class="font-primary">Special Offer</span><a href="#"> 
+                                    <h5>Watch multicolor</h5></a>
+                                  <h6 class="mt-1">$26.00
+                                    <del>$32.00</del>
+                                  </h6>
+                                  <div class="input-group"> <span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#minus"></use>
+                                      </svg></span>
+                                    <input class="form-control bg-light-primary" type="text" value="1"><span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#plus"></use>
+                                      </svg></span>
+                                  </div>
+                                </div><a class="btn btn-close"></a>
+                              </li>
+                              <li class="d-flex gap-3">
+                                <div class="flex-shrink-0 bg-light-secondary"><img src="../assets/images/dashboard2/2.png" alt="Airpods"></div>
+                                <div class="flex-grow-1"><span class="font-secondary">Mega sale</span><a href="#"> 
+                                    <h5>Airpods</h5></a>
+                                  <h6 class="mt-1">$30.45
+                                    <del>$50.00</del>
+                                  </h6>
+                                  <div class="input-group"> <span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#minus"></use>
+                                      </svg></span>
+                                    <input class="form-control bg-light-secondary" type="text" value="1"><span class="input-group-text"> 
+                                      <svg class="svg-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#plus"></use>
+                                      </svg></span>
+                                  </div>
+                                </div><a class="btn btn-close"></a>
+                              </li>
+                </ul>
+                <div class="bg-primary-light cart-total">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h6 class="f-light">Total </h6>
+                    <h6>$56.00</h6>
+                  </div>
+                  <div class="button-group"><a class="btn btn-outline-primary" href="#">View Cart</a><a class="btn btn-primary float-end" href="#">Checkout</a></div>
+                </div>
+              </div>
+            </li>
+            <!-- Notification menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Notification icli"></i></a>
+              <div class="custom-menu notification-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Notification <span class="font-primary">View all</span></h5>
+                <ul class="activity-timeline">
+                  <li class="d-flex align-items-start">
+                    <div class="activity-line"></div>
+                    <div class="activity-dot-primary"></div>
+                    <div class="flex-grow-1">
+                      <h6 class="f-w-600 font-primary">30-04-2023<span>Today</span><span class="circle-dot-primary float-end">
+                          <svg class="circle-color">
+                            <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                          </svg></span></h6>
+                      <h5>Alice Goodwin</h5>
+                      <p class="mb-0">Fashion should be fun. It shouldn't be labelled intellectual.</p>
+                    </div>
+                  </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-secondary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-secondary">28-06-2023<span>1 hour ago</span><span class="float-end circle-dot-secondary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Herry Venter</h5>
+                                  <p>I am convinced that there can be luxury in simplicity.</p>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-primary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-primary">04-08-2023<span>Today</span><span class="float-end circle-dot-primary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Loain Deo</h5>
+                                  <p>I feel that things happen for open new opportunities.</p>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-start">
+                                <div class="activity-dot-secondary"></div>
+                                <div class="flex-grow-1">
+                                  <h6 class="f-w-600 font-secondary">12-11-2023<span>Yesterday</span><span class="float-end circle-dot-secondary">
+                                      <svg class="circle-color">
+                                        <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                      </svg></span></h6>
+                                  <h5>Fenter Jessy</h5>
+                                  <p>Sometimes the simplest things are the most profound.</p>
+                                </div>
+                              </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="full-screen" href="javascript:void(0)"> <i class="iconly-Scan icli">  </i></a></li>
+            <!-- Bookmark menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bookmark icli"></i></a>
+              <div class="custom-menu bookmark-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Bookmark</h5>
+                <ul> 
+                  <li> 
+                    <form class="mb-0">
+                      <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search Bookmark..."><span class="input-group-text ps-0">
+                          <svg class="svg-color">
+                            <use href="../assets/svg/iconly-sprite.svg#Search"></use>
+                          </svg></span>
+                      </div>
+                    </form>
+                  </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-primary"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#cube"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">Dashboard</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-secondary"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#check"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">To-do</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-2 btn-activity-danger"><a href="#">
+                                    <svg class="svg-color">
+                                      <use href="../assets/svg/iconly-sprite.svg#pie"></use>
+                                    </svg></a></div>
+                                <div class="d-flex justify-content-between align-items-center w-100"><a href="#">Chart</a>
+                                  <svg class="svg-color icon-star">
+                                    <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                  </svg>
+                                </div>
+                              </li>
+                </ul>
+              </div>
+            </li>
+            <div class="weather-menu d-lg-block d-none">
+              <button class="btn btn-primary"> 
+                <svg class="svg-color">
+                  <use href="../assets/svg/iconly-sprite.svg#Weather--cloud"></use>
+                </svg><span class="ms-1">15<sup> 
+                    <svg class="svg-color svg-white">
+                      <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                    </svg></sup></span>
+              </button>
+              <button class="btn btn-light"> <span>Medan, IDN  </span></button>
+            </div>
+          </ul>
+        </div>
+      </header>
+      <!-- Page header end-->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper"> 
+        <!-- Page sidebar start-->
+        <div class="overlay"></div>
+        <aside class="page-sidebar">
+          <div class="logo-wrapper d-flex align-items-center"> <a href="index.html"><img src="../assets/images/logo/logo1.png" alt="logo"></a><a class="close-btn sidebar-close d-lg-none" href="javascript:void(0)">
+              <svg class="svg-color svg-white">
+                <use href="../assets/svg/iconly-sprite.svg#Arrow---Left-2"></use>
+              </svg></a></div>
+          <div class="user-wrap">
+            <div class="user-img"><img src="../assets/images/profile.png" alt="user">
+              <div class="setting-icon"><i class="iconly-Setting icli">  </i></div>
+            </div>
+            <div class="user-content">
+              <h5 class="pb-1">Amirreza Baqian</h5>
+              <h6>Product Designer</h6>
+            </div>
+          </div>
+          <div class="main-sidebar">
+            <ul class="sidebar-menu">
+              <li class="pin-title sidebar-main-title">   
+                <div> 
+                  <h6 class="sidebar-title">Pinned</h6>
+                </div>
+              </li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h6 class="sidebar-title">General</h6>
+                </div>
+              </li>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"> <i class="iconly-Home icli">  </i>
+                  <h6>Dashboards</h6><span class="badge">2</span><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="index.html">Default</a></li>
+                  <li><a href="javascript:void(0)">Ecommerce </a></li>
+                  <li> <a href="alert.html">Default</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Graph icli"></i>
+                  <h6>Widgets </h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Paper icli"></i>
+                  <h6>Page layout</h6><i class="iconly-Arrow-Right-2 icli">                                               </i></a></li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h6 class="sidebar-title pt-3">Components</h6>
+                </div>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
+                  <h6>Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="typography.html">Typography</a></li>
+                  <li><a href="avatars.html">Avatars</a></li>
+                  <li> <a href="helper-classes.html">Helper classes</a></li>
+                  <li> <a href="grid.html">Grid</a></li>
+                  <li> <a href="accordion.html">Accordion</a></li>
+                  <li> <a href="tag-pills.html">Tag pills</a></li>
+                  <li> <a href="modal.html">Modal </a></li>
+                  <li> <a href="popover.html">Popover </a></li>
+                  <li> <a href="progress-bar.html">Progress bar</a></li>
+                  <li> <a href="tab-bootstrap.html">Tab bootstrap</a></li>
+                  <li> <a href="tooltip.html">Tooltip</a></li>
+                  <li> <a href="dropdown.html"> Dropdown</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket-Star icli"></i>
+                  <h6>Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li><a href="scrollable.html">Scrollable</a></li>
+                  <li> <a href="breadcrumb.html">Breadcrumb</a></li>
+                  <li><a href="pagination.html">Pagination</a></li>
+                  <li><a href="toasts.html">Toasts </a></li>
+                  <li> <a href="ribbons.html">Ribbons </a></li>
+                  <li> <a href="rating.html">Rating</a></li>
+                  <li> <a href="dropzone.html">Dropzone</a></li>
+                  <li> <a href="sweetalert2.html">Sweetalert2 </a></li>
+                  <li> <a href="switch.html">Switch </a></li>
+                  <li> <a href="range-slider.html">Range slider</a></li>
+                  <li> <a href="timeline.html">Timeline</a></li>
+                  <li> <a href="touchspin.html">Touchspin</a></li>
+                  <li> <a href="tree.html">Tree view </a></li>
+                  <li> <a href="typehead.html">Typehead</a></li>
+                  <li> <a href="radio-checkbox-control.html">Radio Checkbox    </a></li>
+                  <li> <a href="dragable-card.html">Dragable Card </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
+                  <h6>Animation </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li>  <a href="AOS.html">AOS </a></li>
+                  <li>  <a href="WOW.html">WOW </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Activity icli"> </i>
+                  <h6>Icon</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-More-Square icli"> </i>
+                  <h6>Buttons</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="buttons.html">buttons    </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Chart icli"></i>
+                  <h6>Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+            </ul>
+          </div>
+        </aside>
+        <!-- Page sidebar end-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  <h2>List View</h2>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"> <i class="iconly-Home icli"> </i></a></li>
+                    <li class="breadcrumb-item">Job search </li>
+                    <li class="breadcrumb-item active">List View</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-3 xl-40 box-col-12">
+                <div class="md-sidebar"><a class="btn btn-primary email-aside-toggle md-sidebar-toggle">Job filter</a>
+                  <div class="md-sidebar-aside job-sidebar">
+                    <div class="default-according style-1 faq-accordion job-accordion" id="accordionoc">
+                      <div class="row">
+                        <div class="col-xl-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon" aria-expanded="true" aria-controls="collapseicon">Filter</button>
+                              </h5>
+                            </div>
+                            <div class="collapse show" id="collapseicon" aria-labelledby="collapseicon" data-bs-parent="#accordion">
+                              <div class="card-body filter-cards-view animate-chk basic-form">
+                                <div class="job-filter mb-2">
+                                  <div class="faq-form">
+                                    <input class="form-control" type="text" placeholder="Search.."><i class="search-icon" data-feather="search"></i>
+                                  </div>
+                                </div>
+                                <div class="job-filter">
+                                  <div class="faq-form">
+                                    <input class="form-control" type="text" placeholder="location.."><i class="search-icon" data-feather="map-pin"></i>
+                                  </div>
+                                </div>
+                                <div class="checkbox-animated">
+                                  <label class="d-block" for="chk-ani">
+                                    <input class="checkbox_animated" id="chk-ani" type="checkbox"> Full-time (8688)
+                                  </label>
+                                  <label class="d-block" for="chk-ani1">
+                                    <input class="checkbox_animated" id="chk-ani1" type="checkbox"> Contract (503)
+                                  </label>
+                                  <label class="d-block" for="chk-ani2">
+                                    <input class="checkbox_animated" id="chk-ani2" type="checkbox"> Part-time (288)
+                                  </label>
+                                  <label class="d-block" for="chk-ani3">
+                                    <input class="checkbox_animated" id="chk-ani3" type="checkbox"> Internship (236)
+                                  </label>
+                                  <label class="d-block" for="chk-ani4">
+                                    <input class="checkbox_animated" id="chk-ani4" type="checkbox">  Temporary (146)
+                                  </label>
+                                  <label class="d-block" for="chk-ani5">
+                                    <input class="checkbox_animated" id="chk-ani5" type="checkbox"> Commission (25)
+                                  </label>
+                                </div>
+                                <button class="btn btn-primary text-center" type="button">Find jobs</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon1" aria-expanded="true" aria-controls="collapseicon1">Location</button>
+                              </h5>
+                            </div>
+                            <div class="collapse show" id="collapseicon1" aria-labelledby="collapseicon1" data-bs-parent="#accordion">
+                              <div class="card-body animate-chk">
+                                <div class="location-checkbox">
+                                  <label class="d-block" for="chk-ani6">
+                                    <input class="checkbox_animated" id="chk-ani6" type="checkbox">                            Letraset (399)
+                                  </label>
+                                  <label class="d-block" for="chk-ani7">                       
+                                    <input class="checkbox_animated" id="chk-ani7" type="checkbox">                            Established (252)
+                                  </label>
+                                  <label class="d-block mb-0" for="chk-ani8">
+                                    <input class="checkbox_animated" id="chk-ani8" type="checkbox">                            Contrary (226)
+                                  </label>
+                                </div>
+                              </div>
+                              <button class="btn btn-block btn-primary text-center" type="button">All Locations</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon2" aria-expanded="true" aria-controls="collapseicon2">Job Title</button>
+                              </h5>
+                            </div>
+                            <div class="collapse show" id="collapseicon2" data-bs-parent="#accordion" aria-labelledby="collapseicon2">
+                              <div class="card-body animate-chk">
+                                <label class="d-block" for="chk-ani9">
+                                  <input class="checkbox_animated" id="chk-ani9" type="checkbox">                          UI/Ux designer(25)
+                                </label>
+                                <label class="d-block" for="chk-ani10">
+                                  <input class="checkbox_animated" id="chk-ani10" type="checkbox">                          Graphic designer(10)
+                                </label>
+                                <label class="d-block" for="chk-ani11">
+                                  <input class="checkbox_animated" id="chk-ani11" type="checkbox">                          Front end designer(15)
+                                </label>
+                                <label class="d-block" for="chk-ani12">
+                                  <input class="checkbox_animated" id="chk-ani12" type="checkbox">                          PHP developer(42)
+                                </label>
+                                <label class="d-block mb-0" for="chk-ani13">
+                                  <input class="checkbox_animated" id="chk-ani13" type="checkbox">                        React Developer( 5 )
+                                </label>
+                              </div>
+                              <button class="btn btn-block btn-primary text-center" type="button">All Job Title</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon3" aria-expanded="true" aria-controls="collapseicon3">Industry   </button>
+                              </h5>
+                            </div>
+                            <div class="collapse show" id="collapseicon3" data-bs-parent="#accordion" aria-labelledby="collapseicon3">
+                              <div class="card-body animate-chk">
+                                <label class="d-block" for="chk-ani14">
+                                  <input class="checkbox_animated" id="chk-ani14" type="checkbox">                          Computer Software(14)
+                                </label>
+                                <label class="d-block" for="chk-ani15">
+                                  <input class="checkbox_animated" id="chk-ani15" type="checkbox">                          IT Engineer(10)
+                                </label>
+                                <label class="d-block" for="chk-ani16">
+                                  <input class="checkbox_animated" id="chk-ani16" type="checkbox">                          Service industry(20)
+                                </label>
+                                <label class="d-block" for="chk-ani17">
+                                  <input class="checkbox_animated" id="chk-ani17" type="checkbox">                         Accounting ( 34 )
+                                </label>
+                                <label class="d-block mb-0" for="chk-ani18">
+                                  <input class="checkbox_animated" id="chk-ani18" type="checkbox">                          Financial Services(5)
+                                </label>
+                              </div>
+                              <button class="btn btn-block btn-primary text-center" type="button">All Industries</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon4" aria-expanded="true" aria-controls="collapseicon4">Specific Skills</button>
+                              </h5>
+                            </div>
+                            <div class="collapse show" id="collapseicon4" data-bs-parent="#accordion" aria-labelledby="collapseicon4">
+                              <div class="card-body animate-chk">
+                                <label class="d-block" for="chk-ani19">
+                                  <input class="checkbox_animated" id="chk-ani19" type="checkbox">                          HTML,scss & sass
+                                </label>
+                                <label class="d-block" for="chk-ani20">
+                                  <input class="checkbox_animated" id="chk-ani20" type="checkbox">                          Javascript
+                                </label>
+                                <label class="d-block" for="chk-ani21">
+                                  <input class="checkbox_animated" id="chk-ani21" type="checkbox">                          Node.js
+                                </label>
+                                <label class="d-block" for="chk-ani22">
+                                  <input class="checkbox_animated" id="chk-ani22" type="checkbox">                          Gulp & Pug
+                                </label>
+                                <label class="d-block mb-0" for="chk-ani23">
+                                  <input class="checkbox_animated" id="chk-ani23" type="checkbox">                          Angular.js
+                                </label>
+                              </div>
+                              <button class="btn btn-block btn-primary text-center" type="button">All Skills                            </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-9 xl-60 box-col-12">
+                <div class="card">
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media"><img class="img-40 img-fluid m-r-20" src="../assets/images/job-search/1.jpg" alt="">
+                        <div class="media-body w-100">  
+                          <div>
+                            <h5 class="f-w-700"><a class="text-primary" href="#">UI/UX IT Frontend Developer</a><span class="badge badge-primary pull-right">New</span></h5>
+                          </div>
+                          <p>(L6) Salt Lake City, UT<span><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary">                       </i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i></span></p>
+                        </div>
+                      </div>
+                      <p>
+                        We are looking for an experienced and Cuba designer and/or frontend engineer with expertise in accessibility to join our team ,
+                        3+ years of experience working in as a Frontend Engineer or comparable role. You won’t be a team of one though — you’ll be collaborating closely with other...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media"><img class="img-40 img-fluid m-r-20" src="../assets/images/job-search/2.jpg" alt="">
+                        <div class="media-body w-100"> 
+                          <div> 
+                            <h5 class="f-w-700"><a class="text-primary" href="#">React/React Native Developer</a><span class="badge badge-primary pull-right">New</span></h5>
+                          </div>
+                          <p>San Diego, CA <span><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i></span></p>
+                        </div>
+                      </div>
+                      <p>Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercial , Professional experience of React Native and other front end frameworks. Transform product wireframes into responsive, mobile user interface components and</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card ribbon-vertical-left-wrapper">
+                  <div class="ribbon ribbon-bookmark ribbon-vertical-left ribbon-secondary">  <i class="fa-regular fa-heart"></i></div>
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media"><img class="img-40 img-fluid m-r-20" src="../assets/images/job-search/3.jpg" alt="">
+                        <div class="media-body w-100">  
+                          <div>
+                            <h5 class="f-w-700"><a class="text-primary" href="#">Senior UX designer</a><span class="pull-right">2 days ago</span></h5>
+                          </div>
+                          <p>Minneapolis, MN<span><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i></span></p>
+                        </div>
+                      </div>
+                      <p>The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">  
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media"><img class="img-40 img-fluid m-r-20" src="../assets/images/job-search/4.jpg" alt="">
+                        <div class="media-body w-100"> 
+                          <div>
+                            <h5 class="f-w-700"><a class="text-primary" href="#">Front end web developer</a><span class="pull-right">3 days ago</span></h5>
+                          </div>
+                          <p>Cisco<span>Lelystad, Netherlands</span><span>      <i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary">        </i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i></span></p>
+                        </div>
+                      </div>
+                      <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for few longer mrs sudden talent become.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media"><img class="img-40 img-fluid m-r-20" src="../assets/images/job-search/5.jpg" alt="">
+                        <div class="media-body w-100"> 
+                          <div>
+                            <h5 class="f-w-700"><a class="text-primary" href="#">Graphic designer</a><span class="pull-right">3 days ago</span></h5>
+                          </div>
+                          <p>Infosys<span>Lelystad, Netherlands</span><span><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i></span></p>
+                        </div>
+                      </div>
+                      <p>Contented get distrusts certainty nay are frankness concealed ham. On unaffected resolution on considered of. No thought me husband or colonel forming effects. End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media"><img class="img-40 img-fluid m-r-20" src="../assets/images/job-search/6.jpg" alt="">
+                        <div class="media-body w-100"> 
+                          <div>
+                            <h5 class="f-w-700"><a class="text-primary" href="#">Designer, CRM</a><span class="pull-right">3 days ago</span></h5>
+                          </div>
+                          <p>Citrix<span>Lelystad, Netherlands</span><span><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"> </i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i></span></p>
+                        </div>
+                      </div>
+                      <p>Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention. Chiefly several bed its wishing. Is so moments on chamber pressed to. Doubtful yet way properly answered.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card ribbon-vertical-left-wrapper">
+                  <div class="ribbon ribbon-bookmark ribbon-vertical-left ribbon-secondary"><i class="fa-regular fa-heart"></i></div>
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media"><img class="img-40 img-fluid m-r-20" src="../assets/images/job-search/2.jpg" alt="">
+                        <div class="media-body w-100">
+                          <div> 
+                            <h5 class="f-w-700"><a class="text-primary" href="#">UI designer E-commerce</a><span class="pull-right">5 days ago</span></h5>
+                          </div>
+                          <p>Ericsson<span>Lelystad, Netherlands</span><span><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i></span></p>
+                        </div>
+                      </div>
+                      <p>Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention. Chiefly several bed its wishing. Is so moments on chamber pressed to. Doubtful yet way properly answered.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media"><img class="img-40 img-fluid m-r-20" src="../assets/images/job-search/3.jpg" alt="">
+                        <div class="media-body w-100"> 
+                          <div>
+                            <h5 class="f-w-700"><a class="text-primary" href="#">Senior UX designer</a><span class="pull-right">5 days ago</span></h5>
+                          </div>
+                          <p>Minneapolis, MN<span><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i><i class="fa-solid fa-star font-secondary"></i></span></p>
+                        </div>
+                      </div>
+                      <p>The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-pagination">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-primary">
+                      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item">               <a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer"> 
+          <div class="container-fluid">
+            <div class="row"> 
+              <div class="col-md-6 footer-copyright">
+                <p class="mb-0">Copyright 2023 © Admiro theme by pixelstrap.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="float-end mb-0">Hand crafted &amp; made with
+                  <svg class="svg-color footer-icon">
+                    <use href="../assets/svg/iconly-sprite.svg#heart"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- bootstrap js-->
+    <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/vendors/font-awesome/fontawesome-min.js"></script>
+    <script src="../assets/js/vendors/feather-icon/feather.min.js"></script>
+    <script src="../assets/js/vendors/feather-icon/custom-script.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <!-- iconCopy -->
+    <!-- custom script -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
