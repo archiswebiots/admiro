@@ -87,12 +87,11 @@
     //     }   
     // });
 
-    const filterSidebarToggle = document.querySelector(".md-sidebar-toggle");
-    const filterSidebarAside = document.querySelector(".md-sidebar-aside");
-    filterSidebarToggle.addEventListener('click', function () {
-      filterSidebarAside.classList.toggle('open');
-    });
-
+    // const filterSidebarToggle = document.querySelector(".md-sidebar-toggle");
+    // const filterSidebarAside = document.querySelector(".md-sidebar-aside");
+    // filterSidebarToggle.addEventListener('click', function () {
+    //   filterSidebarAside.classList.toggle('open');
+    // });
   })();
 
 

@@ -20696,7 +20696,7 @@ input::-webkit-inner-spin-button {
   color: rgba(var(--light-gray-color), 1);
 }
 .job-search p {
-  margin-top: 20px;
+  margin-top: 10px;
   line-height: 1.7;
 }
 .job-search h5, .job-search .h5 {
@@ -20793,6 +20793,8 @@ input::-webkit-inner-spin-button {
 .page-sidebar .sidebar-menu {
   position: relative;
   padding: 10px 25px 0 25px;
+  height: calc(100vh - 12.625rem);
+  overflow: auto;
 }
 .page-sidebar .sidebar-menu .shape {
   margin-top: 10px;
@@ -20843,12 +20845,13 @@ input::-webkit-inner-spin-button {
   left: -3px;
 }
 .page-sidebar .sidebar-submenu {
-  margin-left: 22px;
+  margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   animation: fadeIn 0.4s;
   display: none;
   flex-direction: column;
+  border-left: 1px solid rgba(var(--gray-200), 1);
 }
 .page-sidebar .sidebar-submenu a {
   position: relative;
@@ -20898,10 +20901,6 @@ input::-webkit-inner-spin-button {
   margin-bottom: -2px;
 }
 
-.main-sidebar {
-  height: calc(100vh - 97px);
-  overflow: auto;
-}
 .main-sidebar .sidebar-main-title.pin-title {
   display: none;
 }
@@ -20991,12 +20990,16 @@ input::-webkit-inner-spin-button {
   display: flex;
   gap: 0.714rem;
   align-items: center;
+  font-weight: 600;
 }
 .sidebar-menu .sidebar-list a.active {
   color: rgba(var(--primary-color), 1);
 }
 .sidebar-menu .sidebar-list:last-child {
   border-bottom: none;
+}
+.sidebar-menu .sidebar-list h6, .sidebar-menu .sidebar-list .h6 {
+  font-weight: 600;
 }
 .sidebar-menu .sidebar-title {
   padding: 9px 0 9px 5px;
@@ -21088,6 +21091,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 5;
+}
+@media (max-width: 991px) {
+  header {
+    z-index: 3;
+  }
 }
 @media (max-width: 767.98px) {
   header {

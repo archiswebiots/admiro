@@ -56,6 +56,8 @@
         &-menu {
             position: relative;
             padding: 10px 25px 0 25px;
+            height: calc(100vh - 12.625rem);
+            overflow: auto;
 
             .shape {
                 margin-top: 10px;
@@ -104,8 +106,8 @@
                     left: 11%;
                 }
 
-                &-right {
-                    right: 15.5%;
+                &-right { 
+                    right: 15.5%; 
 
                     .line {
 
@@ -129,15 +131,17 @@
             // border: 1.5px solid rgba(var(--black), 1); 
             // margin-bottom: 12px;
             // margin-left: 11px;
-        }
+        } 
 
         &-submenu {
-            margin-left: 22px;
+            margin-left: 20px;
             margin-top: 10px;
             margin-bottom: 10px;
             animation: fadeIn 0.4s;
             display:   none;
             flex-direction: column;
+            border-left: 1px solid rgba(var(--gray-200),1);
+            
 
             a {
                 position: relative;
@@ -197,9 +201,9 @@
     }
 }
 .main-sidebar{
-    height: calc(100vh - 97px);
-    overflow: auto;
-    .sidebar-main-title {
+    // height: calc(100vh - 97px);
+    // overflow: auto;
+    .sidebar-main-title {  
         // padding: 25px 0 6px 20px;
         // margin-top: 10px;
         &.pin-title {
@@ -225,7 +229,7 @@
             .page-sidebar {
                 left: -($sidebar-width + 10px);
                 transition: 0.5s all;
-            }  
+            }    
         }
     }
 }
@@ -312,7 +316,7 @@
             display: flex; 
             gap: 0.714rem;
             align-items: center;
-            // justify-content: space-around;
+            font-weight: 600;
             &.active{
                 color: rgba(var(--primary-color),1);
             }
@@ -320,6 +324,9 @@
 
         &:last-child {
             border-bottom: none;
+        }
+        h6{
+            font-weight: 600;
         }
     }
 
@@ -350,27 +357,26 @@
             opacity: 0;
             visibility: hidden;
             z-index: 3;
-            width: 300px;
+            width: 300px; 
     
             [dir="rtl"] & {
             left: unset;
-            right: 0;
+            right: 0;    
+            } 
+     
+            &.open {  
+                opacity: 1;  
+                visibility: visible;  
             }
-    
-            &.open {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-        .job-sidebar{
+        }  
+        .job-sidebar{  
             background-color: rgba(var(--white),1);
             padding: 20px;
         }
-    }
+    } 
 }
 
-
-
+ 
 /**=====================
      sidebar css end
 ==========================**/
