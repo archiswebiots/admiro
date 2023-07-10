@@ -33,10 +33,16 @@
       <!-- Page header start -->
       <header class="page-header">
         <div class="header-left"><a class="toggle-sidebar" href="#"><i class="iconly-Filter icli"></i></a>
-          <form class="search-form mb-0">
+          <form class="search-form mb-0 search-full">
             <div class="input-group">
-              <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0"><i class="iconly-Search icli"> </i></span>
+              <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0 search-fill"><i class="iconly-Search icli"></i></span>
             </div>
+          </form>
+          <form class="form-inline search-full col search-form" action="#" method="get"><i class="iconly-Search icli"></i>
+            <div class="u-posRelative">
+              <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search .." name="q" title="" autofocus><i class="close-search" data-feather="x"></i>
+            </div>
+            <div class="Typeahead-menu"></div>
           </form>
         </div>
         <div class="nav-right">
@@ -55,6 +61,7 @@
               </ul>
             </li>
             <!-- Language dropdown end-->
+            <li class="search"> <a href="javascript:void(0)"> <i class="iconly-Search icli"> </i></a></li>
             <li>  <a class="dark-mode" href="javascript:void(0)"><i class="iconly-Star icli"> </i></a></li>
             <!-- Cart menu-->
             <li class="custom-dropdown"><a href="javascript:void(0)"><i class="iconly-Bag icli"></i></a>
@@ -267,7 +274,34 @@
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Graph icli"></i>
                   <h6>Widgets </h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Paper icli"></i>
-                  <h6>Page layout</h6><i class="iconly-Arrow-Right-2 icli">                                               </i></a></li>
+                  <h6>Page layout</h6><i class="iconly-Arrow-Right-2 icli"> </i></a></li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h5 class="f-w-700 sidebar-title pt-3">Application</h5>
+                </div>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Scan icli"></i>
+                  <h6 class="f-w-600">Project</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Bookmark icli"> </i>
+                  <h6 class="f-w-600">File Manager</h6><i class="iconly-Arrow-Right-2 icli"> </i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Document icli"></i>
+                  <h6 class="f-w-600">Kanban board</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Delete icli"></i>
+                  <h6 class="f-w-600">Ecommerce</h6><i class="iconly-Arrow-Right-2 icli"> </i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Message icli"></i>
+                  <h6 class="f-w-600">Email</h6><i class="iconly-Arrow-Right-2 icli"> </i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Chat icli"></i>
+                  <h6 class="f-w-600">Chat</h6><i class="iconly-Arrow-Right-2 icli"> </i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-User2 icli"></i>
+                  <h6 class="f-w-600">Users</h6><i class="iconly-Arrow-Right-2 icli">           </i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Heart icli"></i>
+                  <h6 class="f-w-600">Bookmarks</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Call icli"></i>
+                  <h6 class="f-w-600">Contacts</h6><i class="iconly-Arrow-Right-2 icli">    </i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Ticket icli"></i>
+                  <h6 class="f-w-600">Tasks</h6><i class="iconly-Arrow-Right-2 icli"> </i></a></li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Calendar icli"></i>
+                  <h6 class="f-w-600">Calendar</h6><i class="iconly-Arrow-Right-2 icli">                                                 </i></a></li>
               <li class="sidebar-main-title">
                 <div>
                   <h5 class="f-w-700 sidebar-title pt-3">Components</h5>
@@ -310,7 +344,7 @@
                   <li> <a href="dragable-card.html">Dragable Card </a></li>
                 </ul>
               </li>
-              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Category icli"></i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Play icli"></i>
                   <h6 class="f-w-600">Animation </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu"> 
                   <li>  <a href="AOS.html">AOS </a></li>
@@ -350,7 +384,7 @@
                   <li> <a href="mesonary_with_disc.html">Masonary With Desc</a></li>
                 </ul>
               </li>
-              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Folder icli"></i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Discovery icli"></i>
                   <h6 class="f-w-600">Blog  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="blog.html">Blog Details</a></li>
@@ -368,7 +402,7 @@
                   <li><a href="job-list-view.html">Job details   </a></li>
                 </ul>
               </li>
-              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Document icli"></i>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Star icli"></i>
                   <h6 class="f-w-600">Learning</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Location icli"></i>
                   <h6 class="f-w-600">Maps</h6><i class="iconly-Arrow-Right-2 icli"></i></a></li>

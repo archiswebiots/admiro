@@ -3,16 +3,26 @@ header.page-header
     .header-left
         a(href="#").toggle-sidebar
             i.iconly-Filter.icli
-        form.search-form.mb-0
+        form.search-form.mb-0.search-full
             .input-group
                 input.form-control(type='search' placeholder='Type to Search...')
-                span.input-group-text.ps-0
-                    i.iconly-Search.icli 
-                //- a.search-icon.d-sm-none(href="javascript:void(0)")
-                //-     +IconlySprite('Search', 'search-bg svg-color')
+                span.input-group-text.ps-0.search-fill
+                    i.iconly-Search.icli
+        //-         //- a.search-icon.d-sm-none(href="javascript:void(0)")
+        //-         //-     +IconlySprite('Search', 'search-bg svg-color')
+        
+        form(action='#', method='get').form-inline.search-full.col.search-form.d-xl-none.d-block
+            i.iconly-Search.icli
+            .u-posRelative
+                input.demo-input.Typeahead-input.form-control-plaintext.w-100(type='text' placeholder='Search ..' name='q' title='' autofocus)
+                i(data-feather='x').close-search
+            .Typeahead-menu
     .nav-right
         ul.header-right
             include language
+            li.search  
+                a(href="javascript:void(0)")  
+                    i.iconly-Search.icli 
             li   
                 a.dark-mode(href="javascript:void(0)")
                     i.iconly-Star.icli 
@@ -22,6 +32,7 @@ header.page-header
                 a.full-screen(href="javascript:void(0)")  
                     i.iconly-Scan.icli   
             include bookmark
+             
             div.weather-menu.d-lg-block.d-none
                 button.btn.btn-primary 
                     +IconlySprite('Weather--cloud', 'svg-color')
