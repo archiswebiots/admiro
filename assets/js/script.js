@@ -89,29 +89,39 @@
 
     const filterSidebarToggle = document.querySelector(".md-sidebar-toggle");
     const filterSidebarAside = document.querySelector(".md-sidebar-aside");
-    filterSidebarToggle.addEventListener('click', function () {
+    filterSidebarToggle?.addEventListener('click', function () {
       filterSidebarAside.classList.toggle('open');
     });
     const headerSearch = document.querySelector(".search");
     const searchFull = document.querySelector(".search-full");
 
-    headerSearch.addEventListener("click", function() {
+    headerSearch?.addEventListener("click", function() {
     searchFull.classList.add("open");
     });
 
     const closeSearch = document.querySelector(".close-search");
     const mainBody = document.querySelector("body");
 
-closeSearch.addEventListener("click", function() {
-  searchFull.classList.remove("open");
-  mainBody.classList.remove("offcanvas");
-});
+    closeSearch?.addEventListener("click", function() {
+    searchFull.classList.remove("open");
+    mainBody.classList.remove("offcanvas");
+    }); 
 
 
+    /*=====================
+     05. Dark Mode js
+   ==========================*/
+
+
+   const darkMode = document.querySelector(".dark-mode");
+   darkMode.addEventListener('click', function () {
+        body.classList.toggle('dark-only');
+       
+   });
   })();
 
 
-
+  
 
 
   

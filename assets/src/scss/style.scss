@@ -21,6 +21,7 @@
 @import './base/reset';
 
 // *** components ***
+@import './components/dark';
 @import "./components/according";
 @import './components/forms';
 @import './components/dropdown';
@@ -60,6 +61,7 @@
 @import './components/blog';
 @import './components/add_post';
 @import './components/job-search';
+
   
 // *** layout ***
 @import './layout/sidebar';
@@ -76,3 +78,4 @@
 
 // *** Themes *** 
 @import './themes/rtl';
+@import './themes/theme-customizer';

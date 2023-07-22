@@ -1,0 +1,58 @@
+.dark-only{
+    .card{
+        background-color: rgba(var(--white),1);
+        border: 1px solid rgba(var(--primary-color), 0.2);
+        .table{
+            --bs-table-bg: unset;
+        }
+        .card-header{
+            h3{
+                color: rgba(var(--black),1);
+            }
+        }
+        .border{
+            border-color: rgba(var(--light-gray),1) !important;
+        }
+        .sub-title{
+            color: rgba(var(--sub-title),1);
+        }
+    }
+    ol, ul, dl, p, h1, h2, h3, h4, h5, h6, .text-dark, i, span{
+        color: rgba(var(--sub-title),1) !important;
+    }
+   
+    .figure{
+        .light-card{
+            background-color: rgba(var(--body-color),1);
+        }
+    }
+    .page-sidebar{
+        .logo-wrapper{
+            background-color: rgba(var(--body-color), 1);
+        }
+    }
+    mark{
+        background-color: rgba(var(--light-gray),1);
+        color: rgba(var(--sub-title),1);
+    }
+    table{
+        tr{
+            th, td{
+                color: rgba(var(--sub-title),1) ;
+            }
+        }
+    }
+    .svg-color{
+        stroke: rgba(var(--sub-title),1) ;
+    }
+    .breadcrumb-item{
+        &::before{
+            color: rgba(var(--sub-title),1);
+        }
+    }
+    .footer-icon{
+        &.svg-color{
+            stroke: unset;
+        }
+    }
+}

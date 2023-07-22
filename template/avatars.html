@@ -38,17 +38,17 @@
               <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0 search-fill"><i class="iconly-Search icli"></i></span>
             </div>
           </form>
-          <form class="form-inline search-full col search-form" action="#" method="get"><i class="iconly-Search icli"></i>
+          <form class="form-inline search-full col search-form d-xl-none d-block" action="#" method="get"><i class="iconly-Search icli"></i>
             <div class="u-posRelative">
-              <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search .." name="q" title="" autofocus><i class="close-search" data-feather="x"></i>
+              <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search .." name="q" title="" autofocus><i class="close-search" data-feather="x"> </i>
             </div>
             <div class="Typeahead-menu"></div>
           </form>
         </div>
         <div class="nav-right">
-          <ul class="header-right">
+          <ul class="header-right"> 
             <!-- Language dropdown start-->
-            <li class="custom-dropdown d-sm-block d-none"><a href="javascript:void(0)">
+            <li class="custom-dropdown d-sm-block d-none"> <a href="javascript:void(0)">
                 <h6 class="f-w-700">ENG
                   <svg class="svg-color">
                     <use href="../assets/svg/iconly-sprite.svg#Arrow--Down"></use>
@@ -219,17 +219,7 @@
                 </ul>
               </div>
             </li>
-            <div class="weather-menu d-lg-block d-none">
-              <button class="btn btn-primary"> 
-                <svg class="svg-color">
-                  <use href="../assets/svg/iconly-sprite.svg#Weather--cloud"></use>
-                </svg><span class="ms-1">15<sup> 
-                    <svg class="svg-color svg-white">
-                      <use href="../assets/svg/iconly-sprite.svg#circle"></use>
-                    </svg></sup></span>
-              </button>
-              <button class="btn btn-light"> <span>Medan, IDN  </span></button>
-            </div>
+            <li><a class="settings" href="javascript:void(0)"> <i class="iconly-Setting icli"></i></a></li>
           </ul>
         </div>
       </header>
@@ -433,7 +423,7 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid">
             <div class="user-profile">
-              <div class="row g-md-4">
+              <div class="row">
                 <div class="col-xl-4 col-sm-6">
                   <div class="card">          
                     <div class="card-header">
@@ -467,6 +457,9 @@
                         <div class="avatar"><img class="img-80 rounded-circle" src="../assets/images/avtar/7.jpg" alt="avatar">
                           <div class="status status-offline"></div>
                         </div>
+                        <div class="avatar"><img class="img-70 rounded-circle" src="../assets/images/avtar/11.jpg" alt="avatar">
+                          <div class="status status-online"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -487,7 +480,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6 g-4">
+                <div class="col-xl-6">
                   <div class="card">
                     <div class="card-header">
                       <h3>Ratio</h3>
@@ -504,7 +497,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6 g-4">
+                <div class="col-xl-6">
                   <div class="card">   
                     <div class="card-header">
                       <h3>Grouping  </h3>
@@ -538,7 +531,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-4 col-sm-12 mb-xl-4">
+                <div class="col-xl-4 col-sm-12">
                   <div class="card">
                     <div class="card-header">
                       <h3>Avatar Initial</h3>
@@ -556,7 +549,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-4 col-sm-6 mt-xl-4 mt-0 mb-xl-4">
+                <div class="col-xl-4 col-sm-6">
                   <div class="card"> 
                     <div class="card-header">
                       <h3>Avatar Ping</h3>
@@ -580,7 +573,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-4 col-sm-6 mt-xl-4 mt-0 mb-xl-4">   
+                <div class="col-xl-4 col-sm-6">
                   <div class="card">  
                     <div class="card-header">
                       <h3>Avatar profile</h3>

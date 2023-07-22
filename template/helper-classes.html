@@ -38,17 +38,17 @@
               <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0 search-fill"><i class="iconly-Search icli"></i></span>
             </div>
           </form>
-          <form class="form-inline search-full col search-form" action="#" method="get"><i class="iconly-Search icli"></i>
+          <form class="form-inline search-full col search-form d-xl-none d-block" action="#" method="get"><i class="iconly-Search icli"></i>
             <div class="u-posRelative">
-              <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search .." name="q" title="" autofocus><i class="close-search" data-feather="x"></i>
+              <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search .." name="q" title="" autofocus><i class="close-search" data-feather="x"> </i>
             </div>
             <div class="Typeahead-menu"></div>
           </form>
         </div>
         <div class="nav-right">
-          <ul class="header-right">
+          <ul class="header-right"> 
             <!-- Language dropdown start-->
-            <li class="custom-dropdown d-sm-block d-none"><a href="javascript:void(0)">
+            <li class="custom-dropdown d-sm-block d-none"> <a href="javascript:void(0)">
                 <h6 class="f-w-700">ENG
                   <svg class="svg-color">
                     <use href="../assets/svg/iconly-sprite.svg#Arrow--Down"></use>
@@ -219,17 +219,7 @@
                 </ul>
               </div>
             </li>
-            <div class="weather-menu d-lg-block d-none">
-              <button class="btn btn-primary"> 
-                <svg class="svg-color">
-                  <use href="../assets/svg/iconly-sprite.svg#Weather--cloud"></use>
-                </svg><span class="ms-1">15<sup> 
-                    <svg class="svg-color svg-white">
-                      <use href="../assets/svg/iconly-sprite.svg#circle"></use>
-                    </svg></sup></span>
-              </button>
-              <button class="btn btn-light"> <span>Medan, IDN  </span></button>
-            </div>
+            <li><a class="settings" href="javascript:void(0)"> <i class="iconly-Setting icli"></i></a></li>
           </ul>
         </div>
       </header>
@@ -432,7 +422,7 @@
           </div>
           <!-- Container-fluid starts      -->
           <div class="container-fluid">
-            <div class="row g-xl-4">
+            <div class="row">
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
@@ -440,10 +430,10 @@
                     <p class="mt-1 mb-0">Use border utilities to add or remove an element's borders.</p>
                   </div>
                   <div class="card-body">
-                    <div class="row g-xl-4 g-3">
+                    <div class="row g-3">
                       <div class="col-md-4 col-sm-6">
                         <div class="border-wrapper h-100 border">
-                          <h6 class="mb-3">Additive Border</h6>
+                          <h5 class="f-w-600 mb-3">Additive Border</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box bg-light border"></div>.border
                           </div>
@@ -460,7 +450,7 @@
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <div class="border-wrapper h-100 border"> 
-                          <h6 class="mb-3">Subtractive Border</h6>
+                          <h5 class="f-w-600 mb-3">Subtractive Border</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box bg-light border border-0"></div>.border-0
                           </div>
@@ -480,7 +470,7 @@
                       </div>
                       <div class="col-md-4 col-sm-12">
                         <div class="border-wrapper h-100 border">
-                          <h6 class="mb-3">Additive Radius</h6>
+                          <h5 class="f-w-600 mb-3">Additive Radius</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-radius radius-wrapper rounded"></div>.rounded
                           </div>
@@ -515,10 +505,10 @@
                     <p class="mt-1 mb-0">Use of any component to give the different styles of border using  <code>border-*radius/border-color/border-width  </code>class.</p>
                   </div>
                   <div class="card-body">
-                    <div class="row g-xl-4 g-3">
+                    <div class="row g-3">
                       <div class="col-xxl-3 col-sm-6">
                         <div class="border-wrapper h-100 alert-light-light dark-helper border">
-                          <h6 class="mb-3">Custom Border-radius Class</h6>
+                          <h5 class="f-w-600 mb-3">Custom Border-radius Class</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box rounded-0 bg-light border"></div><span>.rounded-0 </span>
                           </div>
@@ -541,7 +531,7 @@
                       </div>
                       <div class="col-xxl-3 col-sm-6">
                         <div class="border-wrapper h-100 alert-light-light dark-helper border">
-                          <h6 class="mb-3">Border Colors</h6>
+                          <h5 class="f-w-600 mb-3">Border Colors</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box border-primary border"></div><span>.border-primary</span>
                           </div>
@@ -567,7 +557,7 @@
                       </div>
                       <div class="col-xxl-3 col-sm-6">
                         <div class="border-wrapper h-100 alert-light-light dark-helper border">
-                          <h6 class="mb-3">Border-Width</h6>
+                          <h5 class="f-w-600 mb-3">Border-Width</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box border-1 border"> </div><span>.border-1</span>
                           </div>
@@ -587,7 +577,7 @@
                       </div>
                       <div class="col-xxl-3 col-sm-6">    
                         <div class="border-wrapper alert-light-light h-100 dark-helper border">
-                          <h6 class="mb-3">Text Colors </h6>
+                          <h5 class="f-w-600 mb-3">Text Colors </h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box helper-text border text-primary">A</div><span>.text-primary</span>
                           </div>
@@ -625,10 +615,10 @@
                     <p class="mt-1 mb-0">Using any component to add background color using <code>.bg-* </code>&  <code>.alert-light-* </code>class.</p>
                   </div>
                   <div class="card-body"> 
-                    <div class="row g-xl-4 g-3">
+                    <div class="row g-3"> 
                       <div class="col-sm-6 col-xl-4">
                         <div class="border-wrapper h-100 border">
-                          <h6 class="mb-3">Dark Background</h6>
+                          <h5 class="f-w-600 mb-3">Dark Background</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box bg-primary"></div>.bg-primary   
                           </div>
@@ -657,7 +647,7 @@
                       </div>
                       <div class="col-sm-6 col-xl-4">
                         <div class="border-wrapper h-100 border">
-                          <h6 class="mb-3">Light Backgrounds</h6>
+                          <h5 class="f-w-600 mb-3">Light Backgrounds</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box alert-light-primary"></div>.alert-light-primary
                           </div>
@@ -686,7 +676,7 @@
                       </div>
                       <div class="col-sm-12 col-xl-4">
                         <div class="border-wrapper h-100 border">
-                          <h6 class="mb-3">Extended Background Colors</h6>
+                          <h5 class="f-w-600 mb-3">Extended Background Colors</h5>
                           <div class="d-flex align-items-center mb-2 gap-2">
                             <div class="helper-box light-card"></div>.light-card
                           </div>
@@ -883,7 +873,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 mb-md-4">
+              <div class="col-12">
                 <div class="card">
                   <div class="card-header">
                     <h3>Font Sizes</h3>

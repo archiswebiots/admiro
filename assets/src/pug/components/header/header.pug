@@ -15,11 +15,11 @@ header.page-header
             i.iconly-Search.icli
             .u-posRelative
                 input.demo-input.Typeahead-input.form-control-plaintext.w-100(type='text' placeholder='Search ..' name='q' title='' autofocus)
-                i(data-feather='x').close-search
+                i(data-feather='x').close-search  
             .Typeahead-menu
     .nav-right
-        ul.header-right
-            include language
+        ul.header-right  
+            include language  
             li.search  
                 a(href="javascript:void(0)")  
                     i.iconly-Search.icli 
@@ -32,14 +32,11 @@ header.page-header
                 a.full-screen(href="javascript:void(0)")  
                     i.iconly-Scan.icli   
             include bookmark
+            li
+                a.settings(href="javascript:void(0)")  
+                    i.iconly-Setting.icli
+            
              
-            div.weather-menu.d-lg-block.d-none
-                button.btn.btn-primary 
-                    +IconlySprite('Weather--cloud', 'svg-color')
-                    span.ms-1 15
-                        sup 
-                            +IconlySprite('circle', 'svg-color svg-white')
-                button.btn.btn-light  
-                    span Medan, IDN  
+           
 
 // Page header end
