@@ -12252,6 +12252,63 @@ ul {
 .dark-only .footer-icon.svg-color {
   stroke: unset;
 }
+.dark-only .border-wrapper .bg-light, .dark-only .border-wrapper .radius-wrapper {
+  background-color: rgba(var(--body-color), 1) !important;
+  border: 1px solid rgba(var(--light-gray), 1) !important;
+}
+.dark-only .border-wrapper .bg-light.border, .dark-only .border-wrapper .radius-wrapper.border {
+  border: unset;
+}
+.dark-only .border-wrapper.alert-light-light {
+  background-color: rgba(var(--body-color), 1);
+}
+.dark-only .border-wrapper .bg-dark {
+  background-color: rgba(var(--light-gray), 1) !important;
+  color: rgba(var(--sub-title), 1) !important;
+}
+.dark-only .border-wrapper .alert-light-dark {
+  border: 1px solid rgba(var(--light-gray), 1);
+}
+.dark-only .gradient-border .fill-wrapper {
+  background-color: rgba(var(--body-color), 1);
+}
+.dark-only .table-striped td, .dark-only .table-striped th {
+  background-color: rgba(var(--body-color), 1);
+}
+.dark-only .grid-showcase span {
+  background-color: rgba(var(--body-color), 1);
+}
+.dark-only .grid-showcase .bg-light, .dark-only .grid-showcase .bg-white {
+  background-color: rgba(var(--body-color), 1) !important;
+}
+.dark-only .grid-showcase .grid-vertical span, .dark-only .grid-showcase .grid-align span {
+  border: 1px solid rgba(var(--light-gray), 1);
+}
+.dark-only .horizontal-align.grid-showcase span {
+  background-color: rgba(var(--white), 1);
+}
+.dark-only .accordion-item, .dark-only .accordion-button {
+  background-color: rgba(var(--body-color), 1);
+  border: 1px solid rgba(var(--light-gray), 1);
+}
+.dark-only .badge-spacing .badge {
+  color: rgba(var(--black), 1) !important;
+}
+.dark-only .badge-spacing .badge i {
+  color: rgba(var(--black), 1) !important;
+}
+.dark-only .badge-spacing .badge.text-dark {
+  color: rgba(var(--white), 1) !important;
+}
+.dark-only .badge-spacing .badge.text-dark i {
+  color: rgba(var(--white), 1) !important;
+}
+.dark-only .bage-heading span {
+  color: rgba(var(--black), 1) !important;
+}
+.dark-only.modal-open {
+  background-color: rgba(var(--body-color), 1);
+}
 
 /**=====================
     According CSS start
@@ -13695,7 +13752,6 @@ ul {
 }
 
 .card-body {
-  z-index: 1;
   padding: 20px;
   background-color: transparent;
 }
@@ -14116,6 +14172,10 @@ th {
   margin-bottom: 10px;
   text-align: center;
   background-color: rgba(var(--bg-light), 1);
+}
+
+.horizontal-align.grid-showcase span {
+  background-color: rgba(var(--white), 1);
 }
 
 .grid-align .row {

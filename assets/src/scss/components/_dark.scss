@@ -55,4 +55,80 @@
             stroke: unset;
         }
     }
+    .border-wrapper{
+        .bg-light, .radius-wrapper{
+            background-color: rgba(var(--body-color),1) !important;
+            border: 1px solid rgba(var(--light-gray),1) !important;
+            &.border{
+                border: unset;
+            }
+        }
+        &.alert-light-light{
+            background-color: rgba(var(--body-color),1);
+        }
+        .bg-dark{
+            background-color: rgba(var(--light-gray), 1) !important;
+            color: rgba(var(--sub-title), 1) !important;
+        }
+        .alert-light-dark{
+            border: 1px solid rgba(var(--light-gray),1);
+        }
+        
+    }
+    .gradient-border{
+        .fill-wrapper{
+            background-color: rgba(var(--body-color),1);
+        }
+    }
+    .table-striped{
+        td, th{
+            background-color: rgba(var(--body-color),1);
+        }
+    }
+    .grid-showcase{
+        span{
+            background-color: rgba(var(--body-color), 1);
+        }
+        .bg-light, .bg-white{
+            background-color: rgba(var(--body-color),1) !important; 
+        }
+        .grid-vertical, .grid-align{
+            span{
+                border: 1px solid rgba(var(--light-gray),1);
+            }
+        }
+    }
+    .horizontal-align{
+        &.grid-showcase{
+            span{
+                background-color: rgba(var(--white), 1);
+            }
+        }
+    }
+   .accordion-item , .accordion-button{
+       background-color: rgba(var(--body-color),1);
+       border: 1px solid rgba(var(--light-gray),1);
+    }
+    .badge-spacing{
+        .badge{
+            color: rgba(var(--black),1) !important;
+            i{
+                color: rgba(var(--black),1) !important;
+            }
+            &.text-dark{
+                color: rgba(var(--white),1) !important;
+                i{
+                    color: rgba(var(--white),1) !important;
+                }
+            }
+        } 
+    }
+    .bage-heading{
+        span{
+            color: rgba(var(--black),1) !important;
+        }
+    }
+    &.modal-open{
+        background-color: rgba(var(--body-color),1);
+    }
 }
