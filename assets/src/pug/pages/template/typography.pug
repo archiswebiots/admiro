@@ -1,4 +1,5 @@
 -var sidebar = true;
+//- -var theme_customizer= true;
 include ../../components/mixin
 doctype html
 html(lang='en') 
@@ -12,10 +13,10 @@ html(lang='en')
             .container-fluid               
                 .page-title
                     .row
-                        .col-6
+                        .col-sm-6.col-12
                           h2
                               | Typography
-                        .col-6
+                        .col-sm-6.col-12
                           ol.breadcrumb
                               li.breadcrumb-item
                                 a(href='index.html')                                        
@@ -24,7 +25,7 @@ html(lang='en')
                               li.breadcrumb-item.active Typography  
             .container-fluid 
               .row
-                .col-xl-6.mt-4
+                .col-xl-6
                   .card
                     .card-header
                       h3.mb-0 Headings
@@ -35,7 +36,7 @@ html(lang='en')
                         code &lt;h6&gt;
                         |  are available.
                     .card-body
-                      .table-responsive
+                      .table-responsive.custom-scroll
                         table.table.mb-0.typography-table
                           thead
                             tr
@@ -102,7 +103,7 @@ html(lang='en')
                         code &lt;h6&gt;
                         |  are available.
                     .card-body
-                      .table-responsive
+                      .table-responsive.custom-scroll
                         table.table.mb-0.typography-table
                           thead
                             tr
@@ -295,7 +296,7 @@ html(lang='en')
                             | This is Dark text You can archive this adding
                             code .text-dark
                             |  class.
-                .col-sm-12.mb-4
+                .col-sm-12
                   .card.overflow-hidden
                     .card-header
                       h3.mb-0 Blockquotes
@@ -323,4 +324,4 @@ html(lang='en')
                             figcaption.blockquote-footer.pt-3
                               | Ralph Waldo Emerson
           include ../../components/footer   
-  include ../../components/footer-files                                              
+    include ../../components/footer-files                                              

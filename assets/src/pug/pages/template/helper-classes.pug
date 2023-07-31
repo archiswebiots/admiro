@@ -15,10 +15,10 @@ html(lang='en')
                 .container-fluid
                     .page-title
                         .row.align-items-center
-                            .col-6
+                            .col-sm-6.col-12
                                 h2
                                     | Helper classes 
-                            .col-6
+                            .col-sm-6.col-12
                                 ol.breadcrumb
                                     li.breadcrumb-item
                                       a(href='index.html')     
@@ -27,7 +27,7 @@ html(lang='en')
                                     li.breadcrumb-item.active Helper classes 
                 // Container-fluid starts      
                 .container-fluid
-                    .row.g-xl-4
+                    .row
                         .col-12
                             .card
                                 .card-header
@@ -35,64 +35,64 @@ html(lang='en')
                                     p.mt-1.mb-0
                                         | Use border utilities to add or remove an element's borders.
                                 .card-body
-                                    .row.g-xl-4.g-3
+                                    .row.g-3
                                         .col-md-4.col-sm-6
                                             .border-wrapper.h-100.border
-                                                h6.mb-3 Additive Border
+                                                h5.f-w-600.mb-3 Additive Border
                                                 .d-flex.align-items-center.mb-2.gap-2
-                                                    .helper-box.bg-light.border
-                                                    | .border
+                                                    .helper-box.bg-light.border 
+                                                    span .border
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-light.border-top
-                                                    | .border-top
+                                                    span .border-top
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-light.border-bottom
-                                                    | .border-bottom
+                                                    span .border-bottom
                                                 .d-flex.align-items-center.gap-2
                                                     .helper-box.bg-light.border-end
-                                                    | .border-end
+                                                    span .border-end
                                         .col-md-4.col-sm-6
                                             .border-wrapper.h-100.border 
-                                                h6.mb-3 Subtractive Border
+                                                h5.f-w-600.mb-3 Subtractive Border
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-light.border.border-0
-                                                    | .border-0
+                                                    span .border-0
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-light.border.border-top-0
-                                                    | .border-top-0
+                                                    span .border-top-0
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-light.border.border-end-0
-                                                    | .border-end-0
+                                                    span .border-end-0
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-light.border.border-bottom-0
-                                                    | .border-bottom-0
+                                                    span .border-bottom-0
                                                 .d-flex.align-items-center.gap-2
                                                     .helper-box.bg-light.border.border-start-0
-                                                    | .border-start-0
+                                                    span .border-start-0
                                         .col-md-4.col-sm-12
                                             .border-wrapper.h-100.border
-                                                h6.mb-3 Additive Radius
+                                                h5.f-w-600.mb-3 Additive Radius
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-radius.radius-wrapper.rounded
-                                                    | .rounded
+                                                    span .rounded
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-radius.radius-wrapper.rounded-top
-                                                    | .rounded-top
+                                                    span .rounded-top
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-radius.radius-wrapper.rounded-end
-                                                    | .rounded-end
+                                                    span .rounded-end
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-radius.radius-wrapper.rounded-bottom
-                                                    | .rounded-bottom
+                                                    span .rounded-bottom
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-radius.radius-wrapper.rounded-start
-                                                    | .rounded-start    
+                                                    span .rounded-start    
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-radius.radius-wrapper.rounded-pill
-                                                    | .rounded-pill
+                                                    span .rounded-pill
                                                 .d-flex.align-items-center.gap-2
                                                     .helper-radius.radius-wrapper.rounded-circle
-                                                    | .rounded-circle 
+                                                    span .rounded-circle 
                         .col-12 
                             .card   
                                 .card-header
@@ -102,10 +102,10 @@ html(lang='en')
                                         code border-*radius/border-color/border-width  
                                         | class.
                                 .card-body
-                                    .row.g-xl-4.g-3
+                                    .row.g-3
                                         .col-xxl-3.col-sm-6
                                             .border-wrapper.h-100.alert-light-light.dark-helper.border
-                                                h6.mb-3 Custom Border-radius Class
+                                                h5.f-w-600.mb-3 Custom Border-radius Class
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.rounded-0.bg-light.border
                                                     span .rounded-0 
@@ -126,7 +126,7 @@ html(lang='en')
                                                     span .rounded-5
                                         .col-xxl-3.col-sm-6
                                             .border-wrapper.h-100.alert-light-light.dark-helper.border
-                                                h6.mb-3 Border Colors
+                                                h5.f-w-600.mb-3 Border Colors
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.border-primary.border
                                                     span .border-primary
@@ -150,7 +150,7 @@ html(lang='en')
                                                     span .border-dark
                                         .col-xxl-3.col-sm-6
                                             .border-wrapper.h-100.alert-light-light.dark-helper.border
-                                                h6.mb-3 Border-Width
+                                                h5.f-w-600.mb-3 Border-Width
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.border-1.border 
                                                     span .border-1
@@ -168,7 +168,7 @@ html(lang='en')
                                                     span .border-
                                         .col-xxl-3.col-sm-6     
                                             .border-wrapper.alert-light-light.h-100.dark-helper.border
-                                                h6.mb-3 Text Colors 
+                                                h5.f-w-600.mb-3 Text Colors 
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.helper-text.border.text-primary A
                                                     span .text-primary
@@ -204,70 +204,67 @@ html(lang='en')
                                         code .alert-light-* 
                                         | class.
                                 .card-body 
-                                    .row.g-xl-4.g-3
+                                    .row.g-3  
                                         .col-sm-6.col-xl-4
                                             .border-wrapper.h-100.border
-                                                h6.mb-3 Dark Background
+                                                h5.f-w-600.mb-3 Dark Background
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-primary
-                                                    | .bg-primary   
+                                                    span .bg-primary   
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-secondary
-                                                    | .bg-secondary 
+                                                    span .bg-secondary 
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-success
-                                                    | .bg-success
+                                                    span .bg-success
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-danger  
-                                                    | .bg-danger
+                                                    span .bg-danger
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-warning
-                                                    | .bg-warning
+                                                    span .bg-warning
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-info
-                                                    | .bg-info
+                                                    span .bg-info
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.bg-dark
-                                                    | .bg-dark
+                                                    span .bg-dark
                                                 .d-flex.align-items-center.gap-2
                                                     .helper-box.bg-light
-                                                    | .bg-light
+                                                    span .bg-light
                                         .col-sm-6.col-xl-4
                                             .border-wrapper.h-100.border
-                                                h6.mb-3 Light Backgrounds
+                                                h5.f-w-600.mb-3 Light Backgrounds
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.alert-light-primary
-                                                    | .alert-light-primary
+                                                    span .alert-light-primary
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.alert-light-secondary                             
-                                                    | .alert-light-secondary
+                                                    span .alert-light-secondary
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.alert-light-success
-                                                    | .alert-light-success
+                                                    span .alert-light-success
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.alert-light-danger
-                                                    | .alert-light-danger
+                                                    span .alert-light-danger
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.alert-light-warning
-                                                    | .alert-light-warning
+                                                    span .alert-light-warning
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.alert-light-info
-                                                    | .alert-light-info
+                                                    span .alert-light-info
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.alert-light-dark
-                                                    | .alert-light-dark
-                                                .d-flex.align-items-center.gap-2
-                                                    .helper-box.helper-bg
-                                                    | .helper-bg
+                                                    span .alert-light-dark
                                         .col-sm-12.col-xl-4
                                             .border-wrapper.h-100.border
-                                                h6.mb-3 Extended Background Colors
+                                                h5.f-w-600.mb-3 Extended Background Colors
                                                 .d-flex.align-items-center.mb-2.gap-2
                                                     .helper-box.light-card
-                                                    | .light-card
+                                                    span .light-card
                                                 .d-flex.align-items-center.gap-2
                                                     .helper-box.light-background.border
-                                                    | .light-background
+                                                    span .light-background
                         .col-12 
                             .card
                                 .card-header
@@ -280,94 +277,94 @@ html(lang='en')
                                     .gradient-border
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-primary.border.fill-wrapper
-                                            | .border-primary
+                                            span .border-primary
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-top.border-primary.fill-wrapper
-                                            | .border-top
+                                            span .border-top
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-bottom.border-primary.fill-wrapper
-                                            | .border-bottom
+                                            span .border-bottom
                                         .d-flex.align-items-center.gap-2   
                                             .helper-box.border-start.border-primary.fill-wrapper
-                                            | .border-start  
+                                            span .border-start  
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-end.border-primary.fill-wrapper 
-                                            | .border-end           
+                                            span .border-end           
                                         .d-flex.align-items-center.gap-2          
                                             .helper-box.border-secondary.border.fill-wrapper
-                                            | .border-secondary
+                                            span .border-secondary
                                         .d-flex.align-items-center.gap-2 
                                             .helper-box.border-top.border-secondary.fill-wrapper
-                                            | .border-top
+                                            span .border-top
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-bottom.border-secondary.fill-wrapper
-                                            | .border-bottom
+                                            span .border-bottom
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-start.border-secondary.fill-wrapper
-                                            | .border-start
+                                            span .border-start
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-end.border-secondary.fill-wrapper
-                                            | .border-end
+                                            span .border-end
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-success.border.fill-wrapper
-                                            | .border-success
+                                            span .border-success
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-top.border-success.fill-wrapper
-                                            | .border-top
+                                            span .border-top
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-bottom.border-success.fill-wrapper
-                                            | .border-bottom
+                                            span .border-bottom
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-start.border-success.fill-wrapper
-                                            | .border-start
+                                            span .border-start
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-end.border-success.fill-wrapper
-                                            | .border-end
+                                            span .border-end
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-danger.border.fill-wrapper
-                                            | .border-danger
+                                            span .border-danger
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-top.border-danger.fill-wrapper
-                                            | .border-top
+                                            span .border-top
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-bottom.border-danger.fill-wrapper
-                                            | .border-bottom
+                                            span .border-bottom
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-start.border-danger.fill-wrapper
-                                            | .border-start
+                                            span .border-start
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-end.border-danger.fill-wrapper
-                                            | .border-start
+                                            span .border-start
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-warning.border.fill-wrapper
-                                            | .border-warning
+                                            span .border-warning
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-top.border-warning.fill-wrapper
-                                            | .border-top
+                                            span .border-top
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-bottom.border-warning.fill-wrapper
-                                            | .border-bottom
+                                            span .border-bottom
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-start.border-warning.fill-wrapper
-                                            | .border-start
+                                            span .border-start
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-end.border-warning.fill-wrapper
-                                            | .border-end 
+                                            span .border-end 
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-info.border.fill-wrapper
-                                            | .border-info 
+                                            span .border-info 
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-top.border-info.fill-wrapper
-                                            | .border-top
+                                            span .border-top
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-bottom.border-info.fill-wrapper
-                                            | .border-bottom
+                                            span .border-bottom
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-start.border-info.fill-wrapper
-                                            | .border-start
+                                            span .border-start
                                         .d-flex.align-items-center.gap-2
                                             .helper-box.border-end.border-info.fill-wrapper
-                                            | .border-end
+                                            span .border-end
                         .col-xl-6
                             .card
                                 .card-header
@@ -380,11 +377,11 @@ html(lang='en')
                                         | class.
                                 .card-body
                                     .gradient-border.gap-md-3.gap-2
-                                        img.img-40.img-h-40(src='../assets/images/avatars/1.jpg', alt='img-size-40')
+                                        
                                         img.img-50.img-h-50(src='../assets/images/avatars/1.jpg', alt='img-size-50') 
                                         img.img-60.img-h-60(src='../assets/images/avatars/1.jpg', alt='img-size-60')
                                         img.img-70.img-h-70(src='../assets/images/avatars/1.jpg', alt='img-size-70')  
-                                        img.img-80.img-h-80(src='../assets/images/avatars/1.jpg', alt='img-size-80')
+                                        //- img.img-80.img-h-80(src='../assets/images/avatars/1.jpg', alt='img-size-80')
                                         img.img-90.img-h-90(src='../assets/images/avatars/1.jpg', alt='img-size-90')
                                         img.img-100.img-h-100(src='../assets/images/avatars/1.jpg', alt='img-size-100')
                         .col-xl-6
@@ -423,22 +420,22 @@ html(lang='en')
                                 .card-body  
                                     .d-flex.align-items-center.mb-2.gap-2   
                                         .f-w-100
-                                            | You can set light font weight heading .f-w-100
+                                            span You can set light font weight heading .f-w-100
                                     .d-flex.align-items-center.mb-2.gap-2
                                         .f-w-300
-                                            | You can set light font weight heading .f-w-300
+                                            span You can set light font weight heading .f-w-300
                                     .d-flex.align-items-center.mb-2.gap-2
                                         .f-w-400
-                                            | You can set light font weight heading .f-w-400
+                                            span You can set light font weight heading .f-w-400
                                     .d-flex.align-items-center.mb-2.gap-2
                                         .f-w-600
-                                            | You can set bolder font weight heading .f-w-600
+                                            span You can set bolder font weight heading .f-w-600
                                     .d-flex.align-items-center.mb-2.gap-2
                                         .f-w-700
-                                            | You can set bold font weight heading .f-w-700
+                                            span You can set bold font weight heading .f-w-700
                                     .d-flex.align-items-center.gap-2
                                         .f-w-900
-                                            | You can set bold font weight heading .f-w-900
+                                            span You can set bold font weight heading .f-w-900
                         .col-md-6
                             .card
                                 .card-header
@@ -478,7 +475,7 @@ html(lang='en')
                                             | This is a 
                                             b font-info 
                                             | text used class as .font-info
-                        .col-12.mb-md-4
+                        .col-12
                             .card
                                 .card-header
                                     h3 Font Sizes
@@ -490,21 +487,21 @@ html(lang='en')
                                     .gradient-border
                                         .font-wrapper.border
                                             .fs-6
-                                                | Font-size .fs-6
+                                                span Font-size .fs-6
                                         .font-wrapper.border    
                                             .fs-5
-                                                | Font-size .fs-5
+                                                span Font-size .fs-5
                                         .font-wrapper.border
                                             .fs-4
-                                                | Font-size .fs-4
+                                                span Font-size .fs-4
                                         .font-wrapper.border
                                             .fs-3
-                                                | Font-size .fs-3
+                                                span Font-size .fs-3
                                         .font-wrapper.border
                                             .fs-2
-                                                | Font-size .fs-2
+                                                span Font-size .fs-2
                                         .font-wrapper.border
                                             .fs-1
-                                                | Font-size .fs-1
+                                                span Font-size .fs-1
             include ../../components/footer            
     include ../../components/footer-files 

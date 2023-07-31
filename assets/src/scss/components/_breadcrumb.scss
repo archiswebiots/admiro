@@ -29,12 +29,18 @@
                 box-shadow: $breadcrumb-icon-shadow;
             }
         }
-        display: flex;
+        display: flex; 
         align-items: center;  
         justify-content: end;
+        @media (max-width: 575px) {
+            justify-content: start;
+        }
     }    
     .row{
         align-items: center;
+        @media (max-width: 575px) {
+            gap: 4px;
+        }
     }   
 }
 .breadcrumb-item{

@@ -93,12 +93,11 @@ header {
                     height: 35px;   
                     margin-left: 10px;
                 }
-                @include media-breakpoint-down(md){
-                    width: 37px;
+                @include media-breakpoint-down(md){ 
+                    width: 37px; 
                     height: 37px;   
-                    margin-left: 6px;
                 }
-                @media (max-width: 586px) {
+                @media (max-width: 420px) {
                     width: 33px;
                     height: 33px;
                 }
@@ -111,6 +110,11 @@ header {
                     }
                 }
             }
+            .search{
+                @include media-breakpoint-down(md){
+                    margin-left: 0;  
+                }
+            }
             
         }
         .weather-menu{
@@ -119,7 +123,7 @@ header {
                 margin-left: unset;
                 margin-right: 14px;
             }
-            .btn{
+            .btn{   
                 border-radius: 30px;
                 span{
                     text-transform: uppercase;
@@ -183,10 +187,10 @@ header {
     .search-form {
         position: relative;
         .search-fill{
-            .iconly-Search{
-                position: unset;
+            .iconly-Search{ 
+                position: unset; 
                 top: unset;
-                left: unset;
+                left: unset; 
             }
         }
         .iconly-Search{
@@ -255,18 +259,18 @@ header {
                 }
                  &.show {   
                     visibility: visible;
-                    opacity: 1;
+                    opacity: 1; 
                     transition: 0.5s all;
                     transform: translateY(0px) scaleY(1);
                  }
             }
-        }
-        @media (max-width:1199px) {
+        }  
+        @media (max-width:1199px) {  
             &.search-full{
                 background-color: #fff;
-                position: absolute;
+                position: absolute; 
                 right: 0;
-                z-index: 10;
+                z-index: 10;  
                 height: 0;
                 width: 0;
                 transform: scale(0);
@@ -277,6 +281,10 @@ header {
                     animation: zoomIn 0.5s ease-in-out;
                     transform: scale(1);
                     transition: all 0.3s ease;
+                    .input-group{
+                        display: block;
+                        width: 100%;
+                    }
                 }
                 input{
                     line-height: 22px;
@@ -285,7 +293,7 @@ header {
                 }
                   .u-posRelative{
                     position: relative;
-                    .close-search {
+                    .close-search { 
                         position: absolute;
                         left: unset;
                         right: 15px;  
@@ -324,7 +332,7 @@ header {
                 height: 25px;
             }
         }
-    }
+    } 
     .profile-menu {
         li {
             padding: 10px 12px;
@@ -345,7 +353,7 @@ header {
         @include media-breakpoint-down(sm) {
             top: 45px;
         }
-    }
+    } 
     .language-menu {
         min-width: 90px;
         li{
@@ -413,7 +421,7 @@ header {
                         height: 10px;
                     }
                 }
-                .btn-close{
+                .btn-close{  
                     width: 4px;
                     height: 4px;
                     opacity: 0.6;

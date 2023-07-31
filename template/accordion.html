@@ -38,17 +38,17 @@
               <input class="form-control" type="search" placeholder="Type to Search..."><span class="input-group-text ps-0 search-fill"><i class="iconly-Search icli"></i></span>
             </div>
           </form>
-          <form class="form-inline search-full col search-form" action="#" method="get"><i class="iconly-Search icli"></i>
+          <form class="form-inline search-full col search-form d-xl-none d-block" action="#" method="get"><i class="iconly-Search icli"></i>
             <div class="u-posRelative">
-              <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search .." name="q" title="" autofocus><i class="close-search" data-feather="x"></i>
+              <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search .." name="q" title="" autofocus><i class="close-search" data-feather="x"> </i>
             </div>
             <div class="Typeahead-menu"></div>
           </form>
         </div>
         <div class="nav-right">
-          <ul class="header-right">
+          <ul class="header-right"> 
             <!-- Language dropdown start-->
-            <li class="custom-dropdown d-sm-block d-none"><a href="javascript:void(0)">
+            <li class="custom-dropdown d-sm-block d-none"> <a href="javascript:void(0)">
                 <h6 class="f-w-700">ENG
                   <svg class="svg-color">
                     <use href="../assets/svg/iconly-sprite.svg#Arrow--Down"></use>
@@ -219,17 +219,6 @@
                 </ul>
               </div>
             </li>
-            <div class="weather-menu d-lg-block d-none">
-              <button class="btn btn-primary"> 
-                <svg class="svg-color">
-                  <use href="../assets/svg/iconly-sprite.svg#Weather--cloud"></use>
-                </svg><span class="ms-1">15<sup> 
-                    <svg class="svg-color svg-white">
-                      <use href="../assets/svg/iconly-sprite.svg#circle"></use>
-                    </svg></sup></span>
-              </button>
-              <button class="btn btn-light"> <span>Medan, IDN  </span></button>
-            </div>
           </ul>
         </div>
       </header>
@@ -417,10 +406,10 @@
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <h2>According</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"> <a href="index.html">    <i class="iconly-Home icli"></i></a></li>
                     <li class="breadcrumb-item">Ui Kits</li>
@@ -555,12 +544,12 @@
                     <div class="row d-flex">
                       <div class="col-xl-6">
                         <div class="collapse multi-collapse" id="multiCollapseExample1">
-                          <div class="card card-body mt-3 mb-0 collapse-wrapper accordion-light-primary">The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the height from it's current value to 0. Given how CSS handles animations, you cannot use padding on a .collapse element. Instead, use the class as an independent wrapping element.</div>
+                          <div class="card card-body mt-3 mb-0 collapse-wrapper accordion-light-primary"><span>The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the height from it's current value to 0. Given how CSS handles animations, you cannot use padding on a .collapse element. Instead, use the class as an independent wrapping element.</span></div>
                         </div>
                       </div>
                       <div class="col-xl-6">
                         <div class="collapse multi-collapse" id="multiCollapseExample2">
-                          <div class="card card-body mt-3 mb-0 collapse-wrapper accordion-light-warning">This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.</div>
+                          <div class="card card-body mt-3 mb-0 collapse-wrapper accordion-light-warning"><span>This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.</span></div>
                         </div>
                       </div>
                     </div>
@@ -679,7 +668,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12">
+              <div class="col-xl-6 col-sm-12">
                 <div class="card">
                   <div class="card-header">
                     <h3>Horizontal Accordion           </h3>
@@ -691,16 +680,16 @@
                       <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Toggle width collapse</button>
                     </div>
                     <div class="row"> 
-                      <div class="col-sm-5">
+                      <div class="col-xl-6 col-9">
                         <div class="collapse collapse-horizontal mt-3" id="collapseWidthExample">
-                          <div class="card card-body bg-secondary-light accordion-h-space mb-0">The collapse plugin also supports horizontal collapsing. Add the .collapse-horizontal modifier class to transition the width instead of height and set a width on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our width utilities.</div>
+                          <div class="card card-body bg-secondary-light accordion-h-space mb-0"><span>The collapse plugin also supports horizontal collapsing. Add the .collapse-horizontal modifier class to transition the width instead of height and set a width on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our width utilities.</span></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12">
+              <div class="col-xl-6 col-sm-12">
                 <div class="card">
                   <div class="card-header">
                     <h3>Collapse Accordion  </h3>
@@ -709,11 +698,9 @@
                   </div>
                   <div class="card-body">     
                     <p class="common-flex"><a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
-                      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">| Button with data-bs-target</button>
+                      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-bs-target</button>
+                      <div class="collapse btn-dark card card-body mb-0 dark-accordion text-white" id="collapseExample"><span>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</span></div>
                     </p>
-                    <div class="collapse btn-dark" id="collapseExample">
-                      <div class="card card-body mb-0 dark-accordion text-white">Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</div>
-                    </div>
                   </div>
                 </div>
               </div>

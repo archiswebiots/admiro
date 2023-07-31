@@ -12,6 +12,13 @@ span {
         background-color: rgba(var(--bg-light), 1);
     }
 }
+.horizontal-align{
+    &.grid-showcase{
+        span{
+            background-color: rgba(var(--white),1);
+        }
+    }
+}
   
 .grid-align {
 
