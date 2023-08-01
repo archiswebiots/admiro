@@ -113,3 +113,17 @@
     }
   }
 }
+.pagination-secondary{
+  .disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.pagination{
+  .active{
+    .page-link{
+      color: rgba(var(--black),1) !important;
+    }
+  }
+}

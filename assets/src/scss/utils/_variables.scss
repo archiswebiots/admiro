@@ -55,22 +55,40 @@
 }
 body[class='dark-only']{
     --black: 255, 255, 255;
-    // --white: 29, 30, 38;
     --white: 11, 12, 14;
-    --body-font-color: 41, 41, 41;
     --font-color: 170, 170, 170;
-    --shape-border: #E5E5E5;
+    --shape-border: 29, 29, 29;
+    --span-color: 29, 29, 29 ;
     --scrollbar-color: #eee;
-    --light-border: #DCEEE6; 
     --body-color: 0, 0, 0;
+    --light-border: #DCEEE6; 
     --light-gray: 29, 29, 29;
     --sub-title: 182, 176, 176;
     --border-color: 29, 29, 29;
-    --active-bg-color: 29, 29, 29;
     --gray-200: 49, 49, 49;
-    --shape-border: 29, 29, 29;
-    // #4a4a4a42
-
+    --active-bg-color: 29, 29, 29;
+    --body-font-color: 182, 176, 176;
+    --bg-light: 0, 0, 0;
+    --light-semi-gray:  0, 0, 0;
+    --alert-light-light: 11, 12, 14;
+    --theme-body-font-color: 182, 176, 176;
+    --light-background: 0, 0, 0;
+    // --dark: 182, 176, 176;
+    --dropdown-menu: 255, 255, 255;
+    --gray-60: 0, 0, 0;
+    --border-light-color: 29, 29, 29;
+    --light-color: 0, 0, 0;
+    
+    // bootstrap color     
+    --bs-body-bg: rgba(11, 12, 14, 1); 
+    --bs-heading-color: rgba(182, 176, 176, 1);
+    --bs-body-color: rgba(182, 176, 176, 1);  
+    --bs-border-color: rgba(29, 29, 29, 1);
+    --bs-white-rgb: rgba(0, 0, 0, 1);
+    --bs-popover-header-bg: rgba(0, 0, 0, 1);
+    --bs-secondary-color: rgba(182, 176, 176, 1);
+    --bs-toast-header-bg: rgba(0, 0, 0, 1); 
+    // --bs-list-group-color: rgba(182, 176, 176, 1);
 }
 $body-font: 'Nunito Sans', sans-serif;
 $heading_1: 30px;
