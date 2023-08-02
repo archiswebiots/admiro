@@ -43,16 +43,16 @@ var barData = {
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(115, 102 ,255, 0.4)",
-        strokeColor: CubaAdminConfig.primary,
+        strokeColor: AdmiroAdminConfig.primary,
         highlightFill: "rgba(115, 102 ,255, 0.6)",
-        highlightStroke: CubaAdminConfig.primary ,
+        highlightStroke: AdmiroAdminConfig.primary ,
         data: [35, 59, 80, 81, 56, 55, 40]
     }, {
         label: "My Second dataset",
         fillColor: "rgba(247, 49, 100, 0.4)",
-        strokeColor: CubaAdminConfig.secondary ,
+        strokeColor: AdmiroAdminConfig.secondary ,
         highlightFill: "rgba(247, 49, 100, 0.6)",
-        highlightStroke: CubaAdminConfig.secondary,
+        highlightStroke: AdmiroAdminConfig.secondary,
         data: [28, 48, 40, 19, 86, 27, 90]
     }]
 };
@@ -73,8 +73,8 @@ var myBarChart = new Chart(barCtx).Bar(barData, barOptions);
 var polarData = [
     {
         value: 300,
-        color: CubaAdminConfig.primary,
-        highlight: CubaAdminConfig.primary,
+        color: AdmiroAdminConfig.primary,
+        highlight: AdmiroAdminConfig.primary,
         label: "Yellow"
     }, {
         value: 50,
@@ -93,8 +93,8 @@ var polarData = [
         label: "Grey"
     }, {
         value: 120,
-        color: CubaAdminConfig.secondary ,
-        highlight: CubaAdminConfig.secondary ,
+        color: AdmiroAdminConfig.secondary ,
+        highlight: AdmiroAdminConfig.secondary ,
         label: "Dark Grey"
     }
 ];
@@ -121,8 +121,8 @@ var lineGraphData = {
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(115, 102 ,255, 0.3)",
-        strokeColor: CubaAdminConfig.primary ,
-        pointColor: CubaAdminConfig.primary ,
+        strokeColor: AdmiroAdminConfig.primary ,
+        pointColor: AdmiroAdminConfig.primary ,
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "#000",
@@ -130,11 +130,11 @@ var lineGraphData = {
     }, {
         label: "My Second dataset",
         fillColor: "rgba(247, 49, 100, 0.3)",
-        strokeColor: CubaAdminConfig.secondary ,
-        pointColor: CubaAdminConfig.secondary ,
+        strokeColor: AdmiroAdminConfig.secondary ,
+        pointColor: AdmiroAdminConfig.secondary ,
         pointStrokeColor: "#fff",
         pointHighlightFill: "#000",
-        pointHighlightStroke: CubaAdminConfig.secondary,
+        pointHighlightStroke: AdmiroAdminConfig.secondary,
         data: [28, 48, 40, 19, 86, 27, 90]
     }]
 };
@@ -162,10 +162,10 @@ var radarData = {
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(115, 102 ,255, 0.4)",
-        strokeColor: CubaAdminConfig.primary,
-        pointColor: CubaAdminConfig.primary,
-        pointStrokeColor: CubaAdminConfig.primary,
-        pointHighlightFill: CubaAdminConfig.primary ,
+        strokeColor: AdmrioAdminConfig.primary,
+        pointColor: AdmrioAdminConfig.primary,
+        pointStrokeColor: AdmrioAdminConfig.primary,
+        pointHighlightFill: AdmrioAdminConfig.primary ,
         pointHighlightStroke: "rgba(115, 102 ,255, 0.4)",
         data: [12, 3, 5, 18, 7]
     }]
@@ -225,14 +225,14 @@ var pieOptions = {
 var doughnutData = [
     {
         value: 300,
-        color: CubaAdminConfig.primary ,
-        highlight: CubaAdminConfig.primary ,
+        color: AdmiroAdminConfig.primary ,
+        highlight: AdmiroAdminConfig.primary ,
         label: "Primary"
     },
     {
         value: 50,
-        color: CubaAdminConfig.secondary ,
-        highlight: CubaAdminConfig.secondary ,
+        color: AdmiroAdminConfig.secondary ,
+        highlight: AdmiroAdminConfig.secondary ,
         label: "Secondary"
     },
     {

@@ -230,5 +230,10 @@
         &.show{
             border: 1px solid rgba(var(--light-gray),1);    
         }
-    }    
+    }  
+    .feedback{
+        li{
+            background-color: rgba(var(--warning-color),1);
+        }
+    }  
 }

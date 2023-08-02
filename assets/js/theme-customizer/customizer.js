@@ -25,10 +25,10 @@ customizerLinks.innerHTML = '<div class="nav flex-column nac-pills" id="c-pills-
   <a class="nav-link" target="_blank" href="https://pixelstrap.freshdesk.com/" data-original-title="">\
     <div><i class="icon-support"></i></div><span>Support</span>\
   </a> \
-  <a class="nav-link" target="_blank" href="https://docs.pixelstrap.com/cuba/html/document/" target="_blank" data-original-title="">\
+  <a class="nav-link" target="_blank" href="https://docs.pixelstrap.com/admiro/html/document/" target="_blank" data-original-title="">\
     <div><i class="icon-settings"></i></div><span>Document</span>\
   </a> \
-  <a class="nav-link" target="_blank" href="http://admin.pixelstrap.com/cuba/theme/landing-page.html#frameworks" data-original-title="">\
+  <a class="nav-link" target="_blank" href="http://admin.pixelstrap.com/admiro/theme/landing-page.html#frameworks" data-original-title="">\
     <div><i class="icon-panel"></i></div><span>Check features</span>\
   </a> \
   <a class="nav-link" target="_blank" href="https://1.envato.market/3GVzd" data-original-title="">\
