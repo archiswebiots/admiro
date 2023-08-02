@@ -6,10 +6,10 @@
     align-items: center;
     padding: $title-spacing;
     @include media-breakpoint-up(sm){
-        padding: 25px 0;
+        padding: 25px 10px;
     }
     @include media-breakpoint-down(sm){
-        padding: 18px 0;
+        padding: 18px 10px;
     }
 
     h2{
