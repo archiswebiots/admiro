@@ -12289,6 +12289,9 @@ ul {
 .dark-only .toast.show {
   border: 1px solid rgba(var(--light-gray), 1);
 }
+.dark-only .feedback li {
+  background-color: rgba(var(--warning-color), 1);
+}
 
 /**=====================
     According CSS start
