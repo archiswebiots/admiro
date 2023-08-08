@@ -1,7 +1,7 @@
+-var sidebar                = true;
 - var form_wizard           = true;
 - var image_upload          = true;
-- var jquery                = true;
--var sidebar                = true;
+//- - var jquery                = true;
 include ../../components/mixin
 
 doctype html
@@ -17,10 +17,10 @@ html(lang='en')
                     .container-fluid
                         .page-title
                             .row
-                                .col-6
+                                .col-sm-6.col-12
                                     h2
                                         | Form Wizard 1
-                                .col-6
+                                .col-sm-6.col-12
                                     ol.breadcrumb
                                         li.breadcrumb-item
                                             a(href='index.html')
@@ -38,66 +38,67 @@ html(lang='en')
                                             | This is a validation form.
                                     .card-body.basic-wizard.important-validation
                                         #stepper1.stepper-horizontal
-                                            #stepper-one.stepper.step.editing
+                                            .stepper-one.stepper.step.editing.active
                                                 .step-circle
                                                     span 1
                                                 .step-title Basic Info  
                                                 .step-bar-left
                                                 .step-bar-right
-                                            #stepper-two.step
+                                            .stepper-two.step
                                                 .step-circle
                                                     span 2
                                                 .step-title Cart Info
                                                 .step-bar-left
                                                 .step-bar-right
-                                            #stepper-three.step
+                                            .stepper-three.step
                                                 .step-circle
                                                     span 3
                                                 .step-title Feedback
                                                 .step-bar-left
                                                 .step-bar-right
-                                            #stepper-four.step
+                                            .stepper-four.step
                                                 .step-circle
                                                     span 4
                                                 .step-title Finish
                                                 //- .step-optional Optional
                                                 .step-bar-left
                                                 .step-bar-right
-                                        form#stepper-one.row.g-3.basic-form.needs-validation(novalidate='')
-                                            .col-6        
-                                                label.form-label(for='email-basic-wizard') Email
-                                                    span.text-danger *
-                                                input#email-basic-wizard.form-control(type='email' required='' placeholder='admiro@gmail.com')
-                                                .invalid-feedback
-                                                    | Please enter your valid email
-                                                .valid-feedback 
-                                                    | Looks's Good!
-                                            .col-6
-                                                label.form-label(for='firstnamewizard') First Name
-                                                    span.text-danger *
-                                                input#firstnamewizard.form-control(type='text' required='' placeholder='Enter your name')
-                                                .invalid-feedback
-                                                    | Please enter your valid name
-                                                .valid-feedback 
-                                                    | Looks's Good!
-                                            .col-12
-                                                label.col-sm-12.form-label(for='passwordwizard') Password
-                                                    span.text-danger *
-                                                input#passwordwizard.form-control(type='password' placeholder='Enter password' required='')
-                                                .invalid-feedback
-                                                    | Please enter your valid password
-                                            .col-12
-                                                label.col-sm-12.form-label(for='confirmpasswordwizard') Confirm Password
-                                                    span.text-danger *
-                                                input#confirmpasswordwizard.form-control(type='password' placeholder='Enter confirm password' required='')
-                                                .invalid-feedback
-                                                    | Please enter your valid password
-                                            .col-12
-                                                .form-check
-                                                    input#inputcheckwizard.form-check-input(type='checkbox' value='' required='')
-                                                    label.form-check-label.mb-0(for='inputcheckwizard')
-                                                        | Agree to terms and conditions
-                                        form#stepper-two.row.g-3.needs-validation.d-none(novalidate='')
+                                        #msform
+                                            form.stepper-one.row.g-3.needs-validation.custom-input(novalidate='')
+                                                .col-6        
+                                                    label.form-label(for='email-basic-wizard') Email
+                                                        span.text-danger *
+                                                    input#email-basic-wizard.form-control(type='email' required='' placeholder='admiro@gmail.com')
+                                                    .invalid-feedback
+                                                        | Please enter your valid email
+                                                    .valid-feedback 
+                                                        | Looks's Good!
+                                                .col-6
+                                                    label.form-label(for='firstnamewizard') First Name
+                                                        span.text-danger *
+                                                    input#firstnamewizard.form-control(type='text' required='' placeholder='Enter your name')
+                                                    .invalid-feedback
+                                                        | Please enter your valid name
+                                                    .valid-feedback 
+                                                        | Looks's Good!
+                                                .col-12
+                                                    label.col-sm-12.form-label(for='passwordwizard') Password
+                                                        span.text-danger *
+                                                    input#passwordwizard.form-control(type='password' placeholder='Enter password' required='')
+                                                    .invalid-feedback
+                                                        | Please enter your valid password
+                                                .col-12
+                                                    label.col-sm-12.form-label(for='confirmpasswordwizard') Confirm Password
+                                                        span.text-danger *
+                                                    input#confirmpasswordwizard.form-control(type='password' placeholder='Enter confirm password' required='')
+                                                    .invalid-feedback
+                                                        | Please enter your valid password
+                                                .col-12
+                                                    .form-check
+                                                        input#inputcheckwizard.form-check-input(type='checkbox' value='' required='')
+                                                        label.form-check-label.mb-0(for='inputcheckwizard')
+                                                            | Agree to terms and conditions
+                                        form.stepper-two.row.g-3.needs-validation.custom-input(novalidate='')
                                             .col-md-12 
                                                 label.form-label(for='placeholdername') Placeholder Name 
                                                 input#placeholdername.form-control(type="text" required='' placeholder='Placeholder name')
@@ -133,7 +134,7 @@ html(lang='en')
                                                         | All the above information is correct
                                                     .invalid-feedback
                                                         | You must agree before submitting.
-                                        form#stepper-three.row.g-3.needs-validation.d-none(novalidate='')
+                                        form.stepper-three.row.g-3.needs-validation.custom-input(novalidate='')
                                             .col-6
                                                 label.form-label(for='email-basic') LinkedIn
                                                     span.text-danger *
@@ -172,15 +173,15 @@ html(lang='en')
                                                         | Agree to terms and conditions
                                                     .invalid-feedback
                                                         | You must agree before submitting.
-                                        form#stepper-four.row.g-3.needs-validation.d-none(novalidate='')
+                                        form.stepper-four.row.g-3.needs-validation(novalidate='')
                                             .col-12.m-0
                                                 .successful-form
                                                     img.img-fluid(src="../assets/images/gif/success/successful.gif", alt="successful")
                                                     h6 Congratulations 
                                                     p Well done! You have successfully completed.
-                                        .wizard-footer.d-flex.gap-2.justify-content-end
-                                            button.btn.disabled.text-black  Back
-                                            button.btn.btn-primary(onclick='nextStep()') Next         
+                                        .wizard-footer.d-flex.gap-2.justify-content-end 
+                                            button#backbtn.btn.disabled.text-black(onclick='backStep()')  Back
+                                            button#nextbtn.btn.btn-primary(onclick='nextStep()') Next       
                             .col-xl-6
                                 .card
                                     .card-header

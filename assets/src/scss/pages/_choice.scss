@@ -1,0 +1,40 @@
+.choices__inner {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    background: unset;
+}
+  
+.choices__input {
+    background: unset;
+}
+.choices__list--multiple {
+    .choices__item {
+      background-color: rgba(var(--primary-color),1);
+      border: 1px solid rgba(var(--primary-color),1);
+      color: rgba(var(--white),1);
+      border-radius: 4px;
+      cursor: default;
+      float: left;
+      margin-right: 5px;
+      padding: 3px 12px;
+      margin-top: 2px;
+    }
+}
+  
+.choices__heading {
+    font-weight: 700;
+    color: rgba(var(--body-font-color),1);
+}
+  
+.choices[data-type*=text] {
+    .choices__button {
+      margin-bottom: 0;
+      border-left: 0;
+    }
+}
+  
+.choices[data-type*=select-multiple] {
+    .choices__button {
+      margin-bottom: 0;
+      border-left: 0;
+    }
+}

@@ -1,7 +1,6 @@
--var jquery_ui     = true;
 -var sidebar    = true;
--var dragable     = true;
-- var jquery   = true;
+-var draggable_page      = true;
+
 include ../../components/mixin
 
 doctype html
@@ -18,10 +17,10 @@ html(lang='en')
                     .container-fluid
                         .page-title
                             .row
-                                .col-6
+                                .col-sm-6.col-12
                                     h2
                                         |  Dragable card
-                                .col-6
+                                .col-sm-6.col-12
                                     ol.breadcrumb
                                         li.breadcrumb-item
                                             a(href='index.html')
@@ -30,11 +29,11 @@ html(lang='en')
                                         li.breadcrumb-item.active Dragable card
                     // Container-fluid starts     
                     .container-fluid
-                        #draggableMultiple.row.ui-sortable.g-3
-                            .col-xxl-4.col-md-6
+                        .row#dragable
+                            .col-lg-4.col-md-6
                                 .card
                                     .card-header
-                                        h4 Basic Card
+                                        h4 Basic Card   
                                         p.mt-1.mb-0
                                             | You can draggable cards anywhere.  
                                     .card-body
@@ -51,10 +50,10 @@ html(lang='en')
                                             li.list-group-item
                                                 i.fa-solid.fa-arrow-right.me-2
                                                 | UX Designer
-                            .col-xxl-4.col-md-6
+                            .col-lg-4.col-md-6
                                 .card   
                                     .card-header
-                                        h4 Default Card
+                                        h3 Active lists
                                         p.mt-1.mb-0 
                                             | You can draggable cards anywhere.
                                     .card-body    

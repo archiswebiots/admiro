@@ -141,7 +141,16 @@
         padding: 10px 12px;
     }
 }
-
+.edges-form * {
+    border-radius: 20px !important;
+    .form-select {
+        overflow: hidden;
+    }  
+}  
+.flat-form * {
+    border-radius: 0 ;
+}
+ 
 /**=====================
      form css end
 ==========================**/

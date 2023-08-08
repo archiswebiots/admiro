@@ -1,6 +1,6 @@
 -var sidebar    = true;
--var scrollable =true ;
--var jquery     = true;  
+-var scrollable = true;
+
 include ../../components/mixin    
 
 doctype html
@@ -31,7 +31,7 @@ html(lang='en')
                     .container-fluid
                         .row
                             .col-xl-6
-                                .card
+                                .card.scroll_1
                                     .card-header
                                         h3.mb-0 Custom Scrollbar 
                                         p.mt-1.mb-0
@@ -40,36 +40,37 @@ html(lang='en')
                                             | and   
                                             code .scroll-demo  
                                             | through design scrollbar.    
-                                    .card-body 
-                                        .vertical-scroll.scroll-demo    
-                                            h5.pb-2.f-w-600 Custom Scrollbar 
-                                            p
-                                                | I'm quite interested in learning more about 
-                                                em.text-danger custom scrollbars
-                                                |  because they are becoming more and more common.
-                                            .scrollbar-images
-                                                img.img-fluid(src="../assets/images/banner/1.jpg", alt="banner")
-                                            p
-                                                | There are various justifications for customizing a scrollbar. For instance, the default scrollbar can cause an app's user interface to look inconsistent across various operating systems. In this case, having a single style is helpful.
-                                            p 
-                                                | I never had the opportunity to learn about CSS scrollbar customization, but I have always been interested in doing so. I'll take the chance to learn more about them and share my trip in this essay.
-                                            p.mb-0
-                                                | One crucial point to remember is that, depending on the design, a scrollbar may operate either 
-                                                em.text-danger horizontally or vertically
-                                                |  . Additionally, it might alter when you work on a website that is global and operates in both left-to-right and right-to-left orientations.
-                            .col-xl-6
-                                .card 
+                                    .card-body  
+                                        .scroll-bar
+                                            .px-3(data-simplebar='' style='max-height: 287px;')
+                                                //- .vertical-scroll.scroll-demo    
+                                                h5.pb-2.f-w-600 Custom Scrollbar 
+                                                p
+                                                    | I'm quite interested in learning more about 
+                                                    em.text-danger custom scrollbars
+                                                    |  because they are becoming more and more common.
+                                                .scrollbar-images
+                                                    img.img-fluid(src="../assets/images/banner/1.jpg", alt="banner")
+                                                p
+                                                    | There are various justifications for customizing a scrollbar. For instance, the default scrollbar can cause an app's user interface to look inconsistent across various operating systems. In this case, having a single style is helpful.
+                                                p 
+                                                    | I never had the opportunity to learn about CSS scrollbar customization, but I have always been interested in doing so. I'll take the chance to learn more about them and share my trip in this essay.
+                                                p.mb-0
+                                                    | One crucial point to remember is that, depending on the design, a scrollbar may operate either 
+                                                    em.text-danger horizontally or vertically
+                                                    |  . Additionally, it might alter when you work on a website that is global and operates in both left-to-right and right-to-left orientations.
+                            .col-xl-6 
+                                .card.scroll_2 
                                     .card-header
-                                        h3 Small Size Scrollbar
+                                        h3 RTL Direction
                                         p.mt-1.mb-0
                                             | Use the 
                                             code .scrollbar-margins
                                             | through small scroll and image is draggable.
                                     .card-body
-                                        .scroll-bar-wrap
-                                            .scrollbar-margins.large-margin.scroll-demo.pe-0
-                                                .margin-scrollbar
-                                                    h5.pb-2.f-w-600 Solution for Business Transformation
+                                        #simplebar_2.scroll-bar
+                                            .px-3(data-simplebar='' data-simplebar-direction='rtl' style='max-height: 287px;')
+                                                h5.pb-2.f-w-600 Solution for Business Transformation
                                                 p
                                                     | The Business Transformation Solution programme is a  
                                                     em.text-danger multi-level engagement program
@@ -80,9 +81,9 @@ html(lang='en')
                                                     em.text-danger Business Management model
                                                     |  , "Business Foundation & Management", which was tried and true for Indian business conditions while drawing inspiration from other successful global SME Business Management techniques.
                             .col-xl-4.col-md-6
-                                .card
+                                .card.scroll_3
                                     .card-header
-                                        h4 Badges Scrollbar
+                                        h3 Badges Scrollbar
                                         p.mt-1.mb-0     
                                             | Use the
                                             code .badge 
@@ -90,48 +91,49 @@ html(lang='en')
                                             code .vertical-scroll 
                                             | used as vertical scroll.            
                                     .card-body                   
-                                        .vertical-scroll.scroll-demo.scroll-b-none
-                                            ol.list-group.list-group-numbered.scroll-rtl
-                                                li.list-group-item.d-flex.align-items-start.flex-wrap
-                                                    .ms-2.me-auto
-                                                        | Stella Nowland
-                                                    span.badge.bg-warning.rounded-pill.p-2 Freelance
-                                                li.list-group-item.d-flex.align-items-start.flex-wrap
-                                                    .ms-2.me-auto
-                                                        | Lola Stanford
-                                                    span.badge.bg-danger.text-white.rounded-pill.p-2 Issue
-                                                li.list-group-item.d-flex.align-items-start.flex-wrap
-                                                    .ms-2.me-auto
-                                                        | Caitlin Coungeau
-                                                    span.badge.bg-primary.text-white.rounded-pill.p-2 Social
-                                                li.list-group-item.d-flex.align-items-start.flex-wrap
-                                                    .ms-2.me-auto
-                                                        | Graciela W. McClaran
-                                                    span.badge.bg-danger.text-white.rounded-pill.p-2 Issue  
-                                                li.list-group-item.d-flex.align-item-start.flex-wrap 
-                                                    .ms-2.me-auto 
-                                                        | Derek T. Aldridge
-                                                    span.badge.bg-warning.text-white.rounded-pill.p-2 Freelance
-                                                li.list-group-item.d-flex.align-item-start.flex-wrap 
-                                                    .ms-2.me-auto 
-                                                        | Annie A. Riley 
-                                                    span.badge.bg-primary.text-white.rounded-pill.p-2 Social
-                                                li.list-group-item.d-flex.align-items-start.flex-wrap
-                                                    .ms-2.me-auto 
-                                                        | Hana J.Boyd 
-                                                    span.badge.bg-danger.text-white.rounded-pill.p-2 Issue 
-                                                li.list-group-item.d-flex.align-item-start.flex-wrap
-                                                    .ms-2.me-auto 
-                                                        | Karen R. pryce 
-                                                    span.badge.bg-warning.texy-white.rounded-pill.p-2 Freelance
-                                                li.list-group-item.d-flex.justify-content-beetwee.flex-wrap 
-                                                    .ms-2.me-auto 
-                                                        | Cordie C. Pope
-                                                    span.badge.bg-primary.text-white.rounded-pill.p-2 Social 
+                                        .scroll-bar
+                                            .px-3(data-simplebar='' style='max-height: 287px;')
+                                                ol.list-group.list-group-numbered.scroll-rtl
+                                                    li.list-group-item.d-flex.align-items-start.flex-wrap
+                                                        .ms-2.me-auto
+                                                            | Stella Nowland
+                                                        span.badge.bg-warning.rounded-pill.p-2 Freelance
+                                                    li.list-group-item.d-flex.align-items-start.flex-wrap
+                                                        .ms-2.me-auto
+                                                            | Lola Stanford
+                                                        span.badge.bg-danger.text-white.rounded-pill.p-2 Issue
+                                                    li.list-group-item.d-flex.align-items-start.flex-wrap
+                                                        .ms-2.me-auto
+                                                            | Caitlin Coungeau
+                                                        span.badge.bg-primary.text-white.rounded-pill.p-2 Social
+                                                    li.list-group-item.d-flex.align-items-start.flex-wrap
+                                                        .ms-2.me-auto
+                                                            | Graciela W. McClaran
+                                                        span.badge.bg-danger.text-white.rounded-pill.p-2 Issue  
+                                                    li.list-group-item.d-flex.align-item-start.flex-wrap 
+                                                        .ms-2.me-auto 
+                                                            | Derek T. Aldridge
+                                                        span.badge.bg-warning.text-white.rounded-pill.p-2 Freelance
+                                                    li.list-group-item.d-flex.align-item-start.flex-wrap 
+                                                        .ms-2.me-auto 
+                                                            | Annie A. Riley 
+                                                        span.badge.bg-primary.text-white.rounded-pill.p-2 Social
+                                                    li.list-group-item.d-flex.align-items-start.flex-wrap
+                                                        .ms-2.me-auto 
+                                                            | Hana J.Boyd 
+                                                        span.badge.bg-danger.text-white.rounded-pill.p-2 Issue 
+                                                    li.list-group-item.d-flex.align-item-start.flex-wrap
+                                                        .ms-2.me-auto 
+                                                            | Karen R. pryce 
+                                                        span.badge.bg-warning.texy-white.rounded-pill.p-2 Freelance
+                                                    li.list-group-item.d-flex.justify-content-beetwee.flex-wrap 
+                                                        .ms-2.me-auto 
+                                                            | Cordie C. Pope
+                                                        span.badge.bg-primary.text-white.rounded-pill.p-2 Social 
                             .col-xl-4.col-md-6
-                                .card
+                                .card.scroll_4
                                     .card-header   
-                                        h4 Profile Scrollable
+                                        h3 Profile Scrollable
                                         p.mt-1.mb-0  
                                             | Use the
                                             code .list-group-item 
@@ -139,36 +141,37 @@ html(lang='en')
                                             code .vertical-scroll 
                                             | .
                                     .card-body
-                                        .vertical-scroll.scroll-demo.scroll-b-none
-                                            .list-group 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
-                                                    img.rounded-circle(src='../assets/images/user/3.png', alt='user')
-                                                    | Gloria D. Acheson 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
-                                                    img.rounded-circle(src='../assets/images/user/2.jpg', alt='user')
-                                                    |  Sharon C. Obrien
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
-                                                    img.rounded-circle(src='../assets/images/user/5.jpg', alt='user')
-                                                    | Bryan A. Owens 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='javascripy:void(0)')
-                                                    img.rounded-circle(src='../assets/images/user/12.png', alt='user')
-                                                    | Ronald M.Enger 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
-                                                    img.rounded-circle(src='../assets/images/user/14.png', alt='user')
-                                                    | Herbert A. Clary
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
-                                                    img.rounded-circle(src='../assets/images/user/6.jpg', alt='user')
-                                                    | Dino A. Cannon 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
-                                                    img.rounded-circle(src='../assets/images/user/3.jpg', alt='user')
-                                                    | Danny A. McLean     
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
-                                                    img.rounded-circle(src='../assets/images/user/2.jpg', alt='user')
-                                                    | Betty K. Curtis 
+                                        .scroll-bar
+                                            .px-3(data-simplebar='' style='max-height: 287px;')
+                                                .list-group 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
+                                                        img.rounded-circle(src='../assets/images/user/3.png', alt='user')
+                                                        | Gloria D. Acheson 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
+                                                        img.rounded-circle(src='../assets/images/user/2.jpg', alt='user')
+                                                        |  Sharon C. Obrien
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
+                                                        img.rounded-circle(src='../assets/images/user/5.jpg', alt='user')
+                                                        | Bryan A. Owens 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='javascripy:void(0)')
+                                                        img.rounded-circle(src='../assets/images/user/12.png', alt='user')
+                                                        | Ronald M.Enger 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
+                                                        img.rounded-circle(src='../assets/images/user/14.png', alt='user')
+                                                        | Herbert A. Clary
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
+                                                        img.rounded-circle(src='../assets/images/user/6.jpg', alt='user')
+                                                        | Dino A. Cannon 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
+                                                        img.rounded-circle(src='../assets/images/user/3.jpg', alt='user')
+                                                        | Danny A. McLean     
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='javascript:void(0)')
+                                                        img.rounded-circle(src='../assets/images/user/2.jpg', alt='user')
+                                                        | Betty K. Curtis 
                             .col-xl-4.col-md-12    
-                                .card
+                                .card.scroll_5 
                                     .card-header
-                                        h4 Scrollable Content
+                                        h3 Scrollable Content
                                         p.mt-1.mb-0 
                                             | Use the 
                                             code .list-group-item
@@ -176,105 +179,107 @@ html(lang='en')
                                             code .vertical-scroll 
                                             | .  
                                     .card-body 
-                                        .vertical-scroll.scroll-demo.scroll-b-none                                            
-                                            .list-group.main-lists-content                                                  
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='#' aria-current='true')
-                                                    .list-wrapper.gap-0
-                                                        img.list-img(src="../assets/images/user/9.jpg", alt="profile") 
-                                                        .list-content 
-                                                            h6 Molly Boake 
-                                                            p Molly@Boake.com
-                                                            small 5 days to 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='#')
-                                                    .list-wrapper.gap-0
-                                                        img.list-img(src="../assets/images/user/10.jpg", alt="profile")
-                                                        .list-content 
-                                                            h6 Grabrielle Fahay 
-                                                            p Gabrielle.com
-                                                            small.text-muted 10 days ago 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='#')
-                                                    .list-wrapper.gap-0 
-                                                        img.list-img(src="../assets/images/user/2.jpg", alt="profile")
-                                                        .list-content
-                                                            h6 Lucinda Moseley
-                                                            p Lucinda@Moseley.us
-                                                            small.text-muted 3 days ago
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='#') 
-                                                    .list-wrapper.gap-0 
-                                                        img.list-img(src="../assets/images/user/12.png", alt="profile")
-                                                        .list-content 
-                                                            h6 Francis K. Henriques 
-                                                            p FrancisK.us
-                                                            small.text-muted 2 days ago
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='#')
-                                                    .list-wrapper.gap-0 
-                                                        img.list-img(src="../assets/images/user/14.png", alt="profile") 
-                                                        .list-content 
-                                                            h6 Jose A. Seay
-                                                            p JoseASeay.com
-                                                            small.text-muted 15 days ago 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='#')
-                                                    .list-wrapper.gap-0
-                                                        img.list-img(src="../assets/images/user/3.jpg", alt="profile")
-                                                        .list-content 
-                                                            h6 Phil F. Cunningham 
-                                                            p PhilF.com
-                                                            small.text-muted 6 days ago 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='#')
-                                                    .list-wrapper.gap-0 
-                                                        img.list-img(src="../assets/images/user/7.jpg", alt="profile")
-                                                        .list-content 
-                                                            h6 Richard E. Johnson 
-                                                            p Richard.us
-                                                            small.text-muted 20 days ago 
-                                                a.list-group-item.list-group-item-action.list-hover-primary(href='#')
-                                                    .list-wrapper.gap-0 
-                                                        img.list-img(src="../assets/images/user/2.png" alt="profile")
-                                                        .list-content 
-                                                            h6 Lawrence L. Nash 
-                                                            p Lawrence.com
-                                                            small.text-muted 8 days ago  
+                                        .scroll-bar
+                                            .px-3(data-simplebar='' style='max-height: 287px;')                                          
+                                                .list-group                                                 
+                                                    a.list-group-item.list-group-item-action.active.list-hover-primary(href='#' aria-current='true')
+                                                        .list-wrapper.gap-0
+                                                            img.list-img(src="../assets/images/user/9.jpg", alt="profile") 
+                                                            .list-content 
+                                                                h6 Molly Boake 
+                                                                p Molly@Boake.com
+                                                                small 5 days to 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                        .list-wrapper.gap-0
+                                                            img.list-img(src="../assets/images/user/10.jpg", alt="profile")
+                                                            .list-content 
+                                                                h6 Grabrielle Fahay 
+                                                                p Gabrielle.com
+                                                                small.text-muted 10 days ago 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                        .list-wrapper.gap-0 
+                                                            img.list-img(src="../assets/images/user/2.jpg", alt="profile")
+                                                            .list-content
+                                                                h6 Lucinda Moseley
+                                                                p Lucinda@Moseley.us
+                                                                small.text-muted 3 days ago
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='#') 
+                                                        .list-wrapper.gap-0 
+                                                            img.list-img(src="../assets/images/user/12.png", alt="profile")
+                                                            .list-content 
+                                                                h6 Francis K. Henriques 
+                                                                p FrancisK.us
+                                                                small.text-muted 2 days ago
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                        .list-wrapper.gap-0 
+                                                            img.list-img(src="../assets/images/user/14.png", alt="profile") 
+                                                            .list-content 
+                                                                h6 Jose A. Seay
+                                                                p JoseASeay.com
+                                                                small.text-muted 15 days ago 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                        .list-wrapper.gap-0
+                                                            img.list-img(src="../assets/images/user/3.jpg", alt="profile")
+                                                            .list-content 
+                                                                h6 Phil F. Cunningham 
+                                                                p PhilF.com
+                                                                small.text-muted 6 days ago 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                        .list-wrapper.gap-0 
+                                                            img.list-img(src="../assets/images/user/7.jpg", alt="profile")
+                                                            .list-content 
+                                                                h6 Richard E. Johnson 
+                                                                p Richard.us
+                                                                small.text-muted 20 days ago 
+                                                    a.list-group-item.list-group-item-action.list-hover-primary(href='#')
+                                                        .list-wrapper.gap-0 
+                                                            img.list-img(src="../assets/images/user/2.png" alt="profile")
+                                                            .list-content 
+                                                                h6 Lawrence L. Nash 
+                                                                p Lawrence.com
+                                                                small.text-muted 8 days ago  
                             .col-xl-6
-                                .card
+                                .card.scroll_6
                                     .card-header
-                                        h4 Horizontal Scrollbar 
+                                        h3 Horizontal Scrollbar 
                                         p.mt-1.mb-0
                                             | Use the
                                             code .horizontal-scroll 
                                             | through move content horizontally.
                                     .card-body
-                                        .horizontal-scroll.scroll-demo
-                                            .horz-scroll-content
-                                                .row
-                                                    .col-2 
-                                                        .horizontal-img
-                                                            img.img-fluid(src="../assets/images/scrollbar/fashion1.jpg", alt="girl")
-                                                    .col-2 
-                                                        .horizontal-img
-                                                            img.img-fluid(src="../assets/images/scrollbar/fashion2.jpg", alt="girl")    
-                                                    .col-2 
-                                                        .horizontal-img
-                                                            img.img-fluid(src="../assets/images/scrollbar/fashion3.jpg", alt="girl")
-                                                    .col-2 
-                                                        .horizontal-img 
-                                                            img.img-fluid(src="../assets/images/scrollbar/fashion4.jpg", alt="girl")
-                                                    .col-2 
-                                                        .horizontal-img 
-                                                            img.img-fluid(src="../assets/images/scrollbar/fashion5.jpg", alt="girl")   
-                                                    .col-2 
-                                                        .horizontal-img 
-                                                            img.img-fluid(src="../assets/images/scrollbar/fashion6.jpg", alt="girl")                 
+                                        #simplebar_6.scroll-bar 
+                                            div.demo-x-axis(data-simplebar='' style='height: 100%; width: 100%;')
+                                                .horz-scroll-content
+                                                    .row
+                                                        .col-2 
+                                                            .horizontal-img
+                                                                img.img-fluid(src="../assets/images/scrollbar/fashion1.jpg", alt="girl")
+                                                        .col-2 
+                                                            .horizontal-img
+                                                                img.img-fluid(src="../assets/images/scrollbar/fashion2.jpg", alt="girl")    
+                                                        .col-2 
+                                                            .horizontal-img
+                                                                img.img-fluid(src="../assets/images/scrollbar/fashion3.jpg", alt="girl")
+                                                        .col-2 
+                                                            .horizontal-img 
+                                                                img.img-fluid(src="../assets/images/scrollbar/fashion4.jpg", alt="girl")
+                                                        .col-2 
+                                                            .horizontal-img 
+                                                                img.img-fluid(src="../assets/images/scrollbar/fashion5.jpg", alt="girl")   
+                                                        .col-2 
+                                                            .horizontal-img 
+                                                                img.img-fluid(src="../assets/images/scrollbar/fashion6.jpg", alt="girl")                 
                             .col-xl-6
-                                .card
+                                .card.scroll_7
                                     .card-header
-                                        h4 Both Side Visible Scrollbar
+                                        h3 Both Side Visible Scrollbar
                                         p.mt-1.mb-0 
                                             | Use the 
                                             code .visible-scroll 
                                             | through visible both side scrollbar.
                                     .card-body
-                                        .scroll-bar-wrap
-                                            .visible-scroll.always-visible.scroll-demo
+                                        #simplebar_7.scroll-bar
+                                            div(data-simplebar='' data-simplebar-auto-hide='false' style='height: 100%; width: 100%;')
                                                 .horz-scroll-content
                                                     .row
                                                         .col-sm-3

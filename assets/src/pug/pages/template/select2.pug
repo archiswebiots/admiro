@@ -1,6 +1,6 @@
 -var sidebar    = true;
-- var page_select2          = true;
-- var select2_options       = true; 
+- var page_select3  = true;
+- var select2_options = true;
 
 include ../../components/mixin
 
@@ -17,10 +17,10 @@ html(lang='en')
                     .container-fluid
                         .page-title
                             .row
-                                .col-6
+                                .col-sm-6.col-12
                                     h2
                                         | Datepicker
-                                .col-6
+                                .col-sm-6.col-12
                                     ol.breadcrumb
                                         li.breadcrumb-item
                                             a(href='index.html')
@@ -39,15 +39,82 @@ html(lang='en')
                                             p.mt-1.mb-0 
                                                 | Use the tagify plugin for drag and sort options available.
                                         .card-body 
-                                            .card-body 
-                                                form.row.g-3
-                                                    .col-xl-3.col-sm-6
-                                                        input.selectMode.alert-light-primary(name='tags-select-mode' placeholder='Please select')
-                                                    .col-xl-3.col-sm-6
-                                                        input.selectMode.alert-light-secondary(name='tags-select-value-mode' placeholder='Please select')
-                                                    .col-xl-3.col-sm-6
-                                                        input.selectMode.alert-light-info(name='tags-select-v-mode' placeholder='Please select')
-                                                    .col-xl-3.col-sm-6
-                                                        input.selectMode.alert-light-warning(name='tags-s-value-mode' placeholder='Please select')
+                                            form.row.g-3
+                                                .col-xl-3.col-sm-6
+                                                    input.selectMode.alert-light-primary(name='tags-select-mode' placeholder='Please select')
+                                                .col-xl-3.col-sm-6
+                                                    input.selectMode.alert-light-secondary(name='tags-select-value-mode' placeholder='Please select')
+                                                .col-xl-3.col-sm-6
+                                                    input.selectMode.alert-light-info(name='tags-select-v-mode' placeholder='Please select')
+                                                .col-xl-3.col-sm-6
+                                                    input.selectMode.alert-light-warning(name='tags-s-value-mode' placeholder='Please select')
+                                .col-sm-6
+                                    .card 
+                                        .card-header
+                                            h4 Default select
+                                            p.mt-1.mb-0 
+                                                | Use the tagify plugin for drag and sort options available.
+                                        .card-body 
+                                            form
+                                                input(name='basic' value='tag1, tag2, tag3, tag4 autofocus')
+                                .col-sm-6
+                                    .card 
+                                        .card-header
+                                            h4 Random suggestions
+                                            p.mt-1.mb-0 
+                                                | Use the tagify plugin for drag and sort options available.
+                                        .card-body 
+                                            form
+                                                input.some_class_name(name='input-custom-dropdown' placeholder='write some tags' value='tivo, roxo, sheltos, viho, zeta, koho')
+                                .col-sm-6 
+                                    .card 
+                                        .card-header
+                                            h4 Colors select options
+                                            p.mt-1.mb-0 
+                                                | Use the tagify plugin for drag and sort options available.
+                                        .card-body 
+                                            form
+                                                input(name='tags3' value='[{"value":"point"}, {"value":"soft"}, {"value":"horse"}, {"value":"flood"}, {"value":"asset"}]' pattern='^[A-Za-z_✲ ]{1,15}$')
+                                .col-sm-6
+                                    .card 
+                                        .card-header
+                                            h4 Flags selection
+                                            p.mt-1.mb-0 
+                                                | Use the tagify plugin for drag and sort options available.
+                                        .card-body
+                                            form
+                                                input.countries(name='tags3-1' placeholder='Try to add tags from the list')
+                                .col-md-4.col-md-6
+                                    .card 
+                                        .card-header
+                                            h4 Readonly options
+                                            p.mt-1.mb-0 
+                                                | Use the tagify plugin for drag and sort options available.
+                                        .card-body 
+                                            form
+                                                input(name='tags4' readonly='' value='tag1, tag 2, another tag')
+                                .col-md-4.col-md-6
+                                    .card 
+                                        .card-header
+                                            h4 Read and write options
+                                            p.mt-1.mb-0 
+                                                | Use the tagify plugin for drag and sort options available.
+                                        .card-body  
+                                            form
+                                                input.readonlyMix(name='tags-readonly-mix' placeholder='Type something' value='[\
+                                                {\
+                                                "value"    : "foo",\
+                                                "readonly" : true,\
+                                                "title"    : "read-only tag"\
+                                                },\
+                                                {\
+                                                "value"    : "bar"\
+                                                },\
+                                                {\
+                                                "value"    : "Locked tag",\
+                                                "readonly" : true,\
+                                                "title"    : "Another readonly tag"\
+                                                }\
+                                                ]')
                 include ../../components/footer
         include ../../components/footer-files

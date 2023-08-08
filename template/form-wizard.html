@@ -328,9 +328,7 @@
                   <li> <a href="switch.html">Switch </a></li>
                   <li> <a href="range-slider.html">Range slider</a></li>
                   <li> <a href="timeline.html">Timeline</a></li>
-                  <li> <a href="touchspin.html">Touchspin</a></li>
                   <li> <a href="tree.html">Tree view </a></li>
-                  <li> <a href="typehead.html">Typehead   </a></li>
                   <li> <a href="dragable-card.html">Dragable Card </a></li>
                 </ul>
               </li>
@@ -359,7 +357,33 @@
                   <h6 class="f-w-600">Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="apex_chart.html">Apex charts</a></li>
-                  <li> <a href="chartist_chart.html">Chartist chart </a></li>
+                  <li> <a href="chartist_chart.html">Chartist chart</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h5 class="sidebar-title pt-3 f-w-700">Tables & Forms</h5>
+                </div>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Image icli"></i>
+                  <h6 class="f-w-600">form-control </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li> <a href="base-input.html">Base input</a></li>
+                  <li> <a href="form-validation.html">Form validation</a></li>
+                  <li> <a href="radio-checkbox-control.html">Checkbox & Radio </a></li>
+                  <li> <a href="input-group.html">Input group </a></li>
+                  <li> <a href="input-mask">Input mask </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Image icli"></i>
+                  <h6 class="f-w-600">Form Widgest  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="datepicker.html">Datepicker</a></li>
+                  <li> <a href="touchspin.html">Touchspin</a></li>
+                  <li> <a href="select2.html">Select2 </a></li>
+                  <li> <a href="switch.html">Switch </a></li>
+                  <li> <a href="typehead.html">Typehead </a></li>
+                  <li> <a href="clipboard.html">Clipboard</a></li>
                 </ul>
               </li>
               <li class="sidebar-main-title">
@@ -406,10 +430,10 @@
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <h2>Form Wizard 1</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli"></i></a></li>
                     <li class="breadcrumb-item">Form Layout</li>
@@ -430,64 +454,66 @@
                   </div>
                   <div class="card-body basic-wizard important-validation">
                     <div class="stepper-horizontal" id="stepper1">
-                      <div class="stepper step editing" id="stepper-one">
+                      <div class="stepper-one stepper step editing active">
                         <div class="step-circle"><span>1</span></div>
                         <div class="step-title">Basic Info  </div>
                         <div class="step-bar-left"></div>
                         <div class="step-bar-right"></div>
                       </div>
-                      <div class="step" id="stepper-two">
+                      <div class="stepper-two step">
                         <div class="step-circle"><span>2</span></div>
                         <div class="step-title">Cart Info</div>
                         <div class="step-bar-left"></div>
                         <div class="step-bar-right"></div>
                       </div>
-                      <div class="step" id="stepper-three">
+                      <div class="stepper-three step">
                         <div class="step-circle"><span>3</span></div>
                         <div class="step-title">Feedback</div>
                         <div class="step-bar-left"></div>
                         <div class="step-bar-right"></div>
                       </div>
-                      <div class="step" id="stepper-four">
+                      <div class="stepper-four step">
                         <div class="step-circle"><span>4</span></div>
                         <div class="step-title">Finish</div>
                         <div class="step-bar-left"></div>
                         <div class="step-bar-right"></div>
                       </div>
                     </div>
-                    <form class="row g-3 basic-form needs-validation" id="stepper-one" novalidate="">
-                      <div class="col-6">       
-                        <label class="form-label" for="email-basic-wizard">Email<span class="text-danger">*</span></label>
-                        <input class="form-control" id="email-basic-wizard" type="email" required="" placeholder="admiro@gmail.com">
-                        <div class="invalid-feedback">Please enter your valid email</div>
-                        <div class="valid-feedback">
-                           Looks's Good!</div>
-                      </div>
-                      <div class="col-6">
-                        <label class="form-label" for="firstnamewizard">First Name<span class="text-danger">*</span></label>
-                        <input class="form-control" id="firstnamewizard" type="text" required="" placeholder="Enter your name">
-                        <div class="invalid-feedback">Please enter your valid name</div>
-                        <div class="valid-feedback">
-                           Looks's Good!</div>
-                      </div>
-                      <div class="col-12">
-                        <label class="col-sm-12 form-label" for="passwordwizard">Password<span class="text-danger">*</span></label>
-                        <input class="form-control" id="passwordwizard" type="password" placeholder="Enter password" required="">
-                        <div class="invalid-feedback">Please enter your valid password</div>
-                      </div>
-                      <div class="col-12">
-                        <label class="col-sm-12 form-label" for="confirmpasswordwizard">Confirm Password<span class="text-danger">*</span></label>
-                        <input class="form-control" id="confirmpasswordwizard" type="password" placeholder="Enter confirm password" required="">
-                        <div class="invalid-feedback">Please enter your valid password</div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-check">
-                          <input class="form-check-input" id="inputcheckwizard" type="checkbox" value="" required="">
-                          <label class="form-check-label mb-0" for="inputcheckwizard">Agree to terms and conditions</label>
+                    <div id="msform">
+                      <form class="stepper-one row g-3 needs-validation custom-input" novalidate="">
+                        <div class="col-6">       
+                          <label class="form-label" for="email-basic-wizard">Email<span class="text-danger">*</span></label>
+                          <input class="form-control" id="email-basic-wizard" type="email" required="" placeholder="admiro@gmail.com">
+                          <div class="invalid-feedback">Please enter your valid email</div>
+                          <div class="valid-feedback">
+                             Looks's Good!</div>
                         </div>
-                      </div>
-                    </form>
-                    <form class="row g-3 needs-validation d-none" id="stepper-two" novalidate="">
+                        <div class="col-6">
+                          <label class="form-label" for="firstnamewizard">First Name<span class="text-danger">*</span></label>
+                          <input class="form-control" id="firstnamewizard" type="text" required="" placeholder="Enter your name">
+                          <div class="invalid-feedback">Please enter your valid name</div>
+                          <div class="valid-feedback">
+                             Looks's Good!</div>
+                        </div>
+                        <div class="col-12">
+                          <label class="col-sm-12 form-label" for="passwordwizard">Password<span class="text-danger">*</span></label>
+                          <input class="form-control" id="passwordwizard" type="password" placeholder="Enter password" required="">
+                          <div class="invalid-feedback">Please enter your valid password</div>
+                        </div>
+                        <div class="col-12">
+                          <label class="col-sm-12 form-label" for="confirmpasswordwizard">Confirm Password<span class="text-danger">*</span></label>
+                          <input class="form-control" id="confirmpasswordwizard" type="password" placeholder="Enter confirm password" required="">
+                          <div class="invalid-feedback">Please enter your valid password</div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" id="inputcheckwizard" type="checkbox" value="" required="">
+                            <label class="form-check-label mb-0" for="inputcheckwizard">Agree to terms and conditions</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <form class="stepper-two row g-3 needs-validation custom-input" novalidate="">
                       <div class="col-md-12"> 
                         <label class="form-label" for="placeholdername">Placeholder Name </label>
                         <input class="form-control" id="placeholdername" type="text" required="" placeholder="Placeholder name">
@@ -526,7 +552,7 @@
                         </div>
                       </div>
                     </form>
-                    <form class="row g-3 needs-validation d-none" id="stepper-three" novalidate="">
+                    <form class="stepper-three row g-3 needs-validation custom-input" novalidate="">
                       <div class="col-6">
                         <label class="form-label" for="email-basic">LinkedIn<span class="text-danger">*</span></label>
                         <input class="form-control" id="email-basic" type="url" required="" placeholder="https://linkededin.com/admiro">
@@ -564,7 +590,7 @@
                         </div>
                       </div>
                     </form>
-                    <form class="row g-3 needs-validation d-none" id="stepper-four" novalidate="">
+                    <form class="stepper-four row g-3 needs-validation" novalidate="">
                       <div class="col-12 m-0">
                         <div class="successful-form"><img class="img-fluid" src="../assets/images/gif/success/successful.gif" alt="successful">
                           <h6>Congratulations </h6>
@@ -572,9 +598,9 @@
                         </div>
                       </div>
                     </form>
-                    <div class="wizard-footer d-flex gap-2 justify-content-end">
-                      <button class="btn disabled text-black"> Back</button>
-                      <button class="btn btn-primary" onclick="nextStep()">Next         </button>
+                    <div class="wizard-footer d-flex gap-2 justify-content-end"> 
+                      <button class="btn disabled text-black" id="backbtn" onclick="backStep()"> Back</button>
+                      <button class="btn btn-primary" id="nextbtn" onclick="nextStep()">Next       </button>
                     </div>
                   </div>
                 </div>
@@ -1341,14 +1367,11 @@
     <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/vendors/font-awesome/fontawesome-min.js"></script>
     <script src="../assets/js/sidebar.js"></script>
-    <!-- form-wizard-->
-    <script src="../assets/js/form-wizard/form-wizard-five.js"></script>
+    <script src="../assets/js/form-wizard/image-upload.js"></script>
     <script src="../assets/js/form-wizard/form-wizard.js"></script>
     <!-- image upload-->
     <script src="../assets/js/form-wizard/image-upload.js"></script>
     <!-- iconCopy -->
-    <!-- jquery-->
-    <script src="../assets/js/vendors/jquery/jquery.min.js"></script>
     <!-- custom script -->
     <script src="../assets/js/script.js"></script>
   </body>
