@@ -1,5 +1,5 @@
 // Tagify JS
-"use strict";
+("use strict");
 // 1. Basic Select
 
 // The DOM element you wish to replace with Tagify

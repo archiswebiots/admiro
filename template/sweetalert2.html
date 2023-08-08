@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="../assets/css/bulk-style.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/sweetalert2.css">
     <!-- App css -->
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
@@ -331,9 +330,7 @@
                   <li> <a href="switch.html">Switch </a></li>
                   <li> <a href="range-slider.html">Range slider</a></li>
                   <li> <a href="timeline.html">Timeline</a></li>
-                  <li> <a href="touchspin.html">Touchspin</a></li>
                   <li> <a href="tree.html">Tree view </a></li>
-                  <li> <a href="typehead.html">Typehead   </a></li>
                   <li> <a href="dragable-card.html">Dragable Card </a></li>
                 </ul>
               </li>
@@ -362,7 +359,33 @@
                   <h6 class="f-w-600">Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="apex_chart.html">Apex charts</a></li>
-                  <li> <a href="chartist_chart.html">Chartist chart </a></li>
+                  <li> <a href="chartist_chart.html">Chartist chart</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h5 class="sidebar-title pt-3 f-w-700">Tables & Forms</h5>
+                </div>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Image icli"></i>
+                  <h6 class="f-w-600">form-control </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li> <a href="base-input.html">Base input</a></li>
+                  <li> <a href="form-validation.html">Form validation</a></li>
+                  <li> <a href="radio-checkbox-control.html">Checkbox & Radio </a></li>
+                  <li> <a href="input-group.html">Input group </a></li>
+                  <li> <a href="input-mask">Input mask </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Image icli"></i>
+                  <h6 class="f-w-600">Form Widgest  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="datepicker.html">Datepicker</a></li>
+                  <li> <a href="touchspin.html">Touchspin</a></li>
+                  <li> <a href="select2.html">Select2 </a></li>
+                  <li> <a href="switch.html">Switch </a></li>
+                  <li> <a href="typehead.html">Typehead </a></li>
+                  <li> <a href="clipboard.html">Clipboard</a></li>
                 </ul>
               </li>
               <li class="sidebar-main-title">
@@ -409,10 +432,10 @@
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <h2> Sweetalert2</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli"></i></a></li>
                     <li class="breadcrumb-item">Bonus Ui</li>
@@ -425,90 +448,121 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid">   
             <div class="row">
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-6">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Basic Example</h4>
+                    <h3>Basic Example</h3>
                     <p class="mt-1 mb-0">
                            Print the basic message.</p>
                   </div>
                   <div class="card-body">
-                    <button class="btn btn-primary sweet-1" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-1']);">Click it!</button>
+                    <div class="common-flex">
+                      <button class="btn btn-primary sweet-1" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-1']);">Click it!</button>
+                      <button class="btn btn-secondary sweet-2" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-2']);">Title with text!</button>
+                      <button class="btn btn-info text-light sweet-4" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-4']);">Informational</button>
+                      <button class="btn btn-warning text-light sweet-5" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">Warning alert!</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-6">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Title With A Text Under</h4>
+                    <h4>Advance Sweetalert</h4>
                     <p class="mt-1 mb-0">
                        Print the title with text.</p>
                   </div>
                   <div class="card-body">     
-                    <button class="btn btn-secondary sweet-2" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-2']);">Surprise!</button>
+                    <div class="common-flex">
+                      <button class="btn btn-warning text-light sweet-12" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-12']);">Questions state</button>
+                      <button class="btn btn-secondary sweet-13" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-13']);">Toast Alert</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-6">
                 <div class="card"> 
                   <div class="card-header"> 
-                    <h4>Info Alert </h4>
+                    <h3>Unique Sweetalert </h3>
                     <p class="mt-1 mb-0">
                        Print the informational message.</p>
                   </div>
                   <div class="card-body">
-                    <button class="btn btn-info sweet-4 text-white" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-4']);">Informational</button>
+                    <div class="common-flex">
+                      <button class="btn btn-danger sweet-7" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-7']);">Danger mode</button>
+                      <button class="btn btn-warning text-light sweet-6" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-6']);">Animation Alert</button>
+                      <button class="btn btn-primary sweet-14" type="button" onclick="_gaq.push(['_trackEvent', 'sweet-14']);">Timer</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-6">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Warning Alert</h4>
+                    <h3>Direction Sweetalert</h3>
                     <p class="mt-1 mb-0">
                        Warning for imaginary files.  </p>
                   </div>
                   <div class="card-body">
-                    <button class="btn btn-warning sweet-5 text-white" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">Warning</button>
+                    <div class="common-flex">
+                      <button class="btn btn-info text-light sweet-17" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-17']);">Top Left</button>
+                      <button class="btn btn-primary sweet-16" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-16']);">Top Right</button>
+                      <button class="btn btn-secondary sweet-18" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-18']);">Bottom Left</button>
+                      <button class="btn btn-warning text-light sweet-19" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-19']);">Bottom Right</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-12">
                 <div class="card"> 
                   <div class="card-header"> 
-                    <h4>Pikachu Alert</h4>
+                    <h3>Input sweetalert</h3>
                     <p class="mt-1 mb-0">
                        catch the pokeball.</p>
                   </div>
                   <div class="card-body"> 
-                    <button class="btn btn-secondary sweet-12 text-white" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-12']);">Pikachu</button>
+                    <div class="common-flex">
+                      <button class="btn btn-success sweet-22" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-22']);">Text Input</button>
+                      <button class="btn btn-warning text-light sweet-8" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-8']);">Login Email</button>
+                      <button class="btn btn-info text-light sweet-23" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-23']);">URL</button>
+                      <button class="btn btn-danger sweet-24" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-24']);">Password</button>
+                      <button class="btn btn-warning text-light sweet-25" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-25']);">Textarea</button>
+                      <button class="btn btn-primary sweet-26" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-26']);">Select Input</button>
+                      <button class="btn btn-secondary sweet-27" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-27']);">Radio Input</button>
+                      <button class="btn btn-dark sweet-28" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-28']);">Checkbox Input</button>
+                      <button class="btn btn-light font-dark sweet-29" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-29']);">Range</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-3">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Questions Alert </h4>
+                    <h3>Github Avatar</h3>
                     <p class="mt-1 mb-0">
                        Print the questionary and give answers.</p>
                   </div>
                   <div class="card-body">
-                    <button class="btn btn-primary sweet-11" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-11']);">Questions state</button>
+                    <div class="common-flex">
+                      <button class="btn btn-primary sweet-11" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-11']);">Ajax alert</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-3">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Username Alert</h4>
+                    <h3>RTL Support</h3>
                     <p class="mt-1 mb-0">Print the basic sweet-alert</p>
                   </div>
                   <div class="card-body">
-                    <button class="btn btn-secondary sweet-13" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-13']);">Username</button>
+                    <div class="common-flex">
+                      <button class="btn btn-secondary sweet-15" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-1']);">RTL Alert</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-3">
                 <div class="card">
                   <div class="card-header">
                     <h4>Success Message</h4>
@@ -516,52 +570,22 @@
                        Print the success message.</p>
                   </div>
                   <div class="card-body">
-                    <button class="btn btn-success sweet-8" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-8']);">Login successfully</button>
+                    <div class="common-flex">
+                      <button class="btn btn-danger sweet-20" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-20']);">Message Timer</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6">
+              <div class="col-xl-3">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Danger Alert </h4>
+                    <h4>Danger Alert       </h4>
                     <p class="mt-1 mb-0">Print the danger message.  </p>
                   </div>
                   <div class="card-body">
-                    <button class="btn btn-danger sweet-7" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-7']);">Danger mode</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 mb-lg-3">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Warning Mode</h4>
-                    <p class="mt-1 mb-0">
-                       Print the warning message.</p>
-                  </div>
-                  <div class="card-body">
-                    <button class="btn btn-warning sweet-6 text-white" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'example', 'try', 'sweet-6']);">Alert mode</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 mb-lg-3">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Auto Close Timer</h4>
-                    <p class="mt-1 mb-0">A text message with an automatic timer</p>
-                  </div>
-                  <div class="card-body">
-                    <button class="btn btn-primary sweet-14" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'sweet-14']);">Timer </button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 mb-3"> 
-                <div class="card">
-                  <div class="card-header">   
-                    <h4>AJAX Request Movie</h4>
-                    <p class="mt-1 mb-0">Give the movie name & return value.</p>
-                  </div>
-                  <div class="card-body">
-                    <button class="btn btn-secondary sweet-15" type="button" onclick="var _gaq = _gaq || []; _gaq.push(['_trackEvent', 'sweet-15']);">Movie mode</button>
+                    <div class="common-flex">
+                      <button class="btn btn-info text-light sweet-21" type="button" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-21']);">Modal with Images</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -590,12 +614,10 @@
     <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/vendors/font-awesome/fontawesome-min.js"></script>
     <script src="../assets/js/sidebar.js"></script>
-    <!-- sweetalert 2-->
-    <script src="../assets/js/sweet-alert/sweetalert.min.js"></script>
-    <script src="../assets/js/sweet-alert/app.js"></script>
+    <!-- Sweetalert js-->
+    <script src="../assets/js/sweetalert/sweetalert2.min.js"></script>
+    <script src="../assets/js/sweetalert/sweetalert-custom.js"></script>
     <!-- iconCopy -->
-    <!-- jquery-->
-    <script src="../assets/js/vendors/jquery/jquery.min.js"></script>
     <!-- custom script -->
     <script src="../assets/js/script.js"></script>
   </body>

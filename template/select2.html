@@ -24,8 +24,6 @@
     <link rel="stylesheet" href="../assets/css/bulk-style.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/intltelinput.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/tagify.css">
     <!-- App css -->
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
@@ -330,9 +328,7 @@
                   <li> <a href="switch.html">Switch </a></li>
                   <li> <a href="range-slider.html">Range slider</a></li>
                   <li> <a href="timeline.html">Timeline</a></li>
-                  <li> <a href="touchspin.html">Touchspin</a></li>
                   <li> <a href="tree.html">Tree view </a></li>
-                  <li> <a href="typehead.html">Typehead   </a></li>
                   <li> <a href="dragable-card.html">Dragable Card </a></li>
                 </ul>
               </li>
@@ -361,7 +357,33 @@
                   <h6 class="f-w-600">Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="apex_chart.html">Apex charts</a></li>
-                  <li> <a href="chartist_chart.html">Chartist chart </a></li>
+                  <li> <a href="chartist_chart.html">Chartist chart</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h5 class="sidebar-title pt-3 f-w-700">Tables & Forms</h5>
+                </div>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Image icli"></i>
+                  <h6 class="f-w-600">form-control </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li> <a href="base-input.html">Base input</a></li>
+                  <li> <a href="form-validation.html">Form validation</a></li>
+                  <li> <a href="radio-checkbox-control.html">Checkbox & Radio </a></li>
+                  <li> <a href="input-group.html">Input group </a></li>
+                  <li> <a href="input-mask">Input mask </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Image icli"></i>
+                  <h6 class="f-w-600">Form Widgest  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="datepicker.html">Datepicker</a></li>
+                  <li> <a href="touchspin.html">Touchspin</a></li>
+                  <li> <a href="select2.html">Select2 </a></li>
+                  <li> <a href="switch.html">Switch </a></li>
+                  <li> <a href="typehead.html">Typehead </a></li>
+                  <li> <a href="clipboard.html">Clipboard</a></li>
                 </ul>
               </li>
               <li class="sidebar-main-title">
@@ -408,10 +430,10 @@
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <h2>Datepicker</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli"></i></a></li>
                     <li class="breadcrumb-item">Form Widgets</li>
@@ -434,22 +456,104 @@
                          Use the tagify plugin for drag and sort options available.</p>
                     </div>
                     <div class="card-body"> 
-                      <div class="card-body"> 
-                        <form class="row g-3">
-                          <div class="col-xl-3 col-sm-6">
-                            <input class="selectMode alert-light-primary" name="tags-select-mode" placeholder="Please select">
-                          </div>
-                          <div class="col-xl-3 col-sm-6">
-                            <input class="selectMode alert-light-secondary" name="tags-select-value-mode" placeholder="Please select">
-                          </div>
-                          <div class="col-xl-3 col-sm-6">
-                            <input class="selectMode alert-light-info" name="tags-select-v-mode" placeholder="Please select">
-                          </div>
-                          <div class="col-xl-3 col-sm-6">
-                            <input class="selectMode alert-light-warning" name="tags-s-value-mode" placeholder="Please select">
-                          </div>
-                        </form>
-                      </div>
+                      <form class="row g-3">
+                        <div class="col-xl-3 col-sm-6">
+                          <input class="selectMode alert-light-primary" name="tags-select-mode" placeholder="Please select">
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                          <input class="selectMode alert-light-secondary" name="tags-select-value-mode" placeholder="Please select">
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                          <input class="selectMode alert-light-info" name="tags-select-v-mode" placeholder="Please select">
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                          <input class="selectMode alert-light-warning" name="tags-s-value-mode" placeholder="Please select">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card"> 
+                    <div class="card-header">
+                      <h4>Default select</h4>
+                      <p class="mt-1 mb-0">
+                         Use the tagify plugin for drag and sort options available.</p>
+                    </div>
+                    <div class="card-body"> 
+                      <form>
+                        <input name="basic" value="tag1, tag2, tag3, tag4 autofocus">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card"> 
+                    <div class="card-header">
+                      <h4>Random suggestions</h4>
+                      <p class="mt-1 mb-0">
+                         Use the tagify plugin for drag and sort options available.</p>
+                    </div>
+                    <div class="card-body"> 
+                      <form>
+                        <input class="some_class_name" name="input-custom-dropdown" placeholder="write some tags" value="tivo, roxo, sheltos, viho, zeta, koho">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6"> 
+                  <div class="card"> 
+                    <div class="card-header">
+                      <h4>Colors select options</h4>
+                      <p class="mt-1 mb-0">
+                         Use the tagify plugin for drag and sort options available.</p>
+                    </div>
+                    <div class="card-body"> 
+                      <form>
+                        <input name="tags3" value="[{&quot;value&quot;:&quot;point&quot;}, {&quot;value&quot;:&quot;soft&quot;}, {&quot;value&quot;:&quot;horse&quot;}, {&quot;value&quot;:&quot;flood&quot;}, {&quot;value&quot;:&quot;asset&quot;}]" pattern="^[A-Za-z_✲ ]{1,15}$">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card"> 
+                    <div class="card-header">
+                      <h4>Flags selection</h4>
+                      <p class="mt-1 mb-0">
+                         Use the tagify plugin for drag and sort options available.</p>
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <input class="countries" name="tags3-1" placeholder="Try to add tags from the list">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-md-6">
+                  <div class="card"> 
+                    <div class="card-header">
+                      <h4>Readonly options</h4>
+                      <p class="mt-1 mb-0">
+                         Use the tagify plugin for drag and sort options available.</p>
+                    </div>
+                    <div class="card-body"> 
+                      <form>
+                        <input name="tags4" readonly="" value="tag1, tag 2, another tag">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-md-6">
+                  <div class="card"> 
+                    <div class="card-header">
+                      <h4>Read and write options</h4>
+                      <p class="mt-1 mb-0">
+                         Use the tagify plugin for drag and sort options available.</p>
+                    </div>
+                    <div class="card-body"> 
+                      <form>
+                        <input class="readonlyMix" name="tags-readonly-mix" placeholder="Type something" value="[                                                {                                                &quot;value&quot;    : &quot;foo&quot;,                                                &quot;readonly&quot; : true,                                                &quot;title&quot;    : &quot;read-only tag&quot;                                                },                                                {                                                &quot;value&quot;    : &quot;bar&quot;                                                },                                                {                                                &quot;value&quot;    : &quot;Locked tag&quot;,                                                &quot;readonly&quot; : true,                                                &quot;title&quot;    : &quot;Another readonly tag&quot;                                                }                                                ]">
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -479,12 +583,12 @@
     <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/vendors/font-awesome/fontawesome-min.js"></script>
     <script src="../assets/js/sidebar.js"></script>
-    <!-- select 2-->
-    <script src="../assets/js/select2/tagify.js"></script>
-    <script src="../assets/js/select2/tagify.polyfills.min.js"></script>
-    <script src="../assets/js/select2/intltelinput.min.js"></script>
-    <script src="../assets/js/select2/telephone-input.js"></script>
+    <script src="../assets/js/vendors/@yaireo/tagify/dist/tagify.js"></script>
+    <script src="../assets/js/vendors/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
+    <script src="../assets/js/vendors/intl-tel-input/build/js/intlTelInput.min.js"></script>
     <script src="../assets/js/select2/custom-inputsearch.js"></script>
+    <script src="../assets/js/select2/telephone-input.js"></script>
+    <script src="../assets/js/select2/select3-custom.js"></script>
     <!-- iconCopy -->
     <!-- custom script -->
     <script src="../assets/js/script.js"></script>

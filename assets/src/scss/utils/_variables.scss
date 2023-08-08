@@ -78,16 +78,20 @@ body[class='dark-only']{
     --gray-60: 0, 0, 0;
     --border-light-color: 29, 29, 29;
     --light-color: 0, 0, 0;
+    --timline-dot-line: 182, 176, 176;
     
     // bootstrap color     
+    --bs-tertiary-bg: rgba(11, 12, 14, 1);
     --bs-body-bg: rgba(11, 12, 14, 1); 
     --bs-heading-color: rgba(182, 176, 176, 1);
-    --bs-body-color: rgba(182, 176, 176, 1);  
+    --bs-body-color: rgba(182, 176, 176, 1);    
     --bs-border-color: rgba(29, 29, 29, 1);
     --bs-white-rgb: rgba(0, 0, 0, 1);
     --bs-popover-header-bg: rgba(0, 0, 0, 1);
     --bs-secondary-color: rgba(182, 176, 176, 1);
     --bs-toast-header-bg: rgba(0, 0, 0, 1); 
+    --bs-btn-color: rgba(182, 176, 176, 1);
+    --bs-btn-active-color: rgba(182, 176, 176, 1);
     // --bs-list-group-color: rgba(182, 176, 176, 1);
 }
 $body-font: 'Nunito Sans', sans-serif;

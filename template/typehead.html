@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../assets/css/bulk-style.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/choices.js/public/assets/styles/choices.min.css">
     <!-- App css -->
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
@@ -328,9 +329,7 @@
                   <li> <a href="switch.html">Switch </a></li>
                   <li> <a href="range-slider.html">Range slider</a></li>
                   <li> <a href="timeline.html">Timeline</a></li>
-                  <li> <a href="touchspin.html">Touchspin</a></li>
                   <li> <a href="tree.html">Tree view </a></li>
-                  <li> <a href="typehead.html">Typehead   </a></li>
                   <li> <a href="dragable-card.html">Dragable Card </a></li>
                 </ul>
               </li>
@@ -359,7 +358,33 @@
                   <h6 class="f-w-600">Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
                   <li> <a href="apex_chart.html">Apex charts</a></li>
-                  <li> <a href="chartist_chart.html">Chartist chart </a></li>
+                  <li> <a href="chartist_chart.html">Chartist chart</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-main-title">
+                <div>
+                  <h5 class="sidebar-title pt-3 f-w-700">Tables & Forms</h5>
+                </div>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Image icli"></i>
+                  <h6 class="f-w-600">form-control </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu"> 
+                  <li> <a href="base-input.html">Base input</a></li>
+                  <li> <a href="form-validation.html">Form validation</a></li>
+                  <li> <a href="radio-checkbox-control.html">Checkbox & Radio </a></li>
+                  <li> <a href="input-group.html">Input group </a></li>
+                  <li> <a href="input-mask">Input mask </a></li>
+                </ul>
+              </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-links" href="javascript:void(0)"><i class="iconly-Image icli"></i>
+                  <h6 class="f-w-600">Form Widgest  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
+                <ul class="sidebar-submenu">
+                  <li> <a href="datepicker.html">Datepicker</a></li>
+                  <li> <a href="touchspin.html">Touchspin</a></li>
+                  <li> <a href="select2.html">Select2 </a></li>
+                  <li> <a href="switch.html">Switch </a></li>
+                  <li> <a href="typehead.html">Typehead </a></li>
+                  <li> <a href="clipboard.html">Clipboard</a></li>
                 </ul>
               </li>
               <li class="sidebar-main-title">
@@ -406,14 +431,14 @@
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
-                <div class="col-6">
-                  <h2>Switch</h2>
+                <div class="col-sm-6 col-12">
+                  <h2>Typeahead</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli"></i></a></li>
                     <li class="breadcrumb-item">Form Widgets</li>
-                    <li class="breadcrumb-item active">Switch</li>
+                    <li class="breadcrumb-item active">Typehead</li>
                   </ol>
                 </div>
               </div>
@@ -426,32 +451,41 @@
                 <div class="col-sm-12 col-md-6">
                   <div class="card">
                     <div class="card-header">
-                      <h3>Basic Demo</h3>
+                      <h3>Basic typeahead</h3>
                       <p class="mt-1 mb-0">
                           This is the simple demo for Typeahead.</p>
                     </div>
                     <div class="card-body">
                       <div id="the-basics">
-                        <form class="theme-form typehead-form">      
+                        <form class="theme-form">       
                           <div>
-                            <input class="typeahead form-control" type="text" placeholder="States of USA">
+                            <select class="form-control" id="cities" name="cities">
+                              <option value="">Choose a city</option>
+                              <option value="Leeds">Leeds</option>
+                              <option value="Manchester">Manchester</option>
+                              <option value="London">London</option>
+                              <option value="Sheffield">Sheffield</option>
+                              <option value="Newcastle">Newcastle</option>
+                            </select>
                           </div>
                         </form>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6"> 
                   <div class="card">
                     <div class="card-header">
                       <h3>Prefetch</h3>
                       <p class="mt-1 mb-0">Prefetched data is fetched and processed on initialization</p>
                     </div>
                     <div class="card-body">
-                      <div id="prefetch">
-                        <form class="theme-form">
+                      <div id="prefetch">  
+                        <form class="theme-form"> 
                           <div>
-                            <input class="typeahead form-control" type="text" placeholder="Countries">
+                            <select class="form-control" id="choices-single-no-search" name="choices-single-no-search">
+                              <option value="0">Zero</option>
+                            </select>
                           </div>
                         </form>
                       </div>
@@ -461,7 +495,7 @@
                 <div class="col-sm-12 col-md-6">
                   <div class="card">
                     <div class="card-header">
-                      <h3>Bloodhound (Suggestion Engine)</h3>
+                      <h3>Multiple select input</h3>
                       <p class="mt-1 mb-0">
                          Bloodhound offers advanced functionalities such as prefetching and backfilling with remote data.</p>
                     </div>
@@ -469,7 +503,12 @@
                       <div id="bloodhound">
                         <form class="theme-form">
                           <div>
-                            <input class="typeahead form-control" type="text" placeholder="States of USA">
+                            <select class="form-control" id="choices-multiple-remove-button" name="choices-multiple-remove-button" multiple="">
+                              <option value="Choice 1" selected="">India</option>
+                              <option value="Choice 2">USA</option>
+                              <option value="Choice 3">Australia</option>
+                              <option value="Choice 4">UEA</option>
+                            </select>
                           </div>
                         </form>
                       </div>
@@ -479,15 +518,31 @@
                 <div class="col-sm-12 col-md-6">
                   <div class="card">
                     <div class="card-header">
-                      <h3>Remote</h3>
+                      <h3>Select one inputs</h3>
                       <p class="mt-1 mb-0">
                          Remote data is only used when the data provided by local and prefetch is insufficient</p>
                     </div>
                     <div class="card-body">
                       <div id="remote">
-                        <form class="theme-form">
-                          <div>
-                            <input class="typeahead form-control" type="text" placeholder="Choose Option">
+                        <form class="theme-form"> 
+                          <div data-test-hook="scrolling-dropdown">
+                            <select class="form-control" id="choices-scrolling-dropdown" name="choices-scrolling-dropdown">
+                              <option value="Choice 1">Choice 1</option>
+                              <option value="Choice 2">Choice 2</option>
+                              <option value="Choice 3">Choice 3</option>
+                              <option value="Choice 4">Choice 4</option>
+                              <option value="Choice 5">Choice 5</option>
+                              <option value="Choice 6">Choice 6</option>
+                              <option value="Choice 7">Choice 7</option>
+                              <option value="Choice 8">Choice 8</option>
+                              <option value="Choice 9">Choice 9</option>
+                              <option value="Choice 10">Choice 10</option>
+                              <option value="Choice 11">Choice 11</option>
+                              <option value="Choice 12">Choice 12</option>
+                              <option value="Choice 13">Choice 13</option>
+                              <option value="Choice 14">Choice 14</option>
+                              <option value="Choice 15">Choice 15</option>
+                            </select>
                           </div>
                         </form>
                       </div>
@@ -497,51 +552,47 @@
                 <div class="col-sm-12 col-md-6">
                   <div class="card">
                     <div class="card-header">
-                      <h4>Custom Templates</h4>
+                      <h3>Multiple Sections With Headers</h3>
                       <p class="mt-1 mb-0">
                          Custom templates give you full control over how suggestions get rendered</p>
-                    </div>
-                    <div class="card-body">
-                      <div id="custom-templates">
-                        <form class="theme-form">
-                          <div>
-                            <input class="typeahead form-control" type="text" placeholder="Oscar winners">
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3>Multiple Sections with Headers</h3>
-                      <p class="mt-1 mb-0">
-                         Two datasets that are prefetched, stored, and searched on the client. Highlighting is enabled.</p>
                     </div>
                     <div class="card-body">
                       <div id="multiple-datasets">
                         <form class="theme-form">
                           <div>
-                            <input class="typeahead form-control" type="text" placeholder="NBA and NHL teams">
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 mb-lg-3">
-                  <div class="card">
-                    <div class="card-header">
-                      <h3>Scrollable Dropdown Menu </h3>
-                      <p class="mt-1 mb-0">
-                         Dataset shows in scrollable dropdown menu.    </p>
-                    </div>
-                    <div class="card-body"> 
-                      <div id="scrollable-dropdown-menu">
-                        <form class="theme-form">
-                          <div>
-                            <input class="typeahead form-control" type="text" placeholder="Countries">
+                            <select class="form-control" id="choices-multiple-groups" name="choices-multiple-groups" multiple="">
+                              <option value="">Choose a city</option>
+                              <optgroup label="UK">
+                                <option value="London">London</option>
+                                <option value="Manchester">Manchester</option>
+                                <option value="Liverpool">Liverpool</option>
+                              </optgroup>
+                              <optgroup label="FR">
+                                <option value="Paris">Paris</option>
+                                <option value="Lyon">Lyon</option>
+                                <option value="Marseille">Marseille</option>
+                              </optgroup>
+                              <optgroup label="DE" disabled="">
+                                <option value="Hamburg">Hamburg</option>
+                                <option value="Munich">Munich</option>
+                                <option value="Berlin">Berlin</option>
+                              </optgroup>
+                              <optgroup label="US">
+                                <option value="New York">New York</option>
+                                <option value="Washington" disabled="">Washington</option>
+                                <option value="Michigan">Michigan</option>
+                              </optgroup>
+                              <optgroup label="SP">
+                                <option value="Madrid">Madrid</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Malaga">Malaga</option>
+                              </optgroup>
+                              <optgroup label="CA">
+                                <option value="Montreal">Montreal</option>
+                                <option value="Toronto">Toronto</option>
+                                <option value="Vancouver">Vancouver </option>
+                              </optgroup>
+                            </select>
                           </div>
                         </form>
                       </div>
@@ -553,13 +604,20 @@
                     <div class="card-header">
                       <h3>RTL Support</h3>
                       <p class="mt-1 mb-0">
-                         Dataset shows in Right Side.</p>
+                         Two datasets that are prefetched, stored, and searched on the client. Highlighting is enabled.</p>
                     </div>
                     <div class="card-body">
-                      <div id="rtl-support">
+                      <div id="rtl-support"> 
                         <form class="theme-form">
                           <div>
-                            <input class="typeahead form-control" type="text" dir="rtl" placeholder="Countries">
+                            <select class="form-control" id="rtl" name="rtl" dir="rtl">
+                              <option value="">Choose a city</option>
+                              <option value="Leeds">Leeds</option>
+                              <option value="Manchester">Manchester</option>
+                              <option value="London">London</option>
+                              <option value="Sheffield">Sheffield</option>
+                              <option value="Newcastle">Newcastle</option>
+                            </select>
                           </div>
                         </form>
                       </div>
@@ -592,13 +650,10 @@
     <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/vendors/font-awesome/fontawesome-min.js"></script>
     <script src="../assets/js/sidebar.js"></script>
-    <!-- typehead-->
-    <script src="../assets/js/typeahead/handlebars.js"></script>
-    <script src="../assets/js/typeahead/typeahead.bundle.js"></script>
+    <script src="../assets/js/vendors/choices.js/public/assets/scripts/choices.js"></script>
+    <!-- typehead -->
     <script src="../assets/js/typeahead/typeahead.custom.js"></script>
     <!-- iconCopy -->
-    <!-- jquery-->
-    <script src="../assets/js/vendors/jquery/jquery.min.js"></script>
     <!-- custom script -->
     <script src="../assets/js/script.js"></script>
   </body>

@@ -47,16 +47,15 @@ if rating
     script(src="../assets/js/rating-custom.js")
     script(src="../assets/js/Rating-Index.js")
 
-if sweetalert2
-  // sweetalert 2
-  script(src='../assets/js/sweet-alert/sweetalert.min.js')
-if page_sweetalert2
-  script(src='../assets/js/sweet-alert/app.js')
+if sweetalert
+  // Sweetalert js
+  script(src='../assets/js/sweetalert/sweetalert2.min.js')
+  script(src='../assets/js/sweetalert/sweetalert-custom.js')
 
-if dragable
-  // dragable 
-  script(src='../assets/js/dragable/sortable.js')
-  script(src='../assets/js/dragable/sortable-custom.js')
+if draggable_page 
+    // Draggable js
+    script(src='../assets/js/vendors/sortablejs/sortable.min.js')
+    script(src='../assets/js/draggable-custom.js')
 
 if jquery_ui
   // jquery-ui
@@ -87,9 +86,11 @@ if range
 
 if scrollable
   // Scrollable js
-  script(src='../assets/js/vendors/simplebar/dist/simplebar.min.js')
+  script(src='../assets/js/vendors/simplebar/dist/simplebar-min.js')
   script(src='../assets/js/scrollbar/scrollbar.js')
-
+if choice
+  script(src='../assets/js/vendors/choices.js/public/assets/scripts/choices.js')
+  
 if slick 
   // slick
   script(src='../assets/js/slick/slick.min.js')
@@ -102,11 +103,11 @@ if slick
 //-   script(src='../assets/js/scrollbar/simplebar.js')
 //-   script(src='../assets/js/scrollbar/custom.js')
 
-if tree 
-  // tree
-  script(src='../assets/js/tree/jstree.min.js')
-  script(src='../assets/js/tree/tree.min.js')
-  script(src='../assets/js/tree/tree.js')
+if tree
+    // Tree js
+    script(src='../assets/js/tree/tree.js')
+    script(src='../assets/js/tree/tree.min.js')
+    script(src='../assets/js/tree/tree-custom.js')
 
 if form_validation_custom
   // form validation 
@@ -127,25 +128,21 @@ if flatpickr
   // flatpicker
   script(src='../assets/js/flat-pickr/flatpickr.js')
   script(src='../assets/js/flat-pickr/custom-flatpickr.js')
-
+if select2_options 
+  script(src='../assets/js/vendors/@yaireo/tagify/dist/tagify.js')
+  script(src='../assets/js/vendors/@yaireo/tagify/dist/tagify.polyfills.min.js')
+  script(src='../assets/js/vendors/intl-tel-input/build/js/intlTelInput.min.js')
+  script(src='../assets/js/select2/custom-inputsearch.js')
+  script(src='../assets/js/select2/telephone-input.js')
 if touchspin_2
   // touchspin 
   script(src='../assets/js/touchspin_2/custom_touchspin.js')
 
-if select2_options 
-  // select 2
-  script(src='../assets/js/select2/tagify.js')
-  script(src='../assets/js/select2/tagify.polyfills.min.js')
-  script(src='../assets/js/select2/intltelinput.min.js')
-  script(src='../assets/js/select2/telephone-input.js')
-  script(src='../assets/js/select2/custom-inputsearch.js')
-//- if page_select2
-//-   script(src='../assets/js/select2/select2-custom.js')
+if page_select3 
+  script(src='../assets/js/select2/select3-custom.js')
 
 if typeahead
-  // typehead
-  script(src='../assets/js/typeahead/handlebars.js')
-  script(src='../assets/js/typeahead/typeahead.bundle.js')
+  // typehead 
   script(src='../assets/js/typeahead/typeahead.custom.js')
 
 if clipboard
@@ -153,10 +150,9 @@ if clipboard
   script(src='../assets/js/clipboard/clipboard.min.js')
 if page_clipboard
   script(src='../assets/js/clipboard/clipboard-script.js')
-
-if form_wizard
-  // form-wizard
-  script(src='../assets/js/form-wizard/form-wizard-five.js')
+  
+if form_wizard 
+  script(src='../assets/js/form-wizard/image-upload.js')
   script(src='../assets/js/form-wizard/form-wizard.js')
 
 if image_upload 

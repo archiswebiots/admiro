@@ -236,4 +236,134 @@
             background-color: rgba(var(--warning-color),1);
         }
     }  
+    .filepond--panel-root{
+        background-color: rgba(var(--body-color), 1) !important;
+    }
+    .filepond--drop-label{
+        color: rgba(var(--sub-title),1);
+    }
+    .switch-outline{
+        .switch-state{
+            &:before{
+                background-color: rgba(var(--body-color),1);
+            }
+            &::after{
+                color: rgba(var(--black),1);
+            }
+        }
+    }
+    .timeline-plugin{
+        .timeline{
+            li{
+                div{
+                    color: rgba(var(--black),1);
+                }
+            } 
+        } 
+    } 
+    .bootstrap-touchspin, .pre-post-touchspin{
+        button{
+            color: rgba(var(--black),1);
+            i{
+                color: rgba(var(--black),1);
+            }
+        }
+        .input-touchspin{
+            background-color: rgba(var(--body-color),1);
+            color: rgba(var(--black),1);
+        }
+    }
+    .icon-main{
+        .icons-item{
+            background-color: rgba(var(--body-color), 1);
+        }
+    } 
+    .btn-showcase{
+        .text-light, .text-dark{
+            color: rgba(var(--black),1) !important;
+        }
+    }
+    .apexcharts-canvas{
+        svg{
+            .apexcharts-title-text, .apexcharts-subtitle-text{
+                fill: rgba(var(--sub-title) ,1);
+            }
+            .apexcharts-xaxis, .apexcharts-yaxis{
+                .apexcharts-xaxis-texts-g, .apexcharts-yaxis-texts-g{
+                    .apexcharts-xaxis-label, .apexcharts-yaxis-label{
+                        fill: rgba(var(--sub-title) ,1);
+                    }
+                } 
+            } 
+            .apexcharts-legend-series{
+                span{
+                    color: rgba(var(--sub-title),1) !important;
+                }
+            } 
+        }
+    }
+    // .blog-box{
+    //     .blog-details-main{
+    //         .blog-social{
+    //             li{
+    //                 color: rgba(var(--sub-title),1);
+    //             }
+    //         }     
+    //     }
+    // }
+    // .blog-list{
+    //     .blog-details{
+    //         p{
+    //             color: rgba(var(--sub-title),1);
+    //         }
+    //     } 
+    // }
+    .add-post{
+        .btn-light{
+            color: rgba(var(--sub-title),1);
+        }
+    } 
+    .faq-widgets{
+        p, svg{
+            color: rgba(var(--sub-title),1);
+        }
+    }
+    .faq-body{
+        p{
+            color: rgba(var(--sub-title),1);
+        }
+    }
+    .animate-chk{
+        label{
+            color: rgba(var(--sub-title),1)
+        }
+    }
+        .checkbox_animated{
+            &:after{
+                background-color: rgba(var(--body-color),1);
+                border: 2px solid rgba(var(--light-gray),1) ;
+            }
+        }
+        .choices__list--multiple{
+            .choices__item{
+                color: rgba(var(--sub-title),1);
+            }
+        } 
+    .choices__list--dropdown{
+        // .choices__item--selectable.is-highlighted{
+        //     .choices__list[aria-expanded]{
+        //         .choicesz__item--selectable{
+        //             &.is-highlighted{
+        //                 background-color: rgba(var(--body-color),1) !important;  
+        //             }
+        //         }
+        //     }
+        // }
+        &.choices__list[aria-expanded]{
+            background-color: rgba(var(--body-color),1) !important;
+        }
+    }  
+    .text-light{
+        color: rgba(var(--black),1) !important; 
+    } 
 }

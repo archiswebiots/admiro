@@ -1,0 +1,12 @@
+.treejs{ 
+    .treejs-node__halfchecked, .treejs-node__checked{
+        >{
+            .treejs-checkbox{
+                &:before{
+                    background-color: rgba(var(--primary-color),1) !important;
+                    border-color: rgba(var(--primary-color),1) !important;
+                }
+            }
+        }
+    }
+}   
